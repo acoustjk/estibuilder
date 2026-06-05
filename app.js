@@ -82,8 +82,8 @@ const WAGE_RATES = {
 
 // 3. Application State (상태 관리)
 let state = {
-    projectName: "노원문화예술회관 리모델링 통신공사",
-    duration: "6개월",
+    projectName: "",
+    duration: "",
     wageStandard: "2026_1",
     roundingPrecision: 1000, // 천단위 절사
     rates: {
