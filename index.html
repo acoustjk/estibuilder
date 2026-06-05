@@ -230,6 +230,9 @@
                                 <h3>품셈 기반 노임 산출근거 설정</h3>
                             </div>
                             <div style="display: flex; align-items: center; gap: 10px;">
+                                <button id="btn-add-labor-item" class="btn btn-primary" style="padding: 8px 14px; font-size: 13px;">
+                                    <i class="fa-solid fa-plus"></i> 순수 노무비 항목 추가
+                                </button>
                                 <button id="btn-auto-map-labor" class="btn btn-outline" style="padding: 8px 14px; font-size: 13px;">
                                     <i class="fa-solid fa-wand-magic-sparkles"></i> 표준품셈 전체 자동 매핑
                                 </button>
@@ -242,16 +245,17 @@
                             <table class="cost-sheet-table" id="labor-basis-table">
                                 <thead>
                                     <tr>
-                                        <th style="width: 5%;">번호</th>
-                                        <th style="width: 15%;">소속 공종</th>
-                                        <th style="width: 20%;">품명 및 규격</th>
-                                        <th style="width: 6%; text-align: center;">단위</th>
-                                        <th style="width: 8%; text-align: right;">결정수량</th>
-                                        <th style="width: 12%;">노임 직종</th>
+                                        <th style="width: 4%;">번호</th>
+                                        <th style="width: 12%;">소속 공종</th>
+                                        <th style="width: 18%;">품명 및 규격</th>
+                                        <th style="width: 5%; text-align: center;">단위</th>
+                                        <th style="width: 7%; text-align: right;">결정수량</th>
+                                        <th style="width: 10%;">노임 직종</th>
                                         <th style="width: 10%; text-align: right;">기본품셈 (인)</th>
-                                        <th style="width: 16%;">적용 조건 (할증률)</th>
+                                        <th style="width: 15%;">적용 조건 (할증률)</th>
                                         <th style="width: 10%; text-align: right;">산출공량 (인)</th>
                                         <th style="width: 12%; text-align: center;">품셈 근거</th>
+                                        <th style="width: 7%; text-align: center;">액션</th>
                                     </tr>
                                 </thead>
                                 <tbody id="labor-basis-table-body">
@@ -465,6 +469,78 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-outline" onclick="closeModal('modal-recommend-labor')">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Add Pure Labor Item directly to Labor Basis -->
+    <div class="modal" id="modal-add-labor-item">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4><i class="fa-solid fa-person-digging text-primary" style="margin-right: 8px;"></i> 순수 노무비 항목 추가</h4>
+                    <button class="close-modal-btn" onclick="closeModal('modal-add-labor-item')">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-15">
+                        <label for="select-modal-labor-division">소속 공종 선택</label>
+                        <select id="select-modal-labor-division" style="width: 100%; padding: 10px; background: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: var(--radius-sm); outline: none;">
+                            <!-- Dynamically loaded -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group mb-15">
+                        <label>적용 표준품셈 선택</label>
+                        <div class="drawer-search mb-10" style="margin: 0 0 10px 0;">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" id="input-add-labor-db-search" placeholder="품셈명 또는 직종 검색..." style="width: 100%;">
+                        </div>
+                        <div class="modal-labor-results" id="modal-add-labor-db-list" style="height: 180px;">
+                            <!-- Loaded with STANDARD_LABOR_DB items -->
+                        </div>
+                    </div>
+
+                    <div class="form-grid mb-15" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div class="form-group">
+                            <label for="input-modal-labor-item-name">품목명 (직접입력)</label>
+                            <input type="text" id="input-modal-labor-item-name" placeholder="예: 케이블 풀링공사">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-modal-labor-item-spec">규격 (직접입력)</label>
+                            <input type="text" id="input-modal-labor-item-spec" placeholder="예: 인력 100m 기준">
+                        </div>
+                    </div>
+
+                    <div class="form-grid mb-15" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+                        <div class="form-group">
+                            <label for="input-modal-labor-item-unit">단위</label>
+                            <input type="text" id="input-modal-labor-item-unit" value="개" placeholder="예: 개, M">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-modal-labor-item-qty">수량</label>
+                            <input type="number" id="input-modal-labor-item-qty" value="1" min="0.001" step="0.001">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-modal-labor-item-factor">기본품셈 (인)</label>
+                            <input type="number" id="input-modal-labor-item-factor" value="0.1" step="0.0001" min="0">
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-15">
+                        <label for="select-modal-labor-item-type">노무 직종</label>
+                        <select id="select-modal-labor-item-type" style="width: 100%; padding: 10px; background: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: var(--radius-sm); outline: none;">
+                            <option value="통신내선공">통신내선공</option>
+                            <option value="통신설비공">통신설비공</option>
+                            <option value="특별인부">특별인부</option>
+                        </select>
+                    </div>
+
+                    <input type="hidden" id="input-modal-labor-item-ref" value="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline" onclick="closeModal('modal-add-labor-item')">취소</button>
+                    <button class="btn btn-primary" id="btn-confirm-add-labor-item">추가하기</button>
                 </div>
             </div>
         </div>

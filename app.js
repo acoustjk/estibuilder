@@ -456,6 +456,27 @@ function initLaborListeners() {
             searchModalLaborBasis(e.target.value);
         });
     }
+
+    const btnAddLabor = document.getElementById("btn-add-labor-item");
+    if (btnAddLabor) {
+        btnAddLabor.addEventListener("click", () => {
+            openAddLaborItemModal();
+        });
+    }
+
+    const searchAddLaborInput = document.getElementById("input-add-labor-db-search");
+    if (searchAddLaborInput) {
+        searchAddLaborInput.addEventListener("input", (e) => {
+            searchAddLaborDbList(e.target.value);
+        });
+    }
+
+    const btnConfirmAddLabor = document.getElementById("btn-confirm-add-labor-item");
+    if (btnConfirmAddLabor) {
+        btnConfirmAddLabor.addEventListener("click", () => {
+            confirmAddLaborItem();
+        });
+    }
 }
 
 // 품명/규격 기반 텍스트 매칭 추천 알고리즘
@@ -700,6 +721,174 @@ function applyLaborRef(code, laborType, laborFactor) {
 // Expose functions globally to inline HTML onclick handlers
 window.openLaborRefModal = openLaborRefModal;
 window.applyLaborRef = applyLaborRef;
+window.deleteLaborBasisItem = deleteLaborBasisItem;
+window.openAddLaborItemModal = openAddLaborItemModal;
+window.confirmAddLaborItem = confirmAddLaborItem;
+
+// 1. 노임근거 개별 항목 삭제/근거 제거
+function deleteLaborBasisItem(divId, itemId) {
+    const div = state.divisions.find(d => d.id === divId);
+    if (!div) return;
+    
+    const item = div.items.find(i => i.id === itemId);
+    if (!item) return;
+    
+    const priceInfo = state.itemPrices[item.masterId] || { appliedPrice: item.materialPrice };
+    const materialPrice = priceInfo.appliedPrice;
+    
+    if (materialPrice === 0 || item.materialPrice === 0) {
+        // Pure labor item, completely delete from division
+        if (confirm(`"${item.name}"은 자재비가 없는 순수 노무 항목이므로 내역서에서 완전히 삭제됩니다. 진행하시겠습니까?`)) {
+            const index = div.items.findIndex(i => i.id === itemId);
+            if (index !== -1) {
+                div.items.splice(index, 1);
+                showToast(`"${item.name}" 품목이 완전히 제거되었습니다.`, "success");
+            }
+        } else {
+            return;
+        }
+    } else {
+        // Mixed item, clear labor configuration
+        if (confirm(`"${item.name}"은 자재비가 존재하는 품목이므로 자재비는 내역서에 보존하고 노무비 품셈 근거만 제거합니다. 진행하시겠습니까?`)) {
+            item.laborType = null;
+            item.laborFactor = 0;
+            item.laborRef = "";
+            item.laborScenario = "new";
+            item.laborMultiplier = 1.0;
+            item.laborRemark = "";
+            showToast(`"${item.name}"의 노무 산출 근거가 제거되었습니다.`, "info");
+        } else {
+            return;
+        }
+    }
+    
+    renderLaborBasisTable();
+    calculateEstimates();
+    loadActiveDivision();
+}
+
+// 2. 순수 노임 근거 항목 직접 추가 팝업 열기
+function openAddLaborItemModal() {
+    const selectDiv = document.getElementById("select-modal-labor-division");
+    selectDiv.innerHTML = "";
+    state.divisions.forEach(div => {
+        const opt = document.createElement("option");
+        opt.value = div.id;
+        opt.textContent = div.name;
+        selectDiv.appendChild(opt);
+    });
+    
+    // Clear form fields
+    document.getElementById("input-modal-labor-item-name").value = "";
+    document.getElementById("input-modal-labor-item-spec").value = "";
+    document.getElementById("input-modal-labor-item-unit").value = "개";
+    document.getElementById("input-modal-labor-item-qty").value = "1";
+    document.getElementById("input-modal-labor-item-factor").value = "0.1000";
+    document.getElementById("input-modal-labor-item-ref").value = "";
+    document.getElementById("select-modal-labor-item-type").value = "통신내선공";
+    document.getElementById("input-add-labor-db-search").value = "";
+    
+    searchAddLaborDbList("");
+    openModal("modal-add-labor-item");
+}
+
+// 3. 품셈 추가 팝업 내부 검색
+function searchAddLaborDbList(query) {
+    const list = document.getElementById("modal-add-labor-db-list");
+    list.innerHTML = "";
+    
+    const queryL = query.toLowerCase().trim();
+    const filtered = STANDARD_LABOR_DB.filter(dbItem => {
+        return dbItem.name.toLowerCase().includes(queryL) ||
+               dbItem.spec.toLowerCase().includes(queryL) ||
+               dbItem.code.toLowerCase().includes(queryL) ||
+               dbItem.laborType.toLowerCase().includes(queryL);
+    });
+    
+    if (filtered.length === 0) {
+        list.innerHTML = `<div style="text-align: center; color: var(--text-muted); font-size: 11px; padding: 20px 0;">검색 결과가 없습니다.</div>`;
+        return;
+    }
+    
+    filtered.forEach(dbItem => {
+        const row = document.createElement("div");
+        row.className = "modal-db-item-row";
+        row.innerHTML = `
+            <div class="modal-db-item-details">
+                <span class="modal-db-item-name">${dbItem.name} (${dbItem.code})</span>
+                <span class="modal-db-item-spec">${dbItem.spec} [${dbItem.unit}]</span>
+            </div>
+            <div class="modal-db-item-right">
+                <span class="modal-db-item-factor">${dbItem.laborFactor.toFixed(4)} 인</span>
+                <div class="modal-db-item-type">${dbItem.laborType}</div>
+            </div>
+        `;
+        
+        row.addEventListener("click", () => {
+            document.getElementById("input-modal-labor-item-name").value = dbItem.name;
+            document.getElementById("input-modal-labor-item-spec").value = dbItem.spec;
+            document.getElementById("input-modal-labor-item-unit").value = dbItem.unit;
+            document.getElementById("input-modal-labor-item-factor").value = dbItem.laborFactor.toFixed(4);
+            document.getElementById("select-modal-labor-item-type").value = dbItem.laborType;
+            document.getElementById("input-modal-labor-item-ref").value = dbItem.code;
+            
+            list.querySelectorAll(".modal-db-item-row").forEach(r => r.classList.remove("active"));
+            row.classList.add("active");
+        });
+        
+        list.appendChild(row);
+    });
+}
+
+// 4. 순수 노임 항목 추가 적용
+function confirmAddLaborItem() {
+    const divId = document.getElementById("select-modal-labor-division").value;
+    const name = document.getElementById("input-modal-labor-item-name").value.trim();
+    const spec = document.getElementById("input-modal-labor-item-spec").value.trim();
+    const unit = document.getElementById("input-modal-labor-item-unit").value.trim();
+    const qty = parseFloat(document.getElementById("input-modal-labor-item-qty").value) || 0;
+    const factor = parseFloat(document.getElementById("input-modal-labor-item-factor").value) || 0;
+    const laborType = document.getElementById("select-modal-labor-item-type").value;
+    const ref = document.getElementById("input-modal-labor-item-ref").value;
+
+    if (!name) {
+        showToast("품목명을 입력해주세요.", "danger");
+        return;
+    }
+    if (qty <= 0) {
+        showToast("수량은 0보다 커야 합니다.", "danger");
+        return;
+    }
+
+    const div = state.divisions.find(d => d.id === divId);
+    if (!div) return;
+
+    const customMasterId = "L_CUSTOM_" + Date.now();
+    const newItem = {
+        id: "item-" + Date.now() + Math.random().toString(36).substr(2, 5),
+        masterId: customMasterId,
+        name: name,
+        spec: spec,
+        unit: unit,
+        qty: qty,
+        materialPrice: 0,
+        laborType: laborType,
+        laborFactor: factor,
+        laborScenario: "new",
+        laborMultiplier: 1.0,
+        laborRef: ref || "자체품셈",
+        laborRemark: "신설"
+    };
+
+    div.items.push(newItem);
+    closeModal("modal-add-labor-item");
+
+    renderLaborBasisTable();
+    calculateEstimates();
+    loadActiveDivision();
+
+    showToast(`순수 노무비 항목 "${name}"이 추가되었습니다.`, "success");
+}
 
 // Render Labor Basis Table
 function renderLaborBasisTable() {
@@ -707,62 +896,69 @@ function renderLaborBasisTable() {
     tbody.innerHTML = "";
 
     let overallIndex = 1;
-    let hasLaborItems = false;
+    let hasItems = false;
 
     state.divisions.forEach(div => {
         div.items.forEach(item => {
-            if (item.laborType && item.laborFactor > 0) {
-                hasLaborItems = true;
-                const tr = document.createElement("tr");
-                
-                const multiplier = item.laborMultiplier !== undefined ? item.laborMultiplier : 1.0;
-                const calcFactor = item.laborFactor * multiplier;
-                const totalLaborVolume = item.qty * calcFactor;
+            hasItems = true;
+            const tr = document.createElement("tr");
+            
+            const hasLabor = item.laborFactor !== undefined && item.laborFactor > 0 && item.laborType;
+            const multiplier = item.laborMultiplier !== undefined ? item.laborMultiplier : 1.0;
+            const calcFactor = hasLabor ? (item.laborFactor * multiplier) : 0;
+            const totalLaborVolume = item.qty * calcFactor;
 
-                const scenarios = [
-                    { value: "new", label: "신설 (100% 적용)", mult: 1.0, remark: "신설" },
-                    { value: "demolish", label: "단순 철거 (30% 적용)", mult: 0.3, remark: "철거자재" },
-                    { value: "reuse", label: "재사용 철거 (50% 적용)", mult: 0.5, remark: "철거재사용" },
-                    { value: "night", label: "야간 작업 (125% 적용)", mult: 1.25, remark: "야간할증" },
-                    { value: "narrow", label: "협소 장소 (110% 적용)", mult: 1.10, remark: "야지작업" }
-                ];
+            const scenarios = [
+                { value: "new", label: "신설 (100% 적용)", mult: 1.0, remark: "신설" },
+                { value: "demolish", label: "단순 철거 (30% 적용)", mult: 0.3, remark: "철거자재" },
+                { value: "reuse", label: "재사용 철거 (50% 적용)", mult: 0.5, remark: "철거재사용" },
+                { value: "night", label: "야간 작업 (125% 적용)", mult: 1.25, remark: "야간할증" },
+                { value: "narrow", label: "협소 장소 (110% 적용)", mult: 1.10, remark: "야지작업" }
+            ];
 
-                let selectHtml = `<select class="select-labor-scenario" data-div-id="${div.id}" data-item-id="${item.id}" style="background-color: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); padding: 6px 10px; border-radius: 4px; outline: none; font-size: 13px; width: 100%; cursor: pointer;">`;
+            let selectHtml = "-";
+            if (hasLabor) {
+                selectHtml = `<select class="select-labor-scenario" data-div-id="${div.id}" data-item-id="${item.id}" style="background-color: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); padding: 6px 10px; border-radius: 4px; outline: none; font-size: 13px; width: 100%; cursor: pointer;">`;
                 scenarios.forEach(sc => {
                     const selected = item.laborScenario === sc.value ? "selected" : "";
                     selectHtml += `<option value="${sc.value}" data-mult="${sc.mult}" data-remark="${sc.remark}" ${selected}>${sc.label}</option>`;
                 });
                 selectHtml += `</select>`;
-
-                tr.innerHTML = `
-                    <td>${overallIndex++}</td>
-                    <td style="color: var(--text-secondary); font-size: 13px;">${div.name}</td>
-                    <td>
-                        <div class="item-meta">
-                            <span class="item-title">${item.name}</span>
-                            <span class="item-subtitle">${item.spec}</span>
-                        </div>
-                    </td>
-                    <td style="text-align: center;">${item.unit}</td>
-                    <td style="text-align: right; font-family: monospace;">${item.qty}</td>
-                    <td>${item.laborType}</td>
-                    <td style="text-align: right; font-family: monospace;">${item.laborFactor.toFixed(4)}</td>
-                    <td>${selectHtml}</td>
-                    <td style="text-align: right; font-family: monospace; font-weight: 600; color: var(--accent);">${totalLaborVolume.toFixed(4)}</td>
-                    <td style="text-align: center;">
-                        <span class="labor-ref-badge-clickable" onclick="openLaborRefModal('${div.id}', '${item.id}')" title="클릭하여 표준품셈 변경/추천 받기">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i> ${item.laborRef || "근거 없음"}
-                        </span>
-                    </td>
-                `;
-
-                tbody.appendChild(tr);
             }
+
+            tr.innerHTML = `
+                <td>${overallIndex++}</td>
+                <td style="color: var(--text-secondary); font-size: 13px;">${div.name}</td>
+                <td>
+                    <div class="item-meta">
+                        <span class="item-title">${item.name}</span>
+                        <span class="item-subtitle">${item.spec}</span>
+                    </div>
+                </td>
+                <td style="text-align: center;">${item.unit}</td>
+                <td style="text-align: right; font-family: monospace;">${item.qty}</td>
+                <td>${hasLabor ? item.laborType : "-"}</td>
+                <td style="text-align: right; font-family: monospace;">${hasLabor ? item.laborFactor.toFixed(4) : "-"}</td>
+                <td style="text-align: center;">${selectHtml}</td>
+                <td style="text-align: right; font-family: monospace; font-weight: 600; color: ${hasLabor ? "var(--accent)" : "var(--text-muted)"};">${hasLabor ? totalLaborVolume.toFixed(4) : "-"}</td>
+                <td style="text-align: center;">
+                    <span class="labor-ref-badge-clickable" onclick="openLaborRefModal('${div.id}', '${item.id}')" title="클릭하여 표준품셈 변경/추천 받기">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> ${item.laborRef || "근거 없음"}
+                    </span>
+                </td>
+                <td style="text-align: center;">
+                    <button class="btn-icon-danger" onclick="deleteLaborBasisItem('${div.id}', '${item.id}')" title="노임근거 제거/삭제">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </td>
+            `;
+
+            tbody.appendChild(tr);
         });
     });
 
-    if (!hasLaborItems) {
-        tbody.innerHTML = `<tr><td colspan="10" style="text-align: center; color: var(--text-muted); padding: 45px 0;"><i class="fa-solid fa-person-digging" style="font-size: 24px; margin-bottom: 10px; display: block;"></i>내역서에 추가된 품목 중 노무비 산출 대상 품목이 없습니다.</td></tr>`;
+    if (!hasItems) {
+        tbody.innerHTML = `<tr><td colspan="11" style="text-align: center; color: var(--text-muted); padding: 45px 0;"><i class="fa-solid fa-person-digging" style="font-size: 24px; margin-bottom: 10px; display: block;"></i>내역서에 추가된 품목이 없습니다.</td></tr>`;
         return;
     }
 
