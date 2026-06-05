@@ -293,7 +293,7 @@ const STANDARD_LABOR_DB = [
     { code: "통신 9-1-1", name: "-0.400.40검지기 점검 및 시험", spec: "표준 규격", unit: "대", laborType: "보통인부", laborFactor: 0.38, category: "device", keywords: ["-0.400.40검지기 점검 및 시험"] },
     { code: "통신 9-1-1", name: "---제어부 시험", spec: "표준 규격", unit: "대", laborType: "통신케이블공", laborFactor: 0.53, category: "device", keywords: ["---제어부 시험"] },
     { code: "통신 9-1-1", name: "---제어부 시험", spec: "표준 규격", unit: "대", laborType: "보통인부", laborFactor: 0.53, category: "device", keywords: ["---제어부 시험"] },
-    { code: "통신 9-1-3", name: "통신관련산업기사S/W시험사H/W시험사무 선안테나공노변기지국(RSE) 안테나부설 치", spec: "표준 규격", unit: "대", laborType: "통신설비공", laborFactor: 0.61, category: "device", keywords: ["통신관련산업기사s/w시험사h/w시험사"] },
+{ code: "통신 9-1-3", name: "통신관련산업기사S/W시험사H/W시험사무 선안테나공노변기지국(RSE) 안테나부설 치", spec: "표준 규격", unit: "대", laborType: "통신설비공", laborFactor: 0.61, category: "device", keywords: ["통신관련산업기사s/w시험사h/w시험사"] },
     { code: "통신 9-1-3", name: "-0.360.360.36시험지향성", spec: "표준 규격", unit: "대", laborType: "통신설비공", laborFactor: 0.16, category: "device", keywords: ["-0.360.360.36시험지향성"] },
     { code: "통신 9-1-3", name: "0.16---무지향성", spec: "표준 규격", unit: "개", laborType: "통신설비공", laborFactor: 0.54, category: "device", keywords: ["0.16---무지향성"] },
     { code: "통신 9-1-3", name: "0.54---제어부분전함", spec: "표준 규격", unit: "개", laborType: "통신설비공", laborFactor: 0.34, category: "device", keywords: ["0.54---제어부분전함"] },
@@ -433,7 +433,8 @@ let state = {
     },
     divisions: [],
     itemPrices: {},
-    activeDivisionId: ""
+    activeDivisionId: "",
+    standardLaborDb: JSON.parse(JSON.stringify(STANDARD_LABOR_DB))
 };
 
 let costShareChart = null;
@@ -448,6 +449,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initLaborListeners();
     initDivisionsListeners();
     initSaveLoadListeners();
+    initMasterDbListeners();
     loadActiveDivision();
     populateDbLibrary();
     calculateEstimates();
@@ -479,6 +481,9 @@ function initTabs() {
             }
             if (tabId === "tab-labor") {
                 renderLaborBasisTable();
+            }
+            if (tabId === "tab-master-db") {
+                renderMasterDbTable();
             }
         });
     });
@@ -817,8 +822,8 @@ function initLaborListeners() {
 function recommendLaborBasis(itemName, itemSpec) {
     const queryName = itemName.toLowerCase().trim();
     const querySpec = itemSpec.toLowerCase().trim();
-    
-    return STANDARD_LABOR_DB.map(dbItem => {
+
+    return state.standardLaborDb.map(dbItem => {
         let score = 0;
         const dbName = dbItem.name.toLowerCase();
         const dbSpec = dbItem.spec.toLowerCase();
@@ -1147,7 +1152,7 @@ function confirmAddPriceItem() {
     let laborType = null;
     let laborFactor = 0;
     if (laborRefCode) {
-        const dbItem = STANDARD_LABOR_DB.find(d => d.code === laborRefCode);
+        const dbItem = state.standardLaborDb.find(d => d.code === laborRefCode);
         if (dbItem) {
             laborType = dbItem.laborType;
             laborFactor = dbItem.laborFactor;
@@ -2817,6 +2822,9 @@ function loadFromLocalStorage() {
             const parsed = JSON.parse(saved);
             if (parsed && parsed.divisions && parsed.rates) {
                 state = parsed;
+                if (!state.standardLaborDb) {
+                    state.standardLaborDb = JSON.parse(JSON.stringify(STANDARD_LABOR_DB));
+                }
                 
                 // UI 폼 인풋 및 헤더 갱신
                 const inputProjName = document.getElementById("input-project-name");
@@ -2885,6 +2893,9 @@ function importStateFromJson(file) {
             const parsed = JSON.parse(event.target.result);
             if (parsed && parsed.divisions && parsed.rates) {
                 state = parsed;
+                if (!state.standardLaborDb) {
+                    state.standardLaborDb = JSON.parse(JSON.stringify(STANDARD_LABOR_DB));
+                }
                 
                 // 로컬 스토리지에 즉시 동기화
                 saveToLocalStorage();
@@ -2925,6 +2936,9 @@ function importStateFromJson(file) {
                 if (typeof renderDivisionsTable === "function") {
                     renderDivisionsTable();
                 }
+                if (typeof renderMasterDbTable === "function") {
+                    renderMasterDbTable();
+                }
                 calculateEstimates();
                 
                 showToast("설계 데이터가 성공적으로 불러와졌습니다.", "success");
@@ -2964,3 +2978,216 @@ function initSaveLoadListeners() {
         };
     }
 }
+
+// 10. 표준품셈 DB 관리자 기능 (CRUD)
+// ----------------------------------------------------
+
+function renderMasterDbTable() {
+    const tbody = document.getElementById("master-db-table-body");
+    if (!tbody) return;
+    tbody.innerHTML = "";
+
+    const query = (document.getElementById("input-master-db-search")?.value || "").toLowerCase().trim();
+    const category = document.getElementById("select-master-db-category")?.value || "all";
+
+    // state.standardLaborDb에서 필터링
+    const filtered = state.standardLaborDb.filter(dbItem => {
+        // 카테고리 필터
+        if (category !== "all" && dbItem.category !== category) return false;
+
+        // 검색 필터
+        if (query) {
+            const nameMatch = dbItem.name.toLowerCase().includes(query);
+            const specMatch = dbItem.spec ? dbItem.spec.toLowerCase().includes(query) : false;
+            const codeMatch = dbItem.code.toLowerCase().includes(query);
+            const typeMatch = dbItem.laborType.toLowerCase().includes(query);
+            const kwMatch = dbItem.keywords ? dbItem.keywords.some(kw => kw.toLowerCase().includes(query)) : false;
+            return nameMatch || specMatch || codeMatch || typeMatch || kwMatch;
+        }
+        return true;
+    });
+
+    // 검색 결과 개수 갱신
+    const countEl = document.getElementById("lbl-master-db-count");
+    if (countEl) countEl.textContent = filtered.length;
+
+    if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; color: var(--text-muted); padding: 40px 0;">검색 조건에 맞는 표준품셈 항목이 없습니다.</td></tr>`;
+        return;
+    }
+
+    filtered.forEach((dbItem) => {
+        // 원본 배열에서의 index 검색
+        const originalIndex = state.standardLaborDb.findIndex(item => 
+            item.code === dbItem.code && 
+            item.name === dbItem.name && 
+            item.laborType === dbItem.laborType && 
+            item.laborFactor === dbItem.laborFactor
+        );
+
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+            <td style="text-align: left; font-weight: 500; font-family: monospace; color: var(--text-primary);">${dbItem.code}</td>
+            <td style="text-align: left; color: var(--text-primary); font-weight: 500;">${dbItem.name}</td>
+            <td style="text-align: left; color: var(--text-secondary);">${dbItem.spec || "표준 규격"}</td>
+            <td style="text-align: center; color: var(--text-secondary);">${dbItem.unit || "개"}</td>
+            <td style="text-align: left; color: var(--text-primary); font-weight: 500;">
+                <span style="background: rgba(79, 70, 229, 0.15); color: var(--primary-light); padding: 3px 8px; border-radius: 4px; font-size: 11px;">
+                    ${dbItem.laborType}
+                </span>
+            </td>
+            <td style="text-align: right; font-weight: 600; color: var(--accent);">${dbItem.laborFactor.toFixed(4)}</td>
+            <td style="text-align: center;">
+                <span class="category-tag category-${dbItem.category}" style="font-size: 11px; padding: 2px 6px; border-radius: 4px; background: rgba(255,255,255,0.05);">
+                    ${dbItem.category === 'device' ? '기기/인출' : dbItem.category === 'cable' ? '케이블/배선' : dbItem.category === 'pipe' ? '관로/배관' : dbItem.category === 'labor' ? '노무/토공' : dbItem.category}
+                </span>
+            </td>
+            <td style="text-align: center;">
+                <div style="display: flex; gap: 6px; justify-content: center;">
+                    <button class="btn btn-outline" style="padding: 4px 8px; font-size: 11px; height: 26px;" onclick="window.openEditDbItemModal(${originalIndex})">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button class="btn btn-danger-outline" style="padding: 4px 8px; font-size: 11px; height: 26px;" onclick="window.deleteDbItem(${originalIndex})">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
+
+function openEditDbItemModal(index) {
+    const isEdit = index !== undefined && index >= 0;
+    
+    const titleEl = document.getElementById("lbl-modal-db-item-title");
+    const indexInput = document.getElementById("input-modal-db-item-index");
+    const codeInput = document.getElementById("input-modal-db-item-code");
+    const categorySelect = document.getElementById("select-modal-db-item-category");
+    const nameInput = document.getElementById("input-modal-db-item-name");
+    const specInput = document.getElementById("input-modal-db-item-spec");
+    const unitInput = document.getElementById("input-modal-db-item-unit");
+    const typeSelect = document.getElementById("select-modal-db-item-type");
+    const factorInput = document.getElementById("input-modal-db-item-factor");
+    const keywordsInput = document.getElementById("input-modal-db-item-keywords");
+
+    if (isEdit) {
+        const item = state.standardLaborDb[index];
+        if (titleEl) titleEl.innerHTML = `<i class="fa-solid fa-database text-primary" style="margin-right: 8px;"></i> 표준품셈 항목 편집`;
+        if (indexInput) indexInput.value = index;
+        if (codeInput) codeInput.value = item.code;
+        if (categorySelect) categorySelect.value = item.category || "device";
+        if (nameInput) nameInput.value = item.name;
+        if (specInput) specInput.value = item.spec || "표준 규격";
+        if (unitInput) unitInput.value = item.unit || "개";
+        if (typeSelect) typeSelect.value = item.laborType;
+        if (factorInput) factorInput.value = item.laborFactor;
+        if (keywordsInput) keywordsInput.value = item.keywords ? item.keywords.join(", ") : "";
+    } else {
+        if (titleEl) titleEl.innerHTML = `<i class="fa-solid fa-database text-primary" style="margin-right: 8px;"></i> 신규 표준품셈 항목 추가`;
+        if (indexInput) indexInput.value = "-1";
+        if (codeInput) codeInput.value = "";
+        if (categorySelect) categorySelect.value = "device";
+        if (nameInput) nameInput.value = "";
+        if (specInput) specInput.value = "표준 규격";
+        if (unitInput) unitInput.value = "개";
+        if (typeSelect) typeSelect.value = "통신내선공";
+        if (factorInput) factorInput.value = "0.1";
+        if (keywordsInput) keywordsInput.value = "";
+    }
+
+    openModal("modal-edit-master-db-item");
+}
+
+function confirmEditDbItem() {
+    const indexVal = document.getElementById("input-modal-db-item-index")?.value;
+    const index = parseInt(indexVal);
+    
+    const code = document.getElementById("input-modal-db-item-code")?.value.trim();
+    const category = document.getElementById("select-modal-db-item-category")?.value;
+    const name = document.getElementById("input-modal-db-item-name")?.value.trim();
+    const spec = document.getElementById("input-modal-db-item-spec")?.value.trim();
+    const unit = document.getElementById("input-modal-db-item-unit")?.value.trim();
+    const laborType = document.getElementById("select-modal-db-item-type")?.value;
+    const factorVal = document.getElementById("input-modal-db-item-factor")?.value;
+    const factor = parseFloat(factorVal);
+    const keywordsVal = document.getElementById("input-modal-db-item-keywords")?.value || "";
+    const keywords = keywordsVal.split(",").map(k => k.trim()).filter(k => k.length > 0);
+
+    if (!code || !name || isNaN(factor) || factor < 0) {
+        showToast("필수 입력값을 올바르게 입력해주세요 (품셈 코드, 품명, 기본품셈).", "warning");
+        return;
+    }
+
+    const itemData = {
+        code,
+        name,
+        spec: spec || "표준 규격",
+        unit: unit || "개",
+        laborType,
+        laborFactor: factor,
+        category,
+        keywords: keywords.length > 0 ? keywords : [name]
+    };
+
+    if (index >= 0) {
+        // 기존 항목 편집
+        state.standardLaborDb[index] = itemData;
+        showToast("표준품셈 항목이 성공적으로 수정되었습니다.", "success");
+    } else {
+        // 신규 항목 추가
+        state.standardLaborDb.push(itemData);
+        showToast("신규 표준품셈 항목이 추가되었습니다.", "success");
+    }
+
+    closeModal("modal-edit-master-db-item");
+    saveToLocalStorage();
+    renderMasterDbTable();
+}
+
+function deleteDbItem(index) {
+    if (index === undefined || index < 0 || index >= state.standardLaborDb.length) return;
+    const item = state.standardLaborDb[index];
+    
+    if (confirm(`품셈 [${item.code}] ${item.name} 항목을 삭제하시겠습니까?`)) {
+        state.standardLaborDb.splice(index, 1);
+        showToast("품셈 항목이 삭제되었습니다.", "success");
+        saveToLocalStorage();
+        renderMasterDbTable();
+    }
+}
+
+function initMasterDbListeners() {
+    const btnAdd = document.getElementById("btn-add-db-item");
+    if (btnAdd) {
+        btnAdd.onclick = () => {
+            openEditDbItemModal();
+        };
+    }
+
+    const searchInput = document.getElementById("input-master-db-search");
+    if (searchInput) {
+        searchInput.oninput = () => {
+            renderMasterDbTable();
+        };
+    }
+
+    const categorySelect = document.getElementById("select-master-db-category");
+    if (categorySelect) {
+        categorySelect.onchange = () => {
+            renderMasterDbTable();
+        };
+    }
+
+    const btnConfirm = document.getElementById("btn-confirm-edit-db-item");
+    if (btnConfirm) {
+        btnConfirm.onclick = () => {
+            confirmEditDbItem();
+        };
+    }
+}
+
+// Global binding for ES modules inline actions
+window.openEditDbItemModal = openEditDbItemModal;
+window.deleteDbItem = deleteDbItem;
+window.renderMasterDbTable = renderMasterDbTable;

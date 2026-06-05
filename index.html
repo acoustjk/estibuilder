@@ -42,6 +42,10 @@
                     <i class="fa-solid fa-person-digging"></i>
                     <span>노임근거</span>
                 </button>
+                <button class="nav-item" data-tab="tab-master-db">
+                    <i class="fa-solid fa-database"></i>
+                    <span>표준품셈 DB</span>
+                </button>
                 <button class="nav-item" data-tab="tab-builder">
                     <i class="fa-solid fa-cubes"></i>
                     <span>내역서 빌더</span>
@@ -326,6 +330,67 @@
                                     </tr>
                                 </thead>
                                 <tbody id="labor-basis-table-body">
+                                    <!-- Dynamically populated -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tab: Master Labor DB -->
+                <section id="tab-master-db" class="tab-section">
+                    <div class="section-card" style="height: 100%; display: flex; flex-direction: column;">
+                        <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <i class="fa-solid fa-database card-icon"></i>
+                                <h3>표준품셈 데이터베이스 관리</h3>
+                            </div>
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <button id="btn-add-db-item" class="btn btn-primary" style="padding: 8px 14px; font-size: 13px;">
+                                    <i class="fa-solid fa-plus"></i> 품셈 항목 추가
+                                </button>
+                                <div class="badge-label" style="text-transform: none; color: var(--text-secondary);">
+                                    <i class="fa-solid fa-circle-info"></i> 내장된 표준품셈 항목을 검색, 수정 및 추가할 수 있습니다.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Search & Filter Controls -->
+                        <div style="display: flex; gap: 15px; padding: 15px 20px; background: rgba(255,255,255,0.02); border-bottom: 1px solid var(--border-color); flex-shrink: 0; align-items: center;">
+                            <div style="position: relative; flex: 1;">
+                                <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 14px;"></i>
+                                <input type="text" id="input-master-db-search" placeholder="품셈명, 코드, 또는 키워드로 검색..." style="width: 100%; padding: 10px 10px 10px 35px; background: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: var(--radius-sm); outline: none; transition: var(--transition-smooth); font-size: 14px;">
+                            </div>
+                            <div style="width: 180px;">
+                                <select id="select-master-db-category" style="width: 100%; padding: 10px; background: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: var(--radius-sm); outline: none; font-size: 14px;">
+                                    <option value="all">전체 카테고리</option>
+                                    <option value="device">기기/인출</option>
+                                    <option value="cable">케이블/배선</option>
+                                    <option value="pipe">관로/배관</option>
+                                    <option value="labor">노무/토공</option>
+                                </select>
+                            </div>
+                            <div style="color: var(--text-secondary); font-size: 13px; font-weight: 500;">
+                                검색 결과: <span id="lbl-master-db-count" class="text-accent" style="font-weight: 600;">0</span>개
+                            </div>
+                        </div>
+                        
+                        <!-- Table View -->
+                        <div class="card-body flex-grow no-padding" style="overflow-y: auto; max-height: calc(100vh - 290px); padding: 0;">
+                            <table class="cost-sheet-table" id="master-db-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 15%; text-align: left;">품셈 코드</th>
+                                        <th style="width: 30%; text-align: left;">품셈명</th>
+                                        <th style="width: 10%; text-align: left;">규격</th>
+                                        <th style="width: 8%; text-align: center;">단위</th>
+                                        <th style="width: 12%; text-align: left;">노무 직종</th>
+                                        <th style="width: 10%; text-align: right;">기본품셈 (인)</th>
+                                        <th style="width: 8%; text-align: center;">카테고리</th>
+                                        <th style="width: 7%; text-align: center;">액션</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="master-db-table-body">
                                     <!-- Dynamically populated -->
                                 </tbody>
                             </table>
@@ -665,6 +730,81 @@
                 <div class="modal-footer">
                     <button class="btn btn-outline" onclick="closeModal('modal-add-labor-item')">취소</button>
                     <button class="btn btn-primary" id="btn-confirm-add-labor-item">추가하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Add/Edit Master DB Item -->
+    <div class="modal" id="modal-edit-master-db-item">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="lbl-modal-db-item-title"><i class="fa-solid fa-database text-primary" style="margin-right: 8px;"></i> 표준품셈 항목 편집</h4>
+                    <button class="close-modal-btn" onclick="closeModal('modal-edit-master-db-item')">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="input-modal-db-item-index" value="">
+                    
+                    <div class="form-grid mb-15" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div class="form-group">
+                            <label for="input-modal-db-item-code">품셈 코드</label>
+                            <input type="text" id="input-modal-db-item-code" placeholder="예: 통신 4-3-1">
+                        </div>
+                        <div class="form-group">
+                            <label for="select-modal-db-item-category">카테고리</label>
+                            <select id="select-modal-db-item-category" style="width: 100%; padding: 10px; background: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: var(--radius-sm); outline: none;">
+                                <option value="device">기기/인출</option>
+                                <option value="cable">케이블/배선</option>
+                                <option value="pipe">관로/배관</option>
+                                <option value="labor">노무/토공</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-15">
+                        <label for="input-modal-db-item-name">품명</label>
+                        <input type="text" id="input-modal-db-item-name" placeholder="예: UTP 케이블 포설 (구내 4P)">
+                    </div>
+
+                    <div class="form-grid mb-15" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div class="form-group">
+                            <label for="input-modal-db-item-spec">규격</label>
+                            <input type="text" id="input-modal-db-item-spec" placeholder="예: 표준 규격 또는 상세 규격">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-modal-db-item-unit">단위</label>
+                            <input type="text" id="input-modal-db-item-unit" placeholder="예: 개, M, 10m">
+                        </div>
+                    </div>
+
+                    <div class="form-grid mb-15" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div class="form-group">
+                            <label for="select-modal-db-item-type">노무 직종</label>
+                            <select id="select-modal-db-item-type" style="width: 100%; padding: 10px; background: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: var(--radius-sm); outline: none;">
+                                <option value="통신내선공">통신내선공</option>
+                                <option value="통신설비공">통신설비공</option>
+                                <option value="통신외선공">통신외선공</option>
+                                <option value="통신케이블공">통신케이블공</option>
+                                <option value="특별인부">특별인부</option>
+                                <option value="보통인부">보통인부</option>
+                                <option value="광케이블설치사">광케이블설치사</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-modal-db-item-factor">기본품셈 (인)</label>
+                            <input type="number" id="input-modal-db-item-factor" value="0.1" step="0.0001" min="0">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-modal-db-item-keywords">검색 키워드 (쉼표로 구분)</label>
+                        <input type="text" id="input-modal-db-item-keywords" placeholder="예: utp, 케이블, 배선">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline" onclick="closeModal('modal-edit-master-db-item')">취소</button>
+                    <button class="btn btn-primary" id="btn-confirm-edit-db-item">저장하기</button>
                 </div>
             </div>
         </div>
