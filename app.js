@@ -729,14 +729,10 @@ window.syncLaborBasisTable = syncLaborBasisTable;
 
 // 1. 단가조사 직접 추가 모달 열기
 function openAddPriceItemModal() {
-    const selectDiv = document.getElementById("select-modal-price-division");
-    selectDiv.innerHTML = "";
-    state.divisions.forEach(div => {
-        const opt = document.createElement("option");
-        opt.value = div.id;
-        opt.textContent = div.name;
-        selectDiv.appendChild(opt);
-    });
+    if (state.divisions.length === 0) {
+        showToast("선택된 공종이 없습니다. 먼저 공종설정 탭에서 공종을 추가해 주세요.", "warning");
+        return;
+    }
 
     // Populate labor-ref select from STANDARD_LABOR_DB
     const selectLabor = document.getElementById("select-modal-price-labor-ref");
@@ -760,7 +756,6 @@ function openAddPriceItemModal() {
 
 // 2. 단가조사 직접 추가 처리
 function confirmAddPriceItem() {
-    const divId = document.getElementById("select-modal-price-division").value;
     const name = document.getElementById("input-modal-price-name").value.trim();
     const spec = document.getElementById("input-modal-price-spec").value.trim();
     const unit = document.getElementById("input-modal-price-unit").value.trim();
@@ -777,8 +772,11 @@ function confirmAddPriceItem() {
         return;
     }
 
-    const div = state.divisions.find(d => d.id === divId);
-    if (!div) return;
+    const div = state.divisions.find(d => d.id === state.activeDivisionId);
+    if (!div) {
+        showToast("선택된 활성 공종이 없습니다. 공종을 먼저 추가하거나 활성화해 주세요.", "danger");
+        return;
+    }
 
     // Generate custom masterId
     const newMasterId = "M_CUSTOM_" + Date.now();
