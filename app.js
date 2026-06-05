@@ -97,41 +97,9 @@ let state = {
         generalAdmin: 6.0,
         profit: 15.0
     },
-    divisions: [
-        {
-            id: "div-1",
-            name: "1. 통신설비공사",
-            items: [
-                { id: "item-1", masterId: "M001", name: "모듈라짹", spec: "매입용, Cat.5 2구", unit: "개", qty: 2, materialPrice: 11500, laborType: "통신내선공", laborFactor: 0.0336, laborScenario: "new", laborMultiplier: 1.0, laborRef: "통신 4-3-2", laborRemark: "신설" },
-                { id: "item-2", masterId: "M002", name: "TV UNIT", spec: "쌍방향, 단말", unit: "개", qty: 2, materialPrice: 2635, laborType: "통신내선공", laborFactor: 0.0700, laborScenario: "new", laborMultiplier: 1.0, laborRef: "통신 4-2-2", laborRemark: "신설" },
-                { id: "item-3", masterId: "M003", name: "TV UNIT", spec: "쌍방향, 직렬", unit: "개", qty: 2, materialPrice: 2750, laborType: "통신내선공", laborFactor: 0.0700, laborScenario: "new", laborMultiplier: 1.0, laborRef: "통신 4-2-2", laborRemark: "신설" },
-                { id: "item-4", masterId: "M007", name: "무선 경광등", spec: "경보장치용", unit: "개", qty: 2, materialPrice: 195500, laborType: "통신내선공", laborFactor: 0.1000, laborScenario: "new", laborMultiplier: 1.0, laborRef: "통신 4-4-1", laborRemark: "신설" }
-            ]
-        },
-        {
-            id: "div-2",
-            name: "2. 방송설비공사",
-            items: [
-                { id: "item-5", masterId: "M004", name: "스피커", spec: "스피커(S.T), 천정용(3W)", unit: "개", qty: 16, materialPrice: 16174, laborType: "통신설비공", laborFactor: 0.2100, laborScenario: "new", laborMultiplier: 1.0, laborRef: "통신 7-11-5", laborRemark: "신설" }
-            ]
-        },
-        {
-            id: "div-3",
-            name: "3. CCTV설비공사",
-            items: [
-                { id: "item-6", masterId: "M006", name: "CCTV카메라(일체형)", spec: "Color CCD, Dome(고정형)", unit: "개", qty: 8, materialPrice: 125000, laborType: "통신설비공", laborFactor: 0.2400, laborScenario: "new", laborMultiplier: 1.0, laborRef: "통신 9-2-1-1", laborRemark: "신설" }
-            ]
-        }
-    ],
-    itemPrices: {
-        "M001": { appliedPrice: 11500, facilityPrice: 11500, marketPrice: { price: 0, page: "" }, infoPrice: { price: 11500, page: "1-1311" }, materialPrice: { price: 0, page: "" }, distPrice: { price: 0, page: "" }, invest1: { price: 0, page: "" }, invest2: { price: 0, page: "" } },
-        "M002": { appliedPrice: 2635, facilityPrice: 2635, marketPrice: { price: 0, page: "" }, infoPrice: { price: 2635, page: "1-1311" }, materialPrice: { price: 0, page: "" }, distPrice: { price: 0, page: "" }, invest1: { price: 0, page: "" }, invest2: { price: 0, page: "" } },
-        "M003": { appliedPrice: 2750, facilityPrice: 2750, marketPrice: { price: 0, page: "" }, infoPrice: { price: 2750, page: "1-1311" }, materialPrice: { price: 0, page: "" }, distPrice: { price: 0, page: "" }, invest1: { price: 0, page: "" }, invest2: { price: 0, page: "" } },
-        "M004": { appliedPrice: 16174, facilityPrice: 16174, marketPrice: { price: 0, page: "" }, infoPrice: { price: 20000, page: "1-1402" }, materialPrice: { price: 0, page: "" }, distPrice: { price: 0, page: "" }, invest1: { price: 0, page: "" }, invest2: { price: 0, page: "" } },
-        "M006": { appliedPrice: 125000, facilityPrice: 125000, marketPrice: { price: 0, page: "" }, infoPrice: { price: 125000, page: "1-1502" }, materialPrice: { price: 0, page: "" }, distPrice: { price: 0, page: "" }, invest1: { price: 0, page: "" }, invest2: { price: 0, page: "" } },
-        "M007": { appliedPrice: 195500, facilityPrice: 195500, marketPrice: { price: 0, page: "" }, infoPrice: { price: 195500, page: "1-1505" }, materialPrice: { price: 0, page: "" }, distPrice: { price: 0, page: "" }, invest1: { price: 0, page: "" }, invest2: { price: 0, page: "" } }
-    },
-    activeDivisionId: "div-1"
+    divisions: [],
+    itemPrices: {},
+    activeDivisionId: ""
 };
 
 let costShareChart = null;
@@ -1206,6 +1174,11 @@ function loadActiveDivision() {
     const tbody = document.getElementById("boq-table-body");
     tbody.innerHTML = "";
 
+    if (state.divisions.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" class="text-center" style="text-align: center; color: var(--text-muted); padding: 40px 0;"><i class="fa-solid fa-folder-tree" style="font-size: 24px; margin-bottom: 10px; display: block;"></i>등록된 공종이 없습니다. 좌측 메뉴의 '공종설정' 탭에서 공종을 먼저 추가하세요.</td></tr>`;
+        return;
+    }
+
     if (!activeDiv || activeDiv.items.length === 0) {
         tbody.innerHTML = `<tr><td colspan="8" class="text-center" style="text-align: center; color: var(--text-muted); padding: 40px 0;"><i class="fa-solid fa-folder-open" style="font-size: 24px; margin-bottom: 10px; display: block;"></i>추가된 품목이 없습니다. 우측 라이브러리에서 품목을 검색해 추가하세요.</td></tr>`;
         return;
@@ -1325,7 +1298,10 @@ function populateDbLibrary(query = "", category = "all") {
 // Add Item from DB Library to BOQ
 function addItemToActiveDivision(dbItem) {
     const activeDiv = state.divisions.find(d => d.id === state.activeDivisionId);
-    if (!activeDiv) return;
+    if (!activeDiv) {
+        showToast("선택된 공종이 없습니다. 먼저 공종설정 탭에서 공종을 추가해 주세요.", "warning");
+        return;
+    }
 
     // Check if item price configuration exists in state, if not create it
     if (!state.itemPrices[dbItem.id]) {
