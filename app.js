@@ -22929,10 +22929,12 @@ function searchAddLaborDbList(query) {
     
     const queryL = query.toLowerCase().trim();
     const filtered = STANDARD_LABOR_DB.filter(dbItem => {
+        const laborsKeysMatch = dbItem.labors ? Object.keys(dbItem.labors).some(k => k.toLowerCase().includes(queryL)) : false;
         return dbItem.name.toLowerCase().includes(queryL) ||
                dbItem.spec.toLowerCase().includes(queryL) ||
                dbItem.code.toLowerCase().includes(queryL) ||
-               dbItem.laborType.toLowerCase().includes(queryL);
+               (dbItem.laborType && dbItem.laborType.toLowerCase().includes(queryL)) ||
+               laborsKeysMatch;
     });
     
     if (filtered.length === 0) {
@@ -22943,14 +22945,29 @@ function searchAddLaborDbList(query) {
     filtered.forEach(dbItem => {
         const row = document.createElement("div");
         row.className = "modal-db-item-row";
+        
+        let laborStr = "";
+        let firstLaborType = "";
+        let firstLaborFactor = 0;
+        
+        if (dbItem.labors) {
+            laborStr = Object.entries(dbItem.labors).map(([type, factor]) => `<div class="modal-db-item-type" style="font-size: 11px; color: var(--text-secondary); text-align: right;">${type} <span style="color: var(--accent); font-weight: 600;">${factor.toFixed(4)}</span> 인</div>`).join("");
+            firstLaborType = Object.keys(dbItem.labors)[0] || "";
+            firstLaborFactor = Object.values(dbItem.labors)[0] || 0;
+        } else {
+            laborStr = `<span class="modal-db-item-factor">${dbItem.laborFactor.toFixed(4)} 인</span>
+                        <div class="modal-db-item-type">${dbItem.laborType}</div>`;
+            firstLaborType = dbItem.laborType;
+            firstLaborFactor = dbItem.laborFactor;
+        }
+        
         row.innerHTML = `
             <div class="modal-db-item-details">
                 <span class="modal-db-item-name">${dbItem.name} (${dbItem.code})</span>
                 <span class="modal-db-item-spec">${dbItem.spec} [${dbItem.unit}]</span>
             </div>
-            <div class="modal-db-item-right">
-                <span class="modal-db-item-factor">${dbItem.laborFactor.toFixed(4)} 인</span>
-                <div class="modal-db-item-type">${dbItem.laborType}</div>
+            <div class="modal-db-item-right" style="flex-direction: column; align-items: flex-end; justify-content: center; gap: 4px;">
+                ${laborStr}
             </div>
         `;
         
@@ -22958,8 +22975,8 @@ function searchAddLaborDbList(query) {
             document.getElementById("input-modal-labor-item-name").value = dbItem.name;
             document.getElementById("input-modal-labor-item-spec").value = dbItem.spec;
             document.getElementById("input-modal-labor-item-unit").value = dbItem.unit;
-            document.getElementById("input-modal-labor-item-factor").value = dbItem.laborFactor.toFixed(4);
-            document.getElementById("select-modal-labor-item-type").value = dbItem.laborType;
+            document.getElementById("input-modal-labor-item-factor").value = firstLaborFactor.toFixed(4);
+            document.getElementById("select-modal-labor-item-type").value = firstLaborType;
             document.getElementById("input-modal-labor-item-ref").value = dbItem.code;
             
             list.querySelectorAll(".modal-db-item-row").forEach(r => r.classList.remove("active"));
@@ -22979,7 +22996,7 @@ function confirmAddLaborItem() {
     const qty = parseFloat(document.getElementById("input-modal-labor-item-qty").value) || 0;
     const factor = parseFloat(document.getElementById("input-modal-labor-item-factor").value) || 0;
     const laborType = document.getElementById("select-modal-labor-item-type").value;
-    const ref = document.getElementById("input-modal-labor-item-ref").value;
+    const ref = document.getElementById("input-modal-labor-item-ref").value.trim();
 
     if (!name) {
         showToast("품목명을 입력해주세요.", "danger");
@@ -23002,13 +23019,25 @@ function confirmAddLaborItem() {
         unit: unit,
         qty: qty,
         materialPrice: 0,
-        laborType: laborType,
-        laborFactor: factor,
         laborScenario: "new",
         laborMultiplier: 1.0,
         laborRef: ref || "자체품셈",
         laborRemark: "신설"
     };
+
+    // If ref corresponds to a standard labor item, copy all labors
+    if (ref) {
+        const dbItem = state.standardLaborDb.find(d => d.code === ref);
+        if (dbItem && dbItem.labors) {
+            newItem.labors = JSON.parse(JSON.stringify(dbItem.labors));
+        } else {
+            newItem.laborType = laborType;
+            newItem.laborFactor = factor;
+        }
+    } else {
+        newItem.laborType = laborType;
+        newItem.laborFactor = factor;
+    }
 
     div.items.push(newItem);
     closeModal("modal-add-labor-item");
