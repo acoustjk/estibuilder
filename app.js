@@ -3,40 +3,74 @@
 // 1. Master Item Database (통신공사 품목 DB)
 const ITEM_MASTER_DB = [
     // category: device
-    { id: "M001", name: "모듈라짹", spec: "매입용, Cat.5 2구", unit: "개", category: "device", materialPrice: 11500, laborType: "통신내선공", laborFactor: 0.0336 },
-    { id: "M002", name: "TV UNIT", spec: "쌍방향, 단말", unit: "개", category: "device", materialPrice: 2635, laborType: "통신내선공", laborFactor: 0.0700 },
-    { id: "M003", name: "TV UNIT", spec: "쌍방향, 직렬", unit: "개", category: "device", materialPrice: 2750, laborType: "통신내선공", laborFactor: 0.0700 },
-    { id: "M004", name: "스피커", spec: "스피커(S.T), 천정용(3W)", unit: "개", category: "device", materialPrice: 16174, laborType: "통신설비공", laborFactor: 0.2100 },
-    { id: "M005", name: "스피커", spec: "벽부형(3W)", unit: "개", category: "device", materialPrice: 18500, laborType: "통신설비공", laborFactor: 0.2100 },
-    { id: "M006", name: "CCTV카메라(일체형)", spec: "Color CCD, Dome(고정형)", unit: "개", category: "device", materialPrice: 125000, laborType: "통신설비공", laborFactor: 0.2400 },
-    { id: "M007", name: "무선 경광등", spec: "경보장치용", unit: "개", category: "device", materialPrice: 195500, laborType: "통신내선공", laborFactor: 0.1000 },
-    { id: "M008", name: "비상벨 송신기", spec: "무선 송신형", unit: "개", category: "device", materialPrice: 13800, laborType: "통신내선공", laborFactor: 0.1000 },
-    { id: "M009", name: "비상벨 수신기", spec: "메인 제어형", unit: "개", category: "device", materialPrice: 465750, laborType: "통신내선공", laborFactor: 0.1000 },
-    { id: "M010", name: "비상벨 중계기", spec: "신호 증폭용", unit: "개", category: "device", materialPrice: 523250, laborType: "통신내선공", laborFactor: 0.1000 },
-    { id: "M011", name: "경광등용 안내판", spec: "아크릴 포장형", unit: "개", category: "device", materialPrice: 11500, laborType: "통신내선공", laborFactor: 0.1000 },
+    { id: "M001", name: "모듈라짹", spec: "매입용, Cat.5 2구", unit: "개", category: "device", materialPrice: 11500, laborType: "통신내선공", laborFactor: 0.0336, laborRef: "통신 4-3-2" },
+    { id: "M002", name: "TV UNIT", spec: "쌍방향, 단말", unit: "개", category: "device", materialPrice: 2635, laborType: "통신내선공", laborFactor: 0.0700, laborRef: "통신 4-2-2" },
+    { id: "M003", name: "TV UNIT", spec: "쌍방향, 직렬", unit: "개", category: "device", materialPrice: 2750, laborType: "통신내선공", laborFactor: 0.0700, laborRef: "통신 4-2-2" },
+    { id: "M004", name: "스피커", spec: "스피커(S.T), 천정용(3W)", unit: "개", category: "device", materialPrice: 16174, laborType: "통신설비공", laborFactor: 0.2100, laborRef: "통신 7-11-5" },
+    { id: "M005", name: "스피커", spec: "벽부형(3W)", unit: "개", category: "device", materialPrice: 18500, laborType: "통신설비공", laborFactor: 0.2100, laborRef: "통신 7-11-5" },
+    { id: "M006", name: "CCTV카메라(일체형)", spec: "Color CCD, Dome(고정형)", unit: "개", category: "device", materialPrice: 125000, laborType: "통신설비공", laborFactor: 0.2400, laborRef: "통신 9-2-1-1" },
+    { id: "M007", name: "무선 경광등", spec: "경보장치용", unit: "개", category: "device", materialPrice: 195500, laborType: "통신내선공", laborFactor: 0.1000, laborRef: "통신 4-4-1" },
+    { id: "M008", name: "비상벨 송신기", spec: "무선 송신형", unit: "개", category: "device", materialPrice: 13800, laborType: "통신내선공", laborFactor: 0.1000, laborRef: "통신 4-4-1" },
+    { id: "M009", name: "비상벨 수신기", spec: "메인 제어형", unit: "개", category: "device", materialPrice: 465750, laborType: "통신내선공", laborFactor: 0.1000, laborRef: "통신 4-4-1" },
+    { id: "M010", name: "비상벨 중계기", spec: "신호 증폭용", unit: "개", category: "device", materialPrice: 523250, laborType: "통신내선공", laborFactor: 0.1000, laborRef: "통신 4-4-1" },
+    { id: "M011", name: "경광등용 안내판", spec: "아크릴 포장형", unit: "개", category: "device", materialPrice: 11500, laborType: "통신내선공", laborFactor: 0.1000, laborRef: "통신 4-4-1" },
     
     // category: cable
-    { id: "C001", name: "UTP 케이블", spec: "CAT 5E. 4P-0.5mm", unit: "M", category: "cable", materialPrice: 350, laborType: "통신내선공", laborFactor: 0.0336 },
-    { id: "C002", name: "광섬유 케이블", spec: "2Core (S/M)", unit: "M", category: "cable", materialPrice: 850, laborType: "통신설비공", laborFactor: 0.0500 },
-    { id: "C003", name: "Speaker Cable", spec: "2S11F", unit: "M", category: "cable", materialPrice: 650, laborType: "통신설비공", laborFactor: 0.0400 },
-    { id: "C004", name: "난연성 비닐절연 접지선", spec: "0.6/1kV F-GV 16㎟", unit: "M", category: "cable", materialPrice: 3500, laborType: "통신내선공", laborFactor: 0.1200 },
-    { id: "C005", name: "압착단자 (접지용)", spec: "R형동선 나압착 16 ㎟", unit: "개", category: "cable", materialPrice: 350, laborType: "통신내선공", laborFactor: 0.0500 },
+    { id: "C001", name: "UTP 케이블", spec: "CAT 5E. 4P-0.5mm", unit: "M", category: "cable", materialPrice: 350, laborType: "통신내선공", laborFactor: 0.0336, laborRef: "통신 4-3-2" },
+    { id: "C002", name: "광섬유 케이블", spec: "2Core (S/M)", unit: "M", category: "cable", materialPrice: 850, laborType: "통신설비공", laborFactor: 0.0500, laborRef: "통신 4-1-3" },
+    { id: "C003", name: "Speaker Cable", spec: "2S11F", unit: "M", category: "cable", materialPrice: 650, laborType: "통신설비공", laborFactor: 0.0400, laborRef: "통신 4-8-1" },
+    { id: "C004", name: "난연성 비닐절연 접지선", spec: "0.6/1kV F-GV 16㎟", unit: "M", category: "cable", materialPrice: 3500, laborType: "통신내선공", laborFactor: 0.1200, laborRef: "통신 6-1-1" },
+    { id: "C005", name: "압착단자 (접지용)", spec: "R형동선 나압착 16 ㎟", unit: "개", category: "cable", materialPrice: 350, laborType: "통신내선공", laborFactor: 0.0500, laborRef: "통신 6-1-1" },
 
     // category: pipe
-    { id: "P001", name: "경질비닐전선관(통신)", spec: "HI 22 mm", unit: "M", category: "pipe", materialPrice: 1200, laborType: "통신내선공", laborFactor: 0.0600 },
-    { id: "P002", name: "경질비닐전선관(통신)", spec: "HI 36 mm", unit: "M", category: "pipe", materialPrice: 1800, laborType: "통신내선공", laborFactor: 0.0800 },
-    { id: "P003", name: "경질비닐전선관(노출)", spec: "HI 36 mm", unit: "M", category: "pipe", materialPrice: 2000, laborType: "통신내선공", laborFactor: 0.0900 },
-    { id: "P004", name: "강제전선관용 부품", spec: "위샤캡, 36 C", unit: "개", category: "pipe", materialPrice: 1500, laborType: "통신내선공", laborFactor: 0.0500 },
-    { id: "P005", name: "지중선용 가선철물", spec: "전주용입상관, D130x2m", unit: "개", category: "pipe", materialPrice: 45000, laborType: "통신내선공", laborFactor: 0.2500 },
-    { id: "P006", name: "통신맨홀 (사각수공 1호)", spec: "450x950x700", unit: "개소", category: "pipe", materialPrice: 180000, laborType: "통신내선공", laborFactor: 1.5000 },
-    { id: "P007", name: "관로구방수(통신)", spec: "D 30", unit: "개소", category: "pipe", materialPrice: 8500, laborType: "통신내선공", laborFactor: 0.1500 },
-    { id: "P008", name: "관로구방수(통신)", spec: "D 50", unit: "개소", category: "pipe", materialPrice: 12000, laborType: "통신내선공", laborFactor: 0.2000 },
+    { id: "P001", name: "경질비닐전선관(통신)", spec: "HI 22 mm", unit: "M", category: "pipe", materialPrice: 1200, laborType: "통신내선공", laborFactor: 0.0600, laborRef: "통신 3-1-1" },
+    { id: "P002", name: "경질비닐전선관(통신)", spec: "HI 36 mm", unit: "M", category: "pipe", materialPrice: 1800, laborType: "통신내선공", laborFactor: 0.0800, laborRef: "통신 3-1-1" },
+    { id: "P003", name: "경질비닐전선관(노출)", spec: "HI 36 mm", unit: "M", category: "pipe", materialPrice: 2000, laborType: "통신내선공", laborFactor: 0.0900, laborRef: "통신 3-1-1" },
+    { id: "P004", name: "강제전선관용 부품", spec: "위샤캡, 36 C", unit: "개", category: "pipe", materialPrice: 1500, laborType: "통신내선공", laborFactor: 0.0500, laborRef: "통신 3-7-1" },
+    { id: "P005", name: "지중선용 가선철물", spec: "전주용입상관, D130x2m", unit: "개", category: "pipe", materialPrice: 45000, laborType: "통신내선공", laborFactor: 0.2500, laborRef: "통신 3-7-1" },
+    { id: "P006", name: "통신맨홀 (사각수공 1호)", spec: "450x950x700", unit: "개소", category: "pipe", materialPrice: 180000, laborType: "통신내선공", laborFactor: 1.5000, laborRef: "통신 2-3-1" },
+    { id: "P007", name: "관로구방수(통신)", spec: "D 30", unit: "개소", category: "pipe", materialPrice: 8500, laborType: "통신내선공", laborFactor: 0.1500, laborRef: "통신 4-1-7" },
+    { id: "P008", name: "관로구방수(통신)", spec: "D 50", unit: "개소", category: "pipe", materialPrice: 12000, laborType: "통신내선공", laborFactor: 0.2000, laborRef: "통신 4-1-7" },
     
     // category: labor
-    { id: "L001", name: "터파기(인력100%)", spec: "보통토사0∼1m", unit: "㎥", category: "labor", materialPrice: 0, laborType: "특별인부", laborFactor: 0.3500 },
-    { id: "L002", name: "되메우기(인력100%)", spec: "보통토사", unit: "㎥", category: "labor", materialPrice: 0, laborType: "특별인부", laborFactor: 0.2000 },
-    { id: "L003", name: "현장내잔토처리", spec: "소운반.고르기", unit: "㎥", category: "labor", materialPrice: 0, laborType: "특별인부", laborFactor: 0.1500 },
-    { id: "L004", name: "잡석깔기지정", spec: "인력포설", unit: "㎥", category: "labor", materialPrice: 28000, laborType: "특별인부", laborFactor: 0.4000 }
+    { id: "L001", name: "터파기(인력100%)", spec: "보통토사0∼1m", unit: "㎥", category: "labor", materialPrice: 0, laborType: "특별인부", laborFactor: 0.3500, laborRef: "공통 3-2-1" },
+    { id: "L002", name: "되메우기(인력100%)", spec: "보통토사", unit: "㎥", category: "labor", materialPrice: 0, laborType: "특별인부", laborFactor: 0.2000, laborRef: "공통 3-4-3" },
+    { id: "L003", name: "현장내잔토처리", spec: "소운반.고르기", unit: "㎥", category: "labor", materialPrice: 0, laborType: "특별인부", laborFactor: 0.1500, laborRef: "공통 3-2-1" },
+    { id: "L004", name: "잡석깔기지정", spec: "인력포설", unit: "㎥", category: "labor", materialPrice: 28000, laborType: "특별인부", laborFactor: 0.4000, laborRef: "공통 3-4-8" }
+];
+
+// 표준품셈 데이터베이스 (자동 추천 및 세부 설정용)
+const STANDARD_LABOR_DB = [
+    { code: "통신 4-3-2", name: "모듈라짹 설치", spec: "매입용, Cat.5/6 1~2구", unit: "개", laborType: "통신내선공", laborFactor: 0.0336, category: "device", keywords: ["모듈", "짹", "modular", "jack", "outlet", "아웃렛"] },
+    { code: "통신 4-2-2", name: "TV UNIT 설치", spec: "쌍방향, 아웃렛형", unit: "개", laborType: "통신내선공", laborFactor: 0.0700, category: "device", keywords: ["tv", "unit", "아웃렛", "유니트", "안테나", "수구"] },
+    { code: "통신 7-11-5", name: "천정형 스피커 설치", spec: "천정 매입형 스피커", unit: "개", laborType: "통신설비공", laborFactor: 0.2100, category: "device", keywords: ["스피커", "천정형", "speaker", "ceiling"] },
+    { code: "통신 7-11-5", name: "벽부형 스피커 설치", spec: "벽부 노출형 스피커", unit: "개", laborType: "통신설비공", laborFactor: 0.2100, category: "device", keywords: ["스피커", "벽부형", "speaker", "wall"] },
+    { code: "통신 9-2-1-1", name: "CCTV 카메라 설치 (Dome/고정형)", spec: "Color CCD, Dome형 또는 고정형", unit: "개", laborType: "통신설비공", laborFactor: 0.2400, category: "device", keywords: ["cctv", "카메라", "camera", "돔형", "감시"] },
+    { code: "통신 4-4-1", name: "경광등/비상벨 송신기 설치", spec: "경보장치용 기기", unit: "개", laborType: "통신내선공", laborFactor: 0.1000, category: "device", keywords: ["경광등", "비상벨", "송신기", "수신기", "중계기", "안내판"] },
+    { code: "통신 4-3-2", name: "UTP 케이블 관로내 배선 (옥내)", spec: "Cat.5E/6 4P 전선관배선", unit: "M", laborType: "통신내선공", laborFactor: 0.0336, category: "cable", keywords: ["utp", "케이블", "cable", "배선", "관로내", "랜선"] },
+    { code: "통신 4-3-1", name: "UTP 케이블 관로내 배선 (옥외)", spec: "Cat.5E/6 4P 옥외관로", unit: "M", laborType: "통신내선공", laborFactor: 0.0560, category: "cable", keywords: ["utp", "옥외", "cable", "배선", "외곽"] },
+    { code: "통신 4-1-3", name: "광섬유케이블 관로내 배선", spec: "싱글모드/멀티모드 2~8Core", unit: "M", laborType: "통신설비공", laborFactor: 0.0500, category: "cable", keywords: ["광케이블", "광섬유", "optical", "fiber", "배선"] },
+    { code: "통신 4-8-1", name: "스피커선/방송선 배선", spec: "원격방송 및 오디오 라인", unit: "M", laborType: "통신설비공", laborFactor: 0.0400, category: "cable", keywords: ["speaker", "스피커선", "방송선", "배선", "오디오"] },
+    { code: "통신 6-1-1", name: "접지선 부설", spec: "F-GV 접지선 포설", unit: "M", laborType: "통신내선공", laborFactor: 0.1200, category: "cable", keywords: ["접지선", "접지", "earth", "gv", "부설"] },
+    { code: "통신 6-1-1", name: "압착단자 취부", spec: "접지단자 압착 가공", unit: "개", laborType: "통신내선공", laborFactor: 0.0500, category: "cable", keywords: ["압착단자", "단자", "터미널", "압착"] },
+    { code: "통신 3-1-1", name: "경질비닐전선관 배관 (매입 HI-PVC 22mm)", spec: "HI-PVC 22mm 슬라브/벽체매입", unit: "M", laborType: "통신내선공", laborFactor: 0.0600, category: "pipe", keywords: ["경질비닐", "전선관", "h-pvc", "pvc", "배관", "매입", "22mm"] },
+    { code: "통신 3-1-1", name: "경질비닐전선관 배관 (매입 HI-PVC 36mm)", spec: "HI-PVC 36mm 매입배관", unit: "M", laborType: "통신내선공", laborFactor: 0.0800, category: "pipe", keywords: ["경질비닐", "전선관", "h-pvc", "pvc", "배관", "매입", "36mm"] },
+    { code: "통신 3-1-1", name: "경질비닐전선관 노출배관 (36mm)", spec: "HI-PVC 36mm 노출배관", unit: "M", laborType: "통신내선공", laborFactor: 0.0900, category: "pipe", keywords: ["경질비닐", "전선관", "pvc", "배관", "노출", "36mm"] },
+    { code: "통신 3-7-1", name: "전선관용 부품 취부", spec: "위샤캡/커넥터 등 부속재", unit: "개", laborType: "통신내선공", laborFactor: 0.0500, category: "pipe", keywords: ["부품", "부속", "위샤캡", "커플링", "커넥터"] },
+    { code: "통신 3-7-1", name: "지중선용 입상관 설치", spec: "전주용입상관 D130", unit: "개", laborType: "통신내선공", laborFactor: 0.2500, category: "pipe", keywords: ["입상관", "가선철물", "지중선", "전주"] },
+    { code: "통신 2-3-1", name: "통신맨홀 설치 (사각수공)", spec: "사각 수공 콘크리트 구조물", unit: "개소", laborType: "통신내선공", laborFactor: 1.5000, category: "pipe", keywords: ["맨홀", "수공", "사각수공", "구조물"] },
+    { code: "통신 4-1-7", name: "관로구 방수 (D30)", spec: "지하 진입 관로구 방수 처리", unit: "개소", laborType: "통신내선공", laborFactor: 0.1500, category: "pipe", keywords: ["방수", "관로구", "d30", "밀폐"] },
+    { code: "통신 4-1-7", name: "관로구 방수 (D50)", spec: "지하 진입 관로구 방수 처리", unit: "개소", laborType: "통신내선공", laborFactor: 0.2000, category: "pipe", keywords: ["방수", "관로구", "d50", "밀폐"] },
+    { code: "공통 3-2-1", name: "인력 터파기", spec: "보통토사 깊이 0~1m", unit: "㎥", laborType: "특별인부", laborFactor: 0.3500, category: "labor", keywords: ["터파기", "굴착", "인력", "토사"] },
+    { code: "공통 3-4-3", name: "인력 되메우기", spec: "보통토사 다짐 포함", unit: "㎥", laborType: "특별인부", laborFactor: 0.2000, category: "labor", keywords: ["되메우기", "메우기", "인력", "토사"] },
+    { code: "공통 3-2-1", name: "현장내 잔토처리", spec: "인력 소운반 및 고르기", unit: "㎥", laborType: "특별인부", laborFactor: 0.1500, category: "labor", keywords: ["잔토", "토사", "고르기", "소운반"] },
+    { code: "공통 3-4-8", name: "잡석깔기 지정", spec: "인력 포설 및 다짐", unit: "㎥", laborType: "특별인부", laborFactor: 0.4000, category: "labor", keywords: ["잡석", "잡석깔기", "포설", "자갈"] },
+    { code: "공통 5-1-1", name: "배관 및 기기 지지대 제작설치", spec: "철제 지지대 인력제작설치", unit: "개", laborType: "특별인부", laborFactor: 0.5000, category: "labor", keywords: ["지지대", "제작", "앵글", "거치대"] },
+    { code: "공통 4-1-1", name: "고정용 합판 설치", spec: "벽부 기기 취부용 판재 고정", unit: "개", laborType: "특별인부", laborFactor: 0.0800, category: "labor", keywords: ["합판", "판재", "목재", "고정"] },
+    { code: "통신 4-3-3", name: "UTP 케이블 단말 RJ-45 취부", spec: "RJ-45 플러그 커넥터 압착", unit: "개", laborType: "통신내선공", laborFactor: 0.0150, category: "cable", keywords: ["rj", "rj45", "단말", "커넥터", "압착"] },
+    { code: "통신 4-1-5", name: "광케이블 성단 및 융착접속", spec: "광섬유 Core당 접속 및 함체 수용", unit: "코어", laborType: "통신설비공", laborFactor: 0.1800, category: "cable", keywords: ["융착", "접속", "성단", "코어", "광접속"] },
+    { code: "통신 7-11-2", name: "방송 랙 캐비닛 앰프 설치", spec: "Rack Cabinet 및 앰프 기기 조립", unit: "대", laborType: "통신설비공", laborFactor: 1.2500, category: "device", keywords: ["랙", "캐비닛", "앰프", "방송기기", "주장치", "rack"] },
+    { code: "통신 9-2-3", name: "CCTV NVR/녹화기 설치", spec: "네트워크 비디오 녹화 장치 설치", unit: "대", laborType: "통신설비공", laborFactor: 0.8500, category: "device", keywords: ["nvr", "녹화기", "저장장치", "nvr"] }
 ];
 
 // 2. Wage Rates (노임 단가 테이블)
@@ -68,24 +102,24 @@ let state = {
             id: "div-1",
             name: "1. 통신설비공사",
             items: [
-                { id: "item-1", masterId: "M001", name: "모듈라짹", spec: "매입용, Cat.5 2구", unit: "개", qty: 2, materialPrice: 11500, laborType: "통신내선공", laborFactor: 0.0336 },
-                { id: "item-2", masterId: "M002", name: "TV UNIT", spec: "쌍방향, 단말", unit: "개", qty: 2, materialPrice: 2635, laborType: "통신내선공", laborFactor: 0.0700 },
-                { id: "item-3", masterId: "M003", name: "TV UNIT", spec: "쌍방향, 직렬", unit: "개", qty: 2, materialPrice: 2750, laborType: "통신내선공", laborFactor: 0.0700 },
-                { id: "item-4", masterId: "M007", name: "무선 경광등", spec: "경보장치용", unit: "개", qty: 2, materialPrice: 195500, laborType: "통신내선공", laborFactor: 0.1000 }
+                { id: "item-1", masterId: "M001", name: "모듈라짹", spec: "매입용, Cat.5 2구", unit: "개", qty: 2, materialPrice: 11500, laborType: "통신내선공", laborFactor: 0.0336, laborScenario: "new", laborMultiplier: 1.0, laborRef: "통신 4-3-2", laborRemark: "신설" },
+                { id: "item-2", masterId: "M002", name: "TV UNIT", spec: "쌍방향, 단말", unit: "개", qty: 2, materialPrice: 2635, laborType: "통신내선공", laborFactor: 0.0700, laborScenario: "new", laborMultiplier: 1.0, laborRef: "통신 4-2-2", laborRemark: "신설" },
+                { id: "item-3", masterId: "M003", name: "TV UNIT", spec: "쌍방향, 직렬", unit: "개", qty: 2, materialPrice: 2750, laborType: "통신내선공", laborFactor: 0.0700, laborScenario: "new", laborMultiplier: 1.0, laborRef: "통신 4-2-2", laborRemark: "신설" },
+                { id: "item-4", masterId: "M007", name: "무선 경광등", spec: "경보장치용", unit: "개", qty: 2, materialPrice: 195500, laborType: "통신내선공", laborFactor: 0.1000, laborScenario: "new", laborMultiplier: 1.0, laborRef: "통신 4-4-1", laborRemark: "신설" }
             ]
         },
         {
             id: "div-2",
             name: "2. 방송설비공사",
             items: [
-                { id: "item-5", masterId: "M004", name: "스피커", spec: "스피커(S.T), 천정용(3W)", unit: "개", qty: 16, materialPrice: 16174, laborType: "통신설비공", laborFactor: 0.2100 }
+                { id: "item-5", masterId: "M004", name: "스피커", spec: "스피커(S.T), 천정용(3W)", unit: "개", qty: 16, materialPrice: 16174, laborType: "통신설비공", laborFactor: 0.2100, laborScenario: "new", laborMultiplier: 1.0, laborRef: "통신 7-11-5", laborRemark: "신설" }
             ]
         },
         {
             id: "div-3",
             name: "3. CCTV설비공사",
             items: [
-                { id: "item-6", masterId: "M006", name: "CCTV카메라(일체형)", spec: "Color CCD, Dome(고정형)", unit: "개", qty: 8, materialPrice: 125000, laborType: "통신설비공", laborFactor: 0.2400 }
+                { id: "item-6", masterId: "M006", name: "CCTV카메라(일체형)", spec: "Color CCD, Dome(고정형)", unit: "개", qty: 8, materialPrice: 125000, laborType: "통신설비공", laborFactor: 0.2400, laborScenario: "new", laborMultiplier: 1.0, laborRef: "통신 9-2-1-1", laborRemark: "신설" }
             ]
         }
     ],
@@ -108,6 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initSettingsListeners();
     initBuilderListeners();
     initPriceListeners();
+    initLaborListeners();
     loadActiveDivision();
     populateDbLibrary();
     calculateEstimates();
@@ -133,6 +168,9 @@ function initTabs() {
             }
             if (tabId === "tab-prices") {
                 renderPriceInvestigationTable();
+            }
+            if (tabId === "tab-labor") {
+                renderLaborBasisTable();
             }
         });
     });
@@ -403,6 +441,358 @@ function renderPriceInvestigationTable() {
     });
 }
 
+// Labor Basis Listeners
+function initLaborListeners() {
+    const btnAuto = document.getElementById("btn-auto-map-labor");
+    if (btnAuto) {
+        btnAuto.addEventListener("click", () => {
+            autoMapAllLaborBasis();
+        });
+    }
+
+    const searchInput = document.getElementById("input-modal-labor-search");
+    if (searchInput) {
+        searchInput.addEventListener("input", (e) => {
+            searchModalLaborBasis(e.target.value);
+        });
+    }
+}
+
+// 품명/규격 기반 텍스트 매칭 추천 알고리즘
+function recommendLaborBasis(itemName, itemSpec) {
+    const queryName = itemName.toLowerCase().trim();
+    const querySpec = itemSpec.toLowerCase().trim();
+    
+    return STANDARD_LABOR_DB.map(dbItem => {
+        let score = 0;
+        const dbName = dbItem.name.toLowerCase();
+        const dbSpec = dbItem.spec.toLowerCase();
+        
+        // 1. 품명 키워드 매칭
+        if (queryName.includes(dbName) || dbName.includes(queryName)) {
+            score += 10;
+        } else {
+            // 단어 토큰 분할 매칭
+            const tokens = queryName.split(/[\s,._-\u3000]+/);
+            tokens.forEach(t => {
+                if (t.length >= 2 && dbName.includes(t)) {
+                    score += 3;
+                }
+            });
+        }
+        
+        // 2. 검색 키워드 목록 매칭
+        if (dbItem.keywords) {
+            dbItem.keywords.forEach(kw => {
+                const kwL = kw.toLowerCase();
+                if (queryName.includes(kwL)) score += 4;
+                if (querySpec.includes(kwL)) score += 2;
+            });
+        }
+        
+        // 3. 규격 매칭
+        if (querySpec && dbSpec) {
+            const specTokens = querySpec.split(/[\s,._-\u3000]+/);
+            specTokens.forEach(t => {
+                if (t.length >= 2 && dbSpec.includes(t)) {
+                    score += 2.5;
+                }
+            });
+        }
+        
+        // 4. 단위 일치 가중치
+        if (dbItem.unit === dbItem.unit) {
+            score += 0.5;
+        }
+        
+        return {
+            dbItem: dbItem,
+            score: score
+        };
+    })
+    .filter(res => res.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 5)
+    .map(res => ({
+        ...res.dbItem,
+        matchScore: Math.min(100, Math.round((res.score / 15) * 100))
+    }));
+}
+
+// 전체 자동 매핑 및 일괄 추천 적용
+function autoMapAllLaborBasis() {
+    let count = 0;
+    state.divisions.forEach(div => {
+        div.items.forEach(item => {
+            const recs = recommendLaborBasis(item.name, item.spec);
+            if (recs.length > 0 && recs[0].matchScore >= 35) {
+                const best = recs[0];
+                if (item.laborRef !== best.code || item.laborFactor !== best.laborFactor || item.laborType !== best.laborType) {
+                    item.laborRef = best.code;
+                    item.laborFactor = best.laborFactor;
+                    item.laborType = best.laborType;
+                    count++;
+                }
+            }
+        });
+    });
+    if (count > 0) {
+        renderLaborBasisTable();
+        calculateEstimates();
+        showToast(`${count}개 품목의 표준품셈 근거가 자동으로 최적 매핑되었습니다.`, "success");
+    } else {
+        showToast("모든 품목이 이미 최적의 표준품셈에 매핑되어 있습니다.", "info");
+    }
+}
+
+let activeLaborEditItem = null;
+
+// 품셈 변경 모달창 열기
+function openLaborRefModal(divId, itemId) {
+    const div = state.divisions.find(d => d.id === divId);
+    if (!div) return;
+    
+    const item = div.items.find(i => i.id === itemId);
+    if (!item) return;
+    
+    activeLaborEditItem = { divId, itemId, item };
+    
+    document.getElementById("lbl-modal-item-name").textContent = item.name;
+    document.getElementById("lbl-modal-item-spec").textContent = item.spec;
+    document.getElementById("lbl-modal-item-qty").textContent = `${item.qty} ${item.unit}`;
+    document.getElementById("lbl-modal-item-current").textContent = `${item.laborRef || '근거 없음'} (${item.laborType || '미지정'}, ${item.laborFactor || 0}인)`;
+    
+    // 예상 가격 표시
+    updateLaborModalPreview(item.laborFactor, item.laborType);
+    
+    // 추천 목록 생성
+    const recs = recommendLaborBasis(item.name, item.spec);
+    const recList = document.getElementById("modal-recommend-list");
+    recList.innerHTML = "";
+    
+    if (recs.length === 0) {
+        recList.innerHTML = `<div style="text-align: center; color: var(--text-muted); font-size: 12px; padding: 15px 0;">추천할 표준품셈 항목이 없습니다. 하단 검색을 이용해주세요.</div>`;
+    } else {
+        recs.forEach(rec => {
+            const card = document.createElement("div");
+            card.className = "recommend-card";
+            
+            let badgeClass = "low";
+            if (rec.matchScore >= 75) badgeClass = "";
+            else if (rec.matchScore >= 50) badgeClass = "high";
+            
+            card.innerHTML = `
+                <div class="recommend-card-info">
+                    <span class="recommend-card-title">${rec.name} (${rec.code})</span>
+                    <span class="recommend-card-sub">${rec.spec} | ${rec.laborType} ${rec.laborFactor}인</span>
+                </div>
+                <div class="recommend-meta-wrap">
+                    <span class="recommend-match-badge ${badgeClass}">${rec.matchScore}% 일치</span>
+                </div>
+            `;
+            
+            card.addEventListener("click", () => {
+                applyLaborRef(rec.code, rec.laborType, rec.laborFactor);
+            });
+            
+            // Preview on hover
+            card.addEventListener("mouseenter", () => {
+                updateLaborModalPreview(rec.laborFactor, rec.laborType);
+            });
+            
+            recList.appendChild(card);
+        });
+    }
+    
+    // 검색창 초기화 및 전체 목록 렌더링
+    const searchInput = document.getElementById("input-modal-labor-search");
+    searchInput.value = "";
+    searchModalLaborBasis("");
+    
+    openModal("modal-recommend-labor");
+}
+
+// 모달 내 실시간 노무 단가 프리뷰 업데이트
+function updateLaborModalPreview(laborFactor, laborType) {
+    const wages = WAGE_RATES[state.wageStandard];
+    const wageRate = wages[laborType] || 0;
+    const calcCost = Math.floor((laborFactor || 0) * wageRate);
+    
+    document.getElementById("lbl-modal-wage-rate").textContent = wageRate.toLocaleString();
+    document.getElementById("lbl-modal-calculated-labor").textContent = calcCost.toLocaleString();
+}
+
+// 모달 내 품셈 검색
+function searchModalLaborBasis(query) {
+    const list = document.getElementById("modal-labor-results-list");
+    list.innerHTML = "";
+    
+    const queryL = query.toLowerCase().trim();
+    const filtered = STANDARD_LABOR_DB.filter(dbItem => {
+        return dbItem.name.toLowerCase().includes(queryL) ||
+               dbItem.spec.toLowerCase().includes(queryL) ||
+               dbItem.code.toLowerCase().includes(queryL) ||
+               dbItem.laborType.toLowerCase().includes(queryL);
+    });
+    
+    if (filtered.length === 0) {
+        list.innerHTML = `<div style="text-align: center; color: var(--text-muted); font-size: 12px; padding: 20px 0;">검색 결과가 없습니다.</div>`;
+        return;
+    }
+    
+    filtered.forEach(dbItem => {
+        const row = document.createElement("div");
+        row.className = "modal-db-item-row";
+        
+        row.innerHTML = `
+            <div class="modal-db-item-details">
+                <span class="modal-db-item-name">${dbItem.name} (${dbItem.code})</span>
+                <span class="modal-db-item-spec">${dbItem.spec} [${dbItem.unit}]</span>
+            </div>
+            <div class="modal-db-item-right">
+                <span class="modal-db-item-factor">${dbItem.laborFactor.toFixed(4)} 인</span>
+                <div class="modal-db-item-type">${dbItem.laborType}</div>
+            </div>
+        `;
+        
+        row.addEventListener("click", () => {
+            applyLaborRef(dbItem.code, dbItem.laborType, dbItem.laborFactor);
+        });
+        
+        // Preview on hover
+        row.addEventListener("mouseenter", () => {
+            updateLaborModalPreview(dbItem.laborFactor, dbItem.laborType);
+        });
+        
+        list.appendChild(row);
+    });
+}
+
+// 품셈 적용 완료 및 갱신
+function applyLaborRef(code, laborType, laborFactor) {
+    if (!activeLaborEditItem) return;
+    
+    const { item } = activeLaborEditItem;
+    item.laborRef = code;
+    item.laborType = laborType;
+    item.laborFactor = laborFactor;
+    
+    // If standard multiplier/scenario exists, update description
+    const scenarioMap = {
+        "new": "신설",
+        "demolish": "철거자재",
+        "reuse": "철거재사용",
+        "night": "야간할증",
+        "narrow": "야지작업"
+    };
+    item.laborRemark = scenarioMap[item.laborScenario || "new"] || "신설";
+    
+    closeModal("modal-recommend-labor");
+    
+    renderLaborBasisTable();
+    calculateEstimates();
+    loadActiveDivision(); // Update BOQ screen unit cost too
+    
+    showToast(`"${item.name}"의 노임근거가 ${code} (${laborType})로 변경되었습니다.`, "success");
+    activeLaborEditItem = null;
+}
+
+// Expose functions globally to inline HTML onclick handlers
+window.openLaborRefModal = openLaborRefModal;
+window.applyLaborRef = applyLaborRef;
+
+// Render Labor Basis Table
+function renderLaborBasisTable() {
+    const tbody = document.getElementById("labor-basis-table-body");
+    tbody.innerHTML = "";
+
+    let overallIndex = 1;
+    let hasLaborItems = false;
+
+    state.divisions.forEach(div => {
+        div.items.forEach(item => {
+            if (item.laborType && item.laborFactor > 0) {
+                hasLaborItems = true;
+                const tr = document.createElement("tr");
+                
+                const multiplier = item.laborMultiplier !== undefined ? item.laborMultiplier : 1.0;
+                const calcFactor = item.laborFactor * multiplier;
+                const totalLaborVolume = item.qty * calcFactor;
+
+                const scenarios = [
+                    { value: "new", label: "신설 (100% 적용)", mult: 1.0, remark: "신설" },
+                    { value: "demolish", label: "단순 철거 (30% 적용)", mult: 0.3, remark: "철거자재" },
+                    { value: "reuse", label: "재사용 철거 (50% 적용)", mult: 0.5, remark: "철거재사용" },
+                    { value: "night", label: "야간 작업 (125% 적용)", mult: 1.25, remark: "야간할증" },
+                    { value: "narrow", label: "협소 장소 (110% 적용)", mult: 1.10, remark: "야지작업" }
+                ];
+
+                let selectHtml = `<select class="select-labor-scenario" data-div-id="${div.id}" data-item-id="${item.id}" style="background-color: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); padding: 6px 10px; border-radius: 4px; outline: none; font-size: 13px; width: 100%; cursor: pointer;">`;
+                scenarios.forEach(sc => {
+                    const selected = item.laborScenario === sc.value ? "selected" : "";
+                    selectHtml += `<option value="${sc.value}" data-mult="${sc.mult}" data-remark="${sc.remark}" ${selected}>${sc.label}</option>`;
+                });
+                selectHtml += `</select>`;
+
+                tr.innerHTML = `
+                    <td>${overallIndex++}</td>
+                    <td style="color: var(--text-secondary); font-size: 13px;">${div.name}</td>
+                    <td>
+                        <div class="item-meta">
+                            <span class="item-title">${item.name}</span>
+                            <span class="item-subtitle">${item.spec}</span>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">${item.unit}</td>
+                    <td style="text-align: right; font-family: monospace;">${item.qty}</td>
+                    <td>${item.laborType}</td>
+                    <td style="text-align: right; font-family: monospace;">${item.laborFactor.toFixed(4)}</td>
+                    <td>${selectHtml}</td>
+                    <td style="text-align: right; font-family: monospace; font-weight: 600; color: var(--accent);">${totalLaborVolume.toFixed(4)}</td>
+                    <td style="text-align: center;">
+                        <span class="labor-ref-badge-clickable" onclick="openLaborRefModal('${div.id}', '${item.id}')" title="클릭하여 표준품셈 변경/추천 받기">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> ${item.laborRef || "근거 없음"}
+                        </span>
+                    </td>
+                `;
+
+                tbody.appendChild(tr);
+            }
+        });
+    });
+
+    if (!hasLaborItems) {
+        tbody.innerHTML = `<tr><td colspan="10" style="text-align: center; color: var(--text-muted); padding: 45px 0;"><i class="fa-solid fa-person-digging" style="font-size: 24px; margin-bottom: 10px; display: block;"></i>내역서에 추가된 품목 중 노무비 산출 대상 품목이 없습니다.</td></tr>`;
+        return;
+    }
+
+    tbody.querySelectorAll(".select-labor-scenario").forEach(select => {
+        select.addEventListener("change", (e) => {
+            const divId = e.target.getAttribute("data-div-id");
+            const itemId = e.target.getAttribute("data-item-id");
+            
+            const selectedOpt = e.target.options[e.target.selectedIndex];
+            const scenario = e.target.value;
+            const multiplier = parseFloat(selectedOpt.getAttribute("data-mult"));
+            const remark = selectedOpt.getAttribute("data-remark");
+
+            const div = state.divisions.find(d => d.id === divId);
+            if (div) {
+                const item = div.items.find(i => i.id === itemId);
+                if (item) {
+                    item.laborScenario = scenario;
+                    item.laborMultiplier = multiplier;
+                    item.laborRemark = remark;
+                    
+                    renderLaborBasisTable();
+                    calculateEstimates();
+                    showToast(`"${item.name}" 노임 적용 조건이 변경되었습니다.`, "info");
+                }
+            }
+        });
+    });
+}
+
 // Update Division Select Dropdown
 function updateDivisionSelects() {
     const selectDiv = document.getElementById("select-active-division");
@@ -573,7 +963,11 @@ function addItemToActiveDivision(dbItem) {
             qty: 1,
             materialPrice: dbItem.materialPrice,
             laborType: dbItem.laborType,
-            laborFactor: dbItem.laborFactor
+            laborFactor: dbItem.laborFactor,
+            laborScenario: "new",
+            laborMultiplier: 1.0,
+            laborRef: dbItem.laborRef || "",
+            laborRemark: "신설"
         };
         activeDiv.items.push(newItem);
         showToast(`"${dbItem.name}" 품목이 추가되었습니다.`, "success");
@@ -602,7 +996,8 @@ function calculateEstimates() {
         div.items.forEach(item => {
             const priceInfo = state.itemPrices[item.masterId] || { appliedPrice: item.materialPrice };
             const materialPrice = priceInfo.appliedPrice;
-            const itemLaborCost = Math.floor(item.laborFactor * (wages[item.laborType] || 0));
+            const multiplier = item.laborMultiplier !== undefined ? item.laborMultiplier : 1.0;
+            const itemLaborCost = Math.floor(item.laborFactor * multiplier * (wages[item.laborType] || 0));
             div.materialSum += item.qty * materialPrice;
             div.laborSum += item.qty * itemLaborCost;
             // No direct expenses on items in our DB template, but can be added if needed
@@ -802,6 +1197,28 @@ async function exportToExcel() {
         const workbook = new ExcelJS.Workbook();
         workbook.creator = "EstiBuilder";
         
+        // Pre-calculate Excel row indices for 1-to-1 linkage between '내역서' and '노임근거'
+        let boqRow = 3; // Data starts after title (row 1) and headers (row 2)
+        let laborRow = 2; // Data starts after headers (row 1) in shLabor
+        
+        state.divisions.forEach(div => {
+            boqRow++; // Division name row
+            div.items.forEach(item => {
+                item.excelRowIndex = boqRow;
+                boqRow++;
+                
+                if (item.laborType && item.laborFactor > 0) {
+                    item.laborExcelRowIndex = laborRow;
+                    laborRow++;
+                } else {
+                    item.laborExcelRowIndex = null;
+                }
+            });
+            boqRow++; // Tool wear row
+            boqRow++; // Division total row
+            boqRow++; // Division spacer row
+        });
+        
         // ----------------------------------------------------
         // 1. OPTION SHEET
         // ----------------------------------------------------
@@ -942,43 +1359,60 @@ async function exportToExcel() {
         // ----------------------------------------------------
         const shLabor = workbook.addWorksheet("노임근거");
         shLabor.views = [{ showGridLines: true }];
-        shLabor.addRow(["번호", "품목코드", "명칭", "규격", "단위", "직종", "품셈공량", "노임단가", "노무단가"]);
+        
+        // Headers: 번호, 소속공종, 명칭, 규격, 단위, 직종, 기본품셈, 할증률, 산출공량, 노임단가, 노무단가, 비고
+        shLabor.addRow(["번호", "소속공종", "명칭", "규격", "단위", "직종", "기본품셈", "할증률", "산출공량", "노임단가", "노무단가", "비고"]);
         
         let lIndex = 1;
-        allItemsMap.forEach((item, key) => {
-            const rowNum = lIndex + 1;
-            // Map labor type to option cells
-            let wageCell = "옵션!$B$12"; // 통신내선공 default
-            if (item.laborType === "통신설비공") wageCell = "옵션!$B$13";
-            else if (item.laborType === "특별인부") wageCell = "옵션!$B$14";
-
-            shLabor.addRow([
-                lIndex++,
-                key,
-                item.name,
-                item.spec,
-                item.unit,
-                item.laborType,
-                item.laborFactor,
-                { formula: wageCell },
-                { formula: `TRUNC(G${rowNum}*H${rowNum}, 0)` }
-            ]);
+        state.divisions.forEach(div => {
+            div.items.forEach(item => {
+                if (item.laborType && item.laborFactor > 0) {
+                    const rowNum = lIndex + 1; // row 1 is header
+                    
+                    // Map labor type to option cells
+                    let wageCell = "옵션!$B$12"; // 통신내선공 default
+                    if (item.laborType === "통신설비공") wageCell = "옵션!$B$13";
+                    else if (item.laborType === "특별인부") wageCell = "옵션!$B$14";
+                    
+                    const multiplier = item.laborMultiplier !== undefined ? item.laborMultiplier : 1.0;
+                    
+                    shLabor.addRow([
+                        lIndex++,
+                        div.name.replace(/^\d+\.\s*/, ""),
+                        item.name,
+                        item.spec,
+                        item.unit,
+                        item.laborType,
+                        item.laborFactor,
+                        multiplier,
+                        { formula: `G${rowNum}*H${rowNum}` }, // 산출공량 = 기본품셈 * 할증률
+                        { formula: wageCell }, // 시중노임단가
+                        { formula: `TRUNC(I${rowNum}*J${rowNum}, 0)` }, // 노무단가 = 산출공량 * 노임단가
+                        item.laborRemark || ""
+                    ]);
+                }
+            });
         });
 
         styleHeaderRow(shLabor.getRow(1));
-        shLabor.getColumn(1).width = 8;
-        shLabor.getColumn(2).width = 12;
-        shLabor.getColumn(3).width = 20;
-        shLabor.getColumn(4).width = 20;
-        shLabor.getColumn(5).width = 8;
-        shLabor.getColumn(6).width = 15;
-        shLabor.getColumn(7).width = 12;
-        shLabor.getColumn(8).width = 15;
-        shLabor.getColumn(9).width = 15;
+        shLabor.getColumn(1).width = 6;   // 번호
+        shLabor.getColumn(2).width = 15;  // 소속공종
+        shLabor.getColumn(3).width = 22;  // 명칭
+        shLabor.getColumn(4).width = 22;  // 규격
+        shLabor.getColumn(5).width = 8;   // 단위
+        shLabor.getColumn(6).width = 12;  // 직종
+        shLabor.getColumn(7).width = 10;  // 기본품셈
+        shLabor.getColumn(8).width = 10;  // 할증률
+        shLabor.getColumn(9).width = 10;  // 산출공량
+        shLabor.getColumn(10).width = 14; // 노임단가
+        shLabor.getColumn(11).width = 14; // 노무단가
+        shLabor.getColumn(12).width = 12; // 비고
         
         shLabor.getColumn(7).numFmt = "0.0000";
-        shLabor.getColumn(8).numFmt = "₩#,##0";
-        shLabor.getColumn(9).numFmt = "₩#,##0";
+        shLabor.getColumn(8).numFmt = "0.0%";
+        shLabor.getColumn(9).numFmt = "0.0000";
+        shLabor.getColumn(10).numFmt = "₩#,##0";
+        shLabor.getColumn(11).numFmt = "₩#,##0";
 
         // ----------------------------------------------------
         // 4. MAIN BOQ ESTIMATE SHEET (내역서)
@@ -1022,7 +1456,9 @@ async function exportToExcel() {
                 // Find row index of this item in 단가조사 and 노임근거 sheets
                 const keysArr = Array.from(allItemsMap.keys());
                 const priceMatchIndex = keysArr.indexOf(item.masterId) + 3; // 1-based index + 2 header rows
-                const laborMatchIndex = keysArr.indexOf(item.masterId) + 2; // 1-based index + 1 header row
+                
+                const hasLabor = item.laborExcelRowIndex !== null;
+                const laborCellFormula = hasLabor ? `노임근거!K${item.laborExcelRowIndex}` : "0";
 
                 const itemRow = shBOQ.addRow([
                     idx + 1,
@@ -1032,7 +1468,7 @@ async function exportToExcel() {
                     item.qty,
                     { formula: `단가조사!F${priceMatchIndex}` }, // Material Unit Cost
                     { formula: `TRUNC(E${boqCurrentRow}*F${boqCurrentRow}, 0)` }, // Material Total Cost
-                    { formula: `노임근거!I${laborMatchIndex}` }, // Labor Unit Cost
+                    hasLabor ? { formula: laborCellFormula } : 0, // Labor Unit Cost
                     { formula: `TRUNC(E${boqCurrentRow}*H${boqCurrentRow}, 0)` }, // Labor Total Cost
                     0, // Expense Unit Cost
                     0, // Expense Total Cost

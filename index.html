@@ -34,6 +34,10 @@
                     <i class="fa-solid fa-coins"></i>
                     <span>단가조사</span>
                 </button>
+                <button class="nav-item" data-tab="tab-labor">
+                    <i class="fa-solid fa-person-digging"></i>
+                    <span>노임근거</span>
+                </button>
                 <button class="nav-item" data-tab="tab-builder">
                     <i class="fa-solid fa-cubes"></i>
                     <span>내역서 빌더</span>
@@ -217,6 +221,47 @@
                     </div>
                 </section>
 
+                <!-- Tab: Labor Basis -->
+                <section id="tab-labor" class="tab-section">
+                    <div class="section-card" style="height: 100%; display: flex; flex-direction: column;">
+                        <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <i class="fa-solid fa-person-digging card-icon"></i>
+                                <h3>품셈 기반 노임 산출근거 설정</h3>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <button id="btn-auto-map-labor" class="btn btn-outline" style="padding: 8px 14px; font-size: 13px;">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i> 표준품셈 전체 자동 매핑
+                                </button>
+                                <div class="badge-label" style="text-transform: none; color: var(--text-secondary);">
+                                    <i class="fa-solid fa-circle-info"></i> 표준품셈 기준 근거 자동 매핑 및 할증 조절
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body flex-grow no-padding" style="overflow: auto; max-height: calc(100vh - 280px);">
+                            <table class="cost-sheet-table" id="labor-basis-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 5%;">번호</th>
+                                        <th style="width: 15%;">소속 공종</th>
+                                        <th style="width: 20%;">품명 및 규격</th>
+                                        <th style="width: 6%; text-align: center;">단위</th>
+                                        <th style="width: 8%; text-align: right;">결정수량</th>
+                                        <th style="width: 12%;">노임 직종</th>
+                                        <th style="width: 10%; text-align: right;">기본품셈 (인)</th>
+                                        <th style="width: 16%;">적용 조건 (할증률)</th>
+                                        <th style="width: 10%; text-align: right;">산출공량 (인)</th>
+                                        <th style="width: 12%; text-align: center;">품셈 근거</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="labor-basis-table-body">
+                                    <!-- Dynamically populated -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- Tab: Builder -->
                 <section id="tab-builder" class="tab-section">
                     <div class="builder-layout">
@@ -345,6 +390,81 @@
                 <div class="modal-footer">
                     <button class="btn btn-outline" onclick="closeModal('modal-add-division')">취소</button>
                     <button class="btn btn-primary" id="btn-confirm-add-division">추가</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Recommend and Change Labor Basis -->
+    <div class="modal" id="modal-recommend-labor">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4><i class="fa-solid fa-person-digging text-primary" style="margin-right: 8px;"></i> 표준품셈 근거 추천 및 변경</h4>
+                    <button class="close-modal-btn" onclick="closeModal('modal-recommend-labor')">&times;</button>
+                </div>
+                <div class="modal-body labor-modal-body">
+                    <!-- Left Panel: Item Info & Applied Labor Details -->
+                    <div class="labor-modal-left">
+                        <div class="modal-item-info">
+                            <h5 class="sub-section-title"><i class="fa-solid fa-file-invoice"></i> 선택된 품목 정보</h5>
+                            <div class="info-card">
+                                <div class="info-row">
+                                    <span class="info-label">품명</span>
+                                    <span class="info-val" id="lbl-modal-item-name">-</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">규격</span>
+                                    <span class="info-val" id="lbl-modal-item-spec">-</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">단위 / 수량</span>
+                                    <span class="info-val" id="lbl-modal-item-qty">-</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">현재 적용</span>
+                                    <span class="info-val text-accent font-semibold" id="lbl-modal-item-current">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-item-applied-preview mt-15">
+                            <h5 class="sub-section-title"><i class="fa-solid fa-coins"></i> 변경 시 예상 노무 단가</h5>
+                            <div class="preview-price-card">
+                                <span class="preview-label">직종별 노임단가 ₩ <span id="lbl-modal-wage-rate">0</span></span>
+                                <h3 class="preview-total-price">₩ <span id="lbl-modal-calculated-labor">0</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Panel: Recommendation & Catalog Search -->
+                    <div class="labor-modal-right">
+                        <!-- Match Recommendations -->
+                        <div class="modal-recommend-section">
+                            <div class="section-title-wrap">
+                                <i class="fa-solid fa-wand-magic-sparkles text-accent"></i>
+                                <h5 class="sub-section-title">품명/규격 기반 추천 표준품셈</h5>
+                            </div>
+                            <div class="recommend-cards-list" id="modal-recommend-list">
+                                <!-- Recommended cards loaded here -->
+                            </div>
+                        </div>
+                        
+                        <!-- Search & Browse catalog -->
+                        <div class="modal-search-section mt-15">
+                            <h5 class="sub-section-title"><i class="fa-solid fa-magnifying-glass"></i> 품셈 전체 검색</h5>
+                            <div class="drawer-search mb-10">
+                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                <input type="text" id="input-modal-labor-search" placeholder="품셈명, 코드 또는 직종 검색...">
+                            </div>
+                            <div class="modal-labor-results" id="modal-labor-results-list">
+                                <!-- Search results loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline" onclick="closeModal('modal-recommend-labor')">닫기</button>
                 </div>
             </div>
         </div>

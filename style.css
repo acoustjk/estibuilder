@@ -952,3 +952,295 @@ body {
     border-color: var(--primary);
     color: var(--text-primary);
 }
+
+/* Labor Recommendation Modal Styling */
+.modal-dialog.modal-lg {
+    max-width: 900px;
+    width: 90%;
+}
+
+.labor-modal-body {
+    display: flex;
+    gap: 24px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.labor-modal-left {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-right: 1px solid var(--border-color);
+    padding-right: 20px;
+}
+
+.labor-modal-right {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sub-section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sub-section-title i {
+    font-size: 13px;
+    color: var(--accent);
+}
+
+.info-card {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 12px 15px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.info-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.info-row:first-child {
+    padding-top: 0;
+}
+
+.info-label {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.info-val {
+    font-size: 13px;
+    color: var(--text-primary);
+    text-align: right;
+    max-width: 70%;
+    word-break: break-all;
+}
+
+.preview-price-card {
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(6, 182, 212, 0.1));
+    border: 1px solid rgba(79, 70, 229, 0.35);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(79, 70, 229, 0.1);
+}
+
+.preview-label {
+    font-size: 11px;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 6px;
+}
+
+.preview-total-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: -0.5px;
+}
+
+/* Recommendations and Lists */
+.modal-recommend-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.section-title-wrap i {
+    font-size: 13px;
+}
+
+.recommend-cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 160px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.recommend-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.recommend-card:hover {
+    background-color: rgba(6, 182, 212, 0.08);
+    border-color: rgba(6, 182, 212, 0.4);
+    transform: translateX(3px);
+}
+
+.recommend-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    max-width: 75%;
+}
+
+.recommend-card-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.recommend-card-sub {
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.recommend-meta-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.recommend-match-badge {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--success);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.recommend-match-badge.high {
+    background: rgba(6, 182, 212, 0.15);
+    color: var(--accent);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+.recommend-match-badge.low {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--warning);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* Labor Search Results */
+.modal-search-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.modal-labor-results {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid var(--border-color);
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: var(--radius-sm);
+    padding: 8px;
+}
+
+.modal-db-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.modal-db-item-row:hover {
+    background-color: rgba(79, 70, 229, 0.08);
+    border-color: rgba(79, 70, 229, 0.3);
+}
+
+.modal-db-item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-width: 80%;
+}
+
+.modal-db-item-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.modal-db-item-spec {
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.modal-db-item-right {
+    text-align: right;
+}
+
+.modal-db-item-factor {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-family: monospace;
+}
+
+.modal-db-item-type {
+    font-size: 10px;
+    color: var(--text-muted);
+}
+
+/* Clickable Badge Style */
+.labor-ref-badge-clickable {
+    cursor: pointer;
+    background-color: rgba(79, 70, 229, 0.15);
+    color: var(--primary-light);
+    border: 1px solid rgba(79, 70, 229, 0.3);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.labor-ref-badge-clickable:hover {
+    background-color: var(--primary);
+    color: #FFF;
+    border-color: var(--primary-light);
+    box-shadow: 0 0 10px var(--primary-glow);
+}
+
