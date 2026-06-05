@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트 내역서 빌더 & 엑셀 생성기</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-file-excel-o brand-icon"></i>
+                <div class="brand-text">
+                    <h2>EstiBuilder</h2>
+                    <span>Smart Cost Estimator</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="nav-item active" data-tab="tab-settings">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span>프로젝트 설정</span>
+                </button>
+                <button class="nav-item" data-tab="tab-builder">
+                    <i class="fa-solid fa-cubes"></i>
+                    <span>내역서 빌더</span>
+                </button>
+                <button class="nav-item" data-tab="tab-summary">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>원가 및 분석</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button id="btn-export-excel" class="btn btn-primary btn-block">
+                    <i class="fa-solid fa-download"></i>
+                    <span>엑셀 다운로드</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="content-header">
+                <div class="project-info-header">
+                    <h1 id="header-project-name">노원문화예술회관 리모델링 통신공사</h1>
+                    <p><span id="header-project-duration">6개월</span> | <span id="header-project-date">2026년 상반기 기준</span></p>
+                </div>
+                <div class="header-actions">
+                    <div class="cost-badge">
+                        <span class="badge-label">총공사비 (도급액)</span>
+                        <span class="badge-value" id="badge-total-cost">₩0</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Tabs -->
+            <div class="tab-content-wrapper">
+                
+                <!-- Tab: Settings -->
+                <section id="tab-settings" class="tab-section active">
+                    <div class="section-card">
+                        <div class="card-header">
+                            <i class="fa-solid fa-gears card-icon"></i>
+                            <h3>프로젝트 기본 정보 설정</h3>
+                        </div>
+                        <div class="card-body form-grid">
+                            <div class="form-group">
+                                <label for="input-project-name">공사명</label>
+                                <input type="text" id="input-project-name" value="노원문화예술회관 리모델링 통신공사" placeholder="공사명을 입력하세요.">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-project-duration">공사기간</label>
+                                <input type="text" id="input-project-duration" value="6개월" placeholder="예: 6개월">
+                            </div>
+                            <div class="form-group">
+                                <label for="select-wage-standard">적용 노임 단가</label>
+                                <select id="select-wage-standard">
+                                    <option value="2023_1">2023년 상반기 시중노임대비</option>
+                                    <option value="2024_1">2024년 상반기 시중노임대비</option>
+                                    <option value="2026_1" selected>2026년 상반기 시중노임대비</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-rounding-precision">끝자리 맞추기 (이윤조정 단위)</label>
+                                <select id="input-rounding-precision">
+                                    <option value="1">1원 단위 절사</option>
+                                    <option value="10">10원 단위 절사</option>
+                                    <option value="1000" selected>1,000원 단위 절사</option>
+                                    <option value="100000">100,000원 단위 맞춤</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-card mt-20">
+                        <div class="card-header">
+                            <i class="fa-solid fa-percent card-icon"></i>
+                            <h3>간접비 및 법정 요율 설정 (%)</h3>
+                        </div>
+                        <div class="card-body form-grid-3">
+                            <div class="form-group">
+                                <label for="rate-indirect-labor">간접노무비율 (%)</label>
+                                <input type="number" id="rate-indirect-labor" value="12.5" step="0.1">
+                                <span class="form-help">직접노무비 기준</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="rate-health-insurance">건강보험료율 (%)</label>
+                                <input type="number" id="rate-health-insurance" value="3.545" step="0.001">
+                                <span class="form-help">직접노무비 기준</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="rate-pension-insurance">국민연금보험료율 (%)</label>
+                                <input type="number" id="rate-pension-insurance" value="4.5" step="0.1">
+                                <span class="form-help">직접노무비 기준</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="rate-longterm-care">노인장기요양보험 (%)</label>
+                                <input type="number" id="rate-longterm-care" value="12.81" step="0.01">
+                                <span class="form-help">건강보험료 기준</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="rate-accident-insurance">산재보험료율 (%)</label>
+                                <input type="number" id="rate-accident-insurance" value="3.7" step="0.1">
+                                <span class="form-help">총노무비 기준</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="rate-employment-insurance">고용보험료율 (%)</label>
+                                <input type="number" id="rate-employment-insurance" value="1.01" step="0.01">
+                                <span class="form-help">총노무비 기준</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="rate-other-expense">기타경비율 (%)</label>
+                                <input type="number" id="rate-other-expense" value="7.8" step="0.1">
+                                <span class="form-help">재료비 + 직접노무비 기준</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="rate-general-admin">일반관리비율 (%)</label>
+                                <input type="number" id="rate-general-admin" value="6.0" step="0.1">
+                                <span class="form-help">순공사비 기준</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="rate-profit">이윤율 (%)</label>
+                                <input type="number" id="rate-profit" value="15.0" step="0.1">
+                                <span class="form-help">노무비 + 경비 + 일반관리비 기준</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tab: Builder -->
+                <section id="tab-builder" class="tab-section">
+                    <div class="builder-layout">
+                        <!-- Left Panel: BOQ Work Divisions & Table -->
+                        <div class="builder-table-area">
+                            <div class="builder-toolbar">
+                                <div class="division-selector-wrap">
+                                    <label for="select-active-division">현재 공종 선택:</label>
+                                    <select id="select-active-division">
+                                        <!-- Dynamically generated -->
+                                    </select>
+                                </div>
+                                <div class="toolbar-buttons">
+                                    <button id="btn-add-division" class="btn btn-outline">
+                                        <i class="fa-solid fa-plus"></i> 공종 추가
+                                    </button>
+                                    <button id="btn-delete-division" class="btn btn-danger-outline">
+                                        <i class="fa-solid fa-trash"></i> 공종 삭제
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="table-container">
+                                <table class="builder-table" id="boq-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 5%;">번호</th>
+                                            <th style="width: 25%;">품명 및 규격</th>
+                                            <th style="width: 8%;">단위</th>
+                                            <th style="width: 10%;">수량</th>
+                                            <th style="width: 13%;">재료비 단가</th>
+                                            <th style="width: 13%;">노무비 단가</th>
+                                            <th style="width: 13%;">합계 금액</th>
+                                            <th style="width: 10%;">비고 / 액션</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="boq-table-body">
+                                        <!-- Dynamically populated -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Right Panel: Standard Item Database Search -->
+                        <div class="item-database-drawer">
+                            <div class="drawer-header">
+                                <i class="fa-solid fa-database text-primary"></i>
+                                <h4>표준 품목 라이브러리</h4>
+                            </div>
+                            <div class="drawer-search">
+                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                <input type="text" id="input-db-search" placeholder="품명 또는 규격 검색...">
+                            </div>
+                            <div class="category-filters" id="category-filters">
+                                <button class="filter-chip active" data-category="all">전체</button>
+                                <button class="filter-chip" data-category="device">기기/인출</button>
+                                <button class="filter-chip" data-category="cable">케이블/배선</button>
+                                <button class="filter-chip" data-category="pipe">관로/배관</button>
+                                <button class="filter-chip" data-category="labor">노무/토공</button>
+                            </div>
+                            <div class="db-items-list" id="db-items-list">
+                                <!-- Prepopulated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tab: Summary & Dashboard -->
+                <section id="tab-summary" class="tab-section">
+                    <div class="dashboard-grid">
+                        <!-- Cost calculations table -->
+                        <div class="section-card span-8">
+                            <div class="card-header">
+                                <i class="fa-solid fa-calculator text-primary"></i>
+                                <h3>종합 원가계산서 (원정 절사 반영)</h3>
+                            </div>
+                            <div class="card-body no-padding">
+                                <table class="cost-sheet-table">
+                                    <thead>
+                                        <tr>
+                                            <th>비목구분</th>
+                                            <th>계산공식</th>
+                                            <th style="text-align: right; width: 30%;">금액 (원)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cost-calculation-body">
+                                        <!-- Dynamically generated rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Graph display -->
+                        <div class="section-card span-4 flex-column">
+                            <div class="card-header">
+                                <i class="fa-solid fa-chart-simple text-primary"></i>
+                                <h3>공종별 예산 비중</h3>
+                            </div>
+                            <div class="card-body flex-grow flex-center">
+                                <div class="chart-container">
+                                    <canvas id="cost-share-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <!-- Modal: Add Division -->
+    <div class="modal" id="modal-add-division">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>새 공종(작업구획) 추가</h4>
+                    <button class="close-modal-btn" onclick="closeModal('modal-add-division')">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="input-new-division-name">공종명</label>
+                        <input type="text" id="input-new-division-name" placeholder="예: CCTV설비공사">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline" onclick="closeModal('modal-add-division')">취소</button>
+                    <button class="btn btn-primary" id="btn-confirm-add-division">추가</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- ExcelJS & Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/exceljs@4.3.0/dist/exceljs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Application JS -->
+    <script src="app.js"></script>
+</body>
+</html>
