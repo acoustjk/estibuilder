@@ -305,6 +305,20 @@ function initBuilderListeners() {
 
 // Price Investigation Listeners
 function initPriceListeners() {
+    const btnAddPrice = document.getElementById("btn-add-price-item");
+    if (btnAddPrice) {
+        btnAddPrice.addEventListener("click", () => {
+            openAddPriceItemModal();
+        });
+    }
+
+    const btnConfirmAddPrice = document.getElementById("btn-confirm-add-price-item");
+    if (btnConfirmAddPrice) {
+        btnConfirmAddPrice.addEventListener("click", () => {
+            confirmAddPriceItem();
+        });
+    }
+
     document.getElementById("btn-auto-lowest").addEventListener("click", () => {
         let count = 0;
         for (const masterId in state.itemPrices) {
@@ -349,7 +363,7 @@ function renderPriceInvestigationTable() {
     });
 
     if (usedMasterIds.size === 0) {
-        tbody.innerHTML = `<tr><td colspan="19" style="text-align: center; color: var(--text-muted); padding: 45px 0;"><i class="fa-solid fa-calculator" style="font-size: 24px; margin-bottom: 10px; display: block;"></i>내역서 빌더에서 먼저 품목을 추가해야 단가 조사를 진행할 수 있습니다.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="20" style="text-align: center; color: var(--text-muted); padding: 45px 0;"><i class="fa-solid fa-calculator" style="font-size: 24px; margin-bottom: 10px; display: block;"></i>내역서 빌더에서 먼저 품목을 추가해야 단가 조사를 진행할 수 있습니다.</td></tr>`;
         return;
     }
 
@@ -401,6 +415,11 @@ function renderPriceInvestigationTable() {
             <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="invest1" data-field="page" value="${p.invest1.page}"></td>
             <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="invest2" data-field="price" value="${p.invest2.price}"></td>
             <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="invest2" data-field="page" value="${p.invest2.page}"></td>
+            <td style="text-align: center;">
+                <button class="btn-icon-danger" onclick="deletePriceInvestigationItem('${masterId}')" title="품목 완전히 삭제">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </td>
         `;
 
         tbody.appendChild(tr);
@@ -475,6 +494,13 @@ function initLaborListeners() {
     if (btnConfirmAddLabor) {
         btnConfirmAddLabor.addEventListener("click", () => {
             confirmAddLaborItem();
+        });
+    }
+
+    const btnSyncLabor = document.getElementById("btn-sync-labor-items");
+    if (btnSyncLabor) {
+        btnSyncLabor.addEventListener("click", () => {
+            syncLaborBasisTable();
         });
     }
 }
@@ -724,8 +750,167 @@ window.applyLaborRef = applyLaborRef;
 window.deleteLaborBasisItem = deleteLaborBasisItem;
 window.openAddLaborItemModal = openAddLaborItemModal;
 window.confirmAddLaborItem = confirmAddLaborItem;
+window.openAddPriceItemModal = openAddPriceItemModal;
+window.confirmAddPriceItem = confirmAddPriceItem;
+window.deletePriceInvestigationItem = deletePriceInvestigationItem;
+window.syncLaborBasisTable = syncLaborBasisTable;
 
-// 1. 노임근거 개별 항목 삭제/근거 제거
+// 1. 단가조사 직접 추가 모달 열기
+function openAddPriceItemModal() {
+    const selectDiv = document.getElementById("select-modal-price-division");
+    selectDiv.innerHTML = "";
+    state.divisions.forEach(div => {
+        const opt = document.createElement("option");
+        opt.value = div.id;
+        opt.textContent = div.name;
+        selectDiv.appendChild(opt);
+    });
+
+    // Populate labor-ref select from STANDARD_LABOR_DB
+    const selectLabor = document.getElementById("select-modal-price-labor-ref");
+    selectLabor.innerHTML = `<option value="">노무비 없음 (자재 전용)</option>`;
+    STANDARD_LABOR_DB.forEach(dbItem => {
+        const opt = document.createElement("option");
+        opt.value = dbItem.code;
+        opt.textContent = `${dbItem.code} ${dbItem.name} (${dbItem.laborType} ${dbItem.laborFactor}인)`;
+        selectLabor.appendChild(opt);
+    });
+
+    // Clear fields
+    document.getElementById("input-modal-price-name").value = "";
+    document.getElementById("input-modal-price-spec").value = "";
+    document.getElementById("input-modal-price-unit").value = "개";
+    document.getElementById("input-modal-price-qty").value = "1";
+    document.getElementById("input-modal-price-matprice").value = "0";
+
+    openModal("modal-add-price-item");
+}
+
+// 2. 단가조사 직접 추가 처리
+function confirmAddPriceItem() {
+    const divId = document.getElementById("select-modal-price-division").value;
+    const name = document.getElementById("input-modal-price-name").value.trim();
+    const spec = document.getElementById("input-modal-price-spec").value.trim();
+    const unit = document.getElementById("input-modal-price-unit").value.trim();
+    const qty = parseFloat(document.getElementById("input-modal-price-qty").value) || 0;
+    const matPrice = parseFloat(document.getElementById("input-modal-price-matprice").value) || 0;
+    const laborRefCode = document.getElementById("select-modal-price-labor-ref").value;
+
+    if (!name) {
+        showToast("품목명을 입력해주세요.", "danger");
+        return;
+    }
+    if (qty < 0) {
+        showToast("수량은 0 이상이어야 합니다.", "danger");
+        return;
+    }
+
+    const div = state.divisions.find(d => d.id === divId);
+    if (!div) return;
+
+    // Generate custom masterId
+    const newMasterId = "M_CUSTOM_" + Date.now();
+    
+    // Check labor config
+    let laborType = null;
+    let laborFactor = 0;
+    if (laborRefCode) {
+        const dbItem = STANDARD_LABOR_DB.find(d => d.code === laborRefCode);
+        if (dbItem) {
+            laborType = dbItem.laborType;
+            laborFactor = dbItem.laborFactor;
+        }
+    }
+
+    // Add to ITEM_MASTER_DB so standard filters find it
+    ITEM_MASTER_DB.push({
+        id: newMasterId,
+        name: name,
+        spec: spec,
+        unit: unit,
+        category: "device", // default category
+        materialPrice: matPrice,
+        laborType: laborType,
+        laborFactor: laborFactor,
+        laborRef: laborRefCode
+    });
+
+    // Create price state entry
+    state.itemPrices[newMasterId] = {
+        appliedPrice: matPrice,
+        facilityPrice: matPrice,
+        marketPrice: { price: 0, page: "" },
+        infoPrice: { price: 0, page: "" },
+        materialPrice: { price: 0, page: "" },
+        distPrice: { price: 0, page: "" },
+        invest1: { price: 0, page: "" },
+        invest2: { price: 0, page: "" }
+    };
+
+    // Add to division items list
+    const newItem = {
+        id: "item-" + Date.now() + Math.random().toString(36).substr(2, 5),
+        masterId: newMasterId,
+        name: name,
+        spec: spec,
+        unit: unit,
+        qty: qty,
+        materialPrice: matPrice,
+        laborType: laborType,
+        laborFactor: laborFactor,
+        laborScenario: "new",
+        laborMultiplier: 1.0,
+        laborRef: laborRefCode,
+        laborRemark: laborRefCode ? "신설" : ""
+    };
+    div.items.push(newItem);
+
+    closeModal("modal-add-price-item");
+    
+    renderPriceInvestigationTable();
+    calculateEstimates();
+    loadActiveDivision();
+    renderLaborBasisTable();
+
+    showToast(`단가조사 품목 "${name}"이(가) 등록되었습니다.`, "success");
+}
+
+// 3. 단가조사 품목 완전히 내역에서 제거
+function deletePriceInvestigationItem(masterId) {
+    const dbItem = ITEM_MASTER_DB.find(i => i.id === masterId) || { name: "알수없음" };
+    if (confirm(`"${dbItem.name}" 품목을 단가조사, 내역서(BOQ), 노임근거를 포함해 이 프로젝트에서 완전히 삭제하시겠습니까?`)) {
+        
+        // 1. Remove from divisions
+        state.divisions.forEach(div => {
+            div.items = div.items.filter(item => item.masterId !== masterId);
+        });
+
+        // 2. Remove from itemPrices state
+        delete state.itemPrices[masterId];
+
+        // 3. Remove from master database (so it doesn't show in lists)
+        const dbIdx = ITEM_MASTER_DB.findIndex(i => i.id === masterId);
+        if (dbIdx !== -1) {
+            ITEM_MASTER_DB.splice(dbIdx, 1);
+        }
+
+        renderPriceInvestigationTable();
+        calculateEstimates();
+        loadActiveDivision();
+        renderLaborBasisTable();
+
+        showToast(`"${dbItem.name}" 품목이 내역에서 완전히 제거되었습니다.`, "success");
+    }
+}
+
+// 4. 노임근거 단가조사 연동 새로고침
+function syncLaborBasisTable() {
+    renderLaborBasisTable();
+    calculateEstimates();
+    showToast("단가조사(내역서)의 최신 품목 목록이 노임근거에 새로고침 동기화되었습니다.", "success");
+}
+
+// 5. 노임근거 개별 항목 삭제/근거 제거 (2단계 스마트 대화상자)
 function deleteLaborBasisItem(divId, itemId) {
     const div = state.divisions.find(d => d.id === divId);
     if (!div) return;
@@ -748,8 +933,9 @@ function deleteLaborBasisItem(divId, itemId) {
             return;
         }
     } else {
-        // Mixed item, clear labor configuration
-        if (confirm(`"${item.name}"은 자재비가 존재하는 품목이므로 자재비는 내역서에 보존하고 노무비 품셈 근거만 제거합니다. 진행하시겠습니까?`)) {
+        // Mixed item, clear labor configuration or delete completely
+        const clearLabor = confirm(`"${item.name}"은 자재비가 존재하는 품목입니다.\n\n[확인]을 누르시면 자재비는 내역에 보존하고 '노무비 품셈 근거만 제거'합니다.\n[취소]를 누르시면 완전히 삭제할지 선택할 수 있습니다.`);
+        if (clearLabor) {
             item.laborType = null;
             item.laborFactor = 0;
             item.laborRef = "";
@@ -758,7 +944,14 @@ function deleteLaborBasisItem(divId, itemId) {
             item.laborRemark = "";
             showToast(`"${item.name}"의 노무 산출 근거가 제거되었습니다.`, "info");
         } else {
-            return;
+            const deleteFully = confirm(`"${item.name}"을 단가조사와 내역서(BOQ)를 포함해 프로젝트에서 완전히 삭제하시겠습니까?`);
+            if (deleteFully) {
+                const index = div.items.findIndex(i => i.id === itemId);
+                if (index !== -1) {
+                    div.items.splice(index, 1);
+                    showToast(`"${item.name}" 품목이 완전히 삭제되었습니다.`, "success");
+                }
+            }
         }
     }
     

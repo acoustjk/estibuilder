@@ -174,8 +174,11 @@
                                 <i class="fa-solid fa-coins card-icon"></i>
                                 <h3>품목별 단가 조사 및 페이지 설정</h3>
                             </div>
-                            <div>
-                                <button id="btn-auto-lowest" class="btn btn-outline">
+                            <div style="display: flex; gap: 8px;">
+                                <button id="btn-add-price-item" class="btn btn-primary" style="padding: 8px 14px; font-size: 13px;">
+                                    <i class="fa-solid fa-plus"></i> 조사 품목 추가
+                                </button>
+                                <button id="btn-auto-lowest" class="btn btn-outline" style="padding: 8px 14px; font-size: 13px;">
                                     <i class="fa-solid fa-wand-magic-sparkles"></i> 최저가 자동 산출 (적용단가)
                                 </button>
                             </div>
@@ -196,6 +199,7 @@
                                             <th colspan="2" style="text-align: center; border-bottom: 1px solid var(--border-color);">유통물가</th>
                                             <th colspan="2" style="text-align: center; border-bottom: 1px solid var(--border-color);">조사단가1</th>
                                             <th colspan="2" style="text-align: center; border-bottom: 1px solid var(--border-color);">조사단가2</th>
+                                            <th rowspan="2" style="text-align: center; min-width: 70px;">액션</th>
                                         </tr>
                                         <tr>
                                             <th style="text-align: right;">단가 (원)</th>
@@ -232,6 +236,9 @@
                             <div style="display: flex; align-items: center; gap: 10px;">
                                 <button id="btn-add-labor-item" class="btn btn-primary" style="padding: 8px 14px; font-size: 13px;">
                                     <i class="fa-solid fa-plus"></i> 순수 노무비 항목 추가
+                                </button>
+                                <button id="btn-sync-labor-items" class="btn btn-outline" style="padding: 8px 14px; font-size: 13px;">
+                                    <i class="fa-solid fa-arrows-rotate"></i> 단가조사 연동 새로고침
                                 </button>
                                 <button id="btn-auto-map-labor" class="btn btn-outline" style="padding: 8px 14px; font-size: 13px;">
                                     <i class="fa-solid fa-wand-magic-sparkles"></i> 표준품셈 전체 자동 매핑
@@ -469,6 +476,64 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-outline" onclick="closeModal('modal-recommend-labor')">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Add Custom Item directly to Price Investigation -->
+    <div class="modal" id="modal-add-price-item">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4><i class="fa-solid fa-coins text-primary" style="margin-right: 8px;"></i> 조사 대상 품목 추가</h4>
+                    <button class="close-modal-btn" onclick="closeModal('modal-add-price-item')">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-15">
+                        <label for="select-modal-price-division">소속 공종 선택</label>
+                        <select id="select-modal-price-division" style="width: 100%; padding: 10px; background: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: var(--radius-sm); outline: none;">
+                            <!-- Dynamically loaded -->
+                        </select>
+                    </div>
+
+                    <div class="form-grid mb-15" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div class="form-group">
+                            <label for="input-modal-price-name">품명</label>
+                            <input type="text" id="input-modal-price-name" placeholder="예: LAN 전송 장비">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-modal-price-spec">규격</label>
+                            <input type="text" id="input-modal-price-spec" placeholder="예: 24포트 PoE">
+                        </div>
+                    </div>
+
+                    <div class="form-grid mb-15" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+                        <div class="form-group">
+                            <label for="input-modal-price-unit">단위</label>
+                            <input type="text" id="input-modal-price-unit" value="개" placeholder="예: 개, M">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-modal-price-qty">수량</label>
+                            <input type="number" id="input-modal-price-qty" value="1" min="0" step="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-modal-price-matprice">적용 자재단가 (원)</label>
+                            <input type="number" id="input-modal-price-matprice" value="0" min="0">
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-15">
+                        <label>초기 표준품셈 연동 (선택)</label>
+                        <select id="select-modal-price-labor-ref" style="width: 100%; padding: 10px; background: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: var(--radius-sm); outline: none;">
+                            <option value="">노무비 없음 (자재 전용)</option>
+                            <!-- Will be dynamically populated with STANDARD_LABOR_DB items -->
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline" onclick="closeModal('modal-add-price-item')">취소</button>
+                    <button class="btn btn-primary" id="btn-confirm-add-price-item">추가하기</button>
                 </div>
             </div>
         </div>
