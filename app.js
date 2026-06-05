@@ -43,53 +43,53 @@ const ITEM_MASTER_DB = [
 const STANDARD_LABOR_DB = [
     {
         "code": "통신 1-1-21",
-        "name": "애 자 류 톤 〃 0.21",
+        "name": "애자류톤 〃 0.21",
         "spec": "인력운반 및 적상․하 기준",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.15,
         "category": "labor",
         "keywords": [
-            "애 자 류 톤 〃 0.21",
+            "애자류톤 〃 0.21",
             "인력운반 및 적상․하 기준"
         ]
     },
     {
         "code": "통신 1-1-21",
-        "name": "철 재 류 톤 〃 0.15",
+        "name": "철재류 〃 0.21",
         "spec": "인력운반 및 적상․하 기준",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.12,
         "category": "labor",
         "keywords": [
-            "철 재 류 톤 〃 0.15",
+            "철재류 〃 0.21",
             "인력운반 및 적상․하 기준"
         ]
     },
     {
         "code": "통신 1-1-21",
-        "name": "전 선 류 톤 〃 0.47",
+        "name": "전선류 〃 0.21",
         "spec": "인력운반 및 적상․하 기준",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.31,
         "category": "labor",
         "keywords": [
-            "전 선 류 톤 〃 0.47",
+            "전선류 〃 0.21",
             "인력운반 및 적상․하 기준"
         ]
     },
     {
         "code": "통신 1-1-21",
-        "name": "시 멘 트 톤 〃 0.18",
+        "name": "시멘트 〃 0.21",
         "spec": "인력운반 및 적상․하 기준",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.13,
         "category": "labor",
         "keywords": [
-            "시 멘 트 톤 〃 0.18",
+            "시멘트 〃 0.21",
             "인력운반 및 적상․하 기준"
         ]
     },
@@ -108,14 +108,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 1-1-22",
-        "name": "애 자 류 69 52 31 15 5 117 83 57 17",
+        "name": "애자류 69 52 31 15 5 117 83 57 17",
         "spec": "경운기 운반 및 적상․하 시간 기준",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 5.0,
         "category": "labor",
         "keywords": [
-            "애 자 류 69 52 31 15 5 117 83 57 17",
+            "애자류 69 52 31 15 5 117 83 57 17",
             "경운기 운반 및 적상․하 시간 기준"
         ]
     },
@@ -134,53 +134,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 1-1-22",
-        "name": "시 멘 트 류 76 55 31 15 5 117 83 57 17",
+        "name": "시멘트류 76 55 31 15 5 117 83 57 17",
         "spec": "경운기 운반 및 적상․하 시간 기준",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 5.0,
         "category": "labor",
         "keywords": [
-            "시 멘 트 류 76 55 31 15 5 117 83 57 17",
+            "시멘트류 76 55 31 15 5 117 83 57 17",
             "경운기 운반 및 적상․하 시간 기준"
         ]
     },
     {
         "code": "통신 1-1-22",
-        "name": "토 사 류 톤 2인 12 10",
+        "name": "토사류톤 2인 12 10",
         "spec": "경운기 운반 및 적상․하 시간 기준",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.092,
         "category": "labor",
         "keywords": [
-            "토 사 류 톤 2인 12 10",
+            "토사류톤 2인 12 10",
             "경운기 운반 및 적상․하 시간 기준"
         ]
     },
     {
         "code": "통신 1-1-22",
-        "name": "석 재 류 톤 2인 15 11",
+        "name": "석재류톤 2인 15 11",
         "spec": "경운기 운반 및 적상․하 시간 기준",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.108,
         "category": "labor",
         "keywords": [
-            "석 재 류 톤 2인 15 11",
+            "석재류톤 2인 15 11",
             "경운기 운반 및 적상․하 시간 기준"
         ]
     },
     {
         "code": "통신 1-1-22",
-        "name": "애 자 류 톤 6인 13 9",
+        "name": "애자류톤 6인 13 9",
         "spec": "경운기 운반 및 적상․하 시간 기준",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.31,
         "category": "labor",
         "keywords": [
-            "애 자 류 톤 6인 13 9",
+            "애자류톤 6인 13 9",
             "경운기 운반 및 적상․하 시간 기준"
         ]
     },
@@ -199,14 +199,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 1-1-22",
-        "name": "시 멘 트 류 톤 6인 15 10",
+        "name": "시멘트류톤 6인 15 10",
         "spec": "경운기 운반 및 적상․하 시간 기준",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.31,
         "category": "labor",
         "keywords": [
-            "시 멘 트 류 톤 6인 15 10",
+            "시멘트류톤 6인 15 10",
             "경운기 운반 및 적상․하 시간 기준"
         ]
     },
@@ -680,209 +680,209 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 30㎜ 이 하",
+        "name": "Ø 30㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "통신외선공",
         "laborFactor": 0.06,
         "category": "pipe",
         "keywords": [
-            "Ø 30㎜ 이 하",
+            "Ø 30㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 30㎜ 이 하",
+        "name": "Ø 30㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "보통인부",
         "laborFactor": 0.17,
         "category": "pipe",
         "keywords": [
-            "Ø 30㎜ 이 하",
+            "Ø 30㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 50㎜ 이",
+        "name": "Ø 50㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "통신외선공",
         "laborFactor": 0.07,
         "category": "pipe",
         "keywords": [
-            "Ø 50㎜ 이",
+            "Ø 50㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 50㎜ 이",
+        "name": "Ø 50㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "보통인부",
         "laborFactor": 0.18,
         "category": "pipe",
         "keywords": [
-            "Ø 50㎜ 이",
+            "Ø 50㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 80㎜ 이",
+        "name": "Ø 80㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "통신외선공",
         "laborFactor": 0.08,
         "category": "pipe",
         "keywords": [
-            "Ø 80㎜ 이",
+            "Ø 80㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 80㎜ 이",
+        "name": "Ø 80㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "보통인부",
         "laborFactor": 0.22,
         "category": "pipe",
         "keywords": [
-            "Ø 80㎜ 이",
+            "Ø 80㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 100㎜ 이",
+        "name": "Ø 100㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "통신외선공",
         "laborFactor": 0.1,
         "category": "pipe",
         "keywords": [
-            "Ø 100㎜ 이",
+            "Ø 100㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 100㎜ 이",
+        "name": "Ø 100㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "보통인부",
         "laborFactor": 0.26,
         "category": "pipe",
         "keywords": [
-            "Ø 100㎜ 이",
+            "Ø 100㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 150㎜ 이",
+        "name": "Ø 150㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "통신외선공",
         "laborFactor": 0.12,
         "category": "pipe",
         "keywords": [
-            "Ø 150㎜ 이",
+            "Ø 150㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 150㎜ 이",
+        "name": "Ø 150㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "보통인부",
         "laborFactor": 0.32,
         "category": "pipe",
         "keywords": [
-            "Ø 150㎜ 이",
+            "Ø 150㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 200㎜ 이 하",
+        "name": "Ø 200㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "통신외선공",
         "laborFactor": 0.14,
         "category": "pipe",
         "keywords": [
-            "Ø 200㎜ 이 하",
+            "Ø 200㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 200㎜ 이 하",
+        "name": "Ø 200㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "보통인부",
         "laborFactor": 0.38,
         "category": "pipe",
         "keywords": [
-            "Ø 200㎜ 이 하",
+            "Ø 200㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 250㎜ 이",
+        "name": "Ø 250㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "통신외선공",
         "laborFactor": 0.19,
         "category": "pipe",
         "keywords": [
-            "Ø 250㎜ 이",
+            "Ø 250㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 250㎜ 이",
+        "name": "Ø 250㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "보통인부",
         "laborFactor": 0.51,
         "category": "pipe",
         "keywords": [
-            "Ø 250㎜ 이",
+            "Ø 250㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 300㎜ 이",
+        "name": "Ø 300㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "통신외선공",
         "laborFactor": 0.21,
         "category": "pipe",
         "keywords": [
-            "Ø 300㎜ 이",
+            "Ø 300㎜ 이하",
             "PVC관"
         ]
     },
     {
         "code": "통신 2-1-1",
-        "name": "Ø 300㎜ 이",
+        "name": "Ø 300㎜ 이하",
         "spec": "PVC관",
         "unit": "본(6m)",
         "laborType": "보통인부",
         "laborFactor": 0.56,
         "category": "pipe",
         "keywords": [
-            "Ø 300㎜ 이",
+            "Ø 300㎜ 이하",
             "PVC관"
         ]
     },
@@ -966,235 +966,235 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-1-3",
-        "name": "16㎜ 이 하",
+        "name": "16㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.05,
         "category": "pipe",
         "keywords": [
-            "16㎜ 이 하",
+            "16㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "16㎜ 이 하",
+        "name": "16㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 0.12,
         "category": "pipe",
         "keywords": [
-            "16㎜ 이 하",
+            "16㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "30㎜ 이",
+        "name": "30㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.07,
         "category": "pipe",
         "keywords": [
-            "30㎜ 이",
+            "30㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "30㎜ 이",
+        "name": "30㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 0.14,
         "category": "pipe",
         "keywords": [
-            "30㎜ 이",
+            "30㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "50㎜ 이",
+        "name": "50㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.12,
         "category": "pipe",
         "keywords": [
-            "50㎜ 이",
+            "50㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "50㎜ 이",
+        "name": "50㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 0.29,
         "category": "pipe",
         "keywords": [
-            "50㎜ 이",
+            "50㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "80㎜ 이",
+        "name": "80㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.15,
         "category": "pipe",
         "keywords": [
-            "80㎜ 이",
+            "80㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "80㎜ 이",
+        "name": "80㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 0.35,
         "category": "pipe",
         "keywords": [
-            "80㎜ 이",
+            "80㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "100㎜ 이",
+        "name": "100㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.18,
         "category": "pipe",
         "keywords": [
-            "100㎜ 이",
+            "100㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "100㎜ 이",
+        "name": "100㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 0.57,
         "category": "pipe",
         "keywords": [
-            "100㎜ 이",
+            "100㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "125㎜ 이",
+        "name": "125㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.25,
         "category": "pipe",
         "keywords": [
-            "125㎜ 이",
+            "125㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "125㎜ 이",
+        "name": "125㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 0.77,
         "category": "pipe",
         "keywords": [
-            "125㎜ 이",
+            "125㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "150㎜ 이",
+        "name": "150㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.3,
         "category": "pipe",
         "keywords": [
-            "150㎜ 이",
+            "150㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "150㎜ 이",
+        "name": "150㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 0.97,
         "category": "pipe",
         "keywords": [
-            "150㎜ 이",
+            "150㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "175㎜ 이",
+        "name": "175㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.36,
         "category": "pipe",
         "keywords": [
-            "175㎜ 이",
+            "175㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "175㎜ 이",
+        "name": "175㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 1.17,
         "category": "pipe",
         "keywords": [
-            "175㎜ 이",
+            "175㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "200㎜ 이",
+        "name": "200㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.41,
         "category": "pipe",
         "keywords": [
-            "200㎜ 이",
+            "200㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
     {
         "code": "통신 2-1-3",
-        "name": "200㎜ 이",
+        "name": "200㎜ 이하",
         "spec": "합성수지관(주름관 포함)",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 1.29,
         "category": "pipe",
         "keywords": [
-            "200㎜ 이",
+            "200㎜ 이하",
             "합성수지관(주름관 포함)"
         ]
     },
@@ -1382,157 +1382,157 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-1-4-2",
-        "name": "76.3㎜ 이 하",
+        "name": "76.3㎜ 이하",
         "spec": "반원흄관 및 강관",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.43,
         "category": "pipe",
         "keywords": [
-            "76.3㎜ 이 하",
+            "76.3㎜ 이하",
             "반원흄관 및 강관"
         ]
     },
     {
         "code": "통신 2-1-4-2",
-        "name": "76.3㎜ 이 하",
+        "name": "76.3㎜ 이하",
         "spec": "반원흄관 및 강관",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 0.87,
         "category": "pipe",
         "keywords": [
-            "76.3㎜ 이 하",
+            "76.3㎜ 이하",
             "반원흄관 및 강관"
         ]
     },
     {
         "code": "통신 2-1-4-2",
-        "name": "114.3㎜ 이 하",
+        "name": "114.3㎜ 이하",
         "spec": "반원흄관 및 강관",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.51,
         "category": "pipe",
         "keywords": [
-            "114.3㎜ 이 하",
+            "114.3㎜ 이하",
             "반원흄관 및 강관"
         ]
     },
     {
         "code": "통신 2-1-4-2",
-        "name": "114.3㎜ 이 하",
+        "name": "114.3㎜ 이하",
         "spec": "반원흄관 및 강관",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 1.01,
         "category": "pipe",
         "keywords": [
-            "114.3㎜ 이 하",
+            "114.3㎜ 이하",
             "반원흄관 및 강관"
         ]
     },
     {
         "code": "통신 2-1-4-2",
-        "name": "165.2㎜ 이 하",
+        "name": "165.2㎜ 이하",
         "spec": "반원흄관 및 강관",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.63,
         "category": "pipe",
         "keywords": [
-            "165.2㎜ 이 하",
+            "165.2㎜ 이하",
             "반원흄관 및 강관"
         ]
     },
     {
         "code": "통신 2-1-4-2",
-        "name": "165.2㎜ 이 하",
+        "name": "165.2㎜ 이하",
         "spec": "반원흄관 및 강관",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 1.25,
         "category": "pipe",
         "keywords": [
-            "165.2㎜ 이 하",
+            "165.2㎜ 이하",
             "반원흄관 및 강관"
         ]
     },
     {
         "code": "통신 2-1-4-2",
-        "name": "216.3㎜ 이 하",
+        "name": "216.3㎜ 이하",
         "spec": "반원흄관 및 강관",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.74,
         "category": "pipe",
         "keywords": [
-            "216.3㎜ 이 하",
+            "216.3㎜ 이하",
             "반원흄관 및 강관"
         ]
     },
     {
         "code": "통신 2-1-4-2",
-        "name": "216.3㎜ 이 하",
+        "name": "216.3㎜ 이하",
         "spec": "반원흄관 및 강관",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 1.48,
         "category": "pipe",
         "keywords": [
-            "216.3㎜ 이 하",
+            "216.3㎜ 이하",
             "반원흄관 및 강관"
         ]
     },
     {
         "code": "통신 2-1-4-2",
-        "name": "267.4㎜ 이 하",
+        "name": "267.4㎜ 이하",
         "spec": "반원흄관 및 강관",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 1.0,
         "category": "pipe",
         "keywords": [
-            "267.4㎜ 이 하",
+            "267.4㎜ 이하",
             "반원흄관 및 강관"
         ]
     },
     {
         "code": "통신 2-1-4-2",
-        "name": "267.4㎜ 이 하",
+        "name": "267.4㎜ 이하",
         "spec": "반원흄관 및 강관",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 1.99,
         "category": "pipe",
         "keywords": [
-            "267.4㎜ 이 하",
+            "267.4㎜ 이하",
             "반원흄관 및 강관"
         ]
     },
     {
         "code": "통신 2-1-4-2",
-        "name": "318.5㎜ 이 하",
+        "name": "318.5㎜ 이하",
         "spec": "반원흄관 및 강관",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 1.1,
         "category": "pipe",
         "keywords": [
-            "318.5㎜ 이 하",
+            "318.5㎜ 이하",
             "반원흄관 및 강관"
         ]
     },
     {
         "code": "통신 2-1-4-2",
-        "name": "318.5㎜ 이 하",
+        "name": "318.5㎜ 이하",
         "spec": "반원흄관 및 강관",
         "unit": "10m",
         "laborType": "보통인부",
         "laborFactor": 2.2,
         "category": "pipe",
         "keywords": [
-            "318.5㎜ 이 하",
+            "318.5㎜ 이하",
             "반원흄관 및 강관"
         ]
     },
@@ -1642,27 +1642,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-1-7",
-        "name": "인․수공 청 소",
+        "name": "인․수공 청소",
         "spec": "통신용 관로 등 청소",
         "unit": "기",
         "laborType": "통신외선공",
         "laborFactor": 0.17,
         "category": "pipe",
         "keywords": [
-            "인․수공 청 소",
+            "인․수공 청소",
             "통신용 관로 등 청소"
         ]
     },
     {
         "code": "통신 2-1-7",
-        "name": "인․수공 청 소",
+        "name": "인․수공 청소",
         "spec": "통신용 관로 등 청소",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 0.17,
         "category": "pipe",
         "keywords": [
-            "인․수공 청 소",
+            "인․수공 청소",
             "통신용 관로 등 청소"
         ]
     },
@@ -1772,14 +1772,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-1-8-1",
-        "name": "경 암 특별인부 4.40 6.10",
+        "name": "경암 특별인부 4.40 6.10",
         "spec": "인력 터파기",
         "unit": "㎥",
         "laborType": "보통인부",
         "laborFactor": 7.8,
         "category": "pipe",
         "keywords": [
-            "경 암 특별인부 4.40 6.10",
+            "경암 특별인부 4.40 6.10",
             "인력 터파기"
         ]
     },
@@ -1798,53 +1798,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-1-9",
-        "name": "토 사 ㎥",
+        "name": "토사 ㎥",
         "spec": "인력 흙 다지기",
         "unit": "15",
         "laborType": "보통인부",
         "laborFactor": 0.14,
         "category": "pipe",
         "keywords": [
-            "토 사 ㎥",
+            "토사 ㎥",
             "인력 흙 다지기"
         ]
     },
     {
         "code": "통신 2-1-9",
-        "name": "토",
+        "name": "토사 ㎥",
         "spec": "인력 흙 다지기",
         "unit": "30",
         "laborType": "보통인부",
         "laborFactor": 0.11,
         "category": "pipe",
         "keywords": [
-            "토",
+            "토사 ㎥",
             "인력 흙 다지기"
         ]
     },
     {
         "code": "통신 2-1-9",
-        "name": "점 토 ㎥",
+        "name": "점토 ㎥",
         "spec": "인력 흙 다지기",
         "unit": "15",
         "laborType": "보통인부",
         "laborFactor": 0.25,
         "category": "pipe",
         "keywords": [
-            "점 토 ㎥",
+            "점토 ㎥",
             "인력 흙 다지기"
         ]
     },
     {
         "code": "통신 2-1-9",
-        "name": "점",
+        "name": "점토 ㎥",
         "spec": "인력 흙 다지기",
         "unit": "30",
         "laborType": "보통인부",
         "laborFactor": 0.19,
         "category": "pipe",
         "keywords": [
-            "점",
+            "점토 ㎥",
             "인력 흙 다지기"
         ]
     },
@@ -2175,66 +2175,66 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-2-1-2",
-        "name": "840㎜ × 500㎜ 500㎜",
+        "name": "840㎜ × 500㎜ 500㎜ 이하",
         "spec": "고속철도용 트로프",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 1.93,
         "category": "pipe",
         "keywords": [
-            "840㎜ × 500㎜ 500㎜",
+            "840㎜ × 500㎜ 500㎜ 이하",
             "고속철도용 트로프"
         ]
     },
     {
         "code": "통신 2-2-1-2",
-        "name": "530㎜ × 320㎜ 500㎜",
+        "name": "530㎜ × 320㎜ 500㎜ 이하",
         "spec": "고속철도용 트로프",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.27,
         "category": "pipe",
         "keywords": [
-            "530㎜ × 320㎜ 500㎜",
+            "530㎜ × 320㎜ 500㎜ 이하",
             "고속철도용 트로프"
         ]
     },
     {
         "code": "통신 2-2-1-2",
-        "name": "400㎜ × 290㎜ 500㎜",
+        "name": "400㎜ × 290㎜ 500㎜ 이하",
         "spec": "고속철도용 트로프",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.24,
         "category": "pipe",
         "keywords": [
-            "400㎜ × 290㎜ 500㎜",
+            "400㎜ × 290㎜ 500㎜ 이하",
             "고속철도용 트로프"
         ]
     },
     {
         "code": "통신 2-2-1-2",
-        "name": "320㎜ × 250㎜ 500㎜",
+        "name": "320㎜ × 250㎜ 500㎜ 이하",
         "spec": "고속철도용 트로프",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.23,
         "category": "pipe",
         "keywords": [
-            "320㎜ × 250㎜ 500㎜",
+            "320㎜ × 250㎜ 500㎜ 이하",
             "고속철도용 트로프"
         ]
     },
     {
         "code": "통신 2-2-1-2",
-        "name": "115㎜ × 290㎜ 500㎜",
+        "name": "115㎜ × 290㎜ 500㎜ 이하",
         "spec": "고속철도용 트로프",
         "unit": "10m",
         "laborType": "통신외선공",
         "laborFactor": 0.21,
         "category": "pipe",
         "keywords": [
-            "115㎜ × 290㎜ 500㎜",
+            "115㎜ × 290㎜ 500㎜ 이하",
             "고속철도용 트로프"
         ]
     },
@@ -2279,14 +2279,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-2-1-3",
-        "name": "뚜 껑 200㎜ 100m",
+        "name": "뚜껑 200㎜ 100m",
         "spec": "콘크리트 트로프 들어내기 및 닫기",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.87,
         "category": "pipe",
         "keywords": [
-            "뚜 껑 200㎜ 100m",
+            "뚜껑 200㎜ 100m",
             "콘크리트 트로프 들어내기 및 닫기"
         ]
     },
@@ -2318,53 +2318,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-2-1-3",
-        "name": "400㎜ ~ 430㎜ 330㎜",
+        "name": "400㎜ ~ 430㎜ 330㎜ 100m",
         "spec": "콘크리트 트로프 들어내기 및 닫기",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 1.26,
         "category": "pipe",
         "keywords": [
-            "400㎜ ~ 430㎜ 330㎜",
+            "400㎜ ~ 430㎜ 330㎜ 100m",
             "콘크리트 트로프 들어내기 및 닫기"
         ]
     },
     {
         "code": "통신 2-2-1-3",
-        "name": "400㎜ ~ 430㎜ 330㎜",
+        "name": "400㎜ ~ 430㎜ 330㎜ 100m",
         "spec": "콘크리트 트로프 들어내기 및 닫기",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 1.26,
         "category": "pipe",
         "keywords": [
-            "400㎜ ~ 430㎜ 330㎜",
+            "400㎜ ~ 430㎜ 330㎜ 100m",
             "콘크리트 트로프 들어내기 및 닫기"
         ]
     },
     {
         "code": "통신 2-2-1-3",
-        "name": "500㎜ ~",
+        "name": "500㎜ ~ 430㎜ 330㎜ 100m",
         "spec": "콘크리트 트로프 들어내기 및 닫기",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 1.36,
         "category": "pipe",
         "keywords": [
-            "500㎜ ~",
+            "500㎜ ~ 430㎜ 330㎜ 100m",
             "콘크리트 트로프 들어내기 및 닫기"
         ]
     },
     {
         "code": "통신 2-2-1-3",
-        "name": "500㎜ ~",
+        "name": "500㎜ ~ 430㎜ 330㎜ 100m",
         "spec": "콘크리트 트로프 들어내기 및 닫기",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 1.36,
         "category": "pipe",
         "keywords": [
-            "500㎜ ~",
+            "500㎜ ~ 430㎜ 330㎜ 100m",
             "콘크리트 트로프 들어내기 및 닫기"
         ]
     },
@@ -2747,14 +2747,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-3-3",
-        "name": "직 선 형 2,000×1,000×1,700",
+        "name": "직선형 2,000×1,000×1,700",
         "spec": "인․수공케이블 지지철물",
         "unit": "기",
         "laborType": "통신외선공",
         "laborFactor": 0.06,
         "category": "pipe",
         "keywords": [
-            "직 선 형 2,000×1,000×1,700",
+            "직선형 2,000×1,000×1,700",
             "인․수공케이블 지지철물"
         ]
     },
@@ -2838,27 +2838,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-3-4",
-        "name": "공 관 로",
+        "name": "공관로",
         "spec": "관구마개",
         "unit": "1공",
         "laborType": "통신케이블공",
         "laborFactor": 0.01,
         "category": "pipe",
         "keywords": [
-            "공 관 로",
+            "공관로",
             "관구마개"
         ]
     },
     {
         "code": "통신 2-3-4",
-        "name": "공 관 로",
+        "name": "공관로",
         "spec": "관구마개",
         "unit": "1공",
         "laborType": "보통인부",
         "laborFactor": 0.01,
         "category": "pipe",
         "keywords": [
-            "공 관 로",
+            "공관로",
             "관구마개"
         ]
     },
@@ -3046,131 +3046,131 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-4-1",
-        "name": "11m 전봇대",
+        "name": "11m 전봇대 10m 이하",
         "spec": "전봇대 인력 세움",
         "unit": "기",
         "laborType": "통신외선공",
         "laborFactor": 2.5,
         "category": "pipe",
         "keywords": [
-            "11m 전봇대",
+            "11m 전봇대 10m 이하",
             "전봇대 인력 세움"
         ]
     },
     {
         "code": "통신 2-4-1",
-        "name": "11m 전봇대",
+        "name": "11m 전봇대 10m 이하",
         "spec": "전봇대 인력 세움",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 2.63,
         "category": "pipe",
         "keywords": [
-            "11m 전봇대",
+            "11m 전봇대 10m 이하",
             "전봇대 인력 세움"
         ]
     },
     {
         "code": "통신 2-4-1",
-        "name": "12m 전봇대",
+        "name": "12m 전봇대 10m 이하",
         "spec": "전봇대 인력 세움",
         "unit": "기",
         "laborType": "통신외선공",
         "laborFactor": 2.86,
         "category": "pipe",
         "keywords": [
-            "12m 전봇대",
+            "12m 전봇대 10m 이하",
             "전봇대 인력 세움"
         ]
     },
     {
         "code": "통신 2-4-1",
-        "name": "12m 전봇대",
+        "name": "12m 전봇대 10m 이하",
         "spec": "전봇대 인력 세움",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 3.0,
         "category": "pipe",
         "keywords": [
-            "12m 전봇대",
+            "12m 전봇대 10m 이하",
             "전봇대 인력 세움"
         ]
     },
     {
         "code": "통신 2-4-1",
-        "name": "14m 전봇대",
+        "name": "14m 전봇대 10m 이하",
         "spec": "전봇대 인력 세움",
         "unit": "기",
         "laborType": "통신외선공",
         "laborFactor": 3.6,
         "category": "pipe",
         "keywords": [
-            "14m 전봇대",
+            "14m 전봇대 10m 이하",
             "전봇대 인력 세움"
         ]
     },
     {
         "code": "통신 2-4-1",
-        "name": "14m 전봇대",
+        "name": "14m 전봇대 10m 이하",
         "spec": "전봇대 인력 세움",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 4.24,
         "category": "pipe",
         "keywords": [
-            "14m 전봇대",
+            "14m 전봇대 10m 이하",
             "전봇대 인력 세움"
         ]
     },
     {
         "code": "통신 2-4-1",
-        "name": "16m 전봇대",
+        "name": "16m 전봇대 10m 이하",
         "spec": "전봇대 인력 세움",
         "unit": "기",
         "laborType": "통신외선공",
         "laborFactor": 5.1,
         "category": "pipe",
         "keywords": [
-            "16m 전봇대",
+            "16m 전봇대 10m 이하",
             "전봇대 인력 세움"
         ]
     },
     {
         "code": "통신 2-4-1",
-        "name": "16m 전봇대",
+        "name": "16m 전봇대 10m 이하",
         "spec": "전봇대 인력 세움",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 5.2,
         "category": "pipe",
         "keywords": [
-            "16m 전봇대",
+            "16m 전봇대 10m 이하",
             "전봇대 인력 세움"
         ]
     },
     {
         "code": "통신 2-4-1",
-        "name": "17m 전봇대",
+        "name": "17m 전봇대 10m 이하",
         "spec": "전봇대 인력 세움",
         "unit": "기",
         "laborType": "통신외선공",
         "laborFactor": 6.5,
         "category": "pipe",
         "keywords": [
-            "17m 전봇대",
+            "17m 전봇대 10m 이하",
             "전봇대 인력 세움"
         ]
     },
     {
         "code": "통신 2-4-1",
-        "name": "17m 전봇대",
+        "name": "17m 전봇대 10m 이하",
         "spec": "전봇대 인력 세움",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 6.74,
         "category": "pipe",
         "keywords": [
-            "17m 전봇대",
+            "17m 전봇대 10m 이하",
             "전봇대 인력 세움"
         ]
     },
@@ -3488,53 +3488,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-4-3",
-        "name": "7m 이 하",
+        "name": "7m 이하",
         "spec": "콘크리트 전봇대 파쇄",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 0.2,
         "category": "pipe",
         "keywords": [
-            "7m 이 하",
+            "7m 이하",
             "콘크리트 전봇대 파쇄"
         ]
     },
     {
         "code": "통신 2-4-3",
-        "name": "8m 이",
+        "name": "8m 이하",
         "spec": "콘크리트 전봇대 파쇄",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 0.25,
         "category": "pipe",
         "keywords": [
-            "8m 이",
+            "8m 이하",
             "콘크리트 전봇대 파쇄"
         ]
     },
     {
         "code": "통신 2-4-3",
-        "name": "9m 이",
+        "name": "9m 이하",
         "spec": "콘크리트 전봇대 파쇄",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 0.3,
         "category": "pipe",
         "keywords": [
-            "9m 이",
+            "9m 이하",
             "콘크리트 전봇대 파쇄"
         ]
     },
     {
         "code": "통신 2-4-3",
-        "name": "10m 이 상",
+        "name": "10m 이상",
         "spec": "콘크리트 전봇대 파쇄",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 0.4,
         "category": "pipe",
         "keywords": [
-            "10m 이 상",
+            "10m 이상",
             "콘크리트 전봇대 파쇄"
         ]
     },
@@ -3566,157 +3566,157 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-4-4",
-        "name": "(1.5m) 6조 4조",
+        "name": "(1.5m) 6조 4조 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "통신외선공",
         "laborFactor": 0.57,
         "category": "pipe",
         "keywords": [
-            "(1.5m) 6조 4조",
+            "(1.5m) 6조 4조 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "(1.5m) 6조 4조",
+        "name": "(1.5m) 6조 4조 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "보통인부",
         "laborFactor": 0.43,
         "category": "pipe",
         "keywords": [
-            "(1.5m) 6조 4조",
+            "(1.5m) 6조 4조 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "(1.5m) 8조 4조",
+        "name": "(1.5m) 8조 4조 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "통신외선공",
         "laborFactor": 0.75,
         "category": "pipe",
         "keywords": [
-            "(1.5m) 8조 4조",
+            "(1.5m) 8조 4조 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "(1.5m) 8조 4조",
+        "name": "(1.5m) 8조 4조 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "보통인부",
         "laborFactor": 0.56,
         "category": "pipe",
         "keywords": [
-            "(1.5m) 8조 4조",
+            "(1.5m) 8조 4조 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "(1.7m) 10 조 4조",
+        "name": "(1.7m) 10 조 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "통신외선공",
         "laborFactor": 1.11,
         "category": "pipe",
         "keywords": [
-            "(1.7m) 10 조 4조",
+            "(1.7m) 10 조 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "(1.7m) 10 조 4조",
+        "name": "(1.7m) 10 조 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "보통인부",
         "laborFactor": 0.83,
         "category": "pipe",
         "keywords": [
-            "(1.7m) 10 조 4조",
+            "(1.7m) 10 조 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "(1.7m) 12 조 4조",
+        "name": "(1.7m) 12 조 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "통신외선공",
         "laborFactor": 1.54,
         "category": "pipe",
         "keywords": [
-            "(1.7m) 12 조 4조",
+            "(1.7m) 12 조 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "(1.7m) 12 조 4조",
+        "name": "(1.7m) 12 조 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "보통인부",
         "laborFactor": 1.16,
         "category": "pipe",
         "keywords": [
-            "(1.7m) 12 조 4조",
+            "(1.7m) 12 조 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "(1.7m) 15 조 4조",
+        "name": "(1.7m) 15 조 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "통신외선공",
         "laborFactor": 1.9,
         "category": "pipe",
         "keywords": [
-            "(1.7m) 15 조 4조",
+            "(1.7m) 15 조 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "(1.7m) 15 조 4조",
+        "name": "(1.7m) 15 조 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "보통인부",
         "laborFactor": 1.43,
         "category": "pipe",
         "keywords": [
-            "(1.7m) 15 조 4조",
+            "(1.7m) 15 조 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "(1.8m) 18 조 4조",
+        "name": "(1.8m) 18 조 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "통신외선공",
         "laborFactor": 2.35,
         "category": "pipe",
         "keywords": [
-            "(1.8m) 18 조 4조",
+            "(1.8m) 18 조 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "(1.8m) 18 조 4조",
+        "name": "(1.8m) 18 조 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "보통인부",
         "laborFactor": 1.73,
         "category": "pipe",
         "keywords": [
-            "(1.8m) 18 조 4조",
+            "(1.8m) 18 조 이하",
             "지지선"
         ]
     },
@@ -3800,53 +3800,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-4-4",
-        "name": "7/5.0 ~",
+        "name": "7/5.0 ~ 7/4.5 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "통신외선공",
         "laborFactor": 0.44,
         "category": "pipe",
         "keywords": [
-            "7/5.0 ~",
+            "7/5.0 ~ 7/4.5 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "7/5.0 ~",
+        "name": "7/5.0 ~ 7/4.5 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "보통인부",
         "laborFactor": 0.28,
         "category": "pipe",
         "keywords": [
-            "7/5.0 ~",
+            "7/5.0 ~ 7/4.5 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "7/5.5 ~ 7/6.5 ~",
+        "name": "7/5.5 ~ 7/6.5 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "통신외선공",
         "laborFactor": 0.44,
         "category": "pipe",
         "keywords": [
-            "7/5.5 ~ 7/6.5 ~",
+            "7/5.5 ~ 7/6.5 이하",
             "지지선"
         ]
     },
     {
         "code": "통신 2-4-4",
-        "name": "7/5.5 ~ 7/6.5 ~",
+        "name": "7/5.5 ~ 7/6.5 이하",
         "spec": "지지선",
         "unit": "본",
         "laborType": "보통인부",
         "laborFactor": 0.28,
         "category": "pipe",
         "keywords": [
-            "7/5.5 ~ 7/6.5 ~",
+            "7/5.5 ~ 7/6.5 이하",
             "지지선"
         ]
     },
@@ -3891,183 +3891,183 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-4-5",
-        "name": "38㎟ 아연도",
+        "name": "38㎟ 아연도 강연선",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "통신외선공",
         "laborFactor": 5.22,
         "category": "pipe",
         "keywords": [
-            "38㎟ 아연도",
+            "38㎟ 아연도 강연선",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "38㎟ 아연도",
+        "name": "38㎟ 아연도 강연선",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "특별인부",
         "laborFactor": 3.48,
         "category": "pipe",
         "keywords": [
-            "38㎟ 아연도",
+            "38㎟ 아연도 강연선",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "45㎟ 아연도",
+        "name": "45㎟ 아연도 강연선",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "통신외선공",
         "laborFactor": 5.22,
         "category": "pipe",
         "keywords": [
-            "45㎟ 아연도",
+            "45㎟ 아연도 강연선",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "45㎟ 아연도",
+        "name": "45㎟ 아연도 강연선",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "특별인부",
         "laborFactor": 3.48,
         "category": "pipe",
         "keywords": [
-            "45㎟ 아연도",
+            "45㎟ 아연도 강연선",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "55㎟ 아연도",
+        "name": "55㎟ 아연도 강연선",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "통신외선공",
         "laborFactor": 6.27,
         "category": "pipe",
         "keywords": [
-            "55㎟ 아연도",
+            "55㎟ 아연도 강연선",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "55㎟ 아연도",
+        "name": "55㎟ 아연도 강연선",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "특별인부",
         "laborFactor": 4.18,
         "category": "pipe",
         "keywords": [
-            "55㎟ 아연도",
+            "55㎟ 아연도 강연선",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "70㎟ 아연도",
+        "name": "70㎟ 아연도 강연선",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "통신외선공",
         "laborFactor": 6.63,
         "category": "pipe",
         "keywords": [
-            "70㎟ 아연도",
+            "70㎟ 아연도 강연선",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "70㎟ 아연도",
+        "name": "70㎟ 아연도 강연선",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "특별인부",
         "laborFactor": 4.42,
         "category": "pipe",
         "keywords": [
-            "70㎟ 아연도",
+            "70㎟ 아연도 강연선",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "90㎟ 아연도",
+        "name": "90㎟ 아연도 강연선",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "통신외선공",
         "laborFactor": 9.06,
         "category": "pipe",
         "keywords": [
-            "90㎟ 아연도",
+            "90㎟ 아연도 강연선",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "90㎟ 아연도",
+        "name": "90㎟ 아연도 강연선",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "특별인부",
         "laborFactor": 6.04,
         "category": "pipe",
         "keywords": [
-            "90㎟ 아연도",
+            "90㎟ 아연도 강연선",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "110㎟ 아연도",
+        "name": "110㎟ 아연도 강연선",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "통신외선공",
         "laborFactor": 11.16,
         "category": "pipe",
         "keywords": [
-            "110㎟ 아연도",
+            "110㎟ 아연도 강연선",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "110㎟ 아연도",
+        "name": "110㎟ 아연도 강연선",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "특별인부",
         "laborFactor": 7.44,
         "category": "pipe",
         "keywords": [
-            "110㎟ 아연도",
+            "110㎟ 아연도 강연선",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "Y 선 설 치",
+        "name": "Y 선설치",
         "spec": "조가선",
         "unit": "개소",
         "laborType": "통신외선공",
         "laborFactor": 1.07,
         "category": "pipe",
         "keywords": [
-            "Y 선 설 치",
+            "Y 선설치",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "가 선 심 볼(절 차)",
+        "name": "가선심 볼(절 차)",
         "spec": "조가선",
         "unit": "개소",
         "laborType": "통신외선공",
         "laborFactor": 2.52,
         "category": "pipe",
         "keywords": [
-            "가 선 심 볼(절 차)",
+            "가선심 볼(절 차)",
             "조가선"
         ]
     },
@@ -4086,144 +4086,144 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 2-4-5",
-        "name": "가 선 콤 파 운 드",
+        "name": "가선콤파운드",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "통신외선공",
         "laborFactor": 21.3,
         "category": "pipe",
         "keywords": [
-            "가 선 콤 파 운 드",
+            "가선콤파운드",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "가 선 심 볼",
+        "name": "가선심볼",
         "spec": "조가선",
         "unit": "㎞",
         "laborType": "통신외선공",
         "laborFactor": 14.6,
         "category": "pipe",
         "keywords": [
-            "가 선 심 볼",
+            "가선심볼",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "프 리 텐 숀",
+        "name": "프리텐숀",
         "spec": "조가선",
         "unit": "개소",
         "laborType": "통신외선공",
         "laborFactor": 0.58,
         "category": "pipe",
         "keywords": [
-            "프 리 텐 숀",
+            "프리텐숀",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "밴 드",
+        "name": "밴드",
         "spec": "조가선",
         "unit": "10개",
         "laborType": "통신외선공",
         "laborFactor": 0.58,
         "category": "pipe",
         "keywords": [
-            "밴 드",
+            "밴드",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "밴 드",
+        "name": "밴드",
         "spec": "조가선",
         "unit": "10개",
         "laborType": "특별인부",
         "laborFactor": 0.29,
         "category": "pipe",
         "keywords": [
-            "밴 드",
+            "밴드",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "클 램 프",
+        "name": "클램프",
         "spec": "조가선",
         "unit": "10개",
         "laborType": "통신외선공",
         "laborFactor": 0.28,
         "category": "pipe",
         "keywords": [
-            "클 램 프",
+            "클램프",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "클 램 프",
+        "name": "클램프",
         "spec": "조가선",
         "unit": "10개",
         "laborType": "특별인부",
         "laborFactor": 0.1,
         "category": "pipe",
         "keywords": [
-            "클 램 프",
+            "클램프",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "턴 버 클",
+        "name": "턴버클",
         "spec": "조가선",
         "unit": "10개",
         "laborType": "통신외선공",
         "laborFactor": 0.56,
         "category": "pipe",
         "keywords": [
-            "턴 버 클",
+            "턴버클",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "턴 버 클",
+        "name": "턴버클",
         "spec": "조가선",
         "unit": "10개",
         "laborType": "특별인부",
         "laborFactor": 0.28,
         "category": "pipe",
         "keywords": [
-            "턴 버 클",
+            "턴버클",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "지 지 용 볼 트",
+        "name": "지지용볼트",
         "spec": "조가선",
         "unit": "10개",
         "laborType": "통신외선공",
         "laborFactor": 0.84,
         "category": "pipe",
         "keywords": [
-            "지 지 용 볼 트",
+            "지지용볼트",
             "조가선"
         ]
     },
     {
         "code": "통신 2-4-5",
-        "name": "지 지 용 볼 트",
+        "name": "지지용볼트",
         "spec": "조가선",
         "unit": "10개",
         "laborType": "특별인부",
         "laborFactor": 0.84,
         "category": "pipe",
         "keywords": [
-            "지 지 용 볼 트",
+            "지지용볼트",
             "조가선"
         ]
     },
@@ -4528,14 +4528,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 3-2-1",
-        "name": "- 벽 면 : 단면적 100 이하(깊이10이하)",
+        "name": "- 벽면 : 단면적 100 이하(깊이10이하)",
         "spec": "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 0.17,
         "category": "pipe",
         "keywords": [
-            "- 벽 면 : 단면적 100 이하(깊이10이하)",
+            "- 벽면 : 단면적 100 이하(깊이10이하)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
         ]
     },
@@ -4671,66 +4671,66 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 3-2-2",
-        "name": "후강 Ø42㎜ ~ 54㎜",
+        "name": "후강 전선관 Ø16㎜ ~ 36㎜",
         "spec": "박스용 연결접지선(Bond Earth)",
         "unit": "10개소",
         "laborType": "통신내선공",
         "laborFactor": 0.1,
         "category": "pipe",
         "keywords": [
-            "후강 Ø42㎜ ~ 54㎜",
+            "후강 전선관 Ø16㎜ ~ 36㎜",
             "박스용 연결접지선(Bond Earth)"
         ]
     },
     {
         "code": "통신 3-2-2",
-        "name": "후강 Ø70㎜",
+        "name": "후강 전선관 Ø16㎜ ~ 36㎜",
         "spec": "박스용 연결접지선(Bond Earth)",
         "unit": "10개소",
         "laborType": "통신내선공",
         "laborFactor": 0.13,
         "category": "pipe",
         "keywords": [
-            "후강 Ø70㎜",
+            "후강 전선관 Ø16㎜ ~ 36㎜",
             "박스용 연결접지선(Bond Earth)"
         ]
     },
     {
         "code": "통신 3-2-2",
-        "name": "후강 Ø82㎜",
+        "name": "후강 전선관 Ø16㎜ ~ 36㎜",
         "spec": "박스용 연결접지선(Bond Earth)",
         "unit": "10개소",
         "laborType": "통신내선공",
         "laborFactor": 0.16,
         "category": "pipe",
         "keywords": [
-            "후강 Ø82㎜",
+            "후강 전선관 Ø16㎜ ~ 36㎜",
             "박스용 연결접지선(Bond Earth)"
         ]
     },
     {
         "code": "통신 3-2-2",
-        "name": "후강 Ø92㎜",
+        "name": "후강 전선관 Ø16㎜ ~ 36㎜",
         "spec": "박스용 연결접지선(Bond Earth)",
         "unit": "10개소",
         "laborType": "통신내선공",
         "laborFactor": 0.19,
         "category": "pipe",
         "keywords": [
-            "후강 Ø92㎜",
+            "후강 전선관 Ø16㎜ ~ 36㎜",
             "박스용 연결접지선(Bond Earth)"
         ]
     },
     {
         "code": "통신 3-2-2",
-        "name": "후강 Ø104㎜",
+        "name": "후강 전선관 Ø16㎜ ~ 36㎜",
         "spec": "박스용 연결접지선(Bond Earth)",
         "unit": "10개소",
         "laborType": "통신내선공",
         "laborFactor": 0.23,
         "category": "pipe",
         "keywords": [
-            "후강 Ø104㎜",
+            "후강 전선관 Ø16㎜ ~ 36㎜",
             "박스용 연결접지선(Bond Earth)"
         ]
     },
@@ -5048,235 +5048,235 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 3-3-2",
-        "name": "단 자 함 250P 이하",
+        "name": "단자함 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.89,
         "category": "pipe",
         "keywords": [
-            "단 자 함 250P 이하",
+            "단자함 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "단 자 함 250P 이하",
+        "name": "단자함 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.64,
         "category": "pipe",
         "keywords": [
-            "단 자 함 250P 이하",
+            "단자함 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "300P 자",
+        "name": "300P 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.97,
         "category": "pipe",
         "keywords": [
-            "300P 자",
+            "300P 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "300P 자",
+        "name": "300P 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.69,
         "category": "pipe",
         "keywords": [
-            "300P 자",
+            "300P 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "350P 자",
+        "name": "350P 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 1.06,
         "category": "pipe",
         "keywords": [
-            "350P 자",
+            "350P 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "350P 자",
+        "name": "350P 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.74,
         "category": "pipe",
         "keywords": [
-            "350P 자",
+            "350P 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "400P 자",
+        "name": "400P 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 1.15,
         "category": "pipe",
         "keywords": [
-            "400P 자",
+            "400P 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "400P 자",
+        "name": "400P 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.8,
         "category": "pipe",
         "keywords": [
-            "400P 자",
+            "400P 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "450P 자",
+        "name": "450P 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 1.25,
         "category": "pipe",
         "keywords": [
-            "450P 자",
+            "450P 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "450P 자",
+        "name": "450P 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.86,
         "category": "pipe",
         "keywords": [
-            "450P 자",
+            "450P 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "500P 자",
+        "name": "500P 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 1.36,
         "category": "pipe",
         "keywords": [
-            "500P 자",
+            "500P 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "500P 자",
+        "name": "500P 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.93,
         "category": "pipe",
         "keywords": [
-            "500P 자",
+            "500P 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "600P 자",
+        "name": "600P 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 1.61,
         "category": "pipe",
         "keywords": [
-            "600P 자",
+            "600P 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "600P 자",
+        "name": "600P 250P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 1.09,
         "category": "pipe",
         "keywords": [
-            "600P 자",
+            "600P 250P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "배 선 함 10P 이하",
+        "name": "배선함 10P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.65,
         "category": "pipe",
         "keywords": [
-            "배 선 함 10P 이하",
+            "배선함 10P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "배 선 함 10P 이하",
+        "name": "배선함 10P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.45,
         "category": "pipe",
         "keywords": [
-            "배 선 함 10P 이하",
+            "배선함 10P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "50P 선",
+        "name": "50P 10P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.72,
         "category": "pipe",
         "keywords": [
-            "50P 선",
+            "50P 10P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "50P 선",
+        "name": "50P 10P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.45,
         "category": "pipe",
         "keywords": [
-            "50P 선",
+            "50P 10P 이하",
             "배선반"
         ]
     },
@@ -5308,27 +5308,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 3-3-2",
-        "name": "25P 10P",
+        "name": "25P 10P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.24,
         "category": "pipe",
         "keywords": [
-            "25P 10P",
+            "25P 10P 이하",
             "배선반"
         ]
     },
     {
         "code": "통신 3-3-2",
-        "name": "25P 10P",
+        "name": "25P 10P 이하",
         "spec": "배선반",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.12,
         "category": "pipe",
         "keywords": [
-            "25P 10P",
+            "25P 10P 이하",
             "배선반"
         ]
     },
@@ -5360,79 +5360,79 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 3-4-1",
-        "name": "300㎜ 200㎜ 2.71",
+        "name": "300㎜ 200㎜ 이하 2.10",
         "spec": "케이블랙 및 트레이",
         "unit": "10m",
         "laborType": "통신내선공",
         "laborFactor": 2.0,
         "category": "pipe",
         "keywords": [
-            "300㎜ 200㎜ 2.71",
+            "300㎜ 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
         ]
     },
     {
         "code": "통신 3-4-1",
-        "name": "400㎜ 200㎜ 3.55",
+        "name": "400㎜ 200㎜ 이하 2.10",
         "spec": "케이블랙 및 트레이",
         "unit": "10m",
         "laborType": "통신내선공",
         "laborFactor": 2.49,
         "category": "pipe",
         "keywords": [
-            "400㎜ 200㎜ 3.55",
+            "400㎜ 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
         ]
     },
     {
         "code": "통신 3-4-1",
-        "name": "500㎜ 200㎜ 4.21",
+        "name": "500㎜ 200㎜ 이하 2.10",
         "spec": "케이블랙 및 트레이",
         "unit": "10m",
         "laborType": "통신내선공",
         "laborFactor": 3.12,
         "category": "pipe",
         "keywords": [
-            "500㎜ 200㎜ 4.21",
+            "500㎜ 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
         ]
     },
     {
         "code": "통신 3-4-1",
-        "name": "600㎜ 200㎜ 5.20",
+        "name": "600㎜ 200㎜ 이하 2.10",
         "spec": "케이블랙 및 트레이",
         "unit": "10m",
         "laborType": "통신내선공",
         "laborFactor": 3.64,
         "category": "pipe",
         "keywords": [
-            "600㎜ 200㎜ 5.20",
+            "600㎜ 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
         ]
     },
     {
         "code": "통신 3-4-1",
-        "name": "800㎜ 200㎜ 5.90",
+        "name": "800㎜ 200㎜ 이하 2.10",
         "spec": "케이블랙 및 트레이",
         "unit": "10m",
         "laborType": "통신내선공",
         "laborFactor": 4.13,
         "category": "pipe",
         "keywords": [
-            "800㎜ 200㎜ 5.90",
+            "800㎜ 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
         ]
     },
     {
         "code": "통신 3-4-1",
-        "name": "1,000㎜ 200㎜ 7.30",
+        "name": "1,000㎜ 200㎜ 이하 2.10",
         "spec": "케이블랙 및 트레이",
         "unit": "10m",
         "laborType": "통신내선공",
         "laborFactor": 5.11,
         "category": "pipe",
         "keywords": [
-            "1,000㎜ 200㎜ 7.30",
+            "1,000㎜ 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
         ]
     },
@@ -5451,79 +5451,79 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 3-4-2",
-        "name": "300㎜ 200㎜ 2.00",
+        "name": "300㎜ 200㎜ 이하 1.50",
         "spec": "조립식 케이블트레이",
         "unit": "10m",
         "laborType": "통신내선공",
         "laborFactor": 1.4,
         "category": "pipe",
         "keywords": [
-            "300㎜ 200㎜ 2.00",
+            "300㎜ 200㎜ 이하 1.50",
             "조립식 케이블트레이"
         ]
     },
     {
         "code": "통신 3-4-2",
-        "name": "400㎜ 200㎜ 2.60",
+        "name": "400㎜ 200㎜ 이하 1.50",
         "spec": "조립식 케이블트레이",
         "unit": "10m",
         "laborType": "통신내선공",
         "laborFactor": 1.8,
         "category": "pipe",
         "keywords": [
-            "400㎜ 200㎜ 2.60",
+            "400㎜ 200㎜ 이하 1.50",
             "조립식 케이블트레이"
         ]
     },
     {
         "code": "통신 3-4-2",
-        "name": "500㎜ 200㎜ 3.10",
+        "name": "500㎜ 200㎜ 이하 1.50",
         "spec": "조립식 케이블트레이",
         "unit": "10m",
         "laborType": "통신내선공",
         "laborFactor": 2.1,
         "category": "pipe",
         "keywords": [
-            "500㎜ 200㎜ 3.10",
+            "500㎜ 200㎜ 이하 1.50",
             "조립식 케이블트레이"
         ]
     },
     {
         "code": "통신 3-4-2",
-        "name": "600㎜ 200㎜ 4.10",
+        "name": "600㎜ 200㎜ 이하 1.50",
         "spec": "조립식 케이블트레이",
         "unit": "10m",
         "laborType": "통신내선공",
         "laborFactor": 2.9,
         "category": "pipe",
         "keywords": [
-            "600㎜ 200㎜ 4.10",
+            "600㎜ 200㎜ 이하 1.50",
             "조립식 케이블트레이"
         ]
     },
     {
         "code": "통신 3-4-2",
-        "name": "800㎜ 200㎜ 4.60",
+        "name": "800㎜ 200㎜ 이하 1.50",
         "spec": "조립식 케이블트레이",
         "unit": "10m",
         "laborType": "통신내선공",
         "laborFactor": 3.2,
         "category": "pipe",
         "keywords": [
-            "800㎜ 200㎜ 4.60",
+            "800㎜ 200㎜ 이하 1.50",
             "조립식 케이블트레이"
         ]
     },
     {
         "code": "통신 3-4-2",
-        "name": "1,000㎜ 200㎜ 6.10",
+        "name": "1,000㎜ 200㎜ 이하 1.50",
         "spec": "조립식 케이블트레이",
         "unit": "10m",
         "laborType": "통신내선공",
         "laborFactor": 4.2,
         "category": "pipe",
         "keywords": [
-            "1,000㎜ 200㎜ 6.10",
+            "1,000㎜ 200㎜ 이하 1.50",
             "조립식 케이블트레이"
         ]
     },
@@ -5685,53 +5685,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 3-5-2",
-        "name": "덕트 뚜껑 닫기 - 100m -",
+        "name": "덕트 뚜껑 닫기 - 100m 0.12",
         "spec": "금속덕트",
         "unit": "-",
         "laborType": "보통인부",
         "laborFactor": 1.0,
         "category": "pipe",
         "keywords": [
-            "덕트 뚜껑 닫기 - 100m -",
+            "덕트 뚜껑 닫기 - 100m 0.12",
             "금속덕트"
         ]
     },
     {
         "code": "통신 3-5-3",
-        "name": "금 속 소 형 210㎟ 이하",
+        "name": "금속소형 210㎟ 이하",
         "spec": "몰딩(Molding)",
         "unit": "m",
         "laborType": "통신내선공",
         "laborFactor": 0.16,
         "category": "pipe",
         "keywords": [
-            "금 속 소 형 210㎟ 이하",
+            "금속소형 210㎟ 이하",
             "몰딩(Molding)"
         ]
     },
     {
         "code": "통신 3-5-3",
-        "name": "중 형 595㎟ 이하",
+        "name": "중형 595㎟ 이하",
         "spec": "몰딩(Molding)",
         "unit": "m",
         "laborType": "통신내선공",
         "laborFactor": 0.18,
         "category": "pipe",
         "keywords": [
-            "중 형 595㎟ 이하",
+            "중형 595㎟ 이하",
             "몰딩(Molding)"
         ]
     },
     {
         "code": "통신 3-5-3",
-        "name": "몰 딩 대 형 600㎟ 초과",
+        "name": "몰딩대형 600㎟ 초과",
         "spec": "몰딩(Molding)",
         "unit": "m",
         "laborType": "통신내선공",
         "laborFactor": 0.22,
         "category": "pipe",
         "keywords": [
-            "몰 딩 대 형 600㎟ 초과",
+            "몰딩대형 600㎟ 초과",
             "몰딩(Molding)"
         ]
     },
@@ -6114,79 +6114,79 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-1-3",
-        "name": "24코어 이하 이하",
+        "name": "24코어 이하 이하 100m",
         "spec": "구내 광섬유케이블",
         "unit": "1.32",
         "laborType": "특별인부",
         "laborFactor": 0.67,
         "category": "cable",
         "keywords": [
-            "24코어 이하 이하",
+            "24코어 이하 이하 100m",
             "구내 광섬유케이블"
         ]
     },
     {
         "code": "통신 4-1-3",
-        "name": "광코어 공압포설 4코어 이하 이하",
+        "name": "광코어 공압포설 4코어 이하 100m",
         "spec": "구내 광섬유케이블",
         "unit": "0.12",
         "laborType": "특별인부",
         "laborFactor": 0.09,
         "category": "cable",
         "keywords": [
-            "광코어 공압포설 4코어 이하 이하",
+            "광코어 공압포설 4코어 이하 100m",
             "구내 광섬유케이블"
         ]
     },
     {
         "code": "통신 4-1-3",
-        "name": "(집합광섬유) 8코어 이하 이하",
+        "name": "(집합광섬유) 8코어 이하 이하 100m",
         "spec": "구내 광섬유케이블",
         "unit": "0.15",
         "laborType": "특별인부",
         "laborFactor": 0.11,
         "category": "cable",
         "keywords": [
-            "(집합광섬유) 8코어 이하 이하",
+            "(집합광섬유) 8코어 이하 이하 100m",
             "구내 광섬유케이블"
         ]
     },
     {
         "code": "통신 4-1-3",
-        "name": "9코어 이상 이하",
+        "name": "9코어 이상 이하 이하 100m",
         "spec": "구내 광섬유케이블",
         "unit": "0.17",
         "laborType": "특별인부",
         "laborFactor": 0.12,
         "category": "cable",
         "keywords": [
-            "9코어 이상 이하",
+            "9코어 이상 이하 이하 100m",
             "구내 광섬유케이블"
         ]
     },
     {
         "code": "통신 4-1-3",
-        "name": "광튜브 포설 7튜브 이하 이하",
+        "name": "광튜브 포설 7튜브 이하 100m",
         "spec": "구내 광섬유케이블",
         "unit": "0.49",
         "laborType": "보통인부",
         "laborFactor": 0.83,
         "category": "cable",
         "keywords": [
-            "광튜브 포설 7튜브 이하 이하",
+            "광튜브 포설 7튜브 이하 100m",
             "구내 광섬유케이블"
         ]
     },
     {
         "code": "통신 4-1-3",
-        "name": "8튜브 이상 7튜브",
+        "name": "8튜브 이상 7튜브 이하 100m",
         "spec": "구내 광섬유케이블",
         "unit": "0.58",
         "laborType": "보통인부",
         "laborFactor": 0.95,
         "category": "cable",
         "keywords": [
-            "8튜브 이상 7튜브",
+            "8튜브 이상 7튜브 이하 100m",
             "구내 광섬유케이블"
         ]
     },
@@ -6205,40 +6205,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-1-3",
-        "name": "성 단 - 코어당",
+        "name": "성단 - 코어당",
         "spec": "구내 광섬유케이블",
         "unit": "0.06",
         "laborType": "특별인부",
         "laborFactor": 0.05,
         "category": "cable",
         "keywords": [
-            "성 단 - 코어당",
+            "성단 - 코어당",
             "구내 광섬유케이블"
         ]
     },
     {
         "code": "통신 4-1-3",
-        "name": "시 험 최종시험 코어당",
+        "name": "시험 최종시험 코어당",
         "spec": "구내 광섬유케이블",
         "unit": "0.05",
         "laborType": "특별인부",
         "laborFactor": 0.02,
         "category": "cable",
         "keywords": [
-            "시 험 최종시험 코어당",
+            "시험 최종시험 코어당",
             "구내 광섬유케이블"
         ]
     },
     {
         "code": "통신 4-1-3",
-        "name": "반사손실측정 험",
+        "name": "반사손실측정 최종시험 코어당",
         "spec": "구내 광섬유케이블",
         "unit": "0.05",
         "laborType": "특별인부",
         "laborFactor": 0.02,
         "category": "cable",
         "keywords": [
-            "반사손실측정 험",
+            "반사손실측정 최종시험 코어당",
             "구내 광섬유케이블"
         ]
     },
@@ -6517,14 +6517,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-2-1",
-        "name": "옥 내 7C",
+        "name": "옥내 7C",
         "spec": "동축케이블 포설",
         "unit": "10m",
         "laborType": "통신케이블공",
         "laborFactor": 0.22,
         "category": "cable",
         "keywords": [
-            "옥 내 7C",
+            "옥내 7C",
             "동축케이블 포설"
         ]
     },
@@ -6595,53 +6595,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-2-1",
-        "name": "지 하 8C",
+        "name": "지하 8C",
         "spec": "동축케이블 포설",
         "unit": "100m",
         "laborType": "통신케이블공",
         "laborFactor": 0.74,
         "category": "cable",
         "keywords": [
-            "지 하 8C",
+            "지하 8C",
             "동축케이블 포설"
         ]
     },
     {
         "code": "통신 4-2-1",
-        "name": "지 하 8C",
+        "name": "지하 8C",
         "spec": "동축케이블 포설",
         "unit": "100m",
         "laborType": "보통인부",
         "laborFactor": 0.59,
         "category": "cable",
         "keywords": [
-            "지 하 8C",
+            "지하 8C",
             "동축케이블 포설"
         ]
     },
     {
         "code": "통신 4-2-1",
-        "name": "포 설 10C",
+        "name": "포설 10C",
         "spec": "동축케이블 포설",
         "unit": "100m",
         "laborType": "통신케이블공",
         "laborFactor": 0.93,
         "category": "cable",
         "keywords": [
-            "포 설 10C",
+            "포설 10C",
             "동축케이블 포설"
         ]
     },
     {
         "code": "통신 4-2-1",
-        "name": "포 설 10C",
+        "name": "포설 10C",
         "spec": "동축케이블 포설",
         "unit": "100m",
         "laborType": "보통인부",
         "laborFactor": 0.74,
         "category": "cable",
         "keywords": [
-            "포 설 10C",
+            "포설 10C",
             "동축케이블 포설"
         ]
     },
@@ -6777,105 +6777,105 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-4-1",
-        "name": "2 C 10m 0.12 0.14 0.16 0.18",
+        "name": "2 C 10m 0.09 0.10 0.11 0.13",
         "spec": "제어용 케이블",
         "unit": "0.20",
         "laborType": "통신케이블공",
         "laborFactor": 0.25,
         "category": "cable",
         "keywords": [
-            "2 C 10m 0.12 0.14 0.16 0.18",
+            "2 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
         ]
     },
     {
         "code": "통신 4-4-1",
-        "name": "3 C 10m 0.17 0.19 0.22 0.26",
+        "name": "3 C 10m 0.09 0.10 0.11 0.13",
         "spec": "제어용 케이블",
         "unit": "0.29",
         "laborType": "통신케이블공",
         "laborFactor": 0.36,
         "category": "cable",
         "keywords": [
-            "3 C 10m 0.17 0.19 0.22 0.26",
+            "3 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
         ]
     },
     {
         "code": "통신 4-4-1",
-        "name": "4 C 10m 0.23 0.26 0.29 0.34",
+        "name": "4 C 10m 0.09 0.10 0.11 0.13",
         "spec": "제어용 케이블",
         "unit": "0.39",
         "laborType": "통신케이블공",
         "laborFactor": 0.49,
         "category": "cable",
         "keywords": [
-            "4 C 10m 0.23 0.26 0.29 0.34",
+            "4 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
         ]
     },
     {
         "code": "통신 4-4-1",
-        "name": "5 C 10m 0.29 0.32 0.34 0.39",
+        "name": "5 C 10m 0.09 0.10 0.11 0.13",
         "spec": "제어용 케이블",
         "unit": "0.44",
         "laborType": "통신케이블공",
         "laborFactor": 0.55,
         "category": "cable",
         "keywords": [
-            "5 C 10m 0.29 0.32 0.34 0.39",
+            "5 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
         ]
     },
     {
         "code": "통신 4-4-1",
-        "name": "6 C 10m 0.32 0.35 0.38 0.44",
+        "name": "6 C 10m 0.09 0.10 0.11 0.13",
         "spec": "제어용 케이블",
         "unit": "0.50",
         "laborType": "통신케이블공",
         "laborFactor": 0.63,
         "category": "cable",
         "keywords": [
-            "6 C 10m 0.32 0.35 0.38 0.44",
+            "6 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
         ]
     },
     {
         "code": "통신 4-4-1",
-        "name": "7 C 10m 0.35 0.39 0.42 0.48",
+        "name": "7 C 10m 0.09 0.10 0.11 0.13",
         "spec": "제어용 케이블",
         "unit": "0.54",
         "laborType": "통신케이블공",
         "laborFactor": 0.68,
         "category": "cable",
         "keywords": [
-            "7 C 10m 0.35 0.39 0.42 0.48",
+            "7 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
         ]
     },
     {
         "code": "통신 4-4-1",
-        "name": "8 C 10m 0.38 0.42 0.46 0.52",
+        "name": "8 C 10m 0.09 0.10 0.11 0.13",
         "spec": "제어용 케이블",
         "unit": "0.58",
         "laborType": "통신케이블공",
         "laborFactor": 0.73,
         "category": "cable",
         "keywords": [
-            "8 C 10m 0.38 0.42 0.46 0.52",
+            "8 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
         ]
     },
     {
         "code": "통신 4-4-1",
-        "name": "10 C 10m 0.43 0.48 0.52 0.59",
+        "name": "10 C 10m 0.09 0.10 0.11 0.13",
         "spec": "제어용 케이블",
         "unit": "0.67",
         "laborType": "통신케이블공",
         "laborFactor": 0.84,
         "category": "cable",
         "keywords": [
-            "10 C 10m 0.43 0.48 0.52 0.59",
+            "10 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
         ]
     },
@@ -7739,79 +7739,79 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-7-4-1",
-        "name": "2 점 간 0.65㎜ ~ 0.9㎜",
+        "name": "2 점간 0.65㎜ ~ 0.9㎜",
         "spec": "1, 5회선 심선접속자(커넥터)에 의한 절체",
         "unit": "100회선",
         "laborType": "통신케이블공",
         "laborFactor": 4.51,
         "category": "cable",
         "keywords": [
-            "2 점 간 0.65㎜ ~ 0.9㎜",
+            "2 점간 0.65㎜ ~ 0.9㎜",
             "1, 5회선 심선접속자(커넥터)에 의한 절체"
         ]
     },
     {
         "code": "통신 4-7-4-1",
-        "name": "2 점 간 0.65㎜ ~ 0.9㎜",
+        "name": "2 점간 0.65㎜ ~ 0.9㎜",
         "spec": "1, 5회선 심선접속자(커넥터)에 의한 절체",
         "unit": "100회선",
         "laborType": "보통인부",
         "laborFactor": 2.53,
         "category": "cable",
         "keywords": [
-            "2 점 간 0.65㎜ ~ 0.9㎜",
+            "2 점간 0.65㎜ ~ 0.9㎜",
             "1, 5회선 심선접속자(커넥터)에 의한 절체"
         ]
     },
     {
         "code": "통신 4-7-4-1",
-        "name": "국 외 0.4㎜ ~ 0.5㎜",
+        "name": "국외 0.4㎜ ~ 0.5㎜",
         "spec": "1, 5회선 심선접속자(커넥터)에 의한 절체",
         "unit": "100회선",
         "laborType": "통신케이블공",
         "laborFactor": 2.53,
         "category": "cable",
         "keywords": [
-            "국 외 0.4㎜ ~ 0.5㎜",
+            "국외 0.4㎜ ~ 0.5㎜",
             "1, 5회선 심선접속자(커넥터)에 의한 절체"
         ]
     },
     {
         "code": "통신 4-7-4-1",
-        "name": "국 외 0.4㎜ ~ 0.5㎜",
+        "name": "국외 0.4㎜ ~ 0.5㎜",
         "spec": "1, 5회선 심선접속자(커넥터)에 의한 절체",
         "unit": "100회선",
         "laborType": "보통인부",
         "laborFactor": 1.61,
         "category": "cable",
         "keywords": [
-            "국 외 0.4㎜ ~ 0.5㎜",
+            "국외 0.4㎜ ~ 0.5㎜",
             "1, 5회선 심선접속자(커넥터)에 의한 절체"
         ]
     },
     {
         "code": "통신 4-7-4-1",
-        "name": "2 점 간 0.65㎜ ~ 0.9㎜",
+        "name": "2 점간 0.65㎜ ~ 0.9㎜",
         "spec": "1, 5회선 심선접속자(커넥터)에 의한 절체",
         "unit": "100회선",
         "laborType": "통신케이블공",
         "laborFactor": 2.59,
         "category": "cable",
         "keywords": [
-            "2 점 간 0.65㎜ ~ 0.9㎜",
+            "2 점간 0.65㎜ ~ 0.9㎜",
             "1, 5회선 심선접속자(커넥터)에 의한 절체"
         ]
     },
     {
         "code": "통신 4-7-4-1",
-        "name": "2 점 간 0.65㎜ ~ 0.9㎜",
+        "name": "2 점간 0.65㎜ ~ 0.9㎜",
         "spec": "1, 5회선 심선접속자(커넥터)에 의한 절체",
         "unit": "100회선",
         "laborType": "보통인부",
         "laborFactor": 1.65,
         "category": "cable",
         "keywords": [
-            "2 점 간 0.65㎜ ~ 0.9㎜",
+            "2 점간 0.65㎜ ~ 0.9㎜",
             "1, 5회선 심선접속자(커넥터)에 의한 절체"
         ]
     },
@@ -7856,79 +7856,79 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-7-4-2",
-        "name": "2 점 간 0.65㎜ ~ 0.9㎜",
+        "name": "2 점간 0.65㎜ ~ 0.9㎜",
         "spec": "25회선 심선접속자(커넥터)에 의한 절체",
         "unit": "100회선",
         "laborType": "통신케이블공",
         "laborFactor": 2.86,
         "category": "cable",
         "keywords": [
-            "2 점 간 0.65㎜ ~ 0.9㎜",
+            "2 점간 0.65㎜ ~ 0.9㎜",
             "25회선 심선접속자(커넥터)에 의한 절체"
         ]
     },
     {
         "code": "통신 4-7-4-2",
-        "name": "2 점 간 0.65㎜ ~ 0.9㎜",
+        "name": "2 점간 0.65㎜ ~ 0.9㎜",
         "spec": "25회선 심선접속자(커넥터)에 의한 절체",
         "unit": "100회선",
         "laborType": "보통인부",
         "laborFactor": 2.03,
         "category": "cable",
         "keywords": [
-            "2 점 간 0.65㎜ ~ 0.9㎜",
+            "2 점간 0.65㎜ ~ 0.9㎜",
             "25회선 심선접속자(커넥터)에 의한 절체"
         ]
     },
     {
         "code": "통신 4-7-4-2",
-        "name": "국 외 0.4㎜ ~ 0.5㎜",
+        "name": "국외 0.4㎜ ~ 0.5㎜",
         "spec": "25회선 심선접속자(커넥터)에 의한 절체",
         "unit": "100회선",
         "laborType": "통신케이블공",
         "laborFactor": 1.48,
         "category": "cable",
         "keywords": [
-            "국 외 0.4㎜ ~ 0.5㎜",
+            "국외 0.4㎜ ~ 0.5㎜",
             "25회선 심선접속자(커넥터)에 의한 절체"
         ]
     },
     {
         "code": "통신 4-7-4-2",
-        "name": "국 외 0.4㎜ ~ 0.5㎜",
+        "name": "국외 0.4㎜ ~ 0.5㎜",
         "spec": "25회선 심선접속자(커넥터)에 의한 절체",
         "unit": "100회선",
         "laborType": "보통인부",
         "laborFactor": 1.12,
         "category": "cable",
         "keywords": [
-            "국 외 0.4㎜ ~ 0.5㎜",
+            "국외 0.4㎜ ~ 0.5㎜",
             "25회선 심선접속자(커넥터)에 의한 절체"
         ]
     },
     {
         "code": "통신 4-7-4-2",
-        "name": "2 점 간 0.65㎜ ~ 0.9㎜",
+        "name": "2 점간 0.65㎜ ~ 0.9㎜",
         "spec": "25회선 심선접속자(커넥터)에 의한 절체",
         "unit": "100회선",
         "laborType": "통신케이블공",
         "laborFactor": 1.51,
         "category": "cable",
         "keywords": [
-            "2 점 간 0.65㎜ ~ 0.9㎜",
+            "2 점간 0.65㎜ ~ 0.9㎜",
             "25회선 심선접속자(커넥터)에 의한 절체"
         ]
     },
     {
         "code": "통신 4-7-4-2",
-        "name": "2 점 간 0.65㎜ ~ 0.9㎜",
+        "name": "2 점간 0.65㎜ ~ 0.9㎜",
         "spec": "25회선 심선접속자(커넥터)에 의한 절체",
         "unit": "100회선",
         "laborType": "보통인부",
         "laborFactor": 1.13,
         "category": "cable",
         "keywords": [
-            "2 점 간 0.65㎜ ~ 0.9㎜",
+            "2 점간 0.65㎜ ~ 0.9㎜",
             "25회선 심선접속자(커넥터)에 의한 절체"
         ]
     },
@@ -8545,144 +8545,144 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-8-1",
-        "name": "HDMI케이블 - 12.95㎜",
+        "name": "HDMI케이블 - 12.95㎜ 이하 10m",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.16,
         "category": "cable",
         "keywords": [
-            "HDMI케이블 - 12.95㎜",
+            "HDMI케이블 - 12.95㎜ 이하 10m",
             "음향 및 영상케이블"
         ]
     },
     {
         "code": "통신 4-8-1",
-        "name": "5.6㎟-4C 이하 12.95㎜",
+        "name": "5.6㎟-4C 이하 12.95㎜ 이하 10m",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 0.14,
         "category": "cable",
         "keywords": [
-            "5.6㎟-4C 이하 12.95㎜",
+            "5.6㎟-4C 이하 12.95㎜ 이하 10m",
             "음향 및 영상케이블"
         ]
     },
     {
         "code": "통신 4-8-1",
-        "name": "스피커 케이블 14.2㎟-4C 이하 12.95㎜",
+        "name": "스피커 케이블 14.2㎟-4C 이하 10m",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.18,
         "category": "cable",
         "keywords": [
-            "스피커 케이블 14.2㎟-4C 이하 12.95㎜",
+            "스피커 케이블 14.2㎟-4C 이하 10m",
             "음향 및 영상케이블"
         ]
     },
     {
         "code": "통신 4-8-1",
-        "name": "케이블 멀티2.0㎟-16C 14.2㎟-4C",
+        "name": "케이블 멀티2.0㎟-16C 14.2㎟-4C 이하 10m",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.23,
         "category": "cable",
         "keywords": [
-            "케이블 멀티2.0㎟-16C 14.2㎟-4C",
+            "케이블 멀티2.0㎟-16C 14.2㎟-4C 이하 10m",
             "음향 및 영상케이블"
         ]
     },
     {
         "code": "통신 4-8-1",
-        "name": "포 설 1P 14.2㎟-4C",
+        "name": "포설 1P 14.2㎟-4C 이하 10m",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.23,
         "category": "cable",
         "keywords": [
-            "포 설 1P 14.2㎟-4C",
+            "포설 1P 14.2㎟-4C 이하 10m",
             "음향 및 영상케이블"
         ]
     },
     {
         "code": "통신 4-8-1",
-        "name": "멀티실드 2P이하 1P",
+        "name": "멀티실드 2P이하 14.2㎟-4C 이하 10m",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.24,
         "category": "cable",
         "keywords": [
-            "멀티실드 2P이하 1P",
+            "멀티실드 2P이하 14.2㎟-4C 이하 10m",
             "음향 및 영상케이블"
         ]
     },
     {
         "code": "통신 4-8-1",
-        "name": "멀티실드 4P이하 1P",
+        "name": "멀티실드 4P이하 14.2㎟-4C 이하 10m",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.28,
         "category": "cable",
         "keywords": [
-            "멀티실드 4P이하 1P",
+            "멀티실드 4P이하 14.2㎟-4C 이하 10m",
             "음향 및 영상케이블"
         ]
     },
     {
         "code": "통신 4-8-1",
-        "name": "마이크 케이블 멀티실드 8P이하 1P",
+        "name": "마이크 케이블 멀티실드 8P이하 10m",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.3,
         "category": "cable",
         "keywords": [
-            "마이크 케이블 멀티실드 8P이하 1P",
+            "마이크 케이블 멀티실드 8P이하 10m",
             "음향 및 영상케이블"
         ]
     },
     {
         "code": "통신 4-8-1",
-        "name": "멀티실드 12P이하 멀티실드",
+        "name": "멀티실드 12P이하 멀티실드 8P이하 10m",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.32,
         "category": "cable",
         "keywords": [
-            "멀티실드 12P이하 멀티실드",
+            "멀티실드 12P이하 멀티실드 8P이하 10m",
             "음향 및 영상케이블"
         ]
     },
     {
         "code": "통신 4-8-1",
-        "name": "멀티실드 24P이하 멀티실드",
+        "name": "멀티실드 24P이하 멀티실드 8P이하 10m",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.38,
         "category": "cable",
         "keywords": [
-            "멀티실드 24P이하 멀티실드",
+            "멀티실드 24P이하 멀티실드 8P이하 10m",
             "음향 및 영상케이블"
         ]
     },
     {
         "code": "통신 4-8-1",
-        "name": "멀티실드 32P이하 멀티실드",
+        "name": "멀티실드 32P이하 멀티실드 8P이하 10m",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.45,
         "category": "cable",
         "keywords": [
-            "멀티실드 32P이하 멀티실드",
+            "멀티실드 32P이하 멀티실드 8P이하 10m",
             "음향 및 영상케이블"
         ]
     },
@@ -8701,27 +8701,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-8-1",
-        "name": "커넥터 - -",
+        "name": "커넥터 - - 10개",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 0.17,
         "category": "cable",
         "keywords": [
-            "커넥터 - -",
+            "커넥터 - - 10개",
             "음향 및 영상케이블"
         ]
     },
     {
         "code": "통신 4-8-1",
-        "name": "D-SUB 커넥터 15Pin이하 -",
+        "name": "D-SUB 커넥터 15Pin이하 10개",
         "spec": "음향 및 영상케이블",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 0.7,
         "category": "cable",
         "keywords": [
-            "D-SUB 커넥터 15Pin이하 -",
+            "D-SUB 커넥터 15Pin이하 10개",
             "음향 및 영상케이블"
         ]
     },
@@ -8805,14 +8805,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-8-2",
-        "name": "중간접속 2.5㎟ 이하",
+        "name": "중간접속 2.5㎟ 이하 코어",
         "spec": "FR 케이블 접속 및 성단",
         "unit": "개",
         "laborType": "통신케이블공",
         "laborFactor": 0.02,
         "category": "cable",
         "keywords": [
-            "중간접속 2.5㎟ 이하",
+            "중간접속 2.5㎟ 이하 코어",
             "FR 케이블 접속 및 성단"
         ]
     },
@@ -8922,14 +8922,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-11-1",
-        "name": "1,200P 초과 ~",
+        "name": "1,200P 초과 ~ 1,200P 이하 100m",
         "spec": "케이블 절단과 공드럼 해체",
         "unit": "1.10",
         "laborType": "보통인부",
         "laborFactor": 1.46,
         "category": "cable",
         "keywords": [
-            "1,200P 초과 ~",
+            "1,200P 초과 ~ 1,200P 이하 100m",
             "케이블 절단과 공드럼 해체"
         ]
     },
@@ -8961,79 +8961,79 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-11-2",
-        "name": "인 공",
+        "name": "인공",
         "spec": "케이블 보호",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 0.52,
         "category": "cable",
         "keywords": [
-            "인 공",
+            "인공",
             "케이블 보호"
         ]
     },
     {
         "code": "통신 4-11-2",
-        "name": "수 공",
+        "name": "수공",
         "spec": "케이블 보호",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 0.26,
         "category": "cable",
         "keywords": [
-            "수 공",
+            "수공",
             "케이블 보호"
         ]
     },
     {
         "code": "통신 4-11-3",
-        "name": "표 주 세 움",
+        "name": "표주세움",
         "spec": "통신케이블 보호용 부대공정",
         "unit": "개소",
         "laborType": "통신외선공",
         "laborFactor": 0.25,
         "category": "cable",
         "keywords": [
-            "표 주 세 움",
+            "표주세움",
             "통신케이블 보호용 부대공정"
         ]
     },
     {
         "code": "통신 4-11-3",
-        "name": "표 주 세 움",
+        "name": "표주세움",
         "spec": "통신케이블 보호용 부대공정",
         "unit": "개소",
         "laborType": "보통인부",
         "laborFactor": 0.51,
         "category": "cable",
         "keywords": [
-            "표 주 세 움",
+            "표주세움",
             "통신케이블 보호용 부대공정"
         ]
     },
     {
         "code": "통신 4-11-3",
-        "name": "횡 평 강 및 철 물 설 치",
+        "name": "횡평강및철물설치",
         "spec": "통신케이블 보호용 부대공정",
         "unit": "개소",
         "laborType": "통신외선공",
         "laborFactor": 1.0,
         "category": "cable",
         "keywords": [
-            "횡 평 강 및 철 물 설 치",
+            "횡평강및철물설치",
             "통신케이블 보호용 부대공정"
         ]
     },
     {
         "code": "통신 4-11-3",
-        "name": "횡 평 강 및 철 물 설 치",
+        "name": "횡평강및철물설치",
         "spec": "통신케이블 보호용 부대공정",
         "unit": "개소",
         "laborType": "보통인부",
         "laborFactor": 1.0,
         "category": "cable",
         "keywords": [
-            "횡 평 강 및 철 물 설 치",
+            "횡평강및철물설치",
             "통신케이블 보호용 부대공정"
         ]
     },
@@ -9234,40 +9234,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-11-9-2",
-        "name": "제 어 기",
+        "name": "제어기",
         "spec": "개폐기 및 함체",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 0.09,
         "category": "cable",
         "keywords": [
-            "제 어 기",
+            "제어기",
             "개폐기 및 함체"
         ]
     },
     {
         "code": "통신 4-11-9-2",
-        "name": "점 검 함",
+        "name": "점검함",
         "spec": "개폐기 및 함체",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.06,
         "category": "cable",
         "keywords": [
-            "점 검 함",
+            "점검함",
             "개폐기 및 함체"
         ]
     },
     {
         "code": "통신 4-11-9-2",
-        "name": "누 전 차 단 기",
+        "name": "누전차단기",
         "spec": "개폐기 및 함체",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 0.16,
         "category": "cable",
         "keywords": [
-            "누 전 차 단 기",
+            "누전차단기",
             "개폐기 및 함체"
         ]
     },
@@ -9286,92 +9286,92 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 4-11-9-3",
-        "name": "일 반 A 형 기",
+        "name": "일반 A 형기",
         "spec": "부스",
         "unit": "0.20",
         "laborType": "보통인부",
         "laborFactor": 0.63,
         "category": "cable",
         "keywords": [
-            "일 반 A 형 기",
+            "일반 A 형기",
             "부스"
         ]
     },
     {
         "code": "통신 4-11-9-3",
-        "name": "일 반 B 형 실",
+        "name": "일반 B 형실",
         "spec": "부스",
         "unit": "0.20",
         "laborType": "통신설비공",
         "laborFactor": 0.25,
         "category": "cable",
         "keywords": [
-            "일 반 B 형 실",
+            "일반 B 형실",
             "부스"
         ]
     },
     {
         "code": "통신 4-11-9-3",
-        "name": "일 반 B 형 실",
+        "name": "일반 B 형실",
         "spec": "부스",
         "unit": "0.20",
         "laborType": "보통인부",
         "laborFactor": 0.63,
         "category": "cable",
         "keywords": [
-            "일 반 B 형 실",
+            "일반 B 형실",
             "부스"
         ]
     },
     {
         "code": "통신 4-11-9-3",
-        "name": "특 수 방 음 형 실",
+        "name": "특수방음형 B 형실",
         "spec": "부스",
         "unit": "0.26",
         "laborType": "통신설비공",
         "laborFactor": 0.22,
         "category": "cable",
         "keywords": [
-            "특 수 방 음 형 실",
+            "특수방음형 B 형실",
             "부스"
         ]
     },
     {
         "code": "통신 4-11-9-3",
-        "name": "특 수 방 음 형 실",
+        "name": "특수방음형 B 형실",
         "spec": "부스",
         "unit": "0.26",
         "laborType": "보통인부",
         "laborFactor": 0.88,
         "category": "cable",
         "keywords": [
-            "특 수 방 음 형 실",
+            "특수방음형 B 형실",
             "부스"
         ]
     },
     {
         "code": "통신 4-11-9-3",
-        "name": "지 체 부 자 유 형 기",
+        "name": "지체부자유형기",
         "spec": "부스",
         "unit": "0.25",
         "laborType": "통신설비공",
         "laborFactor": 0.27,
         "category": "cable",
         "keywords": [
-            "지 체 부 자 유 형 기",
+            "지체부자유형기",
             "부스"
         ]
     },
     {
         "code": "통신 4-11-9-3",
-        "name": "지 체 부 자 유 형 기",
+        "name": "지체부자유형기",
         "spec": "부스",
         "unit": "0.25",
         "laborType": "보통인부",
         "laborFactor": 1.04,
         "category": "cable",
         "keywords": [
-            "지 체 부 자 유 형 기",
+            "지체부자유형기",
             "부스"
         ]
     },
@@ -9507,27 +9507,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 6-3-5",
-        "name": "유 니 트 실 장",
+        "name": "유니트실장",
         "spec": "디지털 클럭공급장치 (DOTS)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.02,
         "category": "device",
         "keywords": [
-            "유 니 트 실 장",
+            "유니트실장",
             "디지털 클럭공급장치 (DOTS)"
         ]
     },
     {
         "code": "통신 6-3-5",
-        "name": "전 원 전 압 시 험",
+        "name": "전원전압시험",
         "spec": "디지털 클럭공급장치 (DOTS)",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.08,
         "category": "device",
         "keywords": [
-            "전 원 전 압 시 험",
+            "전원전압시험",
             "디지털 클럭공급장치 (DOTS)"
         ]
     },
@@ -9572,66 +9572,66 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 6-3-6",
-        "name": "립 특 별 인 부 1.00 1.00 1.00 1.00",
+        "name": "립특별인부 1.00 1.00 1.00 1.00",
         "spec": "디지털 계통보호전송장치(PITR)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "립 특 별 인 부 1.00 1.00 1.00 1.00",
+            "립특별인부 1.00 1.00 1.00 1.00",
             "디지털 계통보호전송장치(PITR)"
         ]
     },
     {
         "code": "통신 6-3-6",
-        "name": "및 세트 조립 인 통신설비공 0.75 0.75 1.50 1.50",
+        "name": "및 세트 조립 1.00 1.00",
         "spec": "디지털 계통보호전송장치(PITR)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.75,
         "category": "device",
         "keywords": [
-            "및 세트 조립 인 통신설비공 0.75 0.75 1.50 1.50",
+            "및 세트 조립 1.00 1.00",
             "디지털 계통보호전송장치(PITR)"
         ]
     },
     {
         "code": "통신 6-3-6",
-        "name": "Power Panel 조립 및 배선 0.75 통신설비공 0.75 0.75 1.00 1.00",
+        "name": "Power Panel 조립 및 배선 1.00",
         "spec": "디지털 계통보호전송장치(PITR)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.75,
         "category": "device",
         "keywords": [
-            "Power Panel 조립 및 배선 0.75 통신설비공 0.75 0.75 1.00 1.00",
+            "Power Panel 조립 및 배선 1.00",
             "디지털 계통보호전송장치(PITR)"
         ]
     },
     {
         "code": "통신 6-3-6",
-        "name": "설 특 별 인 부 0.75 0.75 1.00 1.00",
+        "name": "설특별인부 0.75 0.75 1.00 1.00",
         "spec": "디지털 계통보호전송장치(PITR)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.75,
         "category": "device",
         "keywords": [
-            "설 특 별 인 부 0.75 0.75 1.00 1.00",
+            "설특별인부 0.75 0.75 1.00 1.00",
             "디지털 계통보호전송장치(PITR)"
         ]
     },
     {
         "code": "통신 6-3-6",
-        "name": "치 내부배선 및 기타결선 부 통신설비공 0.50 0.50 1.00 1.00",
+        "name": "치 내부배선 및 기타결선 1.00",
         "spec": "디지털 계통보호전송장치(PITR)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "치 내부배선 및 기타결선 부 통신설비공 0.50 0.50 1.00 1.00",
+            "치 내부배선 및 기타결선 1.00",
             "디지털 계통보호전송장치(PITR)"
         ]
     },
@@ -9650,14 +9650,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 6-3-6",
-        "name": "o 광 전송로 전송로 통신관련산업기사 1.00 1.00 1.00 1.00",
+        "name": "o 광 전송로 전송로 T/L 통신관련산업기사 1.00 1.00 1.00 1.00",
         "spec": "디지털 계통보호전송장치(PITR)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "o 광 전송로 전송로 통신관련산업기사 1.00 1.00 1.00 1.00",
+            "o 광 전송로 전송로 T/L 통신관련산업기사 1.00 1.00 1.00 1.00",
             "디지털 계통보호전송장치(PITR)"
         ]
     },
@@ -9676,14 +9676,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 6-3-6",
-        "name": "직통전화시험 지연 시간측정 0.50 0.50 0.50 0.50",
+        "name": "직통전화시험 지연 시간측정 동작 1.00 1.00 1.00 1.00",
         "spec": "디지털 계통보호전송장치(PITR)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "직통전화시험 지연 시간측정 0.50 0.50 0.50 0.50",
+            "직통전화시험 지연 시간측정 동작 1.00 1.00 1.00 1.00",
             "디지털 계통보호전송장치(PITR)"
         ]
     },
@@ -9702,14 +9702,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 6-3-6",
-        "name": "o 접지상태 및 케이블 결선상태 확인 1.00 통신관련산업기사 1.00 1.00 2.00 2.00",
+        "name": "o 접지상태 및 케이블 결선상태 확인 1.00 2.00 2.00",
         "spec": "디지털 계통보호전송장치(PITR)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "o 접지상태 및 케이블 결선상태 확인 1.00 통신관련산업기사 1.00 1.00 2.00 2.00",
+            "o 접지상태 및 케이블 결선상태 확인 1.00 2.00 2.00",
             "디지털 계통보호전송장치(PITR)"
         ]
     },
@@ -9728,66 +9728,66 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-1-1",
-        "name": "조 립 설 치 - 0.50 - 0.50",
+        "name": "조립설치 - 0.50 - 0.50",
         "spec": "VHF(100W 이하) 이동국 송․수신기",
         "unit": "대",
         "laborType": "용접공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치 - 0.50 - 0.50",
+            "조립설치 - 0.50 - 0.50",
             "VHF(100W 이하) 이동국 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-2",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "VHF 또는 UHF(100W 이하) 고정국 송․수신기",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "VHF 또는 UHF(100W 이하) 고정국 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-2",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "VHF 또는 UHF(100W 이하) 고정국 송․수신기",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "VHF 또는 UHF(100W 이하) 고정국 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-2",
-        "name": "배 선 및 결 선",
+        "name": "배선및결선",
         "spec": "VHF 또는 UHF(100W 이하) 고정국 송․수신기",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 3.0,
         "category": "device",
         "keywords": [
-            "배 선 및 결 선",
+            "배선및결선",
             "VHF 또는 UHF(100W 이하) 고정국 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-2",
-        "name": "배 선 및 결 선",
+        "name": "배선및결선",
         "spec": "VHF 또는 UHF(100W 이하) 고정국 송․수신기",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "배 선 및 결 선",
+            "배선및결선",
             "VHF 또는 UHF(100W 이하) 고정국 송․수신기"
         ]
     },
@@ -9806,66 +9806,66 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-1-2",
-        "name": "대 국 시 험",
+        "name": "대국시험",
         "spec": "VHF 또는 UHF(100W 이하) 고정국 송․수신기",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "대 국 시 험",
+            "대국시험",
             "VHF 또는 UHF(100W 이하) 고정국 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-3",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "VHF 또는 UHF(110W 이상) 고정국 송․수신기",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.6,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "VHF 또는 UHF(110W 이상) 고정국 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-3",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "VHF 또는 UHF(110W 이상) 고정국 송․수신기",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 1.2,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "VHF 또는 UHF(110W 이상) 고정국 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-3",
-        "name": "배 선 및 결 선",
+        "name": "배선및결선",
         "spec": "VHF 또는 UHF(110W 이상) 고정국 송․수신기",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 3.6,
         "category": "device",
         "keywords": [
-            "배 선 및 결 선",
+            "배선및결선",
             "VHF 또는 UHF(110W 이상) 고정국 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-3",
-        "name": "배 선 및 결 선",
+        "name": "배선및결선",
         "spec": "VHF 또는 UHF(110W 이상) 고정국 송․수신기",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 2.4,
         "category": "device",
         "keywords": [
-            "배 선 및 결 선",
+            "배선및결선",
             "VHF 또는 UHF(110W 이상) 고정국 송․수신기"
         ]
     },
@@ -9884,92 +9884,92 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-1-3",
-        "name": "대 국 시 험",
+        "name": "대국시험",
         "spec": "VHF 또는 UHF(110W 이상) 고정국 송․수신기",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 4.5,
         "category": "device",
         "keywords": [
-            "대 국 시 험",
+            "대국시험",
             "VHF 또는 UHF(110W 이상) 고정국 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-4",
-        "name": "전 원 배 선",
+        "name": "전원배선",
         "spec": "중․단파(500W 이하) 송․수신기",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "전 원 배 선",
+            "전원배선",
             "중․단파(500W 이하) 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-4",
-        "name": "전 원 배 선",
+        "name": "전원배선",
         "spec": "중․단파(500W 이하) 송․수신기",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "전 원 배 선",
+            "전원배선",
             "중․단파(500W 이하) 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-4",
-        "name": "신 호 선 배 선",
+        "name": "신호선배선",
         "spec": "중․단파(500W 이하) 송․수신기",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "신 호 선 배 선",
+            "신호선배선",
             "중․단파(500W 이하) 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-4",
-        "name": "신 호 선 배 선",
+        "name": "신호선배선",
         "spec": "중․단파(500W 이하) 송․수신기",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "신 호 선 배 선",
+            "신호선배선",
             "중․단파(500W 이하) 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-4",
-        "name": "급 전 선 실 내 배 선",
+        "name": "급전선실내배선",
         "spec": "중․단파(500W 이하) 송․수신기",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "급 전 선 실 내 배 선",
+            "급전선실내배선",
             "중․단파(500W 이하) 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-4",
-        "name": "급 전 선 실 내 배 선",
+        "name": "급전선실내배선",
         "spec": "중․단파(500W 이하) 송․수신기",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "급 전 선 실 내 배 선",
+            "급전선실내배선",
             "중․단파(500W 이하) 송․수신기"
         ]
     },
@@ -10001,27 +10001,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-1-4",
-        "name": "시 험",
+        "name": "시험",
         "spec": "중․단파(500W 이하) 송․수신기",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 5.0,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "중․단파(500W 이하) 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-4",
-        "name": "시 험",
+        "name": "시험",
         "spec": "중․단파(500W 이하) 송․수신기",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "중․단파(500W 이하) 송․수신기"
         ]
     },
@@ -10053,105 +10053,105 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-1-5",
-        "name": "B a y 건 립 - -",
+        "name": "B a y 건립 -",
         "spec": "마이크로웨이브(Micro Wave) RF 송․수신기",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "B a y 건 립 - -",
+            "B a y 건립 -",
             "마이크로웨이브(Micro Wave) RF 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-5",
-        "name": "B a y 건 립 - -",
+        "name": "B a y 건립 -",
         "spec": "마이크로웨이브(Micro Wave) RF 송․수신기",
         "unit": "-",
         "laborType": "보통인부",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "B a y 건 립 - -",
+            "B a y 건립 -",
             "마이크로웨이브(Micro Wave) RF 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-5",
-        "name": "송․수신기 조립 y -",
+        "name": "송․수신기 조립 y 건립 -",
         "spec": "마이크로웨이브(Micro Wave) RF 송․수신기",
         "unit": "0.61",
         "laborType": "통신설비공",
         "laborFactor": 0.6,
         "category": "device",
         "keywords": [
-            "송․수신기 조립 y -",
+            "송․수신기 조립 y 건립 -",
             "마이크로웨이브(Micro Wave) RF 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-5",
-        "name": "내부결선 및 기타결선 - 0.30",
+        "name": "내부결선 및 기타결선 건립 -",
         "spec": "마이크로웨이브(Micro Wave) RF 송․수신기",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.3,
         "category": "device",
         "keywords": [
-            "내부결선 및 기타결선 - 0.30",
+            "내부결선 및 기타결선 건립 -",
             "마이크로웨이브(Micro Wave) RF 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-5",
-        "name": "내부결선 및 기타결선 - 0.30",
+        "name": "내부결선 및 기타결선 건립 -",
         "spec": "마이크로웨이브(Micro Wave) RF 송․수신기",
         "unit": "-",
         "laborType": "보통인부",
         "laborFactor": 0.25,
         "category": "device",
         "keywords": [
-            "내부결선 및 기타결선 - 0.30",
+            "내부결선 및 기타결선 건립 -",
             "마이크로웨이브(Micro Wave) RF 송․수신기"
         ]
     },
     {
         "code": "통신 7-1-6",
-        "name": "B a y 건 립",
+        "name": "B a y 건립",
         "spec": "마이크로웨이브(Micro Wave) Power Amplifier",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "B a y 건 립",
+            "B a y 건립",
             "마이크로웨이브(Micro Wave) Power Amplifier"
         ]
     },
     {
         "code": "통신 7-1-6",
-        "name": "B a y 건 립",
+        "name": "B a y 건립",
         "spec": "마이크로웨이브(Micro Wave) Power Amplifier",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "B a y 건 립",
+            "B a y 건립",
             "마이크로웨이브(Micro Wave) Power Amplifier"
         ]
     },
     {
         "code": "통신 7-1-6",
-        "name": "S e t 조 립",
+        "name": "S e t 조립",
         "spec": "마이크로웨이브(Micro Wave) Power Amplifier",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 5.0,
         "category": "device",
         "keywords": [
-            "S e t 조 립",
+            "S e t 조립",
             "마이크로웨이브(Micro Wave) Power Amplifier"
         ]
     },
@@ -10170,40 +10170,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-1-6",
-        "name": "T. W. T 조 립 설 치",
+        "name": "T. W. T 조립설치",
         "spec": "마이크로웨이브(Micro Wave) Power Amplifier",
         "unit": "대",
         "laborType": "통신관련기사",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "T. W. T 조 립 설 치",
+            "T. W. T 조립설치",
             "마이크로웨이브(Micro Wave) Power Amplifier"
         ]
     },
     {
         "code": "통신 7-1-6",
-        "name": "T. W. T 조 립 설 치",
+        "name": "T. W. T 조립설치",
         "spec": "마이크로웨이브(Micro Wave) Power Amplifier",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "T. W. T 조 립 설 치",
+            "T. W. T 조립설치",
             "마이크로웨이브(Micro Wave) Power Amplifier"
         ]
     },
     {
         "code": "통신 7-1-6",
-        "name": "국부조작시험 및 각 판넬점검",
+        "name": "국부조작시험 및각 판넬점검",
         "spec": "마이크로웨이브(Micro Wave) Power Amplifier",
         "unit": "대",
         "laborType": "통신관련기사",
         "laborFactor": 6.31,
         "category": "device",
         "keywords": [
-            "국부조작시험 및 각 판넬점검",
+            "국부조작시험 및각 판넬점검",
             "마이크로웨이브(Micro Wave) Power Amplifier"
         ]
     },
@@ -10430,27 +10430,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-2-3",
-        "name": "기 포 장 해 체 - - - - - - 0.3 0.5 1.0 1.0 1.0 1.0",
+        "name": "기포장해체 - - - - - - 0.3 0.5 1.0 1.0 1.0 1.0",
         "spec": "FM 송신기",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "기 포 장 해 체 - - - - - - 0.3 0.5 1.0 1.0 1.0 1.0",
+            "기포장해체 - - - - - - 0.3 0.5 1.0 1.0 1.0 1.0",
             "FM 송신기"
         ]
     },
     {
         "code": "통신 7-2-3",
-        "name": "기 포 장 해 체 - - - - - - 0.3 0.5 1.0 1.0 1.0 1.0",
+        "name": "기포장해체 - - - - - - 0.3 0.5 1.0 1.0 1.0 1.0",
         "spec": "FM 송신기",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "기 포 장 해 체 - - - - - - 0.3 0.5 1.0 1.0 1.0 1.0",
+            "기포장해체 - - - - - - 0.3 0.5 1.0 1.0 1.0 1.0",
             "FM 송신기"
         ]
     },
@@ -10482,79 +10482,79 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-2-3",
-        "name": "조 전 원 부 0.5 0.5 0.5 0.5 1.0 1.0 1.5 2.5 4.0 5.0 - -",
+        "name": "조전원부 0.5 0.5 0.5 0.5 1.0 1.0 1.5 2.5 4.0 5.0 - -",
         "spec": "FM 송신기",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "조 전 원 부 0.5 0.5 0.5 0.5 1.0 1.0 1.5 2.5 4.0 5.0 - -",
+            "조전원부 0.5 0.5 0.5 0.5 1.0 1.0 1.5 2.5 4.0 5.0 - -",
             "FM 송신기"
         ]
     },
     {
         "code": "통신 7-2-3",
-        "name": "조 전 원 부 0.5 0.5 0.5 0.5 1.0 1.0 1.5 2.5 4.0 5.0 - -",
+        "name": "조전원부 0.5 0.5 0.5 0.5 1.0 1.0 1.5 2.5 4.0 5.0 - -",
         "spec": "FM 송신기",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "조 전 원 부 0.5 0.5 0.5 0.5 1.0 1.0 1.5 2.5 4.0 5.0 - -",
+            "조전원부 0.5 0.5 0.5 0.5 1.0 1.0 1.5 2.5 4.0 5.0 - -",
             "FM 송신기"
         ]
     },
     {
         "code": "통신 7-2-3",
-        "name": "립 제 어 부 1.0 1.0 0.5 1.0 2.0 2.0 1.0 1.0 3.0 4.0 - -",
+        "name": "립제어부 1.0 1.0 0.5 1.0 2.0 2.0 1.0 1.0 3.0 4.0 - -",
         "spec": "FM 송신기",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "립 제 어 부 1.0 1.0 0.5 1.0 2.0 2.0 1.0 1.0 3.0 4.0 - -",
+            "립제어부 1.0 1.0 0.5 1.0 2.0 2.0 1.0 1.0 3.0 4.0 - -",
             "FM 송신기"
         ]
     },
     {
         "code": "통신 7-2-3",
-        "name": "립 제 어 부 1.0 1.0 0.5 1.0 2.0 2.0 1.0 1.0 3.0 4.0 - -",
+        "name": "립제어부 1.0 1.0 0.5 1.0 2.0 2.0 1.0 1.0 3.0 4.0 - -",
         "spec": "FM 송신기",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "립 제 어 부 1.0 1.0 0.5 1.0 2.0 2.0 1.0 1.0 3.0 4.0 - -",
+            "립제어부 1.0 1.0 0.5 1.0 2.0 2.0 1.0 1.0 3.0 4.0 - -",
             "FM 송신기"
         ]
     },
     {
         "code": "통신 7-2-3",
-        "name": "치 출 력 단 1.0 2.0 1.0 2.0 2.0 4.0 1.0 2.0 6.0 8.0 - -",
+        "name": "치출력단 1.0 2.0 1.0 2.0 2.0 4.0 1.0 2.0 6.0 8.0 - -",
         "spec": "FM 송신기",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "치 출 력 단 1.0 2.0 1.0 2.0 2.0 4.0 1.0 2.0 6.0 8.0 - -",
+            "치출력단 1.0 2.0 1.0 2.0 2.0 4.0 1.0 2.0 6.0 8.0 - -",
             "FM 송신기"
         ]
     },
     {
         "code": "통신 7-2-3",
-        "name": "치 출 력 단 1.0 2.0 1.0 2.0 2.0 4.0 1.0 2.0 6.0 8.0 - -",
+        "name": "치출력단 1.0 2.0 1.0 2.0 2.0 4.0 1.0 2.0 6.0 8.0 - -",
         "spec": "FM 송신기",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "치 출 력 단 1.0 2.0 1.0 2.0 2.0 4.0 1.0 2.0 6.0 8.0 - -",
+            "치출력단 1.0 2.0 1.0 2.0 2.0 4.0 1.0 2.0 6.0 8.0 - -",
             "FM 송신기"
         ]
     },
@@ -10573,40 +10573,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-4-1",
-        "name": "포 장 해 체 - - - - - 0.3 0.5 1.0 1.0 0.5",
+        "name": "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
         "spec": "VHF-TV 중계기(Translator)",
         "unit": "개",
         "laborType": "통신관련기능사",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "포 장 해 체 - - - - - 0.3 0.5 1.0 1.0 0.5",
+            "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
             "VHF-TV 중계기(Translator)"
         ]
     },
     {
         "code": "통신 7-4-1",
-        "name": "포 장 해 체 - - - - - 0.3 0.5 1.0 1.0 0.5",
+        "name": "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
         "spec": "VHF-TV 중계기(Translator)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "포 장 해 체 - - - - - 0.3 0.5 1.0 1.0 0.5",
+            "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
             "VHF-TV 중계기(Translator)"
         ]
     },
     {
         "code": "통신 7-4-1",
-        "name": "포 장 해 체 - - - - - 0.3 0.5 1.0 1.0 0.5",
+        "name": "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
         "spec": "VHF-TV 중계기(Translator)",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 1.5,
         "category": "device",
         "keywords": [
-            "포 장 해 체 - - - - - 0.3 0.5 1.0 1.0 0.5",
+            "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
             "VHF-TV 중계기(Translator)"
         ]
     },
@@ -10651,40 +10651,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-4-2",
-        "name": "포 장 해 체 - - - - - 0.3 0.5 1.0 1.0 0.5",
+        "name": "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
         "spec": "UHF-TV 디지털 중계기",
         "unit": "개",
         "laborType": "통신관련기능사",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "포 장 해 체 - - - - - 0.3 0.5 1.0 1.0 0.5",
+            "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
             "UHF-TV 디지털 중계기"
         ]
     },
     {
         "code": "통신 7-4-2",
-        "name": "포 장 해 체 - - - - - 0.3 0.5 1.0 1.0 0.5",
+        "name": "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
         "spec": "UHF-TV 디지털 중계기",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "포 장 해 체 - - - - - 0.3 0.5 1.0 1.0 0.5",
+            "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
             "UHF-TV 디지털 중계기"
         ]
     },
     {
         "code": "통신 7-4-2",
-        "name": "포 장 해 체 - - - - - 0.3 0.5 1.0 1.0 0.5",
+        "name": "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
         "spec": "UHF-TV 디지털 중계기",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 1.5,
         "category": "device",
         "keywords": [
-            "포 장 해 체 - - - - - 0.3 0.5 1.0 1.0 0.5",
+            "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
             "UHF-TV 디지털 중계기"
         ]
     },
@@ -10768,14 +10768,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-4-4",
-        "name": "AM 매칭박스 0.16 0.15 0.26 -",
+        "name": "AM 매칭박스 0.16 0.35 -",
         "spec": "라디오재방송설비",
         "unit": "-",
         "laborType": "보통인부",
         "laborFactor": 0.26,
         "category": "device",
         "keywords": [
-            "AM 매칭박스 0.16 0.15 0.26 -",
+            "AM 매칭박스 0.16 0.35 -",
             "라디오재방송설비"
         ]
     },
@@ -10794,27 +10794,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-4-4",
-        "name": "양방향증폭기 대 0.25",
+        "name": "양방향증폭기 대 0.50 1.06 -",
         "spec": "라디오재방송설비",
         "unit": "0.50",
         "laborType": "보통인부",
         "laborFactor": 0.25,
         "category": "device",
         "keywords": [
-            "양방향증폭기 대 0.25",
+            "양방향증폭기 대 0.50 1.06 -",
             "라디오재방송설비"
         ]
     },
     {
         "code": "통신 7-4-4",
-        "name": "전원분배장치 대 0.18",
+        "name": "전원분배장치 대 0.50 1.06 -",
         "spec": "라디오재방송설비",
         "unit": "0.18",
         "laborType": "보통인부",
         "laborFactor": 0.18,
         "category": "device",
         "keywords": [
-            "전원분배장치 대 0.18",
+            "전원분배장치 대 0.50 1.06 -",
             "라디오재방송설비"
         ]
     },
@@ -10872,53 +10872,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-4-5-2",
-        "name": "벽 면",
+        "name": "벽면",
         "spec": "소출력 FM/T-DMB 무선중계기(10mV/m@10m이하)",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.15,
         "category": "device",
         "keywords": [
-            "벽 면",
+            "벽면",
             "소출력 FM/T-DMB 무선중계기(10mV/m@10m이하)"
         ]
     },
     {
         "code": "통신 7-4-5-2",
-        "name": "천 정",
+        "name": "천정",
         "spec": "소출력 FM/T-DMB 무선중계기(10mV/m@10m이하)",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.21,
         "category": "device",
         "keywords": [
-            "천 정",
+            "천정",
             "소출력 FM/T-DMB 무선중계기(10mV/m@10m이하)"
         ]
     },
     {
         "code": "통신 7-4-5-2",
-        "name": "천 정",
+        "name": "천정",
         "spec": "소출력 FM/T-DMB 무선중계기(10mV/m@10m이하)",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.21,
         "category": "device",
         "keywords": [
-            "천 정",
+            "천정",
             "소출력 FM/T-DMB 무선중계기(10mV/m@10m이하)"
         ]
     },
     {
         "code": "통신 7-4-5-2",
-        "name": "시 험",
+        "name": "시험",
         "spec": "소출력 FM/T-DMB 무선중계기(10mV/m@10m이하)",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.19,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "소출력 FM/T-DMB 무선중계기(10mV/m@10m이하)"
         ]
     },
@@ -10989,14 +10989,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-1-1",
-        "name": "2. 방 향 조 정 2.00 2.00",
+        "name": "2. 방향조정 2.00 2.00",
         "spec": "철탑설치",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "2. 방 향 조 정 2.00 2.00",
+            "2. 방향조정 2.00 2.00",
             "철탑설치"
         ]
     },
@@ -11028,14 +11028,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-1-1",
-        "name": "2. 방 향 조 정 2.00 5.00",
+        "name": "2. 방향조정 2.00 5.00",
         "spec": "철탑설치",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "2. 방 향 조 정 2.00 5.00",
+            "2. 방향조정 2.00 5.00",
             "철탑설치"
         ]
     },
@@ -11067,14 +11067,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-1-1",
-        "name": "2. 방 향 조 정 2.00 5.00",
+        "name": "2. 방향조정 2.00 5.00",
         "spec": "철탑설치",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "2. 방 향 조 정 2.00 5.00",
+            "2. 방향조정 2.00 5.00",
             "철탑설치"
         ]
     },
@@ -11106,14 +11106,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-1-1",
-        "name": "2. 방 향 조 정 3.00 6.00",
+        "name": "2. 방향조정 3.00 6.00",
         "spec": "철탑설치",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "2. 방 향 조 정 3.00 6.00",
+            "2. 방향조정 3.00 6.00",
             "철탑설치"
         ]
     },
@@ -11145,14 +11145,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-1-1",
-        "name": "2. 방 향 조 정 3.00 8.00",
+        "name": "2. 방향조정 3.00 8.00",
         "spec": "철탑설치",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "2. 방 향 조 정 3.00 8.00",
+            "2. 방향조정 3.00 8.00",
             "철탑설치"
         ]
     },
@@ -11249,235 +11249,235 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-2",
-        "name": "1. 조 립 인 양 설 치 1.00 3.00",
+        "name": "1. 조립인양설치 1.00 3.00",
         "spec": "VHF, 옴니, 코너(Corner) 안테나",
         "unit": "대",
         "laborType": "통신관련기사",
         "laborFactor": 3.0,
         "category": "device",
         "keywords": [
-            "1. 조 립 인 양 설 치 1.00 3.00",
+            "1. 조립인양설치 1.00 3.00",
             "VHF, 옴니, 코너(Corner) 안테나"
         ]
     },
     {
         "code": "통신 7-5-2",
-        "name": "1. 조 립 인 양 설 치 1.00 3.00",
+        "name": "1. 조립인양설치 1.00 3.00",
         "spec": "VHF, 옴니, 코너(Corner) 안테나",
         "unit": "대",
         "laborType": "특별인부",
         "laborFactor": 2.5,
         "category": "device",
         "keywords": [
-            "1. 조 립 인 양 설 치 1.00 3.00",
+            "1. 조립인양설치 1.00 3.00",
             "VHF, 옴니, 코너(Corner) 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "1. ANT Element : 제 작 2.00 - - 8.00 - 5.60",
+        "name": "1. ANT Element : 제작 2.00 - - 8.00 - 5.60",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 6.0,
         "category": "device",
         "keywords": [
-            "1. ANT Element : 제 작 2.00 - - 8.00 - 5.60",
+            "1. ANT Element : 제작 2.00 - - 8.00 - 5.60",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "설 치 5.00 - 5.00 - 10.00 -",
+        "name": "설치 5.00 - 5.00 - 10.00 -",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 11.5,
         "category": "device",
         "keywords": [
-            "설 치 5.00 - 5.00 - 10.00 -",
+            "설치 5.00 - 5.00 - 10.00 -",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "제 작 - 0.60 - 4.00 - 1.80",
+        "name": "제작 - 0.60 - 4.00 - 1.80",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "제 작 - 0.60 - 4.00 - 1.80",
+            "제작 - 0.60 - 4.00 - 1.80",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "설 치 0.30 - - - 1.60 -",
+        "name": "설치 0.30 - - - 1.60 -",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 3.2,
         "category": "device",
         "keywords": [
-            "설 치 0.30 - - - 1.60 -",
+            "설치 0.30 - - - 1.60 -",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "제 작 0.80 1.20 - - - 2.10",
+        "name": "제작 0.80 1.20 - - - 2.10",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 2.5,
         "category": "device",
         "keywords": [
-            "제 작 0.80 1.20 - - - 2.10",
+            "제작 0.80 1.20 - - - 2.10",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "설 치 - - 4.50 - 3.20 -",
+        "name": "설치 - - 4.50 - 3.20 -",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 6.0,
         "category": "device",
         "keywords": [
-            "설 치 - - 4.50 - 3.20 -",
+            "설치 - - 4.50 - 3.20 -",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "설 치 0.50 1.50 - - 4.00 -",
+        "name": "설치 0.50 1.50 - - 4.00 -",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 8.0,
         "category": "device",
         "keywords": [
-            "설 치 0.50 1.50 - - 4.00 -",
+            "설치 0.50 1.50 - - 4.00 -",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "설 치 0.50 1.50 - - 4.00 -",
+        "name": "설치 0.50 1.50 - - 4.00 -",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 8.0,
         "category": "device",
         "keywords": [
-            "설 치 0.50 1.50 - - 4.00 -",
+            "설치 0.50 1.50 - - 4.00 -",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "제 작 - 1.00 - 6.00 - -",
+        "name": "제작 - 1.00 - 6.00 - -",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 6.0,
         "category": "device",
         "keywords": [
-            "제 작 - 1.00 - 6.00 - -",
+            "제작 - 1.00 - 6.00 - -",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "설 치 - 0.50 - - 6.00 -",
+        "name": "설치 - 0.50 - - 6.00 -",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 8.0,
         "category": "device",
         "keywords": [
-            "설 치 - 0.50 - - 6.00 -",
+            "설치 - 0.50 - - 6.00 -",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "Network 제 작 1.50 - - 8.00 - 4.00",
+        "name": "Network 제작 1.50 - - 8.00 - 4.00",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 4.0,
         "category": "device",
         "keywords": [
-            "Network 제 작 1.50 - - 8.00 - 4.00",
+            "Network 제작 1.50 - - 8.00 - 4.00",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "설 치 4.00 - - - 10.00 -",
+        "name": "설치 4.00 - - - 10.00 -",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 15.0,
         "category": "device",
         "keywords": [
-            "설 치 4.00 - - - 10.00 -",
+            "설치 4.00 - - - 10.00 -",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "8. Slew Switch : 제 작 - 8.00 2.00 2.00 - -",
+        "name": "8. Slew Switch : 제작 - 8.00 2.00 2.00 - -",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 10.0,
         "category": "device",
         "keywords": [
-            "8. Slew Switch : 제 작 - 8.00 2.00 2.00 - -",
+            "8. Slew Switch : 제작 - 8.00 2.00 2.00 - -",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "설 치 1.60 6.00 - 3.00 - -",
+        "name": "설치 1.60 6.00 - 3.00 - -",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 12.0,
         "category": "device",
         "keywords": [
-            "설 치 1.60 6.00 - 3.00 - -",
+            "설치 1.60 6.00 - 3.00 - -",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "(10선-12선) 제 작 - 3.00 - 6.00 - -",
+        "name": "(10선-12선) 제작 - 3.00 - 6.00 - -",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 4.0,
         "category": "device",
         "keywords": [
-            "(10선-12선) 제 작 - 3.00 - 6.00 - -",
+            "(10선-12선) 제작 - 3.00 - 6.00 - -",
             "Curtain 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-1",
-        "name": "설 치 - 2.00 - - 4.00 -",
+        "name": "설치 - 2.00 - - 4.00 -",
         "spec": "Curtain 안테나",
         "unit": "3Wire 1Dipole 1단",
         "laborType": "용접공",
         "laborFactor": 10.0,
         "category": "device",
         "keywords": [
-            "설 치 - 2.00 - - 4.00 -",
+            "설치 - 2.00 - - 4.00 -",
             "Curtain 안테나"
         ]
     },
@@ -11496,53 +11496,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-3-2",
-        "name": "1. 포 장 해 체 점 검 -",
+        "name": "1. 포장해체점검 -",
         "spec": "LP 안테나",
         "unit": "기",
         "laborType": "통신외선공",
         "laborFactor": 2.6,
         "category": "device",
         "keywords": [
-            "1. 포 장 해 체 점 검 -",
+            "1. 포장해체점검 -",
             "LP 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-2",
-        "name": "1. 포 장 해 체 점 검 -",
+        "name": "1. 포장해체점검 -",
         "spec": "LP 안테나",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 2.08,
         "category": "device",
         "keywords": [
-            "1. 포 장 해 체 점 검 -",
+            "1. 포장해체점검 -",
             "LP 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-2",
-        "name": "가. Boom 조 립 0.50",
+        "name": "가. Boom 조립 0.50",
         "spec": "LP 안테나",
         "unit": "기",
         "laborType": "통신외선공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "가. Boom 조 립 0.50",
+            "가. Boom 조립 0.50",
             "LP 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-2",
-        "name": "가. Boom 조 립 0.50",
+        "name": "가. Boom 조립 0.50",
         "spec": "LP 안테나",
         "unit": "기",
         "laborType": "보통인부",
         "laborFactor": 10.8,
         "category": "device",
         "keywords": [
-            "가. Boom 조 립 0.50",
+            "가. Boom 조립 0.50",
             "LP 안테나"
         ]
     },
@@ -11587,14 +11587,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-3-2",
-        "name": "다. 소 자 조 립 5.02",
+        "name": "다. 소자조립 5.02",
         "spec": "LP 안테나",
         "unit": "기",
         "laborType": "통신외선공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "다. 소 자 조 립 5.02",
+            "다. 소자조립 5.02",
             "LP 안테나"
         ]
     },
@@ -11639,27 +11639,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-3-2",
-        "name": "마. 배 선 및 결 선 -",
+        "name": "마. 배선및결선 -",
         "spec": "LP 안테나",
         "unit": "기",
         "laborType": "통신관련기사",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "마. 배 선 및 결 선 -",
+            "마. 배선및결선 -",
             "LP 안테나"
         ]
     },
     {
         "code": "통신 7-5-3-2",
-        "name": "마. 배 선 및 결 선 -",
+        "name": "마. 배선및결선 -",
         "spec": "LP 안테나",
         "unit": "기",
         "laborType": "통신외선공",
         "laborFactor": 8.0,
         "category": "device",
         "keywords": [
-            "마. 배 선 및 결 선 -",
+            "마. 배선및결선 -",
             "LP 안테나"
         ]
     },
@@ -12081,53 +12081,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-5-1",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "TV Low Channel",
         "unit": "2Dipole 1Panel",
         "laborType": "통신관련기사",
         "laborFactor": 3.7,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "TV Low Channel"
         ]
     },
     {
         "code": "통신 7-5-5-1",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "TV Low Channel",
         "unit": "2Dipole 1Panel",
         "laborType": "통신외선공",
         "laborFactor": 5.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "TV Low Channel"
         ]
     },
     {
         "code": "통신 7-5-5-1",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "TV Low Channel",
         "unit": "2Dipole 1Panel",
         "laborType": "송전전공",
         "laborFactor": 7.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "TV Low Channel"
         ]
     },
     {
         "code": "통신 7-5-5-1",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "TV Low Channel",
         "unit": "2Dipole 1Panel",
         "laborType": "보통인부",
         "laborFactor": 18.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "TV Low Channel"
         ]
     },
@@ -12185,53 +12185,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-5-2",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "TV High Channel",
         "unit": "4Dipole 1Panel",
         "laborType": "통신관련기사",
         "laborFactor": 3.5,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "TV High Channel"
         ]
     },
     {
         "code": "통신 7-5-5-2",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "TV High Channel",
         "unit": "4Dipole 1Panel",
         "laborType": "통신외선공",
         "laborFactor": 4.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "TV High Channel"
         ]
     },
     {
         "code": "통신 7-5-5-2",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "TV High Channel",
         "unit": "4Dipole 1Panel",
         "laborType": "송전전공",
         "laborFactor": 6.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "TV High Channel"
         ]
     },
     {
         "code": "통신 7-5-5-2",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "TV High Channel",
         "unit": "4Dipole 1Panel",
         "laborType": "보통인부",
         "laborFactor": 14.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "TV High Channel"
         ]
     },
@@ -12289,53 +12289,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-5-3",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "TV UHF Channel",
         "unit": "4Dipole 1Panel",
         "laborType": "통신관련기사",
         "laborFactor": 1.5,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "TV UHF Channel"
         ]
     },
     {
         "code": "통신 7-5-5-3",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "TV UHF Channel",
         "unit": "4Dipole 1Panel",
         "laborType": "통신외선공",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "TV UHF Channel"
         ]
     },
     {
         "code": "통신 7-5-5-3",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "TV UHF Channel",
         "unit": "4Dipole 1Panel",
         "laborType": "송전전공",
         "laborFactor": 3.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "TV UHF Channel"
         ]
     },
     {
         "code": "통신 7-5-5-3",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "TV UHF Channel",
         "unit": "4Dipole 1Panel",
         "laborType": "보통인부",
         "laborFactor": 5.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "TV UHF Channel"
         ]
     },
@@ -12393,53 +12393,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-5-4",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "FM(88-108MHz)",
         "unit": "Element 1기",
         "laborType": "통신관련기사",
         "laborFactor": 3.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "FM(88-108MHz)"
         ]
     },
     {
         "code": "통신 7-5-5-4",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "FM(88-108MHz)",
         "unit": "Element 1기",
         "laborType": "통신외선공",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "FM(88-108MHz)"
         ]
     },
     {
         "code": "통신 7-5-5-4",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "FM(88-108MHz)",
         "unit": "Element 1기",
         "laborType": "송전전공",
         "laborFactor": 4.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "FM(88-108MHz)"
         ]
     },
     {
         "code": "통신 7-5-5-4",
-        "name": "조 립 설 치",
+        "name": "조립설치",
         "spec": "FM(88-108MHz)",
         "unit": "Element 1기",
         "laborType": "보통인부",
         "laborFactor": 11.0,
         "category": "device",
         "keywords": [
-            "조 립 설 치",
+            "조립설치",
             "FM(88-108MHz)"
         ]
     },
@@ -12523,105 +12523,105 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-5-7",
-        "name": "안 테 나 설 치",
+        "name": "안테나설치",
         "spec": "디지털 위성방송 개별수신방식(DTH)",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.14,
         "category": "device",
         "keywords": [
-            "안 테 나 설 치",
+            "안테나설치",
             "디지털 위성방송 개별수신방식(DTH)"
         ]
     },
     {
         "code": "통신 7-5-7",
-        "name": "안 테 나 설 치",
+        "name": "안테나설치",
         "spec": "디지털 위성방송 개별수신방식(DTH)",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.1,
         "category": "device",
         "keywords": [
-            "안 테 나 설 치",
+            "안테나설치",
             "디지털 위성방송 개별수신방식(DTH)"
         ]
     },
     {
         "code": "통신 7-5-7",
-        "name": "셋톱박스 설 치",
+        "name": "셋톱박스 설치",
         "spec": "디지털 위성방송 개별수신방식(DTH)",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.1,
         "category": "device",
         "keywords": [
-            "셋톱박스 설 치",
+            "셋톱박스 설치",
             "디지털 위성방송 개별수신방식(DTH)"
         ]
     },
     {
         "code": "통신 7-5-7",
-        "name": "시 험",
+        "name": "시험",
         "spec": "디지털 위성방송 개별수신방식(DTH)",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.1,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "디지털 위성방송 개별수신방식(DTH)"
         ]
     },
     {
         "code": "통신 7-5-8",
-        "name": "실 내",
+        "name": "실내",
         "spec": "DTV방송 단독수신설비",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "실 내",
+            "실내",
             "DTV방송 단독수신설비"
         ]
     },
     {
         "code": "통신 7-5-8",
-        "name": "실 내",
+        "name": "실내",
         "spec": "DTV방송 단독수신설비",
         "unit": "대",
         "laborType": "특별인부",
         "laborFactor": 0.06,
         "category": "device",
         "keywords": [
-            "실 내",
+            "실내",
             "DTV방송 단독수신설비"
         ]
     },
     {
         "code": "통신 7-5-8",
-        "name": "실 외",
+        "name": "실외",
         "spec": "DTV방송 단독수신설비",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.18,
         "category": "device",
         "keywords": [
-            "실 외",
+            "실외",
             "DTV방송 단독수신설비"
         ]
     },
     {
         "code": "통신 7-5-8",
-        "name": "실 외",
+        "name": "실외",
         "spec": "DTV방송 단독수신설비",
         "unit": "대",
         "laborType": "특별인부",
         "laborFactor": 0.17,
         "category": "device",
         "keywords": [
-            "실 외",
+            "실외",
             "DTV방송 단독수신설비"
         ]
     },
@@ -12666,53 +12666,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-6-1-2",
-        "name": "건 립 톤",
+        "name": "건립 분류 톤",
         "spec": "조립식 강관주형 철탑",
         "unit": "3.60",
         "laborType": "통신외선공",
         "laborFactor": 3.6,
         "category": "device",
         "keywords": [
-            "건 립 톤",
+            "건립 분류 톤",
             "조립식 강관주형 철탑"
         ]
     },
     {
         "code": "통신 7-6-1-2",
-        "name": "건 립 톤",
+        "name": "건립 분류 톤",
         "spec": "조립식 강관주형 철탑",
         "unit": "3.60",
         "laborType": "특별인부",
         "laborFactor": 2.6,
         "category": "device",
         "keywords": [
-            "건 립 톤",
+            "건립 분류 톤",
             "조립식 강관주형 철탑"
         ]
     },
     {
         "code": "통신 7-6-2",
-        "name": "2. 철탑조립 특 별 인 부 0.90 1.30 1.80",
+        "name": "2. 철탑조립 특별인부 0.90 1.30 1.80",
         "spec": "중파방송용 삼각지선식 철탑",
         "unit": "㎝) (단위 : ㎝) (단위 : ㎝) (단위 : ㎝",
         "laborType": "통신외선공",
         "laborFactor": 2.4,
         "category": "device",
         "keywords": [
-            "2. 철탑조립 특 별 인 부 0.90 1.30 1.80",
+            "2. 철탑조립 특별인부 0.90 1.30 1.80",
             "중파방송용 삼각지선식 철탑"
         ]
     },
     {
         "code": "통신 7-6-2",
-        "name": "철 공 0.07 0.10 0.13",
+        "name": "철공 0.07 0.10 0.13",
         "spec": "중파방송용 삼각지선식 철탑",
         "unit": "㎝) (단위 : ㎝) (단위 : ㎝) (단위 : ㎝",
         "laborType": "통신외선공",
         "laborFactor": 0.19,
         "category": "device",
         "keywords": [
-            "철 공 0.07 0.10 0.13",
+            "철공 0.07 0.10 0.13",
             "중파방송용 삼각지선식 철탑"
         ]
     },
@@ -12744,14 +12744,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-6-2",
-        "name": "보 통 인 부 4.70 6.50 8.46",
+        "name": "보통인부 4.70 6.50 8.46",
         "spec": "중파방송용 삼각지선식 철탑",
         "unit": "㎝) (단위 : ㎝) (단위 : ㎝) (단위 : ㎝",
         "laborType": "통신외선공",
         "laborFactor": 12.22,
         "category": "device",
         "keywords": [
-            "보 통 인 부 4.70 6.50 8.46",
+            "보통인부 4.70 6.50 8.46",
             "중파방송용 삼각지선식 철탑"
         ]
     },
@@ -12770,40 +12770,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-6-2",
-        "name": "(1개소당 길이 보 통 인 부 1.20 1.74 2.28",
+        "name": "(1개소당 길이 보통인부 1.20 1.74 2.28",
         "spec": "중파방송용 삼각지선식 철탑",
         "unit": "㎝) (단위 : ㎝) (단위 : ㎝) (단위 : ㎝",
         "laborType": "통신외선공",
         "laborFactor": 3.12,
         "category": "device",
         "keywords": [
-            "(1개소당 길이 보 통 인 부 1.20 1.74 2.28",
+            "(1개소당 길이 보통인부 1.20 1.74 2.28",
             "중파방송용 삼각지선식 철탑"
         ]
     },
     {
         "code": "통신 7-6-2",
-        "name": "5. 항공장애표시등 송 전 전 공 4.10 4.10 4.10",
+        "name": "5. 항공장애표시등 송전전공 4.10 4.10 4.10",
         "spec": "중파방송용 삼각지선식 철탑",
         "unit": "㎝) (단위 : ㎝) (단위 : ㎝) (단위 : ㎝",
         "laborType": "통신외선공",
         "laborFactor": 4.1,
         "category": "device",
         "keywords": [
-            "5. 항공장애표시등 송 전 전 공 4.10 4.10 4.10",
+            "5. 항공장애표시등 송전전공 4.10 4.10 4.10",
             "중파방송용 삼각지선식 철탑"
         ]
     },
     {
         "code": "통신 7-6-2",
-        "name": "500W 1EA, 보 통 인 부 1.10 1.10 1.10",
+        "name": "500W 1EA, 보통인부 1.10 1.10 1.10",
         "spec": "중파방송용 삼각지선식 철탑",
         "unit": "㎝) (단위 : ㎝) (단위 : ㎝) (단위 : ㎝",
         "laborType": "통신외선공",
         "laborFactor": 1.1,
         "category": "device",
         "keywords": [
-            "500W 1EA, 보 통 인 부 1.10 1.10 1.10",
+            "500W 1EA, 보통인부 1.10 1.10 1.10",
             "중파방송용 삼각지선식 철탑"
         ]
     },
@@ -12848,27 +12848,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-6-2",
-        "name": "보 통 인 부 0.60 0.70 1.00",
+        "name": "보통인부 0.60 0.70 1.00",
         "spec": "중파방송용 삼각지선식 철탑",
         "unit": "㎝) (단위 : ㎝) (단위 : ㎝) (단위 : ㎝",
         "laborType": "통신외선공",
         "laborFactor": 1.5,
         "category": "device",
         "keywords": [
-            "보 통 인 부 0.60 0.70 1.00",
+            "보통인부 0.60 0.70 1.00",
             "중파방송용 삼각지선식 철탑"
         ]
     },
     {
         "code": "통신 7-6-2",
-        "name": "8. 피뢰침 설치 송 전 전 공 2.60 2.60 2.60",
+        "name": "8. 피뢰침 설치 송전전공 2.60 2.60 2.60",
         "spec": "중파방송용 삼각지선식 철탑",
         "unit": "㎝) (단위 : ㎝) (단위 : ㎝) (단위 : ㎝",
         "laborType": "통신외선공",
         "laborFactor": 2.6,
         "category": "device",
         "keywords": [
-            "8. 피뢰침 설치 송 전 전 공 2.60 2.60 2.60",
+            "8. 피뢰침 설치 송전전공 2.60 2.60 2.60",
             "중파방송용 삼각지선식 철탑"
         ]
     },
@@ -12887,14 +12887,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-6-2",
-        "name": "보 통 인 부 0.80 0.80 0.80",
+        "name": "보통인부 0.80 0.80 0.80",
         "spec": "중파방송용 삼각지선식 철탑",
         "unit": "㎝) (단위 : ㎝) (단위 : ㎝) (단위 : ㎝",
         "laborType": "통신외선공",
         "laborFactor": 0.8,
         "category": "device",
         "keywords": [
-            "보 통 인 부 0.80 0.80 0.80",
+            "보통인부 0.80 0.80 0.80",
             "중파방송용 삼각지선식 철탑"
         ]
     },
@@ -12952,14 +12952,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-7-1-1",
-        "name": "4.최종특성측정 및 4.20 -",
+        "name": "4.최종특성측정 및 점검 식 - 5.40",
         "spec": "Rigid Feeder",
         "unit": "-",
         "laborType": "통신외선공",
         "laborFactor": 4.2,
         "category": "device",
         "keywords": [
-            "4.최종특성측정 및 4.20 -",
+            "4.최종특성측정 및 점검 식 - 5.40",
             "Rigid Feeder"
         ]
     },
@@ -13511,66 +13511,66 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-8-4",
-        "name": "설 치",
+        "name": "설치",
         "spec": "GCE용 3kW Rectifier",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "설 치",
+            "설치",
             "GCE용 3kW Rectifier"
         ]
     },
     {
         "code": "통신 7-8-4",
-        "name": "설 치",
+        "name": "설치",
         "spec": "GCE용 3kW Rectifier",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "설 치",
+            "설치",
             "GCE용 3kW Rectifier"
         ]
     },
     {
         "code": "통신 7-8-4",
-        "name": "배 선",
+        "name": "배선",
         "spec": "GCE용 3kW Rectifier",
         "unit": "대",
         "laborType": "통신내선공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "배 선",
+            "배선",
             "GCE용 3kW Rectifier"
         ]
     },
     {
         "code": "통신 7-8-4",
-        "name": "배 선",
+        "name": "배선",
         "spec": "GCE용 3kW Rectifier",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 1.2,
         "category": "device",
         "keywords": [
-            "배 선",
+            "배선",
             "GCE용 3kW Rectifier"
         ]
     },
     {
         "code": "통신 7-8-4",
-        "name": "시 운 전",
+        "name": "시운전",
         "spec": "GCE용 3kW Rectifier",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 4.0,
         "category": "device",
         "keywords": [
-            "시 운 전",
+            "시운전",
             "GCE용 3kW Rectifier"
         ]
     },
@@ -13602,40 +13602,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-10-3",
-        "name": "1. 조 립 설 치 5.00 8.00",
+        "name": "1. 조립설치 5.00 8.00",
         "spec": "패시브 리플렉터(반사판, Passive Reflector)(30㎡기준)",
         "unit": "대",
         "laborType": "통신관련기사",
         "laborFactor": 5.0,
         "category": "device",
         "keywords": [
-            "1. 조 립 설 치 5.00 8.00",
+            "1. 조립설치 5.00 8.00",
             "패시브 리플렉터(반사판, Passive Reflector)(30㎡기준)"
         ]
     },
     {
         "code": "통신 7-10-3",
-        "name": "1. 조 립 설 치 5.00 8.00",
+        "name": "1. 조립설치 5.00 8.00",
         "spec": "패시브 리플렉터(반사판, Passive Reflector)(30㎡기준)",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 10.0,
         "category": "device",
         "keywords": [
-            "1. 조 립 설 치 5.00 8.00",
+            "1. 조립설치 5.00 8.00",
             "패시브 리플렉터(반사판, Passive Reflector)(30㎡기준)"
         ]
     },
     {
         "code": "통신 7-10-4",
-        "name": "조 립 및 설 치",
+        "name": "조립및설치",
         "spec": "디하드레이터(Dehydrator)",
         "unit": "1 Route",
         "laborType": "통신설비공",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "조 립 및 설 치",
+            "조립및설치",
             "디하드레이터(Dehydrator)"
         ]
     },
@@ -13667,79 +13667,79 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-10-5",
-        "name": "S e t 설 치",
+        "name": "S e t 설치",
         "spec": "브랜칭 필터(Branching Filter)",
         "unit": "1 Route(10m)",
         "laborType": "통신설비공",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "S e t 설 치",
+            "S e t 설치",
             "브랜칭 필터(Branching Filter)"
         ]
     },
     {
         "code": "통신 7-10-5",
-        "name": "S e t 설 치",
+        "name": "S e t 설치",
         "spec": "브랜칭 필터(Branching Filter)",
         "unit": "1 Route(10m)",
         "laborType": "보통인부",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "S e t 설 치",
+            "S e t 설치",
             "브랜칭 필터(Branching Filter)"
         ]
     },
     {
         "code": "통신 7-10-5",
-        "name": "특 성 시 험",
+        "name": "특성시험",
         "spec": "브랜칭 필터(Branching Filter)",
         "unit": "1 Route(10m)",
         "laborType": "통신관련산업기사",
         "laborFactor": 1.93,
         "category": "device",
         "keywords": [
-            "특 성 시 험",
+            "특성시험",
             "브랜칭 필터(Branching Filter)"
         ]
     },
     {
         "code": "통신 7-10-6",
-        "name": "B a y 건 립",
+        "name": "B a y 건립",
         "spec": "콤바이너(Combiner)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "B a y 건 립",
+            "B a y 건립",
             "콤바이너(Combiner)"
         ]
     },
     {
         "code": "통신 7-10-6",
-        "name": "B a y 건 립",
+        "name": "B a y 건립",
         "spec": "콤바이너(Combiner)",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 1.0,
         "category": "device",
         "keywords": [
-            "B a y 건 립",
+            "B a y 건립",
             "콤바이너(Combiner)"
         ]
     },
     {
         "code": "통신 7-10-6",
-        "name": "S e t 조 립",
+        "name": "S e t 조립",
         "spec": "콤바이너(Combiner)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 3.75,
         "category": "device",
         "keywords": [
-            "S e t 조 립",
+            "S e t 조립",
             "콤바이너(Combiner)"
         ]
     },
@@ -13784,53 +13784,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-10-6",
-        "name": "국 부 시 험 점 검",
+        "name": "국부시험점검",
         "spec": "콤바이너(Combiner)",
         "unit": "개",
         "laborType": "통신관련산업기사",
         "laborFactor": 19.56,
         "category": "device",
         "keywords": [
-            "국 부 시 험 점 검",
+            "국부시험점검",
             "콤바이너(Combiner)"
         ]
     },
     {
         "code": "통신 7-10-6",
-        "name": "대 국 종 합 시 험",
+        "name": "대국종합시험",
         "spec": "콤바이너(Combiner)",
         "unit": "개",
         "laborType": "통신관련산업기사",
         "laborFactor": 24.83,
         "category": "device",
         "keywords": [
-            "대 국 종 합 시 험",
+            "대국종합시험",
             "콤바이너(Combiner)"
         ]
     },
     {
         "code": "통신 7-10-7",
-        "name": "보 통 인 부 0.75",
+        "name": "보통인부 0.75",
         "spec": "결합여파기(Coupling Filter) 및 특수보조여파기(Auxiliary Filter)",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.75,
         "category": "device",
         "keywords": [
-            "보 통 인 부 0.75",
+            "보통인부 0.75",
             "결합여파기(Coupling Filter) 및 특수보조여파기(Auxiliary Filter)"
         ]
     },
     {
         "code": "통신 7-10-7",
-        "name": "결 선 통신설비공 0.25",
+        "name": "결선 통신설비공 0.25",
         "spec": "결합여파기(Coupling Filter) 및 특수보조여파기(Auxiliary Filter)",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "결 선 통신설비공 0.25",
+            "결선 통신설비공 0.25",
             "결합여파기(Coupling Filter) 및 특수보조여파기(Auxiliary Filter)"
         ]
     },
@@ -13862,157 +13862,157 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-11-2-1",
-        "name": "Emergency Switch Unit",
+        "name": "Emergency Switch Unit 대",
         "spec": "비상방송 설비",
         "unit": "0.64",
         "laborType": "통신설비공",
         "laborFactor": 0.64,
         "category": "device",
         "keywords": [
-            "Emergency Switch Unit",
+            "Emergency Switch Unit 대",
             "비상방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-1",
-        "name": "Matrix Logic Unit",
+        "name": "Matrix Logic Unit 대",
         "spec": "비상방송 설비",
         "unit": "0.64",
         "laborType": "통신설비공",
         "laborFactor": 0.64,
         "category": "device",
         "keywords": [
-            "Matrix Logic Unit",
+            "Matrix Logic Unit 대",
             "비상방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-1",
-        "name": "Program Exchange Unit",
+        "name": "Program Exchange Unit 대",
         "spec": "비상방송 설비",
         "unit": "0.71",
         "laborType": "통신설비공",
         "laborFactor": 0.71,
         "category": "device",
         "keywords": [
-            "Program Exchange Unit",
+            "Program Exchange Unit 대",
             "비상방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-1",
-        "name": "Speaker Selector Unit",
+        "name": "Speaker Selector Unit 대",
         "spec": "비상방송 설비",
         "unit": "0.51",
         "laborType": "통신설비공",
         "laborFactor": 0.51,
         "category": "device",
         "keywords": [
-            "Speaker Selector Unit",
+            "Speaker Selector Unit 대",
             "비상방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-1",
-        "name": "Relay Group Unit",
+        "name": "Relay Group Unit 대",
         "spec": "비상방송 설비",
         "unit": "0.57",
         "laborType": "통신설비공",
         "laborFactor": 0.57,
         "category": "device",
         "keywords": [
-            "Relay Group Unit",
+            "Relay Group Unit 대",
             "비상방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-1",
-        "name": "Power Distributor Unit",
+        "name": "Power Distributor Unit 대",
         "spec": "비상방송 설비",
         "unit": "0.39",
         "laborType": "통신설비공",
         "laborFactor": 0.39,
         "category": "device",
         "keywords": [
-            "Power Distributor Unit",
+            "Power Distributor Unit 대",
             "비상방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-1",
-        "name": "Terminal Board Unit",
+        "name": "Terminal Board Unit 대",
         "spec": "비상방송 설비",
         "unit": "0.58",
         "laborType": "통신설비공",
         "laborFactor": 0.58,
         "category": "device",
         "keywords": [
-            "Terminal Board Unit",
+            "Terminal Board Unit 대",
             "비상방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-1",
-        "name": "Program Manual Controller Unit",
+        "name": "Program Manual Controller 대",
         "spec": "비상방송 설비",
         "unit": "0.32",
         "laborType": "통신설비공",
         "laborFactor": 0.32,
         "category": "device",
         "keywords": [
-            "Program Manual Controller Unit",
+            "Program Manual Controller 대",
             "비상방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-1",
-        "name": "Power AMP Controller",
+        "name": "Power AMP Controller 대",
         "spec": "비상방송 설비",
         "unit": "0.26",
         "laborType": "통신설비공",
         "laborFactor": 0.26,
         "category": "device",
         "keywords": [
-            "Power AMP Controller",
+            "Power AMP Controller 대",
             "비상방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-1",
-        "name": "Emergency Combination System Controller",
+        "name": "Emergency Combination System 대",
         "spec": "비상방송 설비",
         "unit": "0.77",
         "laborType": "통신설비공",
         "laborFactor": 0.77,
         "category": "device",
         "keywords": [
-            "Emergency Combination System Controller",
+            "Emergency Combination System 대",
             "비상방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-1",
-        "name": "Emergency Router System",
+        "name": "Emergency Router System 대",
         "spec": "비상방송 설비",
         "unit": "0.68",
         "laborType": "통신설비공",
         "laborFactor": 0.68,
         "category": "device",
         "keywords": [
-            "Emergency Router System",
+            "Emergency Router System 대",
             "비상방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-1",
-        "name": "Emergency Interface System",
+        "name": "Emergency Interface System 대",
         "spec": "비상방송 설비",
         "unit": "0.26",
         "laborType": "통신설비공",
         "laborFactor": 0.26,
         "category": "device",
         "keywords": [
-            "Emergency Interface System",
+            "Emergency Interface System 대",
             "비상방송 설비"
         ]
     },
@@ -14031,287 +14031,287 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "AM/FM Tuner Monitor",
+        "name": "AM/FM Tuner Monitor 대",
         "spec": "BGM방송 설비",
         "unit": "0.21",
         "laborType": "통신설비공",
         "laborFactor": 0.21,
         "category": "device",
         "keywords": [
-            "AM/FM Tuner Monitor",
+            "AM/FM Tuner Monitor 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Cassette Deck Monitor",
+        "name": "Cassette Deck Monitor 대",
         "spec": "BGM방송 설비",
         "unit": "0.37",
         "laborType": "통신설비공",
         "laborFactor": 0.37,
         "category": "device",
         "keywords": [
-            "Cassette Deck Monitor",
+            "Cassette Deck Monitor 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Chime/Siren Deck",
+        "name": "Chime/Siren Deck Monitor 대",
         "spec": "BGM방송 설비",
         "unit": "0.32",
         "laborType": "통신설비공",
         "laborFactor": 0.32,
         "category": "device",
         "keywords": [
-            "Chime/Siren Deck",
+            "Chime/Siren Deck Monitor 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "CD Player/DVD Player Deck",
+        "name": "CD Player/DVD Player 대",
         "spec": "BGM방송 설비",
         "unit": "0.20",
         "laborType": "통신설비공",
         "laborFactor": 0.2,
         "category": "device",
         "keywords": [
-            "CD Player/DVD Player Deck",
+            "CD Player/DVD Player 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Pre Amplifier Player",
+        "name": "Pre Amplifier Player 대",
         "spec": "BGM방송 설비",
         "unit": "0.38",
         "laborType": "통신설비공",
         "laborFactor": 0.38,
         "category": "device",
         "keywords": [
-            "Pre Amplifier Player",
+            "Pre Amplifier Player 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Auto Blower Player",
+        "name": "Auto Blower Player 대",
         "spec": "BGM방송 설비",
         "unit": "0.19",
         "laborType": "통신설비공",
         "laborFactor": 0.19,
         "category": "device",
         "keywords": [
-            "Auto Blower Player",
+            "Auto Blower Player 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Auto Charger Player",
+        "name": "Auto Charger Player 대",
         "spec": "BGM방송 설비",
         "unit": "0.34",
         "laborType": "통신설비공",
         "laborFactor": 0.34,
         "category": "device",
         "keywords": [
-            "Auto Charger Player",
+            "Auto Charger Player 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Digital Control Exchanger Player",
+        "name": "Digital Control Exchanger 대",
         "spec": "BGM방송 설비",
         "unit": "0.73",
         "laborType": "통신설비공",
         "laborFactor": 0.73,
         "category": "device",
         "keywords": [
-            "Digital Control Exchanger Player",
+            "Digital Control Exchanger 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Audio Monitor Exchanger",
+        "name": "Audio Monitor Exchanger 대",
         "spec": "BGM방송 설비",
         "unit": "0.50",
         "laborType": "통신설비공",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "Audio Monitor Exchanger",
+            "Audio Monitor Exchanger 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Local Selector Exchanger",
+        "name": "Local Selector Exchanger 대",
         "spec": "BGM방송 설비",
         "unit": "0.21",
         "laborType": "통신설비공",
         "laborFactor": 0.21,
         "category": "device",
         "keywords": [
-            "Local Selector Exchanger",
+            "Local Selector Exchanger 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "프로그램 타이머 Exchanger",
+        "name": "프로그램 타이머 Exchanger 대",
         "spec": "BGM방송 설비",
         "unit": "0.40",
         "laborType": "통신설비공",
         "laborFactor": 0.4,
         "category": "device",
         "keywords": [
-            "프로그램 타이머 Exchanger",
+            "프로그램 타이머 Exchanger 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "멀티보이스 파일 Exchanger",
+        "name": "멀티보이스 파일 Exchanger 대",
         "spec": "BGM방송 설비",
         "unit": "0.34",
         "laborType": "통신설비공",
         "laborFactor": 0.34,
         "category": "device",
         "keywords": [
-            "멀티보이스 파일 Exchanger",
+            "멀티보이스 파일 Exchanger 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "리모트 앰프 Exchanger",
+        "name": "리모트 앰프 Exchanger 대",
         "spec": "BGM방송 설비",
         "unit": "0.27",
         "laborType": "통신설비공",
         "laborFactor": 0.27,
         "category": "device",
         "keywords": [
-            "리모트 앰프 Exchanger",
+            "리모트 앰프 Exchanger 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "AMP Fault Detector Exchanger",
+        "name": "AMP Fault Detector 대",
         "spec": "BGM방송 설비",
         "unit": "0.32",
         "laborType": "통신설비공",
         "laborFactor": 0.32,
         "category": "device",
         "keywords": [
-            "AMP Fault Detector Exchanger",
+            "AMP Fault Detector 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "데이터 리시버 Detector",
+        "name": "데이터 리시버 Detector 대",
         "spec": "BGM방송 설비",
         "unit": "0.32",
         "laborType": "통신설비공",
         "laborFactor": 0.32,
         "category": "device",
         "keywords": [
-            "데이터 리시버 Detector",
+            "데이터 리시버 Detector 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Speaker Line Checker Detector",
+        "name": "Speaker Line Checker 대",
         "spec": "BGM방송 설비",
         "unit": "0.76",
         "laborType": "통신설비공",
         "laborFactor": 0.76,
         "category": "device",
         "keywords": [
-            "Speaker Line Checker Detector",
+            "Speaker Line Checker 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Direct Box Checker",
+        "name": "Direct Box Checker 대",
         "spec": "BGM방송 설비",
         "unit": "0.02",
         "laborType": "통신설비공",
         "laborFactor": 0.02,
         "category": "device",
         "keywords": [
-            "Direct Box Checker",
+            "Direct Box Checker 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Management 프로그램 Checker",
+        "name": "Management 프로그램 Checker 대",
         "spec": "BGM방송 설비",
         "unit": "0.29",
         "laborType": "통신설비공",
         "laborFactor": 0.29,
         "category": "device",
         "keywords": [
-            "Management 프로그램 Checker",
+            "Management 프로그램 Checker 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Digi-Link Multi Controller Checker",
+        "name": "Digi-Link Multi Controller 대",
         "spec": "BGM방송 설비",
         "unit": "0.18",
         "laborType": "통신설비공",
         "laborFactor": 0.18,
         "category": "device",
         "keywords": [
-            "Digi-Link Multi Controller Checker",
+            "Digi-Link Multi Controller 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Portable AMP Controller",
+        "name": "Portable AMP Controller 대",
         "spec": "BGM방송 설비",
         "unit": "0.05",
         "laborType": "통신설비공",
         "laborFactor": 0.05,
         "category": "device",
         "keywords": [
-            "Portable AMP Controller",
+            "Portable AMP Controller 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Telephone Paging Controller",
+        "name": "Telephone Paging Controller 대",
         "spec": "BGM방송 설비",
         "unit": "0.12",
         "laborType": "통신설비공",
         "laborFactor": 0.12,
         "category": "device",
         "keywords": [
-            "Telephone Paging Controller",
+            "Telephone Paging Controller 대",
             "BGM방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-2",
-        "name": "Audio Distribution Controller",
+        "name": "Audio Distribution Controller 대",
         "spec": "BGM방송 설비",
         "unit": "0.17",
         "laborType": "통신설비공",
         "laborFactor": 0.17,
         "category": "device",
         "keywords": [
-            "Audio Distribution Controller",
+            "Audio Distribution Controller 대",
             "BGM방송 설비"
         ]
     },
@@ -14330,105 +14330,105 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-11-2-3",
-        "name": "Power Supply Switcher",
+        "name": "Power Supply Switcher 대",
         "spec": "프로오디오 설비(SR)",
         "unit": "0.38",
         "laborType": "통신설비공",
         "laborFactor": 0.38,
         "category": "device",
         "keywords": [
-            "Power Supply Switcher",
+            "Power Supply Switcher 대",
             "프로오디오 설비(SR)"
         ]
     },
     {
         "code": "통신 7-11-2-3",
-        "name": "VU Meter Switcher",
+        "name": "VU Meter Switcher 대",
         "spec": "프로오디오 설비(SR)",
         "unit": "0.23",
         "laborType": "통신설비공",
         "laborFactor": 0.23,
         "category": "device",
         "keywords": [
-            "VU Meter Switcher",
+            "VU Meter Switcher 대",
             "프로오디오 설비(SR)"
         ]
     },
     {
         "code": "통신 7-11-2-3",
-        "name": "하울링제거기 Meter",
+        "name": "하울링제거기 Meter Switcher 대",
         "spec": "프로오디오 설비(SR)",
         "unit": "0.38",
         "laborType": "통신설비공",
         "laborFactor": 0.55,
         "category": "device",
         "keywords": [
-            "하울링제거기 Meter",
+            "하울링제거기 Meter Switcher 대",
             "프로오디오 설비(SR)"
         ]
     },
     {
         "code": "통신 7-11-2-3",
-        "name": "Digital Signal Processor Meter",
+        "name": "Digital Signal Processor 대",
         "spec": "프로오디오 설비(SR)",
         "unit": "3.64",
         "laborType": "통신설비공",
         "laborFactor": 1.82,
         "category": "device",
         "keywords": [
-            "Digital Signal Processor Meter",
+            "Digital Signal Processor 대",
             "프로오디오 설비(SR)"
         ]
     },
     {
         "code": "통신 7-11-2-3",
-        "name": "Digital Audio Mixer Meter",
+        "name": "Digital Audio Mixer 대",
         "spec": "프로오디오 설비(SR)",
         "unit": "3.25",
         "laborType": "통신설비공",
         "laborFactor": 1.63,
         "category": "device",
         "keywords": [
-            "Digital Audio Mixer Meter",
+            "Digital Audio Mixer 대",
             "프로오디오 설비(SR)"
         ]
     },
     {
         "code": "통신 7-11-2-3",
-        "name": "Audio I/O Box Meter",
+        "name": "Audio I/O Box 대",
         "spec": "프로오디오 설비(SR)",
         "unit": "0.13",
         "laborType": "통신설비공",
         "laborFactor": 0.13,
         "category": "device",
         "keywords": [
-            "Audio I/O Box Meter",
+            "Audio I/O Box 대",
             "프로오디오 설비(SR)"
         ]
     },
     {
         "code": "통신 7-11-2-3",
-        "name": "Graphic Equalizer Box",
+        "name": "Graphic Equalizer Box 대",
         "spec": "프로오디오 설비(SR)",
         "unit": "0.06",
         "laborType": "통신설비공",
         "laborFactor": 0.06,
         "category": "device",
         "keywords": [
-            "Graphic Equalizer Box",
+            "Graphic Equalizer Box 대",
             "프로오디오 설비(SR)"
         ]
     },
     {
         "code": "통신 7-11-2-3",
-        "name": "Network Audio Signal Router Box",
+        "name": "Network Audio Signal Router 대",
         "spec": "프로오디오 설비(SR)",
         "unit": "0.11",
         "laborType": "통신설비공",
         "laborFactor": 0.11,
         "category": "device",
         "keywords": [
-            "Network Audio Signal Router Box",
+            "Network Audio Signal Router 대",
             "프로오디오 설비(SR)"
         ]
     },
@@ -14460,14 +14460,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-11-2-3",
-        "name": "전동형 수동형",
+        "name": "전동형 수동형 대",
         "spec": "프로오디오 설비(SR)",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.56,
         "category": "device",
         "keywords": [
-            "전동형 수동형",
+            "전동형 수동형 대",
             "프로오디오 설비(SR)"
         ]
     },
@@ -14486,14 +14486,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-11-2-3",
-        "name": "조립형 일체형",
+        "name": "조립형 일체형 개",
         "spec": "프로오디오 설비(SR)",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.33,
         "category": "device",
         "keywords": [
-            "조립형 일체형",
+            "조립형 일체형 개",
             "프로오디오 설비(SR)"
         ]
     },
@@ -14525,79 +14525,79 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-11-2-4",
-        "name": "VGA Matrix Matrix",
+        "name": "VGA Matrix Matrix Switch 대",
         "spec": "멀티미디어방송 설비",
         "unit": "0.35",
         "laborType": "통신설비공",
         "laborFactor": 0.33,
         "category": "device",
         "keywords": [
-            "VGA Matrix Matrix",
+            "VGA Matrix Matrix Switch 대",
             "멀티미디어방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-4",
-        "name": "A/V Receiver Matrix",
+        "name": "A/V Receiver Matrix Switch 대",
         "spec": "멀티미디어방송 설비",
         "unit": "0.33",
         "laborType": "통신설비공",
         "laborFactor": 0.52,
         "category": "device",
         "keywords": [
-            "A/V Receiver Matrix",
+            "A/V Receiver Matrix Switch 대",
             "멀티미디어방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-4",
-        "name": "A/V Mixer Matrix",
+        "name": "A/V Mixer Matrix Switch 대",
         "spec": "멀티미디어방송 설비",
         "unit": "0.58",
         "laborType": "통신설비공",
         "laborFactor": 0.58,
         "category": "device",
         "keywords": [
-            "A/V Mixer Matrix",
+            "A/V Mixer Matrix Switch 대",
             "멀티미디어방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-4",
-        "name": "Network A/V Streamer Matrix",
+        "name": "Network A/V Streamer Switch 대",
         "spec": "멀티미디어방송 설비",
         "unit": "0.36",
         "laborType": "통신설비공",
         "laborFactor": 0.36,
         "category": "device",
         "keywords": [
-            "Network A/V Streamer Matrix",
+            "Network A/V Streamer Switch 대",
             "멀티미디어방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-4",
-        "name": "Set-top Box Streamer",
+        "name": "Set-top Box Streamer Switch 대",
         "spec": "멀티미디어방송 설비",
         "unit": "0.32",
         "laborType": "통신설비공",
         "laborFactor": 0.32,
         "category": "device",
         "keywords": [
-            "Set-top Box Streamer",
+            "Set-top Box Streamer Switch 대",
             "멀티미디어방송 설비"
         ]
     },
     {
         "code": "통신 7-11-2-4",
-        "name": "Video Distribution Streamer",
+        "name": "Video Distribution Streamer Switch 대",
         "spec": "멀티미디어방송 설비",
         "unit": "0.04",
         "laborType": "통신설비공",
         "laborFactor": 0.04,
         "category": "device",
         "keywords": [
-            "Video Distribution Streamer",
+            "Video Distribution Streamer Switch 대",
             "멀티미디어방송 설비"
         ]
     },
@@ -14642,66 +14642,66 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-11-3",
-        "name": "조 립 및 통신관련산업기사 1.88 2.00 2.00 3.00 5.00 3.00 3.00 4.00",
+        "name": "조립및 통신관련산업기사 1.88 2.00 2.00 3.00 5.00 3.00 3.00 4.00",
         "spec": "콘솔(Console)",
         "unit": "개",
         "laborType": "통신관련기사",
         "laborFactor": 6.0,
         "category": "device",
         "keywords": [
-            "조 립 및 통신관련산업기사 1.88 2.00 2.00 3.00 5.00 3.00 3.00 4.00",
+            "조립및 통신관련산업기사 1.88 2.00 2.00 3.00 5.00 3.00 3.00 4.00",
             "콘솔(Console)"
         ]
     },
     {
         "code": "통신 7-11-3",
-        "name": "설 치 통신설비공 3.75 2.00 2.00 3.00 5.00 2.00 3.00 4.00",
+        "name": "설치 통신설비공 3.75 2.00 2.00 3.00 5.00 2.00 3.00 4.00",
         "spec": "콘솔(Console)",
         "unit": "개",
         "laborType": "통신관련기사",
         "laborFactor": 6.0,
         "category": "device",
         "keywords": [
-            "설 치 통신설비공 3.75 2.00 2.00 3.00 5.00 2.00 3.00 4.00",
+            "설치 통신설비공 3.75 2.00 2.00 3.00 5.00 2.00 3.00 4.00",
             "콘솔(Console)"
         ]
     },
     {
         "code": "통신 7-11-3",
-        "name": "보 통 인 부 1.08 1.00 2.00 3.00 4.00 2.00 2.00 2.00",
+        "name": "보통인부 1.08 1.00 2.00 3.00 4.00 2.00 2.00 2.00",
         "spec": "콘솔(Console)",
         "unit": "개",
         "laborType": "통신관련기사",
         "laborFactor": 3.0,
         "category": "device",
         "keywords": [
-            "보 통 인 부 1.08 1.00 2.00 3.00 4.00 2.00 2.00 2.00",
+            "보통인부 1.08 1.00 2.00 3.00 4.00 2.00 2.00 2.00",
             "콘솔(Console)"
         ]
     },
     {
         "code": "통신 7-11-3",
-        "name": "시 험 및 통신관련기사 3.67 1.00 2.00 3.00 5.00 2.00 2.00 2.00",
+        "name": "시험및 통신관련기사 3.67 1.00 2.00 3.00 5.00 2.00 2.00 2.00",
         "spec": "콘솔(Console)",
         "unit": "개",
         "laborType": "통신관련기사",
         "laborFactor": 4.0,
         "category": "device",
         "keywords": [
-            "시 험 및 통신관련기사 3.67 1.00 2.00 3.00 5.00 2.00 2.00 2.00",
+            "시험및 통신관련기사 3.67 1.00 2.00 3.00 5.00 2.00 2.00 2.00",
             "콘솔(Console)"
         ]
     },
     {
         "code": "통신 7-11-3",
-        "name": "측 정 통신관련산업기사 7.33 2.00 4.00 6.00 10.00 2.00 2.00 4.00",
+        "name": "측정 통신관련산업기사 7.33 2.00 4.00 6.00 10.00 2.00 2.00 4.00",
         "spec": "콘솔(Console)",
         "unit": "개",
         "laborType": "통신관련기사",
         "laborFactor": 8.0,
         "category": "device",
         "keywords": [
-            "측 정 통신관련산업기사 7.33 2.00 4.00 6.00 10.00 2.00 2.00 4.00",
+            "측정 통신관련산업기사 7.33 2.00 4.00 6.00 10.00 2.00 2.00 4.00",
             "콘솔(Console)"
         ]
     },
@@ -15214,144 +15214,144 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-12-3-1",
-        "name": "3 개 (2 개 ) 개",
+        "name": "3 개",
         "spec": "옥외형 분배기(분기기)",
         "unit": "0.20",
         "laborType": "통신설비공",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "3 개 (2 개 ) 개",
+            "3 개",
             "옥외형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-1",
-        "name": "3 개 (2 개 ) 개",
+        "name": "3 개",
         "spec": "옥외형 분배기(분기기)",
         "unit": "0.20",
         "laborType": "보통인부",
         "laborFactor": 0.03,
         "category": "device",
         "keywords": [
-            "3 개 (2 개 ) 개",
+            "3 개",
             "옥외형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-1",
-        "name": "4 개 (3 개 ) 개",
+        "name": "4 개",
         "spec": "옥외형 분배기(분기기)",
         "unit": "0.16",
         "laborType": "통신설비공",
         "laborFactor": 0.16,
         "category": "device",
         "keywords": [
-            "4 개 (3 개 ) 개",
+            "4 개",
             "옥외형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-1",
-        "name": "4 개 (3 개 ) 개",
+        "name": "4 개",
         "spec": "옥외형 분배기(분기기)",
         "unit": "0.16",
         "laborType": "보통인부",
         "laborFactor": 0.04,
         "category": "device",
         "keywords": [
-            "4 개 (3 개 ) 개",
+            "4 개",
             "옥외형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-1",
-        "name": "5 개 (4 개 ) 개",
+        "name": "5 개",
         "spec": "옥외형 분배기(분기기)",
         "unit": "0.26",
         "laborType": "통신설비공",
         "laborFactor": 0.15,
         "category": "device",
         "keywords": [
-            "5 개 (4 개 ) 개",
+            "5 개",
             "옥외형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-1",
-        "name": "6 개 (4",
+        "name": "6 개",
         "spec": "옥외형 분배기(분기기)",
         "unit": "0.30",
         "laborType": "통신설비공",
         "laborFactor": 0.18,
         "category": "device",
         "keywords": [
-            "6 개 (4",
+            "6 개",
             "옥외형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-1",
-        "name": "6 개 (4",
+        "name": "6 개",
         "spec": "옥외형 분배기(분기기)",
         "unit": "0.30",
         "laborType": "보통인부",
         "laborFactor": 0.06,
         "category": "device",
         "keywords": [
-            "6 개 (4",
+            "6 개",
             "옥외형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-1",
-        "name": "8 개 (4",
+        "name": "8 개",
         "spec": "옥외형 분배기(분기기)",
         "unit": "0.36",
         "laborType": "통신설비공",
         "laborFactor": 0.19,
         "category": "device",
         "keywords": [
-            "8 개 (4",
+            "8 개",
             "옥외형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-1",
-        "name": "8 개 (4",
+        "name": "8 개",
         "spec": "옥외형 분배기(분기기)",
         "unit": "0.36",
         "laborType": "보통인부",
         "laborFactor": 0.08,
         "category": "device",
         "keywords": [
-            "8 개 (4",
+            "8 개",
             "옥외형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-1",
-        "name": "12 개 (4",
+        "name": "12 개",
         "spec": "옥외형 분배기(분기기)",
         "unit": "0.48",
         "laborType": "통신설비공",
         "laborFactor": 0.36,
         "category": "device",
         "keywords": [
-            "12 개 (4",
+            "12 개",
             "옥외형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-1",
-        "name": "16 개 (4",
+        "name": "16 개",
         "spec": "옥외형 분배기(분기기)",
         "unit": "0.60",
         "laborType": "통신설비공",
         "laborFactor": 0.48,
         "category": "device",
         "keywords": [
-            "16 개 (4",
+            "16 개",
             "옥외형 분배기(분기기)"
         ]
     },
@@ -15396,183 +15396,183 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "3 개 (2 개 ) 개",
+        "name": "3 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.12,
         "category": "device",
         "keywords": [
-            "3 개 (2 개 ) 개",
+            "3 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "3 개 (2 개 ) 개",
+        "name": "3 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.12,
         "category": "device",
         "keywords": [
-            "3 개 (2 개 ) 개",
+            "3 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "4 개 (3 개 ) 개",
+        "name": "4 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.13,
         "category": "device",
         "keywords": [
-            "4 개 (3 개 ) 개",
+            "4 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "4 개 (3 개 ) 개",
+        "name": "4 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.13,
         "category": "device",
         "keywords": [
-            "4 개 (3 개 ) 개",
+            "4 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "5 개 (4 개 ) 개",
+        "name": "5 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.17,
         "category": "device",
         "keywords": [
-            "5 개 (4 개 ) 개",
+            "5 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "5 개 (4 개 ) 개",
+        "name": "5 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.17,
         "category": "device",
         "keywords": [
-            "5 개 (4 개 ) 개",
+            "5 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "6 개 (4",
+        "name": "6 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.19,
         "category": "device",
         "keywords": [
-            "6 개 (4",
+            "6 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "6 개 (4",
+        "name": "6 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.19,
         "category": "device",
         "keywords": [
-            "6 개 (4",
+            "6 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "8 개 (4",
+        "name": "8 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.23,
         "category": "device",
         "keywords": [
-            "8 개 (4",
+            "8 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "8 개 (4",
+        "name": "8 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.23,
         "category": "device",
         "keywords": [
-            "8 개 (4",
+            "8 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "12 개 (4",
+        "name": "12 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.32,
         "category": "device",
         "keywords": [
-            "12 개 (4",
+            "12 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "12 개 (4",
+        "name": "12 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.32,
         "category": "device",
         "keywords": [
-            "12 개 (4",
+            "12 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "16 개 (4",
+        "name": "16 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "통신설비공",
         "laborFactor": 0.41,
         "category": "device",
         "keywords": [
-            "16 개 (4",
+            "16 개",
             "옥내형 분배기(분기기)"
         ]
     },
     {
         "code": "통신 7-12-3-2",
-        "name": "16 개 (4",
+        "name": "16 개",
         "spec": "옥내형 분배기(분기기)",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.41,
         "category": "device",
         "keywords": [
-            "16 개 (4",
+            "16 개",
             "옥내형 분배기(분기기)"
         ]
     },
@@ -15708,27 +15708,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-13-1",
-        "name": "개 별 특 성 RF 레벨조정",
+        "name": "개별특성 RF 레벨조정",
         "spec": "AM 변조기",
         "unit": "CH",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.08,
         "category": "device",
         "keywords": [
-            "개 별 특 성 RF 레벨조정",
+            "개별특성 RF 레벨조정",
             "AM 변조기"
         ]
     },
     {
         "code": "통신 7-13-1",
-        "name": "시 험 비디오 입력레벨 시험",
+        "name": "시험 비디오 입력레벨 시험",
         "spec": "AM 변조기",
         "unit": "CH",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.1,
         "category": "device",
         "keywords": [
-            "시 험 비디오 입력레벨 시험",
+            "시험 비디오 입력레벨 시험",
             "AM 변조기"
         ]
     },
@@ -15747,14 +15747,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-13-1",
-        "name": "종 합 시 험 비디오 특성시험",
+        "name": "종합시험 비디오 특성시험",
         "spec": "AM 변조기",
         "unit": "CH",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.07,
         "category": "device",
         "keywords": [
-            "종 합 시 험 비디오 특성시험",
+            "종합시험 비디오 특성시험",
             "AM 변조기"
         ]
     },
@@ -15812,27 +15812,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-13-4-1",
-        "name": "개 별 특 성 직선파형 왜곡시험",
+        "name": "개별특성 직선파형 왜곡시험",
         "spec": "FM 광전송장치(FM 복조기)",
         "unit": "CH",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.1,
         "category": "device",
         "keywords": [
-            "개 별 특 성 직선파형 왜곡시험",
+            "개별특성 직선파형 왜곡시험",
             "FM 광전송장치(FM 복조기)"
         ]
     },
     {
         "code": "통신 7-13-4-1",
-        "name": "시 험 주파수특성(음성신호)",
+        "name": "시험 주파수특성(음성신호)",
         "spec": "FM 광전송장치(FM 복조기)",
         "unit": "CH",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "시 험 주파수특성(음성신호)",
+            "시험 주파수특성(음성신호)",
             "FM 광전송장치(FM 복조기)"
         ]
     },
@@ -15877,14 +15877,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-13-4-1",
-        "name": "종 합 시 험 채널별신호대 잡음비",
+        "name": "종합시험 채널별신호대 잡음비",
         "spec": "FM 광전송장치(FM 복조기)",
         "unit": "SYS",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.07,
         "category": "device",
         "keywords": [
-            "종 합 시 험 채널별신호대 잡음비",
+            "종합시험 채널별신호대 잡음비",
             "FM 광전송장치(FM 복조기)"
         ]
     },
@@ -15903,14 +15903,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-13-5",
-        "name": "시 험 자주방송기저대역 특성시험",
+        "name": "시험 자주방송기저대역 특성시험",
         "spec": "FM 음악변조 및 중계기",
         "unit": "CH",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.08,
         "category": "device",
         "keywords": [
-            "시 험 자주방송기저대역 특성시험",
+            "시험 자주방송기저대역 특성시험",
             "FM 음악변조 및 중계기"
         ]
     },
@@ -15955,66 +15955,66 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 7-13-7",
-        "name": "채널트랩(낫치휠터) 휠터",
+        "name": "채널트랩(낫치휠터) 휠터 개",
         "spec": "각종 휠터 및 기타설비",
         "unit": "0.11",
         "laborType": "통신설비공",
         "laborFactor": 0.11,
         "category": "device",
         "keywords": [
-            "채널트랩(낫치휠터) 휠터",
+            "채널트랩(낫치휠터) 휠터 개",
             "각종 휠터 및 기타설비"
         ]
     },
     {
         "code": "통신 7-13-7",
-        "name": "레벨셑터 휠터",
+        "name": "레벨셑터 휠터 개",
         "spec": "각종 휠터 및 기타설비",
         "unit": "0.65",
         "laborType": "통신설비공",
         "laborFactor": 0.65,
         "category": "device",
         "keywords": [
-            "레벨셑터 휠터",
+            "레벨셑터 휠터 개",
             "각종 휠터 및 기타설비"
         ]
     },
     {
         "code": "통신 7-13-7",
-        "name": "채널컨버터 휠터",
+        "name": "채널컨버터 휠터 개",
         "spec": "각종 휠터 및 기타설비",
         "unit": "0.19",
         "laborType": "통신설비공",
         "laborFactor": 0.19,
         "category": "device",
         "keywords": [
-            "채널컨버터 휠터",
+            "채널컨버터 휠터 개",
             "각종 휠터 및 기타설비"
         ]
     },
     {
         "code": "통신 7-13-7",
-        "name": "보호기 휠터",
+        "name": "보호기 휠터 개",
         "spec": "각종 휠터 및 기타설비",
         "unit": "-",
         "laborType": "통신내선공",
         "laborFactor": 0.2,
         "category": "device",
         "keywords": [
-            "보호기 휠터",
+            "보호기 휠터 개",
             "각종 휠터 및 기타설비"
         ]
     },
     {
         "code": "통신 7-13-7",
-        "name": "종단저항(75Ω) 휠터",
+        "name": "종단저항(75Ω) 휠터 개",
         "spec": "각종 휠터 및 기타설비",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.02,
         "category": "device",
         "keywords": [
-            "종단저항(75Ω) 휠터",
+            "종단저항(75Ω) 휠터 개",
             "각종 휠터 및 기타설비"
         ]
     },
@@ -16683,27 +16683,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 8-4-2",
-        "name": "데이터수집장치 유닛 0.53",
+        "name": "데이터수집장치 유닛 대 0.55",
         "spec": "축전지관리 시스템(BMS)",
         "unit": "0.53",
         "laborType": "통신설비공",
         "laborFactor": 0.61,
         "category": "device",
         "keywords": [
-            "데이터수집장치 유닛 0.53",
+            "데이터수집장치 유닛 대 0.55",
             "축전지관리 시스템(BMS)"
         ]
     },
     {
         "code": "통신 8-4-2",
-        "name": "데이터수집장치 유닛 0.53",
+        "name": "데이터수집장치 유닛 대 0.55",
         "spec": "축전지관리 시스템(BMS)",
         "unit": "0.53",
         "laborType": "통신케이블공",
         "laborFactor": 0.61,
         "category": "device",
         "keywords": [
-            "데이터수집장치 유닛 0.53",
+            "데이터수집장치 유닛 대 0.55",
             "축전지관리 시스템(BMS)"
         ]
     },
@@ -16748,27 +16748,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 8-4-4",
-        "name": "시 험 대",
+        "name": "시험 확인 대",
         "spec": "에너지 관리시스템(EMS)",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.67,
         "category": "device",
         "keywords": [
-            "시 험 대",
+            "시험 확인 대",
             "에너지 관리시스템(EMS)"
         ]
     },
     {
         "code": "통신 8-4-5",
-        "name": "고압계기형 (데이터전송장치 - - 0.03",
+        "name": "고압계기형 (데이터전송장치 ) 대 0.40 - -",
         "spec": "원격검침 설비",
         "unit": "0.20",
         "laborType": "특별인부",
         "laborFactor": 0.19,
         "category": "device",
         "keywords": [
-            "고압계기형 (데이터전송장치 - - 0.03",
+            "고압계기형 (데이터전송장치 ) 대 0.40 - -",
             "원격검침 설비"
         ]
     },
@@ -16930,79 +16930,79 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 8-4-8-9",
-        "name": "설치작업 계 통 반 건 립",
+        "name": "설치작업 계통반건립",
         "spec": "계통반(Map Board)",
         "unit": "식",
         "laborType": "통신설비공",
         "laborFactor": 20.16,
         "category": "device",
         "keywords": [
-            "설치작업 계 통 반 건 립",
+            "설치작업 계통반건립",
             "계통반(Map Board)"
         ]
     },
     {
         "code": "통신 8-4-8-9",
-        "name": "설치작업 계 통 반 건 립",
+        "name": "설치작업 계통반건립",
         "spec": "계통반(Map Board)",
         "unit": "식",
         "laborType": "보통인부",
         "laborFactor": 13.44,
         "category": "device",
         "keywords": [
-            "설치작업 계 통 반 건 립",
+            "설치작업 계통반건립",
             "계통반(Map Board)"
         ]
     },
     {
         "code": "통신 8-4-8-9",
-        "name": "타 일 조 립",
+        "name": "타일조립",
         "spec": "계통반(Map Board)",
         "unit": "식",
         "laborType": "통신설비공",
         "laborFactor": 20.4,
         "category": "device",
         "keywords": [
-            "타 일 조 립",
+            "타일조립",
             "계통반(Map Board)"
         ]
     },
     {
         "code": "통신 8-4-8-9",
-        "name": "타 일 조 립",
+        "name": "타일조립",
         "spec": "계통반(Map Board)",
         "unit": "식",
         "laborType": "보통인부",
         "laborFactor": 20.4,
         "category": "device",
         "keywords": [
-            "타 일 조 립",
+            "타일조립",
             "계통반(Map Board)"
         ]
     },
     {
         "code": "통신 8-4-8-9",
-        "name": "점검 및 표 시 기 점 검",
+        "name": "점검 및표시기점검",
         "spec": "계통반(Map Board)",
         "unit": "식",
         "laborType": "통신설비공",
         "laborFactor": 12.7,
         "category": "device",
         "keywords": [
-            "점검 및 표 시 기 점 검",
+            "점검 및표시기점검",
             "계통반(Map Board)"
         ]
     },
     {
         "code": "통신 8-4-8-9",
-        "name": "결 선 표 시 기 결 선",
+        "name": "결선표시기결선",
         "spec": "계통반(Map Board)",
         "unit": "식",
         "laborType": "통신설비공",
         "laborFactor": 40.6,
         "category": "device",
         "keywords": [
-            "결 선 표 시 기 결 선",
+            "결선표시기결선",
             "계통반(Map Board)"
         ]
     },
@@ -17021,14 +17021,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 8-4-8-9",
-        "name": "조 정 최 종 시 험",
+        "name": "조정최종시험",
         "spec": "계통반(Map Board)",
         "unit": "식",
         "laborType": "통신관련기사",
         "laborFactor": 15.0,
         "category": "device",
         "keywords": [
-            "조 정 최 종 시 험",
+            "조정최종시험",
             "계통반(Map Board)"
         ]
     },
@@ -17086,27 +17086,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 8-4-8-11",
-        "name": "조 정",
+        "name": "조정",
         "spec": "콘솔(Console)",
         "unit": "개",
         "laborType": "통신관련기사",
         "laborFactor": 2.0,
         "category": "device",
         "keywords": [
-            "조 정",
+            "조정",
             "콘솔(Console)"
         ]
     },
     {
         "code": "통신 8-4-8-11",
-        "name": "조 정",
+        "name": "조정",
         "spec": "콘솔(Console)",
         "unit": "개",
         "laborType": "통신관련산업기사",
         "laborFactor": 4.0,
         "category": "device",
         "keywords": [
-            "조 정",
+            "조정",
             "콘솔(Console)"
         ]
     },
@@ -17151,14 +17151,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 8-4-8-12",
-        "name": "간 이 시 험",
+        "name": "간이시험",
         "spec": "전자계산기 배선",
         "unit": "조",
         "laborType": "통신케이블공",
         "laborFactor": 0.15,
         "category": "device",
         "keywords": [
-            "간 이 시 험",
+            "간이시험",
             "전자계산기 배선"
         ]
     },
@@ -17528,27 +17528,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-1-9",
-        "name": "위 치 비 콘 설치",
+        "name": "위치비콘 설치",
         "spec": "교통정보수집시스템(Beacon)",
         "unit": "대",
         "laborType": "통신외선공",
         "laborFactor": 0.12,
         "category": "device",
         "keywords": [
-            "위 치 비 콘 설치",
+            "위치비콘 설치",
             "교통정보수집시스템(Beacon)"
         ]
     },
     {
         "code": "통신 9-1-9",
-        "name": "위 치 비 콘 설치",
+        "name": "위치비콘 설치",
         "spec": "교통정보수집시스템(Beacon)",
         "unit": "대",
         "laborType": "보통인부",
         "laborFactor": 0.12,
         "category": "device",
         "keywords": [
-            "위 치 비 콘 설치",
+            "위치비콘 설치",
             "교통정보수집시스템(Beacon)"
         ]
     },
@@ -17658,14 +17658,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-1-14",
-        "name": "거 치 대 대",
+        "name": "거치대 대",
         "spec": "자전거무인대여시스템",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.33,
         "category": "device",
         "keywords": [
-            "거 치 대 대",
+            "거치대 대",
             "자전거무인대여시스템"
         ]
     },
@@ -18906,27 +18906,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-3-2-1",
-        "name": "시 험",
+        "name": "시험",
         "spec": "초음파 수위계",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "초음파 수위계"
         ]
     },
     {
         "code": "통신 9-3-2-1",
-        "name": "시 험",
+        "name": "시험",
         "spec": "초음파 수위계",
         "unit": "대",
         "laborType": "특별인부",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "초음파 수위계"
         ]
     },
@@ -18984,27 +18984,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-3-2-2",
-        "name": "시 험",
+        "name": "시험",
         "spec": "초음파 유량계",
         "unit": "식",
         "laborType": "통신설비공",
         "laborFactor": 0.11,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "초음파 유량계"
         ]
     },
     {
         "code": "통신 9-3-2-2",
-        "name": "시 험",
+        "name": "시험",
         "spec": "초음파 유량계",
         "unit": "식",
         "laborType": "특별인부",
         "laborFactor": 0.11,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "초음파 유량계"
         ]
     },
@@ -19062,27 +19062,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-3-2-3",
-        "name": "시 험",
+        "name": "시험",
         "spec": "압력전송기",
         "unit": "식",
         "laborType": "통신설비공",
         "laborFactor": 0.07,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "압력전송기"
         ]
     },
     {
         "code": "통신 9-3-2-3",
-        "name": "시 험",
+        "name": "시험",
         "spec": "압력전송기",
         "unit": "식",
         "laborType": "특별인부",
         "laborFactor": 0.07,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "압력전송기"
         ]
     },
@@ -19140,27 +19140,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-3-3-1",
-        "name": "시 험",
+        "name": "시험",
         "spec": "탁도계",
         "unit": "식",
         "laborType": "통신설비공",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "탁도계"
         ]
     },
     {
         "code": "통신 9-3-3-1",
-        "name": "시 험",
+        "name": "시험",
         "spec": "탁도계",
         "unit": "식",
         "laborType": "특별인부",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "탁도계"
         ]
     },
@@ -19218,27 +19218,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-3-3-2",
-        "name": "시 험",
+        "name": "시험",
         "spec": "전기전도도계",
         "unit": "식",
         "laborType": "통신설비공",
         "laborFactor": 0.08,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "전기전도도계"
         ]
     },
     {
         "code": "통신 9-3-3-2",
-        "name": "시 험",
+        "name": "시험",
         "spec": "전기전도도계",
         "unit": "식",
         "laborType": "특별인부",
         "laborFactor": 0.08,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "전기전도도계"
         ]
     },
@@ -19296,27 +19296,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-3-3-3",
-        "name": "시 험",
+        "name": "시험",
         "spec": "잔류염소계",
         "unit": "식",
         "laborType": "통신설비공",
         "laborFactor": 0.07,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "잔류염소계"
         ]
     },
     {
         "code": "통신 9-3-3-3",
-        "name": "시 험",
+        "name": "시험",
         "spec": "잔류염소계",
         "unit": "식",
         "laborType": "특별인부",
         "laborFactor": 0.07,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "잔류염소계"
         ]
     },
@@ -19374,27 +19374,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-3-3-4",
-        "name": "시 험",
+        "name": "시험",
         "spec": "수소이온농도계(pH계)",
         "unit": "식",
         "laborType": "통신설비공",
         "laborFactor": 0.06,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "수소이온농도계(pH계)"
         ]
     },
     {
         "code": "통신 9-3-3-4",
-        "name": "시 험",
+        "name": "시험",
         "spec": "수소이온농도계(pH계)",
         "unit": "식",
         "laborType": "특별인부",
         "laborFactor": 0.06,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "수소이온농도계(pH계)"
         ]
     },
@@ -19478,27 +19478,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-3-3-6",
-        "name": "시 험",
+        "name": "시험",
         "spec": "알칼리도계",
         "unit": "식",
         "laborType": "통신설비공",
         "laborFactor": 0.1,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "알칼리도계"
         ]
     },
     {
         "code": "통신 9-3-3-6",
-        "name": "시 험",
+        "name": "시험",
         "spec": "알칼리도계",
         "unit": "식",
         "laborType": "특별인부",
         "laborFactor": 0.1,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "알칼리도계"
         ]
     },
@@ -19582,27 +19582,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-3-3-7",
-        "name": "시 험",
+        "name": "시험",
         "spec": "망간계측기",
         "unit": "식",
         "laborType": "통신설비공",
         "laborFactor": 0.17,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "망간계측기"
         ]
     },
     {
         "code": "통신 9-3-3-7",
-        "name": "시 험",
+        "name": "시험",
         "spec": "망간계측기",
         "unit": "식",
         "laborType": "특별인부",
         "laborFactor": 0.17,
         "category": "device",
         "keywords": [
-            "시 험",
+            "시험",
             "망간계측기"
         ]
     },
@@ -19972,53 +19972,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-4-2",
-        "name": "조명제어기 동작감지센서",
+        "name": "조명제어기 동작감지센서 대",
         "spec": "디밍제어 시스템(Dimming Control System)",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "조명제어기 동작감지센서",
+            "조명제어기 동작감지센서 대",
             "디밍제어 시스템(Dimming Control System)"
         ]
     },
     {
         "code": "통신 9-4-2",
-        "name": "조명제어기 동작감지센서",
+        "name": "조명제어기 동작감지센서 대",
         "spec": "디밍제어 시스템(Dimming Control System)",
         "unit": "-",
         "laborType": "특별인부",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "조명제어기 동작감지센서",
+            "조명제어기 동작감지센서 대",
             "디밍제어 시스템(Dimming Control System)"
         ]
     },
     {
         "code": "통신 9-4-2",
-        "name": "게이트웨이 동작감지센서",
+        "name": "게이트웨이 동작감지센서 대",
         "spec": "디밍제어 시스템(Dimming Control System)",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.13,
         "category": "device",
         "keywords": [
-            "게이트웨이 동작감지센서",
+            "게이트웨이 동작감지센서 대",
             "디밍제어 시스템(Dimming Control System)"
         ]
     },
     {
         "code": "통신 9-4-2",
-        "name": "게이트웨이 동작감지센서",
+        "name": "게이트웨이 동작감지센서 대",
         "spec": "디밍제어 시스템(Dimming Control System)",
         "unit": "-",
         "laborType": "특별인부",
         "laborFactor": 0.13,
         "category": "device",
         "keywords": [
-            "게이트웨이 동작감지센서",
+            "게이트웨이 동작감지센서 대",
             "디밍제어 시스템(Dimming Control System)"
         ]
     },
@@ -20037,14 +20037,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-4-4",
-        "name": "본 체 대 -",
+        "name": "본체대 -",
         "spec": "스마트 스쿨 시스템",
         "unit": "0.30",
         "laborType": "통신설비공",
         "laborFactor": 0.3,
         "category": "device",
         "keywords": [
-            "본 체 대 -",
+            "본체대 -",
             "스마트 스쿨 시스템"
         ]
     },
@@ -20063,14 +20063,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-4-4",
-        "name": "본 체 대 -",
+        "name": "본체대 -",
         "spec": "스마트 스쿨 시스템",
         "unit": "0.30",
         "laborType": "통신설비공",
         "laborFactor": 0.3,
         "category": "device",
         "keywords": [
-            "본 체 대 -",
+            "본체대 -",
             "스마트 스쿨 시스템"
         ]
     },
@@ -20258,157 +20258,157 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-4-8-1",
-        "name": "주제어장치 콘솔",
+        "name": "주제어장치 콘솔 대",
         "spec": "종합접수대 시스템",
         "unit": "0.52",
         "laborType": "통신설비공",
         "laborFactor": 0.52,
         "category": "device",
         "keywords": [
-            "주제어장치 콘솔",
+            "주제어장치 콘솔 대",
             "종합접수대 시스템"
         ]
     },
     {
         "code": "통신 9-4-8-1",
-        "name": "제어부 헤드셋제어장치 콘솔",
+        "name": "제어부 헤드셋제어장치 대",
         "spec": "종합접수대 시스템",
         "unit": "0.44",
         "laborType": "통신설비공",
         "laborFactor": 0.44,
         "category": "device",
         "keywords": [
-            "제어부 헤드셋제어장치 콘솔",
+            "제어부 헤드셋제어장치 대",
             "종합접수대 시스템"
         ]
     },
     {
         "code": "통신 9-4-8-1",
-        "name": "무선제어장치 헤드셋제어장치",
+        "name": "무선제어장치 헤드셋제어장치 대",
         "spec": "종합접수대 시스템",
         "unit": "0.32",
         "laborType": "통신설비공",
         "laborFactor": 0.32,
         "category": "device",
         "keywords": [
-            "무선제어장치 헤드셋제어장치",
+            "무선제어장치 헤드셋제어장치 대",
             "종합접수대 시스템"
         ]
     },
     {
         "code": "통신 9-4-8-1",
-        "name": "전원부 전원제어장치 헤드셋제어장치",
+        "name": "전원부 전원제어장치 대",
         "spec": "종합접수대 시스템",
         "unit": "0.41",
         "laborType": "통신설비공",
         "laborFactor": 0.41,
         "category": "device",
         "keywords": [
-            "전원부 전원제어장치 헤드셋제어장치",
+            "전원부 전원제어장치 대",
             "종합접수대 시스템"
         ]
     },
     {
         "code": "통신 9-4-8-1",
-        "name": "출력부 모니터스피커 헤드셋제어장치",
+        "name": "출력부 모니터스피커 대",
         "spec": "종합접수대 시스템",
         "unit": "0.08",
         "laborType": "통신설비공",
         "laborFactor": 0.08,
         "category": "device",
         "keywords": [
-            "출력부 모니터스피커 헤드셋제어장치",
+            "출력부 모니터스피커 대",
             "종합접수대 시스템"
         ]
     },
     {
         "code": "통신 9-4-8-1",
-        "name": "방송 방송지령장치 헤드셋제어장치",
+        "name": "방송 방송지령장치 대",
         "spec": "종합접수대 시스템",
         "unit": "0.24",
         "laborType": "통신설비공",
         "laborFactor": 0.24,
         "category": "device",
         "keywords": [
-            "방송 방송지령장치 헤드셋제어장치",
+            "방송 방송지령장치 대",
             "종합접수대 시스템"
         ]
     },
     {
         "code": "통신 9-4-8-1",
-        "name": "보이스제어장치 방송지령장치",
+        "name": "보이스제어장치 방송지령장치 대",
         "spec": "종합접수대 시스템",
         "unit": "0.08",
         "laborType": "통신설비공",
         "laborFactor": 0.08,
         "category": "device",
         "keywords": [
-            "보이스제어장치 방송지령장치",
+            "보이스제어장치 방송지령장치 대",
             "종합접수대 시스템"
         ]
     },
     {
         "code": "통신 9-4-8-1",
-        "name": "기타 경광등 방송지령장치",
+        "name": "기타 경광등 대",
         "spec": "종합접수대 시스템",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.04,
         "category": "device",
         "keywords": [
-            "기타 경광등 방송지령장치",
+            "기타 경광등 대",
             "종합접수대 시스템"
         ]
     },
     {
         "code": "통신 9-4-8-1",
-        "name": "스위치박스 경광등",
+        "name": "스위치박스 경광등 대",
         "spec": "종합접수대 시스템",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.04,
         "category": "device",
         "keywords": [
-            "스위치박스 경광등",
+            "스위치박스 경광등 대",
             "종합접수대 시스템"
         ]
     },
     {
         "code": "통신 9-4-8-3",
-        "name": "안테나 차량탑재형 0.46 -",
+        "name": "안테나 차량탑재형 0.46",
         "spec": "무선원격기지국",
         "unit": "0.27",
         "laborType": "통신설비공",
         "laborFactor": 0.27,
         "category": "device",
         "keywords": [
-            "안테나 차량탑재형 0.46 -",
+            "안테나 차량탑재형 0.46",
             "무선원격기지국"
         ]
     },
     {
         "code": "통신 9-4-8-3",
-        "name": "옥외형 차량탑재형 -",
+        "name": "옥외형 차량탑재형 0.46",
         "spec": "무선원격기지국",
         "unit": "0.38",
         "laborType": "통신설비공",
         "laborFactor": 0.38,
         "category": "device",
         "keywords": [
-            "옥외형 차량탑재형 -",
+            "옥외형 차량탑재형 0.46",
             "무선원격기지국"
         ]
     },
     {
         "code": "통신 9-4-8-3",
-        "name": "함체 차량탑재형 -",
+        "name": "함체 차량탑재형 0.46",
         "spec": "무선원격기지국",
         "unit": "0.40",
         "laborType": "보통인부",
         "laborFactor": 0.8,
         "category": "device",
         "keywords": [
-            "함체 차량탑재형 -",
+            "함체 차량탑재형 0.46",
             "무선원격기지국"
         ]
     },
@@ -20453,27 +20453,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-4-8-4",
-        "name": "혼 벽부형(10W)",
+        "name": "혼 벽부형(10W) 대",
         "spec": "일제방송지령시스템",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.27,
         "category": "device",
         "keywords": [
-            "혼 벽부형(10W)",
+            "혼 벽부형(10W) 대",
             "일제방송지령시스템"
         ]
     },
     {
         "code": "통신 9-4-8-4",
-        "name": "혼 벽부형(10W)",
+        "name": "혼 벽부형(10W) 대",
         "spec": "일제방송지령시스템",
         "unit": "-",
         "laborType": "특별인부",
         "laborFactor": 0.27,
         "category": "device",
         "keywords": [
-            "혼 벽부형(10W)",
+            "혼 벽부형(10W) 대",
             "일제방송지령시스템"
         ]
     },
@@ -21545,27 +21545,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-4-34",
-        "name": "제어기 센서",
+        "name": "제어기 센서 대",
         "spec": "스마트 유류재고 관리 시스템",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.12,
         "category": "device",
         "keywords": [
-            "제어기 센서",
+            "제어기 센서 대",
             "스마트 유류재고 관리 시스템"
         ]
     },
     {
         "code": "통신 9-4-34",
-        "name": "제어기 센서",
+        "name": "제어기 센서 대",
         "spec": "스마트 유류재고 관리 시스템",
         "unit": "-",
         "laborType": "특별인부",
         "laborFactor": 0.12,
         "category": "device",
         "keywords": [
-            "제어기 센서",
+            "제어기 센서 대",
             "스마트 유류재고 관리 시스템"
         ]
     },
@@ -21649,14 +21649,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-4-37",
-        "name": "도서 적재부 반납부 0.20",
+        "name": "도서 적재부 반납부 대 0.28",
         "spec": "스마트 도서관 시스템",
         "unit": "0.20",
         "laborType": "통신설비공",
         "laborFactor": 0.2,
         "category": "device",
         "keywords": [
-            "도서 적재부 반납부 0.20",
+            "도서 적재부 반납부 대 0.28",
             "스마트 도서관 시스템"
         ]
     },
@@ -21766,27 +21766,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-4-38-1",
-        "name": "시 험 구간시험",
+        "name": "시험 구간시험",
         "spec": "자력(부착)식 케이블센서 감지 시스템",
         "unit": "구간",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.05,
         "category": "device",
         "keywords": [
-            "시 험 구간시험",
+            "시험 구간시험",
             "자력(부착)식 케이블센서 감지 시스템"
         ]
     },
     {
         "code": "통신 9-4-38-1",
-        "name": "시 험 구간시험",
+        "name": "시험 구간시험",
         "spec": "자력(부착)식 케이블센서 감지 시스템",
         "unit": "구간",
         "laborType": "통신설비공",
         "laborFactor": 0.1,
         "category": "device",
         "keywords": [
-            "시 험 구간시험",
+            "시험 구간시험",
             "자력(부착)식 케이블센서 감지 시스템"
         ]
     },
@@ -22117,14 +22117,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 9-4-44",
-        "name": "보행자용 차량용 - 0.14",
+        "name": "보행자용 차량용 대 - 0.39",
         "spec": "우회전 스마트 알리미 시스템",
         "unit": "0.14",
         "laborType": "보통인부",
         "laborFactor": 0.07,
         "category": "device",
         "keywords": [
-            "보행자용 차량용 - 0.14",
+            "보행자용 차량용 대 - 0.39",
             "우회전 스마트 알리미 시스템"
         ]
     },
@@ -22273,14 +22273,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 10-2-7",
-        "name": "작 업 선저 Transducer 설치 - - 0.97 0.97 0.97",
+        "name": "작업 선저 Transducer 설치 - - 0.97 0.97 0.97",
         "spec": "음향측심기(Echo Sounder)",
         "unit": "대",
         "laborType": "용접공",
         "laborFactor": 0.97,
         "category": "device",
         "keywords": [
-            "작 업 선저 Transducer 설치 - - 0.97 0.97 0.97",
+            "작업 선저 Transducer 설치 - - 0.97 0.97 0.97",
             "음향측심기(Echo Sounder)"
         ]
     },
@@ -22312,66 +22312,66 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 10-2-11",
-        "name": "기 초 포 장 해 체",
+        "name": "기초포장해체",
         "spec": "레이더 트랜스폰더(Radar Transponder)",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "기 초 포 장 해 체",
+            "기초포장해체",
             "레이더 트랜스폰더(Radar Transponder)"
         ]
     },
     {
         "code": "통신 10-2-11",
-        "name": "기 초 포 장 해 체",
+        "name": "기초포장해체",
         "spec": "레이더 트랜스폰더(Radar Transponder)",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "기 초 포 장 해 체",
+            "기초포장해체",
             "레이더 트랜스폰더(Radar Transponder)"
         ]
     },
     {
         "code": "통신 10-2-11",
-        "name": "작 업 점검 및 목록대조",
+        "name": "작업 점검 및 목록대조",
         "spec": "레이더 트랜스폰더(Radar Transponder)",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "작 업 점검 및 목록대조",
+            "작업 점검 및 목록대조",
             "레이더 트랜스폰더(Radar Transponder)"
         ]
     },
     {
         "code": "통신 10-2-11",
-        "name": "작 업 점검 및 목록대조",
+        "name": "작업 점검 및 목록대조",
         "spec": "레이더 트랜스폰더(Radar Transponder)",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "작 업 점검 및 목록대조",
+            "작업 점검 및 목록대조",
             "레이더 트랜스폰더(Radar Transponder)"
         ]
     },
     {
         "code": "통신 10-2-11",
-        "name": "설 치 위 치 지 정",
+        "name": "설치위치지정",
         "spec": "레이더 트랜스폰더(Radar Transponder)",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.11,
         "category": "device",
         "keywords": [
-            "설 치 위 치 지 정",
+            "설치위치지정",
             "레이더 트랜스폰더(Radar Transponder)"
         ]
     },
@@ -22390,27 +22390,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 10-2-11",
-        "name": "시 험 대국 및 종합시험",
+        "name": "시험 대국 및 종합시험",
         "spec": "레이더 트랜스폰더(Radar Transponder)",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.13,
         "category": "device",
         "keywords": [
-            "시 험 대국 및 종합시험",
+            "시험 대국 및 종합시험",
             "레이더 트랜스폰더(Radar Transponder)"
         ]
     },
     {
         "code": "통신 10-2-11",
-        "name": "시 험 대국 및 종합시험",
+        "name": "시험 대국 및 종합시험",
         "spec": "레이더 트랜스폰더(Radar Transponder)",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 0.13,
         "category": "device",
         "keywords": [
-            "시 험 대국 및 종합시험",
+            "시험 대국 및 종합시험",
             "레이더 트랜스폰더(Radar Transponder)"
         ]
     },
@@ -22702,27 +22702,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-1-1-1",
-        "name": "배열 및 조립 보 통 인 부 1.78 4.26 8.52",
+        "name": "배열 및 조립 보통인부 1.78 4.26 8.52",
         "spec": "250AH이하 축전지",
         "unit": "조",
         "laborType": "통신설비공",
         "laborFactor": 13.45,
         "category": "device",
         "keywords": [
-            "배열 및 조립 보 통 인 부 1.78 4.26 8.52",
+            "배열 및 조립 보통인부 1.78 4.26 8.52",
             "250AH이하 축전지"
         ]
     },
     {
         "code": "통신 11-1-1-2",
-        "name": "배열 및 조립 보 통 인 부 1.79 4.29 8.58",
+        "name": "배열 및 조립 보통인부 1.79 4.29 8.58",
         "spec": "500AH이하 축전지",
         "unit": "조",
         "laborType": "통신설비공",
         "laborFactor": 13.55,
         "category": "device",
         "keywords": [
-            "배열 및 조립 보 통 인 부 1.79 4.29 8.58",
+            "배열 및 조립 보통인부 1.79 4.29 8.58",
             "500AH이하 축전지"
         ]
     },
@@ -22741,27 +22741,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-1-1-3",
-        "name": "보 통 인 부 1.35 3.24 6.48",
+        "name": "보통인부 1.35 3.24 6.48",
         "spec": "1,200AH이하 축전지",
         "unit": "조",
         "laborType": "통신설비공",
         "laborFactor": 10.23,
         "category": "device",
         "keywords": [
-            "보 통 인 부 1.35 3.24 6.48",
+            "보통인부 1.35 3.24 6.48",
             "1,200AH이하 축전지"
         ]
     },
     {
         "code": "통신 11-1-1-4",
-        "name": "소 운 반 인력운반공 2.24 5.37 10.74",
+        "name": "소운반 인력운반공 2.24 5.37 10.74",
         "spec": "1,600AH이하 축전지",
         "unit": "조",
         "laborType": "통신설비공",
         "laborFactor": 16.96,
         "category": "device",
         "keywords": [
-            "소 운 반 인력운반공 2.24 5.37 10.74",
+            "소운반 인력운반공 2.24 5.37 10.74",
             "1,600AH이하 축전지"
         ]
     },
@@ -22780,14 +22780,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-1-1-5",
-        "name": "소 운 반 인력운반공 2.24 5.37 10.74",
+        "name": "소운반 인력운반공 2.24 5.37 10.74",
         "spec": "2,400AH이하 축전지",
         "unit": "조",
         "laborType": "통신설비공",
         "laborFactor": 26.96,
         "category": "device",
         "keywords": [
-            "소 운 반 인력운반공 2.24 5.37 10.74",
+            "소운반 인력운반공 2.24 5.37 10.74",
             "2,400AH이하 축전지"
         ]
     },
@@ -22910,14 +22910,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-3-1",
-        "name": "보 통 인 부 2.70 2.79 2.93 3.15 3.38",
+        "name": "보통인부 2.70 2.79 2.93 3.15 3.38",
         "spec": "배터리(Battery) 충전장치",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 3.6,
         "category": "device",
         "keywords": [
-            "보 통 인 부 2.70 2.79 2.93 3.15 3.38",
+            "보통인부 2.70 2.79 2.93 3.15 3.38",
             "배터리(Battery) 충전장치"
         ]
     },
@@ -22936,14 +22936,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-3-1",
-        "name": "보 통 인 부 3.15 3.38 3.60 3.96 4.14",
+        "name": "보통인부 3.15 3.38 3.60 3.96 4.14",
         "spec": "배터리(Battery) 충전장치",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 4.5,
         "category": "device",
         "keywords": [
-            "보 통 인 부 3.15 3.38 3.60 3.96 4.14",
+            "보통인부 3.15 3.38 3.60 3.96 4.14",
             "배터리(Battery) 충전장치"
         ]
     },
@@ -22962,14 +22962,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-3-1",
-        "name": "보 통 인 부 3.60 4.05 4.50 4.95 5.40",
+        "name": "보통인부 3.60 4.05 4.50 4.95 5.40",
         "spec": "배터리(Battery) 충전장치",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 5.85,
         "category": "device",
         "keywords": [
-            "보 통 인 부 3.60 4.05 4.50 4.95 5.40",
+            "보통인부 3.60 4.05 4.50 4.95 5.40",
             "배터리(Battery) 충전장치"
         ]
     },
@@ -22988,14 +22988,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-3-1",
-        "name": "보 통 인 부 - 6.00 6.21 6.98 7.65",
+        "name": "보통인부 - 6.00 6.21 6.98 7.65",
         "spec": "배터리(Battery) 충전장치",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 8.37,
         "category": "device",
         "keywords": [
-            "보 통 인 부 - 6.00 6.21 6.98 7.65",
+            "보통인부 - 6.00 6.21 6.98 7.65",
             "배터리(Battery) 충전장치"
         ]
     },
@@ -23014,14 +23014,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-3-1",
-        "name": "보 통 인 부 - 8.25 8.70 10.80 11.70",
+        "name": "보통인부 - 8.25 8.70 10.80 11.70",
         "spec": "배터리(Battery) 충전장치",
         "unit": "대",
         "laborType": "통신설비공",
         "laborFactor": 13.5,
         "category": "device",
         "keywords": [
-            "보 통 인 부 - 8.25 8.70 10.80 11.70",
+            "보통인부 - 8.25 8.70 10.80 11.70",
             "배터리(Battery) 충전장치"
         ]
     },
@@ -23105,40 +23105,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-4-1",
-        "name": "30kVA 초과~100kVA 이하 이하",
+        "name": "30kVA 초과~100kVA 이하 이하 대",
         "spec": "무정전 전원장치(UPS, CVCF)",
         "unit": "6.00",
         "laborType": "통신설비공",
         "laborFactor": 3.0,
         "category": "device",
         "keywords": [
-            "30kVA 초과~100kVA 이하 이하",
+            "30kVA 초과~100kVA 이하 이하 대",
             "무정전 전원장치(UPS, CVCF)"
         ]
     },
     {
         "code": "통신 11-4-1",
-        "name": "100kVA 초과~250kVA 이하 이하",
+        "name": "100kVA 초과~250kVA 이하 이하 대",
         "spec": "무정전 전원장치(UPS, CVCF)",
         "unit": "7.00",
         "laborType": "통신설비공",
         "laborFactor": 4.0,
         "category": "device",
         "keywords": [
-            "100kVA 초과~250kVA 이하 이하",
+            "100kVA 초과~250kVA 이하 이하 대",
             "무정전 전원장치(UPS, CVCF)"
         ]
     },
     {
         "code": "통신 11-4-1",
-        "name": "250kVA초과~500kVA 이하 이하",
+        "name": "250kVA초과~500kVA 이하 이하 이하 대",
         "spec": "무정전 전원장치(UPS, CVCF)",
         "unit": "8.00",
         "laborType": "통신설비공",
         "laborFactor": 5.0,
         "category": "device",
         "keywords": [
-            "250kVA초과~500kVA 이하 이하",
+            "250kVA초과~500kVA 이하 이하 이하 대",
             "무정전 전원장치(UPS, CVCF)"
         ]
     },
@@ -23183,53 +23183,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-5-1",
-        "name": "접지봉 타설 × × 2본 연결",
+        "name": "접지봉 타설 × 1본",
         "spec": "접지시설",
         "unit": "개",
         "laborType": "통신외선공",
         "laborFactor": 0.3,
         "category": "device",
         "keywords": [
-            "접지봉 타설 × × 2본 연결",
+            "접지봉 타설 × 1본",
             "접지시설"
         ]
     },
     {
         "code": "통신 11-5-1",
-        "name": "접지봉 타설 × × 2본 연결",
+        "name": "접지봉 타설 × 1본",
         "spec": "접지시설",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.15,
         "category": "device",
         "keywords": [
-            "접지봉 타설 × × 2본 연결",
+            "접지봉 타설 × 1본",
             "접지시설"
         ]
     },
     {
         "code": "통신 11-5-1",
-        "name": "접지봉 × 3본 연결",
+        "name": "접지봉 타설 × 1본",
         "spec": "접지시설",
         "unit": "개",
         "laborType": "통신외선공",
         "laborFactor": 0.45,
         "category": "device",
         "keywords": [
-            "접지봉 × 3본 연결",
+            "접지봉 타설 × 1본",
             "접지시설"
         ]
     },
     {
         "code": "통신 11-5-1",
-        "name": "접지봉 × 3본 연결",
+        "name": "접지봉 타설 × 1본",
         "spec": "접지시설",
         "unit": "개",
         "laborType": "보통인부",
         "laborFactor": 0.23,
         "category": "device",
         "keywords": [
-            "접지봉 × 3본 연결",
+            "접지봉 타설 × 1본",
             "접지시설"
         ]
     },
@@ -23599,14 +23599,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-5-1",
-        "name": "설 치 용접(발열) 또는 납땜",
+        "name": "설치 용접(발열) 또는 납땜",
         "spec": "접지시설",
         "unit": "개",
         "laborType": "통신외선공",
         "laborFactor": 0.19,
         "category": "device",
         "keywords": [
-            "설 치 용접(발열) 또는 납땜",
+            "설치 용접(발열) 또는 납땜",
             "접지시설"
         ]
     },
@@ -23664,40 +23664,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-5-2-1",
-        "name": "대지고유저항 분석",
+        "name": "대지고유저항 측정",
         "spec": "대지고유저항 측정 및 분석",
         "unit": "Point",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.25,
         "category": "device",
         "keywords": [
-            "대지고유저항 분석",
+            "대지고유저항 측정",
             "대지고유저항 측정 및 분석"
         ]
     },
     {
         "code": "통신 11-5-2-2",
-        "name": "맨 홀",
+        "name": "맨홀",
         "spec": "매설물 탐지",
         "unit": "개소",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.46,
         "category": "device",
         "keywords": [
-            "맨 홀",
+            "맨홀",
             "매설물 탐지"
         ]
     },
     {
         "code": "통신 11-5-2-2",
-        "name": "맨 홀",
+        "name": "맨홀",
         "spec": "매설물 탐지",
         "unit": "개소",
         "laborType": "특별인부",
         "laborFactor": 0.92,
         "category": "device",
         "keywords": [
-            "맨 홀",
+            "맨홀",
             "매설물 탐지"
         ]
     },
@@ -23742,66 +23742,66 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-5-2-4",
-        "name": "천 공 Ø100 m",
+        "name": "천공 Ø100 m",
         "spec": "보링 (천공)",
         "unit": "0.10",
         "laborType": "통신외선공",
         "laborFactor": 0.1,
         "category": "device",
         "keywords": [
-            "천 공 Ø100 m",
+            "천공 Ø100 m",
             "보링 (천공)"
         ]
     },
     {
         "code": "통신 11-5-2-4",
-        "name": "Ø150 공",
+        "name": "Ø150 Ø100 m",
         "spec": "보링 (천공)",
         "unit": "0.12",
         "laborType": "통신외선공",
         "laborFactor": 0.12,
         "category": "device",
         "keywords": [
-            "Ø150 공",
+            "Ø150 Ø100 m",
             "보링 (천공)"
         ]
     },
     {
         "code": "통신 11-5-2-4",
-        "name": "Ø200 공",
+        "name": "Ø200 Ø100 m",
         "spec": "보링 (천공)",
         "unit": "0.15",
         "laborType": "통신외선공",
         "laborFactor": 0.15,
         "category": "device",
         "keywords": [
-            "Ø200 공",
+            "Ø200 Ø100 m",
             "보링 (천공)"
         ]
     },
     {
         "code": "통신 11-5-2-4",
-        "name": "케 이 싱 설 치 공",
+        "name": "케이싱설치 Ø100 m",
         "spec": "보링 (천공)",
         "unit": "0.25",
         "laborType": "통신외선공",
         "laborFactor": 0.25,
         "category": "device",
         "keywords": [
-            "케 이 싱 설 치 공",
+            "케이싱설치 Ø100 m",
             "보링 (천공)"
         ]
     },
     {
         "code": "통신 11-5-2-4",
-        "name": "케 이 싱 설 치 공",
+        "name": "케이싱설치 Ø100 m",
         "spec": "보링 (천공)",
         "unit": "0.25",
         "laborType": "용접공",
         "laborFactor": 0.12,
         "category": "device",
         "keywords": [
-            "케 이 싱 설 치 공",
+            "케이싱설치 Ø100 m",
             "보링 (천공)"
         ]
     },
@@ -23859,40 +23859,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-6-3",
-        "name": "천장 천 장",
+        "name": "천장 천장",
         "spec": "전자기펄스(EMP) 방호설비",
         "unit": "㎡",
         "laborType": "통신외선공",
         "laborFactor": 0.2,
         "category": "device",
         "keywords": [
-            "천장 천 장",
+            "천장 천장",
             "전자기펄스(EMP) 방호설비"
         ]
     },
     {
         "code": "통신 11-6-3",
-        "name": "천장 천 장",
+        "name": "천장 천장",
         "spec": "전자기펄스(EMP) 방호설비",
         "unit": "㎡",
         "laborType": "통신설비공",
         "laborFactor": 0.65,
         "category": "device",
         "keywords": [
-            "천장 천 장",
+            "천장 천장",
             "전자기펄스(EMP) 방호설비"
         ]
     },
     {
         "code": "통신 11-6-3",
-        "name": "천장 천 장",
+        "name": "천장 천장",
         "spec": "전자기펄스(EMP) 방호설비",
         "unit": "㎡",
         "laborType": "특별인부",
         "laborFactor": 0.16,
         "category": "device",
         "keywords": [
-            "천장 천 장",
+            "천장 천장",
             "전자기펄스(EMP) 방호설비"
         ]
     },
@@ -24613,40 +24613,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 11-7-5-1",
-        "name": "50 이하 개 0.26 0.30 0.45",
+        "name": "50 이하 개 0.19 0.20 0.30",
         "spec": "차단기 및 개폐기 등",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 0.15,
         "category": "device",
         "keywords": [
-            "50 이하 개 0.26 0.30 0.45",
+            "50 이하 개 0.19 0.20 0.30",
             "차단기 및 개폐기 등"
         ]
     },
     {
         "code": "통신 11-7-5-1",
-        "name": "100 이하 개 0.36 0.40 0.60",
+        "name": "100 이하 개 0.19 0.20 0.30",
         "spec": "차단기 및 개폐기 등",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 0.23,
         "category": "device",
         "keywords": [
-            "100 이하 개 0.36 0.40 0.60",
+            "100 이하 개 0.19 0.20 0.30",
             "차단기 및 개폐기 등"
         ]
     },
     {
         "code": "통신 11-7-5-1",
-        "name": "225 이하 개 0.47 0.55 0.80",
+        "name": "225 이하 개 0.19 0.20 0.30",
         "spec": "차단기 및 개폐기 등",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 0.29,
         "category": "device",
         "keywords": [
-            "225 이하 개 0.47 0.55 0.80",
+            "225 이하 개 0.19 0.20 0.30",
             "차단기 및 개폐기 등"
         ]
     },
@@ -24873,40 +24873,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 12-2-1",
-        "name": "전화기 자동",
+        "name": "전화기 공전",
         "spec": "기기신설",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 0.04,
         "category": "device",
         "keywords": [
-            "전화기 자동",
+            "전화기 공전",
             "기기신설"
         ]
     },
     {
         "code": "통신 12-2-1",
-        "name": "전화기 개별",
+        "name": "전화기 공전",
         "spec": "기기신설",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "전화기 개별",
+            "전화기 공전",
             "기기신설"
         ]
     },
     {
         "code": "통신 12-2-1",
-        "name": "전화기 지령",
+        "name": "전화기 공전",
         "spec": "기기신설",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 0.5,
         "category": "device",
         "keywords": [
-            "전화기 지령",
+            "전화기 공전",
             "기기신설"
         ]
     },
@@ -24938,14 +24938,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 12-2-1",
-        "name": "방수, (자장치)",
+        "name": "방수, 방폭, 방진, 함체",
         "spec": "기기신설",
         "unit": "개",
         "laborType": "통신내선공",
         "laborFactor": 1.5,
         "category": "device",
         "keywords": [
-            "방수, (자장치)",
+            "방수, 방폭, 방진, 함체",
             "기기신설"
         ]
     },
@@ -25354,40 +25354,40 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 12-3-11",
-        "name": "S/W 설치 펌웨어 및 RF 모듈 설치 - -",
+        "name": "S/W 설치 펌웨어 및 RF 모듈 설치 0.88",
         "spec": "교통카드 무인충전기",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.1,
         "category": "device",
         "keywords": [
-            "S/W 설치 펌웨어 및 RF 모듈 설치 - -",
+            "S/W 설치 펌웨어 및 RF 모듈 설치 0.88",
             "교통카드 무인충전기"
         ]
     },
     {
         "code": "통신 12-3-11",
-        "name": "기초정보 설정 펌웨어 -",
+        "name": "기초정보 설정 펌웨어 및 RF 모듈 설치 0.88",
         "spec": "교통카드 무인충전기",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.32,
         "category": "device",
         "keywords": [
-            "기초정보 설정 펌웨어 -",
+            "기초정보 설정 펌웨어 및 RF 모듈 설치 0.88",
             "교통카드 무인충전기"
         ]
     },
     {
         "code": "통신 12-3-11",
-        "name": "종 합 시 험 - -",
+        "name": "종합시험 설정 펌웨어 및 RF 모듈 설치 0.88",
         "spec": "교통카드 무인충전기",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.14,
         "category": "device",
         "keywords": [
-            "종 합 시 험 - -",
+            "종합시험 설정 펌웨어 및 RF 모듈 설치 0.88",
             "교통카드 무인충전기"
         ]
     },
@@ -25705,14 +25705,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-4-1-2",
-        "name": "3. W/G시험 점검",
+        "name": "3. W/G시험 점검 및 보강 루트",
         "spec": "W/G(급전선) 점검",
         "unit": "0.15",
         "laborType": "통신설비공",
         "laborFactor": 0.1,
         "category": "device",
         "keywords": [
-            "3. W/G시험 점검",
+            "3. W/G시험 점검 및 보강 루트",
             "W/G(급전선) 점검"
         ]
     },
@@ -25783,66 +25783,66 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-4-1-5",
-        "name": "2. 안테나상태 점검 볼트",
+        "name": "2. 안테나상태 점검 볼트 면",
         "spec": "파라보라 안테나 점검",
         "unit": "0.17",
         "laborType": "통신관련기사",
         "laborFactor": 0.17,
         "category": "device",
         "keywords": [
-            "2. 안테나상태 점검 볼트",
+            "2. 안테나상태 점검 볼트 면",
             "파라보라 안테나 점검"
         ]
     },
     {
         "code": "통신 13-4-1-5",
-        "name": "1. 휘다혼, 가이와이어의 볼트 볼트",
+        "name": "1. 휘다혼, 가이와이어의 볼트 면",
         "spec": "파라보라 안테나 점검",
         "unit": "-",
         "laborType": "통신관련기사",
         "laborFactor": 0.26,
         "category": "device",
         "keywords": [
-            "1. 휘다혼, 가이와이어의 볼트 볼트",
+            "1. 휘다혼, 가이와이어의 볼트 면",
             "파라보라 안테나 점검"
         ]
     },
     {
         "code": "통신 13-4-1-5",
-        "name": "2. 안테나상태 점검 볼트",
+        "name": "2. 안테나상태 점검 볼트 면",
         "spec": "파라보라 안테나 점검",
         "unit": "0.25",
         "laborType": "통신관련기사",
         "laborFactor": 0.42,
         "category": "device",
         "keywords": [
-            "2. 안테나상태 점검 볼트",
+            "2. 안테나상태 점검 볼트 면",
             "파라보라 안테나 점검"
         ]
     },
     {
         "code": "통신 13-4-1-5",
-        "name": "1. 휘다혼, 가이와이어의 볼트 볼트",
+        "name": "1. 휘다혼, 가이와이어의 볼트 면",
         "spec": "파라보라 안테나 점검",
         "unit": "-",
         "laborType": "통신관련기사",
         "laborFactor": 0.4,
         "category": "device",
         "keywords": [
-            "1. 휘다혼, 가이와이어의 볼트 볼트",
+            "1. 휘다혼, 가이와이어의 볼트 면",
             "파라보라 안테나 점검"
         ]
     },
     {
         "code": "통신 13-4-1-5",
-        "name": "2. 안테나상태 점검 볼트",
+        "name": "2. 안테나상태 점검 볼트 면",
         "spec": "파라보라 안테나 점검",
         "unit": "0.39",
         "laborType": "통신관련기사",
         "laborFactor": 0.63,
         "category": "device",
         "keywords": [
-            "2. 안테나상태 점검 볼트",
+            "2. 안테나상태 점검 볼트 면",
             "파라보라 안테나 점검"
         ]
     },
@@ -27551,27 +27551,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-6-27",
-        "name": "종 합 시 험",
+        "name": "종합시험",
         "spec": "자동조타장치(Auto Pilot) 점검",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.62,
         "category": "device",
         "keywords": [
-            "종 합 시 험",
+            "종합시험",
             "자동조타장치(Auto Pilot) 점검"
         ]
     },
     {
         "code": "통신 13-6-27",
-        "name": "종 합 시 험",
+        "name": "종합시험",
         "spec": "자동조타장치(Auto Pilot) 점검",
         "unit": "대",
         "laborType": "통신관련기능사",
         "laborFactor": 0.62,
         "category": "device",
         "keywords": [
-            "종 합 시 험",
+            "종합시험",
             "자동조타장치(Auto Pilot) 점검"
         ]
     },
@@ -27655,27 +27655,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-6-28",
-        "name": "종 합 시 험",
+        "name": "종합시험",
         "spec": "자이로컴퍼스(Gyro Compass) 점검",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.65,
         "category": "device",
         "keywords": [
-            "종 합 시 험",
+            "종합시험",
             "자이로컴퍼스(Gyro Compass) 점검"
         ]
     },
     {
         "code": "통신 13-6-28",
-        "name": "종 합 시 험",
+        "name": "종합시험",
         "spec": "자이로컴퍼스(Gyro Compass) 점검",
         "unit": "대",
         "laborType": "통신관련기능사",
         "laborFactor": 0.65,
         "category": "device",
         "keywords": [
-            "종 합 시 험",
+            "종합시험",
             "자이로컴퍼스(Gyro Compass) 점검"
         ]
     },
@@ -27759,14 +27759,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-6-30",
-        "name": "종 합 시 험 0.28",
+        "name": "종합시험 0.28",
         "spec": "음향수신장치(SSR) 점검",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.27,
         "category": "device",
         "keywords": [
-            "종 합 시 험 0.28",
+            "종합시험 0.28",
             "음향수신장치(SSR) 점검"
         ]
     },
@@ -27837,14 +27837,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-6-35",
-        "name": "종 합 시 험 0.82",
+        "name": "종합시험 0.82",
         "spec": "소나(SONAR : Sound Navigating and Ranging) 점검",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.82,
         "category": "device",
         "keywords": [
-            "종 합 시 험 0.82",
+            "종합시험 0.82",
             "소나(SONAR : Sound Navigating and Ranging) 점검"
         ]
     },
@@ -27954,27 +27954,27 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-6-37",
-        "name": "종 합 시 험",
+        "name": "종합시험",
         "spec": "조류계 점검",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 1.12,
         "category": "device",
         "keywords": [
-            "종 합 시 험",
+            "종합시험",
             "조류계 점검"
         ]
     },
     {
         "code": "통신 13-6-37",
-        "name": "종 합 시 험",
+        "name": "종합시험",
         "spec": "조류계 점검",
         "unit": "대",
         "laborType": "통신관련기능사",
         "laborFactor": 1.12,
         "category": "device",
         "keywords": [
-            "종 합 시 험",
+            "종합시험",
             "조류계 점검"
         ]
     },
@@ -28045,14 +28045,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-6-39",
-        "name": "종 합 시 험 0.41",
+        "name": "종합시험 0.41",
         "spec": "조상기 점검",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.41,
         "category": "device",
         "keywords": [
-            "종 합 시 험 0.41",
+            "종합시험 0.41",
             "조상기 점검"
         ]
     },
@@ -28097,14 +28097,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-6-40",
-        "name": "종 합 시 험 0.67",
+        "name": "종합시험 0.67",
         "spec": "조출기(HM : Hooking Master) 점검",
         "unit": "대",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.7,
         "category": "device",
         "keywords": [
-            "종 합 시 험 0.67",
+            "종합시험 0.67",
             "조출기(HM : Hooking Master) 점검"
         ]
     },
@@ -28474,53 +28474,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-7-11",
-        "name": "탁도 및",
+        "name": "탁도 및 샘플링 펌프 점검 대",
         "spec": "다항목 수질계측기 점검",
         "unit": "0.18",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.18,
         "category": "device",
         "keywords": [
-            "탁도 및",
+            "탁도 및 샘플링 펌프 점검 대",
             "다항목 수질계측기 점검"
         ]
     },
     {
         "code": "통신 13-7-11",
-        "name": "잔류염소 및",
+        "name": "잔류염소 및 샘플링 펌프 점검 대",
         "spec": "다항목 수질계측기 점검",
         "unit": "0.07",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.07,
         "category": "device",
         "keywords": [
-            "잔류염소 및",
+            "잔류염소 및 샘플링 펌프 점검 대",
             "다항목 수질계측기 점검"
         ]
     },
     {
         "code": "통신 13-7-11",
-        "name": "수소이온농도(pH) 및",
+        "name": "수소이온농도(pH) 및 샘플링 펌프 점검 대",
         "spec": "다항목 수질계측기 점검",
         "unit": "0.15",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.15,
         "category": "device",
         "keywords": [
-            "수소이온농도(pH) 및",
+            "수소이온농도(pH) 및 샘플링 펌프 점검 대",
             "다항목 수질계측기 점검"
         ]
     },
     {
         "code": "통신 13-7-11",
-        "name": "온도 및",
+        "name": "온도 및 샘플링 펌프 점검 대",
         "spec": "다항목 수질계측기 점검",
         "unit": "0.02",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.02,
         "category": "device",
         "keywords": [
-            "온도 및",
+            "온도 및 샘플링 펌프 점검 대",
             "다항목 수질계측기 점검"
         ]
     },
@@ -28786,14 +28786,14 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-7-17",
-        "name": "구동부 저울부",
+        "name": "구동부 저울부 대",
         "spec": "음식물쓰레기 개별계량장비 점검",
         "unit": "-",
         "laborType": "통신설비공",
         "laborFactor": 0.29,
         "category": "device",
         "keywords": [
-            "구동부 저울부",
+            "구동부 저울부 대",
             "음식물쓰레기 개별계량장비 점검"
         ]
     },
@@ -28942,53 +28942,53 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-8-2",
-        "name": "종 합 시 험",
+        "name": "종합시험",
         "spec": "객실관리시스템 점검",
         "unit": "식",
         "laborType": "통신관련산업기사",
         "laborFactor": 0.35,
         "category": "device",
         "keywords": [
-            "종 합 시 험",
+            "종합시험",
             "객실관리시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-2",
-        "name": "종 합 시 험",
+        "name": "종합시험",
         "spec": "객실관리시스템 점검",
         "unit": "식",
         "laborType": "통신관련기능사",
         "laborFactor": 0.33,
         "category": "device",
         "keywords": [
-            "종 합 시 험",
+            "종합시험",
             "객실관리시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-4-1",
-        "name": "회선 및 데이터 전송상태 점검 회 선",
+        "name": "회선 및 데이터 전송상태 점검 회선",
         "spec": "지하수관측시스템 점검",
         "unit": "0.06",
         "laborType": "특별인부",
         "laborFactor": 0.06,
         "category": "device",
         "keywords": [
-            "회선 및 데이터 전송상태 점검 회 선",
+            "회선 및 데이터 전송상태 점검 회선",
             "지하수관측시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-4-1",
-        "name": "관정깊이 측정 개 소",
+        "name": "관정깊이 측정 개소",
         "spec": "지하수관측시스템 점검",
         "unit": "0.05",
         "laborType": "특별인부",
         "laborFactor": 0.05,
         "category": "device",
         "keywords": [
-            "관정깊이 측정 개 소",
+            "관정깊이 측정 개소",
             "지하수관측시스템 점검"
         ]
     },
@@ -29046,79 +29046,79 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-8-4-1",
-        "name": "수위 세척",
+        "name": "수위 세척 전기전도도 개",
         "spec": "지하수관측시스템 점검",
         "unit": "0.03",
         "laborType": "특별인부",
         "laborFactor": 0.03,
         "category": "device",
         "keywords": [
-            "수위 세척",
+            "수위 세척 전기전도도 개",
             "지하수관측시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-4-1",
-        "name": "수소이온농도 세척",
+        "name": "수소이온농도 세척 전기전도도 개",
         "spec": "지하수관측시스템 점검",
         "unit": "0.03",
         "laborType": "특별인부",
         "laborFactor": 0.03,
         "category": "device",
         "keywords": [
-            "수소이온농도 세척",
+            "수소이온농도 세척 전기전도도 개",
             "지하수관측시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-4-1",
-        "name": "온도 세척",
+        "name": "온도 세척 전기전도도 개",
         "spec": "지하수관측시스템 점검",
         "unit": "0.04",
         "laborType": "특별인부",
         "laborFactor": 0.04,
         "category": "device",
         "keywords": [
-            "온도 세척",
+            "온도 세척 전기전도도 개",
             "지하수관측시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-4-1",
-        "name": "종합 측정 전기전도도 세척",
+        "name": "종합 측정 전기전도도 개",
         "spec": "지하수관측시스템 점검",
         "unit": "0.05",
         "laborType": "특별인부",
         "laborFactor": 0.05,
         "category": "device",
         "keywords": [
-            "종합 측정 전기전도도 세척",
+            "종합 측정 전기전도도 개",
             "지하수관측시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-4-1",
-        "name": "수위 측정",
+        "name": "수위 측정 전기전도도 개",
         "spec": "지하수관측시스템 점검",
         "unit": "0.06",
         "laborType": "특별인부",
         "laborFactor": 0.06,
         "category": "device",
         "keywords": [
-            "수위 측정",
+            "수위 측정 전기전도도 개",
             "지하수관측시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-4-1",
-        "name": "수소이온농도 측정",
+        "name": "수소이온농도 측정 전기전도도 개",
         "spec": "지하수관측시스템 점검",
         "unit": "0.05",
         "laborType": "특별인부",
         "laborFactor": 0.05,
         "category": "device",
         "keywords": [
-            "수소이온농도 측정",
+            "수소이온농도 측정 전기전도도 개",
             "지하수관측시스템 점검"
         ]
     },
@@ -29150,79 +29150,79 @@ const STANDARD_LABOR_DB = [
     },
     {
         "code": "통신 13-8-4-2",
-        "name": "보호관 점검",
+        "name": "보호관 점검 음파 송·수신기 대",
         "spec": "하천 수위관측시스템 점검",
         "unit": "0.19",
         "laborType": "특별인부",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "보호관 점검",
+            "보호관 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-4-2",
-        "name": "장치함 점검",
+        "name": "장치함 점검 음파 송·수신기 대",
         "spec": "하천 수위관측시스템 점검",
         "unit": "0.15",
         "laborType": "특별인부",
         "laborFactor": 0.07,
         "category": "device",
         "keywords": [
-            "장치함 점검",
+            "장치함 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-4-2",
-        "name": "음파발생기 점검",
+        "name": "음파발생기 점검 음파 송·수신기 대",
         "spec": "하천 수위관측시스템 점검",
         "unit": "0.27",
         "laborType": "특별인부",
         "laborFactor": 0.14,
         "category": "device",
         "keywords": [
-            "음파발생기 점검",
+            "음파발생기 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-4-2",
-        "name": "원격단말장치 점검",
+        "name": "원격단말장치 점검 음파 송·수신기 대",
         "spec": "하천 수위관측시스템 점검",
         "unit": "0.26",
         "laborType": "특별인부",
         "laborFactor": 0.13,
         "category": "device",
         "keywords": [
-            "원격단말장치 점검",
+            "원격단말장치 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-4-2",
-        "name": "모뎀 점검",
+        "name": "모뎀 점검 음파 송·수신기 대",
         "spec": "하천 수위관측시스템 점검",
         "unit": "0.25",
         "laborType": "특별인부",
         "laborFactor": 0.13,
         "category": "device",
         "keywords": [
-            "모뎀 점검",
+            "모뎀 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
         ]
     },
     {
         "code": "통신 13-8-4-2",
-        "name": "전원장치 점검",
+        "name": "전원장치 점검 음파 송·수신기 대",
         "spec": "하천 수위관측시스템 점검",
         "unit": "0.18",
         "laborType": "특별인부",
         "laborFactor": 0.09,
         "category": "device",
         "keywords": [
-            "전원장치 점검",
+            "전원장치 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
         ]
     },
@@ -29789,6 +29789,7 @@ const STANDARD_LABOR_DB = [
 
 
 
+
 // 2. Wage Rates (노임 단가 테이블)
 const WAGE_RATES = {
     "2023_1": {
@@ -29851,7 +29852,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // If standard labor DB in state is empty or has old mock data (< 2000 items) or contains ditto marks / broken units, load the new DB
     const hasDittoOrBrokenUnit = state.standardLaborDb && state.standardLaborDb.some(item => 
-        (item.name && item.name.includes("〃")) || (item.unit && item.unit.includes("본(6m"))
+        (item.name && (item.name.includes("〃") || item.name.endsWith(" 이"))) || 
+        (item.unit && item.unit.includes("본(6m") && !item.unit.endsWith(")"))
     );
     if (!state.standardLaborDb || state.standardLaborDb.length < 2000 || hasDittoOrBrokenUnit) {
         state.standardLaborDb = JSON.parse(JSON.stringify(STANDARD_LABOR_DB));
