@@ -839,3 +839,116 @@ body {
 .toast.toast-danger i { color: var(--danger); }
 .toast.toast-info { border-left-color: var(--accent); }
 .toast.toast-info i { color: var(--accent); }
+
+/* Price Investigation Table Styles */
+.price-table-container {
+    overflow: auto;
+    flex-grow: 1;
+    max-height: calc(100vh - 280px);
+    width: 100%;
+    position: relative;
+}
+
+.price-investigation-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: left;
+}
+
+.price-investigation-table th {
+    background-color: #101626;
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 12px;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    text-align: center;
+    vertical-align: middle;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+/* Header sticky layer for the double row headers */
+.price-investigation-table thead tr:nth-child(2) th {
+    top: 38px; /* Offset height of the first row headers */
+    z-index: 3;
+}
+
+.price-investigation-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    border-right: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 13px;
+    color: var(--text-primary);
+    vertical-align: middle;
+    background-color: rgba(22, 28, 45, 0.2);
+}
+
+.price-investigation-table tr:hover td {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Sticky left columns (frozen columns) */
+.price-investigation-table .sticky-col {
+    position: sticky;
+    z-index: 4;
+}
+
+.price-investigation-table th.sticky-col {
+    z-index: 5; /* Header cells must sit above data cells */
+}
+
+.price-investigation-table .first-col {
+    left: 0;
+    width: 50px;
+    min-width: 50px;
+    background-color: #111827;
+    text-align: center;
+}
+
+.price-investigation-table .second-col {
+    left: 50px;
+    width: 240px;
+    min-width: 240px;
+    background-color: #111827;
+    border-right: 2px solid var(--border-color);
+}
+
+/* Compact inputs inside cells */
+.price-investigation-table input[type="number"] {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 6px 8px;
+    border-radius: 4px;
+    width: 95px;
+    font-size: 12px;
+    text-align: right;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.price-investigation-table input[type="number"]:focus {
+    border-color: var(--accent);
+}
+
+.price-investigation-table input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 6px 8px;
+    border-radius: 4px;
+    width: 60px;
+    font-size: 11px;
+    text-align: center;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.price-investigation-table input[type="text"]:focus {
+    border-color: var(--primary);
+    color: var(--text-primary);
+}

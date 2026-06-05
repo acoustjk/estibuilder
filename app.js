@@ -89,6 +89,14 @@ let state = {
             ]
         }
     ],
+    itemPrices: {
+        "M001": { appliedPrice: 11500, facilityPrice: 11500, marketPrice: { price: 0, page: "" }, infoPrice: { price: 11500, page: "1-1311" }, materialPrice: { price: 0, page: "" }, distPrice: { price: 0, page: "" }, invest1: { price: 0, page: "" }, invest2: { price: 0, page: "" } },
+        "M002": { appliedPrice: 2635, facilityPrice: 2635, marketPrice: { price: 0, page: "" }, infoPrice: { price: 2635, page: "1-1311" }, materialPrice: { price: 0, page: "" }, distPrice: { price: 0, page: "" }, invest1: { price: 0, page: "" }, invest2: { price: 0, page: "" } },
+        "M003": { appliedPrice: 2750, facilityPrice: 2750, marketPrice: { price: 0, page: "" }, infoPrice: { price: 2750, page: "1-1311" }, materialPrice: { price: 0, page: "" }, distPrice: { price: 0, page: "" }, invest1: { price: 0, page: "" }, invest2: { price: 0, page: "" } },
+        "M004": { appliedPrice: 16174, facilityPrice: 16174, marketPrice: { price: 0, page: "" }, infoPrice: { price: 20000, page: "1-1402" }, materialPrice: { price: 0, page: "" }, distPrice: { price: 0, page: "" }, invest1: { price: 0, page: "" }, invest2: { price: 0, page: "" } },
+        "M006": { appliedPrice: 125000, facilityPrice: 125000, marketPrice: { price: 0, page: "" }, infoPrice: { price: 125000, page: "1-1502" }, materialPrice: { price: 0, page: "" }, distPrice: { price: 0, page: "" }, invest1: { price: 0, page: "" }, invest2: { price: 0, page: "" } },
+        "M007": { appliedPrice: 195500, facilityPrice: 195500, marketPrice: { price: 0, page: "" }, infoPrice: { price: 195500, page: "1-1505" }, materialPrice: { price: 0, page: "" }, distPrice: { price: 0, page: "" }, invest1: { price: 0, page: "" }, invest2: { price: 0, page: "" } }
+    },
     activeDivisionId: "div-1"
 };
 
@@ -99,6 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initTabs();
     initSettingsListeners();
     initBuilderListeners();
+    initPriceListeners();
     loadActiveDivision();
     populateDbLibrary();
     calculateEstimates();
@@ -121,6 +130,9 @@ function initTabs() {
 
             if (tabId === "tab-summary") {
                 setTimeout(updateChart, 50);
+            }
+            if (tabId === "tab-prices") {
+                renderPriceInvestigationTable();
             }
         });
     });
@@ -253,6 +265,144 @@ function initBuilderListeners() {
     });
 }
 
+// Price Investigation Listeners
+function initPriceListeners() {
+    document.getElementById("btn-auto-lowest").addEventListener("click", () => {
+        let count = 0;
+        for (const masterId in state.itemPrices) {
+            const p = state.itemPrices[masterId];
+            const prices = [];
+            if (p.facilityPrice > 0) prices.push(p.facilityPrice);
+            if (p.marketPrice.price > 0) prices.push(p.marketPrice.price);
+            if (p.infoPrice.price > 0) prices.push(p.infoPrice.price);
+            if (p.materialPrice.price > 0) prices.push(p.materialPrice.price);
+            if (p.distPrice.price > 0) prices.push(p.distPrice.price);
+            if (p.invest1.price > 0) prices.push(p.invest1.price);
+            if (p.invest2.price > 0) prices.push(p.invest2.price);
+            
+            if (prices.length > 0) {
+                const minPrice = Math.min(...prices);
+                if (p.appliedPrice !== minPrice) {
+                    p.appliedPrice = minPrice;
+                    count++;
+                }
+            }
+        }
+        if (count > 0) {
+            renderPriceInvestigationTable();
+            calculateEstimates();
+            showToast(`${count}개 품목의 적용단가가 최저 조사단가로 갱신되었습니다.`, "success");
+        } else {
+            showToast("이미 모든 적용단가가 최저단가와 일치합니다.", "info");
+        }
+    });
+}
+
+// Render Price Investigation Table
+function renderPriceInvestigationTable() {
+    const tbody = document.getElementById("price-table-body");
+    tbody.innerHTML = "";
+
+    const usedMasterIds = new Set();
+    state.divisions.forEach(div => {
+        div.items.forEach(item => {
+            usedMasterIds.add(item.masterId);
+        });
+    });
+
+    if (usedMasterIds.size === 0) {
+        tbody.innerHTML = `<tr><td colspan="19" style="text-align: center; color: var(--text-muted); padding: 45px 0;"><i class="fa-solid fa-calculator" style="font-size: 24px; margin-bottom: 10px; display: block;"></i>내역서 빌더에서 먼저 품목을 추가해야 단가 조사를 진행할 수 있습니다.</td></tr>`;
+        return;
+    }
+
+    let index = 1;
+    usedMasterIds.forEach(masterId => {
+        if (!state.itemPrices[masterId]) {
+            const dbItem = ITEM_MASTER_DB.find(i => i.id === masterId);
+            const defaultMatPrice = dbItem ? dbItem.materialPrice : 0;
+            state.itemPrices[masterId] = {
+                appliedPrice: defaultMatPrice,
+                facilityPrice: defaultMatPrice,
+                marketPrice: { price: 0, page: "" },
+                infoPrice: { price: 0, page: "" },
+                materialPrice: { price: 0, page: "" },
+                distPrice: { price: 0, page: "" },
+                invest1: { price: 0, page: "" },
+                invest2: { price: 0, page: "" }
+            };
+        }
+
+        const p = state.itemPrices[masterId];
+        const dbItem = ITEM_MASTER_DB.find(i => i.id === masterId) || { name: "알수없음", spec: "규격없음", unit: "개" };
+
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+            <td class="sticky-col first-col">${index++}</td>
+            <td class="sticky-col second-col">
+                <div class="item-meta">
+                    <span class="item-title">${dbItem.name}</span>
+                    <span class="item-subtitle">${dbItem.spec}</span>
+                </div>
+            </td>
+            <td style="text-align: center;">${dbItem.unit}</td>
+            <td>
+                <input type="number" class="price-input" data-id="${masterId}" data-field="appliedPrice" value="${p.appliedPrice}">
+            </td>
+            <td>
+                <input type="number" class="price-input" data-id="${masterId}" data-field="facilityPrice" value="${p.facilityPrice}">
+            </td>
+            <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="marketPrice" data-field="price" value="${p.marketPrice.price}"></td>
+            <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="marketPrice" data-field="page" value="${p.marketPrice.page}"></td>
+            <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="infoPrice" data-field="price" value="${p.infoPrice.price}"></td>
+            <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="infoPrice" data-field="page" value="${p.infoPrice.page}"></td>
+            <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="materialPrice" data-field="price" value="${p.materialPrice.price}"></td>
+            <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="materialPrice" data-field="page" value="${p.materialPrice.page}"></td>
+            <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="distPrice" data-field="price" value="${p.distPrice.price}"></td>
+            <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="distPrice" data-field="page" value="${p.distPrice.page}"></td>
+            <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="invest1" data-field="price" value="${p.invest1.price}"></td>
+            <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="invest1" data-field="page" value="${p.invest1.page}"></td>
+            <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="invest2" data-field="price" value="${p.invest2.price}"></td>
+            <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="invest2" data-field="page" value="${p.invest2.page}"></td>
+        `;
+
+        tbody.appendChild(tr);
+    });
+
+    tbody.querySelectorAll(".price-input").forEach(input => {
+        input.addEventListener("change", (e) => {
+            const masterId = e.target.getAttribute("data-id");
+            const field = e.target.getAttribute("data-field");
+            const val = Math.max(0, parseInt(e.target.value) || 0);
+            
+            state.itemPrices[masterId][field] = val;
+            calculateEstimates();
+        });
+    });
+
+    tbody.querySelectorAll(".price-input-group").forEach(input => {
+        input.addEventListener("change", (e) => {
+            const masterId = e.target.getAttribute("data-id");
+            const group = e.target.getAttribute("data-group");
+            const field = e.target.getAttribute("data-field");
+            const val = Math.max(0, parseInt(e.target.value) || 0);
+            
+            state.itemPrices[masterId][group][field] = val;
+            calculateEstimates();
+        });
+    });
+
+    tbody.querySelectorAll(".page-input-group").forEach(input => {
+        input.addEventListener("change", (e) => {
+            const masterId = e.target.getAttribute("data-id");
+            const group = e.target.getAttribute("data-group");
+            const field = e.target.getAttribute("data-field");
+            const val = e.target.value.trim();
+            
+            state.itemPrices[masterId][group][field] = val;
+        });
+    });
+}
+
 // Update Division Select Dropdown
 function updateDivisionSelects() {
     const selectDiv = document.getElementById("select-active-division");
@@ -284,8 +434,10 @@ function loadActiveDivision() {
         const tr = document.createElement("tr");
         
         // Calculate labor unit cost
+        const priceInfo = state.itemPrices[item.masterId] || { appliedPrice: item.materialPrice };
+        const materialPrice = priceInfo.appliedPrice;
         const laborCost = Math.floor(item.laborFactor * (wages[item.laborType] || 0));
-        const totalUnitCost = item.materialPrice + laborCost;
+        const totalUnitCost = materialPrice + laborCost;
         const rowTotal = item.qty * totalUnitCost;
 
         tr.innerHTML = `
@@ -300,7 +452,7 @@ function loadActiveDivision() {
             <td>
                 <input type="number" class="input-qty" data-id="${item.id}" value="${item.qty}" min="0">
             </td>
-            <td class="col-currency">₩${item.materialPrice.toLocaleString()}</td>
+            <td class="col-currency">₩${materialPrice.toLocaleString()}</td>
             <td class="col-currency" title="${item.laborType} 품셈 ${item.laborFactor}인">₩${laborCost.toLocaleString()}</td>
             <td class="col-currency">₩${rowTotal.toLocaleString()}</td>
             <td style="text-align: center;">
@@ -392,6 +544,20 @@ function addItemToActiveDivision(dbItem) {
     const activeDiv = state.divisions.find(d => d.id === state.activeDivisionId);
     if (!activeDiv) return;
 
+    // Check if item price configuration exists in state, if not create it
+    if (!state.itemPrices[dbItem.id]) {
+        state.itemPrices[dbItem.id] = {
+            appliedPrice: dbItem.materialPrice,
+            facilityPrice: dbItem.materialPrice,
+            marketPrice: { price: 0, page: "" },
+            infoPrice: { price: 0, page: "" },
+            materialPrice: { price: 0, page: "" },
+            distPrice: { price: 0, page: "" },
+            invest1: { price: 0, page: "" },
+            invest2: { price: 0, page: "" }
+        };
+    }
+
     // Check if item already exists in division to prevent duplicate, or increment quantity
     const existing = activeDiv.items.find(i => i.masterId === dbItem.id);
     if (existing) {
@@ -434,8 +600,10 @@ function calculateEstimates() {
         div.expenseSum = 0;
 
         div.items.forEach(item => {
+            const priceInfo = state.itemPrices[item.masterId] || { appliedPrice: item.materialPrice };
+            const materialPrice = priceInfo.appliedPrice;
             const itemLaborCost = Math.floor(item.laborFactor * (wages[item.laborType] || 0));
-            div.materialSum += item.qty * item.materialPrice;
+            div.materialSum += item.qty * materialPrice;
             div.laborSum += item.qty * itemLaborCost;
             // No direct expenses on items in our DB template, but can be added if needed
         });
@@ -576,8 +744,10 @@ function updateChart() {
         const wages = WAGE_RATES[state.wageStandard];
         let sum = 0;
         d.items.forEach(item => {
+            const priceInfo = state.itemPrices[item.masterId] || { appliedPrice: item.materialPrice };
+            const materialPrice = priceInfo.appliedPrice;
             const laborCost = Math.floor(item.laborFactor * (wages[item.laborType] || 0));
-            sum += item.qty * (item.materialPrice + laborCost);
+            sum += item.qty * (materialPrice + laborCost);
         });
         const toolWear = Math.floor((sum - d.materialSum) * 0.03); // approximate tool wear based on labor sum
         return sum + toolWear;
@@ -674,8 +844,27 @@ async function exportToExcel() {
         // ----------------------------------------------------
         const shPrice = workbook.addWorksheet("단가조사");
         shPrice.views = [{ showGridLines: true }];
-        shPrice.addRow(["번호", "품목코드", "명칭", "규격", "단위", "적용단가"]);
         
+        // Add double row headers
+        shPrice.addRow(["번호", "품목코드", "명칭", "규격", "단위", "적용단가", "시설단가", "거래가격", "", "물가정보", "", "물가자료", "", "유통물가", "", "조사단가1", "", "조사단가2", "", "비고"]);
+        shPrice.addRow(["", "", "", "", "", "", "", "단가", "PAGE", "단가", "PAGE", "단가", "PAGE", "단가", "PAGE", "단가", "PAGE", "단가", "PAGE", ""]);
+        
+        // Merge cells
+        shPrice.mergeCells("A1:A2");
+        shPrice.mergeCells("B1:B2");
+        shPrice.mergeCells("C1:C2");
+        shPrice.mergeCells("D1:D2");
+        shPrice.mergeCells("E1:E2");
+        shPrice.mergeCells("F1:F2");
+        shPrice.mergeCells("G1:G2");
+        shPrice.mergeCells("H1:I1");
+        shPrice.mergeCells("J1:K1");
+        shPrice.mergeCells("L1:M1");
+        shPrice.mergeCells("N1:O1");
+        shPrice.mergeCells("P1:Q1");
+        shPrice.mergeCells("R1:S1");
+        shPrice.mergeCells("T1:T2");
+
         // Unique list of master items used
         const allItemsMap = new Map();
         state.divisions.forEach(div => {
@@ -686,19 +875,67 @@ async function exportToExcel() {
         
         let pIndex = 1;
         allItemsMap.forEach((item, key) => {
-            shPrice.addRow([pIndex++, key, item.name, item.spec, item.unit, item.materialPrice]);
+            const p = state.itemPrices[key] || {
+                appliedPrice: item.materialPrice,
+                facilityPrice: item.materialPrice,
+                marketPrice: { price: 0, page: "" },
+                infoPrice: { price: 0, page: "" },
+                materialPrice: { price: 0, page: "" },
+                distPrice: { price: 0, page: "" },
+                invest1: { price: 0, page: "" },
+                invest2: { price: 0, page: "" }
+            };
+            shPrice.addRow([
+                pIndex++,
+                key,
+                item.name,
+                item.spec,
+                item.unit,
+                p.appliedPrice,
+                p.facilityPrice,
+                p.marketPrice.price,
+                p.marketPrice.page,
+                p.infoPrice.price,
+                p.infoPrice.page,
+                p.materialPrice.price,
+                p.materialPrice.page,
+                p.distPrice.price,
+                p.distPrice.page,
+                p.invest1.price,
+                p.invest1.page,
+                p.invest2.price,
+                p.invest2.page,
+                "" // 비고
+            ]);
         });
 
-        const prHeaderRow = shPrice.getRow(1);
-        styleHeaderRow(prHeaderRow);
+        // Style the double headers
+        styleHeaderRow(shPrice.getRow(1));
+        styleHeaderRow(shPrice.getRow(2));
         
-        shPrice.getColumn(1).width = 8;
-        shPrice.getColumn(2).width = 12;
-        shPrice.getColumn(3).width = 25;
-        shPrice.getColumn(4).width = 25;
-        shPrice.getColumn(5).width = 8;
-        shPrice.getColumn(6).width = 15;
+        // Column formatting
+        shPrice.getColumn(1).width = 6;   // 번호
+        shPrice.getColumn(2).width = 12;  // 품목코드
+        shPrice.getColumn(3).width = 22;  // 명칭
+        shPrice.getColumn(4).width = 22;  // 규격
+        shPrice.getColumn(5).width = 8;   // 단위
+        shPrice.getColumn(6).width = 15;  // 적용단가
+        shPrice.getColumn(7).width = 15;  // 시설단가
+        
+        // Format H to S columns
+        for (let col = 8; col <= 19; col++) {
+            const colWidth = (col % 2 === 0) ? 14 : 9; // Even = price, Odd = Page
+            shPrice.getColumn(col).width = colWidth;
+            if (col % 2 === 0) {
+                shPrice.getColumn(col).numFmt = "₩#,##0";
+                shPrice.getColumn(col).alignment = { horizontal: 'right' };
+            } else {
+                shPrice.getColumn(col).alignment = { horizontal: 'center' };
+            }
+        }
         shPrice.getColumn(6).numFmt = "₩#,##0";
+        shPrice.getColumn(7).numFmt = "₩#,##0";
+        shPrice.getColumn(20).width = 15; // 비고
 
         // ----------------------------------------------------
         // 3. LABOR DETAILS SHEET (노임근거)
@@ -783,9 +1020,9 @@ async function exportToExcel() {
             // Write items
             div.items.forEach((item, idx) => {
                 // Find row index of this item in 단가조사 and 노임근거 sheets
-                // A unique map key is item.masterId
                 const keysArr = Array.from(allItemsMap.keys());
-                const matchIndex = keysArr.indexOf(item.masterId) + 2; // 1-based index + header row
+                const priceMatchIndex = keysArr.indexOf(item.masterId) + 3; // 1-based index + 2 header rows
+                const laborMatchIndex = keysArr.indexOf(item.masterId) + 2; // 1-based index + 1 header row
 
                 const itemRow = shBOQ.addRow([
                     idx + 1,
@@ -793,9 +1030,9 @@ async function exportToExcel() {
                     item.spec,
                     item.unit,
                     item.qty,
-                    { formula: `단가조사!F${matchIndex}` }, // Material Unit Cost
+                    { formula: `단가조사!F${priceMatchIndex}` }, // Material Unit Cost
                     { formula: `TRUNC(E${boqCurrentRow}*F${boqCurrentRow}, 0)` }, // Material Total Cost
-                    { formula: `노임근거!I${matchIndex}` }, // Labor Unit Cost
+                    { formula: `노임근거!I${laborMatchIndex}` }, // Labor Unit Cost
                     { formula: `TRUNC(E${boqCurrentRow}*H${boqCurrentRow}, 0)` }, // Labor Total Cost
                     0, // Expense Unit Cost
                     0, // Expense Total Cost
