@@ -52,8 +52,19 @@
                 </button>
             </nav>
 
-            <div class="sidebar-footer">
-                <button id="btn-export-excel" class="btn btn-primary btn-block">
+            <div class="sidebar-footer" style="display: flex; flex-direction: column; gap: 8px; padding: 15px 20px;">
+                <div style="display: flex; gap: 8px; width: 100%;">
+                    <button id="btn-save-json" class="btn btn-outline btn-block" style="flex: 1; padding: 8px; font-size: 12px; display: flex; align-items: center; justify-content: center; gap: 4px; border-radius: var(--radius-sm);">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                        <span>설계 저장</span>
+                    </button>
+                    <button id="btn-load-json" class="btn btn-outline btn-block" style="flex: 1; padding: 8px; font-size: 12px; display: flex; align-items: center; justify-content: center; gap: 4px; border-radius: var(--radius-sm);">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>불러오기</span>
+                    </button>
+                </div>
+                <input type="file" id="input-file-json" accept=".json" style="display: none;">
+                <button id="btn-export-excel" class="btn btn-primary btn-block" style="width: 100%; border-radius: var(--radius-sm);">
                     <i class="fa-solid fa-download"></i>
                     <span>엑셀 다운로드</span>
                 </button>

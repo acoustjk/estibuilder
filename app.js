@@ -106,12 +106,14 @@ let costShareChart = null;
 
 // 4. Initialization
 document.addEventListener("DOMContentLoaded", () => {
+    loadFromLocalStorage();
     initTabs();
     initSettingsListeners();
     initBuilderListeners();
     initPriceListeners();
     initLaborListeners();
     initDivisionsListeners();
+    initSaveLoadListeners();
     loadActiveDivision();
     populateDbLibrary();
     calculateEstimates();
@@ -1455,6 +1457,7 @@ function calculateEstimates() {
 
     // Render Cost Calculations Table
     renderCostCalculationTable();
+    saveToLocalStorage();
 }
 
 function renderCostCalculationTable() {
@@ -2416,4 +2419,173 @@ function moveDivision(divId, direction) {
     onDivisionsUpdated();
     renderDivisionsTable();
     showToast("공종의 순서가 변경되었습니다.", "info");
+}
+
+// ----------------------------------------------------
+// 9. 로컬 저장 (localStorage) 및 JSON 파일 백업/복원
+// ----------------------------------------------------
+
+// localStorage에 상태 저장
+function saveToLocalStorage() {
+    try {
+        localStorage.setItem("estibuilder_project_state", JSON.stringify(state));
+    } catch (e) {
+        console.error("로컬 스토리지 저장에 실패했습니다.", e);
+    }
+}
+
+// localStorage에서 상태 불러오기
+function loadFromLocalStorage() {
+    try {
+        const saved = localStorage.getItem("estibuilder_project_state");
+        if (saved) {
+            const parsed = JSON.parse(saved);
+            if (parsed && parsed.divisions && parsed.rates) {
+                state = parsed;
+                
+                // UI 폼 인풋 및 헤더 갱신
+                const inputProjName = document.getElementById("input-project-name");
+                const inputDuration = document.getElementById("input-project-duration");
+                const headerProjName = document.getElementById("header-project-name");
+                const headerDuration = document.getElementById("header-project-duration");
+                
+                if (inputProjName) inputProjName.value = state.projectName || "";
+                if (inputDuration) inputDuration.value = state.duration || "";
+                if (headerProjName) headerProjName.textContent = state.projectName || "신규 프로젝트";
+                if (headerDuration) headerDuration.textContent = state.duration || "공사기간 미정";
+                
+                // 보험 요율 인풋 세팅
+                const rateKeys = ["indirectLabor", "healthInsurance", "pensionInsurance", "longtermCare", "accidentInsurance", "employmentInsurance", "otherExpense", "generalAdmin", "profit"];
+                rateKeys.forEach(key => {
+                    const inputEl = document.getElementById(`rate-${key.replace(/([A-Z])/g, "-$1").toLowerCase()}`);
+                    if (inputEl && state.rates[key] !== undefined) {
+                        inputEl.value = state.rates[key];
+                    }
+                });
+                
+                // 노임단가 및 끝자리 세팅
+                const selectWage = document.getElementById("select-wage-standard");
+                if (selectWage && state.wageStandard) {
+                    selectWage.value = state.wageStandard;
+                }
+                
+                const selectPrecision = document.getElementById("input-rounding-precision");
+                if (selectPrecision && state.roundingPrecision) {
+                    selectPrecision.value = state.roundingPrecision;
+                }
+            }
+        }
+    } catch (e) {
+        console.error("로컬 스토리지 복구에 실패했습니다.", e);
+    }
+}
+
+// state를 JSON 파일로 다운로드
+function exportStateToJson() {
+    try {
+        const dataStr = JSON.stringify(state, null, 2);
+        const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+        
+        const exportFileDefaultName = `${(state.projectName || "신규프로젝트").replace(/\s+/g, "_")}_설계데이터.json`;
+        
+        const linkElement = document.createElement('a');
+        linkElement.setAttribute('href', dataUri);
+        linkElement.setAttribute('download', exportFileDefaultName);
+        linkElement.click();
+        
+        showToast("설계 파일이 다운로드되었습니다.", "success");
+    } catch (e) {
+        showToast("설계 저장에 실패했습니다.", "danger");
+        console.error(e);
+    }
+}
+
+// JSON 파일 업로드하여 state 복구
+function importStateFromJson(file) {
+    if (!file) return;
+    
+    const reader = new FileReader();
+    reader.onload = function(event) {
+        try {
+            const parsed = JSON.parse(event.target.result);
+            if (parsed && parsed.divisions && parsed.rates) {
+                state = parsed;
+                
+                // 로컬 스토리지에 즉시 동기화
+                saveToLocalStorage();
+                
+                // UI 인풋 필드 갱신
+                const inputProjName = document.getElementById("input-project-name");
+                const inputDuration = document.getElementById("input-project-duration");
+                const headerProjName = document.getElementById("header-project-name");
+                const headerDuration = document.getElementById("header-project-duration");
+                
+                if (inputProjName) inputProjName.value = state.projectName || "";
+                if (inputDuration) inputDuration.value = state.duration || "";
+                if (headerProjName) headerProjName.textContent = state.projectName || "신규 프로젝트";
+                if (headerDuration) headerDuration.textContent = state.duration || "공사기간 미정";
+                
+                const rateKeys = ["indirectLabor", "healthInsurance", "pensionInsurance", "longtermCare", "accidentInsurance", "employmentInsurance", "otherExpense", "generalAdmin", "profit"];
+                rateKeys.forEach(key => {
+                    const inputEl = document.getElementById(`rate-${key.replace(/([A-Z])/g, "-$1").toLowerCase()}`);
+                    if (inputEl && state.rates[key] !== undefined) {
+                        inputEl.value = state.rates[key];
+                    }
+                });
+                
+                const selectWage = document.getElementById("select-wage-standard");
+                if (selectWage && state.wageStandard) {
+                    selectWage.value = state.wageStandard;
+                }
+                
+                const selectPrecision = document.getElementById("input-rounding-precision");
+                if (selectPrecision && state.roundingPrecision) {
+                    selectPrecision.value = state.roundingPrecision;
+                }
+                
+                // 화면 리렌더링
+                loadActiveDivision();
+                renderPriceInvestigationTable();
+                renderLaborBasisTable();
+                if (typeof renderDivisionsTable === "function") {
+                    renderDivisionsTable();
+                }
+                calculateEstimates();
+                
+                showToast("설계 데이터가 성공적으로 불러와졌습니다.", "success");
+            } else {
+                showToast("올바르지 않은 설계 데이터 파일입니다.", "danger");
+            }
+        } catch (e) {
+            showToast("파일 파싱 중 에러가 발생했습니다.", "danger");
+            console.error(e);
+        }
+    };
+    reader.readAsText(file);
+}
+
+// 저장/불러오기 버튼 리스너 바인딩
+function initSaveLoadListeners() {
+    const btnSave = document.getElementById("btn-save-json");
+    const btnLoad = document.getElementById("btn-load-json");
+    const inputFile = document.getElementById("input-file-json");
+    
+    if (btnSave) {
+        btnSave.onclick = () => {
+            exportStateToJson();
+        };
+    }
+    
+    if (btnLoad && inputFile) {
+        btnLoad.onclick = () => {
+            inputFile.click();
+        };
+        
+        inputFile.onchange = (e) => {
+            if (e.target.files && e.target.files[0]) {
+                importStateFromJson(e.target.files[0]);
+                e.target.value = "";
+            }
+        };
+    }
 }
