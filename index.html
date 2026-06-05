@@ -30,6 +30,10 @@
                     <i class="fa-solid fa-sliders"></i>
                     <span>프로젝트 설정</span>
                 </button>
+                <button class="nav-item" data-tab="tab-divisions">
+                    <i class="fa-solid fa-folder-tree"></i>
+                    <span>공종설정</span>
+                </button>
                 <button class="nav-item" data-tab="tab-prices">
                     <i class="fa-solid fa-coins"></i>
                     <span>단가조사</span>
@@ -161,6 +165,51 @@
                                 <label for="rate-profit">이윤율 (%)</label>
                                 <input type="number" id="rate-profit" value="15.0" step="0.1">
                                 <span class="form-help">노무비 + 경비 + 일반관리비 기준</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tab: Divisions Settings -->
+                <section id="tab-divisions" class="tab-section">
+                    <div class="section-card" style="height: 100%; display: flex; flex-direction: column;">
+                        <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <i class="fa-solid fa-folder-tree card-icon"></i>
+                                <h3>공종 관리 및 설정</h3>
+                            </div>
+                            <div class="badge-label" style="text-transform: none; color: var(--text-secondary);">
+                                <i class="fa-solid fa-circle-info"></i> 내역서의 공종(Division)을 추가, 삭제, 수정하거나 순서를 변경합니다.
+                            </div>
+                        </div>
+                        <div class="card-body flex-grow" style="display: flex; flex-direction: column; gap: 20px;">
+                            <!-- Add Division Form -->
+                            <div class="division-add-form" style="display: flex; gap: 10px; align-items: flex-end; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 8px; border: 1px solid var(--border-color);">
+                                <div class="form-group" style="flex-grow: 1; margin-bottom: 0;">
+                                    <label for="input-new-division-name" style="margin-bottom: 6px; font-size: 12px; color: var(--text-secondary);">신규 공종명</label>
+                                    <input type="text" id="input-new-division-name" placeholder="예: LAN설비공사, CCTV설비공사 등" style="width: 100%;">
+                                </div>
+                                <button id="btn-add-division" class="btn btn-primary" style="padding: 10px 20px; height: 40px; display: flex; align-items: center; gap: 6px;">
+                                    <i class="fa-solid fa-plus"></i> 공종 추가
+                                </button>
+                            </div>
+                            
+                            <!-- Division List Table -->
+                            <div class="price-table-container" style="flex-grow: 1; overflow-y: auto;">
+                                <table class="price-investigation-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 80px; text-align: center;">순서</th>
+                                            <th style="text-align: left;">공종명</th>
+                                            <th style="width: 120px; text-align: center;">품목 수</th>
+                                            <th style="width: 200px; text-align: center;">순서 조정</th>
+                                            <th style="width: 180px; text-align: center;">관리</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="division-list-tbody">
+                                        <!-- Dynamically populated via JS -->
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

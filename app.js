@@ -143,6 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initBuilderListeners();
     initPriceListeners();
     initLaborListeners();
+    initDivisionsListeners();
     loadActiveDivision();
     populateDbLibrary();
     calculateEstimates();
@@ -165,6 +166,9 @@ function initTabs() {
 
             if (tabId === "tab-summary") {
                 setTimeout(updateChart, 50);
+            }
+            if (tabId === "tab-divisions") {
+                renderDivisionsTable();
             }
             if (tabId === "tab-prices") {
                 renderPriceInvestigationTable();
@@ -2213,4 +2217,229 @@ function showToast(message, type = "info") {
         toast.classList.remove("active");
         setTimeout(() => toast.remove(), 400);
     }, 3500);
+}
+
+// ----------------------------------------------------
+// 8. 공종 설정 (Divisions Settings) 관리 기능
+// ----------------------------------------------------
+
+// 공종 접두사 자동 일관성 갱신 (1. , 2. 등)
+function normalizeDivisionNames() {
+    state.divisions.forEach((div, index) => {
+        const cleanName = div.name.replace(/^\d+\.\s*/, "");
+        div.name = `${index + 1}. ${cleanName}`;
+    });
+}
+
+// 공종 변경 시 전체 동기화 콜백
+function onDivisionsUpdated() {
+    normalizeDivisionNames();
+    
+    // activeDivisionId 유효성 체크
+    if (state.divisions.length > 0) {
+        const activeExists = state.divisions.some(d => d.id === state.activeDivisionId);
+        if (!activeExists) {
+            state.activeDivisionId = state.divisions[0].id;
+        }
+    } else {
+        state.activeDivisionId = "";
+    }
+    
+    loadActiveDivision();
+    renderPriceInvestigationTable();
+    renderLaborBasisTable();
+    calculateEstimates();
+}
+
+// 공종 설정 탭 테이블 렌더링
+function renderDivisionsTable() {
+    const tbody = document.getElementById("division-list-tbody");
+    if (!tbody) return;
+    
+    tbody.innerHTML = "";
+    
+    if (state.divisions.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--text-muted); padding: 30px 0;">등록된 공종이 없습니다. 상단에서 신규 공종을 추가하세요.</td></tr>`;
+        return;
+    }
+    
+    state.divisions.forEach((div, index) => {
+        const tr = document.createElement("tr");
+        
+        // 순서
+        const tdIndex = document.createElement("td");
+        tdIndex.style.textAlign = "center";
+        tdIndex.textContent = index + 1;
+        tr.appendChild(tdIndex);
+        
+        // 공종명
+        const tdName = document.createElement("td");
+        tdName.style.textAlign = "left";
+        tdName.style.fontWeight = "500";
+        tdName.textContent = div.name;
+        tr.appendChild(tdName);
+        
+        // 품목 수
+        const tdCount = document.createElement("td");
+        tdCount.style.textAlign = "center";
+        tdCount.textContent = div.items.length + " 개";
+        tr.appendChild(tdCount);
+        
+        // 순서 조정 (위로 / 아래로 이동)
+        const tdOrder = document.createElement("td");
+        tdOrder.style.textAlign = "center";
+        
+        const btnUp = document.createElement("button");
+        btnUp.className = "btn-icon-primary";
+        btnUp.title = "위로 이동";
+        btnUp.innerHTML = `<i class="fa-solid fa-arrow-up"></i>`;
+        btnUp.disabled = index === 0;
+        btnUp.onclick = () => moveDivision(div.id, "up");
+        
+        const btnDown = document.createElement("button");
+        btnDown.className = "btn-icon-primary";
+        btnDown.title = "아래로 이동";
+        btnDown.innerHTML = `<i class="fa-solid fa-arrow-down"></i>`;
+        btnDown.disabled = index === state.divisions.length - 1;
+        btnDown.onclick = () => moveDivision(div.id, "down");
+        
+        tdOrder.appendChild(btnUp);
+        tdOrder.appendChild(btnDown);
+        tr.appendChild(tdOrder);
+        
+        // 관리 (이름 수정 / 삭제)
+        const tdActions = document.createElement("td");
+        tdActions.style.textAlign = "center";
+        
+        const btnEdit = document.createElement("button");
+        btnEdit.className = "btn-icon-primary";
+        btnEdit.title = "이름 수정";
+        btnEdit.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`;
+        btnEdit.onclick = () => editDivisionName(div.id);
+        
+        const btnDelete = document.createElement("button");
+        btnDelete.className = "btn-icon-danger";
+        btnDelete.title = "공종 삭제";
+        btnDelete.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
+        btnDelete.onclick = () => deleteDivision(div.id);
+        
+        tdActions.appendChild(btnEdit);
+        tdActions.appendChild(btnDelete);
+        tr.appendChild(tdActions);
+        
+        tbody.appendChild(tr);
+    });
+}
+
+// 공종 이벤트 리스너 설정
+function initDivisionsListeners() {
+    const btnAdd = document.getElementById("btn-add-division");
+    const inputName = document.getElementById("input-new-division-name");
+    
+    if (btnAdd && inputName) {
+        btnAdd.onclick = () => {
+            const name = inputName.value.trim();
+            if (name) {
+                addDivision(name);
+                inputName.value = "";
+            } else {
+                showToast("공종명을 입력해주세요.", "danger");
+            }
+        };
+        
+        inputName.onkeydown = (e) => {
+            if (e.key === "Enter") {
+                const name = inputName.value.trim();
+                if (name) {
+                    addDivision(name);
+                    inputName.value = "";
+                } else {
+                    showToast("공종명을 입력해주세요.", "danger");
+                }
+            }
+        };
+    }
+}
+
+// 신규 공종 추가
+function addDivision(name) {
+    const newId = "div-" + Date.now();
+    state.divisions.push({
+        id: newId,
+        name: name,
+        items: []
+    });
+    
+    onDivisionsUpdated();
+    renderDivisionsTable();
+    showToast(`공종 "${name}"이(가) 추가되었습니다.`, "success");
+}
+
+// 공종명 수정
+function editDivisionName(divId) {
+    const div = state.divisions.find(d => d.id === divId);
+    if (!div) return;
+    
+    const cleanName = div.name.replace(/^\d+\.\s*/, "");
+    const newName = prompt(`공종 "${cleanName}"의 새로운 이름을 입력하세요.`, cleanName);
+    
+    if (newName === null) return;
+    const trimmed = newName.trim();
+    if (!trimmed) {
+        showToast("공종명은 공백일 수 없습니다.", "danger");
+        return;
+    }
+    
+    div.name = trimmed;
+    
+    onDivisionsUpdated();
+    renderDivisionsTable();
+    showToast("공종명이 변경되었습니다.", "success");
+}
+
+// 공종 삭제
+function deleteDivision(divId) {
+    const divIdx = state.divisions.findIndex(d => d.id === divId);
+    if (divIdx === -1) return;
+    
+    const div = state.divisions[divIdx];
+    const cleanName = div.name.replace(/^\d+\.\s*/, "");
+    
+    if (div.items.length > 0) {
+        if (!confirm(`공종 "${cleanName}" 내에 ${div.items.length}개의 설계 품목이 등록되어 있습니다.\n\n이 공종과 소속된 모든 품목을 내역서에서 완전히 삭제하시겠습니까?`)) {
+            return;
+        }
+    } else {
+        if (!confirm(`공종 "${cleanName}"을 삭제하시겠습니까?`)) {
+            return;
+        }
+    }
+    
+    state.divisions.splice(divIdx, 1);
+    
+    onDivisionsUpdated();
+    renderDivisionsTable();
+    showToast(`공종 "${cleanName}"이(가) 제거되었습니다.`, "success");
+}
+
+// 공종 순서 조정
+function moveDivision(divId, direction) {
+    const idx = state.divisions.findIndex(d => d.id === divId);
+    if (idx === -1) return;
+    
+    if (direction === "up" && idx > 0) {
+        const temp = state.divisions[idx];
+        state.divisions[idx] = state.divisions[idx - 1];
+        state.divisions[idx - 1] = temp;
+    } else if (direction === "down" && idx < state.divisions.length - 1) {
+        const temp = state.divisions[idx];
+        state.divisions[idx] = state.divisions[idx + 1];
+        state.divisions[idx + 1] = temp;
+    } else {
+        return;
+    }
+    
+    onDivisionsUpdated();
+    renderDivisionsTable();
+    showToast("공종의 순서가 변경되었습니다.", "info");
 }

@@ -778,6 +778,29 @@ body {
     background-color: var(--danger-glow);
 }
 
+.btn-icon-primary {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 4px;
+    transition: var(--transition-smooth);
+}
+
+.btn-icon-primary:hover {
+    color: var(--primary);
+    background-color: var(--primary-glow);
+}
+
+.btn-icon-primary:disabled, .btn-icon-danger:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    color: var(--text-muted) !important;
+    background-color: transparent !important;
+}
+
 /* Custom scrollbars */
 ::-webkit-scrollbar {
     width: 8px;
