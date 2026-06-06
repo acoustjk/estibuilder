@@ -25622,6 +25622,13 @@ async function exportToExcel() {
         // ----------------------------------------------------
         const shCover = workbook.addWorksheet("갑지");
         shCover.views = [{ showGridLines: true }];
+        shCover.pageSetup = {
+            paperSize: 9, // A4
+            orientation: 'portrait',
+            fitToPage: true,
+            fitToWidth: 1,
+            fitToHeight: 1
+        };
         
         // Column widths
         shCover.columns = [
@@ -25722,8 +25729,9 @@ async function exportToExcel() {
         // Table: 구분 / 금액 / 비고
         shCover.mergeCells("B6:D6");
         shCover.getCell("B6").value = "구            분";
-        shCover.mergeCells("E6:K6");
+        shCover.mergeCells("E6:L6"); // Merged E6:L6 to cover all price columns (E, F:I, J:L)
         shCover.getCell("E6").value = "금                             액";
+        shCover.mergeCells("M6:N6"); // Merged M6:N6 to cover columns M and N, resolving the empty right column layout bug
         shCover.getCell("M6").value = "비   고";
         
         // Rows values and formulas
@@ -25779,9 +25787,10 @@ async function exportToExcel() {
         shCover.mergeCells("J12:L12");
         shCover.getCell("J12").value = 0;
         
-        // Merge F to I for Korean spelling overflow
+        // Merge F to I for Korean spelling overflow, and M to N for "비고" column values
         for (let r = 7; r <= 12; r++) {
             shCover.mergeCells(`F${r}:I${r}`);
+            shCover.mergeCells(`M${r}:N${r}`);
         }
         
         // Style table cells in Cover sheet (B6:N12)
@@ -25824,6 +25833,13 @@ async function exportToExcel() {
         // ----------------------------------------------------
         const shCost = workbook.addWorksheet("원가");
         shCost.views = [{ showGridLines: true }];
+        shCost.pageSetup = {
+            paperSize: 9, // A4
+            orientation: 'portrait',
+            fitToPage: true,
+            fitToWidth: 1,
+            fitToHeight: 1
+        };
         
         shCost.addRow(["원 가 계 산 서"]);
         shCost.mergeCells("A1:D1");
@@ -25950,6 +25966,13 @@ async function exportToExcel() {
         // ----------------------------------------------------
         const shSummary = workbook.addWorksheet("총괄표");
         shSummary.views = [{ showGridLines: true }];
+        shSummary.pageSetup = {
+            paperSize: 9, // A4
+            orientation: 'portrait',
+            fitToPage: true,
+            fitToWidth: 1,
+            fitToHeight: 0 // Flow vertically, fit horizontally
+        };
         
         shSummary.addRow(["공종별 총괄 집계표"]);
         shSummary.mergeCells("A1:H1");
@@ -26063,6 +26086,13 @@ async function exportToExcel() {
         // ----------------------------------------------------
         const shBOQ = workbook.addWorksheet("내역서");
         shBOQ.views = [{ showGridLines: true }];
+        shBOQ.pageSetup = {
+            paperSize: 9, // A4
+            orientation: 'portrait',
+            fitToPage: true,
+            fitToWidth: 1,
+            fitToHeight: 0
+        };
         
         shBOQ.addRow(["설계내역서 - " + state.projectName]);
         shBOQ.mergeCells("A1:L1");
@@ -26264,6 +26294,13 @@ async function exportToExcel() {
         // ----------------------------------------------------
         const shPrice = workbook.addWorksheet("단가조사");
         shPrice.views = [{ showGridLines: true }];
+        shPrice.pageSetup = {
+            paperSize: 9, // A4
+            orientation: 'landscape', // Wide table, print in landscape
+            fitToPage: true,
+            fitToWidth: 1,
+            fitToHeight: 0
+        };
         
         // Add double row headers
         shPrice.addRow(["번호", "품목코드", "명칭", "규격", "단위", "적용단가", "시설단가", "거래가격", "", "물가정보", "", "물가자료", "", "유통물가", "", "조사단가1", "", "조사단가2", "", "비고"]);
@@ -26370,6 +26407,13 @@ async function exportToExcel() {
         // ----------------------------------------------------
         const shLabor = workbook.addWorksheet("노임근거");
         shLabor.views = [{ showGridLines: true }];
+        shLabor.pageSetup = {
+            paperSize: 9, // A4
+            orientation: 'portrait',
+            fitToPage: true,
+            fitToWidth: 1,
+            fitToHeight: 0
+        };
         
         shLabor.addRow(["번호", "소속공종", "명칭", "규격", "단위", "직종", "기본품셈", "할증률", "산출공량", "노임단가", "노무단가", "비고"]);
         
@@ -26449,6 +26493,13 @@ async function exportToExcel() {
         // ----------------------------------------------------
         const shOpt = workbook.addWorksheet("옵션");
         shOpt.views = [{ showGridLines: true }];
+        shOpt.pageSetup = {
+            paperSize: 9, // A4
+            orientation: 'portrait',
+            fitToPage: true,
+            fitToWidth: 1,
+            fitToHeight: 1
+        };
         
         shOpt.getCell("A1").value = "구분";
         shOpt.getCell("B1").value = "요율";
