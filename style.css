@@ -941,7 +941,8 @@ body {
 }
 
 /* Compact inputs inside cells */
-.price-investigation-table input[type="number"] {
+.price-investigation-table input.price-input,
+.price-investigation-table input.price-input-group {
     background-color: rgba(0, 0, 0, 0.4);
     border: 1px solid var(--border-color);
     color: var(--text-primary);
@@ -954,11 +955,12 @@ body {
     transition: var(--transition-smooth);
 }
 
-.price-investigation-table input[type="number"]:focus {
+.price-investigation-table input.price-input:focus,
+.price-investigation-table input.price-input-group:focus {
     border-color: var(--accent);
 }
 
-.price-investigation-table input[type="text"] {
+.price-investigation-table input.page-input-group {
     background-color: rgba(0, 0, 0, 0.4);
     border: 1px solid var(--border-color);
     color: var(--text-secondary);
@@ -971,7 +973,7 @@ body {
     transition: var(--transition-smooth);
 }
 
-.price-investigation-table input[type="text"]:focus {
+.price-investigation-table input.page-input-group:focus {
     border-color: var(--primary);
     color: var(--text-primary);
 }

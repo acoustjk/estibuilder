@@ -22235,6 +22235,40 @@ function initPriceListeners() {
 }
 
 // Render Price Investigation Table
+function formatCommas(val) {
+    if (val === undefined || val === null) return "0";
+    return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function recalculateLowestAppliedPrice(masterId) {
+    const p = state.itemPrices[masterId];
+    if (!p) return;
+
+    const prices = [];
+    if (p.facilityPrice > 0) prices.push(p.facilityPrice);
+    if (p.marketPrice.price > 0) prices.push(p.marketPrice.price);
+    if (p.infoPrice.price > 0) prices.push(p.infoPrice.price);
+    if (p.materialPrice.price > 0) prices.push(p.materialPrice.price);
+    if (p.distPrice.price > 0) prices.push(p.distPrice.price);
+    if (p.invest1.price > 0) prices.push(p.invest1.price);
+    if (p.invest2.price > 0) prices.push(p.invest2.price);
+
+    let lowest = 0;
+    if (prices.length > 0) {
+        lowest = Math.min(...prices);
+    }
+
+    p.appliedPrice = lowest;
+
+    const appliedInput = document.querySelector(`input.price-input[data-id="${masterId}"][data-field="appliedPrice"]`);
+    if (appliedInput) {
+        appliedInput.value = lowest === 0 ? "0" : lowest.toLocaleString();
+    }
+
+    calculateEstimates();
+    loadActiveDivision();
+}
+
 function renderPriceInvestigationTable() {
     const tbody = document.getElementById("price-table-body");
     tbody.innerHTML = "";
@@ -22277,22 +22311,22 @@ function renderPriceInvestigationTable() {
             </td>
             <td style="text-align: center;">${dbItem.unit}</td>
             <td>
-                <input type="number" class="price-input" data-id="${masterId}" data-field="appliedPrice" value="${p.appliedPrice}">
+                <input type="text" class="price-input" data-id="${masterId}" data-field="appliedPrice" value="${formatCommas(p.appliedPrice)}">
             </td>
             <td>
-                <input type="number" class="price-input" data-id="${masterId}" data-field="facilityPrice" value="${p.facilityPrice}">
+                <input type="text" class="price-input" data-id="${masterId}" data-field="facilityPrice" value="${formatCommas(p.facilityPrice)}">
             </td>
-            <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="marketPrice" data-field="price" value="${p.marketPrice.price}"></td>
+            <td><input type="text" class="price-input-group" data-id="${masterId}" data-group="marketPrice" data-field="price" value="${formatCommas(p.marketPrice.price)}"></td>
             <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="marketPrice" data-field="page" value="${p.marketPrice.page}"></td>
-            <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="infoPrice" data-field="price" value="${p.infoPrice.price}"></td>
+            <td><input type="text" class="price-input-group" data-id="${masterId}" data-group="infoPrice" data-field="price" value="${formatCommas(p.infoPrice.price)}"></td>
             <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="infoPrice" data-field="page" value="${p.infoPrice.page}"></td>
-            <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="materialPrice" data-field="price" value="${p.materialPrice.price}"></td>
+            <td><input type="text" class="price-input-group" data-id="${masterId}" data-group="materialPrice" data-field="price" value="${formatCommas(p.materialPrice.price)}"></td>
             <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="materialPrice" data-field="page" value="${p.materialPrice.page}"></td>
-            <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="distPrice" data-field="price" value="${p.distPrice.price}"></td>
+            <td><input type="text" class="price-input-group" data-id="${masterId}" data-group="distPrice" data-field="price" value="${formatCommas(p.distPrice.price)}"></td>
             <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="distPrice" data-field="page" value="${p.distPrice.page}"></td>
-            <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="invest1" data-field="price" value="${p.invest1.price}"></td>
+            <td><input type="text" class="price-input-group" data-id="${masterId}" data-group="invest1" data-field="price" value="${formatCommas(p.invest1.price)}"></td>
             <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="invest1" data-field="page" value="${p.invest1.page}"></td>
-            <td><input type="number" class="price-input-group" data-id="${masterId}" data-group="invest2" data-field="price" value="${p.invest2.price}"></td>
+            <td><input type="text" class="price-input-group" data-id="${masterId}" data-group="invest2" data-field="price" value="${formatCommas(p.invest2.price)}"></td>
             <td><input type="text" class="page-input-group" data-id="${masterId}" data-group="invest2" data-field="page" value="${p.invest2.page}"></td>
             <td style="text-align: center;">
                 <button class="btn-icon-danger" onclick="deletePriceInvestigationItem('${masterId}')" title="품목 완전히 삭제">
@@ -22437,25 +22471,75 @@ function renderPriceInvestigationTable() {
     }
 
     tbody.querySelectorAll(".price-input").forEach(input => {
-        input.addEventListener("change", (e) => {
+        input.addEventListener("focus", (e) => {
+            if (e.target.value === "0") {
+                e.target.value = "";
+            } else {
+                e.target.select();
+            }
+        });
+
+        input.addEventListener("input", (e) => {
             const masterId = e.target.getAttribute("data-id");
             const field = e.target.getAttribute("data-field");
-            const val = Math.max(0, parseInt(e.target.value) || 0);
+            
+            const digits = e.target.value.replace(/[^0-9]/g, "");
+            const val = parseInt(digits) || 0;
+            
+            if (digits === "") {
+                e.target.value = "";
+            } else {
+                e.target.value = val.toLocaleString();
+            }
             
             state.itemPrices[masterId][field] = val;
-            calculateEstimates();
+            
+            if (field !== "appliedPrice") {
+                recalculateLowestAppliedPrice(masterId);
+            } else {
+                calculateEstimates();
+            }
+        });
+
+        input.addEventListener("blur", (e) => {
+            if (e.target.value === "") {
+                e.target.value = "0";
+            }
         });
     });
 
     tbody.querySelectorAll(".price-input-group").forEach(input => {
-        input.addEventListener("change", (e) => {
+        input.addEventListener("focus", (e) => {
+            if (e.target.value === "0") {
+                e.target.value = "";
+            } else {
+                e.target.select();
+            }
+        });
+
+        input.addEventListener("input", (e) => {
             const masterId = e.target.getAttribute("data-id");
             const group = e.target.getAttribute("data-group");
             const field = e.target.getAttribute("data-field");
-            const val = Math.max(0, parseInt(e.target.value) || 0);
+            
+            const digits = e.target.value.replace(/[^0-9]/g, "");
+            const val = parseInt(digits) || 0;
+            
+            if (digits === "") {
+                e.target.value = "";
+            } else {
+                e.target.value = val.toLocaleString();
+            }
             
             state.itemPrices[masterId][group][field] = val;
-            calculateEstimates();
+            
+            recalculateLowestAppliedPrice(masterId);
+        });
+
+        input.addEventListener("blur", (e) => {
+            if (e.target.value === "") {
+                e.target.value = "0";
+            }
         });
     });
 
