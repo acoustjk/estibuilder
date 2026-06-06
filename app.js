@@ -25605,11 +25605,26 @@ async function exportToExcel() {
                 item.excelRowIndex = boqRow;
                 boqRow++;
                 
-                if (item.laborType && item.laborFactor > 0) {
-                    item.laborExcelRowIndex = laborRow;
-                    laborRow++;
+                // Construct labor entries list for indexing
+                let laborEntries = [];
+                if (item.labors) {
+                    Object.entries(item.labors).forEach(([type, factor]) => {
+                        if (factor > 0) {
+                            laborEntries.push({ type, factor });
+                        }
+                    });
+                } else if (item.laborType && item.laborFactor > 0) {
+                    laborEntries.push({ type: item.laborType, factor: item.laborFactor });
+                }
+                
+                if (laborEntries.length > 0) {
+                    item.laborExcelRows = [];
+                    laborEntries.forEach(() => {
+                        item.laborExcelRows.push(laborRow);
+                        laborRow++;
+                    });
                 } else {
-                    item.laborExcelRowIndex = null;
+                    item.laborExcelRows = [];
                 }
             });
             boqRow++; // Tool wear row
@@ -26105,8 +26120,8 @@ async function exportToExcel() {
             div.items.forEach((item, idx) => {
                 const priceMatchIndex = keysArr.indexOf(item.masterId) + 4; // Shifted by 4 rows due to title and shifted table header
                 
-                const hasLabor = item.laborExcelRowIndex !== null;
-                const laborCellFormula = hasLabor ? `노임근거!K${item.laborExcelRowIndex}` : "0";
+                const hasLabor = item.laborExcelRows && item.laborExcelRows.length > 0;
+                const laborCellFormula = hasLabor ? item.laborExcelRows.map(r => "노임근거!K" + r).join("+") : "0";
                 
                 const itemRow = shBOQ.addRow([
                     idx + 1,
@@ -26114,20 +26129,20 @@ async function exportToExcel() {
                     item.spec,
                     item.unit,
                     item.qty,
-                    { formula: `단가조사!E${priceMatchIndex}` }, // Material Unit Cost
-                    { formula: `TRUNC(E${boqCurrentRow}*F${boqCurrentRow}, 0)` }, // Material Total Cost
+                    { formula: "단가조사!E" + priceMatchIndex }, // Material Unit Cost
+                    { formula: "TRUNC(E" + boqCurrentRow + "*F" + boqCurrentRow + ", 0)" }, // Material Total Cost
                     hasLabor ? { formula: laborCellFormula } : 0, // Labor Unit Cost
-                    { formula: `TRUNC(E${boqCurrentRow}*H${boqCurrentRow}, 0)` }, // Labor Total Cost
+                    { formula: "TRUNC(E" + boqCurrentRow + "*H" + boqCurrentRow + ", 0)" }, // Labor Total Cost
                     0, // Expense Unit Cost
                     0, // Expense Total Cost
-                    { formula: `SUM(G${boqCurrentRow}, I${boqCurrentRow}, K${boqCurrentRow})` }
+                    { formula: "SUM(G" + boqCurrentRow + ", I" + boqCurrentRow + ", K" + boqCurrentRow + ")" }
                 ]);
                 shBOQ.getRow(boqCurrentRow).height = 27.95;
                 boqCurrentRow++;
             });
             
             // Write dynamic Tool Wear (공구손료) for this division
-            const laborSumRange = `I${startItemRow}:I${boqCurrentRow - 1}`;
+            const laborSumRange = "I" + startItemRow + ":I" + (boqCurrentRow - 1);
             shBOQ.addRow([
                 "",
                 "[ 공구손료 ]",
@@ -26138,9 +26153,9 @@ async function exportToExcel() {
                 0,
                 0,
                 0,
-                { formula: `TRUNC(SUM(${laborSumRange})*옵션!$B$16, 0)` },
-                { formula: `TRUNC(E${boqCurrentRow}*J${boqCurrentRow}, 0)` },
-                { formula: `K${boqCurrentRow}` }
+                { formula: "TRUNC(SUM(" + laborSumRange + ")*옵션!$B$16, 0)" },
+                { formula: "TRUNC(E" + boqCurrentRow + "*J" + boqCurrentRow + ", 0)" },
+                { formula: "K" + boqCurrentRow }
             ]);
             shBOQ.getRow(boqCurrentRow).height = 27.95;
             
@@ -26155,18 +26170,18 @@ async function exportToExcel() {
                 "",
                 "",
                 "",
-                { formula: `SUM(G${startItemRow}:G${endItemRow})` },
+                { formula: "SUM(G" + startItemRow + ":G" + endItemRow + ")" },
                 "",
-                { formula: `SUM(I${startItemRow}:I${endItemRow})` },
+                { formula: "SUM(I" + startItemRow + ":I" + endItemRow + ")" },
                 "",
-                { formula: `SUM(K${startItemRow}:K${endItemRow})` },
-                { formula: `SUM(L${startItemRow}:L${endItemRow})` }
+                { formula: "SUM(K" + startItemRow + ":K" + endItemRow + ")" },
+                { formula: "SUM(L" + startItemRow + ":L" + endItemRow + ")" }
             ]);
             shBOQ.getRow(boqCurrentRow).height = 27.95;
             
-            matSumFormulas.push(`G${boqCurrentRow}`);
-            labSumFormulas.push(`I${boqCurrentRow}`);
-            expSumFormulas.push(`K${boqCurrentRow}`);
+            matSumFormulas.push("G" + boqCurrentRow);
+            labSumFormulas.push("I" + boqCurrentRow);
+            expSumFormulas.push("K" + boqCurrentRow);
             boqCurrentRow++;
             
             // Add division spacer row to keep row indices in sync
@@ -26183,12 +26198,12 @@ async function exportToExcel() {
             "",
             "",
             "",
-            { formula: `SUM(${matSumFormulas.join(",")})` },
+            { formula: "SUM(" + matSumFormulas.join(",") + ")" },
             "",
-            { formula: `SUM(${labSumFormulas.join(",")})` },
+            { formula: "SUM(" + labSumFormulas.join(",") + ")" },
             "",
-            { formula: `SUM(${expSumFormulas.join(",")})` },
-            { formula: `SUM(G${boqCurrentRow}, I${boqCurrentRow}, K${boqCurrentRow})` }
+            { formula: "SUM(" + expSumFormulas.join(",") + ")" },
+            { formula: "SUM(G" + boqCurrentRow + ", I" + boqCurrentRow + ", K" + boqCurrentRow + ")" }
         ]);
         shBOQ.getRow(boqCurrentRow).height = 27.95;
         
@@ -26320,7 +26335,7 @@ async function exportToExcel() {
                 item.name,
                 item.spec,
                 item.unit,
-                { formula: `MIN(G${rowNum},I${rowNum},K${rowNum},M${rowNum},O${rowNum},Q${rowNum})` }, // 적용단가 (최저가 공식)
+                { formula: "MIN(G" + rowNum + ",I" + rowNum + ",K" + rowNum + ",M" + rowNum + ",O" + rowNum + ",Q" + rowNum + ")" }, // 적용단가 (최저가 공식)
                 priceOrBlank(p.facilityPrice),
                 priceOrBlank(p.marketPrice.price),
                 p.marketPrice.page || "",
@@ -26400,16 +26415,28 @@ async function exportToExcel() {
         let lIndex = 1;
         state.divisions.forEach(div => {
             div.items.forEach(item => {
-                if (item.laborType && item.laborFactor > 0) {
-                    const rowNum = lIndex + 1;
+                // Construct labor entries list
+                let laborEntries = [];
+                if (item.labors) {
+                    Object.entries(item.labors).forEach(([type, factor]) => {
+                        if (factor > 0) {
+                            laborEntries.push({ type, factor });
+                        }
+                    });
+                } else if (item.laborType && item.laborFactor > 0) {
+                    laborEntries.push({ type: item.laborType, factor: item.laborFactor });
+                }
+                
+                laborEntries.forEach(entry => {
+                    const rowNum = shLabor.rowCount + 1; // Row number in shLabor sheet
                     
                     let wageCell = "옵션!$B$12";
-                    if (item.laborType === "통신설비공") wageCell = "옵션!$B$13";
-                    else if (item.laborType === "특별인부") wageCell = "옵션!$B$14";
-                    else if (item.laborType === "통신외선공") wageCell = "옵션!$B$18";
-                    else if (item.laborType === "통신케이블공") wageCell = "옵션!$B$19";
-                    else if (item.laborType === "보통인부") wageCell = "옵션!$B$20";
-                    else if (item.laborType === "광케이블설치사") wageCell = "옵션!$B$21";
+                    if (entry.type === "통신설비공") wageCell = "옵션!$B$13";
+                    else if (entry.type === "특별인부") wageCell = "옵션!$B$14";
+                    else if (entry.type === "통신외선공") wageCell = "옵션!$B$18";
+                    else if (entry.type === "통신케이블공") wageCell = "옵션!$B$19";
+                    else if (entry.type === "보통인부") wageCell = "옵션!$B$20";
+                    else if (entry.type === "광케이블설치사") wageCell = "옵션!$B$21";
                     
                     const multiplier = item.laborMultiplier !== undefined ? item.laborMultiplier : 1.0;
                     
@@ -26419,15 +26446,15 @@ async function exportToExcel() {
                         item.name,
                         item.spec,
                         item.unit,
-                        item.laborType,
-                        item.laborFactor,
+                        entry.type,
+                        entry.factor,
                         multiplier,
-                        { formula: `G${rowNum}*H${rowNum}` },
+                        { formula: "G" + rowNum + "*H" + rowNum },
                         { formula: wageCell },
-                        { formula: `TRUNC(I${rowNum}*J${rowNum}, 0)` },
+                        { formula: "TRUNC(I" + rowNum + "*J" + rowNum + ", 0)" },
                         item.laborRemark || ""
                     ]);
-                }
+                });
             });
         });
         
