@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
   }
 }
