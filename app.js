@@ -25826,7 +25826,6 @@ async function exportToExcel() {
         shCost.views = [{ showGridLines: true }];
         
         shCost.addRow(["원 가 계 산 서"]);
-        shCover.mergeCells("A1:D1"); // Wait, this should be shCost.mergeCells("A1:D1")! Corrected!
         shCost.mergeCells("A1:D1");
         shCost.getCell("A1").font = { size: 16, bold: true, name: "돋움체" };
         shCost.getCell("A1").alignment = { horizontal: 'center' };
@@ -26151,6 +26150,10 @@ async function exportToExcel() {
             matSumFormulas.push(`G${boqCurrentRow}`);
             labSumFormulas.push(`I${boqCurrentRow}`);
             expSumFormulas.push(`K${boqCurrentRow}`);
+            boqCurrentRow++;
+            
+            // Add division spacer row to keep row indices in sync
+            shBOQ.addRow([]);
             boqCurrentRow++;
         });
         
