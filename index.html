@@ -617,7 +617,7 @@
                 <div class="modal-body">
 
 
-                    <div class="form-grid mb-15" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div class="form-grid mb-15" style="display: grid; grid-template-columns: 2fr 2fr 1fr; gap: 15px;">
                         <div class="form-group">
                             <label for="input-modal-price-name">품명</label>
                             <input type="text" id="input-modal-price-name" placeholder="예: LAN 전송 장비">
@@ -626,29 +626,10 @@
                             <label for="input-modal-price-spec">규격</label>
                             <input type="text" id="input-modal-price-spec" placeholder="예: 24포트 PoE">
                         </div>
-                    </div>
-
-                    <div class="form-grid mb-15" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
                         <div class="form-group">
                             <label for="input-modal-price-unit">단위</label>
                             <input type="text" id="input-modal-price-unit" value="개" placeholder="예: 개, M">
                         </div>
-                        <div class="form-group">
-                            <label for="input-modal-price-qty">수량</label>
-                            <input type="number" id="input-modal-price-qty" value="1" min="0" step="1">
-                        </div>
-                        <div class="form-group">
-                            <label for="input-modal-price-matprice">적용 자재단가 (원)</label>
-                            <input type="number" id="input-modal-price-matprice" value="0" min="0">
-                        </div>
-                    </div>
-
-                    <div class="form-group mb-15">
-                        <label>초기 표준품셈 연동 (선택)</label>
-                        <select id="select-modal-price-labor-ref" style="width: 100%; padding: 10px; background: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: var(--radius-sm); outline: none;">
-                            <option value="">노무비 없음 (자재 전용)</option>
-                            <!-- Will be dynamically populated with STANDARD_LABOR_DB items -->
-                        </select>
                     </div>
                 </div>
                 <div class="modal-footer">

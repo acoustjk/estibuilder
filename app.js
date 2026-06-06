@@ -22686,30 +22686,10 @@ function openAddPriceItemModal() {
         return;
     }
 
-    // Populate labor-ref select from STANDARD_LABOR_DB
-    const selectLabor = document.getElementById("select-modal-price-labor-ref");
-    selectLabor.innerHTML = `<option value="">노무비 없음 (자재 전용)</option>`;
-    STANDARD_LABOR_DB.forEach(dbItem => {
-        const opt = document.createElement("option");
-        opt.value = dbItem.code;
-        
-        let laborStr = "";
-        if (dbItem.labors) {
-            laborStr = Object.entries(dbItem.labors).map(([type, factor]) => `${type} ${factor}인`).join(", ");
-        } else {
-            laborStr = `${dbItem.laborType} ${dbItem.laborFactor}인`;
-        }
-        
-        opt.textContent = `${dbItem.code} ${dbItem.name} (${laborStr})`;
-        selectLabor.appendChild(opt);
-    });
-
     // Clear fields
     document.getElementById("input-modal-price-name").value = "";
     document.getElementById("input-modal-price-spec").value = "";
     document.getElementById("input-modal-price-unit").value = "개";
-    document.getElementById("input-modal-price-qty").value = "1";
-    document.getElementById("input-modal-price-matprice").value = "0";
 
     openModal("modal-add-price-item");
 }
@@ -22719,16 +22699,9 @@ function confirmAddPriceItem() {
     const name = document.getElementById("input-modal-price-name").value.trim();
     const spec = document.getElementById("input-modal-price-spec").value.trim();
     const unit = document.getElementById("input-modal-price-unit").value.trim();
-    const qty = parseFloat(document.getElementById("input-modal-price-qty").value) || 0;
-    const matPrice = parseFloat(document.getElementById("input-modal-price-matprice").value) || 0;
-    const laborRefCode = document.getElementById("select-modal-price-labor-ref").value;
 
     if (!name) {
         showToast("품목명을 입력해주세요.", "danger");
-        return;
-    }
-    if (qty < 0) {
-        showToast("수량은 0 이상이어야 합니다.", "danger");
         return;
     }
 
@@ -22741,21 +22714,13 @@ function confirmAddPriceItem() {
     // Generate custom masterId
     const newMasterId = "M_CUSTOM_" + Date.now();
     
-    // Check labor config
-    let labors = null;
-    let laborType = null;
-    let laborFactor = 0;
-    if (laborRefCode) {
-        const dbItem = state.standardLaborDb.find(d => d.code === laborRefCode);
-        if (dbItem) {
-            if (dbItem.labors) {
-                labors = JSON.parse(JSON.stringify(dbItem.labors));
-            } else {
-                laborType = dbItem.laborType;
-                laborFactor = dbItem.laborFactor;
-            }
-        }
-    }
+    // Default values: qty is 1, matPrice is 0, laborRefCode is empty
+    const qty = 1;
+    const matPrice = 0;
+    const laborRefCode = "";
+    const labors = null;
+    const laborType = null;
+    const laborFactor = 0;
 
     // Add to ITEM_MASTER_DB so standard filters find it
     ITEM_MASTER_DB.push({
@@ -22798,7 +22763,7 @@ function confirmAddPriceItem() {
         laborScenario: "new",
         laborMultiplier: 1.0,
         laborRef: laborRefCode,
-        laborRemark: laborRefCode ? "신설" : ""
+        laborRemark: ""
     };
     div.items.push(newItem);
 
