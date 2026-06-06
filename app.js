@@ -22145,6 +22145,64 @@ function initPriceListeners() {
         });
     }
 
+    // Excel Import Trigger
+    const btnExcelImportTrigger = document.getElementById("btn-excel-import-trigger");
+    if (btnExcelImportTrigger) {
+        btnExcelImportTrigger.addEventListener("click", () => {
+            openExcelImportModal();
+        });
+    }
+
+    const btnConfirmExcelImport = document.getElementById("btn-confirm-excel-import");
+    if (btnConfirmExcelImport) {
+        btnConfirmExcelImport.addEventListener("click", () => {
+            confirmExcelImport();
+        });
+    }
+
+    const textareaExcel = document.getElementById("textarea-excel-paste");
+    if (textareaExcel) {
+        textareaExcel.addEventListener("input", () => {
+            updateExcelPreview();
+        });
+        textareaExcel.addEventListener("paste", (e) => {
+            // Wait for paste to complete, then update
+            setTimeout(updateExcelPreview, 10);
+        });
+    }
+
+    const chkExcelHeader = document.getElementById("chk-excel-header");
+    if (chkExcelHeader) {
+        chkExcelHeader.addEventListener("change", () => {
+            updateExcelPreview();
+        });
+    }
+
+    // Capture global paste event to detect Excel data on Prices Tab
+    window.addEventListener("paste", (e) => {
+        const activeTab = document.querySelector(".nav-item.active")?.getAttribute("data-tab");
+        if (activeTab !== "tab-prices") return;
+
+        // Skip if focused inside our input or pasting single-line
+        const activeEl = document.activeElement;
+        if (activeEl && (activeEl.tagName === "INPUT" || activeEl.tagName === "TEXTAREA")) {
+            if (activeEl.id === "textarea-excel-paste") return;
+            
+            const text = e.clipboardData?.getData("text") || "";
+            const lines = text.trim().split(/\r?\n/);
+            if (lines.length <= 1) return;
+        }
+
+        const text = e.clipboardData?.getData("text") || "";
+        if (!text) return;
+
+        const lines = text.trim().split(/\r?\n/);
+        if (lines.length > 0 && (lines.length > 1 || lines[0].includes("\t"))) {
+            e.preventDefault();
+            openExcelImportModal(text);
+        }
+    });
+
     document.getElementById("btn-auto-lowest").addEventListener("click", () => {
         let count = 0;
         for (const masterId in state.itemPrices) {
@@ -22187,11 +22245,6 @@ function renderPriceInvestigationTable() {
             usedMasterIds.add(item.masterId);
         });
     });
-
-    if (usedMasterIds.size === 0) {
-        tbody.innerHTML = `<tr><td colspan="20" style="text-align: center; color: var(--text-muted); padding: 45px 0;"><i class="fa-solid fa-calculator" style="font-size: 24px; margin-bottom: 10px; display: block;"></i>내역서 빌더에서 먼저 품목을 추가해야 단가 조사를 진행할 수 있습니다.</td></tr>`;
-        return;
-    }
 
     let index = 1;
     usedMasterIds.forEach(masterId => {
@@ -22250,6 +22303,138 @@ function renderPriceInvestigationTable() {
 
         tbody.appendChild(tr);
     });
+
+    // Append Inline Adding Row at the end
+    const trInline = document.createElement("tr");
+    trInline.className = "inline-add-row";
+    trInline.style.background = "rgba(33, 115, 70, 0.05)";
+    trInline.innerHTML = `
+        <td class="sticky-col first-col" style="text-align: center; color: #217346; font-weight: bold;">+</td>
+        <td class="sticky-col second-col">
+            <div style="display: flex; gap: 8px; width: 100%;">
+                <input type="text" id="inline-price-name" placeholder="새 품명 입력 (엔터 시 추가)..." style="flex: 1; padding: 6px; border: 1px solid var(--border-color); background: var(--bg-base); color: var(--text-primary); border-radius: var(--radius-sm); font-size: 13px; outline: none;">
+                <input type="text" id="inline-price-spec" placeholder="규격 입력..." style="flex: 1; padding: 6px; border: 1px solid var(--border-color); background: var(--bg-base); color: var(--text-primary); border-radius: var(--radius-sm); font-size: 13px; outline: none;">
+            </div>
+        </td>
+        <td>
+            <input type="text" id="inline-price-unit" value="개" style="width: 100%; text-align: center; padding: 6px; border: 1px solid var(--border-color); background: var(--bg-base); color: var(--text-primary); border-radius: var(--radius-sm); font-size: 13px; outline: none;">
+        </td>
+        <td colspan="14" style="text-align: left; color: var(--text-secondary); font-size: 12px; padding-left: 15px; font-style: italic; background: rgba(0,0,0,0.05); user-select: none;">
+            ← 품명, 규격, 단위 입력 후 <strong>엔터(Enter)</strong> 또는 우측 <strong>[+]</strong> 버튼으로 즉시 품목을 추가합니다.
+        </td>
+        <td style="text-align: center;">
+            <button class="btn btn-primary" id="btn-inline-price-add" style="padding: 5px 10px; font-size: 12px; height: 28px; width: 100%; display: flex; justify-content: center; align-items: center; border-radius: var(--radius-sm); background: #217346; border-color: #217346;">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </td>
+    `;
+    tbody.appendChild(trInline);
+
+    // Bind Inline row add confirm logic
+    const confirmInlineAdd = () => {
+        const nameInput = document.getElementById("inline-price-name");
+        const specInput = document.getElementById("inline-price-spec");
+        const unitInput = document.getElementById("inline-price-unit");
+        
+        const name = nameInput.value.trim();
+        const spec = specInput.value.trim();
+        const unit = unitInput.value.trim();
+        
+        if (!name) {
+            showToast("품목명을 입력해주세요.", "danger");
+            nameInput.focus();
+            return;
+        }
+        
+        const div = state.divisions.find(d => d.id === state.activeDivisionId);
+        if (!div) {
+            showToast("선택된 활성 공종이 없습니다. 공종을 추가해 주세요.", "warning");
+            return;
+        }
+        
+        const newMasterId = "M_CUSTOM_" + Date.now();
+        const qty = 1;
+        const matPrice = 0;
+        
+        ITEM_MASTER_DB.push({
+            id: newMasterId,
+            name: name,
+            spec: spec,
+            unit: unit,
+            category: "device",
+            materialPrice: matPrice,
+            laborType: null,
+            laborFactor: 0,
+            labors: null,
+            laborRef: ""
+        });
+        
+        state.itemPrices[newMasterId] = {
+            appliedPrice: matPrice,
+            facilityPrice: matPrice,
+            marketPrice: { price: 0, page: "" },
+            infoPrice: { price: 0, page: "" },
+            materialPrice: { price: 0, page: "" },
+            distPrice: { price: 0, page: "" },
+            invest1: { price: 0, page: "" },
+            invest2: { price: 0, page: "" }
+        };
+        
+        const newItem = {
+            id: "item-" + Date.now() + Math.random().toString(36).substr(2, 5),
+            masterId: newMasterId,
+            name: name,
+            spec: spec,
+            unit: unit,
+            qty: qty,
+            materialPrice: matPrice,
+            laborType: null,
+            laborFactor: 0,
+            labors: null,
+            laborScenario: "new",
+            laborMultiplier: 1.0,
+            laborRef: "",
+            laborRemark: ""
+        };
+        div.items.push(newItem);
+        
+        renderPriceInvestigationTable();
+        calculateEstimates();
+        loadActiveDivision();
+        renderLaborBasisTable();
+        
+        // Restore focus on the new name input
+        const nextNameInput = document.getElementById("inline-price-name");
+        if (nextNameInput) {
+            nextNameInput.focus();
+        }
+        
+        showToast(`단가조사 품목 "${name}"이(가) 등록되었습니다.`, "success");
+    };
+
+    const inlineName = document.getElementById("inline-price-name");
+    const inlineSpec = document.getElementById("inline-price-spec");
+    const inlineUnit = document.getElementById("inline-price-unit");
+    const inlineAddBtn = document.getElementById("btn-inline-price-add");
+
+    if (inlineName) {
+        inlineName.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") confirmInlineAdd();
+        });
+    }
+    if (inlineSpec) {
+        inlineSpec.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") confirmInlineAdd();
+        });
+    }
+    if (inlineUnit) {
+        inlineUnit.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") confirmInlineAdd();
+        });
+    }
+    if (inlineAddBtn) {
+        inlineAddBtn.addEventListener("click", confirmInlineAdd);
+    }
 
     tbody.querySelectorAll(".price-input").forEach(input => {
         input.addEventListener("change", (e) => {
@@ -22678,6 +22863,9 @@ window.openAddPriceItemModal = openAddPriceItemModal;
 window.confirmAddPriceItem = confirmAddPriceItem;
 window.deletePriceInvestigationItem = deletePriceInvestigationItem;
 window.syncLaborBasisTable = syncLaborBasisTable;
+window.openExcelImportModal = openExcelImportModal;
+window.updateExcelPreview = updateExcelPreview;
+window.confirmExcelImport = confirmExcelImport;
 
 // 1. 단가조사 직접 추가 모달 열기
 function openAddPriceItemModal() {
@@ -22775,6 +22963,176 @@ function confirmAddPriceItem() {
     renderLaborBasisTable();
 
     showToast(`단가조사 품목 "${name}"이(가) 등록되었습니다.`, "success");
+}
+
+// Excel Import Functions
+function openExcelImportModal(pastedText = "") {
+    if (state.divisions.length === 0) {
+        showToast("선택된 공종이 없습니다. 먼저 공종설정 탭에서 공종을 추가해 주세요.", "warning");
+        return;
+    }
+
+    const textarea = document.getElementById("textarea-excel-paste");
+    textarea.value = pastedText;
+    
+    updateExcelPreview();
+    openModal("modal-excel-import");
+    
+    if (!pastedText) {
+        setTimeout(() => textarea.focus(), 100);
+    }
+}
+
+function updateExcelPreview() {
+    const textarea = document.getElementById("textarea-excel-paste");
+    const tbody = document.getElementById("excel-preview-tbody");
+    const countLbl = document.getElementById("lbl-excel-count");
+    const confirmBtn = document.getElementById("btn-confirm-excel-import");
+    const chkHeader = document.getElementById("chk-excel-header");
+    
+    const text = textarea.value.trim();
+    if (!text) {
+        tbody.innerHTML = `<tr><td colspan="4" style="text-align: center; color: var(--text-muted); padding: 30px;">붙여넣은 데이터가 여기에 표시됩니다.</td></tr>`;
+        countLbl.textContent = "0";
+        confirmBtn.disabled = true;
+        return;
+    }
+    
+    const lines = text.split(/\r?\n/);
+    const hasHeader = chkHeader.checked;
+    
+    let parsedCount = 0;
+    let html = "";
+    const startIndex = hasHeader ? 1 : 0;
+    const previewLimit = 100;
+    
+    for (let i = startIndex; i < lines.length; i++) {
+        const line = lines[i];
+        if (!line.trim()) continue;
+        
+        parsedCount++;
+        const cols = line.split("\t");
+        const name = cols[0]?.trim() || "";
+        const spec = cols[1]?.trim() || "";
+        const unit = cols[2]?.trim() || "개";
+        
+        if (parsedCount <= previewLimit) {
+            html += `
+                <tr>
+                    <td style="text-align: center;">${parsedCount}</td>
+                    <td><strong>${name || `<span style="color: var(--text-danger);">품명 없음</span>`}</strong></td>
+                    <td>${spec || `<span style="color: var(--text-muted); font-style: italic;">규격 없음</span>`}</td>
+                    <td style="text-align: center;">${unit}</td>
+                </tr>
+            `;
+        }
+    }
+    
+    if (parsedCount > previewLimit) {
+        html += `
+            <tr>
+                <td colspan="4" style="text-align: center; color: var(--text-muted); font-style: italic; padding: 10px;">
+                    ... 외 ${parsedCount - previewLimit}개의 품목이 더 있습니다.
+                </td>
+            </tr>
+        `;
+    }
+    
+    tbody.innerHTML = html || `<tr><td colspan="4" style="text-align: center; color: var(--text-muted); padding: 30px;">유효한 데이터가 없습니다.</td></tr>`;
+    countLbl.textContent = parsedCount;
+    confirmBtn.disabled = (parsedCount === 0);
+}
+
+function confirmExcelImport() {
+    const textarea = document.getElementById("textarea-excel-paste");
+    const chkHeader = document.getElementById("chk-excel-header");
+    
+    const text = textarea.value.trim();
+    if (!text) return;
+    
+    const div = state.divisions.find(d => d.id === state.activeDivisionId);
+    if (!div) {
+        showToast("선택된 활성 공종이 없습니다. 공종을 추가해 주세요.", "warning");
+        return;
+    }
+    
+    const lines = text.split(/\r?\n/);
+    const hasHeader = chkHeader.checked;
+    const startIndex = hasHeader ? 1 : 0;
+    
+    let addedCount = 0;
+    const now = Date.now();
+    
+    for (let i = startIndex; i < lines.length; i++) {
+        const line = lines[i];
+        if (!line.trim()) continue;
+        
+        const cols = line.split("\t");
+        const name = cols[0]?.trim() || "";
+        if (!name) continue;
+        
+        const spec = cols[1]?.trim() || "";
+        const unit = cols[2]?.trim() || "개";
+        
+        const newMasterId = "M_CUSTOM_" + now + "_" + addedCount;
+        const qty = 1;
+        const matPrice = 0;
+        
+        ITEM_MASTER_DB.push({
+            id: newMasterId,
+            name: name,
+            spec: spec,
+            unit: unit,
+            category: "device",
+            materialPrice: matPrice,
+            laborType: null,
+            laborFactor: 0,
+            labors: null,
+            laborRef: ""
+        });
+        
+        state.itemPrices[newMasterId] = {
+            appliedPrice: matPrice,
+            facilityPrice: matPrice,
+            marketPrice: { price: 0, page: "" },
+            infoPrice: { price: 0, page: "" },
+            materialPrice: { price: 0, page: "" },
+            distPrice: { price: 0, page: "" },
+            invest1: { price: 0, page: "" },
+            invest2: { price: 0, page: "" }
+        };
+        
+        const newItem = {
+            id: "item-" + now + Math.random().toString(36).substr(2, 5),
+            masterId: newMasterId,
+            name: name,
+            spec: spec,
+            unit: unit,
+            qty: qty,
+            materialPrice: matPrice,
+            laborType: null,
+            laborFactor: 0,
+            labors: null,
+            laborScenario: "new",
+            laborMultiplier: 1.0,
+            laborRef: "",
+            laborRemark: ""
+        };
+        div.items.push(newItem);
+        addedCount++;
+    }
+    
+    closeModal("modal-excel-import");
+    
+    if (addedCount > 0) {
+        renderPriceInvestigationTable();
+        calculateEstimates();
+        loadActiveDivision();
+        renderLaborBasisTable();
+        showToast(`엑셀 일괄 등록 완료: ${addedCount}개의 품목이 "${div.name}" 공종에 등록되었습니다.`, "success");
+    } else {
+        showToast("등록할 수 있는 유효한 품목이 없었습니다.", "warning");
+    }
 }
 
 // 3. 단가조사 품목 완전히 내역에서 제거

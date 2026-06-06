@@ -242,6 +242,9 @@
                                 <button id="btn-add-price-item" class="btn btn-primary" style="padding: 8px 14px; font-size: 13px;">
                                     <i class="fa-solid fa-plus"></i> 조사 품목 추가
                                 </button>
+                                <button id="btn-excel-import-trigger" class="btn btn-outline" style="padding: 8px 14px; font-size: 13px; display: flex; align-items: center; gap: 6px; border-color: #217346; color: #217346;">
+                                    <i class="fa-solid fa-file-excel"></i> 엑셀 일괄 추가
+                                </button>
                                 <button id="btn-auto-lowest" class="btn btn-outline" style="padding: 8px 14px; font-size: 13px;">
                                     <i class="fa-solid fa-wand-magic-sparkles"></i> 최저가 자동 산출 (적용단가)
                                 </button>
@@ -786,6 +789,62 @@
                 <div class="modal-footer">
                     <button class="btn btn-outline" onclick="closeModal('modal-edit-master-db-item')">취소</button>
                     <button class="btn btn-primary" id="btn-confirm-edit-db-item">저장하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Excel Import -->
+    <div class="modal" id="modal-excel-import">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4><i class="fa-solid fa-file-excel text-success" style="margin-right: 8px;"></i> 엑셀 복사/붙여넣기 품목 일괄 등록</h4>
+                    <button class="close-modal-btn" onclick="closeModal('modal-excel-import')">&times;</button>
+                </div>
+                <div class="modal-body" style="display: flex; flex-direction: column; gap: 15px;">
+                    <p style="color: var(--text-secondary); margin: 0; font-size: 13px;">
+                        엑셀이나 구글 시트에서 <strong>품명, 규격, 단위</strong> 열을 복사(Ctrl+C)한 후 아래 입력창에 붙여넣기(Ctrl+V) 하세요.
+                    </p>
+                    
+                    <div class="form-group">
+                        <label for="textarea-excel-paste">데이터 붙여넣기 (Ctrl+V)</label>
+                        <textarea id="textarea-excel-paste" placeholder="품명&#9;규격&#9;단위&#10;PVC관&#9;Ø 50㎜ 이하&#9;본(6m)&#10;합성수지관&#9;16mm 이하&#9;m" style="width: 100%; height: 120px; font-family: monospace; font-size: 12px; background: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: var(--radius-sm); padding: 10px; resize: vertical; outline: none;"></textarea>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <label style="display: flex; align-items: center; gap: 6px; font-size: 13px; cursor: pointer; user-select: none; color: var(--text-secondary);">
+                                <input type="checkbox" id="chk-excel-header" checked style="cursor: pointer;">
+                                <span>첫 번째 행을 열 이름(헤더)으로 제외</span>
+                            </label>
+                        </div>
+                        <div style="font-size: 13px; color: var(--text-secondary);">
+                            인식된 품목 수: <span id="lbl-excel-count" class="text-accent" style="font-weight: 600;">0</span>개
+                        </div>
+                    </div>
+                    
+                    <div class="preview-section" style="flex-grow: 1; min-height: 150px; max-height: 250px; overflow-y: auto; border: 1px solid var(--border-color); border-radius: var(--radius-sm);">
+                        <table class="price-investigation-table" style="margin: 0; font-size: 12px; border-radius: 0; border: none;">
+                            <thead>
+                                <tr style="background: rgba(255,255,255,0.02);">
+                                    <th style="width: 50px; text-align: center;">번호</th>
+                                    <th>품명</th>
+                                    <th>규격</th>
+                                    <th style="width: 80px; text-align: center;">단위</th>
+                                </tr>
+                            </thead>
+                            <tbody id="excel-preview-tbody">
+                                <tr>
+                                    <td colspan="4" style="text-align: center; color: var(--text-muted); padding: 30px;">붙여넣은 데이터가 여기에 표시됩니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline" onclick="closeModal('modal-excel-import')">취소</button>
+                    <button class="btn btn-primary" id="btn-confirm-excel-import" disabled>일괄 등록하기</button>
                 </div>
             </div>
         </div>
