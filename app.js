@@ -25629,11 +25629,11 @@ async function exportToExcel() {
             { width: 4.6 },  // B
             { width: 6.1 },  // C
             { width: 8.9 },  // D
-            { width: 11.0 }, // E
+            { width: 14.0 }, // E (Increased to prevent bold "일금" text cut-off)
             { width: 8.9 },  // F
-            { width: 11.5 }, // G
+            { width: 16.0 }, // G (Increased to prevent bold Korean price text overflow)
             { width: 8.9 },  // H
-            { width: 5.6 },  // I
+            { width: 8.0 },  // I (Increased to prevent bold Korean price text overflow)
             { width: 11.8 }, // J
             { width: 4.2 },  // K
             { width: 5.0 },  // L
