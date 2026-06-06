@@ -50,6 +50,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.15
         },
         "category": "labor",
+        "page": 41,
         "keywords": [
             "애자류톤 〃 0.21",
             "인력운반 및 적상․하 기준"
@@ -64,6 +65,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.12
         },
         "category": "labor",
+        "page": 41,
         "keywords": [
             "철재류 〃 0.21",
             "인력운반 및 적상․하 기준"
@@ -78,6 +80,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.31
         },
         "category": "labor",
+        "page": 41,
         "keywords": [
             "전선류 〃 0.21",
             "인력운반 및 적상․하 기준"
@@ -92,6 +95,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.13
         },
         "category": "labor",
+        "page": 41,
         "keywords": [
             "시멘트 〃 0.21",
             "인력운반 및 적상․하 기준"
@@ -106,6 +110,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 5.0
         },
         "category": "labor",
+        "page": 43,
         "keywords": [
             "토사류․석재류 83 57 35 15 5 117 83 57 17",
             "경운기 운반 및 적상․하 시간 기준"
@@ -120,6 +125,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 5.0
         },
         "category": "labor",
+        "page": 43,
         "keywords": [
             "애자류 69 52 31 15 5 117 83 57 17",
             "경운기 운반 및 적상․하 시간 기준"
@@ -134,6 +140,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 5.0
         },
         "category": "labor",
+        "page": 43,
         "keywords": [
             "철재류․금속부속품 77 54 32 15 5 117 83 57 17",
             "경운기 운반 및 적상․하 시간 기준"
@@ -148,6 +155,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 5.0
         },
         "category": "labor",
+        "page": 43,
         "keywords": [
             "시멘트류 76 55 31 15 5 117 83 57 17",
             "경운기 운반 및 적상․하 시간 기준"
@@ -162,6 +170,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.092
         },
         "category": "labor",
+        "page": 43,
         "keywords": [
             "토사류톤 2인 12 10",
             "경운기 운반 및 적상․하 시간 기준"
@@ -176,6 +185,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.108
         },
         "category": "labor",
+        "page": 43,
         "keywords": [
             "석재류톤 2인 15 11",
             "경운기 운반 및 적상․하 시간 기준"
@@ -190,6 +200,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.31
         },
         "category": "labor",
+        "page": 43,
         "keywords": [
             "애자류톤 6인 13 9",
             "경운기 운반 및 적상․하 시간 기준"
@@ -204,6 +215,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.25
         },
         "category": "labor",
+        "page": 43,
         "keywords": [
             "철재 및 금속부속품 톤 6인 12 8",
             "경운기 운반 및 적상․하 시간 기준"
@@ -218,6 +230,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.31
         },
         "category": "labor",
+        "page": 43,
         "keywords": [
             "시멘트류톤 6인 15 10",
             "경운기 운반 및 적상․하 시간 기준"
@@ -232,6 +245,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.15
         },
         "category": "labor",
+        "page": 46,
         "keywords": [
             "교통콘(라바콘)",
             "안전시설"
@@ -246,6 +260,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.05
         },
         "category": "labor",
+        "page": 46,
         "keywords": [
             "표지판",
             "안전시설"
@@ -260,6 +275,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.15
         },
         "category": "labor",
+        "page": 46,
         "keywords": [
             "경광등",
             "안전시설"
@@ -274,6 +290,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.15
         },
         "category": "labor",
+        "page": 46,
         "keywords": [
             "안전유도로봇",
             "안전시설"
@@ -288,6 +305,7 @@ const STANDARD_LABOR_DB = [
             "교통정리원": 1.0
         },
         "category": "labor",
+        "page": 46,
         "keywords": [
             "신호수",
             "안전시설"
@@ -302,6 +320,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "3 3.9 31 1.00",
             "운전경비 산정"
@@ -316,6 +335,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "10 3.8 39 1.00",
             "운전경비 산정"
@@ -330,6 +350,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "15 4.7 39 1.00",
             "운전경비 산정"
@@ -344,6 +365,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "20 5.4 39 1.00",
             "운전경비 산정"
@@ -358,6 +380,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "25 6.1 39 1.00",
             "운전경비 산정"
@@ -372,6 +395,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "크레인 30 7.7 39 1.00",
             "운전경비 산정"
@@ -386,6 +410,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "(타이어 )(톤) 35 7.7 39 1.00",
             "운전경비 산정"
@@ -400,6 +425,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "40 8.5 57 1.00",
             "운전경비 산정"
@@ -414,6 +440,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "(오거장착 별도 ) 45 10.0 57 1.00",
             "운전경비 산정"
@@ -428,6 +455,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "50 10.0 57 1.00",
             "운전경비 산정"
@@ -442,6 +470,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "60 10.6 57 1.00",
             "운전경비 산정"
@@ -456,6 +485,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "70 12.3 57 1.00",
             "운전경비 산정"
@@ -470,6 +500,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "80 12.3 57 1.00",
             "운전경비 산정"
@@ -484,6 +515,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "100 15.9 57 1.00",
             "운전경비 산정"
@@ -498,6 +530,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "고소작업차 (톤) 1.2 2.9 35 1.00",
             "운전경비 산정"
@@ -512,6 +545,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "5 5.1 20 1.00",
             "운전경비 산정"
@@ -526,6 +560,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 20.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "1.87kW 0.5",
             "운전경비 산정"
@@ -540,6 +575,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 20.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "2.24kW 0.6",
             "운전경비 산정"
@@ -554,6 +590,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 20.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "3.36kW 0.9",
             "운전경비 산정"
@@ -568,6 +605,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 20.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "5.22kW 1.4",
             "운전경비 산정"
@@ -582,6 +620,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 20.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "8.95kW 2.4",
             "운전경비 산정"
@@ -596,6 +635,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "0.12㎥ 3.2 21",
             "운전경비 산정"
@@ -610,6 +650,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "0.2㎥ 5.0 21",
             "운전경비 산정"
@@ -624,6 +665,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "굴삭기 0.4㎥ 9.9 22",
             "운전경비 산정"
@@ -638,6 +680,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "0.7㎥ 11.6 22",
             "운전경비 산정"
@@ -652,6 +695,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "0.8㎥ 15.3 22",
             "운전경비 산정"
@@ -666,6 +710,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "1.0㎥ 19.5 22",
             "운전경비 산정"
@@ -680,6 +725,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "0.18㎥ 5.6 24",
             "운전경비 산정"
@@ -694,6 +740,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "(타이어 ) 0.8㎥ 16.3 24",
             "운전경비 산정"
@@ -708,6 +755,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "1.0㎥ 20.5 24",
             "운전경비 산정"
@@ -722,6 +770,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 43.0
         },
         "category": "labor",
+        "page": 68,
         "keywords": [
             "2-1 관로 ·································································································································",
             "운전경비 산정"
@@ -737,6 +786,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.17
         },
         "category": "pipe",
+        "page": 73,
         "keywords": [
             "Ø 30㎜ 이하",
             "PVC관"
@@ -752,6 +802,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.18
         },
         "category": "pipe",
+        "page": 73,
         "keywords": [
             "Ø 50㎜ 이하",
             "PVC관"
@@ -767,6 +818,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.22
         },
         "category": "pipe",
+        "page": 73,
         "keywords": [
             "Ø 80㎜ 이하",
             "PVC관"
@@ -782,6 +834,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.26
         },
         "category": "pipe",
+        "page": 73,
         "keywords": [
             "Ø 100㎜ 이하",
             "PVC관"
@@ -797,6 +850,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.32
         },
         "category": "pipe",
+        "page": 73,
         "keywords": [
             "Ø 150㎜ 이하",
             "PVC관"
@@ -812,6 +866,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.38
         },
         "category": "pipe",
+        "page": 73,
         "keywords": [
             "Ø 200㎜ 이하",
             "PVC관"
@@ -827,6 +882,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.51
         },
         "category": "pipe",
+        "page": 73,
         "keywords": [
             "Ø 250㎜ 이하",
             "PVC관"
@@ -842,6 +898,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.56
         },
         "category": "pipe",
+        "page": 73,
         "keywords": [
             "Ø 300㎜ 이하",
             "PVC관"
@@ -857,6 +914,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.2
         },
         "category": "pipe",
+        "page": 74,
         "keywords": [
             "100㎜",
             "PVC관 절개 및 절단"
@@ -872,6 +930,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.16
         },
         "category": "pipe",
+        "page": 74,
         "keywords": [
             "80㎜",
             "PVC관 절개 및 절단"
@@ -887,6 +946,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.1
         },
         "category": "pipe",
+        "page": 74,
         "keywords": [
             "50㎜",
             "PVC관 절개 및 절단"
@@ -902,6 +962,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.12
         },
         "category": "pipe",
+        "page": 74,
         "keywords": [
             "16㎜ 이하",
             "합성수지관(주름관 포함)"
@@ -917,6 +978,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.14
         },
         "category": "pipe",
+        "page": 74,
         "keywords": [
             "30㎜ 이하",
             "합성수지관(주름관 포함)"
@@ -932,6 +994,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.29
         },
         "category": "pipe",
+        "page": 74,
         "keywords": [
             "50㎜ 이하",
             "합성수지관(주름관 포함)"
@@ -947,6 +1010,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.35
         },
         "category": "pipe",
+        "page": 74,
         "keywords": [
             "80㎜ 이하",
             "합성수지관(주름관 포함)"
@@ -962,6 +1026,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.57
         },
         "category": "pipe",
+        "page": 74,
         "keywords": [
             "100㎜ 이하",
             "합성수지관(주름관 포함)"
@@ -977,6 +1042,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.77
         },
         "category": "pipe",
+        "page": 74,
         "keywords": [
             "125㎜ 이하",
             "합성수지관(주름관 포함)"
@@ -992,6 +1058,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.97
         },
         "category": "pipe",
+        "page": 74,
         "keywords": [
             "150㎜ 이하",
             "합성수지관(주름관 포함)"
@@ -1007,6 +1074,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.17
         },
         "category": "pipe",
+        "page": 74,
         "keywords": [
             "175㎜ 이하",
             "합성수지관(주름관 포함)"
@@ -1022,6 +1090,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.29
         },
         "category": "pipe",
+        "page": 74,
         "keywords": [
             "200㎜ 이하",
             "합성수지관(주름관 포함)"
@@ -1037,6 +1106,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.59
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "76.3㎜ 이하",
             "흄관"
@@ -1052,6 +1122,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.81
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "114.3㎜ 이하",
             "흄관"
@@ -1067,6 +1138,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.92
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "165.2㎜ 이하",
             "흄관"
@@ -1082,6 +1154,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.13
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "216.3㎜ 이하",
             "흄관"
@@ -1097,6 +1170,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.53
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "267.4㎜ 이하",
             "흄관"
@@ -1112,6 +1186,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.99
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "318.5㎜ 이하",
             "흄관"
@@ -1127,6 +1202,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.49
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "406.4㎜ 이하",
             "흄관"
@@ -1142,6 +1218,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.87
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "76.3㎜ 이하",
             "반원흄관 및 강관"
@@ -1157,6 +1234,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.01
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "114.3㎜ 이하",
             "반원흄관 및 강관"
@@ -1172,6 +1250,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.25
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "165.2㎜ 이하",
             "반원흄관 및 강관"
@@ -1187,6 +1266,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.48
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "216.3㎜ 이하",
             "반원흄관 및 강관"
@@ -1202,6 +1282,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.99
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "267.4㎜ 이하",
             "반원흄관 및 강관"
@@ -1217,6 +1298,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.2
         },
         "category": "pipe",
+        "page": 75,
         "keywords": [
             "318.5㎜ 이하",
             "반원흄관 및 강관"
@@ -1232,6 +1314,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.43
         },
         "category": "pipe",
+        "page": 76,
         "keywords": [
             "76㎜ 이하",
             "도관전선관"
@@ -1247,6 +1330,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.5
         },
         "category": "pipe",
+        "page": 76,
         "keywords": [
             "115㎜ 이하",
             "도관전선관"
@@ -1261,6 +1345,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.13
         },
         "category": "pipe",
+        "page": 76,
         "keywords": [
             "경고표시 테이프",
             "경고표시 테이프 및 매설표지판"
@@ -1275,6 +1360,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.08
         },
         "category": "pipe",
+        "page": 76,
         "keywords": [
             "케이블 매설표지판",
             "경고표시 테이프 및 매설표지판"
@@ -1290,6 +1376,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.6
         },
         "category": "pipe",
+        "page": 76,
         "keywords": [
             "통신용 관로청소",
             "통신용 관로 등 청소"
@@ -1305,6 +1392,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.17
         },
         "category": "pipe",
+        "page": 76,
         "keywords": [
             "인․수공 청소",
             "통신용 관로 등 청소"
@@ -1319,6 +1407,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.08
         },
         "category": "pipe",
+        "page": 76,
         "keywords": [
             "토로프 청소",
             "통신용 관로 등 청소"
@@ -1333,6 +1422,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.44
         },
         "category": "pipe",
+        "page": 77,
         "keywords": [
             "경질토사 보통인부 0.26 0.35",
             "인력 터파기"
@@ -1347,6 +1437,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.54
         },
         "category": "pipe",
+        "page": 77,
         "keywords": [
             "고사점토 및 자갈 보통인부 0.32 0.43",
             "인력 터파기"
@@ -1361,6 +1452,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.97
         },
         "category": "pipe",
+        "page": 77,
         "keywords": [
             "호박돌 섞인토사 보통인부 0.57 0.77",
             "인력 터파기"
@@ -1375,6 +1467,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.0
         },
         "category": "pipe",
+        "page": 77,
         "keywords": [
             "연암 및 풍화암 특별인부 1.60 1.80",
             "인력 터파기"
@@ -1389,6 +1482,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "pipe",
+        "page": 77,
         "keywords": [
             "보통인부 0.80 0.90",
             "인력 터파기"
@@ -1403,6 +1497,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.8
         },
         "category": "pipe",
+        "page": 77,
         "keywords": [
             "보통암 특별인부 2.40 2.60",
             "인력 터파기"
@@ -1417,6 +1512,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.4
         },
         "category": "pipe",
+        "page": 77,
         "keywords": [
             "보통인부 1.20 1.30",
             "인력 터파기"
@@ -1431,6 +1527,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 7.8
         },
         "category": "pipe",
+        "page": 77,
         "keywords": [
             "경암 특별인부 4.40 6.10",
             "인력 터파기"
@@ -1445,6 +1542,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 3.2
         },
         "category": "pipe",
+        "page": 77,
         "keywords": [
             "보통인부 1.80 2.50",
             "인력 터파기"
@@ -1459,6 +1557,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.14
         },
         "category": "pipe",
+        "page": 78,
         "keywords": [
             "토사 ㎥",
             "인력 흙 다지기"
@@ -1473,6 +1572,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.11
         },
         "category": "pipe",
+        "page": 78,
         "keywords": [
             "토사 ㎥",
             "인력 흙 다지기"
@@ -1487,6 +1587,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.25
         },
         "category": "pipe",
+        "page": 78,
         "keywords": [
             "점토 ㎥",
             "인력 흙 다지기"
@@ -1501,6 +1602,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.19
         },
         "category": "pipe",
+        "page": 78,
         "keywords": [
             "점토 ㎥",
             "인력 흙 다지기"
@@ -1516,6 +1618,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.16
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "내경 70㎜ × 75㎜ 이하",
             "일반용 트로프"
@@ -1531,6 +1634,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.21
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "90㎜ × 75㎜ 이하",
             "일반용 트로프"
@@ -1546,6 +1650,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.23
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "120㎜ × 75㎜ 이하",
             "일반용 트로프"
@@ -1561,6 +1666,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.32
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "150㎜ × 90㎜ 이하",
             "일반용 트로프"
@@ -1576,6 +1682,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.34
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "150㎜ × 120㎜ 이하",
             "일반용 트로프"
@@ -1591,6 +1698,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.44
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "150㎜ × 170㎜ 이하",
             "일반용 트로프"
@@ -1606,6 +1714,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.54
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "200㎜ × 90㎜ 이하",
             "일반용 트로프"
@@ -1621,6 +1730,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.67
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "200㎜ × 170㎜ 이하",
             "일반용 트로프"
@@ -1636,6 +1746,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.76
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "270㎜ × 170㎜ 이하",
             "일반용 트로프"
@@ -1651,6 +1762,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.94
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "290㎜ × 170㎜ 이하",
             "일반용 트로프"
@@ -1666,6 +1778,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.99
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "300㎜ × 170㎜ 이하",
             "일반용 트로프"
@@ -1681,6 +1794,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.21
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "400㎜ × 215㎜ 이하",
             "일반용 트로프"
@@ -1695,6 +1809,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 1.45
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "외경 740㎜ × 500㎜ 이하",
             "고속철도용 트로프"
@@ -1709,6 +1824,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 1.93
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "840㎜ × 500㎜ 500㎜ 이하",
             "고속철도용 트로프"
@@ -1723,6 +1839,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.27
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "530㎜ × 320㎜ 500㎜ 이하",
             "고속철도용 트로프"
@@ -1737,6 +1854,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.24
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "400㎜ × 290㎜ 500㎜ 이하",
             "고속철도용 트로프"
@@ -1751,6 +1869,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.23
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "320㎜ × 250㎜ 500㎜ 이하",
             "고속철도용 트로프"
@@ -1765,6 +1884,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.21
         },
         "category": "pipe",
+        "page": 79,
         "keywords": [
             "115㎜ × 290㎜ 500㎜ 이하",
             "고속철도용 트로프"
@@ -1779,6 +1899,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.29
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "70㎜ 100m",
             "콘크리트 트로프 들어내기 및 닫기"
@@ -1793,6 +1914,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.39
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "120㎜ 100m",
             "콘크리트 트로프 들어내기 및 닫기"
@@ -1807,6 +1929,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.49
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "트로프 150㎜ 100m",
             "콘크리트 트로프 들어내기 및 닫기"
@@ -1821,6 +1944,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.87
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "뚜껑 200㎜ 100m",
             "콘크리트 트로프 들어내기 및 닫기"
@@ -1836,6 +1960,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.68
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "(폭) 250㎜ ~ 330㎜ 100m",
             "콘크리트 트로프 들어내기 및 닫기"
@@ -1851,6 +1976,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.26
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "400㎜ ~ 430㎜ 330㎜ 100m",
             "콘크리트 트로프 들어내기 및 닫기"
@@ -1866,6 +1992,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.36
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "500㎜ ~ 430㎜ 330㎜ 100m",
             "콘크리트 트로프 들어내기 및 닫기"
@@ -1881,6 +2008,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.11
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "내경 70㎜ × 75㎜ 이하",
             "합성수지(파스콘) 트로프"
@@ -1896,6 +2024,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.17
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "120㎜ × 75㎜ 이하",
             "합성수지(파스콘) 트로프"
@@ -1911,6 +2040,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.22
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "150㎜ × 90㎜ 이하",
             "합성수지(파스콘) 트로프"
@@ -1926,6 +2056,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.24
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "150㎜ × 120㎜ 이하",
             "합성수지(파스콘) 트로프"
@@ -1941,6 +2072,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.3
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "200㎜ × 90㎜ 이하",
             "합성수지(파스콘) 트로프"
@@ -1956,6 +2088,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.34
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "200㎜ × 170㎜ 이하",
             "합성수지(파스콘) 트로프"
@@ -1971,6 +2104,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.4
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "250㎜ × 170㎜ 이하",
             "합성수지(파스콘) 트로프"
@@ -1986,6 +2120,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.48
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "300㎜ × 170㎜ 이하",
             "합성수지(파스콘) 트로프"
@@ -2001,6 +2136,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.53
         },
         "category": "pipe",
+        "page": 80,
         "keywords": [
             "325㎜ × 170㎜ 이하",
             "합성수지(파스콘) 트로프"
@@ -2016,6 +2152,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.3
         },
         "category": "pipe",
+        "page": 81,
         "keywords": [
             "인공철개 설치 소형",
             "인․수공 철개 및 입상관(오름관)"
@@ -2031,6 +2168,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.39
         },
         "category": "pipe",
+        "page": 81,
         "keywords": [
             "대형",
             "인․수공 철개 및 입상관(오름관)"
@@ -2046,6 +2184,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.06
         },
         "category": "pipe",
+        "page": 81,
         "keywords": [
             "수공철개 설치 950㎜×450㎜×700㎜ 이하",
             "인․수공 철개 및 입상관(오름관)"
@@ -2061,6 +2200,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.12
         },
         "category": "pipe",
+        "page": 81,
         "keywords": [
             "1,700㎜×800㎜×1,100㎜ 이하",
             "인․수공 철개 및 입상관(오름관)"
@@ -2075,6 +2215,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.3
         },
         "category": "pipe",
+        "page": 81,
         "keywords": [
             "입상관(오름관) 설치 내경 100㎜ 이하",
             "인․수공 철개 및 입상관(오름관)"
@@ -2089,6 +2230,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.06
         },
         "category": "pipe",
+        "page": 82,
         "keywords": [
             "수공 950×450×700",
             "인․수공케이블 지지철물"
@@ -2103,6 +2245,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.07
         },
         "category": "pipe",
+        "page": 82,
         "keywords": [
             "1,700×800×1,100",
             "인․수공케이블 지지철물"
@@ -2117,6 +2260,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.06
         },
         "category": "pipe",
+        "page": 82,
         "keywords": [
             "직선형 2,000×1,000×1,700",
             "인․수공케이블 지지철물"
@@ -2131,6 +2275,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.2
         },
         "category": "pipe",
+        "page": 82,
         "keywords": [
             "3,200×1,300×1,700",
             "인․수공케이블 지지철물"
@@ -2145,6 +2290,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.1
         },
         "category": "pipe",
+        "page": 82,
         "keywords": [
             "인공 L형 2,000×1,000×1,700",
             "인․수공케이블 지지철물"
@@ -2159,6 +2305,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.2
         },
         "category": "pipe",
+        "page": 82,
         "keywords": [
             "분기형 3,200×1,300×1,700",
             "인․수공케이블 지지철물"
@@ -2173,6 +2320,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.18
         },
         "category": "pipe",
+        "page": 82,
         "keywords": [
             "T형/ 십 2,000×1,000×1,700",
             "인․수공케이블 지지철물"
@@ -2188,6 +2336,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.01
         },
         "category": "pipe",
+        "page": 82,
         "keywords": [
             "자형 3,200×1,300×1,700",
             "인․수공케이블 지지철물"
@@ -2203,6 +2352,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.01
         },
         "category": "pipe",
+        "page": 82,
         "keywords": [
             "공관로",
             "관구마개"
@@ -2218,6 +2368,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.03
         },
         "category": "pipe",
+        "page": 82,
         "keywords": [
             "케이블수용관로",
             "관구마개"
@@ -2233,6 +2384,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.73
         },
         "category": "pipe",
+        "page": 83,
         "keywords": [
             "5m 이하",
             "전봇대 인력 세움"
@@ -2248,6 +2400,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.81
         },
         "category": "pipe",
+        "page": 83,
         "keywords": [
             "6m 이하",
             "전봇대 인력 세움"
@@ -2263,6 +2416,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.4
         },
         "category": "pipe",
+        "page": 83,
         "keywords": [
             "7m 이하",
             "전봇대 인력 세움"
@@ -2278,6 +2432,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.88
         },
         "category": "pipe",
+        "page": 83,
         "keywords": [
             "8m 이하",
             "전봇대 인력 세움"
@@ -2293,6 +2448,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.13
         },
         "category": "pipe",
+        "page": 83,
         "keywords": [
             "9m 이하",
             "전봇대 인력 세움"
@@ -2308,6 +2464,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.55
         },
         "category": "pipe",
+        "page": 83,
         "keywords": [
             "콘크리트 전봇대 10m 이하",
             "전봇대 인력 세움"
@@ -2323,6 +2480,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.63
         },
         "category": "pipe",
+        "page": 83,
         "keywords": [
             "11m 전봇대 10m 이하",
             "전봇대 인력 세움"
@@ -2338,6 +2496,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 3.0
         },
         "category": "pipe",
+        "page": 83,
         "keywords": [
             "12m 전봇대 10m 이하",
             "전봇대 인력 세움"
@@ -2353,6 +2512,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 4.24
         },
         "category": "pipe",
+        "page": 83,
         "keywords": [
             "14m 전봇대 10m 이하",
             "전봇대 인력 세움"
@@ -2368,6 +2528,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 5.2
         },
         "category": "pipe",
+        "page": 83,
         "keywords": [
             "16m 전봇대 10m 이하",
             "전봇대 인력 세움"
@@ -2383,6 +2544,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 6.74
         },
         "category": "pipe",
+        "page": 83,
         "keywords": [
             "17m 전봇대 10m 이하",
             "전봇대 인력 세움"
@@ -2398,6 +2560,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 49.0
         },
         "category": "pipe",
+        "page": 84,
         "keywords": [
             "7m이하 0.39",
             "전봇대 기계화 세움"
@@ -2413,6 +2576,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 52.0
         },
         "category": "pipe",
+        "page": 84,
         "keywords": [
             "8m 0.44",
             "전봇대 기계화 세움"
@@ -2428,6 +2592,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 53.0
         },
         "category": "pipe",
+        "page": 84,
         "keywords": [
             "9m 0.45",
             "전봇대 기계화 세움"
@@ -2443,6 +2608,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 57.0
         },
         "category": "pipe",
+        "page": 84,
         "keywords": [
             "10m 0.51",
             "전봇대 기계화 세움"
@@ -2458,6 +2624,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 59.0
         },
         "category": "pipe",
+        "page": 84,
         "keywords": [
             "11m 0.53",
             "전봇대 기계화 세움"
@@ -2473,6 +2640,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 61.0
         },
         "category": "pipe",
+        "page": 84,
         "keywords": [
             "12m 0.54",
             "전봇대 기계화 세움"
@@ -2488,6 +2656,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 64.0
         },
         "category": "pipe",
+        "page": 84,
         "keywords": [
             "13m 0.61",
             "전봇대 기계화 세움"
@@ -2503,6 +2672,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 65.0
         },
         "category": "pipe",
+        "page": 84,
         "keywords": [
             "14m 0.62",
             "전봇대 기계화 세움"
@@ -2518,6 +2688,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 68.0
         },
         "category": "pipe",
+        "page": 84,
         "keywords": [
             "15m 0.64",
             "전봇대 기계화 세움"
@@ -2533,6 +2704,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 72.0
         },
         "category": "pipe",
+        "page": 84,
         "keywords": [
             "16m 0.71",
             "전봇대 기계화 세움"
@@ -2548,6 +2720,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 73.0
         },
         "category": "pipe",
+        "page": 84,
         "keywords": [
             "17m 0.72",
             "전봇대 기계화 세움"
@@ -2563,6 +2736,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 75.0
         },
         "category": "pipe",
+        "page": 84,
         "keywords": [
             "18m 0.74",
             "전봇대 기계화 세움"
@@ -2577,6 +2751,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.2
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "7m 이하",
             "콘크리트 전봇대 파쇄"
@@ -2591,6 +2766,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.25
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "8m 이하",
             "콘크리트 전봇대 파쇄"
@@ -2605,6 +2781,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.3
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "9m 이하",
             "콘크리트 전봇대 파쇄"
@@ -2619,6 +2796,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.4
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "10m 이상",
             "콘크리트 전봇대 파쇄"
@@ -2634,6 +2812,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.34
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "깊이 (1.2m) 4조 이하",
             "지지선"
@@ -2649,6 +2828,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.43
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "(1.5m) 6조 4조 이하",
             "지지선"
@@ -2664,6 +2844,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.56
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "(1.5m) 8조 4조 이하",
             "지지선"
@@ -2679,6 +2860,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.83
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "(1.7m) 10 조 이하",
             "지지선"
@@ -2694,6 +2876,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.16
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "(1.7m) 12 조 이하",
             "지지선"
@@ -2709,6 +2892,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.43
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "(1.7m) 15 조 이하",
             "지지선"
@@ -2724,6 +2908,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.73
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "(1.8m) 18 조 이하",
             "지지선"
@@ -2739,6 +2924,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.11
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "7/2.3 이하",
             "지지선"
@@ -2754,6 +2940,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.23
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "7/2.6 ~ 7/2.9 이하",
             "지지선"
@@ -2769,6 +2956,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.27
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "7/3.2 ~ 7/4.5 이하",
             "지지선"
@@ -2784,6 +2972,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.28
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "7/5.0 ~ 7/4.5 이하",
             "지지선"
@@ -2799,6 +2988,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.28
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "7/5.5 ~ 7/6.5 이하",
             "지지선"
@@ -2813,6 +3003,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 55.0
         },
         "category": "pipe",
+        "page": 85,
         "keywords": [
             "-",
             "지지선"
@@ -2828,6 +3019,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 3.22
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "30㎟ 아연도 강연선",
             "조가선"
@@ -2843,6 +3035,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 3.48
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "38㎟ 아연도 강연선",
             "조가선"
@@ -2858,6 +3051,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 3.48
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "45㎟ 아연도 강연선",
             "조가선"
@@ -2873,6 +3067,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 4.18
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "55㎟ 아연도 강연선",
             "조가선"
@@ -2888,6 +3083,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 4.42
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "70㎟ 아연도 강연선",
             "조가선"
@@ -2903,6 +3099,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 6.04
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "90㎟ 아연도 강연선",
             "조가선"
@@ -2918,6 +3115,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 7.44
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "110㎟ 아연도 강연선",
             "조가선"
@@ -2932,6 +3130,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 1.07
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "Y 선설치",
             "조가선"
@@ -2946,6 +3145,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 2.52
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "가선심 볼(절 차)",
             "조가선"
@@ -2960,6 +3160,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 4.66
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "가선콤파운드(절차)",
             "조가선"
@@ -2974,6 +3175,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 21.3
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "가선콤파운드",
             "조가선"
@@ -2988,6 +3190,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 14.6
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "가선심볼",
             "조가선"
@@ -3002,6 +3205,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.58
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "프리텐숀",
             "조가선"
@@ -3017,6 +3221,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.29
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "밴드",
             "조가선"
@@ -3032,6 +3237,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.1
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "클램프",
             "조가선"
@@ -3047,6 +3253,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.28
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "턴버클",
             "조가선"
@@ -3062,6 +3269,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.84
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "지지용볼트",
             "조가선"
@@ -3077,6 +3285,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.16
         },
         "category": "pipe",
+        "page": 86,
         "keywords": [
             "케이블 행거 설치 55㎜~105㎜",
             "케이블 행거(Hanger)"
@@ -3092,6 +3301,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.8
         },
         "category": "pipe",
+        "page": 87,
         "keywords": [
             "PVC, 광케이블",
             "케이블 바인딩(Binding)"
@@ -3106,6 +3316,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.06
         },
         "category": "pipe",
+        "page": 87,
         "keywords": [
             "설치시",
             "전봇대 부대설비"
@@ -3120,6 +3331,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.04
         },
         "category": "pipe",
+        "page": 87,
         "keywords": [
             "기입시",
             "전봇대 부대설비"
@@ -3134,6 +3346,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.15
         },
         "category": "pipe",
+        "page": 87,
         "keywords": [
             "차량충돌 예방용 전봇대도색판",
             "전봇대 부대설비"
@@ -3148,6 +3361,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.43
         },
         "category": "pipe",
+        "page": 87,
         "keywords": [
             "지하매설물 조사",
             "전봇대 부대설비"
@@ -3162,6 +3376,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.11
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "Concrete Box",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3176,6 +3391,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.18
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "Outlet Box",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3190,6 +3406,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.18
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "Switch Box (3개용이하)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3204,6 +3421,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.25
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "Switch Box (4개용이상)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3218,6 +3436,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.04
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "연결용 박스",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3232,6 +3451,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.21
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "시스템 박스",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3246,6 +3466,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.04
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "- 천장면 : 단면적 100 이하(깊이10이하)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3260,6 +3481,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.55
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "단면적 625 이하(깊이20이하)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3274,6 +3496,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.6
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "단면적 900 이하(깊이30이하)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3288,6 +3511,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.66
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "단면적 1,600 이하(깊이30이하)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3302,6 +3526,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.95
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "단면적 4,900 이하(깊이40이하)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3316,6 +3541,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.23
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "단면적 10,000 이하(깊이15이하)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3330,6 +3556,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.56
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "단면적 14,400 이하(깊이15이하)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3344,6 +3571,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 3.0
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "단면적 22,500 이하(깊이25이하)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3358,6 +3586,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 5.64
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "단면적 40,000 이하(깊이30이하)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3372,6 +3601,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.17
         },
         "category": "pipe",
+        "page": 93,
         "keywords": [
             "- 벽면 : 단면적 100 이하(깊이10이하)",
             "박스(BOX), 풀박스(Pull-Box), 시스템 박스 등"
@@ -3386,6 +3616,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.1
         },
         "category": "pipe",
+        "page": 94,
         "keywords": [
             "박스(Box)",
             "박스용 연결접지선(Bond Earth)"
@@ -3400,6 +3631,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.23
         },
         "category": "pipe",
+        "page": 94,
         "keywords": [
             "후강 전선관 Ø16㎜ ~ 36㎜",
             "박스용 연결접지선(Bond Earth)"
@@ -3415,6 +3647,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.5
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "단면적 500이하(깊이10이하)",
             "단자함"
@@ -3430,6 +3663,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.58
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "단면적 1800이하(깊이13이하)",
             "단자함"
@@ -3445,6 +3679,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.7
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "단면적 5,250이하(깊이15이하)",
             "단자함"
@@ -3460,6 +3695,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.86
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "단자함 단면적 11,000이하(깊이15이하)",
             "단자함"
@@ -3475,6 +3711,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.1
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "단면적 18,200이하(깊이18이하)",
             "단자함"
@@ -3490,6 +3727,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.1
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "단면적 27,200이하(깊이25이하)",
             "단자함"
@@ -3505,6 +3743,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.17
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "15P 이하",
             "배선반"
@@ -3520,6 +3759,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.18
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "25P 이하",
             "배선반"
@@ -3535,6 +3775,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.45
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "50P 이하",
             "배선반"
@@ -3550,6 +3791,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.49
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "100P 이하",
             "배선반"
@@ -3565,6 +3807,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.54
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "150P 이하",
             "배선반"
@@ -3580,6 +3823,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.59
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "200P 이하",
             "배선반"
@@ -3595,6 +3839,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.64
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "단자함 250P 이하",
             "배선반"
@@ -3610,6 +3855,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.69
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "300P 250P 이하",
             "배선반"
@@ -3625,6 +3871,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.74
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "350P 250P 이하",
             "배선반"
@@ -3640,6 +3887,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.8
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "400P 250P 이하",
             "배선반"
@@ -3655,6 +3903,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.86
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "450P 250P 이하",
             "배선반"
@@ -3670,6 +3919,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.93
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "500P 250P 이하",
             "배선반"
@@ -3685,6 +3935,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.09
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "600P 250P 이하",
             "배선반"
@@ -3700,6 +3951,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.45
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "배선함 10P 이하",
             "배선반"
@@ -3715,6 +3967,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.45
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "50P 10P 이하",
             "배선반"
@@ -3730,6 +3983,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.1
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "종말단자 10P 이하",
             "배선반"
@@ -3745,6 +3999,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.12
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "25P 10P 이하",
             "배선반"
@@ -3759,6 +4014,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.3
         },
         "category": "pipe",
+        "page": 95,
         "keywords": [
             "피뢰탄기반 100P 이하",
             "배선반"
@@ -3773,6 +4029,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.58
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "폭 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
@@ -3787,6 +4044,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 2.0
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "300㎜ 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
@@ -3801,6 +4059,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 2.49
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "400㎜ 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
@@ -3815,6 +4074,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 3.12
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "500㎜ 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
@@ -3829,6 +4089,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 3.64
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "600㎜ 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
@@ -3843,6 +4104,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 4.13
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "800㎜ 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
@@ -3857,6 +4119,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 5.11
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "1,000㎜ 200㎜ 이하 2.10",
             "케이블랙 및 트레이"
@@ -3871,6 +4134,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.1
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "폭 200㎜ 이하 1.50",
             "조립식 케이블트레이"
@@ -3885,6 +4149,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.4
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "300㎜ 200㎜ 이하 1.50",
             "조립식 케이블트레이"
@@ -3899,6 +4164,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.8
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "400㎜ 200㎜ 이하 1.50",
             "조립식 케이블트레이"
@@ -3913,6 +4179,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 2.1
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "500㎜ 200㎜ 이하 1.50",
             "조립식 케이블트레이"
@@ -3927,6 +4194,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 2.9
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "600㎜ 200㎜ 이하 1.50",
             "조립식 케이블트레이"
@@ -3941,6 +4209,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 3.2
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "800㎜ 200㎜ 이하 1.50",
             "조립식 케이블트레이"
@@ -3955,6 +4224,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 4.2
         },
         "category": "pipe",
+        "page": 97,
         "keywords": [
             "1,000㎜ 200㎜ 이하 1.50",
             "조립식 케이블트레이"
@@ -3969,6 +4239,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.6
         },
         "category": "pipe",
+        "page": 98,
         "keywords": [
             "F4 35 × 41",
             "플로어덕트"
@@ -3983,6 +4254,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.7
         },
         "category": "pipe",
+        "page": 98,
         "keywords": [
             "F7 35 × 73",
             "플로어덕트"
@@ -3997,6 +4269,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.5
         },
         "category": "pipe",
+        "page": 98,
         "keywords": [
             "F5 25 × 51",
             "플로어덕트"
@@ -4011,6 +4284,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.5
         },
         "category": "pipe",
+        "page": 98,
         "keywords": [
             "F6 노스타드 25 × 51",
             "플로어덕트"
@@ -4025,6 +4299,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.6
         },
         "category": "pipe",
+        "page": 98,
         "keywords": [
             "F6 23 × 60",
             "플로어덕트"
@@ -4039,6 +4314,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.5
         },
         "category": "pipe",
+        "page": 98,
         "keywords": [
             "F6 노스타드 25 × 55",
             "플로어덕트"
@@ -4053,6 +4329,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.6
         },
         "category": "pipe",
+        "page": 98,
         "keywords": [
             "F8 23 × 80",
             "플로어덕트"
@@ -4067,6 +4344,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.0
         },
         "category": "pipe",
+        "page": 98,
         "keywords": [
             "Junction Box 대형",
             "플로어덕트"
@@ -4081,6 +4359,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.9
         },
         "category": "pipe",
+        "page": 98,
         "keywords": [
             "Junction Box 중형",
             "플로어덕트"
@@ -4095,6 +4374,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.8
         },
         "category": "pipe",
+        "page": 98,
         "keywords": [
             "Junction Box 소형",
             "플로어덕트"
@@ -4109,6 +4389,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.1
         },
         "category": "pipe",
+        "page": 98,
         "keywords": [
             "노출 Insert Cap",
             "플로어덕트"
@@ -4123,6 +4404,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "pipe",
+        "page": 99,
         "keywords": [
             "덕트 뚜껑 열기 - 100m 0.12",
             "금속덕트"
@@ -4137,6 +4419,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "pipe",
+        "page": 99,
         "keywords": [
             "덕트 뚜껑 닫기 - 100m 0.12",
             "금속덕트"
@@ -4151,6 +4434,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.16
         },
         "category": "pipe",
+        "page": 100,
         "keywords": [
             "금속소형 210㎟ 이하",
             "몰딩(Molding)"
@@ -4165,6 +4449,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.18
         },
         "category": "pipe",
+        "page": 100,
         "keywords": [
             "중형 595㎟ 이하",
             "몰딩(Molding)"
@@ -4179,6 +4464,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.22
         },
         "category": "pipe",
+        "page": 100,
         "keywords": [
             "몰딩대형 600㎟ 초과",
             "몰딩(Molding)"
@@ -4193,6 +4479,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.25
         },
         "category": "pipe",
+        "page": 100,
         "keywords": [
             "PVC몰딩 및 알루미늄몰딩(바닥)",
             "몰딩(Molding)"
@@ -4207,6 +4494,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.3
         },
         "category": "pipe",
+        "page": 100,
         "keywords": [
             "40㎜ × 40㎜ 이하",
             "레이스웨이"
@@ -4221,6 +4509,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.44
         },
         "category": "pipe",
+        "page": 100,
         "keywords": [
             "70㎜ × 40㎜ 이하",
             "레이스웨이"
@@ -4235,6 +4524,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.76
         },
         "category": "pipe",
+        "page": 100,
         "keywords": [
             "110㎜ × 50㎜ 이하",
             "레이스웨이"
@@ -4249,6 +4539,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.16
         },
         "category": "pipe",
+        "page": 101,
         "keywords": [
             "우드 Floor 0.16",
             "액세스플로어(Access Floor)"
@@ -4263,6 +4554,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.18
         },
         "category": "pipe",
+        "page": 101,
         "keywords": [
             "스틸 Floor 0.18",
             "액세스플로어(Access Floor)"
@@ -4277,6 +4569,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.19
         },
         "category": "pipe",
+        "page": 101,
         "keywords": [
             "우드스틸 Floor 0.19",
             "액세스플로어(Access Floor)"
@@ -4291,6 +4584,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.21
         },
         "category": "pipe",
+        "page": 101,
         "keywords": [
             "스틸콘크리트 Floor 0.21",
             "액세스플로어(Access Floor)"
@@ -4305,6 +4599,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.56
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "25 0.10 0.10 0.28 0.17",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4319,6 +4614,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.86
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "50 0.12 0.12 0.43 0.21",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4333,6 +4629,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.16
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "70 0.14 0.14 0.58 0.25",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4347,6 +4644,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.46
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "100 0.17 0.17 0.73 0.29",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4361,6 +4659,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.06
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "구경 150 0.21 0.21 1.03 0.37",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4375,6 +4674,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.66
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "(㎜ ) 200 0.25 0.25 1.33 0.45",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4389,6 +4689,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 3.26
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "250 0.30 0.30 1.63 0.53",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4403,6 +4704,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 3.86
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "300 0.34 0.34 1.93 0.60",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4417,6 +4719,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 4.46
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "350 0.38 0.38 2.23 0.68",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4431,6 +4734,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 5.06
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "400 0.43 0.43 2.53 0.76",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4445,6 +4749,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.72
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "25 0.12 0.12 0.36 0.22",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4459,6 +4764,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.1
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "50 0.15 0.15 0.55 0.27",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4473,6 +4779,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.49
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "70 0.18 0.18 0.75 0.32",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4487,6 +4794,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.87
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "100 0.21 0.21 0.93 0.37",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4501,6 +4809,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.64
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "구경 150 0.27 0.27 1.32 0.47",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4515,6 +4824,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 3.4
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "(㎜ ) 200 0.32 0.32 1.71 0.57",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4529,6 +4839,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 4.17
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "250 0.38 0.38 2.09 0.67",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4543,6 +4854,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 4.94
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "300 0.43 0.43 2.47 0.77",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4557,6 +4869,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 5.71
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "350 0.49 0.49 2.86 0.87",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4571,6 +4884,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 6.47
         },
         "category": "pipe",
+        "page": 104,
         "keywords": [
             "400 0.54 0.54 3.24 0.98",
             "배관용 구멍뚫기(코어드릴 사용기준)"
@@ -4585,6 +4899,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.46
         },
         "category": "cable",
+        "page": 113,
         "keywords": [
             "광섬유케이블포설 12코어 이하 100m",
             "구내 광섬유케이블"
@@ -4599,6 +4914,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.67
         },
         "category": "cable",
+        "page": 113,
         "keywords": [
             "24코어 이하 이하 100m",
             "구내 광섬유케이블"
@@ -4613,6 +4929,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.09
         },
         "category": "cable",
+        "page": 113,
         "keywords": [
             "광코어 공압포설 4코어 이하 100m",
             "구내 광섬유케이블"
@@ -4627,6 +4944,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.11
         },
         "category": "cable",
+        "page": 113,
         "keywords": [
             "(집합광섬유) 8코어 이하 이하 100m",
             "구내 광섬유케이블"
@@ -4641,6 +4959,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.12
         },
         "category": "cable",
+        "page": 113,
         "keywords": [
             "9코어 이상 이하 이하 100m",
             "구내 광섬유케이블"
@@ -4655,6 +4974,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.83
         },
         "category": "cable",
+        "page": 113,
         "keywords": [
             "광튜브 포설 7튜브 이하 100m",
             "구내 광섬유케이블"
@@ -4669,6 +4989,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.95
         },
         "category": "cable",
+        "page": 113,
         "keywords": [
             "8튜브 이상 7튜브 이하 100m",
             "구내 광섬유케이블"
@@ -4683,6 +5004,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.51
         },
         "category": "cable",
+        "page": 113,
         "keywords": [
             "슬림형내관포설 인력견인포설 100m",
             "구내 광섬유케이블"
@@ -4697,6 +5019,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.05
         },
         "category": "cable",
+        "page": 113,
         "keywords": [
             "성단 - 코어당",
             "구내 광섬유케이블"
@@ -4711,6 +5034,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.02
         },
         "category": "cable",
+        "page": 113,
         "keywords": [
             "시험 최종시험 코어당",
             "구내 광섬유케이블"
@@ -4725,6 +5049,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.02
         },
         "category": "cable",
+        "page": 113,
         "keywords": [
             "반사손실측정 최종시험 코어당",
             "구내 광섬유케이블"
@@ -4739,6 +5064,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.08
         },
         "category": "cable",
+        "page": 113,
         "keywords": [
             "광점퍼코드 - 10m",
             "구내 광섬유케이블"
@@ -4754,6 +5080,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.34
         },
         "category": "cable",
+        "page": 114,
         "keywords": [
             "지중포설 단면적 35㎟ 이하",
             "광전복합케이블"
@@ -4769,6 +5096,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.79
         },
         "category": "cable",
+        "page": 114,
         "keywords": [
             "단면적 50㎟ 이하",
             "광전복합케이블"
@@ -4784,6 +5112,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.61
         },
         "category": "cable",
+        "page": 114,
         "keywords": [
             "가공포설 단면적 35㎟ 이하",
             "광전복합케이블"
@@ -4800,6 +5129,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.52
         },
         "category": "cable",
+        "page": 117,
         "keywords": [
             "광섬유복합가공중성선 포설 95㎟",
             "광섬유복합가공중성선(OPNW, Optical Neutral Wire)"
@@ -4815,6 +5145,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.13
         },
         "category": "cable",
+        "page": 117,
         "keywords": [
             "관로구 방수장치 200㎜이하",
             "지중케이블 금속부속품"
@@ -4830,6 +5161,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.01
         },
         "category": "cable",
+        "page": 117,
         "keywords": [
             "케이블행거 -",
             "지중케이블 금속부속품"
@@ -4845,6 +5177,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.01
         },
         "category": "cable",
+        "page": 117,
         "keywords": [
             "케이블홀더 -",
             "지중케이블 금속부속품"
@@ -4860,6 +5193,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.12
         },
         "category": "cable",
+        "page": 117,
         "keywords": [
             "행거안전캡 -",
             "지중케이블 금속부속품"
@@ -4874,6 +5208,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.17
         },
         "category": "cable",
+        "page": 118,
         "keywords": [
             "5C 이하",
             "동축케이블 포설"
@@ -4888,6 +5223,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.22
         },
         "category": "cable",
+        "page": 118,
         "keywords": [
             "옥내 7C",
             "동축케이블 포설"
@@ -4902,6 +5238,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.32
         },
         "category": "cable",
+        "page": 118,
         "keywords": [
             "10C",
             "동축케이블 포설"
@@ -4917,6 +5254,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.41
         },
         "category": "cable",
+        "page": 118,
         "keywords": [
             "5C 이하",
             "동축케이블 포설"
@@ -4932,6 +5270,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.52
         },
         "category": "cable",
+        "page": 118,
         "keywords": [
             "7C",
             "동축케이블 포설"
@@ -4947,6 +5286,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.59
         },
         "category": "cable",
+        "page": 118,
         "keywords": [
             "지하 8C",
             "동축케이블 포설"
@@ -4962,6 +5302,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.74
         },
         "category": "cable",
+        "page": 118,
         "keywords": [
             "포설 10C",
             "동축케이블 포설"
@@ -4977,6 +5318,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.89
         },
         "category": "cable",
+        "page": 118,
         "keywords": [
             "12C",
             "동축케이블 포설"
@@ -4992,6 +5334,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.26
         },
         "category": "cable",
+        "page": 118,
         "keywords": [
             "17C",
             "동축케이블 포설"
@@ -5006,6 +5349,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.49
         },
         "category": "cable",
+        "page": 121,
         "keywords": [
             "RS-232C(10Pin)",
             "커넥터 및 Jack 접속"
@@ -5020,6 +5364,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.13
         },
         "category": "cable",
+        "page": 121,
         "keywords": [
             "Modular(RJ45-8Pin Plug)",
             "커넥터 및 Jack 접속"
@@ -5034,6 +5379,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.28
         },
         "category": "cable",
+        "page": 121,
         "keywords": [
             "Modular(Outlet)",
             "커넥터 및 Jack 접속"
@@ -5048,6 +5394,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.19
         },
         "category": "cable",
+        "page": 121,
         "keywords": [
             "TELCO(50Pin)",
             "커넥터 및 Jack 접속"
@@ -5062,6 +5409,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.84
         },
         "category": "cable",
+        "page": 121,
         "keywords": [
             "Token Ring용 Data Line",
             "커넥터 및 Jack 접속"
@@ -5076,6 +5424,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.18
         },
         "category": "cable",
+        "page": 123,
         "keywords": [
             "1 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
@@ -5090,6 +5439,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.25
         },
         "category": "cable",
+        "page": 123,
         "keywords": [
             "2 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
@@ -5104,6 +5454,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.36
         },
         "category": "cable",
+        "page": 123,
         "keywords": [
             "3 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
@@ -5118,6 +5469,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.49
         },
         "category": "cable",
+        "page": 123,
         "keywords": [
             "4 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
@@ -5132,6 +5484,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.55
         },
         "category": "cable",
+        "page": 123,
         "keywords": [
             "5 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
@@ -5146,6 +5499,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.63
         },
         "category": "cable",
+        "page": 123,
         "keywords": [
             "6 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
@@ -5160,6 +5514,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.68
         },
         "category": "cable",
+        "page": 123,
         "keywords": [
             "7 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
@@ -5174,6 +5529,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.73
         },
         "category": "cable",
+        "page": 123,
         "keywords": [
             "8 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
@@ -5188,6 +5544,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.84
         },
         "category": "cable",
+        "page": 123,
         "keywords": [
             "10 C 10m 0.09 0.10 0.11 0.13",
             "제어용 케이블"
@@ -5202,6 +5559,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.06
         },
         "category": "cable",
+        "page": 124,
         "keywords": [
             "Ø 1/2″",
             "커넥터"
@@ -5216,6 +5574,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.07
         },
         "category": "cable",
+        "page": 124,
         "keywords": [
             "Ø ⅞″",
             "커넥터"
@@ -5230,6 +5589,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.09
         },
         "category": "cable",
+        "page": 124,
         "keywords": [
             "Ø 1⅝″",
             "커넥터"
@@ -5244,6 +5604,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.11
         },
         "category": "cable",
+        "page": 124,
         "keywords": [
             "Ø 3⅛″",
             "커넥터"
@@ -5258,6 +5619,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.12
         },
         "category": "cable",
+        "page": 124,
         "keywords": [
             "Ø 4″",
             "커넥터"
@@ -5272,6 +5634,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.13
         },
         "category": "cable",
+        "page": 124,
         "keywords": [
             "Ø 5″",
             "커넥터"
@@ -5286,6 +5649,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.14
         },
         "category": "cable",
+        "page": 124,
         "keywords": [
             "Ø 6″",
             "커넥터"
@@ -5300,6 +5664,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.23
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "16㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5314,6 +5679,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.3
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "25㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5328,6 +5694,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.36
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "38㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5342,6 +5709,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.43
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "50㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5356,6 +5724,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.49
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "60㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5370,6 +5739,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.57
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "70㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5384,6 +5754,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.6
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "80㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5398,6 +5769,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.71
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "100㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5412,6 +5784,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.84
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "125㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5426,6 +5799,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.97
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "150㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5440,6 +5814,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 1.08
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "185㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5454,6 +5829,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 1.17
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "200㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5468,6 +5844,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 1.36
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "240㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5482,6 +5859,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 1.42
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "250㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5496,6 +5874,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 1.59
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "300㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5510,6 +5889,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 1.72
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "325㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5524,6 +5904,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 2.05
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "400㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5538,6 +5919,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 2.4
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "500㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5552,6 +5934,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 2.85
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "630㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5566,6 +5949,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 3.39
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "800㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5580,6 +5964,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 4.15
         },
         "category": "cable",
+        "page": 125,
         "keywords": [
             "1,000㎟이하 단심",
             "통신용 구내 전력케이블"
@@ -5595,6 +5980,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.48
         },
         "category": "cable",
+        "page": 128,
         "keywords": [
             "20p 0.44 0.59 0.69 0.92",
             "지중 및 가공케이블"
@@ -5610,6 +5996,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.58
         },
         "category": "cable",
+        "page": 128,
         "keywords": [
             "50p 0.59 0.78 0.84 1.12",
             "지중 및 가공케이블"
@@ -5625,6 +6012,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.17
         },
         "category": "cable",
+        "page": 128,
         "keywords": [
             "300p 0.67 0.89 1.21 1.61",
             "지중 및 가공케이블"
@@ -5640,6 +6028,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.69
         },
         "category": "cable",
+        "page": 128,
         "keywords": [
             "900p 0.99 1.32 2.22 2.96",
             "지중 및 가공케이블"
@@ -5655,6 +6044,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.21
         },
         "category": "cable",
+        "page": 129,
         "keywords": [
             "0.4㎜ 심선접속",
             "심선개별 보통접속"
@@ -5670,6 +6060,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.23
         },
         "category": "cable",
+        "page": 129,
         "keywords": [
             "0.5㎜ 심선접속",
             "심선개별 보통접속"
@@ -5685,6 +6076,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.25
         },
         "category": "cable",
+        "page": 129,
         "keywords": [
             "0.65㎜ 심선접속",
             "심선개별 보통접속"
@@ -5700,6 +6092,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.27
         },
         "category": "cable",
+        "page": 129,
         "keywords": [
             "0.9㎜ 심선접속",
             "심선개별 보통접속"
@@ -5715,6 +6108,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.09
         },
         "category": "cable",
+        "page": 129,
         "keywords": [
             "0.4㎜ 심선접속",
             "25회선 심선접속자(커넥터)에 의한 심선 보통접속"
@@ -5730,6 +6124,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.1
         },
         "category": "cable",
+        "page": 129,
         "keywords": [
             "0.5㎜ 심선접속",
             "25회선 심선접속자(커넥터)에 의한 심선 보통접속"
@@ -5745,6 +6140,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.11
         },
         "category": "cable",
+        "page": 129,
         "keywords": [
             "0.65㎜ 심선접속",
             "25회선 심선접속자(커넥터)에 의한 심선 보통접속"
@@ -5760,6 +6156,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.12
         },
         "category": "cable",
+        "page": 129,
         "keywords": [
             "0.9㎜ 심선접속",
             "25회선 심선접속자(커넥터)에 의한 심선 보통접속"
@@ -5775,6 +6172,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.22
         },
         "category": "cable",
+        "page": 130,
         "keywords": [
             "3P 이상",
             "소대시내케이블 보통접속"
@@ -5790,6 +6188,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.27
         },
         "category": "cable",
+        "page": 130,
         "keywords": [
             "10P 이상",
             "소대시내케이블 보통접속"
@@ -5805,6 +6204,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.29
         },
         "category": "cable",
+        "page": 130,
         "keywords": [
             "20P 이상",
             "소대시내케이블 보통접속"
@@ -5820,6 +6220,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.3
         },
         "category": "cable",
+        "page": 130,
         "keywords": [
             "25P 이상",
             "소대시내케이블 보통접속"
@@ -5835,6 +6236,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.31
         },
         "category": "cable",
+        "page": 130,
         "keywords": [
             "30P 이상",
             "소대시내케이블 보통접속"
@@ -5850,6 +6252,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.33
         },
         "category": "cable",
+        "page": 130,
         "keywords": [
             "50P ~ 100P 미만",
             "소대시내케이블 보통접속"
@@ -5865,6 +6268,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.49
         },
         "category": "cable",
+        "page": 130,
         "keywords": [
             "국내 - 국외 0.4㎜ ~ 0.5㎜",
             "1, 5회선 심선접속자(커넥터)에 의한 절체"
@@ -5880,6 +6284,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.65
         },
         "category": "cable",
+        "page": 130,
         "keywords": [
             "2 점간 0.65㎜ ~ 0.9㎜",
             "1, 5회선 심선접속자(커넥터)에 의한 절체"
@@ -5895,6 +6300,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.61
         },
         "category": "cable",
+        "page": 130,
         "keywords": [
             "국외 0.4㎜ ~ 0.5㎜",
             "1, 5회선 심선접속자(커넥터)에 의한 절체"
@@ -5909,6 +6315,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 100.0
         },
         "category": "cable",
+        "page": 130,
         "keywords": [
             "-",
             "1, 5회선 심선접속자(커넥터)에 의한 절체"
@@ -5924,6 +6331,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.0
         },
         "category": "cable",
+        "page": 131,
         "keywords": [
             "국내 - 국외 0.4㎜ ~ 0.5㎜",
             "25회선 심선접속자(커넥터)에 의한 절체"
@@ -5939,6 +6347,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.13
         },
         "category": "cable",
+        "page": 131,
         "keywords": [
             "2 점간 0.65㎜ ~ 0.9㎜",
             "25회선 심선접속자(커넥터)에 의한 절체"
@@ -5954,6 +6363,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.12
         },
         "category": "cable",
+        "page": 131,
         "keywords": [
             "국외 0.4㎜ ~ 0.5㎜",
             "25회선 심선접속자(커넥터)에 의한 절체"
@@ -5968,6 +6378,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.1
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 32 0.10",
             "열수축관에 의한 케이블 외피접속"
@@ -5982,6 +6393,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.11
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 43 0.11",
             "열수축관에 의한 케이블 외피접속"
@@ -5996,6 +6408,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.12
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 62 0.15",
             "열수축관에 의한 케이블 외피접속"
@@ -6010,6 +6423,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.13
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 72 0.17",
             "열수축관에 의한 케이블 외피접속"
@@ -6024,6 +6438,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.14
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 92, 93 0.19",
             "열수축관에 의한 케이블 외피접속"
@@ -6038,6 +6453,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.15
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 101 0.20",
             "열수축관에 의한 케이블 외피접속"
@@ -6052,6 +6468,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.16
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 122 0.21",
             "열수축관에 의한 케이블 외피접속"
@@ -6066,6 +6483,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.17
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 139 0.22",
             "열수축관에 의한 케이블 외피접속"
@@ -6080,6 +6498,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.18
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 150 0.24",
             "열수축관에 의한 케이블 외피접속"
@@ -6094,6 +6513,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.19
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 160 0.25",
             "열수축관에 의한 케이블 외피접속"
@@ -6108,6 +6528,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.2
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 180 0.27",
             "열수축관에 의한 케이블 외피접속"
@@ -6122,6 +6543,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.21
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 190 0.29",
             "열수축관에 의한 케이블 외피접속"
@@ -6136,6 +6558,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.22
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "열수축관 - 200 0.31",
             "열수축관에 의한 케이블 외피접속"
@@ -6151,6 +6574,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.06
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "PB - 25/15 - 100",
             "열수축관에 의한 격벽용 케이블 외피접속"
@@ -6166,6 +6590,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.07
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "PB - 50/20 - 150",
             "열수축관에 의한 격벽용 케이블 외피접속"
@@ -6181,6 +6606,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.09
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "PB - 70/50 - 200",
             "열수축관에 의한 격벽용 케이블 외피접속"
@@ -6196,6 +6622,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.1
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "PB - 100/70 - 250",
             "열수축관에 의한 격벽용 케이블 외피접속"
@@ -6210,6 +6637,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 102.0
         },
         "category": "cable",
+        "page": 132,
         "keywords": [
             "-",
             "열수축관에 의한 격벽용 케이블 외피접속"
@@ -6225,6 +6653,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.31
         },
         "category": "cable",
+        "page": 133,
         "keywords": [
             "80 - 500",
             "접속관(조립식, 케이블) 외피접속"
@@ -6240,6 +6669,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.36
         },
         "category": "cable",
+        "page": 133,
         "keywords": [
             "100 - 660",
             "접속관(조립식, 케이블) 외피접속"
@@ -6255,6 +6685,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.37
         },
         "category": "cable",
+        "page": 133,
         "keywords": [
             "120 - 660",
             "접속관(조립식, 케이블) 외피접속"
@@ -6270,6 +6701,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.37
         },
         "category": "cable",
+        "page": 133,
         "keywords": [
             "140 - 660",
             "접속관(조립식, 케이블) 외피접속"
@@ -6285,6 +6717,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.4
         },
         "category": "cable",
+        "page": 133,
         "keywords": [
             "160 - 700",
             "접속관(조립식, 케이블) 외피접속"
@@ -6300,6 +6733,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.42
         },
         "category": "cable",
+        "page": 133,
         "keywords": [
             "180 - 700",
             "접속관(조립식, 케이블) 외피접속"
@@ -6315,6 +6749,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.44
         },
         "category": "cable",
+        "page": 133,
         "keywords": [
             "200 - 700",
             "접속관(조립식, 케이블) 외피접속"
@@ -6330,6 +6765,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.46
         },
         "category": "cable",
+        "page": 133,
         "keywords": [
             "240 - 700",
             "접속관(조립식, 케이블) 외피접속"
@@ -6345,6 +6781,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.25
         },
         "category": "cable",
+        "page": 134,
         "keywords": [
             "0.4, 0.5mm",
             "케이블 국내성단"
@@ -6360,6 +6797,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.3
         },
         "category": "cable",
+        "page": 134,
         "keywords": [
             "0.65mm",
             "케이블 국내성단"
@@ -6375,6 +6813,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.33
         },
         "category": "cable",
+        "page": 134,
         "keywords": [
             "0.9mm",
             "케이블 국내성단"
@@ -6389,6 +6828,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.19
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "FR 케이블 2.5㎟×20C 이하 10m",
             "음향 및 영상케이블"
@@ -6403,6 +6843,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.19
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "멀티비디오 케이블 V5-5CFB 이하 10m",
             "음향 및 영상케이블"
@@ -6417,6 +6858,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.21
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "Triaxial 케이블 12.95㎜ 이하 10m",
             "음향 및 영상케이블"
@@ -6431,6 +6873,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.16
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "HDMI케이블 - 12.95㎜ 이하 10m",
             "음향 및 영상케이블"
@@ -6445,6 +6888,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.14
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "5.6㎟-4C 이하 12.95㎜ 이하 10m",
             "음향 및 영상케이블"
@@ -6459,6 +6903,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.18
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "스피커 케이블 14.2㎟-4C 이하 10m",
             "음향 및 영상케이블"
@@ -6473,6 +6918,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.23
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "케이블 멀티2.0㎟-16C 14.2㎟-4C 이하 10m",
             "음향 및 영상케이블"
@@ -6487,6 +6933,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.23
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "포설 1P 14.2㎟-4C 이하 10m",
             "음향 및 영상케이블"
@@ -6501,6 +6948,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.24
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "멀티실드 2P이하 14.2㎟-4C 이하 10m",
             "음향 및 영상케이블"
@@ -6515,6 +6963,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.28
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "멀티실드 4P이하 14.2㎟-4C 이하 10m",
             "음향 및 영상케이블"
@@ -6529,6 +6978,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.3
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "마이크 케이블 멀티실드 8P이하 10m",
             "음향 및 영상케이블"
@@ -6543,6 +6993,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.32
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "멀티실드 12P이하 멀티실드 8P이하 10m",
             "음향 및 영상케이블"
@@ -6557,6 +7008,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.38
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "멀티실드 24P이하 멀티실드 8P이하 10m",
             "음향 및 영상케이블"
@@ -6571,6 +7023,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.45
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "멀티실드 32P이하 멀티실드 8P이하 10m",
             "음향 및 영상케이블"
@@ -6585,6 +7038,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.61
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "Triaxial 커넥터 - 10개",
             "음향 및 영상케이블"
@@ -6599,6 +7053,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.17
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "커넥터 - - 10개",
             "음향 및 영상케이블"
@@ -6613,6 +7068,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.7
         },
         "category": "cable",
+        "page": 135,
         "keywords": [
             "D-SUB 커넥터 15Pin이하 10개",
             "음향 및 영상케이블"
@@ -6628,6 +7084,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.01
         },
         "category": "cable",
+        "page": 136,
         "keywords": [
             "접속 2.5㎟ 이하 코어",
             "FR 케이블 접속 및 성단"
@@ -6643,6 +7100,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.05
         },
         "category": "cable",
+        "page": 136,
         "keywords": [
             "레진 주입형 - 개",
             "FR 케이블 접속 및 성단"
@@ -6658,6 +7116,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.02
         },
         "category": "cable",
+        "page": 136,
         "keywords": [
             "성단 2.5㎟ 이하 코어",
             "FR 케이블 접속 및 성단"
@@ -6672,6 +7131,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.02
         },
         "category": "cable",
+        "page": 136,
         "keywords": [
             "중간접속 2.5㎟ 이하 코어",
             "FR 케이블 접속 및 성단"
@@ -6687,6 +7147,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.07
         },
         "category": "cable",
+        "page": 137,
         "keywords": [
             "FTTH 인입선 가설",
             "FTTH 인입선"
@@ -6701,6 +7162,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.37
         },
         "category": "cable",
+        "page": 137,
         "keywords": [
             "점퍼선(2개연)",
             "점퍼선 구성품"
@@ -6715,6 +7177,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.07
         },
         "category": "cable",
+        "page": 137,
         "keywords": [
             "CRT 이용 선번정리",
             "점퍼선 구성품"
@@ -6730,6 +7193,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.11
         },
         "category": "cable",
+        "page": 137,
         "keywords": [
             "옥외 꼬임케이블 인입선 가설",
             "옥외 꼬임케이블 인입선"
@@ -6744,6 +7208,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.51
         },
         "category": "cable",
+        "page": 139,
         "keywords": [
             "300P 이하 100m",
             "케이블 절단과 공드럼 해체"
@@ -6758,6 +7223,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.17
         },
         "category": "cable",
+        "page": 139,
         "keywords": [
             "300P 초과 ~ 1,200P 이하 100m",
             "케이블 절단과 공드럼 해체"
@@ -6772,6 +7238,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.46
         },
         "category": "cable",
+        "page": 139,
         "keywords": [
             "1,200P 초과 ~ 1,200P 이하 100m",
             "케이블 절단과 공드럼 해체"
@@ -6786,6 +7253,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.28
         },
         "category": "cable",
+        "page": 139,
         "keywords": [
             "광섬유케이블",
             "케이블 절단과 공드럼 해체"
@@ -6800,6 +7268,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.5
         },
         "category": "cable",
+        "page": 139,
         "keywords": [
             "공드럼 해체",
             "케이블 절단과 공드럼 해체"
@@ -6814,6 +7283,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.52
         },
         "category": "cable",
+        "page": 139,
         "keywords": [
             "인공",
             "케이블 보호"
@@ -6828,6 +7298,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.26
         },
         "category": "cable",
+        "page": 139,
         "keywords": [
             "수공",
             "케이블 보호"
@@ -6843,6 +7314,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.51
         },
         "category": "cable",
+        "page": 139,
         "keywords": [
             "표주세움",
             "통신케이블 보호용 부대공정"
@@ -6858,6 +7330,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "cable",
+        "page": 139,
         "keywords": [
             "횡평강및철물설치",
             "통신케이블 보호용 부대공정"
@@ -6873,6 +7346,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "cable",
+        "page": 140,
         "keywords": [
             "플렛트 폼 설치",
             "중화트랜스"
@@ -6888,6 +7362,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "cable",
+        "page": 140,
         "keywords": [
             "25P 유도중화트랜스 설치",
             "중화트랜스"
@@ -6903,6 +7378,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.62
         },
         "category": "cable",
+        "page": 140,
         "keywords": [
             "50P 유도중화트랜스 설치",
             "중화트랜스"
@@ -6918,6 +7394,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.89
         },
         "category": "cable",
+        "page": 140,
         "keywords": [
             "100P 유도중화트랜스 설치",
             "중화트랜스"
@@ -6933,6 +7410,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.29
         },
         "category": "cable",
+        "page": 140,
         "keywords": [
             "200P 유도중화트랜스 설치",
             "중화트랜스"
@@ -6948,6 +7426,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 4.16
         },
         "category": "cable",
+        "page": 140,
         "keywords": [
             "300P 유도중화트랜스 설치",
             "중화트랜스"
@@ -6963,6 +7442,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.16
         },
         "category": "cable",
+        "page": 140,
         "keywords": [
             "거리 50m당",
             "수목가지치기"
@@ -6977,6 +7457,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.36
         },
         "category": "cable",
+        "page": 141,
         "keywords": [
             "카드사용",
             "기기신설"
@@ -6991,6 +7472,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.09
         },
         "category": "cable",
+        "page": 141,
         "keywords": [
             "제어기",
             "개폐기 및 함체"
@@ -7005,6 +7487,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.06
         },
         "category": "cable",
+        "page": 141,
         "keywords": [
             "점검함",
             "개폐기 및 함체"
@@ -7019,6 +7502,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.16
         },
         "category": "cable",
+        "page": 141,
         "keywords": [
             "누전차단기",
             "개폐기 및 함체"
@@ -7033,6 +7517,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.08
         },
         "category": "cable",
+        "page": 141,
         "keywords": [
             "커버나이프 스위치",
             "개폐기 및 함체"
@@ -7047,6 +7532,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.63
         },
         "category": "cable",
+        "page": 142,
         "keywords": [
             "일반 A 형기",
             "부스"
@@ -7062,6 +7548,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.63
         },
         "category": "cable",
+        "page": 142,
         "keywords": [
             "일반 B 형실",
             "부스"
@@ -7077,6 +7564,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.88
         },
         "category": "cable",
+        "page": 142,
         "keywords": [
             "특수방음형 B 형실",
             "부스"
@@ -7092,6 +7580,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.04
         },
         "category": "cable",
+        "page": 142,
         "keywords": [
             "지체부자유형기",
             "부스"
@@ -7106,6 +7595,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.17
         },
         "category": "device",
+        "page": 159,
         "keywords": [
             "전원시험 및 조정",
             "다중화장치(MX-13)"
@@ -7120,6 +7610,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.09
         },
         "category": "device",
+        "page": 159,
         "keywords": [
             "NAS DS1 신호비트에러 및 지터시험",
             "다중화장치(MX-13)"
@@ -7134,6 +7625,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.09
         },
         "category": "device",
+        "page": 159,
         "keywords": [
             "CEPT DS1 신호비트에러 및 지터시험",
             "다중화장치(MX-13)"
@@ -7148,6 +7640,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.1
         },
         "category": "device",
+        "page": 159,
         "keywords": [
             "NAS DS1 신호의 루프백시험",
             "다중화장치(MX-13)"
@@ -7162,6 +7655,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.1
         },
         "category": "device",
+        "page": 159,
         "keywords": [
             "CEPT DS1 신호의 루프백시험",
             "다중화장치(MX-13)"
@@ -7176,6 +7670,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.11
         },
         "category": "device",
+        "page": 159,
         "keywords": [
             "절체기능시험",
             "다중화장치(MX-13)"
@@ -7190,6 +7685,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.27
         },
         "category": "device",
+        "page": 159,
         "keywords": [
             "성능감시 및 경보시험",
             "다중화장치(MX-13)"
@@ -7204,6 +7700,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.12
         },
         "category": "device",
+        "page": 159,
         "keywords": [
             "신호형태시험",
             "다중화장치(MX-13)"
@@ -7219,6 +7716,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.02
         },
         "category": "device",
+        "page": 161,
         "keywords": [
             "장치설정 장치거치 (셀프 설치 )",
             "디지털 클럭공급장치 (DOTS)"
@@ -7233,6 +7731,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.02
         },
         "category": "device",
+        "page": 161,
         "keywords": [
             "유니트실장",
             "디지털 클럭공급장치 (DOTS)"
@@ -7247,6 +7746,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.08
         },
         "category": "device",
+        "page": 161,
         "keywords": [
             "전원전압시험",
             "디지털 클럭공급장치 (DOTS)"
@@ -7261,6 +7761,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.08
         },
         "category": "device",
+        "page": 161,
         "keywords": [
             "설치시험 경보 및 접불시험",
             "디지털 클럭공급장치 (DOTS)"
@@ -7275,6 +7776,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.19
         },
         "category": "device",
+        "page": 161,
         "keywords": [
             "입력클럭 신호시험 회",
             "디지털 클럭공급장치 (DOTS)"
@@ -7289,6 +7791,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.03
         },
         "category": "device",
+        "page": 161,
         "keywords": [
             "출력클럭 신호시험 개",
             "디지털 클럭공급장치 (DOTS)"
@@ -7303,6 +7806,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 162,
         "keywords": [
             "립특별인부 1.00 1.00 1.00 1.00",
             "디지털 계통보호전송장치(PITR)"
@@ -7317,6 +7821,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.75
         },
         "category": "device",
+        "page": 162,
         "keywords": [
             "및 세트 조립 1.00 1.00",
             "디지털 계통보호전송장치(PITR)"
@@ -7331,6 +7836,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.75
         },
         "category": "device",
+        "page": 162,
         "keywords": [
             "Power Panel 조립 및 배선 1.00",
             "디지털 계통보호전송장치(PITR)"
@@ -7345,6 +7851,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.75
         },
         "category": "device",
+        "page": 162,
         "keywords": [
             "설특별인부 0.75 0.75 1.00 1.00",
             "디지털 계통보호전송장치(PITR)"
@@ -7359,6 +7866,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.5
         },
         "category": "device",
+        "page": 162,
         "keywords": [
             "치 내부배선 및 기타결선 1.00",
             "디지털 계통보호전송장치(PITR)"
@@ -7373,6 +7881,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 162,
         "keywords": [
             "o T1, E1 전송로 T/L 통신관련산업기사 1.00 1.00 1.00 1.00",
             "디지털 계통보호전송장치(PITR)"
@@ -7387,6 +7896,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 162,
         "keywords": [
             "o 광 전송로 전송로 T/L 통신관련산업기사 1.00 1.00 1.00 1.00",
             "디지털 계통보호전송장치(PITR)"
@@ -7401,6 +7911,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 162,
         "keywords": [
             "시 전원전압측정 T/L 통신관련산업기사 1.00 1.00 1.00 1.00",
             "디지털 계통보호전송장치(PITR)"
@@ -7415,6 +7926,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.5
         },
         "category": "device",
+        "page": 162,
         "keywords": [
             "직통전화시험 지연 시간측정 동작 1.00 1.00 1.00 1.00",
             "디지털 계통보호전송장치(PITR)"
@@ -7429,6 +7941,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 162,
         "keywords": [
             "o 장비설정 상태확인 T/L 통신관련산업기사 1.00 1.00 2.00 2.00",
             "디지털 계통보호전송장치(PITR)"
@@ -7443,6 +7956,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 162,
         "keywords": [
             "o 접지상태 및 케이블 결선상태 확인 1.00 2.00 2.00",
             "디지털 계통보호전송장치(PITR)"
@@ -7457,6 +7971,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 162,
         "keywords": [
             "o 대국간 송․수신상태 확인 T/L 통신관련산업기사 1.00 1.00 2.00 2.00",
             "디지털 계통보호전송장치(PITR)"
@@ -7471,6 +7986,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 1.0
         },
         "category": "device",
+        "page": 169,
         "keywords": [
             "조립설치 - 0.50 - 0.50",
             "VHF(100W 이하) 이동국 송․수신기"
@@ -7486,6 +8002,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "device",
+        "page": 169,
         "keywords": [
             "조립설치",
             "VHF 또는 UHF(100W 이하) 고정국 송․수신기"
@@ -7501,6 +8018,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.0
         },
         "category": "device",
+        "page": 169,
         "keywords": [
             "배선및결선",
             "VHF 또는 UHF(100W 이하) 고정국 송․수신기"
@@ -7515,6 +8033,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 4.0
         },
         "category": "device",
+        "page": 169,
         "keywords": [
             "국부점검 및 조정시험",
             "VHF 또는 UHF(100W 이하) 고정국 송․수신기"
@@ -7529,6 +8048,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 2.0
         },
         "category": "device",
+        "page": 169,
         "keywords": [
             "대국시험",
             "VHF 또는 UHF(100W 이하) 고정국 송․수신기"
@@ -7544,6 +8064,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.2
         },
         "category": "device",
+        "page": 170,
         "keywords": [
             "조립설치",
             "VHF 또는 UHF(110W 이상) 고정국 송․수신기"
@@ -7559,6 +8080,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.4
         },
         "category": "device",
+        "page": 170,
         "keywords": [
             "배선및결선",
             "VHF 또는 UHF(110W 이상) 고정국 송․수신기"
@@ -7573,6 +8095,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 10.0
         },
         "category": "device",
+        "page": 170,
         "keywords": [
             "국부점검 및 조정시험",
             "VHF 또는 UHF(110W 이상) 고정국 송․수신기"
@@ -7587,6 +8110,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 4.5
         },
         "category": "device",
+        "page": 170,
         "keywords": [
             "대국시험",
             "VHF 또는 UHF(110W 이상) 고정국 송․수신기"
@@ -7602,6 +8126,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.5
         },
         "category": "device",
+        "page": 170,
         "keywords": [
             "전원배선",
             "중․단파(500W 이하) 송․수신기"
@@ -7617,6 +8142,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.5
         },
         "category": "device",
+        "page": 170,
         "keywords": [
             "신호선배선",
             "중․단파(500W 이하) 송․수신기"
@@ -7632,6 +8158,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 2.0
         },
         "category": "device",
+        "page": 170,
         "keywords": [
             "급전선실내배선",
             "중․단파(500W 이하) 송․수신기"
@@ -7647,6 +8174,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.5
         },
         "category": "device",
+        "page": 170,
         "keywords": [
             "접지선매설 및 인입작업",
             "중․단파(500W 이하) 송․수신기"
@@ -7662,6 +8190,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 170,
         "keywords": [
             "시험",
             "중․단파(500W 이하) 송․수신기"
@@ -7677,6 +8206,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.4
         },
         "category": "device",
+        "page": 171,
         "keywords": [
             "포장해체 및 현품대조 대 -",
             "마이크로웨이브(Micro Wave) RF 송․수신기"
@@ -7692,6 +8222,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "device",
+        "page": 171,
         "keywords": [
             "B a y 건립 -",
             "마이크로웨이브(Micro Wave) RF 송․수신기"
@@ -7706,6 +8237,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.6
         },
         "category": "device",
+        "page": 171,
         "keywords": [
             "송․수신기 조립 y 건립 -",
             "마이크로웨이브(Micro Wave) RF 송․수신기"
@@ -7721,6 +8253,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.25
         },
         "category": "device",
+        "page": 171,
         "keywords": [
             "내부결선 및 기타결선 건립 -",
             "마이크로웨이브(Micro Wave) RF 송․수신기"
@@ -7736,6 +8269,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "device",
+        "page": 171,
         "keywords": [
             "B a y 건립",
             "마이크로웨이브(Micro Wave) Power Amplifier"
@@ -7750,6 +8284,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 5.0
         },
         "category": "device",
+        "page": 171,
         "keywords": [
             "S e t 조립",
             "마이크로웨이브(Micro Wave) Power Amplifier"
@@ -7764,6 +8299,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.75
         },
         "category": "device",
+        "page": 171,
         "keywords": [
             "내부결선 및 기타결선",
             "마이크로웨이브(Micro Wave) Power Amplifier"
@@ -7779,6 +8315,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "device",
+        "page": 171,
         "keywords": [
             "T. W. T 조립설치",
             "마이크로웨이브(Micro Wave) Power Amplifier"
@@ -7793,6 +8330,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 6.31
         },
         "category": "device",
+        "page": 171,
         "keywords": [
             "국부조작시험 및각 판넬점검",
             "마이크로웨이브(Micro Wave) Power Amplifier"
@@ -7810,6 +8348,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 300.0
         },
         "category": "device",
+        "page": 172,
         "keywords": [
             "출력 5 10 50 100 300 0.5 5 10 50 100 300 0.5 5 10 50 100 300 0.5 5",
             "중․단파 송신기"
@@ -7826,6 +8365,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.0
         },
         "category": "device",
+        "page": 172,
         "keywords": [
             "설 공중선 절체장치 1.0 1.0 1.0 1.5 2.0 - 1.0 1.0 1.0 1.5 2.0 1.0 1.0 1.02.0 3.0 3.0 - -",
             "중․단파 송신기"
@@ -7843,6 +8383,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 30.0
         },
         "category": "device",
+        "page": 173,
         "keywords": [
             "5 10 30 500 1.5 5 10 30 500 1.5 5 10 30 500",
             "VHF-TV 송신기"
@@ -7858,6 +8399,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 10.0
         },
         "category": "device",
+        "page": 175,
         "keywords": [
             "출력 5 10 500 1.5 5 10 500 1.5 5 10 500 1.5",
             "FM 송신기"
@@ -7873,6 +8415,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.0
         },
         "category": "device",
+        "page": 175,
         "keywords": [
             "기포장해체 - - - - - - 0.3 0.5 1.0 1.0 1.0 1.0",
             "FM 송신기"
@@ -7888,6 +8431,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 6.0
         },
         "category": "device",
+        "page": 175,
         "keywords": [
             "작 기기반입 및 장치 - - 0.5 0.5 1.0 1.0 1.0 2.0 3.0 4.5 1.0 2.0",
             "FM 송신기"
@@ -7903,6 +8447,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "device",
+        "page": 175,
         "keywords": [
             "조전원부 0.5 0.5 0.5 0.5 1.0 1.0 1.5 2.5 4.0 5.0 - -",
             "FM 송신기"
@@ -7918,6 +8463,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "device",
+        "page": 175,
         "keywords": [
             "립제어부 1.0 1.0 0.5 1.0 2.0 2.0 1.0 1.0 3.0 4.0 - -",
             "FM 송신기"
@@ -7933,6 +8479,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.0
         },
         "category": "device",
+        "page": 175,
         "keywords": [
             "치출력단 1.0 2.0 1.0 2.0 2.0 4.0 1.0 2.0 6.0 8.0 - -",
             "FM 송신기"
@@ -7947,6 +8494,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 145.0
         },
         "category": "device",
+        "page": 175,
         "keywords": [
             "-",
             "FM 송신기"
@@ -7963,6 +8511,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.5
         },
         "category": "device",
+        "page": 177,
         "keywords": [
             "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
             "VHF-TV 중계기(Translator)"
@@ -7979,6 +8528,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.5
         },
         "category": "device",
+        "page": 177,
         "keywords": [
             "작업 기기반입 및 장치 1.0 0.5 0.5 0.5 - - - 1.0 1.5 0.5",
             "VHF-TV 중계기(Translator)"
@@ -7995,6 +8545,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.5
         },
         "category": "device",
+        "page": 178,
         "keywords": [
             "포장해체 - - - - - 0.3 0.5 1.0 1.0 0.5",
             "UHF-TV 디지털 중계기"
@@ -8011,6 +8562,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.5
         },
         "category": "device",
+        "page": 178,
         "keywords": [
             "작업 기기반입 및 장치 1.0 0.5 0.5 0.5 - - - 1.0 1.5 0.5",
             "UHF-TV 디지털 중계기"
@@ -8025,6 +8577,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.37
         },
         "category": "device",
+        "page": 179,
         "keywords": [
             "송신 기 - - 0.54",
             "DTV 소출력 중계기"
@@ -8039,6 +8592,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.34
         },
         "category": "device",
+        "page": 179,
         "keywords": [
             "중계기 대 0.58 0.41 -",
             "DTV 소출력 중계기"
@@ -8053,6 +8607,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.27
         },
         "category": "device",
+        "page": 179,
         "keywords": [
             "무선스피커 대 0.16 0.35 -",
             "라디오재방송설비"
@@ -8067,6 +8622,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.26
         },
         "category": "device",
+        "page": 179,
         "keywords": [
             "AM 매칭박스 0.16 0.35 -",
             "라디오재방송설비"
@@ -8081,6 +8637,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.61
         },
         "category": "device",
+        "page": 179,
         "keywords": [
             "저전압증폭기 대 0.50 1.06 -",
             "라디오재방송설비"
@@ -8095,6 +8652,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.25
         },
         "category": "device",
+        "page": 179,
         "keywords": [
             "양방향증폭기 대 0.50 1.06 -",
             "라디오재방송설비"
@@ -8109,6 +8667,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.18
         },
         "category": "device",
+        "page": 179,
         "keywords": [
             "전원분배장치 대 0.50 1.06 -",
             "라디오재방송설비"
@@ -8124,6 +8683,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 180,
         "keywords": [
             "FM 중계기",
             "FM 및 DMB 중계기"
@@ -8139,6 +8699,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 180,
         "keywords": [
             "DMB 중계기",
             "FM 및 DMB 중계기"
@@ -8153,6 +8714,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 181,
         "keywords": [
             "벽면",
             "소출력 FM/T-DMB 무선중계기(10mV/m@10m이하)"
@@ -8168,6 +8730,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.21
         },
         "category": "device",
+        "page": 181,
         "keywords": [
             "천정",
             "소출력 FM/T-DMB 무선중계기(10mV/m@10m이하)"
@@ -8182,6 +8745,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.19
         },
         "category": "device",
+        "page": 181,
         "keywords": [
             "시험",
             "소출력 FM/T-DMB 무선중계기(10mV/m@10m이하)"
@@ -8197,6 +8761,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.22
         },
         "category": "device",
+        "page": 181,
         "keywords": [
             "지하층 설치",
             "소출력 FM/T-DMB 무선중계기(10mV/m@10m이하)"
@@ -8211,6 +8776,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.07
         },
         "category": "device",
+        "page": 181,
         "keywords": [
             "무선기기 접속단자 개 -",
             "무선통신보조설비"
@@ -8226,6 +8792,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 6.0
         },
         "category": "device",
+        "page": 182,
         "keywords": [
             "1. 조립인양설치 2.00 4.00",
             "철탑설치"
@@ -8240,6 +8807,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.0
         },
         "category": "device",
+        "page": 182,
         "keywords": [
             "2. 방향조정 2.00 2.00",
             "철탑설치"
@@ -8255,6 +8823,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 6.3
         },
         "category": "device",
+        "page": 182,
         "keywords": [
             "1. 조립인양설치 4.00 8.00",
             "철탑설치"
@@ -8269,6 +8838,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.0
         },
         "category": "device",
+        "page": 182,
         "keywords": [
             "2. 방향조정 2.00 5.00",
             "철탑설치"
@@ -8284,6 +8854,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 10.0
         },
         "category": "device",
+        "page": 182,
         "keywords": [
             "1. 조립인양설치 5.00 8.00",
             "철탑설치"
@@ -8299,6 +8870,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 13.0
         },
         "category": "device",
+        "page": 182,
         "keywords": [
             "1. 조립인양설치 5.00 10.70",
             "철탑설치"
@@ -8313,6 +8885,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.0
         },
         "category": "device",
+        "page": 182,
         "keywords": [
             "2. 방향조정 3.00 6.00",
             "철탑설치"
@@ -8328,6 +8901,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 17.1
         },
         "category": "device",
+        "page": 182,
         "keywords": [
             "1. 조립인양설치 7.25 15.10",
             "철탑설치"
@@ -8342,6 +8916,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.0
         },
         "category": "device",
+        "page": 182,
         "keywords": [
             "2. 방향조정 3.00 8.00",
             "철탑설치"
@@ -8356,6 +8931,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 152.0
         },
         "category": "device",
+        "page": 182,
         "keywords": [
             "-",
             "철탑설치"
@@ -8371,6 +8947,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.26
         },
         "category": "device",
+        "page": 183,
         "keywords": [
             "Ø1.2m이하 1. 인양조립설치 -",
             "건물설치"
@@ -8386,6 +8963,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.58
         },
         "category": "device",
+        "page": 183,
         "keywords": [
             "Ø2.4m이하 1. 인양조립설치 -",
             "건물설치"
@@ -8401,6 +8979,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.1
         },
         "category": "device",
+        "page": 183,
         "keywords": [
             "Ø3.2m이하 1. 인양조립설치 -",
             "건물설치"
@@ -8416,6 +8995,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 2.5
         },
         "category": "device",
+        "page": 183,
         "keywords": [
             "1. 조립인양설치 1.00 3.00",
             "VHF, 옴니, 코너(Corner) 안테나"
@@ -8430,6 +9010,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 6.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "1. ANT Element : 제작 2.00 - - 8.00 - 5.60",
             "Curtain 안테나"
@@ -8444,6 +9025,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 11.5
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "설치 5.00 - 5.00 - 10.00 -",
             "Curtain 안테나"
@@ -8458,6 +9040,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 2.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "제작 - 0.60 - 4.00 - 1.80",
             "Curtain 안테나"
@@ -8472,6 +9055,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 3.2
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "설치 0.30 - - - 1.60 -",
             "Curtain 안테나"
@@ -8486,6 +9070,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 2.5
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "제작 0.80 1.20 - - - 2.10",
             "Curtain 안테나"
@@ -8500,6 +9085,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 6.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "설치 - - 4.50 - 3.20 -",
             "Curtain 안테나"
@@ -8514,6 +9100,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 8.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "설치 0.50 1.50 - - 4.00 -",
             "Curtain 안테나"
@@ -8528,6 +9115,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 6.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "제작 - 1.00 - 6.00 - -",
             "Curtain 안테나"
@@ -8542,6 +9130,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 8.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "설치 - 0.50 - - 6.00 -",
             "Curtain 안테나"
@@ -8556,6 +9145,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 4.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "Network 제작 1.50 - - 8.00 - 4.00",
             "Curtain 안테나"
@@ -8570,6 +9160,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 15.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "설치 4.00 - - - 10.00 -",
             "Curtain 안테나"
@@ -8584,6 +9175,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 10.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "8. Slew Switch : 제작 - 8.00 2.00 2.00 - -",
             "Curtain 안테나"
@@ -8598,6 +9190,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 12.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "설치 1.60 6.00 - 3.00 - -",
             "Curtain 안테나"
@@ -8612,6 +9205,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 4.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "(10선-12선) 제작 - 3.00 - 6.00 - -",
             "Curtain 안테나"
@@ -8626,6 +9220,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 10.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "설치 - 2.00 - - 4.00 -",
             "Curtain 안테나"
@@ -8640,6 +9235,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 14.0
         },
         "category": "device",
+        "page": 184,
         "keywords": [
             "10. 임피던스측정 및 정합 7.00 14.00 14.00 - - -",
             "Curtain 안테나"
@@ -8655,6 +9251,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.08
         },
         "category": "device",
+        "page": 185,
         "keywords": [
             "1. 포장해체점검 -",
             "LP 안테나"
@@ -8670,6 +9267,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 10.8
         },
         "category": "device",
+        "page": 185,
         "keywords": [
             "가. Boom 조립 0.50",
             "LP 안테나"
@@ -8686,6 +9284,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 18.0
         },
         "category": "device",
+        "page": 185,
         "keywords": [
             "나. Boom 인양설치 1.00",
             "LP 안테나"
@@ -8700,6 +9299,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 1.0
         },
         "category": "device",
+        "page": 185,
         "keywords": [
             "다. 소자조립 5.02",
             "LP 안테나"
@@ -8716,6 +9316,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 18.0
         },
         "category": "device",
+        "page": 185,
         "keywords": [
             "라. 소자인양 설치 3.10",
             "LP 안테나"
@@ -8731,6 +9332,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 8.0
         },
         "category": "device",
+        "page": 185,
         "keywords": [
             "마. 배선및결선 -",
             "LP 안테나"
@@ -8745,6 +9347,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 7.5
         },
         "category": "device",
+        "page": 185,
         "keywords": [
             "3. 특성시험 및 조정 4.00",
             "LP 안테나"
@@ -8759,6 +9362,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 187,
         "keywords": [
             "10W-100W",
             "의사공중선"
@@ -8774,6 +9378,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 187,
         "keywords": [
             "1kW 이하",
             "의사공중선"
@@ -8790,6 +9395,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 187,
         "keywords": [
             "5kW 이하",
             "의사공중선"
@@ -8806,6 +9412,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 187,
         "keywords": [
             "10kW 이하",
             "의사공중선"
@@ -8823,6 +9430,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "device",
+        "page": 187,
         "keywords": [
             "50kW 이하",
             "의사공중선"
@@ -8840,6 +9448,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 3.0
         },
         "category": "device",
+        "page": 187,
         "keywords": [
             "100kW 이하",
             "의사공중선"
@@ -8857,6 +9466,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 5.0
         },
         "category": "device",
+        "page": 187,
         "keywords": [
             "300kW 이하",
             "의사공중선"
@@ -8874,6 +9484,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 9.0
         },
         "category": "device",
+        "page": 187,
         "keywords": [
             "500kW 이하",
             "의사공중선"
@@ -8891,6 +9502,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 18.0
         },
         "category": "device",
+        "page": 187,
         "keywords": [
             "1,000kW 이하",
             "의사공중선"
@@ -8906,6 +9518,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.8
         },
         "category": "device",
+        "page": 187,
         "keywords": [
             "포장해체 및 점검",
             "TV Low Channel"
@@ -8923,6 +9536,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 18.0
         },
         "category": "device",
+        "page": 187,
         "keywords": [
             "조립설치",
             "TV Low Channel"
@@ -8938,6 +9552,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 7.5
         },
         "category": "device",
+        "page": 187,
         "keywords": [
             "특성측정 및 조정",
             "TV Low Channel"
@@ -8953,6 +9568,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.6
         },
         "category": "device",
+        "page": 188,
         "keywords": [
             "포장해체 및 점검",
             "TV High Channel"
@@ -8970,6 +9586,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 14.0
         },
         "category": "device",
+        "page": 188,
         "keywords": [
             "조립설치",
             "TV High Channel"
@@ -8985,6 +9602,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 6.0
         },
         "category": "device",
+        "page": 188,
         "keywords": [
             "특성측정 및 조정",
             "TV High Channel"
@@ -9000,6 +9618,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.4
         },
         "category": "device",
+        "page": 188,
         "keywords": [
             "포장해체 및 점검",
             "TV UHF Channel"
@@ -9017,6 +9636,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 5.0
         },
         "category": "device",
+        "page": 188,
         "keywords": [
             "조립설치",
             "TV UHF Channel"
@@ -9032,6 +9652,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 6.0
         },
         "category": "device",
+        "page": 188,
         "keywords": [
             "특성측정 및 조정",
             "TV UHF Channel"
@@ -9047,6 +9668,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.6
         },
         "category": "device",
+        "page": 188,
         "keywords": [
             "포장해체 및 점검",
             "FM(88-108MHz)"
@@ -9064,6 +9686,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 11.0
         },
         "category": "device",
+        "page": 188,
         "keywords": [
             "조립설치",
             "FM(88-108MHz)"
@@ -9079,6 +9702,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 4.5
         },
         "category": "device",
+        "page": 188,
         "keywords": [
             "특성측정 및 조정",
             "FM(88-108MHz)"
@@ -9093,6 +9717,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.33
         },
         "category": "device",
+        "page": 189,
         "keywords": [
             "지상파 TV 및 FM 수신 안테나 세트",
             "방송 공동수신 안테나"
@@ -9107,6 +9732,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.1
         },
         "category": "device",
+        "page": 189,
         "keywords": [
             "라디오 방송 폴(Pole) 기",
             "방송 공동수신 안테나"
@@ -9121,6 +9747,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.53
         },
         "category": "device",
+        "page": 189,
         "keywords": [
             "지름 1.2m 이하 기",
             "방송 공동수신 안테나"
@@ -9135,6 +9762,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.6
         },
         "category": "device",
+        "page": 189,
         "keywords": [
             "지름 1.8m 이하 기",
             "방송 공동수신 안테나"
@@ -9150,6 +9778,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.1
         },
         "category": "device",
+        "page": 189,
         "keywords": [
             "안테나설치",
             "디지털 위성방송 개별수신방식(DTH)"
@@ -9164,6 +9793,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.1
         },
         "category": "device",
+        "page": 189,
         "keywords": [
             "셋톱박스 설치",
             "디지털 위성방송 개별수신방식(DTH)"
@@ -9178,6 +9808,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.1
         },
         "category": "device",
+        "page": 189,
         "keywords": [
             "시험",
             "디지털 위성방송 개별수신방식(DTH)"
@@ -9193,6 +9824,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.06
         },
         "category": "device",
+        "page": 190,
         "keywords": [
             "실내",
             "DTV방송 단독수신설비"
@@ -9208,6 +9840,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.17
         },
         "category": "device",
+        "page": 190,
         "keywords": [
             "실외",
             "DTV방송 단독수신설비"
@@ -9222,6 +9855,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.1
         },
         "category": "device",
+        "page": 190,
         "keywords": [
             "안테나폴 -",
             "DTV방송 단독수신설비"
@@ -9237,6 +9871,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 1.2
         },
         "category": "device",
+        "page": 191,
         "keywords": [
             "철탑자재 분류 톤",
             "조립식 강관주형 철탑"
@@ -9252,6 +9887,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 2.6
         },
         "category": "device",
+        "page": 191,
         "keywords": [
             "건립 분류 톤",
             "조립식 강관주형 철탑"
@@ -9266,6 +9902,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 2.4
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "2. 철탑조립 특별인부 0.90 1.30 1.80",
             "중파방송용 삼각지선식 철탑"
@@ -9280,6 +9917,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.19
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "철공 0.07 0.10 0.13",
             "중파방송용 삼각지선식 철탑"
@@ -9294,6 +9932,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 5.61
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "무선안테나공 2.16 3.02 3.88",
             "중파방송용 삼각지선식 철탑"
@@ -9308,6 +9947,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 7.8
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "3. 철탑건립 통신외선공 3.00 4.20 5.40",
             "중파방송용 삼각지선식 철탑"
@@ -9322,6 +9962,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 12.22
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "보통인부 4.70 6.50 8.46",
             "중파방송용 삼각지선식 철탑"
@@ -9336,6 +9977,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 6.76
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "4. 3방향 지지선설치 통신외선공 2.20 3.77 4.90",
             "중파방송용 삼각지선식 철탑"
@@ -9350,6 +9992,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 3.12
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "(1개소당 길이 보통인부 1.20 1.74 2.28",
             "중파방송용 삼각지선식 철탑"
@@ -9364,6 +10007,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 4.1
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "5. 항공장애표시등 송전전공 4.10 4.10 4.10",
             "중파방송용 삼각지선식 철탑"
@@ -9378,6 +10022,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 1.1
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "500W 1EA, 보통인부 1.10 1.10 1.10",
             "중파방송용 삼각지선식 철탑"
@@ -9392,6 +10037,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 6.0
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "6. 위치 및 지적산업기사 4.00 4.00 5.00",
             "중파방송용 삼각지선식 철탑"
@@ -9406,6 +10052,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 11.0
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "수직측량 지적기능사 8.00 8.00 9.00",
             "중파방송용 삼각지선식 철탑"
@@ -9420,6 +10067,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 3.0
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "7. 좌애자설치 무선안테나공 1.20 1.50 2.00",
             "중파방송용 삼각지선식 철탑"
@@ -9434,6 +10082,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 1.5
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "보통인부 0.60 0.70 1.00",
             "중파방송용 삼각지선식 철탑"
@@ -9448,6 +10097,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 2.6
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "8. 피뢰침 설치 송전전공 2.60 2.60 2.60",
             "중파방송용 삼각지선식 철탑"
@@ -9462,6 +10112,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 1.4
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "9. 링트랜스설치 통신외선공 1.40 1.40 1.40",
             "중파방송용 삼각지선식 철탑"
@@ -9476,6 +10127,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.8
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "보통인부 0.80 0.80 0.80",
             "중파방송용 삼각지선식 철탑"
@@ -9490,6 +10142,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 1.3
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "10. 철탑도장 무선안테나공 0.43 0.64 0.85",
             "중파방송용 삼각지선식 철탑"
@@ -9504,6 +10157,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 1.3
         },
         "category": "device",
+        "page": 192,
         "keywords": [
             "도장공 0.43 0.64 0.85",
             "중파방송용 삼각지선식 철탑"
@@ -9518,6 +10172,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.4
         },
         "category": "device",
+        "page": 194,
         "keywords": [
             "1.포장해체 및 점검 개(BOX) - 0.40",
             "Rigid Feeder"
@@ -9532,6 +10187,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 12.0
         },
         "category": "device",
+        "page": 194,
         "keywords": [
             "2.인양설치 10m 6.50 10.17",
             "Rigid Feeder"
@@ -9546,6 +10202,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 4.2
         },
         "category": "device",
+        "page": 194,
         "keywords": [
             "4.최종특성측정 및 점검 식 - 5.40",
             "Rigid Feeder"
@@ -9561,6 +10218,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "device",
+        "page": 196,
         "keywords": [
             "6선식 1. 포장해체 및 재단",
             "중파 급전선"
@@ -9577,6 +10235,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 3.4
         },
         "category": "device",
+        "page": 196,
         "keywords": [
             "2. 인양 설치",
             "중파 급전선"
@@ -9592,6 +10251,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 4.0
         },
         "category": "device",
+        "page": 196,
         "keywords": [
             "3. 임피던스 측정",
             "중파 급전선"
@@ -9607,6 +10267,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.6
         },
         "category": "device",
+        "page": 196,
         "keywords": [
             "12선식 1. 포장해체 및 재단",
             "중파 급전선"
@@ -9622,6 +10283,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.4
         },
         "category": "device",
+        "page": 196,
         "keywords": [
             "24선식 1. 포장해체 및 재단",
             "중파 급전선"
@@ -9637,6 +10299,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.5
         },
         "category": "device",
+        "page": 197,
         "keywords": [
             "2선식 1. 포장해체 및 재단",
             "단파 급전선"
@@ -9653,6 +10316,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 3.0
         },
         "category": "device",
+        "page": 197,
         "keywords": [
             "2. 인양 설치",
             "단파 급전선"
@@ -9668,6 +10332,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 5.0
         },
         "category": "device",
+        "page": 197,
         "keywords": [
             "3. 임피던스 측정",
             "단파 급전선"
@@ -9683,6 +10348,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.5
         },
         "category": "device",
+        "page": 197,
         "keywords": [
             "4선식 1. 포장해체 및 재단",
             "단파 급전선"
@@ -9698,6 +10364,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.5
         },
         "category": "device",
+        "page": 197,
         "keywords": [
             "Caga 1. 포장해체 및 재단",
             "단파 급전선"
@@ -9714,6 +10381,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 3.5
         },
         "category": "device",
+        "page": 197,
         "keywords": [
             "Type 2. 인양 설치",
             "단파 급전선"
@@ -9729,6 +10397,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.0
         },
         "category": "device",
+        "page": 199,
         "keywords": [
             "설치",
             "GCE용 3kW Rectifier"
@@ -9744,6 +10413,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.2
         },
         "category": "device",
+        "page": 199,
         "keywords": [
             "배선",
             "GCE용 3kW Rectifier"
@@ -9758,6 +10428,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 4.0
         },
         "category": "device",
+        "page": 199,
         "keywords": [
             "시운전",
             "GCE용 3kW Rectifier"
@@ -9772,6 +10443,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.48
         },
         "category": "device",
+        "page": 207,
         "keywords": [
             "RU 안테나 일체형 대",
             "5G 중계기"
@@ -9786,6 +10458,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.38
         },
         "category": "device",
+        "page": 207,
         "keywords": [
             "(Radio Unit) 안테나 분리형 대",
             "5G 중계기"
@@ -9801,6 +10474,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 10.0
         },
         "category": "device",
+        "page": 208,
         "keywords": [
             "1. 조립설치 5.00 8.00",
             "패시브 리플렉터(반사판, Passive Reflector)(30㎡기준)"
@@ -9815,6 +10489,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 2.0
         },
         "category": "device",
+        "page": 209,
         "keywords": [
             "조립및설치",
             "디하드레이터(Dehydrator)"
@@ -9830,6 +10505,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 2.0
         },
         "category": "device",
+        "page": 209,
         "keywords": [
             "조정 및 시운전",
             "디하드레이터(Dehydrator)"
@@ -9845,6 +10521,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "device",
+        "page": 209,
         "keywords": [
             "S e t 설치",
             "브랜칭 필터(Branching Filter)"
@@ -9859,6 +10536,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 1.93
         },
         "category": "device",
+        "page": 209,
         "keywords": [
             "특성시험",
             "브랜칭 필터(Branching Filter)"
@@ -9874,6 +10552,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "device",
+        "page": 209,
         "keywords": [
             "B a y 건립",
             "콤바이너(Combiner)"
@@ -9888,6 +10567,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 3.75
         },
         "category": "device",
+        "page": 209,
         "keywords": [
             "S e t 조립",
             "콤바이너(Combiner)"
@@ -9904,6 +10584,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.75
         },
         "category": "device",
+        "page": 209,
         "keywords": [
             "내부결선 및 기타결선",
             "콤바이너(Combiner)"
@@ -9918,6 +10599,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 19.56
         },
         "category": "device",
+        "page": 209,
         "keywords": [
             "국부시험점검",
             "콤바이너(Combiner)"
@@ -9932,6 +10614,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 24.83
         },
         "category": "device",
+        "page": 209,
         "keywords": [
             "대국종합시험",
             "콤바이너(Combiner)"
@@ -9946,6 +10629,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.75
         },
         "category": "device",
+        "page": 209,
         "keywords": [
             "보통인부 0.75",
             "결합여파기(Coupling Filter) 및 특수보조여파기(Auxiliary Filter)"
@@ -9960,6 +10644,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.5
         },
         "category": "device",
+        "page": 209,
         "keywords": [
             "결선 통신설비공 0.25",
             "결합여파기(Coupling Filter) 및 특수보조여파기(Auxiliary Filter)"
@@ -9974,6 +10659,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.33
         },
         "category": "device",
+        "page": 209,
         "keywords": [
             "주파수특성시험 통신관련산업기사 1.30",
             "결합여파기(Coupling Filter) 및 특수보조여파기(Auxiliary Filter)"
@@ -9988,6 +10674,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.75
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Emergency Control Unit 대",
             "비상방송 설비"
@@ -10002,6 +10689,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.64
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Emergency Switch Unit 대",
             "비상방송 설비"
@@ -10016,6 +10704,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.64
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Matrix Logic Unit 대",
             "비상방송 설비"
@@ -10030,6 +10719,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.71
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Program Exchange Unit 대",
             "비상방송 설비"
@@ -10044,6 +10734,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.51
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Speaker Selector Unit 대",
             "비상방송 설비"
@@ -10058,6 +10749,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.57
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Relay Group Unit 대",
             "비상방송 설비"
@@ -10072,6 +10764,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.39
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Power Distributor Unit 대",
             "비상방송 설비"
@@ -10086,6 +10779,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.58
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Terminal Board Unit 대",
             "비상방송 설비"
@@ -10100,6 +10794,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.32
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Program Manual Controller 대",
             "비상방송 설비"
@@ -10114,6 +10809,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.26
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Power AMP Controller 대",
             "비상방송 설비"
@@ -10128,6 +10824,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.77
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Emergency Combination System 대",
             "비상방송 설비"
@@ -10142,6 +10839,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.68
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Emergency Router System 대",
             "비상방송 설비"
@@ -10156,6 +10854,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.26
         },
         "category": "device",
+        "page": 216,
         "keywords": [
             "Emergency Interface System 대",
             "비상방송 설비"
@@ -10170,6 +10869,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.3
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Power AMP Monitor 대",
             "BGM방송 설비"
@@ -10184,6 +10884,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.21
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "AM/FM Tuner Monitor 대",
             "BGM방송 설비"
@@ -10198,6 +10899,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.37
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Cassette Deck Monitor 대",
             "BGM방송 설비"
@@ -10212,6 +10914,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.32
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Chime/Siren Deck Monitor 대",
             "BGM방송 설비"
@@ -10226,6 +10929,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.2
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "CD Player/DVD Player 대",
             "BGM방송 설비"
@@ -10240,6 +10944,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.38
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Pre Amplifier Player 대",
             "BGM방송 설비"
@@ -10254,6 +10959,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.19
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Auto Blower Player 대",
             "BGM방송 설비"
@@ -10268,6 +10974,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.34
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Auto Charger Player 대",
             "BGM방송 설비"
@@ -10282,6 +10989,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.73
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Digital Control Exchanger 대",
             "BGM방송 설비"
@@ -10296,6 +11004,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.5
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Audio Monitor Exchanger 대",
             "BGM방송 설비"
@@ -10310,6 +11019,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.21
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Local Selector Exchanger 대",
             "BGM방송 설비"
@@ -10324,6 +11034,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.4
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "프로그램 타이머 Exchanger 대",
             "BGM방송 설비"
@@ -10338,6 +11049,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.34
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "멀티보이스 파일 Exchanger 대",
             "BGM방송 설비"
@@ -10352,6 +11064,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.27
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "리모트 앰프 Exchanger 대",
             "BGM방송 설비"
@@ -10366,6 +11079,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.32
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "AMP Fault Detector 대",
             "BGM방송 설비"
@@ -10380,6 +11094,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.32
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "데이터 리시버 Detector 대",
             "BGM방송 설비"
@@ -10394,6 +11109,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.76
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Speaker Line Checker 대",
             "BGM방송 설비"
@@ -10408,6 +11124,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.02
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Direct Box Checker 대",
             "BGM방송 설비"
@@ -10422,6 +11139,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.29
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Management 프로그램 Checker 대",
             "BGM방송 설비"
@@ -10436,6 +11154,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.18
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Digi-Link Multi Controller 대",
             "BGM방송 설비"
@@ -10450,6 +11169,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.05
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Portable AMP Controller 대",
             "BGM방송 설비"
@@ -10464,6 +11184,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.12
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Telephone Paging Controller 대",
             "BGM방송 설비"
@@ -10478,6 +11199,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.17
         },
         "category": "device",
+        "page": 217,
         "keywords": [
             "Audio Distribution Controller 대",
             "BGM방송 설비"
@@ -10492,6 +11214,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.39
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "Power Distributor Switcher 대",
             "프로오디오 설비(SR)"
@@ -10506,6 +11229,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.38
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "Power Supply Switcher 대",
             "프로오디오 설비(SR)"
@@ -10520,6 +11244,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.23
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "VU Meter Switcher 대",
             "프로오디오 설비(SR)"
@@ -10534,6 +11259,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.55
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "하울링제거기 Meter Switcher 대",
             "프로오디오 설비(SR)"
@@ -10548,6 +11274,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.82
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "Digital Signal Processor 대",
             "프로오디오 설비(SR)"
@@ -10562,6 +11289,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.63
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "Digital Audio Mixer 대",
             "프로오디오 설비(SR)"
@@ -10576,6 +11304,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.13
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "Audio I/O Box 대",
             "프로오디오 설비(SR)"
@@ -10590,6 +11319,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.06
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "Graphic Equalizer Box 대",
             "프로오디오 설비(SR)"
@@ -10604,6 +11334,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.11
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "Network Audio Signal Router 대",
             "프로오디오 설비(SR)"
@@ -10618,6 +11349,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.11
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "스피커 브라켓(벽부형) 개",
             "프로오디오 설비(SR)"
@@ -10632,6 +11364,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.56
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "체인블럭 수동형 대",
             "프로오디오 설비(SR)"
@@ -10646,6 +11379,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.56
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "전동형 수동형 대",
             "프로오디오 설비(SR)"
@@ -10660,6 +11394,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.27
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "스피커프레임 일체형 개",
             "프로오디오 설비(SR)"
@@ -10674,6 +11409,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.33
         },
         "category": "device",
+        "page": 218,
         "keywords": [
             "조립형 일체형 개",
             "프로오디오 설비(SR)"
@@ -10688,6 +11424,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.35
         },
         "category": "device",
+        "page": 219,
         "keywords": [
             "Digital Modulator 대",
             "멀티미디어방송 설비"
@@ -10702,6 +11439,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.61
         },
         "category": "device",
+        "page": 219,
         "keywords": [
             "Digital A/V Matrix Switch 대",
             "멀티미디어방송 설비"
@@ -10716,6 +11454,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.33
         },
         "category": "device",
+        "page": 219,
         "keywords": [
             "VGA Matrix Matrix Switch 대",
             "멀티미디어방송 설비"
@@ -10730,6 +11469,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.52
         },
         "category": "device",
+        "page": 219,
         "keywords": [
             "A/V Receiver Matrix Switch 대",
             "멀티미디어방송 설비"
@@ -10744,6 +11484,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.58
         },
         "category": "device",
+        "page": 219,
         "keywords": [
             "A/V Mixer Matrix Switch 대",
             "멀티미디어방송 설비"
@@ -10758,6 +11499,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.36
         },
         "category": "device",
+        "page": 219,
         "keywords": [
             "Network A/V Streamer Switch 대",
             "멀티미디어방송 설비"
@@ -10772,6 +11514,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.32
         },
         "category": "device",
+        "page": 219,
         "keywords": [
             "Set-top Box Streamer Switch 대",
             "멀티미디어방송 설비"
@@ -10786,6 +11529,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.04
         },
         "category": "device",
+        "page": 219,
         "keywords": [
             "Video Distribution Streamer Switch 대",
             "멀티미디어방송 설비"
@@ -10800,6 +11544,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.77
         },
         "category": "device",
+        "page": 219,
         "keywords": [
             "Network Audio Server 대",
             "네트워크 통합방송 설비"
@@ -10814,6 +11559,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.43
         },
         "category": "device",
+        "page": 219,
         "keywords": [
             "Network Audio Converter 대",
             "네트워크 통합방송 설비"
@@ -10828,6 +11574,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.63
         },
         "category": "device",
+        "page": 219,
         "keywords": [
             "Audio Over Ethernet 대",
             "네트워크 통합방송 설비"
@@ -10842,6 +11589,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 6.0
         },
         "category": "device",
+        "page": 220,
         "keywords": [
             "조립및 통신관련산업기사 1.88 2.00 2.00 3.00 5.00 3.00 3.00 4.00",
             "콘솔(Console)"
@@ -10856,6 +11604,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 6.0
         },
         "category": "device",
+        "page": 220,
         "keywords": [
             "설치 통신설비공 3.75 2.00 2.00 3.00 5.00 2.00 3.00 4.00",
             "콘솔(Console)"
@@ -10870,6 +11619,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 3.0
         },
         "category": "device",
+        "page": 220,
         "keywords": [
             "보통인부 1.08 1.00 2.00 3.00 4.00 2.00 2.00 2.00",
             "콘솔(Console)"
@@ -10884,6 +11634,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 4.0
         },
         "category": "device",
+        "page": 220,
         "keywords": [
             "시험및 통신관련기사 3.67 1.00 2.00 3.00 5.00 2.00 2.00 2.00",
             "콘솔(Console)"
@@ -10898,6 +11649,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 8.0
         },
         "category": "device",
+        "page": 220,
         "keywords": [
             "측정 통신관련산업기사 7.33 2.00 4.00 6.00 10.00 2.00 2.00 4.00",
             "콘솔(Console)"
@@ -10913,6 +11665,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.48
         },
         "category": "device",
+        "page": 220,
         "keywords": [
             "무선방송 주장치 세트",
             "마을 무선방송시스템"
@@ -10927,6 +11680,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.05
         },
         "category": "device",
+        "page": 220,
         "keywords": [
             "무선 스피커 대",
             "마을 무선방송시스템"
@@ -10941,6 +11695,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.47
         },
         "category": "device",
+        "page": 220,
         "keywords": [
             "안테나 기",
             "마을 무선방송시스템"
@@ -10955,6 +11710,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.1
         },
         "category": "device",
+        "page": 220,
         "keywords": [
             "안테나 Pole 대",
             "마을 무선방송시스템"
@@ -10970,6 +11726,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.21
         },
         "category": "device",
+        "page": 220,
         "keywords": [
             "종합시험 식",
             "마을 무선방송시스템"
@@ -10986,6 +11743,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.38
         },
         "category": "device",
+        "page": 223,
         "keywords": [
             "전파수신상태조사",
             "전파수신상태조사"
@@ -11002,6 +11760,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.31
         },
         "category": "device",
+        "page": 223,
         "keywords": [
             "간선(옥외용)",
             "증폭기"
@@ -11018,6 +11777,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.38
         },
         "category": "device",
+        "page": 223,
         "keywords": [
             "2Port",
             "증폭기"
@@ -11034,6 +11794,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.43
         },
         "category": "device",
+        "page": 223,
         "keywords": [
             "분기 3Port",
             "증폭기"
@@ -11050,6 +11811,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.49
         },
         "category": "device",
+        "page": 223,
         "keywords": [
             "4Port",
             "증폭기"
@@ -11066,6 +11828,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.25
         },
         "category": "device",
+        "page": 223,
         "keywords": [
             "연장(옥내․외)",
             "증폭기"
@@ -11082,6 +11845,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.2
         },
         "category": "device",
+        "page": 223,
         "keywords": [
             "구내전송증폭기",
             "증폭기"
@@ -11098,6 +11862,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.47
         },
         "category": "device",
+        "page": 223,
         "keywords": [
             "채널자동이득조절앰프",
             "증폭기"
@@ -11114,6 +11879,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.47
         },
         "category": "device",
+        "page": 223,
         "keywords": [
             "헤드앰프(주전송증폭기)",
             "증폭기"
@@ -11130,6 +11896,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.47
         },
         "category": "device",
+        "page": 223,
         "keywords": [
             "신호처리기",
             "증폭기"
@@ -11145,6 +11912,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.02
         },
         "category": "device",
+        "page": 224,
         "keywords": [
             "2분배기(1분기기) 개",
             "옥외형 분배기(분기기)"
@@ -11160,6 +11928,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.03
         },
         "category": "device",
+        "page": 224,
         "keywords": [
             "3 개",
             "옥외형 분배기(분기기)"
@@ -11175,6 +11944,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.04
         },
         "category": "device",
+        "page": 224,
         "keywords": [
             "4 개",
             "옥외형 분배기(분기기)"
@@ -11189,6 +11959,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 224,
         "keywords": [
             "5 개",
             "옥외형 분배기(분기기)"
@@ -11204,6 +11975,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.06
         },
         "category": "device",
+        "page": 224,
         "keywords": [
             "6 개",
             "옥외형 분배기(분기기)"
@@ -11219,6 +11991,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.08
         },
         "category": "device",
+        "page": 224,
         "keywords": [
             "8 개",
             "옥외형 분배기(분기기)"
@@ -11233,6 +12006,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.36
         },
         "category": "device",
+        "page": 224,
         "keywords": [
             "12 개",
             "옥외형 분배기(분기기)"
@@ -11247,6 +12021,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.48
         },
         "category": "device",
+        "page": 224,
         "keywords": [
             "16 개",
             "옥외형 분배기(분기기)"
@@ -11261,6 +12036,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.27
         },
         "category": "device",
+        "page": 224,
         "keywords": [
             "(8분기기) 개",
             "옥외형 분배기(분기기)"
@@ -11276,6 +12052,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.08
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "2분배기(1분기기) 개",
             "옥내형 분배기(분기기)"
@@ -11291,6 +12068,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.12
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "3 개",
             "옥내형 분배기(분기기)"
@@ -11306,6 +12084,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.13
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "4 개",
             "옥내형 분배기(분기기)"
@@ -11321,6 +12100,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.17
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "5 개",
             "옥내형 분배기(분기기)"
@@ -11336,6 +12116,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.19
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "6 개",
             "옥내형 분배기(분기기)"
@@ -11351,6 +12132,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.23
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "8 개",
             "옥내형 분배기(분기기)"
@@ -11366,6 +12148,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.32
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "12 개",
             "옥내형 분배기(분기기)"
@@ -11381,6 +12164,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.41
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "16 개",
             "옥내형 분배기(분기기)"
@@ -11396,6 +12180,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.25
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "(8분기기) 개",
             "옥내형 분배기(분기기)"
@@ -11411,6 +12196,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "위성방송수신기",
             "위성방송수신기 등"
@@ -11426,6 +12212,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "디지털 아날로그 신호변환기",
             "위성방송수신기 등"
@@ -11441,6 +12228,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.07
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "광 송신기",
             "광 송·수신기 등"
@@ -11456,6 +12244,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.06
         },
         "category": "device",
+        "page": 225,
         "keywords": [
             "광 증폭기",
             "광 송·수신기 등"
@@ -11470,6 +12259,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.08
         },
         "category": "device",
+        "page": 226,
         "keywords": [
             "개별특성 RF 레벨조정",
             "AM 변조기"
@@ -11484,6 +12274,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.1
         },
         "category": "device",
+        "page": 226,
         "keywords": [
             "시험 비디오 입력레벨 시험",
             "AM 변조기"
@@ -11498,6 +12289,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.08
         },
         "category": "device",
+        "page": 226,
         "keywords": [
             "오디오 입력레벨 시험",
             "AM 변조기"
@@ -11512,6 +12304,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.07
         },
         "category": "device",
+        "page": 226,
         "keywords": [
             "종합시험 비디오 특성시험",
             "AM 변조기"
@@ -11526,6 +12319,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.11
         },
         "category": "device",
+        "page": 226,
         "keywords": [
             "오디오 특성시험",
             "AM 변조기"
@@ -11540,6 +12334,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.16
         },
         "category": "device",
+        "page": 227,
         "keywords": [
             "주파수응답 특성시험",
             "FM 광전송장치(FM 복조기)"
@@ -11554,6 +12349,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.07
         },
         "category": "device",
+        "page": 227,
         "keywords": [
             "비직선 왜곡 시험",
             "FM 광전송장치(FM 복조기)"
@@ -11568,6 +12364,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.07
         },
         "category": "device",
+        "page": 227,
         "keywords": [
             "색도대 휘도 특성시험",
             "FM 광전송장치(FM 복조기)"
@@ -11582,6 +12379,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.1
         },
         "category": "device",
+        "page": 227,
         "keywords": [
             "개별특성 직선파형 왜곡시험",
             "FM 광전송장치(FM 복조기)"
@@ -11596,6 +12394,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.09
         },
         "category": "device",
+        "page": 227,
         "keywords": [
             "시험 주파수특성(음성신호)",
             "FM 광전송장치(FM 복조기)"
@@ -11610,6 +12409,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.04
         },
         "category": "device",
+        "page": 227,
         "keywords": [
             "고조파 왜곡 측정 및 조정",
             "FM 광전송장치(FM 복조기)"
@@ -11624,6 +12424,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.04
         },
         "category": "device",
+        "page": 227,
         "keywords": [
             "좌우 분리도 측정 및 조정",
             "FM 광전송장치(FM 복조기)"
@@ -11638,6 +12439,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.07
         },
         "category": "device",
+        "page": 227,
         "keywords": [
             "Noise(S/N) 측정",
             "FM 광전송장치(FM 복조기)"
@@ -11652,6 +12454,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.07
         },
         "category": "device",
+        "page": 227,
         "keywords": [
             "종합시험 채널별신호대 잡음비",
             "FM 광전송장치(FM 복조기)"
@@ -11666,6 +12469,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.09
         },
         "category": "device",
+        "page": 228,
         "keywords": [
             "개별특성 재송신 채널 특성시험",
             "FM 음악변조 및 중계기"
@@ -11680,6 +12484,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.08
         },
         "category": "device",
+        "page": 228,
         "keywords": [
             "시험 자주방송기저대역 특성시험",
             "FM 음악변조 및 중계기"
@@ -11694,6 +12499,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.08
         },
         "category": "device",
+        "page": 228,
         "keywords": [
             "종합시험 Audio 특성시험(Mono 방식)",
             "FM 음악변조 및 중계기"
@@ -11708,6 +12514,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.11
         },
         "category": "device",
+        "page": 230,
         "keywords": [
             "대역통과 여파기 개",
             "각종 휠터 및 기타설비"
@@ -11722,6 +12529,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.52
         },
         "category": "device",
+        "page": 230,
         "keywords": [
             "다이플렉서 휠터 개",
             "각종 휠터 및 기타설비"
@@ -11736,6 +12544,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.11
         },
         "category": "device",
+        "page": 230,
         "keywords": [
             "채널트랩(낫치휠터) 휠터 개",
             "각종 휠터 및 기타설비"
@@ -11750,6 +12559,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.65
         },
         "category": "device",
+        "page": 230,
         "keywords": [
             "레벨셑터 휠터 개",
             "각종 휠터 및 기타설비"
@@ -11764,6 +12574,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.19
         },
         "category": "device",
+        "page": 230,
         "keywords": [
             "채널컨버터 휠터 개",
             "각종 휠터 및 기타설비"
@@ -11778,6 +12589,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.2
         },
         "category": "device",
+        "page": 230,
         "keywords": [
             "보호기 휠터 개",
             "각종 휠터 및 기타설비"
@@ -11792,6 +12604,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.02
         },
         "category": "device",
+        "page": 230,
         "keywords": [
             "종단저항(75Ω) 휠터 개",
             "각종 휠터 및 기타설비"
@@ -11807,6 +12620,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.4
         },
         "category": "device",
+        "page": 231,
         "keywords": [
             "CT - Box",
             "페디스탈 설치 (CT-Box)"
@@ -11822,6 +12636,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.79
         },
         "category": "device",
+        "page": 232,
         "keywords": [
             "축전지 내장형",
             "동축케이블 급전용 전원공급장치"
@@ -11837,6 +12652,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.44
         },
         "category": "device",
+        "page": 232,
         "keywords": [
             "축전지 비내장형",
             "동축케이블 급전용 전원공급장치"
@@ -11852,6 +12668,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.13
         },
         "category": "device",
+        "page": 232,
         "keywords": [
             "전력삽입기",
             "동축케이블 급전용 전원공급장치"
@@ -11866,6 +12683,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 238,
         "keywords": [
             "IP 전화기",
             "IP 및 키폰 전화기"
@@ -11880,6 +12698,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.1
         },
         "category": "device",
+        "page": 238,
         "keywords": [
             "키폰 전화기",
             "IP 및 키폰 전화기"
@@ -11896,6 +12715,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.08
         },
         "category": "device",
+        "page": 239,
         "keywords": [
             "외벽",
             "ICT 밀폐장치(Containment)"
@@ -11912,6 +12732,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.13
         },
         "category": "device",
+        "page": 239,
         "keywords": [
             "천장",
             "ICT 밀폐장치(Containment)"
@@ -11928,6 +12749,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.56
         },
         "category": "device",
+        "page": 239,
         "keywords": [
             "출입문",
             "ICT 밀폐장치(Containment)"
@@ -11943,6 +12765,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 245,
         "keywords": [
             "커넥터 설치",
             "주방 TV"
@@ -11958,6 +12781,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.05
         },
         "category": "device",
+        "page": 245,
         "keywords": [
             "주방 TV 설치",
             "주방 TV"
@@ -11973,6 +12797,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.04
         },
         "category": "device",
+        "page": 245,
         "keywords": [
             "시 험(Test)",
             "주방 TV"
@@ -11987,6 +12812,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.03
         },
         "category": "device",
+        "page": 245,
         "keywords": [
             "방음 코킹 작업",
             "주방 TV"
@@ -12001,6 +12827,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.05
         },
         "category": "device",
+        "page": 245,
         "keywords": [
             "주방 라디오 설치",
             "주방 라디오(Radio)"
@@ -12015,6 +12842,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.02
         },
         "category": "device",
+        "page": 245,
         "keywords": [
             "시 험(Test)",
             "주방 라디오(Radio)"
@@ -12029,6 +12857,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.03
         },
         "category": "device",
+        "page": 245,
         "keywords": [
             "방음 코킹 작업",
             "주방 라디오(Radio)"
@@ -12043,6 +12872,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.14
         },
         "category": "device",
+        "page": 246,
         "keywords": [
             "화장실용 비상콜 설치",
             "화장실용 비상콜"
@@ -12057,6 +12887,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.04
         },
         "category": "device",
+        "page": 246,
         "keywords": [
             "시 험(Test)",
             "화장실용 비상콜"
@@ -12071,6 +12902,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.13
         },
         "category": "device",
+        "page": 246,
         "keywords": [
             "세대 스피커 설치",
             "세대 스피커"
@@ -12085,6 +12917,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.03
         },
         "category": "device",
+        "page": 246,
         "keywords": [
             "시 험(Test)",
             "세대 스피커"
@@ -12099,6 +12932,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 247,
         "keywords": [
             "스피커 Outlet 설치",
             "스피커 Outlet"
@@ -12113,6 +12947,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.25
         },
         "category": "device",
+        "page": 247,
         "keywords": [
             "비디오폰 설치",
             "비디오폰"
@@ -12127,6 +12962,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.25
         },
         "category": "device",
+        "page": 247,
         "keywords": [
             "제어부 설치 열",
             "무인택배시스템"
@@ -12141,6 +12977,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 247,
         "keywords": [
             "보관함 설치 열",
             "무인택배시스템"
@@ -12156,6 +12993,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.17
         },
         "category": "device",
+        "page": 250,
         "keywords": [
             "최대전력관리장치",
             "최대전력관리시스템"
@@ -12171,6 +13009,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 250,
         "keywords": [
             "메인장비 제어기",
             "최대전력관리시스템"
@@ -12186,6 +13025,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.06
         },
         "category": "device",
+        "page": 250,
         "keywords": [
             "계량기 신호선",
             "최대전력관리시스템"
@@ -12201,6 +13041,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.16
         },
         "category": "device",
+        "page": 250,
         "keywords": [
             "중앙제어기",
             "최대전력관리시스템"
@@ -12216,6 +13057,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.14
         },
         "category": "device",
+        "page": 250,
         "keywords": [
             "중계기",
             "최대전력관리시스템"
@@ -12231,6 +13073,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.28
         },
         "category": "device",
+        "page": 250,
         "keywords": [
             "최대전력관리 프로그램",
             "최대전력관리시스템"
@@ -12246,6 +13089,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.85
         },
         "category": "device",
+        "page": 250,
         "keywords": [
             "메인프로세스 유닛 대 0.55",
             "축전지관리 시스템(BMS)"
@@ -12261,6 +13105,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.61
         },
         "category": "device",
+        "page": 250,
         "keywords": [
             "데이터수집장치 유닛 대 0.55",
             "축전지관리 시스템(BMS)"
@@ -12275,6 +13120,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.71
         },
         "category": "device",
+        "page": 251,
         "keywords": [
             "S/W 설치 대",
             "에너지저장시스템(ESS)"
@@ -12289,6 +13135,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.35
         },
         "category": "device",
+        "page": 251,
         "keywords": [
             "계측기 설치 대",
             "에너지 관리시스템(EMS)"
@@ -12303,6 +13150,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.54
         },
         "category": "device",
+        "page": 251,
         "keywords": [
             "데이터 확인 대",
             "에너지 관리시스템(EMS)"
@@ -12317,6 +13165,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.67
         },
         "category": "device",
+        "page": 251,
         "keywords": [
             "시험 확인 대",
             "에너지 관리시스템(EMS)"
@@ -12331,6 +13180,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.19
         },
         "category": "device",
+        "page": 252,
         "keywords": [
             "고압계기형 (데이터전송장치 ) 대 0.40 - -",
             "원격검침 설비"
@@ -12345,6 +13195,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 5.0
         },
         "category": "device",
+        "page": 273,
         "keywords": [
             "설치작업 Panel 삽입 및 결선",
             "주파수 편차 변환기(F.D.T) 시간편차 변환기(T.D.T)"
@@ -12359,6 +13210,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 4.0
         },
         "category": "device",
+        "page": 273,
         "keywords": [
             "시험조정 국부점검 및 조정시험",
             "주파수 편차 변환기(F.D.T) 시간편차 변환기(T.D.T)"
@@ -12374,6 +13226,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 10.8
         },
         "category": "device",
+        "page": 274,
         "keywords": [
             "설치 및 조정",
             "전원공급 장치"
@@ -12389,6 +13242,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.2
         },
         "category": "device",
+        "page": 274,
         "keywords": [
             "Card Reader",
             "주변장치"
@@ -12404,6 +13258,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.2
         },
         "category": "device",
+        "page": 274,
         "keywords": [
             "Line Printer",
             "주변장치"
@@ -12419,6 +13274,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.2
         },
         "category": "device",
+        "page": 274,
         "keywords": [
             "K.S.R",
             "주변장치"
@@ -12434,6 +13290,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.5
         },
         "category": "device",
+        "page": 274,
         "keywords": [
             "Video Copier",
             "주변장치"
@@ -12449,6 +13306,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 13.44
         },
         "category": "device",
+        "page": 275,
         "keywords": [
             "설치작업 계통반건립",
             "계통반(Map Board)"
@@ -12464,6 +13322,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 20.4
         },
         "category": "device",
+        "page": 275,
         "keywords": [
             "타일조립",
             "계통반(Map Board)"
@@ -12478,6 +13337,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 12.7
         },
         "category": "device",
+        "page": 275,
         "keywords": [
             "점검 및표시기점검",
             "계통반(Map Board)"
@@ -12492,6 +13352,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 40.6
         },
         "category": "device",
+        "page": 275,
         "keywords": [
             "결선표시기결선",
             "계통반(Map Board)"
@@ -12506,6 +13367,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 15.0
         },
         "category": "device",
+        "page": 275,
         "keywords": [
             "시험 및 프로그램 연결시험",
             "계통반(Map Board)"
@@ -12520,6 +13382,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 15.0
         },
         "category": "device",
+        "page": 275,
         "keywords": [
             "조정최종시험",
             "계통반(Map Board)"
@@ -12537,6 +13400,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.0
         },
         "category": "device",
+        "page": 276,
         "keywords": [
             "조립 및 설치",
             "콘솔(Console)"
@@ -12552,6 +13416,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 4.0
         },
         "category": "device",
+        "page": 276,
         "keywords": [
             "조정",
             "콘솔(Console)"
@@ -12567,6 +13432,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 8.0
         },
         "category": "device",
+        "page": 276,
         "keywords": [
             "시험 및 측정",
             "콘솔(Console)"
@@ -12581,6 +13447,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.32
         },
         "category": "device",
+        "page": 276,
         "keywords": [
             "기기간 연결용 케이블포설",
             "전자계산기 배선"
@@ -12595,6 +13462,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.15
         },
         "category": "device",
+        "page": 276,
         "keywords": [
             "간이시험",
             "전자계산기 배선"
@@ -12610,6 +13478,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.27
         },
         "category": "device",
+        "page": 277,
         "keywords": [
             "주장비 대",
             "차량위치 및 빌딩안내설비"
@@ -12624,6 +13493,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.36
         },
         "category": "device",
+        "page": 277,
         "keywords": [
             "거치대 대",
             "차량위치 및 빌딩안내설비"
@@ -12638,6 +13508,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.21
         },
         "category": "device",
+        "page": 278,
         "keywords": [
             "유인 발급시스템 대",
             "통합민원발급시스템"
@@ -12652,6 +13523,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.31
         },
         "category": "device",
+        "page": 278,
         "keywords": [
             "무인 발급시스템 대",
             "통합민원발급시스템"
@@ -12668,6 +13540,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.25
         },
         "category": "device",
+        "page": 279,
         "keywords": [
             "노면센서설치",
             "도로결빙 및 수막감지설비"
@@ -12682,6 +13555,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.12
         },
         "category": "device",
+        "page": 279,
         "keywords": [
             "소구경(구경 50mm 이하)",
             "수도계량기 원격검침 설비"
@@ -12696,6 +13570,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.27
         },
         "category": "device",
+        "page": 279,
         "keywords": [
             "원격검침 단말기 대구경(구경 50mm 초과)",
             "수도계량기 원격검침 설비"
@@ -12711,6 +13586,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.2
         },
         "category": "device",
+        "page": 281,
         "keywords": [
             "데이터 로거(Data Logger)",
             "대기오염측정시스템"
@@ -12726,6 +13602,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.17
         },
         "category": "device",
+        "page": 281,
         "keywords": [
             "아황산가스(SO₂) 측정기",
             "대기오염측정시스템"
@@ -12741,6 +13618,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.15
         },
         "category": "device",
+        "page": 281,
         "keywords": [
             "일산화탄소(CO) 측정기",
             "대기오염측정시스템"
@@ -12756,6 +13634,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.17
         },
         "category": "device",
+        "page": 281,
         "keywords": [
             "이산화질소(NO₂) 측정기",
             "대기오염측정시스템"
@@ -12771,6 +13650,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.16
         },
         "category": "device",
+        "page": 281,
         "keywords": [
             "오존(O₃) 측정기",
             "대기오염측정시스템"
@@ -12786,6 +13666,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.16
         },
         "category": "device",
+        "page": 281,
         "keywords": [
             "먼지 측정기",
             "대기오염측정시스템"
@@ -12800,6 +13681,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.29
         },
         "category": "device",
+        "page": 282,
         "keywords": [
             "적설계 대",
             "적설량 관측시스템"
@@ -12814,6 +13696,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.63
         },
         "category": "device",
+        "page": 282,
         "keywords": [
             "적설데이터로거 대",
             "적설량 관측시스템"
@@ -12828,6 +13711,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.02
         },
         "category": "device",
+        "page": 282,
         "keywords": [
             "적설판(1.5m×1.5m) 대",
             "적설량 관측시스템"
@@ -12843,6 +13727,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.6
         },
         "category": "device",
+        "page": 295,
         "keywords": [
             "소형무선기지국 설치",
             "교통정보수집시스템(Beacon)"
@@ -12861,6 +13746,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.11
         },
         "category": "device",
+        "page": 295,
         "keywords": [
             "시험",
             "교통정보수집시스템(Beacon)"
@@ -12876,6 +13762,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.12
         },
         "category": "device",
+        "page": 295,
         "keywords": [
             "위치비콘 설치",
             "교통정보수집시스템(Beacon)"
@@ -12891,6 +13778,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.22
         },
         "category": "device",
+        "page": 295,
         "keywords": [
             "차량 통신모듈 설치",
             "교통정보수집시스템(Beacon)"
@@ -12906,6 +13794,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.87
         },
         "category": "device",
+        "page": 297,
         "keywords": [
             "키오스크 대",
             "자전거무인대여시스템"
@@ -12920,6 +13809,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.33
         },
         "category": "device",
+        "page": 297,
         "keywords": [
             "거치대 대",
             "자전거무인대여시스템"
@@ -12934,6 +13824,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.11
         },
         "category": "device",
+        "page": 299,
         "keywords": [
             "통학로 등하교 알리미 대",
             "통학로 등하교 알리미"
@@ -12949,6 +13840,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.73
         },
         "category": "device",
+        "page": 305,
         "keywords": [
             "5m 이하",
             "CCTV Pole"
@@ -12964,6 +13856,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.81
         },
         "category": "device",
+        "page": 305,
         "keywords": [
             "6m 이하",
             "CCTV Pole"
@@ -12979,6 +13872,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.4
         },
         "category": "device",
+        "page": 305,
         "keywords": [
             "7m 이하",
             "CCTV Pole"
@@ -12994,6 +13888,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.88
         },
         "category": "device",
+        "page": 305,
         "keywords": [
             "8m 이하",
             "CCTV Pole"
@@ -13009,6 +13904,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.13
         },
         "category": "device",
+        "page": 305,
         "keywords": [
             "9m 이하",
             "CCTV Pole"
@@ -13024,6 +13920,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.55
         },
         "category": "device",
+        "page": 305,
         "keywords": [
             "10m 이하",
             "CCTV Pole"
@@ -13039,6 +13936,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 2.63
         },
         "category": "device",
+        "page": 305,
         "keywords": [
             "11m 이하",
             "CCTV Pole"
@@ -13054,6 +13952,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 3.0
         },
         "category": "device",
+        "page": 305,
         "keywords": [
             "12m 이하",
             "CCTV Pole"
@@ -13069,6 +13968,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 4.24
         },
         "category": "device",
+        "page": 305,
         "keywords": [
             "14m 이하",
             "CCTV Pole"
@@ -13084,6 +13984,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.12
         },
         "category": "device",
+        "page": 308,
         "keywords": [
             "신호전송기",
             "주장치"
@@ -13099,6 +14000,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.18
         },
         "category": "device",
+        "page": 308,
         "keywords": [
             "메인주장치",
             "주장치"
@@ -13114,6 +14016,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.22
         },
         "category": "device",
+        "page": 308,
         "keywords": [
             "알람표시기",
             "주장치"
@@ -13129,6 +14032,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.12
         },
         "category": "device",
+        "page": 308,
         "keywords": [
             "로컬컨트롤러",
             "주장치"
@@ -13144,6 +14048,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.32
         },
         "category": "device",
+        "page": 308,
         "keywords": [
             "셔터신호전송기",
             "주장치"
@@ -13159,6 +14064,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.13
         },
         "category": "device",
+        "page": 308,
         "keywords": [
             "락 신호전송기",
             "주장치"
@@ -13174,6 +14080,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.29
         },
         "category": "device",
+        "page": 308,
         "keywords": [
             "조작표시기",
             "주장치"
@@ -13188,6 +14095,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.14
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "적외선감지기",
             "감지기(Sensor)"
@@ -13202,6 +14110,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.07
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "자석감지기",
             "감지기(Sensor)"
@@ -13216,6 +14125,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.07
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "열선감지기",
             "감지기(Sensor)"
@@ -13230,6 +14140,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.06
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "동체감지기",
             "감지기(Sensor)"
@@ -13244,6 +14155,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.04
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "유리감지기",
             "감지기(Sensor)"
@@ -13258,6 +14170,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.09
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "셧터감지기",
             "감지기(Sensor)"
@@ -13272,6 +14185,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.07
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "휀스(장력)감지기",
             "감지기(Sensor)"
@@ -13286,6 +14200,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.08
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "금고감지기",
             "감지기(Sensor)"
@@ -13300,6 +14215,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.03
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "진동감지기",
             "감지기(Sensor)"
@@ -13314,6 +14230,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.07
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "벽(충격)감지기",
             "감지기(Sensor)"
@@ -13328,6 +14245,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.08
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "누수감지기",
             "감지기(Sensor)"
@@ -13342,6 +14260,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.07
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "누액감지기",
             "감지기(Sensor)"
@@ -13356,6 +14275,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.06
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "화재감지기",
             "감지기(Sensor)"
@@ -13370,6 +14290,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.09
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "가스감지기",
             "감지기(Sensor)"
@@ -13384,6 +14305,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.07
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "음향감지기",
             "감지기(Sensor)"
@@ -13398,6 +14320,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.03
         },
         "category": "device",
+        "page": 309,
         "keywords": [
             "(CD)충격감지기",
             "감지기(Sensor)"
@@ -13413,6 +14336,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.28
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "보조전원장치",
             "경비․보안 주변기기"
@@ -13428,6 +14352,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.05
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "프린터",
             "경비․보안 주변기기"
@@ -13443,6 +14368,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.1
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "카드리더",
             "경비․보안 주변기기"
@@ -13458,6 +14384,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.11
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "출입관리기",
             "경비․보안 주변기기"
@@ -13472,6 +14399,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.17
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "회선제어기",
             "경비․보안 주변기기"
@@ -13486,6 +14414,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.09
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "가스이보기",
             "경비․보안 주변기기"
@@ -13500,6 +14429,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.05
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "화재이보기",
             "경비․보안 주변기기"
@@ -13514,6 +14444,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.08
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "누수감지신호기",
             "경비․보안 주변기기"
@@ -13528,6 +14459,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.06
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "비상(통보)스위치",
             "경비․보안 주변기기"
@@ -13542,6 +14474,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.05
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "비상램프",
             "경비․보안 주변기기"
@@ -13556,6 +14489,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.08
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "방범싸이렌",
             "경비․보안 주변기기"
@@ -13571,6 +14505,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.24
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "락개폐기",
             "경비․보안 주변기기"
@@ -13586,6 +14521,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.25
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "방범용 라우터",
             "경비․보안 주변기기"
@@ -13600,6 +14536,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.07
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "폐점예고등",
             "경비․보안 주변기기"
@@ -13614,6 +14551,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.22
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "CD/ATM감시반",
             "경비․보안 주변기기"
@@ -13629,6 +14567,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.18
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "음성안내장치",
             "경비․보안 주변기기"
@@ -13644,6 +14583,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.32
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "설비제어장치",
             "경비․보안 주변기기"
@@ -13658,6 +14598,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.04
         },
         "category": "device",
+        "page": 310,
         "keywords": [
             "KEY BOX",
             "경비․보안 주변기기"
@@ -13672,6 +14613,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.82
         },
         "category": "device",
+        "page": 312,
         "keywords": [
             "비상통화장치",
             "승강기 비상통화시스템"
@@ -13686,6 +14628,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.25
         },
         "category": "device",
+        "page": 312,
         "keywords": [
             "비상조명장치",
             "승강기 비상통화시스템"
@@ -13700,6 +14643,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.09
         },
         "category": "device",
+        "page": 315,
         "keywords": [
             "가스감지기",
             "흡입형 가스감지 설비"
@@ -13714,6 +14658,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.22
         },
         "category": "device",
+        "page": 315,
         "keywords": [
             "흡입형 가스감지기 튜브",
             "흡입형 가스감지 설비"
@@ -13729,6 +14674,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.48
         },
         "category": "device",
+        "page": 316,
         "keywords": [
             "열 영상 감시 카메라",
             "열 영상 감시 시스템"
@@ -13744,6 +14690,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.3
         },
         "category": "device",
+        "page": 316,
         "keywords": [
             "팬틸트",
             "열 영상 감시 시스템"
@@ -13759,6 +14706,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.06
         },
         "category": "device",
+        "page": 316,
         "keywords": [
             "브라켓",
             "열 영상 감시 시스템"
@@ -13774,6 +14722,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.12
         },
         "category": "device",
+        "page": 316,
         "keywords": [
             "레이저 감지기",
             "열 영상 감시 시스템"
@@ -13789,6 +14738,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.39
         },
         "category": "device",
+        "page": 316,
         "keywords": [
             "시험",
             "열 영상 감시 시스템"
@@ -13804,6 +14754,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.15
         },
         "category": "device",
+        "page": 317,
         "keywords": [
             "브라켓 설치",
             "초음파 수위계"
@@ -13819,6 +14770,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.09
         },
         "category": "device",
+        "page": 317,
         "keywords": [
             "변환기 설치",
             "초음파 수위계"
@@ -13834,6 +14786,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.1
         },
         "category": "device",
+        "page": 317,
         "keywords": [
             "센서 설치",
             "초음파 수위계"
@@ -13849,6 +14802,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.09
         },
         "category": "device",
+        "page": 317,
         "keywords": [
             "시험",
             "초음파 수위계"
@@ -13864,6 +14818,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.15
         },
         "category": "device",
+        "page": 318,
         "keywords": [
             "변환기 설치",
             "초음파 유량계"
@@ -13879,6 +14834,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.17
         },
         "category": "device",
+        "page": 318,
         "keywords": [
             "센서 설치",
             "초음파 유량계"
@@ -13894,6 +14850,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.11
         },
         "category": "device",
+        "page": 318,
         "keywords": [
             "시험",
             "초음파 유량계"
@@ -13909,6 +14866,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.13
         },
         "category": "device",
+        "page": 318,
         "keywords": [
             "압력센서 설치",
             "압력전송기"
@@ -13924,6 +14882,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.11
         },
         "category": "device",
+        "page": 318,
         "keywords": [
             "변환기 설치",
             "압력전송기"
@@ -13939,6 +14898,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.07
         },
         "category": "device",
+        "page": 318,
         "keywords": [
             "시험",
             "압력전송기"
@@ -13954,6 +14914,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.11
         },
         "category": "device",
+        "page": 319,
         "keywords": [
             "기기 설치",
             "탁도계"
@@ -13969,6 +14930,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.22
         },
         "category": "device",
+        "page": 319,
         "keywords": [
             "배관 연결",
             "탁도계"
@@ -13984,6 +14946,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.09
         },
         "category": "device",
+        "page": 319,
         "keywords": [
             "시험",
             "탁도계"
@@ -13999,6 +14962,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.19
         },
         "category": "device",
+        "page": 319,
         "keywords": [
             "기기 설치",
             "전기전도도계"
@@ -14014,6 +14978,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.19
         },
         "category": "device",
+        "page": 319,
         "keywords": [
             "배관 연결",
             "전기전도도계"
@@ -14029,6 +14994,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.08
         },
         "category": "device",
+        "page": 319,
         "keywords": [
             "시험",
             "전기전도도계"
@@ -14044,6 +15010,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.23
         },
         "category": "device",
+        "page": 319,
         "keywords": [
             "기기 설치",
             "잔류염소계"
@@ -14059,6 +15026,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.14
         },
         "category": "device",
+        "page": 319,
         "keywords": [
             "배관 연결",
             "잔류염소계"
@@ -14074,6 +15042,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.07
         },
         "category": "device",
+        "page": 319,
         "keywords": [
             "시험",
             "잔류염소계"
@@ -14089,6 +15058,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.34
         },
         "category": "device",
+        "page": 320,
         "keywords": [
             "기기 설치",
             "수소이온농도계(pH계)"
@@ -14104,6 +15074,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.18
         },
         "category": "device",
+        "page": 320,
         "keywords": [
             "배관 연결",
             "수소이온농도계(pH계)"
@@ -14119,6 +15090,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.06
         },
         "category": "device",
+        "page": 320,
         "keywords": [
             "시험",
             "수소이온농도계(pH계)"
@@ -14134,6 +15106,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.34
         },
         "category": "device",
+        "page": 320,
         "keywords": [
             "수질계측기용 수조설치",
             "수질계측기용 수조"
@@ -14149,6 +15122,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.16
         },
         "category": "device",
+        "page": 321,
         "keywords": [
             "기기 설치",
             "알칼리도계"
@@ -14164,6 +15138,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.15
         },
         "category": "device",
+        "page": 321,
         "keywords": [
             "배관 연결",
             "알칼리도계"
@@ -14179,6 +15154,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.1
         },
         "category": "device",
+        "page": 321,
         "keywords": [
             "시험",
             "알칼리도계"
@@ -14194,6 +15170,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.12
         },
         "category": "device",
+        "page": 321,
         "keywords": [
             "계측기부",
             "망간계측기"
@@ -14209,6 +15186,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.18
         },
         "category": "device",
+        "page": 321,
         "keywords": [
             "필터부",
             "망간계측기"
@@ -14224,6 +15202,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.22
         },
         "category": "device",
+        "page": 321,
         "keywords": [
             "배관 연결",
             "망간계측기"
@@ -14239,6 +15218,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.17
         },
         "category": "device",
+        "page": 321,
         "keywords": [
             "시험",
             "망간계측기"
@@ -14254,6 +15234,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.22
         },
         "category": "device",
+        "page": 322,
         "keywords": [
             "검출부 센서",
             "다항목 수질측정장치"
@@ -14269,6 +15250,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.11
         },
         "category": "device",
+        "page": 322,
         "keywords": [
             "센서케이블",
             "다항목 수질측정장치"
@@ -14284,6 +15266,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.13
         },
         "category": "device",
+        "page": 322,
         "keywords": [
             "수질 데이터수집장치",
             "다항목 수질측정장치"
@@ -14299,6 +15282,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 1.58
         },
         "category": "device",
+        "page": 323,
         "keywords": [
             "W600×H2100×D600 이하",
             "지능형 물관리용 함체"
@@ -14314,6 +15298,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 1.78
         },
         "category": "device",
+        "page": 323,
         "keywords": [
             "제어함체 W900×H2100×D600 이하",
             "지능형 물관리용 함체"
@@ -14329,6 +15314,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 1.98
         },
         "category": "device",
+        "page": 323,
         "keywords": [
             "W1200×H2100×D600 이하",
             "지능형 물관리용 함체"
@@ -14344,6 +15330,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 1.07
         },
         "category": "device",
+        "page": 323,
         "keywords": [
             "W800×H1600×D900 이하",
             "지능형 물관리용 함체"
@@ -14359,6 +15346,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 1.19
         },
         "category": "device",
+        "page": 323,
         "keywords": [
             "계기함체 W1000×H1600×D900 이하",
             "지능형 물관리용 함체"
@@ -14374,6 +15362,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 1.28
         },
         "category": "device",
+        "page": 323,
         "keywords": [
             "기초패드 W1200×H2100×D600 이하",
             "지능형 물관리용 함체"
@@ -14389,6 +15378,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.44
         },
         "category": "device",
+        "page": 323,
         "keywords": [
             "용존산소량계",
             "하수처리용 계측기"
@@ -14404,6 +15394,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.42
         },
         "category": "device",
+        "page": 323,
         "keywords": [
             "부유물질농도계",
             "하수처리용 계측기"
@@ -14419,6 +15410,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.46
         },
         "category": "device",
+        "page": 323,
         "keywords": [
             "농도계",
             "하수처리용 계측기"
@@ -14434,6 +15426,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.06
         },
         "category": "device",
+        "page": 324,
         "keywords": [
             "조명컨버터 대",
             "디밍제어 시스템(Dimming Control System)"
@@ -14449,6 +15442,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.09
         },
         "category": "device",
+        "page": 324,
         "keywords": [
             "장비설치 동작감지센서 대",
             "디밍제어 시스템(Dimming Control System)"
@@ -14464,6 +15458,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.09
         },
         "category": "device",
+        "page": 324,
         "keywords": [
             "조명제어기 동작감지센서 대",
             "디밍제어 시스템(Dimming Control System)"
@@ -14479,6 +15474,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.13
         },
         "category": "device",
+        "page": 324,
         "keywords": [
             "게이트웨이 동작감지센서 대",
             "디밍제어 시스템(Dimming Control System)"
@@ -14493,6 +15489,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.88
         },
         "category": "device",
+        "page": 324,
         "keywords": [
             "S/W 설치 및 시험 식",
             "디밍제어 시스템(Dimming Control System)"
@@ -14507,6 +15504,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.3
         },
         "category": "device",
+        "page": 325,
         "keywords": [
             "본체대 -",
             "스마트 스쿨 시스템"
@@ -14521,6 +15519,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.44
         },
         "category": "device",
+        "page": 325,
         "keywords": [
             "브라켓 개 -",
             "스마트 스쿨 시스템"
@@ -14536,6 +15535,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.7
         },
         "category": "device",
+        "page": 325,
         "keywords": [
             "Controller 식 0.70",
             "스마트 스쿨 시스템"
@@ -14550,6 +15550,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.04
         },
         "category": "device",
+        "page": 326,
         "keywords": [
             "활동센서",
             "사회적 약자 안전관리 시스템"
@@ -14564,6 +15565,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.04
         },
         "category": "device",
+        "page": 326,
         "keywords": [
             "화재센서",
             "사회적 약자 안전관리 시스템"
@@ -14578,6 +15580,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.08
         },
         "category": "device",
+        "page": 326,
         "keywords": [
             "가스센서",
             "사회적 약자 안전관리 시스템"
@@ -14592,6 +15595,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.03
         },
         "category": "device",
+        "page": 326,
         "keywords": [
             "출입센서",
             "사회적 약자 안전관리 시스템"
@@ -14606,6 +15610,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.01
         },
         "category": "device",
+        "page": 326,
         "keywords": [
             "응급호출기",
             "사회적 약자 안전관리 시스템"
@@ -14620,6 +15625,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.11
         },
         "category": "device",
+        "page": 326,
         "keywords": [
             "게이트웨이",
             "사회적 약자 안전관리 시스템"
@@ -14634,6 +15640,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.28
         },
         "category": "device",
+        "page": 326,
         "keywords": [
             "제어함체 설치 대",
             "보행신호 음성안내 보조장치"
@@ -14649,6 +15656,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.15
         },
         "category": "device",
+        "page": 326,
         "keywords": [
             "센서 Pole 설치 대",
             "보행신호 음성안내 보조장치"
@@ -14663,6 +15671,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 0.67
         },
         "category": "device",
+        "page": 326,
         "keywords": [
             "종합시험 식",
             "보행신호 음성안내 보조장치"
@@ -14678,6 +15687,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.35
         },
         "category": "device",
+        "page": 332,
         "keywords": [
             "접수대 콘솔 대",
             "종합접수대 시스템"
@@ -14692,6 +15702,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.52
         },
         "category": "device",
+        "page": 332,
         "keywords": [
             "주제어장치 콘솔 대",
             "종합접수대 시스템"
@@ -14706,6 +15717,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.44
         },
         "category": "device",
+        "page": 332,
         "keywords": [
             "제어부 헤드셋제어장치 대",
             "종합접수대 시스템"
@@ -14720,6 +15732,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.32
         },
         "category": "device",
+        "page": 332,
         "keywords": [
             "무선제어장치 헤드셋제어장치 대",
             "종합접수대 시스템"
@@ -14734,6 +15747,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.41
         },
         "category": "device",
+        "page": 332,
         "keywords": [
             "전원부 전원제어장치 대",
             "종합접수대 시스템"
@@ -14748,6 +15762,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.08
         },
         "category": "device",
+        "page": 332,
         "keywords": [
             "출력부 모니터스피커 대",
             "종합접수대 시스템"
@@ -14762,6 +15777,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.24
         },
         "category": "device",
+        "page": 332,
         "keywords": [
             "방송 방송지령장치 대",
             "종합접수대 시스템"
@@ -14776,6 +15792,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.08
         },
         "category": "device",
+        "page": 332,
         "keywords": [
             "보이스제어장치 방송지령장치 대",
             "종합접수대 시스템"
@@ -14790,6 +15807,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.04
         },
         "category": "device",
+        "page": 332,
         "keywords": [
             "기타 경광등 대",
             "종합접수대 시스템"
@@ -14804,6 +15822,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.04
         },
         "category": "device",
+        "page": 332,
         "keywords": [
             "스위치박스 경광등 대",
             "종합접수대 시스템"
@@ -14818,6 +15837,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.27
         },
         "category": "device",
+        "page": 333,
         "keywords": [
             "안테나 차량탑재형 0.46",
             "무선원격기지국"
@@ -14832,6 +15852,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.38
         },
         "category": "device",
+        "page": 333,
         "keywords": [
             "옥외형 차량탑재형 0.46",
             "무선원격기지국"
@@ -14846,6 +15867,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.8
         },
         "category": "device",
+        "page": 333,
         "keywords": [
             "함체 차량탑재형 0.46",
             "무선원격기지국"
@@ -14860,6 +15882,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.36
         },
         "category": "device",
+        "page": 333,
         "keywords": [
             "방송원격단말장치 대",
             "일제방송지령시스템"
@@ -14874,6 +15897,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.32
         },
         "category": "device",
+        "page": 333,
         "keywords": [
             "실링(10W) 대",
             "일제방송지령시스템"
@@ -14888,6 +15912,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.19
         },
         "category": "device",
+        "page": 333,
         "keywords": [
             "스피커 벽부형(10W) 대",
             "일제방송지령시스템"
@@ -14903,6 +15928,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.27
         },
         "category": "device",
+        "page": 333,
         "keywords": [
             "혼 벽부형(10W) 대",
             "일제방송지령시스템"
@@ -14917,6 +15943,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.1
         },
         "category": "device",
+        "page": 334,
         "keywords": [
             "환경센서 대",
             "스마트 팜(Farm)"
@@ -14931,6 +15958,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.09
         },
         "category": "device",
+        "page": 334,
         "keywords": [
             "개폐기 대",
             "스마트 팜(Farm)"
@@ -14945,6 +15973,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.86
         },
         "category": "device",
+        "page": 334,
         "keywords": [
             "제어함체 대",
             "스마트 팜(Farm)"
@@ -14959,6 +15988,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.58
         },
         "category": "device",
+        "page": 334,
         "keywords": [
             "수질측정기 대",
             "스마트 피쉬 팜(Fish Farm)"
@@ -14973,6 +16003,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.52
         },
         "category": "device",
+        "page": 334,
         "keywords": [
             "사료급이기 대",
             "스마트 피쉬 팜(Fish Farm)"
@@ -14987,6 +16018,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 1.25
         },
         "category": "device",
+        "page": 334,
         "keywords": [
             "종합시험 식",
             "스마트 피쉬 팜(Fish Farm)"
@@ -15001,6 +16033,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 335,
         "keywords": [
             "폴타입 센서",
             "지능형 인원계수시스템"
@@ -15016,6 +16049,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.41
         },
         "category": "device",
+        "page": 335,
         "keywords": [
             "제어함체",
             "지능형 인원계수시스템"
@@ -15031,6 +16065,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.48
         },
         "category": "device",
+        "page": 335,
         "keywords": [
             "게이트타입 일체형",
             "지능형 인원계수시스템"
@@ -15046,6 +16081,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.21
         },
         "category": "device",
+        "page": 335,
         "keywords": [
             "감지기",
             "지능형 이상음원 시스템"
@@ -15061,6 +16097,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.16
         },
         "category": "device",
+        "page": 335,
         "keywords": [
             "비상벨",
             "지능형 이상음원 시스템"
@@ -15076,6 +16113,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.13
         },
         "category": "device",
+        "page": 335,
         "keywords": [
             "경광등",
             "지능형 이상음원 시스템"
@@ -15091,6 +16129,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.02
         },
         "category": "device",
+        "page": 335,
         "keywords": [
             "상수도 누수감지설비",
             "IoT 기반 지하공간 안전관리 시스템"
@@ -15106,6 +16145,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.07
         },
         "category": "device",
+        "page": 336,
         "keywords": [
             "LED조명",
             "가시광통신(Li-Fi : Light-Fidelity) 설비"
@@ -15121,6 +16161,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.04
         },
         "category": "device",
+        "page": 336,
         "keywords": [
             "가시광 조명컨버터",
             "가시광통신(Li-Fi : Light-Fidelity) 설비"
@@ -15136,6 +16177,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.05
         },
         "category": "device",
+        "page": 336,
         "keywords": [
             "가시광 송신기",
             "가시광통신(Li-Fi : Light-Fidelity) 설비"
@@ -15150,6 +16192,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.36
         },
         "category": "device",
+        "page": 337,
         "keywords": [
             "로고젝터",
             "로고젝터"
@@ -15164,6 +16207,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.22
         },
         "category": "device",
+        "page": 338,
         "keywords": [
             "LTE모뎀 대",
             "전기차 충전소용 LTE모뎀"
@@ -15178,6 +16222,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.09
         },
         "category": "device",
+        "page": 339,
         "keywords": [
             "비상벨 대",
             "통화겸용 비상벨"
@@ -15192,6 +16237,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.11
         },
         "category": "device",
+        "page": 339,
         "keywords": [
             "제어기 대",
             "통화겸용 비상벨"
@@ -15207,6 +16253,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.41
         },
         "category": "device",
+        "page": 339,
         "keywords": [
             "자동수신단말장치",
             "재난 예·경보시스템"
@@ -15222,6 +16269,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 1.03
         },
         "category": "device",
+        "page": 339,
         "keywords": [
             "폴(Pole)",
             "재난 예·경보시스템"
@@ -15237,6 +16285,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.19
         },
         "category": "device",
+        "page": 339,
         "keywords": [
             "혼스피커",
             "재난 예·경보시스템"
@@ -15252,6 +16301,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.23
         },
         "category": "device",
+        "page": 340,
         "keywords": [
             "우드",
             "지진대비 보호설비"
@@ -15267,6 +16317,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.26
         },
         "category": "device",
+        "page": 340,
         "keywords": [
             "이중마루 스틸",
             "지진대비 보호설비"
@@ -15282,6 +16333,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.27
         },
         "category": "device",
+        "page": 340,
         "keywords": [
             "(면진 또는 내진) 우드스틸",
             "지진대비 보호설비"
@@ -15297,6 +16349,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.3
         },
         "category": "device",
+        "page": 340,
         "keywords": [
             "스틸콘크리트",
             "지진대비 보호설비"
@@ -15311,6 +16364,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.3
         },
         "category": "device",
+        "page": 340,
         "keywords": [
             "랙",
             "지진대비 보호설비"
@@ -15325,6 +16379,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.55
         },
         "category": "device",
+        "page": 340,
         "keywords": [
             "가대",
             "지진대비 보호설비"
@@ -15340,6 +16395,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.13
         },
         "category": "device",
+        "page": 340,
         "keywords": [
             "면진테이블",
             "지진대비 보호설비"
@@ -15354,6 +16410,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.16
         },
         "category": "device",
+        "page": 340,
         "keywords": [
             "내진 버팀대 Φ 13 이하",
             "지진대비 보호설비"
@@ -15368,6 +16425,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.1
         },
         "category": "device",
+        "page": 340,
         "keywords": [
             "Φ 13 이하",
             "지진대비 보호설비"
@@ -15382,6 +16440,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.18
         },
         "category": "device",
+        "page": 340,
         "keywords": [
             "Φ 14~15 이하",
             "지진대비 보호설비"
@@ -15397,6 +16456,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.66
         },
         "category": "device",
+        "page": 341,
         "keywords": [
             "민방위경보단말장치",
             "민방위 경보통제 시스템"
@@ -15412,6 +16472,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.65
         },
         "category": "device",
+        "page": 341,
         "keywords": [
             "폴(Pole)",
             "민방위 경보통제 시스템"
@@ -15427,6 +16488,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.11
         },
         "category": "device",
+        "page": 341,
         "keywords": [
             "혼 스피커",
             "민방위 경보통제 시스템"
@@ -15441,6 +16503,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.26
         },
         "category": "device",
+        "page": 342,
         "keywords": [
             "통화장치 주장치",
             "공중화장실 무선통신 비상벨 시스템"
@@ -15455,6 +16518,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.12
         },
         "category": "device",
+        "page": 342,
         "keywords": [
             "보조장치",
             "공중화장실 무선통신 비상벨 시스템"
@@ -15469,6 +16533,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.02
         },
         "category": "device",
+        "page": 342,
         "keywords": [
             "무선비상벨",
             "공중화장실 무선통신 비상벨 시스템"
@@ -15483,6 +16548,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.14
         },
         "category": "device",
+        "page": 342,
         "keywords": [
             "경광등",
             "공중화장실 무선통신 비상벨 시스템"
@@ -15498,6 +16564,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.47
         },
         "category": "device",
+        "page": 344,
         "keywords": [
             "중계기 함체",
             "스마트 비탈면 경보시스템"
@@ -15513,6 +16580,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.27
         },
         "category": "device",
+        "page": 344,
         "keywords": [
             "센서 함체",
             "스마트 비탈면 경보시스템"
@@ -15528,6 +16596,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.07
         },
         "category": "device",
+        "page": 344,
         "keywords": [
             "센서",
             "스마트 비탈면 경보시스템"
@@ -15542,6 +16611,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.16
         },
         "category": "device",
+        "page": 344,
         "keywords": [
             "원격데이터수집 단말장치",
             "신재생에너지 원격데이터수집 단말장치(RTU)"
@@ -15557,6 +16627,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.18
         },
         "category": "device",
+        "page": 345,
         "keywords": [
             "도난방지 안테나",
             "스마트 도난방지 시스템"
@@ -15572,6 +16643,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.24
         },
         "category": "device",
+        "page": 347,
         "keywords": [
             "일반형",
             "지능형 카메라 시스템"
@@ -15587,6 +16659,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.18
         },
         "category": "device",
+        "page": 347,
         "keywords": [
             "네트워크(IP) 돔(Dome)형",
             "지능형 카메라 시스템"
@@ -15602,6 +16675,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.29
         },
         "category": "device",
+        "page": 347,
         "keywords": [
             "스피드 돔형",
             "지능형 카메라 시스템"
@@ -15617,6 +16691,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.13
         },
         "category": "device",
+        "page": 347,
         "keywords": [
             "브라켓 -",
             "지능형 카메라 시스템"
@@ -15631,6 +16706,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.18
         },
         "category": "device",
+        "page": 347,
         "keywords": [
             "유인 배출신고 시스템 대",
             "대형 폐기물 배출신고 시스템"
@@ -15645,6 +16721,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.3
         },
         "category": "device",
+        "page": 347,
         "keywords": [
             "무인 배출신고 시스템 대",
             "대형 폐기물 배출신고 시스템"
@@ -15659,6 +16736,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.31
         },
         "category": "device",
+        "page": 348,
         "keywords": [
             "음식물 쓰레기 개별계량장비",
             "음식물 쓰레기 개별계량장비"
@@ -15674,6 +16752,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.21
         },
         "category": "device",
+        "page": 349,
         "keywords": [
             "유류 센서 대",
             "스마트 유류재고 관리 시스템"
@@ -15689,6 +16768,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.12
         },
         "category": "device",
+        "page": 349,
         "keywords": [
             "제어기 센서 대",
             "스마트 유류재고 관리 시스템"
@@ -15703,6 +16783,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 349,
         "keywords": [
             "시험 식",
             "스마트 유류재고 관리 시스템"
@@ -15717,6 +16798,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.3
         },
         "category": "device",
+        "page": 350,
         "keywords": [
             "스마트 수하물 저울 대",
             "스마트 수하물 저울 시스템"
@@ -15731,6 +16813,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.05
         },
         "category": "device",
+        "page": 350,
         "keywords": [
             "감지 센서 개",
             "스마트 화장실 시스템"
@@ -15745,6 +16828,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.02
         },
         "category": "device",
+        "page": 350,
         "keywords": [
             "LED 표시등 개",
             "스마트 화장실 시스템"
@@ -15759,6 +16843,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.31
         },
         "category": "device",
+        "page": 350,
         "keywords": [
             "중계기 대",
             "스마트 화장실 시스템"
@@ -15773,6 +16858,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.28
         },
         "category": "device",
+        "page": 350,
         "keywords": [
             "설치 도서대출 반납부 대 0.28",
             "스마트 도서관 시스템"
@@ -15787,6 +16873,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.2
         },
         "category": "device",
+        "page": 350,
         "keywords": [
             "도서 적재부 반납부 대 0.28",
             "스마트 도서관 시스템"
@@ -15801,6 +16888,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.32
         },
         "category": "device",
+        "page": 350,
         "keywords": [
             "시험 식 0.32",
             "스마트 도서관 시스템"
@@ -15815,6 +16903,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.15
         },
         "category": "device",
+        "page": 351,
         "keywords": [
             "센서케이블 포설",
             "자력(부착)식 케이블센서 감지 시스템"
@@ -15829,6 +16918,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.63
         },
         "category": "device",
+        "page": 351,
         "keywords": [
             "함체 설치",
             "자력(부착)식 케이블센서 감지 시스템"
@@ -15844,6 +16934,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.42
         },
         "category": "device",
+        "page": 351,
         "keywords": [
             "시그널디텍터 설치",
             "자력(부착)식 케이블센서 감지 시스템"
@@ -15859,6 +16950,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.7
         },
         "category": "device",
+        "page": 351,
         "keywords": [
             "경보수신반 설치",
             "자력(부착)식 케이블센서 감지 시스템"
@@ -15873,6 +16965,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.02
         },
         "category": "device",
+        "page": 351,
         "keywords": [
             "송․수신 유니트",
             "자력(부착)식 케이블센서 감지 시스템"
@@ -15888,6 +16981,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.1
         },
         "category": "device",
+        "page": 351,
         "keywords": [
             "시험 구간시험",
             "자력(부착)식 케이블센서 감지 시스템"
@@ -15903,6 +16997,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.35
         },
         "category": "device",
+        "page": 351,
         "keywords": [
             "종합시험",
             "자력(부착)식 케이블센서 감지 시스템"
@@ -15918,6 +17013,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.45
         },
         "category": "device",
+        "page": 352,
         "keywords": [
             "앵커 개",
             "장력식 감지 시스템"
@@ -15932,6 +17028,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.25
         },
         "category": "device",
+        "page": 352,
         "keywords": [
             "포스트 설치 감지기, 개",
             "장력식 감지 시스템"
@@ -15947,6 +17044,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.02
         },
         "category": "device",
+        "page": 352,
         "keywords": [
             "장력 와이어 포설 m",
             "장력식 감지 시스템"
@@ -15961,6 +17059,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.29
         },
         "category": "device",
+        "page": 352,
         "keywords": [
             "경보분석장치 설치 대",
             "장력식 감지 시스템"
@@ -15975,6 +17074,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.2
         },
         "category": "device",
+        "page": 352,
         "keywords": [
             "시험 구간시험 구간",
             "장력식 감지 시스템"
@@ -15989,6 +17089,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.46
         },
         "category": "device",
+        "page": 352,
         "keywords": [
             "종합시험 식",
             "장력식 감지 시스템"
@@ -16004,6 +17105,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.12
         },
         "category": "device",
+        "page": 352,
         "keywords": [
             "점멸기",
             "스마트 보안등 감시 제어시스템"
@@ -16018,6 +17120,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.32
         },
         "category": "device",
+        "page": 353,
         "keywords": [
             "중계기 대",
             "스마트 수목관리 시스템"
@@ -16032,6 +17135,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.04
         },
         "category": "device",
+        "page": 353,
         "keywords": [
             "수목 대",
             "스마트 수목관리 시스템"
@@ -16046,6 +17150,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.04
         },
         "category": "device",
+        "page": 353,
         "keywords": [
             "센서 토양 대",
             "스마트 수목관리 시스템"
@@ -16060,6 +17165,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.16
         },
         "category": "device",
+        "page": 353,
         "keywords": [
             "스탠드 타입",
             "스마트 발열체크 시스템"
@@ -16074,6 +17180,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.33
         },
         "category": "device",
+        "page": 353,
         "keywords": [
             "게이트 타입",
             "스마트 발열체크 시스템"
@@ -16089,6 +17196,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.18
         },
         "category": "device",
+        "page": 354,
         "keywords": [
             "T형 제수변 플렌지",
             "IoT기반 지능형 소화전 관리시스템"
@@ -16105,6 +17213,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.35
         },
         "category": "device",
+        "page": 354,
         "keywords": [
             "제어함체",
             "IoT기반 지능형 소화전 관리시스템"
@@ -16120,6 +17229,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.11
         },
         "category": "device",
+        "page": 354,
         "keywords": [
             "Pole",
             "IoT기반 지능형 소화전 관리시스템"
@@ -16134,6 +17244,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.19
         },
         "category": "device",
+        "page": 355,
         "keywords": [
             "전광판 차량용 대 - 0.39",
             "우회전 스마트 알리미 시스템"
@@ -16148,6 +17259,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.07
         },
         "category": "device",
+        "page": 355,
         "keywords": [
             "보행자용 차량용 대 - 0.39",
             "우회전 스마트 알리미 시스템"
@@ -16162,6 +17274,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.29
         },
         "category": "device",
+        "page": 355,
         "keywords": [
             "제어함체 대 0.29 0.29",
             "우회전 스마트 알리미 시스템"
@@ -16176,6 +17289,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.08
         },
         "category": "device",
+        "page": 355,
         "keywords": [
             "모니터링 시스템 면당",
             "전기차 배터리 온도 모니터링 시스템"
@@ -16190,6 +17304,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.1
         },
         "category": "device",
+        "page": 355,
         "keywords": [
             "전원함체 개",
             "전기차 배터리 온도 모니터링 시스템"
@@ -16204,6 +17319,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.09
         },
         "category": "device",
+        "page": 355,
         "keywords": [
             "메인함체 개",
             "전기차 배터리 온도 모니터링 시스템"
@@ -16218,6 +17334,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.14
         },
         "category": "device",
+        "page": 355,
         "keywords": [
             "운영프로그램 식",
             "전기차 배터리 온도 모니터링 시스템"
@@ -16232,6 +17349,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.06
         },
         "category": "device",
+        "page": 355,
         "keywords": [
             "최종시험 식",
             "전기차 배터리 온도 모니터링 시스템"
@@ -16247,6 +17365,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.8
         },
         "category": "device",
+        "page": 369,
         "keywords": [
             "선박 통신장비용 전원케이블 포설",
             "공통적용"
@@ -16262,6 +17381,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "device",
+        "page": 369,
         "keywords": [
             "선박 통신장비용 케이블 포설",
             "공통적용"
@@ -16276,6 +17396,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.44
         },
         "category": "device",
+        "page": 375,
         "keywords": [
             "기초대 설치 - - 0.07 0.07 0.44",
             "음향측심기(Echo Sounder)"
@@ -16290,6 +17411,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.97
         },
         "category": "device",
+        "page": 375,
         "keywords": [
             "작업 선저 Transducer 설치 - - 0.97 0.97 0.97",
             "음향측심기(Echo Sounder)"
@@ -16305,6 +17427,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.12
         },
         "category": "device",
+        "page": 378,
         "keywords": [
             "기기반입 및 장비운반",
             "레이더 트랜스폰더(Radar Transponder)"
@@ -16320,6 +17443,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.09
         },
         "category": "device",
+        "page": 378,
         "keywords": [
             "기초포장해체",
             "레이더 트랜스폰더(Radar Transponder)"
@@ -16335,6 +17459,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.09
         },
         "category": "device",
+        "page": 378,
         "keywords": [
             "작업 점검 및 목록대조",
             "레이더 트랜스폰더(Radar Transponder)"
@@ -16349,6 +17474,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.11
         },
         "category": "device",
+        "page": 378,
         "keywords": [
             "설치위치지정",
             "레이더 트랜스폰더(Radar Transponder)"
@@ -16363,6 +17489,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.09
         },
         "category": "device",
+        "page": 378,
         "keywords": [
             "설치작업 Main Unit",
             "레이더 트랜스폰더(Radar Transponder)"
@@ -16378,6 +17505,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.13
         },
         "category": "device",
+        "page": 378,
         "keywords": [
             "시험 대국 및 종합시험",
             "레이더 트랜스폰더(Radar Transponder)"
@@ -16392,6 +17520,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.6
         },
         "category": "device",
+        "page": 382,
         "keywords": [
             "설치 고정브라켓 설치 - 0.60",
             "위성비상위치지시용 무선표지설비(SAT/EPIRB)"
@@ -16406,6 +17535,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.47
         },
         "category": "device",
+        "page": 382,
         "keywords": [
             "기초대 설치 - - 0.09 0.09 0.47",
             "위성항법표시장치 및 어군탐지기 겸용 (GPS Plotter&Fish Finder)"
@@ -16420,6 +17550,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.97
         },
         "category": "device",
+        "page": 382,
         "keywords": [
             "선저 Transducer 설치 - - 0.97 0.97 0.97",
             "위성항법표시장치 및 어군탐지기 겸용 (GPS Plotter&Fish Finder)"
@@ -16434,6 +17565,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.82
         },
         "category": "device",
+        "page": 383,
         "keywords": [
             "기초대 설치 0.07 - 0.07 0.82",
             "선내지령장치(Marine Public Addresser)"
@@ -16448,6 +17580,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.65
         },
         "category": "device",
+        "page": 383,
         "keywords": [
             "설치 외부 혼 스피커(Horn Speaker) 0.38 - 0.38 0.65",
             "선내지령장치(Marine Public Addresser)"
@@ -16462,6 +17595,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.25
         },
         "category": "device",
+        "page": 383,
         "keywords": [
             "마이크/스피커 연결함 0.25 - 0.25 0.25",
             "선내지령장치(Marine Public Addresser)"
@@ -16476,6 +17610,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.64
         },
         "category": "device",
+        "page": 384,
         "keywords": [
             "기초대 설치 - 0.07 0.07 0.64",
             "풍향풍속계(Wind Speed & Direction Indicator)"
@@ -16490,6 +17625,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.8
         },
         "category": "device",
+        "page": 384,
         "keywords": [
             "풍향풍속 측정기 - 0.50 0.50 0.80",
             "풍향풍속계(Wind Speed & Direction Indicator)"
@@ -16504,6 +17640,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 1.0
         },
         "category": "device",
+        "page": 385,
         "keywords": [
             "기초대 설치 - 0.07 0.07 - - 1.00",
             "전자해도표시시스템(ECDIS)"
@@ -16518,6 +17655,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.75
         },
         "category": "device",
+        "page": 386,
         "keywords": [
             "기초대 설치 0.13 - 0.13 0.75",
             "선속계(Doppler Speed Log)"
@@ -16532,6 +17670,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 2.63
         },
         "category": "device",
+        "page": 386,
         "keywords": [
             "선저 Transducer 2.63 2.63 2.63 2.63",
             "선속계(Doppler Speed Log)"
@@ -16546,6 +17685,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 1.0
         },
         "category": "device",
+        "page": 386,
         "keywords": [
             "결선 선저 Transducer - 2.17 2.17 -",
             "선속계(Doppler Speed Log)"
@@ -16560,6 +17700,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.75
         },
         "category": "device",
+        "page": 387,
         "keywords": [
             "기초대 설치 0.17 - 0.17 - - 0.75",
             "간이항해자료기록장치(S-VDR)"
@@ -16574,6 +17715,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 1.5
         },
         "category": "device",
+        "page": 388,
         "keywords": [
             "기초대 설치 0.50 - 0.50 1.50",
             "자이로컴퍼스(Gyro Compass)"
@@ -16588,6 +17730,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 2.25
         },
         "category": "device",
+        "page": 389,
         "keywords": [
             "기초대 설치 0.25 0.25 2.25",
             "자기컴퍼스(Magnetic Compass)"
@@ -16602,6 +17745,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 1.75
         },
         "category": "device",
+        "page": 389,
         "keywords": [
             "기초대 설치 0.50 - 0.50 - - 1.75",
             "조타장치(Auto Pilot)"
@@ -16616,6 +17760,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.46
         },
         "category": "device",
+        "page": 390,
         "keywords": [
             "기초대 설치 - - 0.08 0.08 0.46",
             "어군탐지기 (Fish-Finder)"
@@ -16630,6 +17775,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.97
         },
         "category": "device",
+        "page": 390,
         "keywords": [
             "작업 선저 Transducer 설치 - - 0.97 0.97 0.97",
             "어군탐지기 (Fish-Finder)"
@@ -16644,6 +17790,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 1.25
         },
         "category": "device",
+        "page": 391,
         "keywords": [
             "기초대 설치 1.00 - 1.00 - - 1.25",
             "SONAR(Sound Navigation And Ranging)"
@@ -16658,6 +17805,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 6.0
         },
         "category": "device",
+        "page": 391,
         "keywords": [
             "작업 선저 돔(DOME) 6.00 6.00 6.00 6.00",
             "SONAR(Sound Navigation And Ranging)"
@@ -16672,6 +17820,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 3.5
         },
         "category": "device",
+        "page": 391,
         "keywords": [
             "상하장치 3.50 3.50 3.50 3.50 3.50 3.50",
             "SONAR(Sound Navigation And Ranging)"
@@ -16686,6 +17835,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 4.0
         },
         "category": "device",
+        "page": 391,
         "keywords": [
             "결선 선저 돔(DOME) 5.17 5.17 4.00",
             "SONAR(Sound Navigation And Ranging)"
@@ -16700,6 +17850,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 13.45
         },
         "category": "device",
+        "page": 403,
         "keywords": [
             "배열 및 조립 보통인부 1.78 4.26 8.52",
             "250AH이하 축전지"
@@ -16714,6 +17865,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 13.55
         },
         "category": "device",
+        "page": 403,
         "keywords": [
             "배열 및 조립 보통인부 1.79 4.29 8.58",
             "500AH이하 축전지"
@@ -16728,6 +17880,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 10.23
         },
         "category": "device",
+        "page": 403,
         "keywords": [
             "배열 및 조립 인력운반공 1.35 3.24 6.48",
             "1,200AH이하 축전지"
@@ -16742,6 +17895,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 10.23
         },
         "category": "device",
+        "page": 403,
         "keywords": [
             "보통인부 1.35 3.24 6.48",
             "1,200AH이하 축전지"
@@ -16756,6 +17910,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 16.96
         },
         "category": "device",
+        "page": 404,
         "keywords": [
             "소운반 인력운반공 2.24 5.37 10.74",
             "1,600AH이하 축전지"
@@ -16770,6 +17925,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 16.96
         },
         "category": "device",
+        "page": 404,
         "keywords": [
             "보통인부 2.24 5.37 10.74",
             "1,600AH이하 축전지"
@@ -16784,6 +17940,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 26.96
         },
         "category": "device",
+        "page": 404,
         "keywords": [
             "소운반 인력운반공 2.24 5.37 10.74",
             "2,400AH이하 축전지"
@@ -16798,6 +17955,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 19.84
         },
         "category": "device",
+        "page": 404,
         "keywords": [
             "보통인부 2.62 6.28 12.56",
             "2,400AH이하 축전지"
@@ -16812,6 +17970,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 20.31
         },
         "category": "device",
+        "page": 404,
         "keywords": [
             "배열 및 조립 인력운반공 2.68 6.43 12.86",
             "3,000AH이하 축전지"
@@ -16826,6 +17985,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 23.79
         },
         "category": "device",
+        "page": 404,
         "keywords": [
             "보통인부 3.14 7.53 15.06",
             "3,000AH이하 축전지"
@@ -16841,6 +18001,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.01
         },
         "category": "device",
+        "page": 404,
         "keywords": [
             "축전지 감시장치용 결합기",
             "축전지 감시장치용 결합기"
@@ -16856,6 +18017,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.02
         },
         "category": "device",
+        "page": 405,
         "keywords": [
             "모듈 설치 21.6V/70Ah",
             "리튬2차전지"
@@ -16871,6 +18033,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.03
         },
         "category": "device",
+        "page": 405,
         "keywords": [
             "48V/50Ah",
             "리튬2차전지"
@@ -16885,6 +18048,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 3.6
         },
         "category": "device",
+        "page": 407,
         "keywords": [
             "보통인부 2.70 2.79 2.93 3.15 3.38",
             "배터리(Battery) 충전장치"
@@ -16899,6 +18063,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 4.75
         },
         "category": "device",
+        "page": 407,
         "keywords": [
             "50A이하 통신설비공 3.93 4.06 4.20 4.42 4.53",
             "배터리(Battery) 충전장치"
@@ -16913,6 +18078,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 4.5
         },
         "category": "device",
+        "page": 407,
         "keywords": [
             "보통인부 3.15 3.38 3.60 3.96 4.14",
             "배터리(Battery) 충전장치"
@@ -16927,6 +18093,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 5.58
         },
         "category": "device",
+        "page": 407,
         "keywords": [
             "100A이하 통신설비공 4.20 4.48 4.75 5.03 5.30",
             "배터리(Battery) 충전장치"
@@ -16941,6 +18108,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 5.85
         },
         "category": "device",
+        "page": 407,
         "keywords": [
             "보통인부 3.60 4.05 4.50 4.95 5.40",
             "배터리(Battery) 충전장치"
@@ -16955,6 +18123,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 7.07
         },
         "category": "device",
+        "page": 407,
         "keywords": [
             "200A이하 통신설비공 - 5.00 5.80 6.26 6.68",
             "배터리(Battery) 충전장치"
@@ -16969,6 +18138,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 8.37
         },
         "category": "device",
+        "page": 407,
         "keywords": [
             "보통인부 - 6.00 6.21 6.98 7.65",
             "배터리(Battery) 충전장치"
@@ -16983,6 +18153,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 10.25
         },
         "category": "device",
+        "page": 407,
         "keywords": [
             "400A이하 통신설비공 - 6.00 6.80 8.60 9.15",
             "배터리(Battery) 충전장치"
@@ -16997,6 +18168,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 13.5
         },
         "category": "device",
+        "page": 407,
         "keywords": [
             "보통인부 - 8.25 8.70 10.80 11.70",
             "배터리(Battery) 충전장치"
@@ -17012,6 +18184,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.28
         },
         "category": "device",
+        "page": 408,
         "keywords": [
             "태양광전지판",
             "태양광 충전시스템"
@@ -17027,6 +18200,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.35
         },
         "category": "device",
+        "page": 408,
         "keywords": [
             "전원관리장치",
             "태양광 충전시스템"
@@ -17041,6 +18215,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 409,
         "keywords": [
             "10kVA초과 ~ 20kVA 이하 대",
             "무정전 전원장치(UPS, CVCF)"
@@ -17055,6 +18230,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 2.0
         },
         "category": "device",
+        "page": 409,
         "keywords": [
             "20kVA초과 ~ 30kVA 이하 대",
             "무정전 전원장치(UPS, CVCF)"
@@ -17069,6 +18245,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 3.0
         },
         "category": "device",
+        "page": 409,
         "keywords": [
             "30kVA 초과~100kVA 이하 이하 대",
             "무정전 전원장치(UPS, CVCF)"
@@ -17083,6 +18260,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 4.0
         },
         "category": "device",
+        "page": 409,
         "keywords": [
             "100kVA 초과~250kVA 이하 이하 대",
             "무정전 전원장치(UPS, CVCF)"
@@ -17097,6 +18275,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 5.0
         },
         "category": "device",
+        "page": 409,
         "keywords": [
             "250kVA초과~500kVA 이하 이하 이하 대",
             "무정전 전원장치(UPS, CVCF)"
@@ -17111,6 +18290,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.58
         },
         "category": "device",
+        "page": 409,
         "keywords": [
             "원격감시 및 제어 S/W설치 식",
             "무정전 전원장치(UPS, CVCF)"
@@ -17126,6 +18306,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.1
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "길이 1~2m × 1본",
             "접지시설"
@@ -17141,6 +18322,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.23
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "접지봉 타설 × 1본",
             "접지시설"
@@ -17156,6 +18338,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.3
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "0.3m × 0.3m 이하",
             "접지시설"
@@ -17171,6 +18354,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.5
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "접지동판 매설 1.0m × 1.5m 이하",
             "접지시설"
@@ -17186,6 +18370,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.8
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "1.0m × 2.5m 이하",
             "접지시설"
@@ -17201,6 +18386,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.26
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "망형접지동판 롤형",
             "접지시설"
@@ -17216,6 +18402,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.06
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "매설 판형",
             "접지시설"
@@ -17231,6 +18418,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.07
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "테두리보강형",
             "접지시설"
@@ -17245,6 +18433,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.16
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "접지동판 가공 -",
             "접지시설"
@@ -17260,6 +18449,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.46
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "탄소봉매설 φ 150× 1,000 미만",
             "접지시설"
@@ -17275,6 +18465,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.73
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "(지하 1.5m 기준) φ 150× 1,000 이상",
             "접지시설"
@@ -17290,6 +18481,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.0
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "φ 300× 1,000 미만",
             "접지시설"
@@ -17305,6 +18497,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.25
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "접지선 부설 600V 비닐전선",
             "접지시설"
@@ -17319,6 +18512,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.1
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "10㎟ 이하",
             "접지시설"
@@ -17333,6 +18527,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.12
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "35㎟ 이하",
             "접지시설"
@@ -17347,6 +18542,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.15
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "접지선 매설 95㎟ 이하",
             "접지시설"
@@ -17361,6 +18557,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.2
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "150㎟ 이하",
             "접지시설"
@@ -17375,6 +18572,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.25
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "150㎟ 초과",
             "접지시설"
@@ -17389,6 +18587,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.1
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "접속 및 단자 C형 및 원형 슬리브",
             "접지시설"
@@ -17403,6 +18602,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.03
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "압착단자",
             "접지시설"
@@ -17417,6 +18617,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.19
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "설치 용접(발열) 또는 납땜",
             "접지시설"
@@ -17431,6 +18632,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.05
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "볼트 체결형",
             "접지시설"
@@ -17445,6 +18647,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.66
         },
         "category": "device",
+        "page": 410,
         "keywords": [
             "접지 단자함 -",
             "접지시설"
@@ -17460,6 +18663,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.99
         },
         "category": "device",
+        "page": 411,
         "keywords": [
             "대지고유저항 측정",
             "대지고유저항 측정 및 분석"
@@ -17475,6 +18679,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.92
         },
         "category": "device",
+        "page": 411,
         "keywords": [
             "맨홀",
             "매설물 탐지"
@@ -17490,6 +18695,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.26
         },
         "category": "device",
+        "page": 411,
         "keywords": [
             "맨홀외",
             "매설물 탐지"
@@ -17504,6 +18710,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.08
         },
         "category": "device",
+        "page": 412,
         "keywords": [
             "Ø 75 m",
             "보링 (천공)"
@@ -17518,6 +18725,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.1
         },
         "category": "device",
+        "page": 412,
         "keywords": [
             "천공 Ø100 m",
             "보링 (천공)"
@@ -17532,6 +18740,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.12
         },
         "category": "device",
+        "page": 412,
         "keywords": [
             "Ø150 Ø100 m",
             "보링 (천공)"
@@ -17546,6 +18755,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.15
         },
         "category": "device",
+        "page": 412,
         "keywords": [
             "Ø200 Ø100 m",
             "보링 (천공)"
@@ -17561,6 +18771,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.12
         },
         "category": "device",
+        "page": 412,
         "keywords": [
             "케이싱설치 Ø100 m",
             "보링 (천공)"
@@ -17575,6 +18786,7 @@ const STANDARD_LABOR_DB = [
             "용접공": 0.01
         },
         "category": "device",
+        "page": 413,
         "keywords": [
             "접지전극(봉) 설치 m -",
             "저감제 주입 및 접지저항 측정"
@@ -17589,6 +18801,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.11
         },
         "category": "device",
+        "page": 414,
         "keywords": [
             "서지보호기용 외함 설치(300 x 300)",
             "서지보호기(SPD)"
@@ -17603,6 +18816,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.24
         },
         "category": "device",
+        "page": 414,
         "keywords": [
             "전원용",
             "서지보호기(SPD)"
@@ -17617,6 +18831,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.14
         },
         "category": "device",
+        "page": 414,
         "keywords": [
             "통신용(데이터, 영상)",
             "서지보호기(SPD)"
@@ -17633,6 +18848,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.16
         },
         "category": "device",
+        "page": 415,
         "keywords": [
             "천장 천장",
             "전자기펄스(EMP) 방호설비"
@@ -17649,6 +18865,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.03
         },
         "category": "device",
+        "page": 415,
         "keywords": [
             "모서리",
             "전자기펄스(EMP) 방호설비"
@@ -17665,6 +18882,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.08
         },
         "category": "device",
+        "page": 415,
         "keywords": [
             "차폐판 바닥",
             "전자기펄스(EMP) 방호설비"
@@ -17681,6 +18899,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.07
         },
         "category": "device",
+        "page": 415,
         "keywords": [
             "벽",
             "전자기펄스(EMP) 방호설비"
@@ -17697,6 +18916,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.11
         },
         "category": "device",
+        "page": 415,
         "keywords": [
             "기둥",
             "전자기펄스(EMP) 방호설비"
@@ -17711,6 +18931,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.39
         },
         "category": "device",
+        "page": 415,
         "keywords": [
             "허니컴 600㎜x600㎜x3/16“이하",
             "전자기펄스(EMP) 방호설비"
@@ -17725,6 +18946,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.3
         },
         "category": "device",
+        "page": 415,
         "keywords": [
             "차폐필터 300㎜x90㎜x45㎜ 이하",
             "전자기펄스(EMP) 방호설비"
@@ -17741,6 +18963,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 2.4
         },
         "category": "device",
+        "page": 416,
         "keywords": [
             "운반 및 설치",
             "자동전압 조정기"
@@ -17757,6 +18980,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.6
         },
         "category": "device",
+        "page": 416,
         "keywords": [
             "결선 및 조정시험",
             "자동전압 조정기"
@@ -17773,6 +18997,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.8
         },
         "category": "device",
+        "page": 416,
         "keywords": [
             "500kva이하 조작반설치",
             "자동전압 조정기"
@@ -17789,6 +19014,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 1.8
         },
         "category": "device",
+        "page": 416,
         "keywords": [
             "1,200kva이하 조작반설치",
             "자동전압 조정기"
@@ -17803,6 +19029,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.11
         },
         "category": "device",
+        "page": 418,
         "keywords": [
             "30AF 이하 개 0.19 0.20 0.30",
             "차단기 및 개폐기 등"
@@ -17817,6 +19044,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.15
         },
         "category": "device",
+        "page": 418,
         "keywords": [
             "50 이하 개 0.19 0.20 0.30",
             "차단기 및 개폐기 등"
@@ -17831,6 +19059,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.23
         },
         "category": "device",
+        "page": 418,
         "keywords": [
             "100 이하 개 0.19 0.20 0.30",
             "차단기 및 개폐기 등"
@@ -17845,6 +19074,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.29
         },
         "category": "device",
+        "page": 418,
         "keywords": [
             "225 이하 개 0.19 0.20 0.30",
             "차단기 및 개폐기 등"
@@ -17859,6 +19089,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.84
         },
         "category": "device",
+        "page": 418,
         "keywords": [
             "1,500A 이하",
             "저압 자동절체 스위치"
@@ -17873,6 +19104,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 2.08
         },
         "category": "device",
+        "page": 418,
         "keywords": [
             "1,500A 초과 ~ 3,000A",
             "저압 자동절체 스위치"
@@ -17887,6 +19119,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 2.4
         },
         "category": "device",
+        "page": 418,
         "keywords": [
             "3,000A초과 ~ 5,000A까지",
             "저압 자동절체 스위치"
@@ -17902,6 +19135,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.52
         },
         "category": "device",
+        "page": 421,
         "keywords": [
             "연선전화",
             "통화장치"
@@ -17916,6 +19150,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.13
         },
         "category": "device",
+        "page": 421,
         "keywords": [
             "건널목 주장치 및 전원장치",
             "통화장치"
@@ -17931,6 +19166,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.56
         },
         "category": "device",
+        "page": 421,
         "keywords": [
             "비상직통전화 자장치",
             "통화장치"
@@ -17946,6 +19182,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.83
         },
         "category": "device",
+        "page": 421,
         "keywords": [
             "주장치",
             "통화장치"
@@ -17961,6 +19198,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 2.5
         },
         "category": "device",
+        "page": 421,
         "keywords": [
             "비상게이트 자장치 및 게이트",
             "통화장치"
@@ -17976,6 +19214,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 0.25
         },
         "category": "device",
+        "page": 421,
         "keywords": [
             "모니터 및 인터폰",
             "통화장치"
@@ -17990,6 +19229,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.2
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "보안기",
             "기기신설"
@@ -18004,6 +19244,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.3
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "전화기 자석",
             "기기신설"
@@ -18018,6 +19259,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.5
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "전화기 공전",
             "기기신설"
@@ -18032,6 +19274,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.0
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "강력전화기(유도방지장치 포함)",
             "기기신설"
@@ -18046,6 +19289,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.5
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "방수, 방폭, 방진, 함체",
             "기기신설"
@@ -18060,6 +19304,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.15
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "Dial",
             "기기신설"
@@ -18074,6 +19319,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.08
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "부저",
             "기기신설"
@@ -18088,6 +19334,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.16
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "전령 100㎜ ~ 200㎜",
             "기기신설"
@@ -18102,6 +19349,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.6
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "모터싸이렌(마그넷싸이렌 포함)",
             "기기신설"
@@ -18116,6 +19364,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.16
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "누름단추 옥외용 고성전화기",
             "기기신설"
@@ -18130,6 +19379,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.7
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "확성기연락용",
             "기기신설"
@@ -18144,6 +19394,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.06
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "인터폰",
             "기기신설"
@@ -18158,6 +19409,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.2
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "인터폰 교환장치",
             "기기신설"
@@ -18173,6 +19425,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 2.0
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "주장치 20회로 이하",
             "기기신설"
@@ -18188,6 +19441,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.0
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "10회로 이하",
             "기기신설"
@@ -18203,6 +19457,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.27
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "냉·난방기 전기형",
             "기기신설"
@@ -18218,6 +19473,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.32
         },
         "category": "device",
+        "page": 422,
         "keywords": [
             "가스형",
             "기기신설"
@@ -18232,6 +19488,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 1.76
         },
         "category": "device",
+        "page": 423,
         "keywords": [
             "RF신호 송수신장치 1.80 -",
             "지상장치"
@@ -18246,6 +19503,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 1.5
         },
         "category": "device",
+        "page": 424,
         "keywords": [
             "영상신호 변환장치 1.58",
             "차상장치"
@@ -18260,6 +19518,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 1.16
         },
         "category": "device",
+        "page": 424,
         "keywords": [
             "RF신호 송수신장치 1.34",
             "차상장치"
@@ -18275,6 +19534,7 @@ const STANDARD_LABOR_DB = [
             "통신케이블공": 1.42
         },
         "category": "device",
+        "page": 424,
         "keywords": [
             "영상 표시부 -",
             "차상장치"
@@ -18289,6 +19549,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 4.1
         },
         "category": "device",
+        "page": 425,
         "keywords": [
             "모시계(또는 부모시계)",
             "전기시계설비"
@@ -18303,6 +19564,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.55
         },
         "category": "device",
+        "page": 425,
         "keywords": [
             "300 ~ 400㎜",
             "전기시계설비"
@@ -18317,6 +19579,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 0.69
         },
         "category": "device",
+        "page": 425,
         "keywords": [
             "단면 600㎜",
             "전기시계설비"
@@ -18331,6 +19594,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 2.1
         },
         "category": "device",
+        "page": 425,
         "keywords": [
             "자시계 900㎜ 이상",
             "전기시계설비"
@@ -18345,6 +19609,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 1.05
         },
         "category": "device",
+        "page": 425,
         "keywords": [
             "양면 600㎜",
             "전기시계설비"
@@ -18359,6 +19624,7 @@ const STANDARD_LABOR_DB = [
             "통신내선공": 4.1
         },
         "category": "device",
+        "page": 425,
         "keywords": [
             "900㎜ 이상",
             "전기시계설비"
@@ -18374,6 +19640,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.64
         },
         "category": "device",
+        "page": 427,
         "keywords": [
             "영상표출장치 설치",
             "영상표출장치"
@@ -18389,6 +19656,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.15
         },
         "category": "device",
+        "page": 427,
         "keywords": [
             "장애인용 음성유도기",
             "장애인용 음성유도기"
@@ -18403,6 +19671,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.1
         },
         "category": "device",
+        "page": 435,
         "keywords": [
             "S/W 설치 펌웨어 및 RF 모듈 설치 0.88",
             "교통카드 무인충전기"
@@ -18417,6 +19686,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.32
         },
         "category": "device",
+        "page": 435,
         "keywords": [
             "기초정보 설정 펌웨어 및 RF 모듈 설치 0.88",
             "교통카드 무인충전기"
@@ -18431,6 +19701,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.14
         },
         "category": "device",
+        "page": 435,
         "keywords": [
             "종합시험 설정 펌웨어 및 RF 모듈 설치 0.88",
             "교통카드 무인충전기"
@@ -18445,6 +19716,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.5
         },
         "category": "device",
+        "page": 439,
         "keywords": [
             "배관(AMV용) 조",
             "ATS(Automatic Train Stop) 차상장치"
@@ -18459,6 +19731,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 1.0
         },
         "category": "device",
+        "page": 439,
         "keywords": [
             "배관(가압 스위치용) 조",
             "ATS(Automatic Train Stop) 차상장치"
@@ -18473,6 +19746,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.5
         },
         "category": "device",
+        "page": 439,
         "keywords": [
             "설치대(차상자 설치대용) 조",
             "ATS(Automatic Train Stop) 차상장치"
@@ -18488,6 +19762,7 @@ const STANDARD_LABOR_DB = [
             "송전전공": 0.18
         },
         "category": "device",
+        "page": 449,
         "keywords": [
             "인력점검(기별점검)",
             "OPGW 인력점검"
@@ -18503,6 +19778,7 @@ const STANDARD_LABOR_DB = [
             "송전전공": 0.32
         },
         "category": "device",
+        "page": 449,
         "keywords": [
             "기본정비",
             "OPGW 단순정비"
@@ -18518,6 +19794,7 @@ const STANDARD_LABOR_DB = [
             "송전전공": 0.06
         },
         "category": "device",
+        "page": 449,
         "keywords": [
             "댐퍼",
             "OPGW 단순정비"
@@ -18533,6 +19810,7 @@ const STANDARD_LABOR_DB = [
             "송전전공": 0.21
         },
         "category": "device",
+        "page": 449,
         "keywords": [
             "케이블 슬립",
             "OPGW 단순정비"
@@ -18548,6 +19826,7 @@ const STANDARD_LABOR_DB = [
             "송전전공": 0.04
         },
         "category": "device",
+        "page": 449,
         "keywords": [
             "세부 점퍼 클램프",
             "OPGW 단순정비"
@@ -18563,6 +19842,7 @@ const STANDARD_LABOR_DB = [
             "송전전공": 0.08
         },
         "category": "device",
+        "page": 449,
         "keywords": [
             "공정 접지선",
             "OPGW 단순정비"
@@ -18578,6 +19858,7 @@ const STANDARD_LABOR_DB = [
             "송전전공": 0.08
         },
         "category": "device",
+        "page": 449,
         "keywords": [
             "아마로드",
             "OPGW 단순정비"
@@ -18593,6 +19874,7 @@ const STANDARD_LABOR_DB = [
             "송전전공": 0.25
         },
         "category": "device",
+        "page": 449,
         "keywords": [
             "현수클램프 편위",
             "OPGW 단순정비"
@@ -18607,6 +19889,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.2
         },
         "category": "device",
+        "page": 450,
         "keywords": [
             "3. 보안등 점검 및 보수 조",
             "철탑 점검"
@@ -18621,6 +19904,7 @@ const STANDARD_LABOR_DB = [
             "통신외선공": 0.2
         },
         "category": "device",
+        "page": 450,
         "keywords": [
             "4. 피뢰침 점검 및 보수 조",
             "철탑 점검"
@@ -18636,6 +19920,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.25
         },
         "category": "device",
+        "page": 450,
         "keywords": [
             "1. 공기누설 및 W/G지지철물 점 루트",
             "W/G(급전선) 점검"
@@ -18650,6 +19935,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.12
         },
         "category": "device",
+        "page": 450,
         "keywords": [
             "2. W/G닥터 점검 및 보강 루트",
             "W/G(급전선) 점검"
@@ -18664,6 +19950,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.1
         },
         "category": "device",
+        "page": 450,
         "keywords": [
             "3. W/G시험 점검 및 보강 루트",
             "W/G(급전선) 점검"
@@ -18678,6 +19965,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.2
         },
         "category": "device",
+        "page": 451,
         "keywords": [
             "1. 디하이드레이터 점검 및 조정",
             "디하이드레이터 점검"
@@ -18692,6 +19980,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.2
         },
         "category": "device",
+        "page": 451,
         "keywords": [
             "2. 에어게이지․환 확인 및 보강",
             "디하이드레이터 점검"
@@ -18706,6 +19995,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.5
         },
         "category": "device",
+        "page": 451,
         "keywords": [
             "1. 전파장애물 제거 면",
             "반사판 점검"
@@ -18720,6 +20010,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.5
         },
         "category": "device",
+        "page": 451,
         "keywords": [
             "2. 점검 및 방향조정 면",
             "반사판 점검"
@@ -18734,6 +20025,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 0.4
         },
         "category": "device",
+        "page": 451,
         "keywords": [
             "1. 휘다혼, 가이와이어의 볼트 면",
             "파라보라 안테나 점검"
@@ -18748,6 +20040,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 0.17
         },
         "category": "device",
+        "page": 451,
         "keywords": [
             "2. 안테나상태 점검 볼트 면",
             "파라보라 안테나 점검"
@@ -18762,6 +20055,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 0.42
         },
         "category": "device",
+        "page": 451,
         "keywords": [
             "2. 안테나상태 점검 볼트 면",
             "파라보라 안테나 점검"
@@ -18776,6 +20070,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 0.63
         },
         "category": "device",
+        "page": 451,
         "keywords": [
             "2. 안테나상태 점검 볼트 면",
             "파라보라 안테나 점검"
@@ -18790,6 +20085,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.2
         },
         "category": "device",
+        "page": 452,
         "keywords": [
             "단독형 대",
             "무선AP 점검"
@@ -18804,6 +20100,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.14
         },
         "category": "device",
+        "page": 452,
         "keywords": [
             "통합형 대",
             "무선AP 점검"
@@ -18819,6 +20116,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.58
         },
         "category": "device",
+        "page": 465,
         "keywords": [
             "전원부 점검",
             "전파수신기 (30MHz이하) 점검"
@@ -18834,6 +20132,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.31
         },
         "category": "device",
+        "page": 465,
         "keywords": [
             "수신부(Receiver Unit) 점검",
             "전파수신기 (30MHz이하) 점검"
@@ -18849,6 +20148,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.35
         },
         "category": "device",
+        "page": 465,
         "keywords": [
             "주파수측정 및 교정",
             "전파수신기 (30MHz이하) 점검"
@@ -18864,6 +20164,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.16
         },
         "category": "device",
+        "page": 465,
         "keywords": [
             "전원, 전압측정 및 교정",
             "전파수신기 (30MHz이하) 점검"
@@ -18879,6 +20180,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.19
         },
         "category": "device",
+        "page": 465,
         "keywords": [
             "종합시험 및 인계",
             "전파수신기 (30MHz이하) 점검"
@@ -18893,6 +20195,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.3
         },
         "category": "device",
+        "page": 467,
         "keywords": [
             "충전부 점검",
             "초단파대 양방향 무선전화장치"
@@ -18907,6 +20210,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.36
         },
         "category": "device",
+        "page": 467,
         "keywords": [
             "송신부(Transmitter Unit) 점검",
             "초단파대 양방향 무선전화장치"
@@ -18921,6 +20225,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.46
         },
         "category": "device",
+        "page": 467,
         "keywords": [
             "수신부(Receiver Unit) 점검",
             "초단파대 양방향 무선전화장치"
@@ -18935,6 +20240,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.1
         },
         "category": "device",
+        "page": 467,
         "keywords": [
             "공중선 출력측정 및 교정",
             "초단파대 양방향 무선전화장치"
@@ -18949,6 +20255,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.3
         },
         "category": "device",
+        "page": 467,
         "keywords": [
             "전원, 전압 측정 및 교정",
             "초단파대 양방향 무선전화장치"
@@ -18963,6 +20270,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.1
         },
         "category": "device",
+        "page": 467,
         "keywords": [
             "종합시험 및 인계",
             "초단파대 양방향 무선전화장치"
@@ -18978,6 +20286,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.37
         },
         "category": "device",
+        "page": 470,
         "keywords": [
             "전원부 점검",
             "선내지령장치 (Marine Public Addresser) 점검"
@@ -18993,6 +20302,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.45
         },
         "category": "device",
+        "page": 470,
         "keywords": [
             "Power Amplifier Unit점검",
             "선내지령장치 (Marine Public Addresser) 점검"
@@ -19008,6 +20318,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.68
         },
         "category": "device",
+        "page": 470,
         "keywords": [
             "Control Unit점검",
             "선내지령장치 (Marine Public Addresser) 점검"
@@ -19023,6 +20334,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.49
         },
         "category": "device",
+        "page": 470,
         "keywords": [
             "외부 Horn Speaker 점검",
             "선내지령장치 (Marine Public Addresser) 점검"
@@ -19038,6 +20350,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.37
         },
         "category": "device",
+        "page": 470,
         "keywords": [
             "실내 Speaker 점검",
             "선내지령장치 (Marine Public Addresser) 점검"
@@ -19053,6 +20366,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.25
         },
         "category": "device",
+        "page": 470,
         "keywords": [
             "전원전압측정 및 교정",
             "선내지령장치 (Marine Public Addresser) 점검"
@@ -19068,6 +20382,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.31
         },
         "category": "device",
+        "page": 470,
         "keywords": [
             "종합시험 및 인계",
             "선내지령장치 (Marine Public Addresser) 점검"
@@ -19083,6 +20398,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.37
         },
         "category": "device",
+        "page": 471,
         "keywords": [
             "전원부 점검",
             "풍향풍속계 점검"
@@ -19098,6 +20414,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.4
         },
         "category": "device",
+        "page": 471,
         "keywords": [
             "Display Unit 점검",
             "풍향풍속계 점검"
@@ -19113,6 +20430,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 1.07
         },
         "category": "device",
+        "page": 471,
         "keywords": [
             "Wind Transmitter 점검",
             "풍향풍속계 점검"
@@ -19128,6 +20446,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.62
         },
         "category": "device",
+        "page": 471,
         "keywords": [
             "풍향/풍속 측정 및 교정",
             "풍향풍속계 점검"
@@ -19143,6 +20462,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.18
         },
         "category": "device",
+        "page": 471,
         "keywords": [
             "종합시험 및 인계",
             "풍향풍속계 점검"
@@ -19157,6 +20477,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.3
         },
         "category": "device",
+        "page": 472,
         "keywords": [
             "전원부 및 충전기 점검 0.30",
             "Marine Radar(10Kw이하) 점검"
@@ -19171,6 +20492,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.48
         },
         "category": "device",
+        "page": 472,
         "keywords": [
             "Display Unit 점검 0.48",
             "Marine Radar(10Kw이하) 점검"
@@ -19185,6 +20507,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.31
         },
         "category": "device",
+        "page": 472,
         "keywords": [
             "Transceiver Unit 점검 0.31",
             "Marine Radar(10Kw이하) 점검"
@@ -19199,6 +20522,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 1.44
         },
         "category": "device",
+        "page": 472,
         "keywords": [
             "Scanner Unit 점검 0.80",
             "Marine Radar(10Kw이하) 점검"
@@ -19213,6 +20537,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.6
         },
         "category": "device",
+        "page": 472,
         "keywords": [
             "ARPA Unit 점검 0.60",
             "Marine Radar(10Kw이하) 점검"
@@ -19227,6 +20552,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.28
         },
         "category": "device",
+        "page": 472,
         "keywords": [
             "신호측정 및 교정 0.28",
             "Marine Radar(10Kw이하) 점검"
@@ -19241,6 +20567,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.1
         },
         "category": "device",
+        "page": 472,
         "keywords": [
             "전원전압측정 및 교정 0.10",
             "Marine Radar(10Kw이하) 점검"
@@ -19255,6 +20582,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.1
         },
         "category": "device",
+        "page": 472,
         "keywords": [
             "종합시험 및 인계 0.10",
             "Marine Radar(10Kw이하) 점검"
@@ -19270,6 +20598,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.21
         },
         "category": "device",
+        "page": 472,
         "keywords": [
             "Radar Transponder 점검",
             "레이더 트랜스폰더 (SART) 점검"
@@ -19285,6 +20614,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.21
         },
         "category": "device",
+        "page": 472,
         "keywords": [
             "주파수측정 및 교정",
             "레이더 트랜스폰더 (SART) 점검"
@@ -19299,6 +20629,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.22
         },
         "category": "device",
+        "page": 472,
         "keywords": [
             "공중선 수신감도 측정 및 교정",
             "레이더 트랜스폰더 (SART) 점검"
@@ -19314,6 +20645,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.2
         },
         "category": "device",
+        "page": 472,
         "keywords": [
             "종합시험 및 인계",
             "레이더 트랜스폰더 (SART) 점검"
@@ -19329,6 +20661,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.77
         },
         "category": "device",
+        "page": 473,
         "keywords": [
             "SAT/EPIRB 점검",
             "위성 비상위치 지시용 무선표지 설비(SAT / EPIRB) 점검"
@@ -19344,6 +20677,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.24
         },
         "category": "device",
+        "page": 473,
         "keywords": [
             "주파수측정 및 교정",
             "위성 비상위치 지시용 무선표지 설비(SAT / EPIRB) 점검"
@@ -19359,6 +20693,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.21
         },
         "category": "device",
+        "page": 473,
         "keywords": [
             "공중선 출력측정 및 교정",
             "위성 비상위치 지시용 무선표지 설비(SAT / EPIRB) 점검"
@@ -19374,6 +20709,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.16
         },
         "category": "device",
+        "page": 473,
         "keywords": [
             "전원, 전압 측정 및 교정",
             "위성 비상위치 지시용 무선표지 설비(SAT / EPIRB) 점검"
@@ -19389,6 +20725,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.16
         },
         "category": "device",
+        "page": 473,
         "keywords": [
             "종합시험 및 인계",
             "위성 비상위치 지시용 무선표지 설비(SAT / EPIRB) 점검"
@@ -19403,6 +20740,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.24
         },
         "category": "device",
+        "page": 473,
         "keywords": [
             "전원부 점검 0.24",
             "무선방향탐지기(Radio Direction Finder) 점검"
@@ -19417,6 +20755,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.63
         },
         "category": "device",
+        "page": 473,
         "keywords": [
             "영상부(Video Unit) 점검 0.63",
             "무선방향탐지기(Radio Direction Finder) 점검"
@@ -19431,6 +20770,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.44
         },
         "category": "device",
+        "page": 473,
         "keywords": [
             "수신부(Receiver Unit) 점검 0.44",
             "무선방향탐지기(Radio Direction Finder) 점검"
@@ -19446,6 +20786,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 1.0
         },
         "category": "device",
+        "page": 473,
         "keywords": [
             "루프안테나 점검 -",
             "무선방향탐지기(Radio Direction Finder) 점검"
@@ -19460,6 +20801,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.6
         },
         "category": "device",
+        "page": 473,
         "keywords": [
             "오차측정 및 교정 0.60",
             "무선방향탐지기(Radio Direction Finder) 점검"
@@ -19474,6 +20816,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.16
         },
         "category": "device",
+        "page": 473,
         "keywords": [
             "전원, 전압측정 및 교정 0.16",
             "무선방향탐지기(Radio Direction Finder) 점검"
@@ -19488,6 +20831,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.16
         },
         "category": "device",
+        "page": 473,
         "keywords": [
             "종합시험 및 인계 0.16",
             "무선방향탐지기(Radio Direction Finder) 점검"
@@ -19503,6 +20847,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.21
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "전원부 점검",
             "라디오부이 선택호출장치(SELL-CALL Signal Generator) 점검"
@@ -19518,6 +20863,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.32
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "Calling Transmitter 점검",
             "라디오부이 선택호출장치(SELL-CALL Signal Generator) 점검"
@@ -19533,6 +20879,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.26
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "Calling Signal Generator 점검",
             "라디오부이 선택호출장치(SELL-CALL Signal Generator) 점검"
@@ -19547,6 +20894,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.32
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "Antenna Unit 점검",
             "라디오부이 선택호출장치(SELL-CALL Signal Generator) 점검"
@@ -19562,6 +20910,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.13
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "주파수측정 및 교정",
             "라디오부이 선택호출장치(SELL-CALL Signal Generator) 점검"
@@ -19577,6 +20926,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.2
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "공중선 출력측정 및 교정",
             "라디오부이 선택호출장치(SELL-CALL Signal Generator) 점검"
@@ -19592,6 +20942,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.13
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "전원전압측정 및 교정",
             "라디오부이 선택호출장치(SELL-CALL Signal Generator) 점검"
@@ -19607,6 +20958,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.29
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "SELL CALL 시험",
             "라디오부이 선택호출장치(SELL-CALL Signal Generator) 점검"
@@ -19622,6 +20974,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.16
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "종합시험 및 인계",
             "라디오부이 선택호출장치(SELL-CALL Signal Generator) 점검"
@@ -19636,6 +20989,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.16
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "송신부 점검",
             "라디오부이 (Radio Buoy) 점검"
@@ -19650,6 +21004,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.2
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "수신부 점검",
             "라디오부이 (Radio Buoy) 점검"
@@ -19664,6 +21019,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.33
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "Antenna Unit 점검",
             "라디오부이 (Radio Buoy) 점검"
@@ -19678,6 +21034,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.16
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "주파수측정 및 교정",
             "라디오부이 (Radio Buoy) 점검"
@@ -19692,6 +21049,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.1
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "공중선 출력측정 및 교정",
             "라디오부이 (Radio Buoy) 점검"
@@ -19706,6 +21064,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.33
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "전원전압측정 및 교정",
             "라디오부이 (Radio Buoy) 점검"
@@ -19720,6 +21079,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.17
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "SELL CALL 수신 시험",
             "라디오부이 (Radio Buoy) 점검"
@@ -19734,6 +21094,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.16
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "종합시험",
             "라디오부이 (Radio Buoy) 점검"
@@ -19748,6 +21109,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 444.0
         },
         "category": "device",
+        "page": 474,
         "keywords": [
             "-",
             "라디오부이 (Radio Buoy) 점검"
@@ -19762,6 +21124,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.26
         },
         "category": "device",
+        "page": 475,
         "keywords": [
             "전원부 점검 0.26",
             "해수온도계 점검"
@@ -19776,6 +21139,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.44
         },
         "category": "device",
+        "page": 475,
         "keywords": [
             "Display Unit 점검 0.44",
             "해수온도계 점검"
@@ -19790,6 +21154,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 1.1
         },
         "category": "device",
+        "page": 475,
         "keywords": [
             "선저 Sensor Unit 점검 1.10",
             "해수온도계 점검"
@@ -19805,6 +21170,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.93
         },
         "category": "device",
+        "page": 475,
         "keywords": [
             "온도측정 및 교정 0.24",
             "해수온도계 점검"
@@ -19819,6 +21185,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.16
         },
         "category": "device",
+        "page": 475,
         "keywords": [
             "전원전압측정 및 교정 0.16",
             "해수온도계 점검"
@@ -19833,6 +21200,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.17
         },
         "category": "device",
+        "page": 475,
         "keywords": [
             "종합시험 및 인계 0.17",
             "해수온도계 점검"
@@ -19847,6 +21215,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.28
         },
         "category": "device",
+        "page": 475,
         "keywords": [
             "전원부 점검 0.28",
             "네비텍스 수신기(Navtex Receiver) 점검"
@@ -19861,6 +21230,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.36
         },
         "category": "device",
+        "page": 475,
         "keywords": [
             "수신부(Receiver Unit) 점검 0.36",
             "네비텍스 수신기(Navtex Receiver) 점검"
@@ -19875,6 +21245,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.33
         },
         "category": "device",
+        "page": 475,
         "keywords": [
             "Printer Drive Unit 점검 0.33",
             "네비텍스 수신기(Navtex Receiver) 점검"
@@ -19890,6 +21261,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.7
         },
         "category": "device",
+        "page": 475,
         "keywords": [
             "Antenna Unit 점검 -",
             "네비텍스 수신기(Navtex Receiver) 점검"
@@ -19904,6 +21276,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.12
         },
         "category": "device",
+        "page": 475,
         "keywords": [
             "전원전압측정 및 교정 0.12",
             "네비텍스 수신기(Navtex Receiver) 점검"
@@ -19918,6 +21291,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.13
         },
         "category": "device",
+        "page": 475,
         "keywords": [
             "종합시험 및 인계 0.13",
             "네비텍스 수신기(Navtex Receiver) 점검"
@@ -19933,6 +21307,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.41
         },
         "category": "device",
+        "page": 477,
         "keywords": [
             "전원부 점검",
             "자기컴퍼스(Magnetic Compass) 점검"
@@ -19948,6 +21323,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.86
         },
         "category": "device",
+        "page": 477,
         "keywords": [
             "자기컴퍼스 본체 점검",
             "자기컴퍼스(Magnetic Compass) 점검"
@@ -19963,6 +21339,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 1.47
         },
         "category": "device",
+        "page": 477,
         "keywords": [
             "자기컴퍼스 자차수정",
             "자기컴퍼스(Magnetic Compass) 점검"
@@ -19978,6 +21355,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.39
         },
         "category": "device",
+        "page": 477,
         "keywords": [
             "종합시험",
             "자기컴퍼스(Magnetic Compass) 점검"
@@ -19993,6 +21371,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.46
         },
         "category": "device",
+        "page": 477,
         "keywords": [
             "전원부 점검",
             "자동조타장치(Auto Pilot) 점검"
@@ -20008,6 +21387,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 1.42
         },
         "category": "device",
+        "page": 477,
         "keywords": [
             "조타기 점검(Steering Stand)",
             "자동조타장치(Auto Pilot) 점검"
@@ -20023,6 +21403,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 1.37
         },
         "category": "device",
+        "page": 477,
         "keywords": [
             "추종장치 점검(Repeat Back Unit)",
             "자동조타장치(Auto Pilot) 점검"
@@ -20038,6 +21419,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 1.67
         },
         "category": "device",
+        "page": 477,
         "keywords": [
             "타각지시기 점검(Rudder Angle Indicator)",
             "자동조타장치(Auto Pilot) 점검"
@@ -20053,6 +21435,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.62
         },
         "category": "device",
+        "page": 477,
         "keywords": [
             "종합시험",
             "자동조타장치(Auto Pilot) 점검"
@@ -20068,6 +21451,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 2.15
         },
         "category": "device",
+        "page": 478,
         "keywords": [
             "주컴퍼스(Master Compass) 본체 점검",
             "자이로컴퍼스(Gyro Compass) 점검"
@@ -20083,6 +21467,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.81
         },
         "category": "device",
+        "page": 478,
         "keywords": [
             "인버터(Inverter Unit)점검",
             "자이로컴퍼스(Gyro Compass) 점검"
@@ -20098,6 +21483,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 1.53
         },
         "category": "device",
+        "page": 478,
         "keywords": [
             "리피터 발신기 점검(리피터 컴퍼스 포함)",
             "자이로컴퍼스(Gyro Compass) 점검"
@@ -20113,6 +21499,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.65
         },
         "category": "device",
+        "page": 478,
         "keywords": [
             "종합시험",
             "자이로컴퍼스(Gyro Compass) 점검"
@@ -20127,6 +21514,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.2
         },
         "category": "device",
+        "page": 480,
         "keywords": [
             "전원부 점검 0.24",
             "음향수신장치(SSR) 점검"
@@ -20142,6 +21530,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.67
         },
         "category": "device",
+        "page": 480,
         "keywords": [
             "Main Unit 점검 0.53",
             "음향수신장치(SSR) 점검"
@@ -20156,6 +21545,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.25
         },
         "category": "device",
+        "page": 480,
         "keywords": [
             "Microphone 점검 0.29",
             "음향수신장치(SSR) 점검"
@@ -20171,6 +21561,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.46
         },
         "category": "device",
+        "page": 480,
         "keywords": [
             "신호 측정 및 교정 -",
             "음향수신장치(SSR) 점검"
@@ -20185,6 +21576,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.27
         },
         "category": "device",
+        "page": 480,
         "keywords": [
             "종합시험 0.28",
             "음향수신장치(SSR) 점검"
@@ -20199,6 +21591,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 1.36
         },
         "category": "device",
+        "page": 483,
         "keywords": [
             "송신부 및 수신부 점검 1.36",
             "소나(SONAR : Sound Navigating and Ranging) 점검"
@@ -20214,6 +21607,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 2.03
         },
         "category": "device",
+        "page": 483,
         "keywords": [
             "지시부 점검 1.53",
             "소나(SONAR : Sound Navigating and Ranging) 점검"
@@ -20228,6 +21622,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 1.79
         },
         "category": "device",
+        "page": 483,
         "keywords": [
             "선저 Dome 점검 1.79",
             "소나(SONAR : Sound Navigating and Ranging) 점검"
@@ -20242,6 +21637,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 1.48
         },
         "category": "device",
+        "page": 483,
         "keywords": [
             "상하장치 점검 1.48",
             "소나(SONAR : Sound Navigating and Ranging) 점검"
@@ -20256,6 +21652,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.82
         },
         "category": "device",
+        "page": 483,
         "keywords": [
             "종합시험 0.82",
             "소나(SONAR : Sound Navigating and Ranging) 점검"
@@ -20271,6 +21668,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.39
         },
         "category": "device",
+        "page": 484,
         "keywords": [
             "전원부 점검",
             "조류계 점검"
@@ -20286,6 +21684,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.63
         },
         "category": "device",
+        "page": 484,
         "keywords": [
             "Display Unit 점검",
             "조류계 점검"
@@ -20301,6 +21700,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 1.12
         },
         "category": "device",
+        "page": 484,
         "keywords": [
             "선저 Sensor 점검",
             "조류계 점검"
@@ -20316,6 +21716,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.43
         },
         "category": "device",
+        "page": 484,
         "keywords": [
             "송수신부 점검",
             "조류계 점검"
@@ -20331,6 +21732,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 1.12
         },
         "category": "device",
+        "page": 484,
         "keywords": [
             "종합시험",
             "조류계 점검"
@@ -20345,6 +21747,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.25
         },
         "category": "device",
+        "page": 485,
         "keywords": [
             "전원부 점검 0.25",
             "조상기 점검"
@@ -20360,6 +21763,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.69
         },
         "category": "device",
+        "page": 485,
         "keywords": [
             "본체 점검 0.52",
             "조상기 점검"
@@ -20375,6 +21779,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.43
         },
         "category": "device",
+        "page": 485,
         "keywords": [
             "측정 및 교정 0.45",
             "조상기 점검"
@@ -20389,6 +21794,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.41
         },
         "category": "device",
+        "page": 485,
         "keywords": [
             "종합시험 0.41",
             "조상기 점검"
@@ -20403,6 +21809,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.48
         },
         "category": "device",
+        "page": 485,
         "keywords": [
             "전원부 점검 0.43",
             "조출기(HM : Hooking Master) 점검"
@@ -20417,6 +21824,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.96
         },
         "category": "device",
+        "page": 485,
         "keywords": [
             "본체 및 Display 점검 0.49",
             "조출기(HM : Hooking Master) 점검"
@@ -20431,6 +21839,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.49
         },
         "category": "device",
+        "page": 485,
         "keywords": [
             "투승부 점검 0.43",
             "조출기(HM : Hooking Master) 점검"
@@ -20445,6 +21854,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.7
         },
         "category": "device",
+        "page": 485,
         "keywords": [
             "종합시험 0.67",
             "조출기(HM : Hooking Master) 점검"
@@ -20459,6 +21869,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.13
         },
         "category": "device",
+        "page": 496,
         "keywords": [
             "장치상태확인 대",
             "정류장 안내단말기 점검"
@@ -20473,6 +21884,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.15
         },
         "category": "device",
+        "page": 496,
         "keywords": [
             "기능 및 동작확인 대",
             "정류장 안내단말기 점검"
@@ -20487,6 +21899,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.27
         },
         "category": "device",
+        "page": 496,
         "keywords": [
             "제어부 대",
             "노변기지국 점검"
@@ -20501,6 +21914,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.22
         },
         "category": "device",
+        "page": 496,
         "keywords": [
             "안테나부 대",
             "노변기지국 점검"
@@ -20516,6 +21930,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.07
         },
         "category": "device",
+        "page": 502,
         "keywords": [
             "정류조 청소 및 점검",
             "수질원격감시시스템(TMS) 점검"
@@ -20531,6 +21946,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.08
         },
         "category": "device",
+        "page": 502,
         "keywords": [
             "데이터로거 점검",
             "수질원격감시시스템(TMS) 점검"
@@ -20546,6 +21962,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.6
         },
         "category": "device",
+        "page": 502,
         "keywords": [
             "총질소(T-N)",
             "수질원격감시시스템(TMS) 점검"
@@ -20561,6 +21978,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.6
         },
         "category": "device",
+        "page": 502,
         "keywords": [
             "측 총인(T-P)",
             "수질원격감시시스템(TMS) 점검"
@@ -20576,6 +21994,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.66
         },
         "category": "device",
+        "page": 502,
         "keywords": [
             "정 화학적산소요구량(COD)",
             "수질원격감시시스템(TMS) 점검"
@@ -20591,6 +22010,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.18
         },
         "category": "device",
+        "page": 502,
         "keywords": [
             "기 부유물질(SS)",
             "수질원격감시시스템(TMS) 점검"
@@ -20606,6 +22026,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.18
         },
         "category": "device",
+        "page": 502,
         "keywords": [
             "수소이온농도(pH)",
             "수질원격감시시스템(TMS) 점검"
@@ -20621,6 +22042,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.14
         },
         "category": "device",
+        "page": 502,
         "keywords": [
             "출입통제 프로그램",
             "출입통제시스템 점검"
@@ -20636,6 +22058,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.12
         },
         "category": "device",
+        "page": 502,
         "keywords": [
             "주제어장치(ACU)",
             "출입통제시스템 점검"
@@ -20651,6 +22074,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.09
         },
         "category": "device",
+        "page": 502,
         "keywords": [
             "Card Reader",
             "출입통제시스템 점검"
@@ -20666,6 +22090,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.07
         },
         "category": "device",
+        "page": 502,
         "keywords": [
             "각종 부대장비",
             "출입통제시스템 점검"
@@ -20680,6 +22105,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.11
         },
         "category": "device",
+        "page": 504,
         "keywords": [
             "측정소 점검 대",
             "다항목 수질계측기 점검"
@@ -20694,6 +22120,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.11
         },
         "category": "device",
+        "page": 504,
         "keywords": [
             "외함 및 샘플링 펌프 점검 대",
             "다항목 수질계측기 점검"
@@ -20708,6 +22135,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.18
         },
         "category": "device",
+        "page": 504,
         "keywords": [
             "탁도 및 샘플링 펌프 점검 대",
             "다항목 수질계측기 점검"
@@ -20722,6 +22150,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.07
         },
         "category": "device",
+        "page": 504,
         "keywords": [
             "잔류염소 및 샘플링 펌프 점검 대",
             "다항목 수질계측기 점검"
@@ -20736,6 +22165,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.15
         },
         "category": "device",
+        "page": 504,
         "keywords": [
             "수소이온농도(pH) 및 샘플링 펌프 점검 대",
             "다항목 수질계측기 점검"
@@ -20750,6 +22180,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.02
         },
         "category": "device",
+        "page": 504,
         "keywords": [
             "온도 및 샘플링 펌프 점검 대",
             "다항목 수질계측기 점검"
@@ -20764,6 +22195,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기사": 0.14
         },
         "category": "device",
+        "page": 505,
         "keywords": [
             "보행신호 음성안내 보조장치 세트",
             "보행신호 음성안내 보조장치 점검"
@@ -20779,6 +22211,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.17
         },
         "category": "device",
+        "page": 505,
         "keywords": [
             "열 영상 감시 카메라",
             "열 영상 감시 시스템 점검"
@@ -20794,6 +22227,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.19
         },
         "category": "device",
+        "page": 505,
         "keywords": [
             "팬틸트",
             "열 영상 감시 시스템 점검"
@@ -20809,6 +22243,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 505,
         "keywords": [
             "브라켓",
             "열 영상 감시 시스템 점검"
@@ -20824,6 +22259,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.13
         },
         "category": "device",
+        "page": 505,
         "keywords": [
             "레이저 감지기",
             "열 영상 감시 시스템 점검"
@@ -20839,6 +22275,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.08
         },
         "category": "device",
+        "page": 505,
         "keywords": [
             "점멸기 점검",
             "무선양방향 가로등 감시 점멸제어기 점검"
@@ -20854,6 +22291,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.03
         },
         "category": "device",
+        "page": 505,
         "keywords": [
             "DB입력 및 확인",
             "무선양방향 가로등 감시 점멸제어기 점검"
@@ -20869,6 +22307,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.03
         },
         "category": "device",
+        "page": 506,
         "keywords": [
             "점멸기 점검",
             "스마트 보안등 감시 제어시스템 점검"
@@ -20884,6 +22323,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.03
         },
         "category": "device",
+        "page": 506,
         "keywords": [
             "DB입력 및 확인",
             "스마트 보안등 감시 제어시스템 점검"
@@ -20898,6 +22338,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.15
         },
         "category": "device",
+        "page": 506,
         "keywords": [
             "메인보드 개",
             "음식물쓰레기 개별계량장비 점검"
@@ -20912,6 +22353,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.12
         },
         "category": "device",
+        "page": 506,
         "keywords": [
             "부품 인디게이터 개",
             "음식물쓰레기 개별계량장비 점검"
@@ -20926,6 +22368,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.27
         },
         "category": "device",
+        "page": 506,
         "keywords": [
             "교체 저울부 대",
             "음식물쓰레기 개별계량장비 점검"
@@ -20940,6 +22383,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.29
         },
         "category": "device",
+        "page": 506,
         "keywords": [
             "구동부 저울부 대",
             "음식물쓰레기 개별계량장비 점검"
@@ -20954,6 +22398,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.39
         },
         "category": "device",
+        "page": 507,
         "keywords": [
             "유량계 및 압력계",
             "유량계 및 압력계 점검"
@@ -20968,6 +22413,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.11
         },
         "category": "device",
+        "page": 507,
         "keywords": [
             "유량계 변환기",
             "유량계 및 압력계 점검"
@@ -20983,6 +22429,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.29
         },
         "category": "device",
+        "page": 510,
         "keywords": [
             "키보관 및 객실 현황판(Key Rack)",
             "객실관리시스템 점검"
@@ -20998,6 +22445,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.21
         },
         "category": "device",
+        "page": 510,
         "keywords": [
             "중앙현황판",
             "객실관리시스템 점검"
@@ -21013,6 +22461,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.17
         },
         "category": "device",
+        "page": 510,
         "keywords": [
             "층중계기",
             "객실관리시스템 점검"
@@ -21028,6 +22477,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.1
         },
         "category": "device",
+        "page": 510,
         "keywords": [
             "객실제어기(Control Box)",
             "객실관리시스템 점검"
@@ -21042,6 +22492,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.04
         },
         "category": "device",
+        "page": 510,
         "keywords": [
             "단말기(Night Table)",
             "객실관리시스템 점검"
@@ -21057,6 +22508,7 @@ const STANDARD_LABOR_DB = [
             "통신관련기능사": 0.33
         },
         "category": "device",
+        "page": 510,
         "keywords": [
             "종합시험",
             "객실관리시스템 점검"
@@ -21071,6 +22523,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.06
         },
         "category": "device",
+        "page": 513,
         "keywords": [
             "회선 및 데이터 전송상태 점검 회선",
             "지하수관측시스템 점검"
@@ -21085,6 +22538,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.05
         },
         "category": "device",
+        "page": 513,
         "keywords": [
             "관정깊이 측정 개소",
             "지하수관측시스템 점검"
@@ -21099,6 +22553,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.06
         },
         "category": "device",
+        "page": 513,
         "keywords": [
             "케이블점검 및 세척 케이블당",
             "지하수관측시스템 점검"
@@ -21113,6 +22568,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.08
         },
         "category": "device",
+        "page": 513,
         "keywords": [
             "모뎀 및 데이터로거 점검 대",
             "지하수관측시스템 점검"
@@ -21127,6 +22583,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.03
         },
         "category": "device",
+        "page": 513,
         "keywords": [
             "온도 개",
             "지하수관측시스템 점검"
@@ -21141,6 +22598,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.03
         },
         "category": "device",
+        "page": 513,
         "keywords": [
             "센서 세척 전기전도도 개",
             "지하수관측시스템 점검"
@@ -21155,6 +22613,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.03
         },
         "category": "device",
+        "page": 513,
         "keywords": [
             "수위 세척 전기전도도 개",
             "지하수관측시스템 점검"
@@ -21169,6 +22628,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.03
         },
         "category": "device",
+        "page": 513,
         "keywords": [
             "수소이온농도 세척 전기전도도 개",
             "지하수관측시스템 점검"
@@ -21183,6 +22643,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.04
         },
         "category": "device",
+        "page": 513,
         "keywords": [
             "온도 세척 전기전도도 개",
             "지하수관측시스템 점검"
@@ -21197,6 +22658,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.05
         },
         "category": "device",
+        "page": 513,
         "keywords": [
             "종합 측정 전기전도도 개",
             "지하수관측시스템 점검"
@@ -21211,6 +22673,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.06
         },
         "category": "device",
+        "page": 513,
         "keywords": [
             "수위 측정 전기전도도 개",
             "지하수관측시스템 점검"
@@ -21225,6 +22688,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.05
         },
         "category": "device",
+        "page": 513,
         "keywords": [
             "수소이온농도 측정 전기전도도 개",
             "지하수관측시스템 점검"
@@ -21239,6 +22703,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.07
         },
         "category": "device",
+        "page": 514,
         "keywords": [
             "케이블 상태확인 및 점검 케이블당",
             "하천 수위관측시스템 점검"
@@ -21253,6 +22718,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.1
         },
         "category": "device",
+        "page": 514,
         "keywords": [
             "센서부 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
@@ -21267,6 +22733,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.09
         },
         "category": "device",
+        "page": 514,
         "keywords": [
             "보호관 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
@@ -21281,6 +22748,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.07
         },
         "category": "device",
+        "page": 514,
         "keywords": [
             "장치함 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
@@ -21295,6 +22763,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.14
         },
         "category": "device",
+        "page": 514,
         "keywords": [
             "음파발생기 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
@@ -21309,6 +22778,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.13
         },
         "category": "device",
+        "page": 514,
         "keywords": [
             "원격단말장치 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
@@ -21323,6 +22793,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.13
         },
         "category": "device",
+        "page": 514,
         "keywords": [
             "모뎀 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
@@ -21337,6 +22808,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.09
         },
         "category": "device",
+        "page": 514,
         "keywords": [
             "전원장치 점검 음파 송·수신기 대",
             "하천 수위관측시스템 점검"
@@ -21351,6 +22823,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.12
         },
         "category": "device",
+        "page": 514,
         "keywords": [
             "종합 측정 식",
             "하천 수위관측시스템 점검"
@@ -21365,6 +22838,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.25
         },
         "category": "device",
+        "page": 514,
         "keywords": [
             "영상수위관측시스템 대",
             "하천 영상수위관측시스템 점검"
@@ -21379,6 +22853,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.09
         },
         "category": "device",
+        "page": 521,
         "keywords": [
             "GPS 수신장치 점검 식 0.15",
             "배전자동화 부대설비 점검"
@@ -21393,6 +22868,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.16
         },
         "category": "device",
+        "page": 521,
         "keywords": [
             "출력장치(프린터)점검 대 -",
             "배전자동화 부대설비 점검"
@@ -21407,6 +22883,7 @@ const STANDARD_LABOR_DB = [
             "보통인부": 0.45
         },
         "category": "device",
+        "page": 521,
         "keywords": [
             "에뮬레이터 장치 점검 식 0.67",
             "배전자동화 부대설비 점검"
@@ -21421,6 +22898,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.13
         },
         "category": "device",
+        "page": 522,
         "keywords": [
             "전압 Transducer 개",
             "일반형 변환기장치(TD :Transducer) 점검"
@@ -21435,6 +22913,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.13
         },
         "category": "device",
+        "page": 522,
         "keywords": [
             "전류 Transducer 개",
             "일반형 변환기장치(TD :Transducer) 점검"
@@ -21449,6 +22928,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.21
         },
         "category": "device",
+        "page": 522,
         "keywords": [
             "유효전력 Transducer 개",
             "일반형 변환기장치(TD :Transducer) 점검"
@@ -21463,6 +22943,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.21
         },
         "category": "device",
+        "page": 522,
         "keywords": [
             "무효전력 Transducer 개",
             "일반형 변환기장치(TD :Transducer) 점검"
@@ -21477,6 +22958,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.04
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "H/W시험사 0.04 0.04",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21491,6 +22973,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.01
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "③결선해체 통신관련산업기사 0.01 0.01",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21505,6 +22988,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.01
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "H/W시험사 0.01 0.01",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21519,6 +23003,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.01
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "⑤모듈해제 통신관련산업기사 0.01 0.01",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21533,6 +23018,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.02
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "⑥MMU 보정 통신관련산업기사 0.02 0.02",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21547,6 +23033,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.02
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "H/W시험사 0.02 0.02",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21561,6 +23048,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.04
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "시험 ⑦모듈가변저항조정 통신관련산업기사 0.01 0.01",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21575,6 +23063,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.04
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "및 H/W 시험사 0.01 0.01",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21589,6 +23078,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.01
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "⑧ 가변저항고정액주입 통신관련산업기사 0.01 0.01",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21603,6 +23093,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.01
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "교정 H/W 시험사 0.01 0.01",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21617,6 +23108,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.02
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "⑨모듈교체 통신관련산업기사 0.02 0.02",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21631,6 +23123,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.02
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "H/W 시험사 0.02 0.02",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21645,6 +23138,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.01
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "⑩ 시험성적서 작성 통신관련산업기사 0.01 0.01",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21659,6 +23153,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.01
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "⑪재결선 통신관련산업기사 0.01 0.01",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21673,6 +23168,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.01
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "⑫모듈장착 통신관련산업기사 0.01 0.01",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21687,6 +23183,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.01
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "⑬전송데이터 확인 통신관련산업기사 0.01 0.01",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21701,6 +23198,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.01
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "H/W 시험사 0.01 0.01",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21715,6 +23213,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.02
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "⑭시험기철거 및 통신관련산업기사 0.02 0.02",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21729,6 +23228,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.02
         },
         "category": "device",
+        "page": 523,
         "keywords": [
             "현장정리 H/W 시험사 0.02 0.02",
             "모듈형 변환기장치(TD:Transducer) 점검"
@@ -21743,6 +23243,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.41
         },
         "category": "device",
+        "page": 525,
         "keywords": [
             "기록계 대",
             "지진감지시스템 점검"
@@ -21757,6 +23258,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.08
         },
         "category": "device",
+        "page": 525,
         "keywords": [
             "가속도센서 대",
             "지진감지시스템 점검"
@@ -21771,6 +23273,7 @@ const STANDARD_LABOR_DB = [
             "통신설비공": 0.08
         },
         "category": "device",
+        "page": 526,
         "keywords": [
             "원격검침 단말기",
             "수도계량기 원격검침 설비 점검"
@@ -21785,6 +23288,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.45
         },
         "category": "device",
+        "page": 533,
         "keywords": [
             "소형(1~2kVA) 이하",
             "무정전 전원장치(UPS, CVCF) 점검"
@@ -21799,6 +23303,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.61
         },
         "category": "device",
+        "page": 533,
         "keywords": [
             "3kVA 초과 ~ 10kVA 이하",
             "무정전 전원장치(UPS, CVCF) 점검"
@@ -21813,6 +23318,7 @@ const STANDARD_LABOR_DB = [
             "통신관련산업기사": 0.93
         },
         "category": "device",
+        "page": 533,
         "keywords": [
             "10kVA 초과 ~ 20kVA 이하",
             "무정전 전원장치(UPS, CVCF) 점검"
@@ -21828,6 +23334,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 0.85
         },
         "category": "device",
+        "page": 533,
         "keywords": [
             "20kVA 초과 ~ 30kVA 이하",
             "무정전 전원장치(UPS, CVCF) 점검"
@@ -21843,6 +23350,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 1.55
         },
         "category": "device",
+        "page": 533,
         "keywords": [
             "30kVA 초과 ~ 100kVA 이하",
             "무정전 전원장치(UPS, CVCF) 점검"
@@ -21858,6 +23366,7 @@ const STANDARD_LABOR_DB = [
             "특별인부": 1.58
         },
         "category": "device",
+        "page": 533,
         "keywords": [
             "100kVA 초과 ~ 250kVA 이하",
             "무정전 전원장치(UPS, CVCF) 점검"
@@ -21873,12 +23382,15 @@ const STANDARD_LABOR_DB = [
             "특별인부": 2.69
         },
         "category": "device",
+        "page": 533,
         "keywords": [
             "250kVA 초과 ~ 500kVA 이하",
             "무정전 전원장치(UPS, CVCF) 점검"
         ]
     }
 ];
+
+
 
 
 
@@ -21950,7 +23462,8 @@ document.addEventListener("DOMContentLoaded", () => {
         (item.name && (item.name.includes("〃") || item.name.endsWith(" 이"))) || 
         (item.unit && item.unit.includes("본(6m") && !item.unit.endsWith(")"))
     );
-    if (!state.standardLaborDb || state.standardLaborDb.length < 1000 || isOldFlatSchema || hasDittoOrBrokenUnit) {
+    const isMissingPageInfo = state.standardLaborDb && !state.standardLaborDb.some(item => item.page);
+    if (!state.standardLaborDb || state.standardLaborDb.length < 1000 || isOldFlatSchema || hasDittoOrBrokenUnit || isMissingPageInfo) {
         state.standardLaborDb = JSON.parse(JSON.stringify(STANDARD_LABOR_DB));
         saveToLocalStorage();
     }
@@ -22784,11 +24297,18 @@ function openLaborRefModal(divId, itemId) {
             }
 
             card.innerHTML = `
-                <div class="recommend-card-info">
-                    <span class="recommend-card-title">${rec.name} (${rec.code})</span>
-                    <span class="recommend-card-sub">${rec.spec} | ${laborStr}</span>
+                <div class="recommend-card-info" style="flex: 1; min-width: 0;">
+                    <span class="recommend-card-title" style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+                        ${rec.name} (${rec.code})
+                        ${rec.page ? `
+                        <button class="pdf-quick-view btn-icon-danger" data-page="${rec.page}" title="품셈 근거 PDF 보기" style="padding: 2px 5px; font-size: 11px; color: #dc3545; background: rgba(220,53,69,0.1); border-radius: 4px; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 3px; z-index: 10;">
+                            <i class="fa-solid fa-file-pdf"></i>
+                        </button>
+                        ` : ""}
+                    </span>
+                    <span class="recommend-card-sub" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block;">${rec.spec} | ${laborStr}</span>
                 </div>
-                <div class="recommend-meta-wrap">
+                <div class="recommend-meta-wrap" style="flex-shrink: 0;">
                     <span class="recommend-match-badge ${badgeClass}">${rec.matchScore}% 일치</span>
                 </div>
             `;
@@ -22796,6 +24316,15 @@ function openLaborRefModal(divId, itemId) {
             card.addEventListener("click", () => {
                 applyLaborRef(rec.code, rec.labors || rec.laborType, rec.laborFactor);
             });
+
+            const pdfIcon = card.querySelector(".pdf-quick-view");
+            if (pdfIcon) {
+                pdfIcon.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    const page = parseInt(pdfIcon.getAttribute("data-page"));
+                    viewLaborRefPdfByPage(rec.code, page);
+                });
+            }
             
             // Preview on hover
             card.addEventListener("mouseenter", () => {
@@ -22872,11 +24401,18 @@ function searchModalLaborBasis(query) {
         }
         
         row.innerHTML = `
-            <div class="modal-db-item-details">
-                <span class="modal-db-item-name">${dbItem.name} (${dbItem.code})</span>
-                <span class="modal-db-item-spec">${dbItem.spec} [${dbItem.unit}]</span>
+            <div class="modal-db-item-details" style="flex: 1; min-width: 0;">
+                <span class="modal-db-item-name" style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+                    ${dbItem.name} (${dbItem.code})
+                    ${dbItem.page ? `
+                    <button class="pdf-quick-view btn-icon-danger" data-page="${dbItem.page}" title="품셈 근거 PDF 보기" style="padding: 2px 5px; font-size: 11px; color: #dc3545; background: rgba(220,53,69,0.1); border-radius: 4px; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 3px; z-index: 10;">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </button>
+                    ` : ""}
+                </span>
+                <span class="modal-db-item-spec" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block;">${dbItem.spec} [${dbItem.unit}]</span>
             </div>
-            <div class="modal-db-item-right" style="flex-direction: column; align-items: flex-end; justify-content: center; gap: 4px;">
+            <div class="modal-db-item-right" style="flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 4px;">
                 ${laborStr}
             </div>
         `;
@@ -22884,6 +24420,15 @@ function searchModalLaborBasis(query) {
         row.addEventListener("click", () => {
             applyLaborRef(dbItem.code, dbItem.labors || dbItem.laborType, dbItem.laborFactor);
         });
+
+        const pdfIcon = row.querySelector(".pdf-quick-view");
+        if (pdfIcon) {
+            pdfIcon.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const page = parseInt(pdfIcon.getAttribute("data-page"));
+                viewLaborRefPdfByPage(dbItem.code, page);
+            });
+        }
         
         row.addEventListener("mouseenter", () => {
             updateLaborModalPreview(dbItem.labors || dbItem.laborFactor, dbItem.laborType);
@@ -22950,6 +24495,8 @@ window.syncLaborBasisTable = syncLaborBasisTable;
 window.openExcelImportModal = openExcelImportModal;
 window.updateExcelPreview = updateExcelPreview;
 window.confirmExcelImport = confirmExcelImport;
+window.viewLaborRefPdf = viewLaborRefPdf;
+window.viewLaborRefPdfByPage = viewLaborRefPdfByPage;
 
 // 1. 단가조사 직접 추가 모달 열기
 function openAddPriceItemModal() {
@@ -23526,9 +25073,16 @@ function renderLaborBasisTable() {
                         <td rowspan="${laborItems.length}" style="text-align: center;">${selectHtml}</td>
                         <td style="text-align: right; font-family: monospace; font-weight: 600; color: ${hasLabor ? "var(--accent)" : "var(--text-muted)"};">${hasLabor ? totalLaborVolume.toFixed(4) : "-"}</td>
                         <td rowspan="${laborItems.length}" style="text-align: center;">
-                            <span class="labor-ref-badge-clickable" onclick="openLaborRefModal('${div.id}', '${item.id}')" title="클릭하여 표준품셈 변경/추천 받기">
-                                <i class="fa-solid fa-wand-magic-sparkles"></i> ${item.laborRef || "근거 없음"}
-                            </span>
+                            <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; justify-content: center;">
+                                <span class="labor-ref-badge-clickable" onclick="openLaborRefModal('${div.id}', '${item.id}')" title="클릭하여 표준품셈 변경/추천 받기">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i> ${item.laborRef || "근거 없음"}
+                                </span>
+                                ${item.laborRef ? `
+                                <button class="btn btn-outline" onclick="viewLaborRefPdf('${item.laborRef}')" style="padding: 2px 6px; font-size: 11px; display: inline-flex; align-items: center; gap: 4px; border-color: rgba(220, 53, 69, 0.4); color: #dc3545; border-radius: var(--radius-sm); background: rgba(220, 53, 69, 0.05); cursor: pointer;">
+                                    <i class="fa-solid fa-file-pdf"></i> 품셈 근거 보기
+                                </button>
+                                ` : ""}
+                            </div>
                         </td>
                         <td rowspan="${laborItems.length}" style="text-align: center;">
                             <button class="btn-icon-danger" onclick="deleteLaborBasisItem('${div.id}', '${item.id}')" title="노임근거 제거/삭제">
@@ -24978,7 +26532,8 @@ function importStateFromJson(file) {
             if (parsed && parsed.divisions && parsed.rates) {
                 state = parsed;
                 const isImportedOldFlatSchema = state.standardLaborDb && state.standardLaborDb.some(item => !item.labors && (item.laborType || item.laborFactor));
-                if (!state.standardLaborDb || state.standardLaborDb.length < 1000 || isImportedOldFlatSchema) {
+                const isImportedMissingPage = state.standardLaborDb && !state.standardLaborDb.some(item => item.page);
+                if (!state.standardLaborDb || state.standardLaborDb.length < 1000 || isImportedOldFlatSchema || isImportedMissingPage) {
                     state.standardLaborDb = JSON.parse(JSON.stringify(STANDARD_LABOR_DB));
                 }
                 
@@ -25309,3 +26864,33 @@ function initMasterDbListeners() {
 window.openEditDbItemModal = openEditDbItemModal;
 window.deleteDbItem = deleteDbItem;
 window.renderMasterDbTable = renderMasterDbTable;
+
+// PDF Viewer Helpers
+function viewLaborRefPdf(laborRefCode) {
+    if (!laborRefCode) return;
+    
+    const dbItem = state.standardLaborDb.find(d => d.code === laborRefCode);
+    if (!dbItem || !dbItem.page) {
+        showToast(`"${laborRefCode}"의 페이지 정보가 데이터베이스에 없습니다.`, "warning");
+        return;
+    }
+    
+    viewLaborRefPdfByPage(laborRefCode, dbItem.page);
+}
+
+function viewLaborRefPdfByPage(code, pageNum) {
+    if (!pageNum) return;
+    
+    document.getElementById("lbl-pdf-ref-code").textContent = code;
+    document.getElementById("lbl-pdf-page-num").textContent = `PDF ${pageNum}페이지`;
+    
+    const container = document.getElementById("pdf-viewer-container");
+    container.innerHTML = `
+        <iframe src="Source/DB_Source_T.pdf#page=${pageNum}" width="100%" height="100%" style="border: none;"></iframe>
+    `;
+    
+    openModal("modal-view-pdf");
+}
+
+window.viewLaborRefPdf = viewLaborRefPdf;
+window.viewLaborRefPdfByPage = viewLaborRefPdfByPage;

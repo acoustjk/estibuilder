@@ -850,6 +850,28 @@
         </div>
     </div>
 
+    <!-- Modal: View Labor Reference PDF -->
+    <div class="modal" id="modal-view-pdf">
+        <div class="modal-dialog" style="max-width: 1000px; width: 95%;">
+            <div class="modal-content" style="height: 85vh; display: flex; flex-direction: column;">
+                <div class="modal-header">
+                    <h4 style="display: flex; align-items: center; gap: 8px;"><i class="fa-solid fa-file-pdf text-danger"></i> 표준품셈 근거 확인</h4>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <span id="lbl-pdf-ref-code" class="badge-label" style="background: var(--accent-glow); color: var(--accent); font-weight: bold; font-size: 13px; padding: 4px 8px; border-radius: 4px; border: 1px solid var(--accent);">-</span>
+                        <span id="lbl-pdf-page-num" style="font-size: 13px; color: var(--text-secondary);">-</span>
+                        <button class="close-modal-btn" onclick="closeModal('modal-view-pdf')">&times;</button>
+                    </div>
+                </div>
+                <div class="modal-body" style="flex-grow: 1; padding: 0; position: relative; overflow: hidden; background: #525659;">
+                    <div id="pdf-viewer-container" style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="modal-footer" style="padding: 12px 24px; flex-shrink: 0;">
+                    <button class="btn btn-outline" onclick="closeModal('modal-view-pdf')">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Notification Toast -->
     <div class="toast-container" id="toast-container"></div>
 
