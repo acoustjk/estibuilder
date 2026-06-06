@@ -25632,31 +25632,31 @@ async function exportToExcel() {
         
         // Column widths
         shCover.columns = [
-            { width: 9.6 },  // A
-            { width: 4.6 },  // B
-            { width: 6.1 },  // C
-            { width: 8.9 },  // D
-            { width: 14.0 }, // E (Increased to prevent bold "일금" text cut-off)
-            { width: 8.9 },  // F
-            { width: 16.0 }, // G (Increased to prevent bold Korean price text overflow)
-            { width: 8.9 },  // H
-            { width: 8.0 },  // I (Increased to prevent bold Korean price text overflow)
-            { width: 11.8 }, // J
-            { width: 4.2 },  // K
-            { width: 5.0 },  // L
-            { width: 16.0 }, // M
-            { width: 11.1 }  // N
+            { width: 9.62 },  // A
+            { width: 4.62 },  // B
+            { width: 6.12 },  // C
+            { width: 8.88 },  // D
+            { width: 16.75 }, // E
+            { width: 8.88 },  // F
+            { width: 16.0 },  // G
+            { width: 8.88 },  // H
+            { width: 8.0 },   // I
+            { width: 11.75 }, // J
+            { width: 4.25 },  // K
+            { width: 5.0 },   // L
+            { width: 21.62 }, // M
+            { width: 11.12 }  // N
         ];
         
         // Row heights
-        shCover.getRow(1).height = 20;
-        shCover.getRow(2).height = 20;
-        shCover.getRow(3).height = 45; // Title row
-        shCover.getRow(4).height = 15;
-        shCover.getRow(5).height = 25; // Project name
-        shCover.getRow(6).height = 22; // Header
+        shCover.getRow(1).height = 20.10;
+        shCover.getRow(2).height = 20.10;
+        shCover.getRow(3).height = 56.25; // Title row
+        shCover.getRow(4).height = 15.00;
+        shCover.getRow(5).height = 30.75; // Project name
+        shCover.getRow(6).height = 35.10; // Header
         for (let r = 7; r <= 12; r++) {
-            shCover.getRow(r).height = 22;
+            shCover.getRow(r).height = 35.10;
         }
         
         // Add sign-off block values
@@ -25691,97 +25691,93 @@ async function exportToExcel() {
         const signOffCells = ["A1", "D1", "F1", "H1", "K1", "K2", "M1", "N1", "M2", "N2"];
         signOffCells.forEach(cellCoord => {
             const cell = shCover.getCell(cellCoord);
-            cell.font = { name: "돋움체", size: 10, bold: true };
+            cell.font = { name: "돋움체", size: 11, bold: true };
             cell.alignment = { horizontal: 'center', vertical: 'middle' };
         });
-        // Set sign-off block borders (thin everywhere except outer medium or simple thin)
-        const signOffAll = ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2", "E1", "E2", "F1", "F2", "G1", "G2", "H1", "H2", "I1", "I2", "J1", "J2", "K1", "K2", "L1", "L2", "M1", "M2", "N1", "N2"];
-        signOffAll.forEach(coord => {
-            const cell = shCover.getCell(coord);
-            cell.border = {
-                top: { style: 'thin', color: { argb: 'FF000000' } },
-                bottom: { style: 'thin', color: { argb: 'FF000000' } },
-                left: { style: 'thin', color: { argb: 'FF000000' } },
-                right: { style: 'thin', color: { argb: 'FF000000' } }
-            };
-        });
+        
+        // Set sign-off block borders (thin inside, medium on the outer boundary of A1:N2 block)
+        for (let r = 1; r <= 2; r++) {
+            for (let c = 1; c <= 14; c++) {
+                const cell = shCover.getCell(r, c);
+                cell.border = {
+                    top: { style: (r === 1) ? 'medium' : 'thin', color: { argb: 'FF000000' } },
+                    bottom: { style: (r === 2) ? 'medium' : 'thin', color: { argb: 'FF000000' } },
+                    left: { style: (c === 1) ? 'medium' : 'thin', color: { argb: 'FF000000' } },
+                    right: { style: (c === 14) ? 'medium' : 'thin', color: { argb: 'FF000000' } }
+                };
+            }
+        }
         
         // Title: 설   계   서
         shCover.mergeCells("A3:N3");
         const titleCell = shCover.getCell("A3");
         titleCell.value = "설   계   서";
-        titleCell.font = { name: "돋움체", size: 28, bold: true };
+        titleCell.font = { name: "돋움체", size: 36, bold: true };
         titleCell.alignment = { horizontal: 'center', vertical: 'middle' };
         
         // Project name
-        shCover.mergeCells("B5:J5");
-        const projCell = shCover.getCell("B5");
+        shCover.mergeCells("A5:N5");
+        const projCell = shCover.getCell("A5");
         projCell.value = `공사명 : [${state.projectName}]`;
-        projCell.font = { name: "돋움체", size: 13, bold: true };
+        projCell.font = { name: "돋움체", size: 14, bold: true };
         projCell.alignment = { horizontal: 'left', vertical: 'middle' };
-        // Apply bottom medium border to project cell line
-        for (let col = 2; col <= 10; col++) {
-            shCover.getCell(5, col).border = {
-                bottom: { style: 'medium', color: { argb: 'FF000000' } }
-            };
-        }
         
         // Table: 구분 / 금액 / 비고
-        shCover.mergeCells("B6:D6");
-        shCover.getCell("B6").value = "구            분";
-        shCover.mergeCells("E6:L6"); // Merged E6:L6 to cover all price columns (E, F:I, J:L)
+        shCover.mergeCells("A6:D6");
+        shCover.getCell("A6").value = "구            분";
+        shCover.mergeCells("E6:L6"); 
         shCover.getCell("E6").value = "금                             액";
-        shCover.mergeCells("M6:N6"); // Merged M6:N6 to cover columns M and N, resolving the empty right column layout bug
+        shCover.mergeCells("M6:N6");
         shCover.getCell("M6").value = "비   고";
         
         // Rows values and formulas
-        // B7:D7 -> 총공사비
-        shCover.mergeCells("B7:D7");
-        shCover.getCell("B7").value = "총  공  사  비";
+        // A7:D7 -> 총공사비
+        shCover.mergeCells("A7:D7");
+        shCover.getCell("A7").value = "총  공  사  비";
         shCover.getCell("E7").value = " 일    금   :";
         shCover.getCell("F7").value = { formula: '="  "&NUMBERSTRING(J7,1)&"원정"' };
         shCover.mergeCells("J7:L7");
         shCover.getCell("J7").value = { formula: "=원가!C23" }; // 총계 row in 원가 sheet
         
-        // B8:B10 -> 도급비
-        shCover.mergeCells("B8:B10");
-        shCover.getCell("B8").value = "도\n급\n비";
+        // A8:A10 -> 도급비
+        shCover.mergeCells("A8:A10");
+        shCover.getCell("A8").value = "도\n급\n비";
         
-        // C8:D8 -> 공급가액
-        shCover.mergeCells("C8:D8");
-        shCover.getCell("C8").value = "공  급  가  액";
+        // B8:D8 -> 공급가액
+        shCover.mergeCells("B8:D8");
+        shCover.getCell("B8").value = "공  급  가  액";
         shCover.getCell("E8").value = " 일    금   :";
         shCover.getCell("F8").value = { formula: '="  "&NUMBERSTRING(J8,1)&"원정"' };
         shCover.mergeCells("J8:L8");
         shCover.getCell("J8").value = { formula: "=원가!C21" }; // 총원가 row in 원가 sheet
         
-        // C9:D9 -> 부가가치세
-        shCover.mergeCells("C9:D9");
-        shCover.getCell("C9").value = "부가가치세";
+        // B9:D9 -> 부가가치세
+        shCover.mergeCells("B9:D9");
+        shCover.getCell("B9").value = "부가가치세";
         shCover.getCell("E9").value = " 일    금   :";
         shCover.getCell("F9").value = { formula: '="  "&NUMBERSTRING(J9,1)&"원정"' };
         shCover.mergeCells("J9:L9");
         shCover.getCell("J9").value = { formula: "=원가!C22" }; // 부가가치세 row in 원가 sheet
         
-        // C10:D10 -> 계
-        shCover.mergeCells("C10:D10");
-        shCover.getCell("C10").value = "계";
+        // B10:D10 -> 계
+        shCover.mergeCells("B10:D10");
+        shCover.getCell("B10").value = "계";
         shCover.getCell("E10").value = " 일    금   :";
         shCover.getCell("F10").value = { formula: '="  "&NUMBERSTRING(J10,1)&"원정"' };
         shCover.mergeCells("J10:L10");
         shCover.getCell("J10").value = { formula: "=원가!C23" }; // 총계 row in 원가 sheet
         
-        // B11:D11 -> 관급비
-        shCover.mergeCells("B11:D11");
-        shCover.getCell("B11").value = "관급비";
+        // A11:D11 -> 관급비
+        shCover.mergeCells("A11:D11");
+        shCover.getCell("A11").value = "관급비";
         shCover.getCell("E11").value = " 일    금   :";
         shCover.getCell("F11").value = { formula: '="  "&NUMBERSTRING(J11,1)&"원정"' };
         shCover.mergeCells("J11:L11");
         shCover.getCell("J11").value = 0;
         
-        // B12:D12 -> 이전비
-        shCover.mergeCells("B12:D12");
-        shCover.getCell("B12").value = "이전비";
+        // A12:D12 -> 이전비
+        shCover.mergeCells("A12:D12");
+        shCover.getCell("A12").value = "이전비";
         shCover.getCell("E12").value = " 일    금   :";
         shCover.getCell("F12").value = { formula: '="  "&NUMBERSTRING(J12,1)&"원정"' };
         shCover.mergeCells("J12:L12");
@@ -25793,28 +25789,31 @@ async function exportToExcel() {
             shCover.mergeCells(`M${r}:N${r}`);
         }
         
-        // Style table cells in Cover sheet (B6:N12)
-        const coverBorder = {
-            top: { style: 'thin', color: { argb: 'FF000000' } },
-            bottom: { style: 'thin', color: { argb: 'FF000000' } },
-            left: { style: 'thin', color: { argb: 'FF000000' } },
-            right: { style: 'thin', color: { argb: 'FF000000' } }
-        };
-        
+        // Style table cells in Cover sheet (A6:N12)
         for (let r = 6; r <= 12; r++) {
-            for (let c = 2; c <= 14; c++) {
+            for (let c = 1; c <= 14; c++) {
                 if (c === 12) continue; // skip L because of J:L merge
                 const cell = shCover.getCell(r, c);
-                cell.font = { name: "돋움체", size: 10, bold: (r === 7 || r === 10) };
-                cell.border = coverBorder;
+                
+                // Bold font for Rows 7 and 10 and sign-off block header
+                const isBold = (r === 7 || r === 10 || (r === 8 && c === 1));
+                cell.font = { name: "돋움체", size: 12, bold: isBold };
+                
+                // Outer medium borders, thin inner borders
+                cell.border = {
+                    top: { style: (r === 6) ? 'medium' : 'thin', color: { argb: 'FF000000' } },
+                    bottom: { style: (r === 12) ? 'medium' : 'thin', color: { argb: 'FF000000' } },
+                    left: { style: (c === 1) ? 'medium' : 'thin', color: { argb: 'FF000000' } },
+                    right: { style: (c === 14) ? 'medium' : 'thin', color: { argb: 'FF000000' } }
+                };
                 
                 // Alignment
-                if (c === 2 || c === 3 || c === 4) {
+                if (c <= 4) {
                     cell.alignment = { horizontal: 'center', vertical: 'middle', wrapText: true };
                 } else if (c === 5) {
                     cell.alignment = { horizontal: 'right', vertical: 'middle' };
                 } else if (c === 6) { // merged F:I
-                    cell.alignment = { horizontal: 'left', vertical: 'middle' };
+                    cell.alignment = { horizontal: 'right', vertical: 'middle' };
                 } else if (c === 10) { // merged J:L
                     cell.alignment = { horizontal: 'right', vertical: 'middle' };
                 } else {
@@ -25843,18 +25842,20 @@ async function exportToExcel() {
         
         shCost.addRow(["원 가 계 산 서"]);
         shCost.mergeCells("A1:D1");
-        shCost.getCell("A1").font = { size: 16, bold: true, name: "돋움체" };
-        shCost.getCell("A1").alignment = { horizontal: 'center' };
-        shCost.getRow(1).height = 35;
+        shCost.getCell("A1").font = { size: 18, bold: true, name: "맑은 고딕" };
+        shCost.getCell("A1").alignment = { horizontal: 'center', vertical: 'middle' };
+        shCost.getRow(1).height = 35.10;
         
         shCost.addRow([`공사명: ${state.projectName}`, "", "", `공사기간: ${state.duration}`]);
         shCost.mergeCells("A2:C2");
-        shCost.getRow(2).font = { name: "돋움체", size: 10 };
-        shCost.getRow(2).height = 20;
+        shCost.getCell("A2").alignment = { horizontal: 'left', vertical: 'middle' };
+        shCost.getCell("D2").alignment = { horizontal: 'right', vertical: 'middle' };
+        shCost.getRow(2).font = { name: "맑은 고딕", size: 11 };
+        shCost.getRow(2).height = 20.10;
         
         shCost.addRow(["비 목", "구  분", "금 액", "비  고"]);
-        styleHeaderRow(shCost.getRow(3));
-        shCost.getRow(3).height = 24;
+        styleHeaderRow(shCost.getRow(3), "맑은 고딕");
+        shCost.getRow(3).height = 30.75;
         
         // References to the Summary sheet sum values
         const totalSummaryRowIndex = state.divisions.length + 3;
@@ -25897,10 +25898,10 @@ async function exportToExcel() {
         });
         
         // Add beautiful layout and highlights for Cost Statement
-        shCost.getColumn(1).width = 18;
-        shCost.getColumn(2).width = 25;
-        shCost.getColumn(3).width = 20;
-        shCost.getColumn(4).width = 30;
+        shCost.getColumn(1).width = 25.88;
+        shCost.getColumn(2).width = 25.0;
+        shCost.getColumn(3).width = 31.0;
+        shCost.getColumn(4).width = 49.12;
         
         shCost.getColumn(3).numFmt = "#,##0";
         
@@ -25908,6 +25909,7 @@ async function exportToExcel() {
         const costRowCount = shCost.rowCount;
         for (let r = 4; r <= costRowCount; r++) {
             const row = shCost.getRow(r);
+            row.height = 18.00;
             const cell1Val = row.getCell(1).value;
             const cell2Val = row.getCell(2).value;
             
@@ -25917,32 +25919,16 @@ async function exportToExcel() {
             
             row.eachCell({ includeEmpty: true }, (cell, colNum) => {
                 cell.font = { 
-                    name: "돋움체", 
-                    size: 10, 
+                    name: "맑은 고딕", 
+                    size: 11, 
                     bold: (isTotalRow || isGrandTotal) 
                 };
-                
-                // Set background fill for totals
-                if (isTotalRow || isGrandTotal) {
-                    cell.fill = {
-                        type: 'pattern',
-                        pattern: 'solid',
-                        fgColor: { argb: 'FFF2F2F2' }
-                    };
-                }
                 
                 // Borders
                 if (isGrandTotal) {
                     cell.border = {
                         top: { style: 'thin', color: { argb: 'FFBFBFBF' } },
                         bottom: { style: 'double', color: { argb: 'FF000000' } },
-                        left: { style: 'thin', color: { argb: 'FFBFBFBF' } },
-                        right: { style: 'thin', color: { argb: 'FFBFBFBF' } }
-                    };
-                } else if (isTotalRow) {
-                    cell.border = {
-                        top: { style: 'thin', color: { argb: 'FFBFBFBF' } },
-                        bottom: { style: 'thin', color: { argb: 'FFBFBFBF' } },
                         left: { style: 'thin', color: { argb: 'FFBFBFBF' } },
                         right: { style: 'thin', color: { argb: 'FFBFBFBF' } }
                     };
@@ -25976,12 +25962,13 @@ async function exportToExcel() {
         
         shSummary.addRow(["공종별 총괄 집계표"]);
         shSummary.mergeCells("A1:H1");
-        shSummary.getCell("A1").font = { size: 15, bold: true, name: "돋움체" };
-        shSummary.getCell("A1").alignment = { horizontal: 'center' };
-        shSummary.getRow(1).height = 30;
+        shSummary.getCell("A1").font = { size: 15, bold: true, name: "맑은 고딕" };
+        shSummary.getCell("A1").alignment = { horizontal: 'center', vertical: 'middle' };
+        shSummary.getRow(1).height = 30.00;
         
         shSummary.addRow(["번호", "공   종   명", "단위", "수량", "재료비 합계", "노무비 합계", "경비 합계", "총액"]);
-        styleHeaderRow(shSummary.getRow(2));
+        styleHeaderRow(shSummary.getRow(2), "맑은 고딕");
+        shSummary.getRow(2).height = 21.75;
         
         // Find row locations in 내역서 sheet to point formulas
         let summaryIdx = 1;
@@ -26032,14 +26019,14 @@ async function exportToExcel() {
             { formula: `SUM(E${sumCurrentRow}, F${sumCurrentRow}, G${sumCurrentRow})` }
         ]);
         
-        shSummary.getColumn(1).width = 8;
-        shSummary.getColumn(2).width = 25;
-        shSummary.getColumn(3).width = 8;
-        shSummary.getColumn(4).width = 8;
-        shSummary.getColumn(5).width = 18;
-        shSummary.getColumn(6).width = 18;
-        shSummary.getColumn(7).width = 18;
-        shSummary.getColumn(8).width = 20;
+        shSummary.getColumn(1).width = 8.0;
+        shSummary.getColumn(2).width = 28.25;
+        shSummary.getColumn(3).width = 8.0;
+        shSummary.getColumn(4).width = 13.0;
+        shSummary.getColumn(5).width = 18.0;
+        shSummary.getColumn(6).width = 13.0;
+        shSummary.getColumn(7).width = 13.0;
+        shSummary.getColumn(8).width = 20.0;
         
         for (let colNum = 5; colNum <= 8; colNum++) {
             shSummary.getColumn(colNum).numFmt = "#,##0";
@@ -26051,13 +26038,9 @@ async function exportToExcel() {
             const cell2Val = row.getCell(2).value;
             
             if (cell2Val === "( 합       계 )") {
+                row.height = 21.75;
                 row.eachCell({ includeEmpty: true }, (cell) => {
-                    cell.font = { name: "돋움체", size: 11, bold: true };
-                    cell.fill = {
-                        type: 'pattern',
-                        pattern: 'solid',
-                        fgColor: { argb: 'FFEAEAEA' }
-                    };
+                    cell.font = { name: "맑은 고딕", size: 11, bold: true };
                     cell.border = {
                         top: { style: 'thin', color: { argb: 'FFBFBFBF' } },
                         bottom: { style: 'double', color: { argb: 'FF000000' } },
@@ -26066,8 +26049,9 @@ async function exportToExcel() {
                     };
                 });
             } else {
+                row.height = 23.10;
                 row.eachCell({ includeEmpty: true }, (cell, colNum) => {
-                    cell.font = { name: "돋움체", size: 10 };
+                    cell.font = { name: "맑은 고딕", size: 10 };
                     cell.border = thinBorder;
                     
                     if (colNum === 1 || colNum === 3 || colNum === 4) {
@@ -26095,14 +26079,13 @@ async function exportToExcel() {
         };
         
         shBOQ.addRow(["설계내역서 - " + state.projectName]);
-        shBOQ.mergeCells("A1:L1");
-        shBOQ.getCell("A1").font = { size: 16, bold: true, name: "돋움체" };
-        shBOQ.getCell("A1").alignment = { vertical: 'middle', horizontal: 'center' };
-        shBOQ.getRow(1).height = 40;
+        shBOQ.getCell("A1").font = { size: 12, name: "맑은 고딕" };
+        shBOQ.getCell("A1").alignment = { vertical: 'middle', horizontal: 'left' };
+        shBOQ.getRow(1).height = 24.00;
         
         shBOQ.addRow(["번호", "품명", "규격", "단위", "수량", "재료비 단가", "재료비 금액", "노무비 단가", "노무비 금액", "경비 단가", "경비 금액", "합계 금액"]);
-        styleHeaderRow(shBOQ.getRow(2));
-        shBOQ.getRow(2).height = 25;
+        styleHeaderRow(shBOQ.getRow(2), "맑은 고딕");
+        shBOQ.getRow(2).height = 24.95;
         
         let boqCurrentRow = 3;
         const matSumFormulas = [];
@@ -26113,24 +26096,25 @@ async function exportToExcel() {
             // Write division header
             const divRow = shBOQ.addRow([div.name]);
             shBOQ.mergeCells(`A${boqCurrentRow}:L${boqCurrentRow}`);
+            shBOQ.getRow(boqCurrentRow).height = 23.25;
             boqCurrentRow++;
             
             const startItemRow = boqCurrentRow;
             
             // Write items
             div.items.forEach((item, idx) => {
-                const priceMatchIndex = keysArr.indexOf(item.masterId) + 3; // 1-based index + 2 header rows
+                const priceMatchIndex = keysArr.indexOf(item.masterId) + 4; // Shifted by 4 rows due to title and shifted table header
                 
                 const hasLabor = item.laborExcelRowIndex !== null;
                 const laborCellFormula = hasLabor ? `노임근거!K${item.laborExcelRowIndex}` : "0";
                 
-                shBOQ.addRow([
+                const itemRow = shBOQ.addRow([
                     idx + 1,
                     item.name,
                     item.spec,
                     item.unit,
                     item.qty,
-                    { formula: `단가조사!F${priceMatchIndex}` }, // Material Unit Cost
+                    { formula: `단가조사!E${priceMatchIndex}` }, // Material Unit Cost
                     { formula: `TRUNC(E${boqCurrentRow}*F${boqCurrentRow}, 0)` }, // Material Total Cost
                     hasLabor ? { formula: laborCellFormula } : 0, // Labor Unit Cost
                     { formula: `TRUNC(E${boqCurrentRow}*H${boqCurrentRow}, 0)` }, // Labor Total Cost
@@ -26138,6 +26122,7 @@ async function exportToExcel() {
                     0, // Expense Total Cost
                     { formula: `SUM(G${boqCurrentRow}, I${boqCurrentRow}, K${boqCurrentRow})` }
                 ]);
+                shBOQ.getRow(boqCurrentRow).height = 27.95;
                 boqCurrentRow++;
             });
             
@@ -26157,6 +26142,7 @@ async function exportToExcel() {
                 { formula: `TRUNC(E${boqCurrentRow}*J${boqCurrentRow}, 0)` },
                 { formula: `K${boqCurrentRow}` }
             ]);
+            shBOQ.getRow(boqCurrentRow).height = 27.95;
             
             const endItemRow = boqCurrentRow;
             boqCurrentRow++;
@@ -26176,6 +26162,7 @@ async function exportToExcel() {
                 { formula: `SUM(K${startItemRow}:K${endItemRow})` },
                 { formula: `SUM(L${startItemRow}:L${endItemRow})` }
             ]);
+            shBOQ.getRow(boqCurrentRow).height = 27.95;
             
             matSumFormulas.push(`G${boqCurrentRow}`);
             labSumFormulas.push(`I${boqCurrentRow}`);
@@ -26184,6 +26171,7 @@ async function exportToExcel() {
             
             // Add division spacer row to keep row indices in sync
             shBOQ.addRow([]);
+            shBOQ.getRow(boqCurrentRow).height = 17.25;
             boqCurrentRow++;
         });
         
@@ -26202,20 +26190,22 @@ async function exportToExcel() {
             { formula: `SUM(${expSumFormulas.join(",")})` },
             { formula: `SUM(G${boqCurrentRow}, I${boqCurrentRow}, K${boqCurrentRow})` }
         ]);
+        shBOQ.getRow(boqCurrentRow).height = 27.95;
         
         // Format columns width & layout for BOQ
-        shBOQ.getColumn(1).width = 6;
-        shBOQ.getColumn(2).width = 25;
-        shBOQ.getColumn(3).width = 25;
-        shBOQ.getColumn(4).width = 8;
-        shBOQ.getColumn(5).width = 8;
-        shBOQ.getColumn(6).width = 15;
-        shBOQ.getColumn(7).width = 15;
-        shBOQ.getColumn(8).width = 15;
-        shBOQ.getColumn(9).width = 15;
-        shBOQ.getColumn(10).width = 15;
-        shBOQ.getColumn(11).width = 15;
-        shBOQ.getColumn(12).width = 18;
+        shBOQ.getColumn(1).width = 6.0;
+        shBOQ.getColumn(2).width = 25.0;
+        shBOQ.getColumn(3).width = 13.0;
+        shBOQ.getColumn(4).width = 8.0;
+        shBOQ.getColumn(5).width = 13.0;
+        shBOQ.getColumn(6).width = 15.0;
+        shBOQ.getColumn(7).width = 13.0;
+        shBOQ.getColumn(8).width = 13.0;
+        shBOQ.getColumn(9).width = 13.0;
+        shBOQ.getColumn(10).width = 13.0;
+        shBOQ.getColumn(11).width = 13.0;
+        shBOQ.getColumn(12).width = 18.0;
+        shBOQ.getColumn(13).width = 9.0; // Column M
         
         for (let colNum = 6; colNum <= 12; colNum++) {
             shBOQ.getColumn(colNum).numFmt = "#,##0";
@@ -26230,22 +26220,12 @@ async function exportToExcel() {
             if (cell1Val && !cell2Val) {
                 // Division Header
                 row.eachCell({ includeEmpty: true }, (cell) => {
-                    cell.font = { name: "돋움체", size: 11, bold: true };
-                    cell.fill = {
-                        type: 'pattern',
-                        pattern: 'solid',
-                        fgColor: { argb: 'FFEAEAEA' }
-                    };
+                    cell.font = { name: "맑은 고딕", size: 11 };
                     cell.border = thinBorder;
                 });
             } else if (cell2Val === "( 소      계 )") {
                 row.eachCell({ includeEmpty: true }, (cell) => {
-                    cell.font = { name: "돋움체", size: 10, bold: true };
-                    cell.fill = {
-                        type: 'pattern',
-                        pattern: 'solid',
-                        fgColor: { argb: 'FFF2F2F2' }
-                    };
+                    cell.font = { name: "맑은 고딕", size: 11, bold: true };
                     cell.border = {
                         top: { style: 'thin', color: { argb: 'FFBFBFBF' } },
                         bottom: { style: 'double', color: { argb: 'FF000000' } },
@@ -26255,12 +26235,7 @@ async function exportToExcel() {
                 });
             } else if (cell2Val === "[ 합           계 ]") {
                 row.eachCell({ includeEmpty: true }, (cell) => {
-                    cell.font = { name: "돋움체", size: 11, bold: true };
-                    cell.fill = {
-                        type: 'pattern',
-                        pattern: 'solid',
-                        fgColor: { argb: 'FFEAEAEA' }
-                    };
+                    cell.font = { name: "맑은 고딕", size: 11, bold: true };
                     cell.border = {
                         top: { style: 'thin', color: { argb: 'FFBFBFBF' } },
                         bottom: { style: 'double', color: { argb: 'FF000000' } },
@@ -26270,7 +26245,7 @@ async function exportToExcel() {
                 });
             } else {
                 row.eachCell({ includeEmpty: true }, (cell, colNum) => {
-                    cell.font = { name: "돋움체", size: 10 };
+                    cell.font = { name: "맑은 고딕", size: 11 };
                     cell.border = thinBorder;
                     
                     if (colNum === 1 || colNum === 4 || colNum === 5) {
@@ -26283,8 +26258,8 @@ async function exportToExcel() {
                 });
                 
                 if (cell2Val === "[ 공구손료 ]") {
-                    row.getCell(2).font = { name: "돋움체", size: 10, italic: true, color: { argb: 'FF808080' } };
-                    row.getCell(3).font = { name: "돋움체", size: 10, italic: true, color: { argb: 'FF808080' } };
+                    row.getCell(2).font = { name: "맑은 고딕", size: 11, italic: true, color: { argb: 'FF808080' } };
+                    row.getCell(3).font = { name: "맑은 고딕", size: 11, italic: true, color: { argb: 'FF808080' } };
                 }
             }
         }
@@ -26302,25 +26277,29 @@ async function exportToExcel() {
             fitToHeight: 0
         };
         
+        // Add Title Row
+        shPrice.addRow(["단가조사서 - " + state.projectName]);
+        shPrice.getCell("A1").font = { size: 11, name: "맑은 고딕" };
+        shPrice.getCell("A1").alignment = { vertical: 'middle', horizontal: 'left' };
+        
         // Add double row headers
-        shPrice.addRow(["번호", "품목코드", "명칭", "규격", "단위", "적용단가", "시설단가", "거래가격", "", "물가정보", "", "물가자료", "", "유통물가", "", "조사단가1", "", "조사단가2", "", "비고"]);
-        shPrice.addRow(["", "", "", "", "", "", "", "단가", "PAGE", "단가", "PAGE", "단가", "PAGE", "단가", "PAGE", "단가", "PAGE", "단가", "PAGE", ""]);
+        shPrice.addRow(["번호", "명칭", "규격", "단위", "적용단가", "시설단가", "거래가격", "", "물가정보", "", "물가자료", "", "유통물가", "", "조사단가1", "", "조사단가2", "", "비고"]);
+        shPrice.addRow(["", "", "", "", "", "", "단가", "PAGE", "단가", "PAGE", "단가", "PAGE", "단가", "PAGE", "단가", "PAGE", "단가", "PAGE", ""]);
         
         // Merge cells for headers
-        shPrice.mergeCells("A1:A2");
-        shPrice.mergeCells("B1:B2");
-        shPrice.mergeCells("C1:C2");
-        shPrice.mergeCells("D1:D2");
-        shPrice.mergeCells("E1:E2");
-        shPrice.mergeCells("F1:F2");
-        shPrice.mergeCells("G1:G2");
-        shPrice.mergeCells("H1:I1");
-        shPrice.mergeCells("J1:K1");
-        shPrice.mergeCells("L1:M1");
-        shPrice.mergeCells("N1:O1");
-        shPrice.mergeCells("P1:Q1");
-        shPrice.mergeCells("R1:S1");
-        shPrice.mergeCells("T1:T2");
+        shPrice.mergeCells("A2:A3");
+        shPrice.mergeCells("B2:B3");
+        shPrice.mergeCells("C2:C3");
+        shPrice.mergeCells("D2:D3");
+        shPrice.mergeCells("E2:E3");
+        shPrice.mergeCells("F2:F3");
+        shPrice.mergeCells("G2:H2");
+        shPrice.mergeCells("I2:J2");
+        shPrice.mergeCells("K2:L2");
+        shPrice.mergeCells("M2:N2");
+        shPrice.mergeCells("O2:P2");
+        shPrice.mergeCells("Q2:R2");
+        shPrice.mergeCells("S2:S3");
         
         let pIndex = 1;
         allItemsMap.forEach((item, key) => {
@@ -26335,14 +26314,13 @@ async function exportToExcel() {
                 invest2: { price: 0, page: "" }
             };
             
-            const rowNum = pIndex + 2; // header rows (1, 2)
+            const rowNum = pIndex + 3; // header rows (1, 2, 3)
             shPrice.addRow([
                 pIndex++,
-                key,
                 item.name,
                 item.spec,
                 item.unit,
-                { formula: `MIN(H${rowNum},J${rowNum},L${rowNum},N${rowNum},P${rowNum},R${rowNum})` }, // 적용단가 (최저가 공식)
+                { formula: `MIN(G${rowNum},I${rowNum},K${rowNum},M${rowNum},O${rowNum},Q${rowNum})` }, // 적용단가 (최저가 공식)
                 priceOrBlank(p.facilityPrice),
                 priceOrBlank(p.marketPrice.price),
                 p.marketPrice.page || "",
@@ -26361,40 +26339,42 @@ async function exportToExcel() {
         });
         
         // Style headers
-        styleHeaderRow(shPrice.getRow(1));
-        styleHeaderRow(shPrice.getRow(2));
+        styleHeaderRow(shPrice.getRow(2), "맑은 고딕");
+        styleHeaderRow(shPrice.getRow(3), "맑은 고딕");
+        shPrice.getRow(2).height = 24.75;
+        shPrice.getRow(3).height = 24.75;
         
         // Columns width
-        shPrice.getColumn(1).width = 6;
-        shPrice.getColumn(2).width = 12;
-        shPrice.getColumn(3).width = 22;
-        shPrice.getColumn(4).width = 22;
-        shPrice.getColumn(5).width = 8;
-        shPrice.getColumn(6).width = 15;
-        shPrice.getColumn(7).width = 15;
-        shPrice.getColumn(20).width = 15;
+        shPrice.getColumn(1).width = 6.0;
+        shPrice.getColumn(2).width = 22.0;
+        shPrice.getColumn(3).width = 29.0;
+        shPrice.getColumn(4).width = 8.0;
+        shPrice.getColumn(5).width = 18.88;
+        shPrice.getColumn(6).width = 15.0;
+        shPrice.getColumn(19).width = 15.0; // Column S
         
+        shPrice.getColumn(5).numFmt = "#,##0";
         shPrice.getColumn(6).numFmt = "#,##0";
-        shPrice.getColumn(7).numFmt = "#,##0";
         
-        for (let col = 8; col <= 19; col++) {
-            const colWidth = (col % 2 === 0) ? 14 : 9;
+        for (let col = 7; col <= 18; col++) {
+            const colWidth = (col % 2 === 1) ? 14.0 : 9.0;
             shPrice.getColumn(col).width = colWidth;
-            if (col % 2 === 0) {
+            if (col % 2 === 1) {
                 shPrice.getColumn(col).numFmt = "#,##0";
             }
         }
         
         const priceRowCount = shPrice.rowCount;
-        for (let r = 3; r <= priceRowCount; r++) {
+        for (let r = 4; r <= priceRowCount; r++) {
             const row = shPrice.getRow(r);
+            row.height = 23.10;
             row.eachCell({ includeEmpty: true }, (cell, colNum) => {
-                cell.font = { name: "돋움체", size: 10 };
+                cell.font = { name: "맑은 고딕", size: 10 };
                 cell.border = thinBorder;
                 
-                if (colNum === 1 || colNum === 2 || colNum === 5 || (colNum >= 8 && colNum <= 19 && colNum % 2 === 1)) {
+                if (colNum === 1 || colNum === 4 || (colNum >= 8 && colNum <= 18 && colNum % 2 === 0)) {
                     cell.alignment = { horizontal: 'center', vertical: 'middle' };
-                } else if (colNum === 3 || colNum === 4 || colNum === 20) {
+                } else if (colNum === 2 || colNum === 3 || colNum === 19) {
                     cell.alignment = { horizontal: 'left', vertical: 'middle' };
                 } else {
                     cell.alignment = { horizontal: 'right', vertical: 'middle' };
@@ -26451,7 +26431,7 @@ async function exportToExcel() {
             });
         });
         
-        styleHeaderRow(shLabor.getRow(1));
+        styleHeaderRow(shLabor.getRow(1), "돋움체");
         shLabor.getColumn(1).width = 6;
         shLabor.getColumn(2).width = 15;
         shLabor.getColumn(3).width = 22;
@@ -26542,7 +26522,7 @@ async function exportToExcel() {
         shOpt.getColumn(2).width = 15;
         shOpt.getColumn(3).width = 10;
         
-        styleHeaderRow(shOpt.getRow(1));
+        styleHeaderRow(shOpt.getRow(1), "돋움체");
         
         const optRowCount = shOpt.rowCount;
         for (let r = 2; r <= optRowCount; r++) {
@@ -26578,9 +26558,9 @@ async function exportToExcel() {
     }
 }
 
-function styleHeaderRow(row) {
+function styleHeaderRow(row, fontName = "돋움체") {
     row.eachCell({ includeEmpty: true }, (cell) => {
-        cell.font = { bold: true, color: { argb: 'FF000000' }, name: "돋움체", size: 11 };
+        cell.font = { bold: true, color: { argb: 'FF000000' }, name: fontName, size: 11 };
         cell.fill = {
             type: 'pattern',
             pattern: 'solid',
@@ -26594,9 +26574,7 @@ function styleHeaderRow(row) {
             right: { style: 'thin', color: { argb: 'FFBFBFBF' } }
         };
     });
-}
-
-// 7. Modals helper
+}// 7. Modals helper
 function openModal(id) {
     document.getElementById(id).classList.add("active");
 }
