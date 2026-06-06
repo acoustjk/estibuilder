@@ -25011,25 +25011,6 @@ function renderLaborBasisTable() {
     let overallIndex = 1;
     let hasItems = false;
 
-    const extra1Options = [
-        { value: "normal", label: "일반 (1.0)", mult: 1.0, remark: "일반" },
-        { value: "military", label: "군작전 (1.2)", mult: 1.2, remark: "군작전" },
-        { value: "island", label: "도서지구 (1.15)", mult: 1.15, remark: "도서지구" },
-        { value: "tunnel", label: "터널/지하 (1.1)", mult: 1.1, remark: "터널/지하" },
-        { value: "train", label: "열차빈번 (1.15)", mult: 1.15, remark: "열차빈번" },
-        { value: "powerline", label: "송전선인근 (1.1)", mult: 1.1, remark: "송전선인근" }
-    ];
-
-    const extra2Options = [
-        { value: "normal", label: "일반 (1.0)", mult: 1.0, remark: "일반" },
-        { value: "under5", label: "5m미만 (1.0)", mult: 1.0, remark: "5m미만" },
-        { value: "h5_10", label: "5~10m (1.1)", mult: 1.1, remark: "5~10m" },
-        { value: "h10_15", label: "10~15m (1.2)", mult: 1.2, remark: "10~15m" },
-        { value: "h15_20", label: "15~20m (1.3)", mult: 1.3, remark: "15~20m" },
-        { value: "h20_30", label: "20~30m (1.4)", mult: 1.4, remark: "20~30m" },
-        { value: "over30", label: "30m이상 (1.5)", mult: 1.5, remark: "30m이상" }
-    ];
-
     state.divisions.forEach(div => {
         div.items.forEach(item => {
             hasItems = true;
@@ -25072,21 +25053,19 @@ function renderLaborBasisTable() {
                 });
                 selectBasicHtml += `</select>`;
 
-                // 해설할증1
-                selectExtra1Html = `<select class="select-labor-extra1" data-div-id="${div.id}" data-item-id="${item.id}" style="background-color: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); padding: 6px 10px; border-radius: 4px; outline: none; font-size: 13px; width: 100%; cursor: pointer;">`;
-                extra1Options.forEach(op => {
-                    const selected = (item.laborExtra1 || "normal") === op.value ? "selected" : "";
-                    selectExtra1Html += `<option value="${op.value}" data-mult="${op.mult}" data-remark="${op.remark}" ${selected}>${op.label}</option>`;
-                });
-                selectExtra1Html += `</select>`;
+                // 해설할증1 (유저 직접 입력, %)
+                const val1 = item.laborExtra1Percent !== undefined ? item.laborExtra1Percent : 0;
+                selectExtra1Html = `<div style="display: flex; align-items: center; gap: 4px; justify-content: center;">
+                    <input type="number" class="input-labor-extra1" data-div-id="${div.id}" data-item-id="${item.id}" value="${val1}" min="0" max="500" step="0.1" style="background-color: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); padding: 6px 10px; border-radius: 4px; outline: none; font-size: 13px; width: 80px; text-align: right;">
+                    <span style="font-size: 12px; color: var(--text-secondary);">%</span>
+                </div>`;
 
-                // 해설할증2
-                selectExtra2Html = `<select class="select-labor-extra2" data-div-id="${div.id}" data-item-id="${item.id}" style="background-color: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); padding: 6px 10px; border-radius: 4px; outline: none; font-size: 13px; width: 100%; cursor: pointer;">`;
-                extra2Options.forEach(op => {
-                    const selected = (item.laborExtra2 || "normal") === op.value ? "selected" : "";
-                    selectExtra2Html += `<option value="${op.value}" data-mult="${op.mult}" data-remark="${op.remark}" ${selected}>${op.label}</option>`;
-                });
-                selectExtra2Html += `</select>`;
+                // 해설할증2 (유저 직접 입력, %)
+                const val2 = item.laborExtra2Percent !== undefined ? item.laborExtra2Percent : 0;
+                selectExtra2Html = `<div style="display: flex; align-items: center; gap: 4px; justify-content: center;">
+                    <input type="number" class="input-labor-extra2" data-div-id="${div.id}" data-item-id="${item.id}" value="${val2}" min="0" max="500" step="0.1" style="background-color: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); padding: 6px 10px; border-radius: 4px; outline: none; font-size: 13px; width: 80px; text-align: right;">
+                    <span style="font-size: 12px; color: var(--text-secondary);">%</span>
+                </div>`;
             }
 
             const itemIndex = overallIndex++;
@@ -25176,53 +25155,43 @@ function renderLaborBasisTable() {
         });
     });
 
-    tbody.querySelectorAll(".select-labor-extra1").forEach(select => {
-        select.addEventListener("change", (e) => {
+    tbody.querySelectorAll(".input-labor-extra1").forEach(input => {
+        input.addEventListener("change", (e) => {
             const divId = e.target.getAttribute("data-div-id");
             const itemId = e.target.getAttribute("data-item-id");
-            
-            const selectedOpt = e.target.options[e.target.selectedIndex];
-            const scenario = e.target.value;
-            const multiplier = parseFloat(selectedOpt.getAttribute("data-mult"));
-            const remark = selectedOpt.getAttribute("data-remark");
+            const val = Math.max(0, parseFloat(e.target.value) || 0);
 
             const div = state.divisions.find(d => d.id === divId);
             if (div) {
                 const item = div.items.find(i => i.id === itemId);
                 if (item) {
-                    item.laborExtra1 = scenario;
-                    item.laborExtra1Mult = multiplier;
-                    item.laborExtra1Remark = remark;
+                    item.laborExtra1Percent = val;
+                    item.laborExtra1Mult = 1.0 + (val / 100);
                     
                     renderLaborBasisTable();
                     calculateEstimates();
-                    showToast(`"${item.name}" 해설할증1 조건이 변경되었습니다.`, "info");
+                    showToast(`"${item.name}" 해설할증1 비율이 변경되었습니다.`, "info");
                 }
             }
         });
     });
 
-    tbody.querySelectorAll(".select-labor-extra2").forEach(select => {
-        select.addEventListener("change", (e) => {
+    tbody.querySelectorAll(".input-labor-extra2").forEach(input => {
+        input.addEventListener("change", (e) => {
             const divId = e.target.getAttribute("data-div-id");
             const itemId = e.target.getAttribute("data-item-id");
-            
-            const selectedOpt = e.target.options[e.target.selectedIndex];
-            const scenario = e.target.value;
-            const multiplier = parseFloat(selectedOpt.getAttribute("data-mult"));
-            const remark = selectedOpt.getAttribute("data-remark");
+            const val = Math.max(0, parseFloat(e.target.value) || 0);
 
             const div = state.divisions.find(d => d.id === divId);
             if (div) {
                 const item = div.items.find(i => i.id === itemId);
                 if (item) {
-                    item.laborExtra2 = scenario;
-                    item.laborExtra2Mult = multiplier;
-                    item.laborExtra2Remark = remark;
+                    item.laborExtra2Percent = val;
+                    item.laborExtra2Mult = 1.0 + (val / 100);
                     
                     renderLaborBasisTable();
                     calculateEstimates();
-                    showToast(`"${item.name}" 해설할증2 조건이 변경되었습니다.`, "info");
+                    showToast(`"${item.name}" 해설할증2 비율이 변경되었습니다.`, "info");
                 }
             }
         });
@@ -26517,25 +26486,6 @@ async function exportToExcel() {
         
         shLabor.addRow(["번호", "소속공종", "명칭", "규격", "단위", "직종", "기본품셈", "기본할증", "해설할증1", "해설할증2", "산출공량", "노임단가", "노무단가", "비고"]);
         
-        const extra1KeyToRow = {
-            "normal": 2,
-            "military": 3,
-            "island": 4,
-            "tunnel": 5,
-            "train": 6,
-            "powerline": 7
-        };
-
-        const extra2KeyToRow = {
-            "normal": 2,
-            "under5": 3,
-            "h5_10": 4,
-            "h10_15": 5,
-            "h15_20": 6,
-            "h20_30": 7,
-            "over30": 8
-        };
-
         let lIndex = 1;
         state.divisions.forEach(div => {
             div.items.forEach(item => {
@@ -26563,10 +26513,8 @@ async function exportToExcel() {
                     else if (entry.type === "광케이블설치사") wageCell = "옵션!$B$21";
                     
                     const multiplier = item.laborMultiplier !== undefined ? item.laborMultiplier : 1.0;
-                    const e1Row = extra1KeyToRow[item.laborExtra1] || 2;
-                    const e2Row = extra2KeyToRow[item.laborExtra2] || 2;
-                    const extra1Formula = `해설할증1!$B$${e1Row}`;
-                    const extra2Formula = `해설할증2!$B$${e2Row}`;
+                    const extra1Mult = item.laborExtra1Mult !== undefined ? item.laborExtra1Mult : 1.0;
+                    const extra2Mult = item.laborExtra2Mult !== undefined ? item.laborExtra2Mult : 1.0;
                     
                     shLabor.addRow([
                         lIndex++,
@@ -26577,8 +26525,8 @@ async function exportToExcel() {
                         entry.type,
                         entry.factor,
                         multiplier,
-                        { formula: extra1Formula },
-                        { formula: extra2Formula },
+                        extra1Mult,
+                        extra2Mult,
                         { formula: "G" + rowNum + "*H" + rowNum + "*I" + rowNum + "*J" + rowNum },
                         { formula: wageCell },
                         { formula: "TRUNC(K" + rowNum + "*L" + rowNum + ", 0)" },
