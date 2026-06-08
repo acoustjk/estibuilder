@@ -1,0 +1,47 @@
+function renderLaborBasisTable() {
+    const tbody = document.getElementById("labor-basis-table-body");
+    tbody.innerHTML = "";
+
+    let overallIndex = 1;
+    let hasItems = false;
+
+    state.divisions.forEach(div => {
+        div.items.forEach(item => {
+            hasItems = true;
+            
+            const labors = (item.labors && item.labors.length > 0)
+                ? item.labors
+                : (item.laborType && item.laborFactor > 0 ? [{ laborType: item.laborType, laborFactor: item.laborFactor }] : []);
+                
+            const multiplier = item.laborMultiplier !== undefined ? item.laborMultiplier : 1.0;
+
+            const scenarios = [
+                { value: "new", label: "신설 (100% 적용)", mult: 1.0, remark: "신설" },
+                { value: "demolish", label: "단순 철거 (30% 적용)", mult: 0.3, remark: "철거자재" },
+                { value: "reuse", label: "재사용 철거 (50% 적용)", mult: 0.5, remark: "철거재사용" },
+                { value: "night", label: "야간 작업 (125% 적용)", mult: 1.25, remark: "야간할증" },
+                { value: "narrow", label: "협소 장소 (110% 적용)", mult: 1.10, remark: "야지작업" }
+            ];
+
+            let selectHtml = "-";
+            if (labors.length > 0) {
+                selectHtml = `<select class="select-labor-scenario" data-div-id="${div.id}" data-item-id="${item.id}" style="background-color: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); padding: 6px 10px; border-radius: 4px; outline: none; font-size: 13px; width: 100%; cursor: pointer;">`;
+                scenarios.forEach(sc => {
+                    const selected = item.laborScenario === sc.value ? "selected" : "";
+                    selectHtml += `<option value="${sc.value}" data-mult="${sc.mult}" data-remark="${sc.remark}" ${selected}>${sc.label}</option>`;
+                });
+                selectHtml += `</select>`;
+            }
+
+            if (labors.length === 0) {
+                const tr = document.createElement("tr");
+                tr.innerHTML = `
+                    <td>${overallIndex++}</td>
+                    <td style="color: var(--text-secondary); font-size: 13px;">${div.name}</td>
+                    <td>
+                        <div class="item-meta">
+                            <span class="item-title">${item.name}</span>
+                            <span class="item-subtitle">${item.spec}</span>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">${item.u

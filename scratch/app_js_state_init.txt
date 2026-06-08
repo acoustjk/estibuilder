@@ -1,0 +1,61 @@
+        longtermCare: 12.81,
+        accidentInsurance: 3.7,
+        employmentInsurance: 1.01,
+        otherExpense: 7.8,
+        generalAdmin: 6.0,
+        profit: 15.0
+    },
+    divisions: [],
+    itemPrices: {},
+    activeDivisionId: "",
+    standardLaborDb: JSON.parse(JSON.stringify(STANDARD_LABOR_DB))
+};
+
+let costShareChart = null;
+
+// 4. Initialization
+document.addEventListener("DOMContentLoaded", () => {
+    loadFromLocalStorage();
+    
+    // If standard labor DB in state is empty, has old mock data, or uses the old flat schema (missing 'labors' property), load the new DB
+    const isOldFlatSchema = state.standardLaborDb && state.standardLaborDb.some(item => !item.labors && (item.laborType || item.laborFactor));
+    const hasDittoOrBrokenUnit = state.standardLaborDb && state.standardLaborDb.some(item => 
+        (item.name && (item.name.includes("〃") || item.name.endsWith(" 이"))) || 
+        (item.unit && item.unit.includes("본(6m") && !item.unit.endsWith(")"))
+    );
+    const isMissingPageInfo = state.standardLaborDb && !state.standardLaborDb.some(item => item.page);
+    if (!state.standardLaborDb || state.standardLaborDb.length < 1000 || isOldFlatSchema || hasDittoOrBrokenUnit || isMissingPageInfo) {
+        state.standardLaborDb = JSON.parse(JSON.stringify(STANDARD_LABOR_DB));
+        saveToLocalStorage();
+    }
+    
+    initTabs();
+    initSettingsListeners();
+    initBuilderListeners();
+    initPriceListeners();
+    initLaborListeners();
+    initDivisionsListeners();
+    initSaveLoadListeners();
+    initMasterDbListeners();
+    loadActiveDivision();
+    populateDbLibrary();
+    calculateEstimates();
+});
+
+// Tab Navigation
+function initTabs() {
+    const navItems = document.querySelectorAll(".nav-item");
+    const tabSections = document.querySelectorAll(".tab-section");
+
+    navItems.forEach(item => {
+        item.addEventListener("click", () => {
+            const tabId = item.getAttribute("data-tab");
+            
+            navItems.forEach(i => i.classList.remove("active"));
+            tabSections.forEach(s => s.classList.remove("active"));
+            
+            item.classList.add("active");
+            document.getElementById(tabId).classList.add("active");
+
+            if (tabId === "tab-summary") {
+                setTimeout(updateChart, 50);

@@ -1,0 +1,45 @@
+Total items in DB: 340
+
+=== First 30 items ===
+1: Code: 통신 1-1-27-1 | Name: -경광등 | Unit: 개 | LaborType: 보통인부 | LaborFactor: 0.15 | Category: device
+2: Code: 통신 1-1-27-1 | Name: -안전유도로봇 | Unit: 개 | LaborType: 보통인부 | LaborFactor: 0.15 | Category: device
+3: Code: 통신 2-1-6 | Name: 경고표시 테이프100m0.13케이블 매설표지판 | Unit: 개 | LaborType: 보통인부 | LaborFactor: 0.08 | Category: pipe
+4: Code: 통신 2-2-1-3 | Name: 콘크리트 트로프 들어내기 및 닫기들어내기닫기트로프뚜 껑(폭)70㎜100m0.30-0.29- | Unit: 개 | LaborType: 통신케이블공 | LaborFactor: 0.4 | Category: pipe
+5: Code: 통신 2-2-1-3 | Name: 0.39-150㎜ | Unit: 개 | LaborType: 통신케이블공 | LaborFactor: 0.5 | Category: pipe
+6: Code: 통신 2-2-1-3 | Name: 0.49-200㎜ | Unit: 개 | LaborType: 통신케이블공 | LaborFactor: 0.9 | Category: pipe
+7: Code: 통신 2-4-1 | Name: 콘크리트 전봇 | Unit: 대 | LaborType: 통신외선공 | LaborFactor: 5.0 | Category: pipe
+8: Code: 통신 2-4-1 | Name: m 이하 | Unit: 대 | LaborType: 통신외선공 | LaborFactor: 7.0 | Category: pipe
+9: Code: 통신 2-4-1 | Name: ) 콘크리트 전봇 | Unit: 대 | LaborType: 통신외선공 | LaborFactor: 1.0 | Category: pipe
+10: Code: 통신 2-4-1 | Name: ) 콘크리트 전봇 | Unit: 대 | LaborType: 통신외선공 | LaborFactor: 1.0 | Category: pipe
+11: Code: 통신 2-4-1 | Name: 에 디딤쇠 설치시는 0.1인을 가산.(전봇 | Unit: 대 | LaborType: 통신외선공 | LaborFactor: 1.0 | Category: pipe
+12: Code: 통신 2-4-4 | Name: 연선 7/2.3 이하 7/2.6 ~ 7/2.9 | Unit: 개 | LaborType: 통신외선공 | LaborFactor: 7.0 | Category: pipe
+13: Code: 통신 2-4-4 | Name: /3.2 ~ 7/4.5 | Unit: 개 | LaborType: 통신외선공 | LaborFactor: 7.0 | Category: pipe
+14: Code: 통신 2-4-8 | Name: 주의표 또는 번호표설치시매0.06기입시 | Unit: 개 | LaborType: 보통인부 | LaborFactor: 0.04 | Category: pipe
+15: Code: 통신 2-4-8 | Name: 도색판 | Unit: 개 | LaborType: 보통인부 | LaborFactor: 0.15 | Category: pipe
+16: Code: 통신 3-5-2 | Name: ×400㎜ | Unit: 개 | LaborType: 통신케이블공 | LaborFactor: 1.0 | Category: pipe
+17: Code: 통신 3-5-2 | Name: ,000×400㎜ | Unit: 개 | LaborType: 통신케이블공 | LaborFactor: 1.0 | Category: pipe
+18: Code: 통신 3-5-2 | Name: 기덕트 뚜껑 닫기-- | Unit: 개 | LaborType: 통신케이블공 | LaborFactor: 0.12 | Category: pipe
+19: Code: 통신 3-5-3 | Name: PVC몰딩 및 알루미늄몰딩(바닥) | Unit: 10m | LaborType: 통신내선공 | LaborFactor: 0.25 | Category: pipe
+20: Code: 통신 3-7-1 | Name: -----천 공각 종 | Unit: 10개 | LaborType: 통신내선공 | LaborFactor: 0.22 | Category: pipe
+21: Code: 통신 3-7-1 | Name: -----0.080.120.160.200.300.450.55--------------구 멍 | Unit: 10개 | LaborType: 보통인부 | LaborFactor: 0.36 | Category: pipe
+22: Code: 통신 3-7-1 | Name: --0.270.360.540.84--------구멍따기박스용석고판 12.7Ф 이하 | Unit: 10개 | LaborType: 통신내선공 | LaborFactor: 0.41 | Category: pipe
+23: Code: 통신 3-7-1 | Name: --박스용철판(데크플레이트 등)두께 2㎜ 이하 | Unit: 개 | LaborType: 통신내선공 | LaborFactor: 0.12 | Category: pipe
+24: Code: 통신 3-7-1 | Name: --MDF판넬- | Unit: 개 | LaborType: 통신내선공 | LaborFactor: 0.1 | Category: pipe
+25: Code: 통신 3-7-1 | Name: --방 화 폼 설 치- ℓ---0.30케 이 블 표 시식별표시용 PVC | Unit: 개 | LaborType: 보통인부 | LaborFactor: 0.01 | Category: pipe
+26: Code: 통신 3-7-1 | Name: -전산볼트 설치 Ø13㎜ 이하 | Unit: 개 | LaborType: 통신내선공 | LaborFactor: 0.01 | Category: pipe
+27: Code: 통신 4-1-1 | Name: 광섬유케이블포 설(싱 글/멀 티 모 드)지중인력견인포설100m0.94--1.41기계견인포설 | Unit: 개 | LaborType: 광케이블설치사 | LaborFactor: 0.48 | Category: cable
+28: Code: 통신 4-1-1 | Name: 광섬유케이블포 설(싱 글/멀 티 모 드)지중인력견인포설100m0.94--1.41기계견인포설 | Unit: 개 | LaborType: 특별인부 | LaborFactor: 0.48 | Category: cable
+29: Code: 통신 4-1-1 | Name: 광섬유 가 공 포 설 | Unit: 개 | LaborType: 광케이블설치사 | LaborFactor: 1.35 | Category: cable
+30: Code: 통신 4-1-1 | Name: 광섬유 가 공 포 설 | Unit: 개 | LaborType: 보통인부 | LaborFactor: 1.01 | Category: cable
+
+=== UTP Items ===
+1: Code: 통신 4-3-1 | Name: UTP, STP, FTP구내 4P | Unit: 10m | LaborType: 통신케이블공 | LaborFactor: 0.15
+2: Code: 통신 4-3-1 | Name: UTP 25P | Unit: 10m | LaborType: 통신케이블공 | LaborFactor: 0.24
+3: Code: 통신 4-3-1 | Name: UTP 50P | Unit: 10m | LaborType: 통신케이블공 | LaborFactor: 0.35
+4: Code: 통신 4-3-1 | Name: UTP 100P | Unit: 10m | LaborType: 통신케이블공 | LaborFactor: 0.5
+5: Code: 통신 4-3-1 | Name: UTP 옥외 4P이하 | Unit: 10m | LaborType: 통신케이블공 | LaborFactor: 0.05
+6: Code: 통신 4-3-1 | Name: UTP Thin | Unit: 10m | LaborType: 통신케이블공 | LaborFactor: 0.18
+7: Code: 통신 4-3-1 | Name: UTP Thick | Unit: 10m | LaborType: 통신케이블공 | LaborFactor: 0.32
+8: Code: 통신 4-3-1 | Name: UTP RS-Cable10P 이하 | Unit: 10m | LaborType: 통신케이블공 | LaborFactor: 0.18
+9: Code: 통신 4-3-1 | Name: UTP 10P 초과 | Unit: 10m | LaborType: 통신케이블공 | LaborFactor: 0.23
+10: Code: 통신 4-3-1 | Name: UTP AUI | Unit: 10m | LaborType: 통신케이블공 | LaborFactor: 0.2

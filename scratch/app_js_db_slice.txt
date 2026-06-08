@@ -1,0 +1,11 @@
+STANDARD_LABOR_DB = [
+  { code: "통신 1-1-22", name: "경운기 운반 및 적상․하 시간 기준  가. 경운기 운반비 산출공식   (1) 기본공식      운반비 = A×M[(L/V1+L/V2+T+T1)/60]  여기에서      A : 경운기 기계경비(시간당)-건설공사 표준품셈 공통부문 (운전원, 적상하시", spec: "1대", unit: "개", laborType: "보통인부", laborFactor: 0.31, category: "device", keywords: ["1대", "경운기 운반 및 적상․하 시간 기준  가. 경운기 운반비 산출공식   (1) 기본공식      운반비 = a×m[(l/v1+l/v2+t+t1)/60]  여기에서      a : 경운기 기계경비(시간당)-건설공사 표준품셈 공통부문 (운전원, 적상하시"] },
+  { code: "통신 1-4-2", name: "12", spec: "1대", unit: "개", laborType: "통신설비공", laborFactor: 0.3, category: "device", keywords: ["1대", "12"] },
+  { code: "통신 1-4-4", name: "손료산정  o 기계장비 시간당 계수          구분장비", spec: "299트", unit: "개", laborType: "통신설비공", laborFactor: 0.25, category: "device", keywords: ["299트", "손료산정  o 기계장비 시간당 계수          구분장비"] },
+  { code: "통신 1-4-4", name: "손료산정  o 기계장비 시간당 계수          구분장비", spec: "299트", unit: "개", laborType: "보통인부", laborFactor: 0.141, category: "device", keywords: ["299트", "손료산정  o 기계장비 시간당 계수          구분장비"] },
+  { code: "통신 2-1-1", name: "PVC관", spec: "30㎜   이 하", unit: "본(6m)", laborType: "통신외선공", laborFactor: 0.06, category: "pipe", keywords: ["배선", "관로", "pvc", "pipe", "30㎜   이 하", "배관", "pvc관"] },
+  { code: "통신 2-1-1", name: "PVC관", spec: "30㎜   이 하", unit: "본(6m)", laborType: "보통인부", laborFactor: 0.17, category: "pipe", keywords: ["배선", "관로", "pvc", "pipe", "30㎜   이 하", "배관", "pvc관"] },
+  { code: "통신 2-1-1", name: "PVC관", spec: "50㎜     〃", unit: "본(6m)", laborType: "통신외선공", laborFactor: 0.07, category: "pipe", keywords: ["배선", "관로", "pvc", "pipe", "50㎜     〃", "배관", "pvc관"] },
+  { code: "통신 2-1-1", name: "PVC관", spec: "50㎜     〃", unit: "본(6m)", laborType: "보통인부", laborFactor: 0.18, category: "pipe", keywords: ["배선", "관로", "pvc", "pipe", "50㎜     〃", "배관", "pvc관"] },
+  { code: "통신 2-1-1", name: "PVC관", spec: "80㎜     〃", unit: "본(6m)", laborType: "통신외선공", laborFactor: 0.08, category: "pipe", keywords: ["80㎜     〃", "관로", "배선", "pvc", "pipe", "배관", "pvc관"] },
+  { code: "통신 2-1-1", name: "PVC관"

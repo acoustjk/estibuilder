@@ -1,0 +1,101 @@
+        // ----------------------------------------------------
+        // 7. OPTION SHEET (옵션)
+        // ----------------------------------------------------
+        const shOpt = workbook.addWorksheet("옵션");
+        shOpt.views = [{ showGridLines: true }];
+        shOpt.pageSetup = {
+            paperSize: 9, // A4
+            orientation: 'portrait',
+            fitToPage: true,
+            fitToWidth: 1,
+            fitToHeight: 1
+        };
+        
+        shOpt.getCell("A1").value = "구분";
+        shOpt.getCell("B1").value = "요율";
+        shOpt.getCell("C1").value = "적용";
+        
+        shOpt.getCell("A2").value = "간접노무비율"; shOpt.getCell("B2").value = state.rates.indirectLabor / 100;
+        shOpt.getCell("A3").value = "건강보험료율"; shOpt.getCell("B3").value = state.rates.healthInsurance / 100;
+        shOpt.getCell("A4").value = "국민연금보험료율"; shOpt.getCell("B4").value = state.rates.pensionInsurance / 100;
+        shOpt.getCell("A5").value = "노인장기요양보험"; shOpt.getCell("B5").value = state.rates.longtermCare / 100;
+        shOpt.getCell("A6").value = "산재보험료율"; shOpt.getCell("B6").value = state.rates.accidentInsurance / 100;
+        shOpt.getCell("A7").value = "고용보험료율"; shOpt.getCell("B7").value = state.rates.employmentInsurance / 100;
+        shOpt.getCell("A8").value = "기타경비율"; shOpt.getCell("B8").value = state.rates.otherExpense / 100;
+        shOpt.getCell("A9").value = "일반관리비율"; shOpt.getCell("B9").value = state.rates.generalAdmin / 100;
+        shOpt.getCell("A10").value = "이윤율"; shOpt.getCell("B10").value = state.rates.profit / 100;
+        
+        const wages = WAGE_RATES[state.wageStandard];
+        shOpt.getCell("A12").value = "통신내선공 단가"; shOpt.getCell("B12").value = wages["통신내선공"];
+        shOpt.getCell("A13").value = "통신설비공 단가"; shOpt.getCell("B13").value = wages["통신설비공"];
+        shOpt.getCell("A14").value = "특별인부 단가"; shOpt.getCell("B14").value = wages["특별인부"];
+        shOpt.getCell("A18").value = "통신외선공 단가"; shOpt.getCell("B18").value = wages["통신외선공"];
+        shOpt.getCell("A19").value = "통신케이블공 단가"; shOpt.getCell("B19").value = wages["통신케이블공"];
+        shOpt.getCell("A20").value = "보통인부 단가"; shOpt.getCell("B20").value = wages["보통인부"];
+        shOpt.getCell("A21").value = "광케이블설치사 단가"; shOpt.getCell("B21").value = wages["광케이블설치사"];
+        
+        shOpt.getCell("A16").value = "공구손료"; shOpt.getCell("B16").value = 0.03;
+        
+        for (let r = 2; r <= 10; r++) {
+            shOpt.getCell(`B${r}`).numFmt = "0.00%";
+        }
+        shOpt.getCell("B12").numFmt = "#,##0";
+        shOpt.getCell("B13").numFmt = "#,##0";
+        shOpt.getCell("B14").numFmt = "#,##0";
+        shOpt.getCell("B16").numFmt = "0.0%";
+        shOpt.getCell("B18").numFmt = "#,##0";
+        shOpt.getCell("B19").numFmt = "#,##0";
+        shOpt.getCell("B20").numFmt = "#,##0";
+        shOpt.getCell("B21").numFmt = "#,##0";
+        
+        shOpt.getColumn(1).width = 25;
+        shOpt.getColumn(2).width = 15;
+        shOpt.getColumn(3).width = 10;
+        
+        styleHeaderRow(shOpt.getRow(1), "돋움체");
+        
+        const optRowCount = shOpt.rowCount;
+        for (let r = 2; r <= optRowCount; r++) {
+            const row = shOpt.getRow(r);
+            row.eachCell({ includeEmpty: true }, (cell, colNum) => {
+                cell.font = { name: "돋움체", size: 10 };
+                cell.border = thinBorder;
+                if (colNum === 1) {
+                    cell.alignment = { horizontal: 'left', vertical: 'middle' };
+                } else if (colNum === 2) {
+                    cell.alignment = { horizontal: 'right', vertical: 'middle' };
+                } else {
+                    cell.alignment = { horizontal: 'center', vertical: 'middle' };
+                }
+            });
+        }
+
+        // ----------------------------------------------------
+        // 8. COMMENTARY PREMIUM 1 SHEET (해설할증1)
+        // ----------------------------------------------------
+        const shExtra1 = workbook.addWorksheet("해설할증1");
+        shExtra1.views = [{ showGridLines: true }];
+        shExtra1.pageSetup = {
+            paperSize: 9, // A4
+            orientation: 'portrait',
+            fitToPage: true,
+            fitToWidth: 1,
+            fitToHeight: 1
+        };
+
+        shExtra1.getCell("A1").value = "구분";
+        shExtra1.getCell("B1").value = "할증률";
+
+        const extra1Rows = [
+            ["일반", 1.0],
+            ["군작전", 1.2],
+            ["도서지구", 1.15],
+            ["터널/지하", 1.1],
+            ["열차빈번", 1.15],
+            ["송전선인근", 1.1]
+        ];
+
+        extra1Rows.forEach((rowVal, idx) => {
+            const rowNum = idx + 2;
+            shExtra1.getCell("A" + rowNum).value = rowVal[0];
+            shExtra1.getCell("B" + rowNum).value = rowVal[1];

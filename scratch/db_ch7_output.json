@@ -1,0 +1,1830 @@
+[
+    {
+        "code": "통신 7-11-1",
+        "name": "Audio Mixer [설치]",
+        "spec": "20 채널 이하",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4,
+            "통신설비공": 0.4,
+            "보통인부": 0.21
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audio mixer [설치]",
+            "20 채널 이하"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audio Mixer [시험 및 측정]",
+        "spec": "20 채널 이하",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.27,
+            "통신관련산업기사": 0.27
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audio mixer [시험 및 측정]",
+            "20 채널 이하"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audio Mixer [설치]",
+        "spec": "26 채널 이하",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.43,
+            "통신설비공": 0.49,
+            "보통인부": 0.27
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audio mixer [설치]",
+            "26 채널 이하"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audio Mixer [시험 및 측정]",
+        "spec": "26 채널 이하",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.36,
+            "통신관련산업기사": 0.28
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audio mixer [시험 및 측정]",
+            "26 채널 이하"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Stabilizing Amp [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.5,
+            "통신설비공": 0.8,
+            "보통인부": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "stabilizing amp [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Stabilizing Amp [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.6
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "stabilizing amp [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Stabilizing Amp [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 3.0,
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "stabilizing amp [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Stabilizing Amp [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 2.0,
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "stabilizing amp [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Limiting Amp [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.2,
+            "통신설비공": 0.5,
+            "보통인부": 0.3
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "limiting amp [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Limiting Amp [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "limiting amp [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Limiting Amp [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.3,
+            "통신관련산업기사": 0.5,
+            "통신설비공": 0.1
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "limiting amp [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Limiting Amp [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.5,
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "limiting amp [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Power Amp [설치]",
+        "spec": "300W 이상",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.46,
+            "통신설비공": 0.63,
+            "보통인부": 0.63
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "power amp [설치]",
+            "300w 이상"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Power Amp [조정]",
+        "spec": "300W 이상",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.4,
+            "통신관련산업기사": 0.33
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "power amp [조정]",
+            "300w 이상"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Power Amp [시험 및 측정]",
+        "spec": "300W 이상",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.65,
+            "통신관련산업기사": 0.52
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "power amp [시험 및 측정]",
+            "300w 이상"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Power Amp [설치]",
+        "spec": "300W 미만",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.24,
+            "통신설비공": 0.11,
+            "보통인부": 0.48
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "power amp [설치]",
+            "300w 미만"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Power Amp [조정]",
+        "spec": "300W 미만",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.32,
+            "통신관련산업기사": 0.1
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "power amp [조정]",
+            "300w 미만"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Power Amp [시험 및 측정]",
+        "spec": "300W 미만",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.52,
+            "통신관련산업기사": 0.42
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "power amp [시험 및 측정]",
+            "300w 미만"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audio Distribution Amp [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.2,
+            "통신설비공": 0.4,
+            "보통인부": 0.2
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audio distribution amp [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audio Distribution Amp [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audio distribution amp [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audio Distribution Amp [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.3,
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audio distribution amp [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audio Distribution Amp [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.5,
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audio distribution amp [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Video Distribution Amp [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.2,
+            "통신설비공": 0.4,
+            "보통인부": 0.2
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "video distribution amp [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Video Distribution Amp [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "video distribution amp [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Video Distribution Amp [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.8,
+            "통신관련산업기사": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "video distribution amp [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Video Distribution Amp [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.8,
+            "통신관련산업기사": 1.2
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "video distribution amp [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Line Distribution Amp [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.2,
+            "통신설비공": 0.4,
+            "보통인부": 0.2
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "line distribution amp [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Line Distribution Amp [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "line distribution amp [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Line Distribution Amp [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 1.0,
+            "통신관련산업기사": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "line distribution amp [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Line Distribution Amp [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.8,
+            "통신관련산업기사": 1.2
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "line distribution amp [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Phase Equalizer [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.3,
+            "통신설비공": 0.6,
+            "보통인부": 0.3
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "phase equalizer [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Phase Equalizer [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "phase equalizer [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Phase Equalizer [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 2.0,
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "phase equalizer [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Phase Equalizer [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 2.0,
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "phase equalizer [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audimax [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.2,
+            "통신설비공": 0.5,
+            "보통인부": 0.3
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audimax [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audimax [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audimax [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audimax [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.3,
+            "통신관련산업기사": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audimax [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audimax [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.5,
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audimax [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Volumax [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.2,
+            "통신설비공": 0.5,
+            "보통인부": 0.3
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "volumax [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Volumax [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "volumax [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Volumax [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.3,
+            "통신관련산업기사": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "volumax [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Volumax [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "volumax [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "컴프레서 리미터 [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.36,
+            "통신설비공": 0.36
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "컴프레서 리미터 [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "컴프레서 리미터 [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.49
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "컴프레서 리미터 [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "컴프레서 리미터 [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 2.11,
+            "통신관련산업기사": 1.06
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "컴프레서 리미터 [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "컴프레서 리미터 [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 2.11,
+            "통신관련산업기사": 1.06
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "컴프레서 리미터 [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audio Demodulator [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4,
+            "통신설비공": 0.5,
+            "보통인부": 0.3
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audio demodulator [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audio Demodulator [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audio demodulator [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audio Demodulator [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.4,
+            "통신관련산업기사": 0.6
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audio demodulator [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Audio Demodulator [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.8,
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "audio demodulator [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Visual Demodulator [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.8,
+            "통신설비공": 0.5,
+            "보통인부": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "visual demodulator [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Visual Demodulator [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.6
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "visual demodulator [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Visual Demodulator [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 1.5,
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "visual demodulator [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Visual Demodulator [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 1.0,
+            "통신관련산업기사": 1.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "visual demodulator [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Stereo Demodulator [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.3,
+            "통신설비공": 0.8,
+            "보통인부": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "stereo demodulator [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Stereo Demodulator [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "stereo demodulator [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Stereo Demodulator [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.4,
+            "통신관련산업기사": 0.6
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "stereo demodulator [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Stereo Demodulator [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.8,
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "stereo demodulator [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "SCA Demodulator [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.2,
+            "통신설비공": 0.5,
+            "보통인부": 0.3
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "sca demodulator [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "SCA Demodulator [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "sca demodulator [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "SCA Demodulator [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.3,
+            "통신관련산업기사": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "sca demodulator [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "SCA Demodulator [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.5,
+            "통신관련산업기사": 0.8
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "sca demodulator [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Utility Monitor [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.3,
+            "통신설비공": 0.5,
+            "보통인부": 0.3
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "utility monitor [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Utility Monitor [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "utility monitor [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Utility Monitor [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.5,
+            "통신관련산업기사": 0.8
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "utility monitor [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Utility Monitor [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.4,
+            "통신관련산업기사": 0.8
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "utility monitor [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Modulation Monitor [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.2,
+            "통신설비공": 0.5,
+            "보통인부": 0.3
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "modulation monitor [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Modulation Monitor [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "modulation monitor [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Modulation Monitor [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.4,
+            "통신관련산업기사": 0.6
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "modulation monitor [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Modulation Monitor [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.6,
+            "통신관련산업기사": 0.8
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "modulation monitor [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Frequency Monitor [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.2,
+            "통신설비공": 0.5,
+            "보통인부": 0.3
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "frequency monitor [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Frequency Monitor [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "frequency monitor [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Frequency Monitor [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.4,
+            "통신관련산업기사": 0.6
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "frequency monitor [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Frequency Monitor [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.6,
+            "통신관련산업기사": 0.8
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "frequency monitor [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Precision Monitor [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.42,
+            "통신설비공": 0.71,
+            "보통인부": 0.71
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "precision monitor [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Precision Monitor [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.35
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "precision monitor [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Precision Monitor [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 1.05,
+            "통신관련산업기사": 0.98
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "precision monitor [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Precision Monitor [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 1.26,
+            "통신관련산업기사": 1.19
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "precision monitor [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "TV Monitor [설치]",
+        "spec": "19 ″이하",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.25,
+            "통신설비공": 0.25
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "tv monitor [설치]",
+            "19 ″이하"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Switcher [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 1.0,
+            "통신설비공": 1.5,
+            "보통인부": 0.6
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "switcher [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Switcher [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "switcher [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Switcher [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 1.0,
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "switcher [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Stereo Generator [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.3,
+            "통신설비공": 0.8,
+            "보통인부": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "stereo generator [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Stereo Generator [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "stereo generator [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Stereo Generator [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.4,
+            "통신관련산업기사": 0.6
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "stereo generator [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Stereo Generator [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.8,
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "stereo generator [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "SCA Generator [설치]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.2,
+            "통신설비공": 0.5,
+            "보통인부": 0.3
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "sca generator [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "SCA Generator [점검]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련산업기사": 0.4
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "sca generator [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "SCA Generator [조정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.3,
+            "통신관련산업기사": 0.5
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "sca generator [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "SCA Generator [시험 및 측정]",
+        "spec": "",
+        "unit": "-",
+        "labors": {
+            "통신관련기사": 0.5,
+            "통신관련산업기사": 0.8
+        },
+        "category": "device",
+        "page": 211,
+        "keywords": [
+            "sca generator [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "빔프로젝터 [설치]",
+        "spec": "4,000ANSI 이하",
+        "unit": "",
+        "labors": {
+            "통신관련산업기사": 0.2,
+            "통신설비공": 0.2
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "빔프로젝터 [설치]",
+            "4,000ansi 이하"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "빔프로젝터 [조정]",
+        "spec": "4,000ANSI 이하",
+        "unit": "",
+        "labors": {
+            "통신관련기사": 0.29,
+            "통신관련산업기사": 0.29
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "빔프로젝터 [조정]",
+            "4,000ansi 이하"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "빔프로젝터 [시험 및 측정]",
+        "spec": "4,000ANSI 이하",
+        "unit": "",
+        "labors": {
+            "통신관련기사": 0.17,
+            "통신관련산업기사": 0.17
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "빔프로젝터 [시험 및 측정]",
+            "4,000ansi 이하"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Multi [설치]",
+        "spec": "Tou ch  S cre en S e t",
+        "unit": "",
+        "labors": {
+            "H/W시험사": 1.6,
+            "통신설비공": 1.3,
+            "보통인부": 0.9
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "multi [설치]",
+            "tou ch  s cre en s e t"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Multi [조정]",
+        "spec": "Tou ch  S cre en S e t",
+        "unit": "",
+        "labors": {
+            "통신관련기사": 1.2
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "multi [조정]",
+            "tou ch  s cre en s e t"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "Multi [시험 및 측정]",
+        "spec": "Tou ch  S cre en S e t",
+        "unit": "",
+        "labors": {
+            "S/W시험사": 1.0,
+            "H/W시험사": 1.0
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "multi [시험 및 측정]",
+            "tou ch  s cre en s e t"
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "영    사    기 [설치]",
+        "spec": "",
+        "unit": "",
+        "labors": {
+            "통신관련산업기사": 4.0,
+            "통신설비공": 1.5,
+            "보통인부": 2.0
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "영    사    기 [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "영    사    기 [점검]",
+        "spec": "",
+        "unit": "",
+        "labors": {
+            "통신관련산업기사": 1.0
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "영    사    기 [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "영    사    기 [조정]",
+        "spec": "",
+        "unit": "",
+        "labors": {
+            "통신관련기사": 3.0,
+            "통신관련산업기사": 1.0,
+            "통신설비공": 0.5
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "영    사    기 [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "영    사    기 [시험 및 측정]",
+        "spec": "",
+        "unit": "",
+        "labors": {
+            "통신관련기사": 3.0
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "영    사    기 [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "동시통역 [설치]",
+        "spec": "",
+        "unit": "Control Unit",
+        "labors": {
+            "H/W시험사": 2.42,
+            "통신설비공": 0.42
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "동시통역 [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "동시통역 [점검]",
+        "spec": "",
+        "unit": "Control Unit",
+        "labors": {
+            "통신관련산업기사": 1.42
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "동시통역 [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "동시통역 [조정]",
+        "spec": "",
+        "unit": "Control Unit",
+        "labors": {
+            "통신관련산업기사": 1.0,
+            "통신설비공": 2.0
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "동시통역 [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "동시통역 [시험 및 측정]",
+        "spec": "",
+        "unit": "Control Unit",
+        "labors": {
+            "S/W시험사": 4.85,
+            "H/W시험사": 2.42
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "동시통역 [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "화상회의 [설치]",
+        "spec": "",
+        "unit": "CODEC",
+        "labors": {
+            "H/W시험사": 1.4,
+            "통신관련산업기사": 0.2
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "화상회의 [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "화상회의 [점검]",
+        "spec": "",
+        "unit": "CODEC",
+        "labors": {
+            "통신관련산업기사": 0.3
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "화상회의 [점검]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "화상회의 [조정]",
+        "spec": "",
+        "unit": "CODEC",
+        "labors": {
+            "통신관련산업기사": 0.7
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "화상회의 [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "화상회의 [시험 및 측정]",
+        "spec": "",
+        "unit": "CODEC",
+        "labors": {
+            "S/W시험사": 2.8,
+            "H/W시험사": 1.4,
+            "통신관련산업기사": 0.2
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "화상회의 [시험 및 측정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "CATV Modulator [설치]",
+        "spec": "",
+        "unit": "",
+        "labors": {
+            "통신관련산업기사": 0.21,
+            "통신설비공": 0.21,
+            "보통인부": 0.32
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "catv modulator [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "CATV Modulator [조정]",
+        "spec": "",
+        "unit": "",
+        "labors": {
+            "통신관련기사": 0.18,
+            "통신관련산업기사": 0.18
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "catv modulator [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "ASI Multiplexer [설치]",
+        "spec": "",
+        "unit": "",
+        "labors": {
+            "통신관련산업기사": 0.22,
+            "통신설비공": 0.22,
+            "보통인부": 0.33
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "asi multiplexer [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "ASI Multiplexer [조정]",
+        "spec": "",
+        "unit": "",
+        "labors": {
+            "통신관련기사": 0.17,
+            "통신관련산업기사": 0.17
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "asi multiplexer [조정]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "방송용카메라 [설치]",
+        "spec": "",
+        "unit": "",
+        "labors": {
+            "통신관련산업기사": 0.2,
+            "통신설비공": 0.2,
+            "보통인부": 0.31
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "방송용카메라 [설치]",
+            ""
+        ]
+    },
+    {
+        "code": "통신 7-11-1",
+        "name": "방송용카메라 [조정]",
+        "spec": "",
+        "unit": "",
+        "labors": {
+            "통신관련기사": 0.15,
+            "통신관련산업기사": 0.15
+        },
+        "category": "device",
+        "page": 212,
+        "keywords": [
+            "방송용카메라 [조정]",
+            ""
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+ × 290㎜  〃", unit: "개", laborType: "통신외선공", laborFactor: 0.24, category: "pipe", keywords: ["고속철도용 트로프", "400㎜ × 290㎜  〃"] },
+  { code: "통신 2-2-1-2", name: "고속철도용 트로프", spec: "320㎜ × 250㎜  〃", unit: "개", laborType: "통신외선공", laborFactor: 0.23, category: "pipe", keywords: ["320㎜ × 250㎜  〃", "고속철도용 트로프"] },
+  { code: "통신 2-2-1-2", name: "고속철도용 트로프", spec: "115㎜ × 290㎜  〃", unit: "개", laborType: "통신외선공", laborFactor: 0.21, category: "pipe", keywords: ["115㎜ × 290㎜  〃", "고속철도용 트로프"] },
+  { code: "통신 2-2-1-3", name: "콘크리트 트로프", spec: "70㎜", unit: "개", laborType: "통신케이블공", laborFactor: 0.3, category: "pipe", keywords: ["콘크리트 트로프", "70㎜"] },
+  { code: "통신 2-2-1-3", name: "콘크리트 트로프", spec: "70㎜", unit: "개", laborType: "보통인부", laborFactor: 0.29, category: "pipe", keywords: ["콘크리트 트로프", "70㎜"] },
+  { code: "통신 2-2-1-3", name: "콘크리트 트로프", spec: "120㎜〃", unit: "개", laborType: "통신케이블공", laborFactor: 0.4, category: "pipe", keywords: ["콘크리트 트로프", "120㎜〃"] },
+  { code: "통신 2-2-1-3", name: "콘크리트 트로프", spec: "120㎜〃", unit: "개", laborType: "보통인부", laborFactor: 0.39, category: "pipe", keywords: ["콘크리트 트로프", "120㎜〃"] },
+  { code: "통신 2-2-1-3", name: "콘크리트 트로프", spec: "150㎜〃", unit: "개", laborType: "통신케이블공", laborFactor: 0.5, category: "pipe", keywords: ["콘크리트 트로프", "150㎜〃"] },
+  { code: "통신 2-2-1-3", name: "콘크리트 트로프", spec: "150㎜〃", unit: "개", laborType: "보통인부", laborFactor: 0.49, category: "pipe", keywords: ["콘크리트 트로프", "150㎜〃"] },
+  { code: "통신 2-2-1-3", name: "콘크리트 트로프", spec: "200㎜〃", unit: "개", laborType: "통신케이블공", laborFactor: 0.9, category: "pipe", keywords: ["콘크리트 트로프", "200㎜〃"] },
+  { code: "통신 2-2-1-3", name: "콘크리트 트로프", spec: "200㎜〃", unit: "개", laborType: "보통인부", laborFactor: 0.87, category: "pipe", keywords: ["콘크리트 트로프", "200㎜〃"] },
+  { code: "통신 2-2-1-3", name: "콘크리트 트로프", spec: "250㎜", unit: "개", laborType: "통신케이블공", laborFactor: 0.7, category: "pipe", keywords: ["콘크리트 트로프", "250㎜"] },
+  { code: "통신 2-2-1-3", name: "콘크리트 트로프", spec: "250㎜", unit: "개", laborType: "보통인부", la

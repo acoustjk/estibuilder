@@ -1,0 +1,11 @@
+110: <label for="select-wage-standard">적용 노임 단가</label>
+112: <option value="2023_1">2023년 상반기 시중노임대비</option>
+113: <option value="2024_1">2024년 상반기 시중노임대비</option>
+114: <option value="2026_1" selected>2026년 상반기 시중노임대비</option>
+201: <input type="text" id="input-new-division-name" placeholder="예: LAN설비공사, CCTV설비공사 등" style="width: 100%;">
+458: <input type="text" id="input-new-division-name" placeholder="예: CCTV설비공사">
+505: <span class="preview-label">직종별 노임단가 ₩ <span id="lbl-modal-wage-rate">0</span></span>
+576: <label for="input-modal-price-matprice">적용 자재단가 (원)</label>
+653: <option value="통신내선공">통신내선공</option>
+654: <option value="통신설비공">통신설비공</option>
+655: <option value="특별인부">특별인부</option>

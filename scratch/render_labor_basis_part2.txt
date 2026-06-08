@@ -1,0 +1,42 @@
+ tr.innerHTML = `
+                    <td>${overallIndex++}</td>
+                    <td style="color: var(--text-secondary); font-size: 13px;">${div.name}</td>
+                    <td>
+                        <div class="item-meta">
+                            <span class="item-title">${item.name}</span>
+                            <span class="item-subtitle">${item.spec}</span>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">${item.unit}</td>
+                    <td style="text-align: right; font-family: monospace;">${item.qty}</td>
+                    <td>-</td>
+                    <td style="text-align: right; font-family: monospace;">-</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: right; font-family: monospace; font-weight: 600; color: var(--text-muted);">-</td>
+                    <td style="text-align: center;">
+                        <span class="labor-ref-badge-clickable" onclick="openLaborRefModal('${div.id}', '${item.id}')" title="클릭하여 표준품셈 변경/추천 받기">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> ${item.laborRef || "근거 없음"}
+                        </span>
+                    </td>
+                    <td style="text-align: center;">
+                        <button class="btn-icon-danger" onclick="deleteLaborBasisItem('${div.id}', '${item.id}')" title="노임근거 제거/삭제">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            } else {
+                labors.forEach((lab, labIdx) => {
+                    const tr = document.createElement("tr");
+                    const calcFactor = lab.laborFactor * multiplier;
+                    const totalLaborVolume = item.qty * calcFactor;
+                    
+                    const divNameCell = labIdx === 0 ? `<td style="color: var(--text-secondary); font-size: 13px;">${div.name}</td>` : `<td style="color: var(--text-muted); font-size: 13px; opacity: 0.5;">〃</td>`;
+                    const itemNameCell = labIdx === 0 ? `
+                        <td>
+                            <div class="item-meta">
+                                <span class="item-title">${item.name}</span>
+                                <span class="item-subtitle">${item.spec}</span>
+                            </div>
+                        </td>
+  

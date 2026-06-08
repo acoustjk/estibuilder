@@ -1,0 +1,51 @@
+                                    <option value="labor">노무/토공</option>
+                                </select>
+                            </div>
+                            <div style="color: var(--text-secondary); font-size: 13px; font-weight: 500;">
+                                검색 결과: <span id="lbl-master-db-count" class="text-accent" style="font-weight: 600;">0</span>개
+                            </div>
+                        </div>
+                        
+                        <!-- Table View -->
+                        <div class="card-body flex-grow no-padding" style="overflow-y: auto; max-height: calc(100vh - 290px); padding: 0;">
+                            <table class="cost-sheet-table" id="master-db-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 15%; text-align: left;">품셈 코드</th>
+                                        <th style="width: 30%; text-align: left;">품셈명</th>
+                                        <th style="width: 10%; text-align: left;">규격</th>
+                                        <th style="width: 8%; text-align: center;">단위</th>
+                                        <th style="width: 12%; text-align: left;">노무 직종</th>
+                                        <th style="width: 10%; text-align: right;">기본품셈 (인)</th>
+                                        <th style="width: 8%; text-align: center;">카테고리</th>
+                                        <th style="width: 7%; text-align: center;">액션</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="master-db-table-body">
+                                    <!-- Dynamically populated -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tab: Builder -->
+                <section id="tab-builder" class="tab-section">
+                    <div class="builder-layout">
+                        <!-- Left Panel: BOQ Work Divisions & Table -->
+                        <div class="builder-table-area">
+                            <div class="builder-toolbar">
+                                <div class="division-selector-wrap">
+                                    <label for="select-active-division">현재 공종 선택:</label>
+                                    <select id="select-active-division">
+                                        <!-- Dynamically generated -->
+                                    </select>
+                                </div>
+                                <div class="toolbar-buttons">
+                                    <button id="btn-add-division" class="btn btn-outline">
+                                        <i class="fa-solid fa-plus"></i> 공종 추가
+                                    </button>
+                                    <button id="btn-delete-division" class="btn btn-danger-outline">
+                                        <i class="fa-solid fa-trash"></i> 공종 삭제
+                                    </button>
+                                </div>

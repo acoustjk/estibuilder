@@ -1,0 +1,45 @@
+46: { code: "통신 1-1-21", name: "o H1(총주행시간 : hr) = ( + ) × N    ", spec: "표준 규격", unit: "개", laborType: "보통인부", laborFactor: 0.1, category: "device", keywords: ["o H1(총주행시간 : hr) = ("] },
+61: { code: "통신 2-4-2", name: "전봇대 기계화 세움규격통신외선공보통인부장비사용시간 Tc값(분)(F=10)", spec: "표준 규격", unit: "개", laborType: "통신외선공", laborFactor: 140.15, category: "pipe", keywords: ["전봇대 기계화 세움규격통신외선공보통인"] },
+78: { code: "통신 5-1-1", name: "[해 설]   ① Outlet Box 6구는 본 품셈의 130%, 12구", spec: "표준 규격", unit: "개", laborType: "보통인부", laborFactor: 0.1, category: "device", keywords: ["[해 설]   ① Outlet Box"] },
+120: { code: "통신 7-9-2", name: "(W+D)×2=500㎜이하,무게5㎏이하대-062---031(W+D)×2=", spec: "표준 규격", unit: "개", laborType: "특별인부", laborFactor: 0.06, category: "device", keywords: ["(W+D)×2=500㎜이하,무게5㎏이"] },
+173: { code: "통신 13-9-2", name: "승강장 스크린도어(PSD : Platform Screen Door) 시스", spec: "표준 규격", unit: "개", laborType: "특별인부", laborFactor: 0.01, category: "device", keywords: ["승강장 스크린도어(PSD : Plat"] },
+652: if (item.laborRef !== best.code || item.laborFactor !== best.laborFactor || item.laborType !== best.laborType) {
+654: item.laborFactor = best.laborFactor;
+655: item.laborType = best.laborType;
+685: document.getElementById("lbl-modal-item-current").textContent = `${item.laborRef || '근거 없음'} (${item.laborType || '미지정'}, ${item.laborFactor || 0}인)`;
+709: <span class="recommend-card-sub">${rec.spec} | ${rec.laborType} ${rec.laborFactor}인</span>
+738: function updateLaborModalPreview(laborFactor, laborType) {
+740: const wageRate = wages[laborType] || 0;
+741: const calcCost = Math.floor((laborFactor || 0) * wageRate);
+775: <span class="modal-db-item-factor">${dbItem.laborFactor.toFixed(4)} 인</span>
+776: <div class="modal-db-item-type">${dbItem.laborType}</div>
+794: function applyLaborRef(code, laborType, laborFactor) {
+799: item.laborType = laborType;
+800: item.laborFactor = laborFactor;
+846: opt.textContent = `${dbItem.code} ${dbItem.name} (${dbItem.laborType} ${dbItem.laborFactor}인)`;
+888: let laborType = null;
+889: let laborFactor = 0;
+893: laborType = dbItem.laborType;
+894: laborFactor = dbItem.laborFactor;
+1012: item.laborType = null;
+1013: item.laborFactor = 0;
+1088: <span class="modal-db-item-factor">${dbItem.laborFactor.toFixed(4)} 인</span>
+1089: <div class="modal-db-item-type">${dbItem.laborType}</div>
+1097: document.getElementById("input-modal-labor-item-factor").value = dbItem.laborFactor.toFixed(4);
+1098: document.getElementById("select-modal-labor-item-type").value = dbItem.laborType;
+1117: const laborType = document.getElementById("select-modal-labor-item-type").value;
+1172: const hasLabor = item.laborFactor !== undefined && item.laborFactor > 0 && item.laborType;
+1174: const calcFactor = hasLabor ? (item.laborFactor * multiplier) : 0;
+1207: <td style="text-align: right; font-family: monospace;">${hasLabor ? item.laborFactor.toFixed(4) : "-"}</td>
+1296: const laborCost = Math.floor(item.laborFactor * (wages[item.laborType] || 0));
+1297: const totalUnitCost = materialPrice + laborCost;
+1313: <td class="col-currency" title="${item.laborType} 품셈 ${item.laborFactor}인">₩${laborCost.toLocaleString()}</td>
+1377: const laborCost = Math.floor(item.laborFactor * (wages[item.laborType] || 0));
+1387: <span>노무: ₩${laborCost.toLocaleString()} <span style="font-size: 9px; color: var(--text-muted);">(${item.laborType})</span></span>
+1470: const itemLaborCost = Math.floor(item.laborFactor * multiplier * (wages[item.laborType] || 0));
+1615: const laborCost = Math.floor(item.laborFactor * (wages[item.laborType] || 0));
+1616: sum += item.qty * (materialPrice + laborCost);
+1681: if (item.laborType && item.laborFactor > 0) {
+1840: if (item.laborType && item.laborFactor > 0) {
+1845: if (item.laborType === "통신설비공") wageCell = "옵션!$B$13";
+1846: else if (item.laborType === "특별인부") wageCell = "옵션!$B$14";

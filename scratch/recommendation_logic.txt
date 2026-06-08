@@ -1,0 +1,30 @@
+594: document.getElementById("input-db-search").addEventListener("input", (e) => {
+780: const searchInput = document.getElementById("input-modal-labor-search");
+781: if (searchInput) {
+782: searchInput.addEventListener("input", (e) => {
+794: const searchAddLaborInput = document.getElementById("input-add-labor-db-search");
+795: if (searchAddLaborInput) {
+796: searchAddLaborInput.addEventListener("input", (e) => {
+817: function recommendLaborBasis(itemName, itemSpec) {
+882: const recs = recommendLaborBasis(item.name, item.spec);
+883: if (recs.length > 0 && recs[0].matchScore >= 35) {
+924: const recs = recommendLaborBasis(item.name, item.spec);
+925: const recList = document.getElementById("modal-recommend-list");
+933: card.className = "recommend-card";
+936: if (rec.matchScore >= 75) badgeClass = "";
+937: else if (rec.matchScore >= 50) badgeClass = "high";
+940: <div class="recommend-card-info">
+941: <span class="recommend-card-title">${rec.name} (${rec.code})</span>
+942: <span class="recommend-card-sub">${rec.spec} | ${rec.laborType} ${rec.laborFactor}인</span>
+944: <div class="recommend-meta-wrap">
+945: <span class="recommend-match-badge ${badgeClass}">${rec.matchScore}% 일치</span>
+963: const searchInput = document.getElementById("input-modal-labor-search");
+964: searchInput.value = "";
+981: function searchModalLaborBasis(query) {
+1288: document.getElementById("input-add-labor-db-search").value = "";
+1295: function searchAddLaborDbList(query) {
+1596: const matchesQuery = item.name.toLowerCase().includes(query) || item.spec.toLowerCase().includes(query);
+1597: const matchesCategory = category === "all" || item.category === category;
+2174: const priceMatchIndex = keysArr.indexOf(item.masterId) + 3; // 1-based index + 2 header rows
+2185: { formula: `단가조사!F${priceMatchIndex}` }, // Material Unit Cost
+2430: // Grand total with rounding formula directly injected to match state.roundingPrecision
