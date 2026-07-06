@@ -7826,12 +7826,23 @@ function renderMasterDbTable() {
 
     const query = (document.getElementById("input-master-db-search")?.value || "").toLowerCase().trim();
     const category = document.getElementById("select-master-db-category")?.value || "all";
+    const specMinVal = document.getElementById("input-master-db-spec-min")?.value;
+    const specMaxVal = document.getElementById("input-master-db-spec-max")?.value;
+    const specMin = specMinVal ? parseFloat(specMinVal) : null;
+    const specMax = specMaxVal ? parseFloat(specMaxVal) : null;
 
-    // state.standardLaborDb에서 필터링
     const queryTerms = expandSearchQuery(query);
     const filtered = state.standardLaborDb.filter(dbItem => {
         // 카테고리 필터
         if (category !== "all" && dbItem.category !== category) return false;
+
+        // 규격 범위 필터
+        if (specMin !== null || specMax !== null) {
+            const val = dbItem.parsedSpec ? dbItem.parsedSpec.value : null;
+            if (val === null) return false;
+            if (specMin !== null && val < specMin) return false;
+            if (specMax !== null && val > specMax) return false;
+        }
 
         // 검색 필터
         if (query) {
@@ -7846,21 +7857,43 @@ function renderMasterDbTable() {
             });
         }
         return true;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // 검색 결과 개수 갱신
     const countEl = document.getElementById("lbl-master-db-count");
@@ -8060,6 +8093,24 @@ function initMasterDbListeners() {
     }
 
     const categorySelect = document.getElementById("select-master-db-category");
+    if (categorySelect) {
+        categorySelect.onchange = () => {
+            renderMasterDbTable();
+        };
+    }
+    
+    const specMinInput = document.getElementById("input-master-db-spec-min");
+    const specMaxInput = document.getElementById("input-master-db-spec-max");
+    if (specMinInput) {
+        specMinInput.oninput = () => {
+            renderMasterDbTable();
+        };
+    }
+    if (specMaxInput) {
+        specMaxInput.oninput = () => {
+            renderMasterDbTable();
+        };
+    }
     if (categorySelect) {
         categorySelect.onchange = () => {
             renderMasterDbTable();
