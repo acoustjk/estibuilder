@@ -828,6 +828,31 @@
         </div>
     </div>
 
+    <!-- Modal: Edit Item Labors (노무비 공량 직접 수정) -->
+    <div class="modal" id="modal-edit-item-labors">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4><i class="fa-solid fa-pen-to-square text-primary" style="margin-right: 8px;"></i> 품목 노무비 공량 직접 보정</h4>
+                    <button class="close-modal-btn" onclick="closeModal('modal-edit-item-labors')">&times;</button>
+                </div>
+                <div class="modal-body" style="padding: 20px;">
+                    <input type="hidden" id="input-modal-edit-labors-item-id" value="">
+                    <p style="color: var(--text-secondary); margin: 0 0 15px 0; font-size: 13px;">
+                        선택한 품목의 직종별 기본 공량(인)을 직접 수정합니다. 할증 요율은 곱해지기 전의 기본 수치입니다.
+                    </p>
+                    <div id="container-modal-edit-labors-list" style="display: flex; flex-direction: column; gap: 12px;">
+                        <!-- Dynamically generated inputs -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline" onclick="closeModal('modal-edit-item-labors')">취소</button>
+                    <button class="btn btn-primary" id="btn-confirm-edit-item-labors">적용하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal: Excel Import -->
     <div class="modal" id="modal-excel-import">
         <div class="modal-dialog modal-lg">

@@ -4589,6 +4589,12 @@ function initLaborListeners() {
     }
 
     const btnConfirmAddLabor = document.getElementById("btn-confirm-add-labor-item");
+    const btnConfirmEditLabors = document.getElementById("btn-confirm-edit-item-labors");
+    if (btnConfirmEditLabors) {
+        btnConfirmEditLabors.addEventListener("click", () => {
+            confirmEditItemLabors();
+        });
+    }
     if (btnConfirmAddLabor) {
         btnConfirmAddLabor.addEventListener("click", () => {
             confirmAddLaborItem();
@@ -5833,8 +5839,13 @@ function loadActiveDivision() {
             <td>
                 <input type="number" class="input-qty" data-id="${item.id}" value="${item.qty}" min="0">
             </td>
-            <td class="col-currency">₩${materialPrice.toLocaleString()}</td>
-            <td class="col-currency" title="${laborDetails}">₩${laborCost.toLocaleString()}</td>
+        <td class="col-currency" style="padding: 4px;">
+            <input type="number" class="input-material-price" data-id="${item.id}" value="${materialPrice}" min="0" style="width: 100px; text-align: right; background: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: var(--radius-sm); padding: 6px; outline: none; font-size: 13px; font-family: monospace;">
+        </td>
+        <td class="col-currency" title="${laborDetails}" style="position: relative; padding-right: 24px;">
+            ₩${laborCost.toLocaleString()}
+            <i class="fa-solid fa-pen-to-square btn-edit-labors" data-id="${item.id}" title="노무 공량 직접 보정" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--primary-light); opacity: 0.7; transition: opacity 0.2s;"></i>
+        </td>
             <td class="col-currency">₩${rowTotal.toLocaleString()}</td>
             <td style="text-align: center;">
                 <button class="btn-icon-danger btn-delete-item" data-id="${item.id}" title="품목 삭제">
@@ -5875,6 +5886,32 @@ function loadActiveDivision() {
                 loadActiveDivision();
                 calculateEstimates();
             }
+        });
+    });
+
+    tbody.querySelectorAll(".input-material-price").forEach(input => {
+        input.addEventListener("change", (e) => {
+            const itemId = e.target.getAttribute("data-id");
+            const newPrice = Math.max(0, parseFloat(e.target.value) || 0);
+            const item = activeDiv.items.find(i => i.id === itemId);
+            if (item) {
+                item.materialPrice = newPrice;
+                if (!state.itemPrices[item.masterId]) {
+                    state.itemPrices[item.masterId] = { appliedPrice: newPrice };
+                } else {
+                    state.itemPrices[item.masterId].appliedPrice = newPrice;
+                }
+                loadActiveDivision();
+                calculateEstimates();
+            }
+        });
+    });
+
+    tbody.querySelectorAll(".btn-edit-labors").forEach(icon => {
+        icon.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const itemId = icon.getAttribute("data-id");
+            window.openEditItemLaborsModal(itemId);
         });
     });
 
@@ -6774,7 +6811,9 @@ async function exportToExcel() {
             const startItemRow = boqCurrentRow;
             
             // Write items
-            div.items.forEach((item, idx) => {
+        div.items.forEach((item, idx) => {
+                const priceInfo = state.itemPrices[item.masterId] || { appliedPrice: item.materialPrice };
+                const materialPrice = priceInfo.appliedPrice;
                 const priceMatchIndex = keysArr.indexOf(item.masterId) + 4; // Shifted by 4 rows due to title and shifted table header
                 
                 const hasLabor = item.laborExcelRows && item.laborExcelRows.length > 0;
@@ -6786,7 +6825,7 @@ async function exportToExcel() {
                     item.spec,
                     item.unit,
                     item.qty,
-                    { formula: "단가조사!E" + priceMatchIndex }, // Material Unit Cost
+                    materialPrice, // Material Unit Cost
                     { formula: "TRUNC(E" + boqCurrentRow + "*F" + boqCurrentRow + ", 0)" }, // Material Total Cost
                     hasLabor ? { formula: laborCellFormula } : 0, // Labor Unit Cost
                     { formula: "TRUNC(E" + boqCurrentRow + "*H" + boqCurrentRow + ", 0)" }, // Labor Total Cost
@@ -8196,3 +8235,71 @@ function expandSearchQuery(queryL) {
     return terms;
 }
 window.expandSearchQuery = expandSearchQuery;
+// ----------------------------------------------------
+// 12. BOQ 품목 임의 보정 기능 (Material & Labor Overrides)
+// ----------------------------------------------------
+function openEditItemLaborsModal(itemId) {
+    const activeDiv = state.divisions.find(d => d.id === state.activeDivisionId);
+    if (!activeDiv) return;
+    const item = activeDiv.items.find(i => i.id === itemId);
+    if (!item) return;
+
+    document.getElementById("input-modal-edit-labors-item-id").value = itemId;
+    const container = document.getElementById("container-modal-edit-labors-list");
+    container.innerHTML = "";
+
+    let labors = {};
+    if (item.labors) {
+        labors = item.labors;
+    } else if (item.laborType && item.laborFactor !== undefined) {
+        labors[item.laborType] = item.laborFactor;
+    } else {
+        labors["보통인부"] = 0;
+    }
+
+    Object.entries(labors).forEach(([type, factor]) => {
+        const row = document.createElement("div");
+        row.className = "form-group";
+        row.style.display = "flex";
+        row.style.alignItems = "center";
+        row.style.gap = "15px";
+        row.style.marginBottom = "10px";
+        row.innerHTML = `
+            <span style="font-weight: 500; font-size: 13px; color: var(--text-primary); flex: 1;">${type}</span>
+            <input type="number" class="input-labor-override-factor" data-type="${type}" value="${factor.toFixed(4)}" step="0.0001" min="0" style="width: 120px; padding: 8px; background: var(--bg-base); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: var(--radius-sm); outline: none; font-size: 13px; text-align: right; font-family: monospace;">
+        `;
+        container.appendChild(row);
+    });
+
+    openModal("modal-edit-item-labors");
+}
+
+function confirmEditItemLabors() {
+    const itemId = document.getElementById("input-modal-edit-labors-item-id").value;
+    const activeDiv = state.divisions.find(d => d.id === state.activeDivisionId);
+    if (!activeDiv) return;
+    const item = activeDiv.items.find(i => i.id === itemId);
+    if (!item) return;
+
+    const container = document.getElementById("container-modal-edit-labors-list");
+    const inputs = container.querySelectorAll(".input-labor-override-factor");
+    
+    const newLabors = {};
+    inputs.forEach(input => {
+        const type = input.getAttribute("data-type");
+        const factor = Math.max(0, parseFloat(input.value) || 0);
+        newLabors[type] = factor;
+    });
+
+    item.labors = newLabors;
+    delete item.laborType;
+    delete item.laborFactor;
+
+    closeModal("modal-edit-item-labors");
+    loadActiveDivision();
+    calculateEstimates();
+    showToast("노무비 공량이 성공적으로 보정되었습니다.", "success");
+}
+
+window.openEditItemLaborsModal = openEditItemLaborsModal;
+window.confirmEditItemLabors = confirmEditItemLabors;
