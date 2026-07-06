@@ -54,6 +54,10 @@
                     <i class="fa-solid fa-chart-pie"></i>
                     <span>원가 및 분석</span>
                 </button>
+                <button class="nav-item" data-tab="tab-admin-db">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span>DB 관리</span>
+                </button>
             </nav>
 
             <div class="sidebar-footer" style="display: flex; flex-direction: column; gap: 8px; padding: 15px 20px;">
@@ -514,8 +518,76 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- Tab: DB Admin (DB 관리) -->
+                <section id="tab-admin-db" class="tab-section" style="display: none;">
+                    <div class="card" style="display: flex; flex-direction: column; height: 100%; border: none;">
+                        <div class="card-header" style="border-bottom: 1px solid var(--border-color); padding: 20px 24px;">
+                            <h3 style="margin: 0; font-size: 18px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                                <i class="fa-solid fa-screwdriver-wrench text-accent"></i> 표준품셈 데이터베이스 관리 (DB Admin)
+                            </h3>
+                            <p style="color: var(--text-muted); font-size: 13.5px; margin: 6px 0 0 0;">
+                                새로운 표준품셈 JSON 파일을 업로드하여 기존 데이터와 비교하고 동적으로 병합 업데이트할 수 있습니다.
+                            </p>
+                        </div>
+                        
+                        <div class="card-body" style="padding: 24px; display: flex; flex-direction: column; gap: 24px; overflow-y: auto;">
+                            <!-- Upload Area -->
+                            <div id="db-upload-dropzone" style="border: 2px dashed var(--border-color); border-radius: var(--radius-md); padding: 40px; text-align: center; background: rgba(255,255,255,0.01); cursor: pointer; transition: all 0.2s;">
+                                <i class="fa-solid fa-cloud-arrow-up text-muted" style="font-size: 40px; margin-bottom: 16px;"></i>
+                                <h4 style="margin: 0 0 8px 0; font-size: 15px; font-weight: 600;">새로운 품셈 DB JSON 파일 업로드</h4>
+                                <p style="margin: 0; font-size: 13px; color: var(--text-muted);">파일을 여기로 드래그 앤 드롭하거나 클릭하여 선택하세요.</p>
+                                <input type="file" id="input-admin-db-file" accept=".json" style="display: none;">
+                            </div>
+
+                            <!-- Diff View container (Hidden by default) -->
+                            <div id="container-admin-db-diff" style="display: none; flex-direction: column; gap: 16px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <h4 style="margin: 0; font-size: 15px; font-weight: 600;">데이터베이스 변경 내역 (Diff View)</h4>
+                                    <button class="btn btn-primary" id="btn-admin-db-merge" style="display: inline-flex; align-items: center; gap: 6px;">
+                                        <i class="fa-solid fa-code-merge"></i> 변경사항 병합 적용하기
+                                    </button>
+                                </div>
+
+                                <!-- Summary badges -->
+                                <div style="display: flex; gap: 12px;">
+                                    <div style="flex: 1; padding: 12px; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.2); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: space-between;">
+                                        <span style="font-size: 13px; color: #10b981; font-weight: 500;">추가됨 (Added)</span>
+                                        <span id="badge-diff-added" style="font-size: 18px; font-weight: 700; color: #10b981;">0</span>
+                                    </div>
+                                    <div style="flex: 1; padding: 12px; background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: space-between;">
+                                        <span style="font-size: 13px; color: #3b82f6; font-weight: 500;">수정됨 (Modified)</span>
+                                        <span id="badge-diff-modified" style="font-size: 18px; font-weight: 700; color: #3b82f6;">0</span>
+                                    </div>
+                                    <div style="flex: 1; padding: 12px; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: space-between;">
+                                        <span style="font-size: 13px; color: #ef4444; font-weight: 500;">삭제됨 (Deleted)</span>
+                                        <span id="badge-diff-deleted" style="font-size: 18px; font-weight: 700; color: #ef4444;">0</span>
+                                    </div>
+                                </div>
+
+                                <!-- Diff Details List -->
+                                <div style="border: 1px solid var(--border-color); border-radius: var(--radius-sm); background: var(--bg-base); max-height: 400px; overflow-y: auto;">
+                                    <table class="cost-sheet-table" style="margin: 0;">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 100px;">구분</th>
+                                                <th style="width: 120px;">품셈코드</th>
+                                                <th>품명 및 규격</th>
+                                                <th>변경 내역 상세</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbody-admin-db-diff-list">
+                                            <!-- Diff items go here -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
+        <!-- Modal: View Item Notes (해설 보기) or others could be placed next -->
     </div>
 
     <!-- Modals -->

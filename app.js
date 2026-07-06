@@ -3966,6 +3966,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initDivisionsListeners();
     initSaveLoadListeners();
     initMasterDbListeners();
+    initAdminDbListeners();
     loadActiveDivision();
     populateDbLibrary();
     calculateEstimates();
@@ -8303,3 +8304,222 @@ function confirmEditItemLabors() {
 
 window.openEditItemLaborsModal = openEditItemLaborsModal;
 window.confirmEditItemLabors = confirmEditItemLabors;
+// ----------------------------------------------------
+// 13. 표준품셈 데이터베이스 관리자 기능 (DB Admin - Upload, Diff & Merge)
+// ----------------------------------------------------
+let tempUploadedDb = null;
+let dbDiffResults = null;
+
+function initAdminDbListeners() {
+    const dropzone = document.getElementById("db-upload-dropzone");
+    const fileInput = document.getElementById("input-admin-db-file");
+    const mergeBtn = document.getElementById("btn-admin-db-merge");
+
+    if (!dropzone || !fileInput) return;
+
+    dropzone.addEventListener("click", () => {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (file) handleDbFile(file);
+    });
+
+    dropzone.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        dropzone.style.borderColor = "var(--accent)";
+        dropzone.style.background = "rgba(255,255,255,0.04)";
+    });
+
+    dropzone.addEventListener("dragleave", () => {
+        dropzone.style.borderColor = "var(--border-color)";
+        dropzone.style.background = "rgba(255,255,255,0.01)";
+    });
+
+    dropzone.addEventListener("drop", (e) => {
+        e.preventDefault();
+        dropzone.style.borderColor = "var(--border-color)";
+        dropzone.style.background = "rgba(255,255,255,0.01)";
+        const file = e.dataTransfer.files[0];
+        if (file) handleDbFile(file);
+    });
+
+    if (mergeBtn) {
+        mergeBtn.addEventListener("click", () => {
+            mergeUploadedDb();
+        });
+    }
+}
+
+function handleDbFile(file) {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+        try {
+            const data = JSON.parse(e.target.result);
+            if (!Array.isArray(data)) {
+                showToast("올바른 JSON 배열 형식의 품셈 DB가 아닙니다.", "danger");
+                return;
+            }
+            const hasRequiredKeys = data.length === 0 || (data[0].code !== undefined && data[0].name !== undefined);
+            if (!hasRequiredKeys) {
+                showToast("품셈 DB에 필수 필드(code, name)가 누락되었습니다.", "danger");
+                return;
+            }
+
+            tempUploadedDb = data;
+            generateDbDiff();
+            showToast("품셈 DB 파일을 불러왔습니다. 변경 사항을 검토하세요.", "info");
+        } catch (err) {
+            showToast("JSON 파일 파싱 실패: " + err.message, "danger");
+        }
+    };
+    reader.readAsText(file, "utf-8");
+}
+
+function generateDbDiff() {
+    if (!tempUploadedDb) return;
+
+    const currentDb = state.standardLaborDb;
+    
+    const currentMap = new Map();
+    currentDb.forEach(item => {
+        currentMap.set(item.code + "||" + item.name, item);
+    });
+
+    const uploadedMap = new Map();
+    tempUploadedDb.forEach(item => {
+        uploadedMap.set(item.code + "||" + item.name, item);
+    });
+
+    const added = [];
+    const modified = [];
+    const deleted = [];
+
+    tempUploadedDb.forEach(item => {
+        const key = item.code + "||" + item.name;
+        const curItem = currentMap.get(key);
+        if (!curItem) {
+            added.push(item);
+        } else {
+            let isDiff = false;
+            const diffDetails = [];
+
+            if ((item.spec || "") !== (curItem.spec || "")) {
+                isDiff = true;
+                diffDetails.push(`규격: "${curItem.spec || ''}" -> "${item.spec || ''}"`);
+            }
+            if ((item.unit || "") !== (curItem.unit || "")) {
+                isDiff = true;
+                diffDetails.push(`단위: "${curItem.unit || ''}" -> "${item.unit || ''}"`);
+            }
+            const curLaborsStr = JSON.stringify(curItem.labors || {});
+            const itemLaborsStr = JSON.stringify(item.labors || {});
+            if (curLaborsStr !== itemLaborsStr) {
+                isDiff = true;
+                diffDetails.push(`노무비 공량 변경`);
+            }
+            const curNotesStr = JSON.stringify(curItem.notes || []);
+            const itemNotesStr = JSON.stringify(item.notes || []);
+            if (curNotesStr !== itemNotesStr) {
+                isDiff = true;
+                diffDetails.push(`해설(Notes) 변경`);
+            }
+
+            if (isDiff) {
+                modified.push({
+                    item,
+                    diffDetails: diffDetails.join(", ")
+                });
+            }
+        }
+    });
+
+    currentDb.forEach(item => {
+        const key = item.code + "||" + item.name;
+        if (!uploadedMap.has(key)) {
+            deleted.push(item);
+        }
+    });
+
+    dbDiffResults = { added, modified, deleted };
+
+    document.getElementById("badge-diff-added").textContent = added.length;
+    document.getElementById("badge-diff-modified").textContent = modified.length;
+    document.getElementById("badge-diff-deleted").textContent = deleted.length;
+
+    const tbody = document.getElementById("tbody-admin-db-diff-list");
+    tbody.innerHTML = "";
+
+    if (added.length === 0 && modified.length === 0 && deleted.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="4" style="text-align: center; color: var(--text-muted); padding: 30px;">현재 데이터베이스와 100% 일치합니다. 변경 사항이 없습니다.</td></tr>`;
+    } else {
+        added.forEach(item => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td><span style="background: rgba(16,185,129,0.15); color: #10b981; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 500;">추가</span></td>
+                <td style="font-family: monospace; font-size: 13px;">${item.code}</td>
+                <td>
+                    <div style="font-weight: 500;">${item.name}</div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">${item.spec || ""}</div>
+                </td>
+                <td style="color: var(--text-secondary); font-size: 13px;">새로운 품셈 항목으로 데이터베이스에 추가됩니다.</td>
+            `;
+            tbody.appendChild(tr);
+        });
+
+        modified.forEach(entry => {
+            const item = entry.item;
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td><span style="background: rgba(59,130,246,0.15); color: #3b82f6; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 500;">수정</span></td>
+                <td style="font-family: monospace; font-size: 13px;">${item.code}</td>
+                <td>
+                    <div style="font-weight: 500;">${item.name}</div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">${item.spec || ""}</div>
+                </td>
+                <td style="color: #3b82f6; font-size: 13px; font-weight: 500;">${entry.diffDetails}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+
+        deleted.forEach(item => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td><span style="background: rgba(239,68,68,0.15); color: #ef4444; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 500;">삭제</span></td>
+                <td style="font-family: monospace; font-size: 13px;">${item.code}</td>
+                <td>
+                    <div style="font-weight: 500;">${item.name}</div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">${item.spec || ""}</div>
+                </td>
+                <td style="color: var(--text-secondary); font-size: 13px;">기존 데이터베이스에서 제거됩니다.</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    }
+
+    document.getElementById("container-admin-db-diff").style.display = "flex";
+}
+
+function mergeUploadedDb() {
+    if (!tempUploadedDb || !dbDiffResults) return;
+
+    state.standardLaborDb = JSON.parse(JSON.stringify(tempUploadedDb));
+    window.STANDARD_LABOR_DB = JSON.parse(JSON.stringify(tempUploadedDb));
+
+    saveToLocalStorage();
+    populateDbLibrary();
+    if (typeof renderMasterDbTable === "function") {
+        renderMasterDbTable();
+    }
+
+    document.getElementById("container-admin-db-diff").style.display = "none";
+    document.getElementById("input-admin-db-file").value = "";
+    tempUploadedDb = null;
+    dbDiffResults = null;
+
+    showToast("표준품셈 DB 병합이 완료되었습니다. 마스터 DB 탭 및 라이브러리 목록에 즉각 적용되었습니다.", "success");
+}
+
+window.initAdminDbListeners = initAdminDbListeners;
+window.mergeUploadedDb = mergeUploadedDb;
